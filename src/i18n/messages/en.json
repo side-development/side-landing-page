@@ -4,8 +4,13 @@
     "description": "Side creates digital experiences through design, technology and motion."
   },
   "FakeError": {
-    "heading": "This page isn’t working",
-    "description": "sidecode.com.br didn’t send any data.",
-    "reload": "Reload"
+    "heading": "This site can’t be reached",
+    "description": "sidecode.com.br unexpectedly closed the connection.",
+    "tryLabel": "Try:",
+    "checkConnection": "Checking the connection",
+    "checkProxy": "Checking the proxy and the firewall",
+    "runDiagnostics": "Running Windows Network Diagnostics",
+    "reload": "Reload",
+    "learnMore": "Learn more"
   }
 }

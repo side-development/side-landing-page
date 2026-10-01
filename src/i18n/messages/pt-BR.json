@@ -4,8 +4,13 @@
     "description": "A Side cria experiências digitais com design, tecnologia e movimento."
   },
   "FakeError": {
-    "heading": "Esta página não está funcionando",
-    "description": "Nenhum dado foi enviado por sidecode.com.br",
-    "reload": "Recarregar"
+    "heading": "Não é possível acessar esse site",
+    "description": "sidecode.com.br encerrou a conexão inesperadamente.",
+    "tryLabel": "Tente:",
+    "checkConnection": "Verificar a conexão",
+    "checkProxy": "Verificar o proxy e o firewall",
+    "runDiagnostics": "Executar o Diagnóstico de Rede do Windows",
+    "reload": "Recarregar",
+    "learnMore": "Saiba mais"
   }
 }

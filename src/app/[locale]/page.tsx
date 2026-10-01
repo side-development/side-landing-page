@@ -8,7 +8,12 @@ export default async function Home() {
     <Hero copy={{
       heading: t("heading"),
       description: t("description"),
+      tryLabel: t("tryLabel"),
+      checkConnection: t("checkConnection"),
+      checkProxy: t("checkProxy"),
+      runDiagnostics: t("runDiagnostics"),
       reload: t("reload"),
+      learnMore: t("learnMore"),
     }} />
   );
 }

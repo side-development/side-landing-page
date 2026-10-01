@@ -1,0 +1,318 @@
+{
+  "status": "pass",
+  "errors": [],
+  "timings": [
+    {
+      "locale": "pt-BR",
+      "changes": [
+        {
+          "text": "ERR_CONNECTI0N_CLOSED",
+          "at": 1851.3999998569489
+        },
+        {
+          "text": "ERR_CONNECTION_CLOSED",
+          "at": 2050.7999999523163
+        },
+        {
+          "text": "ERR_CONNECTION_CL_SED",
+          "at": 2217.7000000476837
+        },
+        {
+          "text": "ERR_CONNECTION_CLOSED",
+          "at": 2417.5999999046326
+        },
+        {
+          "text": "ERR_DIGITAL_EXPERIENCE",
+          "at": 2584.399999856949
+        },
+        {
+          "text": "ERR_CONNECTION_CLOSED",
+          "at": 2985.5
+        }
+      ],
+      "clueDurationMs": 401.10000014305115
+    },
+    {
+      "locale": "en",
+      "changes": [
+        {
+          "text": "ERR_CONNECTI0N_CLOSED",
+          "at": 1819.9000000953674
+        },
+        {
+          "text": "ERR_CONNECTION_CLOSED",
+          "at": 2019.5999999046326
+        },
+        {
+          "text": "ERR_CONNECTION_CL_SED",
+          "at": 2169.7000000476837
+        },
+        {
+          "text": "ERR_CONNECTION_CLOSED",
+          "at": 2370.2000000476837
+        },
+        {
+          "text": "ERR_DIGITAL_EXPERIENCE",
+          "at": 2553
+        },
+        {
+          "text": "ERR_CONNECTION_CLOSED",
+          "at": 2953.0999999046326
+        }
+      ],
+      "clueDurationMs": 400.09999990463257
+    }
+  ],
+  "sizes": [
+    {
+      "route": "/",
+      "width": 1920,
+      "height": 1080,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 1920,
+      "height": 1080,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 1366,
+      "height": 768,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 1366,
+      "height": 768,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "height": 768,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 1024,
+      "height": 768,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "height": 1024,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 768,
+      "height": 1024,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 412,
+      "height": 915,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 412,
+      "height": 915,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 844,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 390,
+      "height": 844,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "height": 667,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 375,
+      "height": 667,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 360,
+      "height": 800,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 360,
+      "height": 800,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "height": 568,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 320,
+      "height": 568,
+      "status": "pass"
+    }
+  ],
+  "interactions": [
+    {
+      "locale": "pt-BR",
+      "helpControls": "inert on click, Enter and Space"
+    },
+    {
+      "locale": "pt-BR",
+      "mouse": "pass",
+      "noReload": "pass",
+      "idleStopped": "pass"
+    },
+    {
+      "locale": "en",
+      "helpControls": "inert on click, Enter and Space"
+    },
+    {
+      "locale": "en",
+      "mouse": "pass",
+      "noReload": "pass",
+      "idleStopped": "pass"
+    },
+    {
+      "route": "/",
+      "key": "Enter",
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "key": "Space",
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "key": "Enter",
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "key": "Space",
+      "status": "pass"
+    }
+  ],
+  "cleanup": [
+    {
+      "reducedMotion": "no-preference",
+      "unmountAt": 500,
+      "remainingAnimations": 0
+    },
+    {
+      "reducedMotion": "no-preference",
+      "unmountAt": 2500,
+      "remainingAnimations": 0
+    },
+    {
+      "reducedMotion": "no-preference",
+      "unmountAt": 4900,
+      "remainingAnimations": 0
+    },
+    {
+      "reducedMotion": "reduce",
+      "unmountAt": 500,
+      "remainingAnimations": 0
+    },
+    {
+      "reducedMotion": "reduce",
+      "unmountAt": 2500,
+      "remainingAnimations": 0
+    },
+    {
+      "reducedMotion": "reduce",
+      "unmountAt": 4900,
+      "remainingAnimations": 0
+    }
+  ],
+  "reducedMotion": [
+    {
+      "locale": "pt-BR",
+      "changes": [
+        {
+          "text": "ERR_DIGITAL_EXPERIENCE",
+          "at": 2540.300000190735
+        },
+        {
+          "text": "ERR_CONNECTION_CLOSED",
+          "at": 3590
+        }
+      ],
+      "keyboard": "pass"
+    },
+    {
+      "locale": "en",
+      "changes": [
+        {
+          "text": "ERR_DIGITAL_EXPERIENCE",
+          "at": 2523.7999999523163
+        },
+        {
+          "text": "ERR_CONNECTION_CLOSED",
+          "at": 3590.199999809265
+        }
+      ],
+      "keyboard": "pass"
+    }
+  ],
+  "browser": "154.0.4258.48",
+  "referenceGeometry": [
+    {
+      "element": "svg",
+      "x": 274,
+      "y": 78.96875,
+      "width": 45,
+      "height": 54
+    },
+    {
+      "element": "H1",
+      "x": 274,
+      "y": 190.96875,
+      "width": 750,
+      "height": 37.5
+    },
+    {
+      "element": "P",
+      "x": 274,
+      "y": 440.46875,
+      "width": 750,
+      "height": 22.5
+    },
+    {
+      "element": "BUTTON",
+      "x": 274,
+      "y": 530.96875,
+      "width": 122.03125,
+      "height": 40
+    },
+    {
+      "element": "BUTTON",
+      "x": 900,
+      "y": 530.96875,
+      "width": 124,
+      "height": 40
+    }
+  ]
+}

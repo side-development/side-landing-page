@@ -7,13 +7,18 @@ import styles from "./hero.module.css";
 
 gsap.registerPlugin(useGSAP);
 
-const ORIGINAL_CODE = "ERR_EMPTY_RESPONSE";
+const ORIGINAL_CODE = "ERR_CONNECTION_CLOSED";
 const CLUE_CODE = "ERR_DIGITAL_EXPERIENCE";
 
 export type FakeErrorCopy = {
   heading: string;
   description: string;
+  tryLabel: string;
+  checkConnection: string;
+  checkProxy: string;
+  runDiagnostics: string;
   reload: string;
+  learnMore: string;
 };
 
 type Props = {
@@ -28,6 +33,7 @@ export function FakeErrorIntro({ copy, active, onReload }: Props) {
   const idleMotion = useRef<gsap.MatchMedia | null>(null);
   const triggered = useRef(false);
   const headingId = useId();
+  const [beforeDomain, afterDomain] = copy.description.split("sidecode.com.br");
 
   useGSAP(() => {
     if (!active || !errorCode.current) return;
@@ -51,12 +57,12 @@ export function FakeErrorIntro({ copy, active, onReload }: Props) {
 
       function runPulse() {
         pulse?.kill();
-        const first = Math.random() < 0.5 ? "ERR_EMPTY_RESP0NSE" : "ERR_EMPTY_RESP_NSE";
-        const second = Math.random() < 0.25 ? CLUE_CODE : "ERR_EMPTY_RESP_NSE";
+        const first = Math.random() < 0.5 ? "ERR_CONNECTI0N_CLOSED" : "ERR_CONNECTION_CL_SED";
+        const second = Math.random() < 0.25 ? CLUE_CODE : "ERR_CONNECTION_CL_SED";
         pulse = gsap.timeline({ onComplete: queuePulse })
           .call(() => write(first), [], 0)
-          .call(() => write(second), [], gsap.utils.random(0.06, 0.1))
-          .call(() => write(ORIGINAL_CODE), [], gsap.utils.random(0.2, 0.3));
+          .call(() => write(second), [], gsap.utils.random(0.18, 0.24))
+          .call(() => write(ORIGINAL_CODE), [], gsap.utils.random(0.58, 0.72));
       }
 
       const reduced = context.conditions?.reduce;
@@ -72,12 +78,12 @@ export function FakeErrorIntro({ copy, active, onReload }: Props) {
           .to(code, { opacity: 1, duration: 0.18, ease: "none" });
       } else {
         intro
-          .call(() => write("ERR_EMPTY_RESP0NSE"), [], 1.86)
-          .call(() => write(ORIGINAL_CODE), [], 1.94)
-          .call(() => write("ERR_EMPTY_RESP_NSE"), [], 2.08)
-          .call(() => write(ORIGINAL_CODE), [], 2.16)
-          .call(() => write(CLUE_CODE), [], 2.4)
-          .call(() => write(ORIGINAL_CODE), [], 2.54);
+          .call(() => write("ERR_CONNECTI0N_CLOSED"), [], 1.86)
+          .call(() => write(ORIGINAL_CODE), [], 2.06)
+          .call(() => write("ERR_CONNECTION_CL_SED"), [], 2.22)
+          .call(() => write(ORIGINAL_CODE), [], 2.42)
+          .call(() => write(CLUE_CODE), [], 2.6)
+          .call(() => write(ORIGINAL_CODE), [], 3);
       }
 
       return () => {
@@ -103,12 +109,24 @@ export function FakeErrorIntro({ copy, active, onReload }: Props) {
 
   return (
     <section ref={container} className={styles.content} aria-labelledby={headingId}>
-      <svg className={styles.icon} width="40" height="48" viewBox="0 0 40 48" aria-hidden="true" focusable="false">
-        <path d="M7 2h17l9 9v12l-4 3 4 3v16H7V29l4-3-4-3Z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
-        <path d="M24 2v10h9M14 20v4m12-4v4m-11 12 5-3 5 3" fill="none" stroke="currentColor" strokeWidth="2" />
+      <svg className={styles.icon} width="45" height="54" viewBox="0 0 45 54" aria-hidden="true" focusable="false">
+        <path d="M0 0h32v4H4v46h37V21H23V4h4v13h14v-4h4v41H0Zm32 4h4v4h-4Zm4 4h5v5h-5Z" fill="currentColor" />
+        <path d="M11 13h5v8h-5Zm5 22h13v4H16Zm-5 4h5v4h-5Zm18 0h5v4h-5Z" fill="currentColor" />
       </svg>
       <h1 id={headingId} className={styles.heading}>{copy.heading}</h1>
-      <p className={styles.description}>{copy.description}</p>
+      <div className={styles.details}>
+        <p className={styles.description}>
+          {beforeDomain}<strong className={styles.domain}>sidecode.com.br</strong>{afterDomain}
+        </p>
+        <div className={styles.suggestions}>
+          <p>{copy.tryLabel}</p>
+          <ul className={styles.suggestionList}>
+            <li>{copy.checkConnection}</li>
+            <li><button className={styles.suggestionLink} type="button">{copy.checkProxy}</button></li>
+            <li><button className={styles.suggestionLink} type="button">{copy.runDiagnostics}</button></li>
+          </ul>
+        </div>
+      </div>
       <p className={styles.errorCode}>
         <span className={styles.srOnly}>{ORIGINAL_CODE}</span>
         <span ref={errorCode} aria-hidden="true">{ORIGINAL_CODE}</span>
@@ -116,6 +134,9 @@ export function FakeErrorIntro({ copy, active, onReload }: Props) {
       <div className={styles.actions}>
         <button className={styles.reload} type="button" aria-disabled={!active} onClick={handleReload}>
           {copy.reload}
+        </button>
+        <button className={styles.learnMore} type="button">
+          {copy.learnMore}
         </button>
       </div>
     </section>

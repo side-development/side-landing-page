@@ -1,5 +1,7 @@
 # Validação — Home / Hero 01 #2
 
+> Evidência histórica da entrega inicial. A [revisão pela referência](hero-reference.md) registra a copy, os timings e os controles atuais autorizados posteriormente pelo usuário.
+
 **Status: Ready for review.** A implementação está tecnicamente validada; a credibilidade da ilusão e a percepção do timing aguardam aprovação humana. A issue deve permanecer aberta.
 
 ## Ambiente e evidências
