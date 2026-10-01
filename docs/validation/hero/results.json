@@ -1,0 +1,389 @@
+{
+  "status": "pass",
+  "errors": [],
+  "timings": [
+    {
+      "lang": "pt-BR",
+      "changes": [
+        {
+          "text": "ERR_EMPTY_RESP0NSE",
+          "at": 1777.6000001430511
+        },
+        {
+          "text": "ERR_EMPTY_RESPONSE",
+          "at": 1861
+        },
+        {
+          "text": "ERR_EMPTY_RESP_NSE",
+          "at": 1994.4000000953674
+        },
+        {
+          "text": "ERR_EMPTY_RESPONSE",
+          "at": 2077.4000000953674
+        },
+        {
+          "text": "ERR_DIGITAL_EXPERIENCE",
+          "at": 2327.300000190735
+        },
+        {
+          "text": "ERR_EMPTY_RESPONSE",
+          "at": 2461.2000000476837
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "changes": [
+        {
+          "text": "ERR_EMPTY_RESP0NSE",
+          "at": 1737.1000001430511
+        },
+        {
+          "text": "ERR_EMPTY_RESPONSE",
+          "at": 1820.7000000476837
+        },
+        {
+          "text": "ERR_EMPTY_RESP_NSE",
+          "at": 1970.5
+        },
+        {
+          "text": "ERR_EMPTY_RESPONSE",
+          "at": 2037
+        },
+        {
+          "text": "ERR_DIGITAL_EXPERIENCE",
+          "at": 2287.2000000476837
+        },
+        {
+          "text": "ERR_EMPTY_RESPONSE",
+          "at": 2420.9000000953674
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "route": "/",
+      "width": 1920,
+      "height": 1080,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 1920,
+      "height": 1080,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 1366,
+      "height": 768,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 1366,
+      "height": 768,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "height": 768,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 1024,
+      "height": 768,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "height": 1024,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 768,
+      "height": 1024,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 412,
+      "height": 915,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 412,
+      "height": 915,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 844,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 390,
+      "height": 844,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "height": 667,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 375,
+      "height": 667,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 360,
+      "height": 800,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 360,
+      "height": 800,
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "height": 568,
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "width": 320,
+      "height": 568,
+      "status": "pass"
+    }
+  ],
+  "interactions": [
+    {
+      "lang": "pt-BR",
+      "mouse": "pass",
+      "noReload": "pass",
+      "idleStopped": "pass",
+      "noPersistence": "pass"
+    },
+    {
+      "lang": "en",
+      "mouse": "pass",
+      "noReload": "pass",
+      "idleStopped": "pass",
+      "noPersistence": "pass"
+    },
+    {
+      "route": "/",
+      "key": "Enter",
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "key": "Space",
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "key": "Enter",
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "key": "Space",
+      "status": "pass"
+    }
+  ],
+  "cleanup": [
+    {
+      "reducedMotion": "no-preference",
+      "unmountAt": 500,
+      "remainingAnimations": 0,
+      "strictMode": true
+    },
+    {
+      "reducedMotion": "no-preference",
+      "unmountAt": 2000,
+      "remainingAnimations": 0,
+      "strictMode": true
+    },
+    {
+      "reducedMotion": "no-preference",
+      "unmountAt": 4900,
+      "remainingAnimations": 0,
+      "strictMode": true
+    },
+    {
+      "reducedMotion": "reduce",
+      "unmountAt": 500,
+      "remainingAnimations": 0,
+      "strictMode": true
+    },
+    {
+      "reducedMotion": "reduce",
+      "unmountAt": 2000,
+      "remainingAnimations": 0,
+      "strictMode": true
+    },
+    {
+      "reducedMotion": "reduce",
+      "unmountAt": 4900,
+      "remainingAnimations": 0,
+      "strictMode": true
+    }
+  ],
+  "irregularIdle": {
+    "changes": [
+      {
+        "text": "ERR_EMPTY_RESP0NSE",
+        "at": 1840.5
+      },
+      {
+        "text": "ERR_EMPTY_RESPONSE",
+        "at": 1922.7999999523163
+      },
+      {
+        "text": "ERR_EMPTY_RESP_NSE",
+        "at": 2056.0999999046326
+      },
+      {
+        "text": "ERR_EMPTY_RESPONSE",
+        "at": 2139.2999999523163
+      },
+      {
+        "text": "ERR_DIGITAL_EXPERIENCE",
+        "at": 2389.2999999523163
+      },
+      {
+        "text": "ERR_EMPTY_RESPONSE",
+        "at": 2522.899999856949
+      },
+      {
+        "text": "ERR_EMPTY_RESP0NSE",
+        "at": 4972.899999856949
+      },
+      {
+        "text": "ERR_EMPTY_RESP_NSE",
+        "at": 5056.099999904633
+      },
+      {
+        "text": "ERR_EMPTY_RESPONSE",
+        "at": 5223.099999904633
+      },
+      {
+        "text": "ERR_EMPTY_RESP0NSE",
+        "at": 9889.099999904633
+      },
+      {
+        "text": "ERR_EMPTY_RESP_NSE",
+        "at": 9955.599999904633
+      },
+      {
+        "text": "ERR_EMPTY_RESPONSE",
+        "at": 10089
+      },
+      {
+        "text": "ERR_EMPTY_RESP0NSE",
+        "at": 13105.799999952316
+      },
+      {
+        "text": "ERR_DIGITAL_EXPERIENCE",
+        "at": 13189.099999904633
+      },
+      {
+        "text": "ERR_EMPTY_RESPONSE",
+        "at": 13372.399999856949
+      },
+      {
+        "text": "ERR_EMPTY_RESP0NSE",
+        "at": 15506.099999904633
+      }
+    ],
+    "starts": [
+      {
+        "text": "ERR_EMPTY_RESP0NSE",
+        "at": 4972.899999856949
+      },
+      {
+        "text": "ERR_EMPTY_RESP0NSE",
+        "at": 9889.099999904633
+      },
+      {
+        "text": "ERR_EMPTY_RESP0NSE",
+        "at": 13105.799999952316
+      },
+      {
+        "text": "ERR_EMPTY_RESP0NSE",
+        "at": 15506.099999904633
+      }
+    ],
+    "intervals": [
+      4916.200000047684,
+      3216.7000000476837,
+      2400.2999999523163
+    ]
+  },
+  "reducedMotion": [
+    {
+      "lang": "pt-BR",
+      "changes": [
+        {
+          "text": "ERR_DIGITAL_EXPERIENCE",
+          "at": 2576.5999999046326
+        },
+        {
+          "text": "ERR_EMPTY_RESPONSE",
+          "at": 3625.7000000476837
+        }
+      ],
+      "keyboard": "pass",
+      "noRecurringJitter": "pass"
+    },
+    {
+      "lang": "en",
+      "changes": [
+        {
+          "text": "ERR_DIGITAL_EXPERIENCE",
+          "at": 2524.5999999046326
+        },
+        {
+          "text": "ERR_EMPTY_RESPONSE",
+          "at": 3590.899999856949
+        }
+      ],
+      "keyboard": "pass",
+      "noRecurringJitter": "pass"
+    }
+  ],
+  "preferenceChange": {
+    "status": "pass",
+    "changes": [
+      {
+        "text": "ERR_EMPTY_RESPONSE",
+        "at": 13.5
+      },
+      {
+        "text": "ERR_DIGITAL_EXPERIENCE",
+        "at": 2580.0999999046326
+      },
+      {
+        "text": "ERR_EMPTY_RESPONSE",
+        "at": 3647
+      }
+    ]
+  },
+  "callbackOnce": "pass"
+}
