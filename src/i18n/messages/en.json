@@ -1,11 +1,16 @@
 {
   "Metadata": {
-    "title": "Side — Digital experiences",
+    "title": "Side",
     "description": "Side creates digital experiences through design, technology and motion."
   },
-  "Home": {
-    "title": "Side",
-    "description": "Our new experience is taking shape.",
-    "otherLocale": "View in Portuguese"
+  "FakeError": {
+    "heading": "This site can’t be reached",
+    "description": "sidecode.com.br unexpectedly closed the connection.",
+    "tryLabel": "Try:",
+    "checkConnection": "Checking the connection",
+    "checkProxy": "Checking the proxy and the firewall",
+    "runDiagnostics": "Running Windows Network Diagnostics",
+    "reload": "Reload",
+    "learnMore": "Learn more"
   }
 }

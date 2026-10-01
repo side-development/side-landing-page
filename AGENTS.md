@@ -1,3 +1,7 @@
+## Validação visual antes do envio
+
+Mantenha mudanças visuais locais e apresente uma prévia funcional ao usuário. Faça push ou abra/atualize PRs com essas mudanças somente após aprovação visual explícita do usuário. Preserve a issue visual aberta enquanto aguarda essa validação.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 # This is NOT the Next.js you know

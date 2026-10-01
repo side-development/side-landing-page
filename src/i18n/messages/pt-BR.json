@@ -1,11 +1,16 @@
 {
   "Metadata": {
-    "title": "Side — Experiências digitais",
+    "title": "Side",
     "description": "A Side cria experiências digitais com design, tecnologia e movimento."
   },
-  "Home": {
-    "title": "Side",
-    "description": "Nossa nova experiência está em construção.",
-    "otherLocale": "Ver em inglês"
+  "FakeError": {
+    "heading": "Não é possível acessar esse site",
+    "description": "sidecode.com.br encerrou a conexão inesperadamente.",
+    "tryLabel": "Tente:",
+    "checkConnection": "Verificar a conexão",
+    "checkProxy": "Verificar o proxy e o firewall",
+    "runDiagnostics": "Executar o Diagnóstico de Rede do Windows",
+    "reload": "Recarregar",
+    "learnMore": "Saiba mais"
   }
 }
