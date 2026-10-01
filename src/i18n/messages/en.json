@@ -3,9 +3,9 @@
     "title": "Side — Digital experiences",
     "description": "Side creates digital experiences through design, technology and motion."
   },
-  "Home": {
-    "title": "Side",
-    "description": "Our new experience is taking shape.",
-    "otherLocale": "View in Portuguese"
+  "FakeError": {
+    "heading": "This page isn’t working",
+    "description": "sidecode.com.br didn’t send any data.",
+    "reload": "Reload"
   }
 }

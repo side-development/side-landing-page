@@ -3,9 +3,9 @@
     "title": "Side — Experiências digitais",
     "description": "A Side cria experiências digitais com design, tecnologia e movimento."
   },
-  "Home": {
-    "title": "Side",
-    "description": "Nossa nova experiência está em construção.",
-    "otherLocale": "Ver em inglês"
+  "FakeError": {
+    "heading": "Esta página não está funcionando",
+    "description": "Nenhum dado foi enviado por sidecode.com.br",
+    "reload": "Recarregar"
   }
 }
