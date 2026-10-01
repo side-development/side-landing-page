@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: locale === "en" ? "/en" : "/",
       languages: { "pt-BR": "/", en: "/en", "x-default": "/" },
     },
-    icons: { icon: "/favicon.svg" },
+    icons: { icon: { url: "/favicon.svg", type: "image/svg+xml", sizes: "any" } },
   };
 }
 

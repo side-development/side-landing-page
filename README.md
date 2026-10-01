@@ -34,6 +34,7 @@ npm start
 - GSAP + `@gsap/react` em componentes de experiência isolados. `useGSAP` controla escopo e cleanup; `gsap.matchMedia` oferece uma alternativa para reduced motion e responde a mudanças da preferência.
 - `src/features/`: experiências; `src/components/`: UI reutilizável; `src/lib/`: utilitários quando necessários.
 - `public/brand/`: assets existentes preservados; `public/media/`: mídia futura.
+- Guia com título “Side” nos dois idiomas e favicon derivado da logo existente: preto no tema claro, branco no escuro, com fundo transparente e ponto roxo preservado.
 
 Sem outras páginas, bibliotecas visuais, CMS ou infraestrutura antecipada.
 

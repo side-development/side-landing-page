@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "errors": [],
+  "routes": [
+    {
+      "route": "/",
+      "colorScheme": "light",
+      "title": "Side",
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "colorScheme": "light",
+      "title": "Side",
+      "status": "pass"
+    },
+    {
+      "route": "/",
+      "colorScheme": "dark",
+      "title": "Side",
+      "status": "pass"
+    },
+    {
+      "route": "/en",
+      "colorScheme": "dark",
+      "title": "Side",
+      "status": "pass"
+    }
+  ],
+  "favicon": [
+    {
+      "colorScheme": "light",
+      "fill": "rgb(0, 0, 0)",
+      "status": "pass"
+    },
+    {
+      "colorScheme": "dark",
+      "fill": "rgb(255, 255, 255)",
+      "status": "pass"
+    }
+  ],
+  "liveThemeChange": "pass"
+}
