@@ -2,7 +2,7 @@
   "status": "pass",
   "checks": [
     {
-      "navbar": "purple underline, black ordinary labels, purple contact",
+      "navbar": "black ordinary labels/underlines, purple contact/underline",
       "status": "pass"
     },
     {
