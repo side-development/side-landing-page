@@ -66,6 +66,6 @@ Para revisar sempre a intro, abrir `/?intro=replay` ou `/en?intro=replay`. Ao te
 
 Trabalhos, Serviços, Por que Side e contato mantêm aparência de navegação, sem destino, conforme decisão do usuário nesta entrega. EN/PT foi removido da navbar na revisão visual; `/en` continua disponível diretamente. A futura troca de idioma no footer está fora deste escopo. Não há outras seções ou páginas.
 
-A revisão alonga a destruição, destaca palavras em negrito/roxo e mantém a frase inteiramente preta sobre o fundo roxo. A superfície roxa converge de forma contínua até o ponto, sem blocos independentes. Contato e replay usam o roxo Side; o contato preserva um único sublinhado, sem duplicá-lo no hover.
+A revisão alonga a destruição e destaca palavras em negrito/roxo nas frases de impacto, sem ponto final. Sobre o fundo roxo, o texto continua branco e apenas o destaque passa gradualmente a preto. A superfície roxa converge circularmente até o ponto em 3,1 s, mantendo seu centro fixo e suavizando a chegada. Contato e replay usam o roxo Side; o contato tem peso semibold, enquanto os outros itens da navbar continuam pretos e com peso padrão. Todos os textos da navbar recebem sublinhado que entra da esquerda somente no hover/foco, sem animação com reduced motion.
 
 Evidências e critérios: [validação da Hero completa](docs/validation/hero-cinematic.md). Push/PR aguardam aprovação visual explícita.

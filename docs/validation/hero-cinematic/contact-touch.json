@@ -1,0 +1,9 @@
+{
+  "contactColor": "rgb(57, 25, 189)",
+  "dotColor": "rgb(57, 25, 189)",
+  "status": "pass",
+  "mobileTouch": true,
+  "underlineBefore": 0,
+  "underlineAfterTap": 0,
+  "destination": false
+}

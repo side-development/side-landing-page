@@ -5,7 +5,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 1800,
-      "actualAt": 2134,
+      "actualAt": 1978,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -28,12 +28,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "desktop-pt-BR",
       "at": 2700,
-      "actualAt": 2981,
+      "actualAt": 2842,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -56,12 +71,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "desktop-pt-BR",
       "at": 3900,
-      "actualAt": 4238,
+      "actualAt": 4129,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -84,12 +114,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "desktop-pt-BR",
       "at": 5300,
-      "actualAt": 5470,
+      "actualAt": 5448,
       "fragments": 100,
       "phrase": [
         "Frustrante, não é?"
@@ -114,15 +159,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "desktop-pt-BR",
       "at": 8100,
-      "actualAt": 8325,
+      "actualAt": 8195,
       "fragments": 100,
       "phrase": [
-        "Agora imagine seus clientes."
+        "Agora imagine seus clientes"
       ],
       "overflow": false,
       "emphasis": [
@@ -144,15 +204,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "desktop-pt-BR",
       "at": 10700,
-      "actualAt": 10809,
+      "actualAt": 10785,
       "fragments": 100,
       "phrase": [
-        "A presença digital do seu negócio deveria trabalhar por você."
+        "A presença digital do seu negócio deveria trabalhar por você"
       ],
       "overflow": false,
       "emphasis": [
@@ -174,42 +249,72 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "desktop-pt-BR",
       "at": 13300,
-      "actualAt": 13403,
+      "actualAt": 13463,
       "fragments": 100,
       "phrase": [
-        "A presença digital do seu negócio deveria trabalhar por você."
+        "A presença digital do seu negócio deveria trabalhar por você"
       ],
       "overflow": false,
       "emphasis": [
         {
           "text": "Frustrante",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(6, 3, 21)",
           "weight": "700"
         },
         {
           "text": "seus clientes",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(6, 3, 21)",
           "weight": "700"
         },
         {
           "text": "trabalhar por você",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(6, 3, 21)",
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
       "at": 14500,
-      "actualAt": 15143,
+      "actualAt": 14638,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -230,14 +335,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
       "at": 15100,
-      "actualAt": 15438,
+      "actualAt": 15274,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -258,14 +378,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 648.6087646484375,
+        "bounds": {
+          "x": 140.80548095703125,
+          "y": -137.48275756835938,
+          "width": 1297.217529296875,
+          "height": 1297.217529296875,
+          "top": -137.48275756835938,
+          "right": 1438.0230102539062,
+          "bottom": 1159.7347717285156,
+          "left": 140.80548095703125
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
       "at": 15900,
-      "actualAt": 16216,
+      "actualAt": 16103,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -286,14 +421,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 182.60247802734375,
+        "bounds": {
+          "x": 606.811767578125,
+          "y": 328.5235290527344,
+          "width": 365.2049560546875,
+          "height": 365.2049865722656,
+          "top": 328.5235290527344,
+          "right": 972.0167236328125,
+          "bottom": 693.728515625,
+          "left": 606.811767578125
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
       "at": 16500,
-      "actualAt": 16691,
+      "actualAt": 16779,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -314,14 +464,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 52.25082778930664,
+        "bounds": {
+          "x": 737.1633911132812,
+          "y": 458.87518310546875,
+          "width": 104.50164794921875,
+          "height": 104.50164794921875,
+          "top": 458.87518310546875,
+          "right": 841.6650390625,
+          "bottom": 563.3768310546875,
+          "left": 737.1633911132812
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
       "at": 18400,
-      "actualAt": 18981,
+      "actualAt": 18553,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -342,14 +507,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 20.47893524169922,
+        "bounds": {
+          "x": 768.935302734375,
+          "y": 490.6470642089844,
+          "width": 40.9578857421875,
+          "height": 40.957855224609375,
+          "top": 490.6470642089844,
+          "right": 809.8931884765625,
+          "bottom": 531.6049194335938,
+          "left": 768.935302734375
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
       "at": 20700,
-      "actualAt": 20961,
+      "actualAt": 20882,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -370,20 +550,35 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 20.47893524169922,
+        "bounds": {
+          "x": 768.935302734375,
+          "y": 490.6470642089844,
+          "width": 40.9578857421875,
+          "height": 40.957855224609375,
+          "top": 490.6470642089844,
+          "right": 809.8931884765625,
+          "bottom": 531.6049194335938,
+          "left": 768.935302734375
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@78f2fd41dc22227b621974ee208ed771.webm",
-      "videoDuration": 25.508,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@ba21b04eb21e7a938daf7cbab44106a0.webm",
+      "videoDuration": 29.006,
       "complete": true
     },
     {
       "name": "mobile-pt-BR",
       "at": 1800,
-      "actualAt": 1875,
+      "actualAt": 1854,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -406,12 +601,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-pt-BR",
       "at": 2700,
-      "actualAt": 2773,
+      "actualAt": 2763,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -434,12 +644,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-pt-BR",
       "at": 3900,
-      "actualAt": 4015,
+      "actualAt": 3969,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -462,12 +687,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-pt-BR",
       "at": 5300,
-      "actualAt": 5527,
+      "actualAt": 5370,
       "fragments": 50,
       "phrase": [
         "Frustrante, não é?"
@@ -492,15 +732,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-pt-BR",
       "at": 8100,
-      "actualAt": 8167,
+      "actualAt": 8161,
       "fragments": 50,
       "phrase": [
-        "Agora imagine seus clientes."
+        "Agora imagine seus clientes"
       ],
       "overflow": false,
       "emphasis": [
@@ -522,15 +777,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-pt-BR",
       "at": 10700,
-      "actualAt": 10800,
+      "actualAt": 10774,
       "fragments": 50,
       "phrase": [
-        "A presença digital do seu negócio deveria trabalhar por você."
+        "A presença digital do seu negócio deveria trabalhar por você"
       ],
       "overflow": false,
       "emphasis": [
@@ -552,42 +822,72 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-pt-BR",
       "at": 13300,
-      "actualAt": 13387,
+      "actualAt": 13450,
       "fragments": 50,
       "phrase": [
-        "A presença digital do seu negócio deveria trabalhar por você."
+        "A presença digital do seu negócio deveria trabalhar por você"
       ],
       "overflow": false,
       "emphasis": [
         {
           "text": "Frustrante",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(7, 3, 25)",
           "weight": "700"
         },
         {
           "text": "seus clientes",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(7, 3, 25)",
           "weight": "700"
         },
         {
           "text": "trabalhar por você",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(7, 3, 25)",
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "mobile-pt-BR",
       "at": 14500,
-      "actualAt": 14579,
+      "actualAt": 14563,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -608,14 +908,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "mobile-pt-BR",
       "at": 15100,
-      "actualAt": 15219,
+      "actualAt": 15184,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -636,14 +951,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 405.1180114746094,
+        "bounds": {
+          "x": -160.24473571777344,
+          "y": 60.800262451171875,
+          "width": 810.2360229492188,
+          "height": 810.2359619140625,
+          "top": 60.800262451171875,
+          "right": 649.9912872314453,
+          "bottom": 871.0362243652344,
+          "left": -160.24473571777344
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "mobile-pt-BR",
       "at": 15900,
-      "actualAt": 16067,
+      "actualAt": 15992,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -664,392 +994,473 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 131.84808349609375,
+        "bounds": {
+          "x": 113.02519226074219,
+          "y": 334.0701904296875,
+          "width": 263.6961669921875,
+          "height": 263.6961669921875,
+          "top": 334.0701904296875,
+          "right": 376.7213592529297,
+          "bottom": 597.766357421875,
+          "left": 113.02519226074219
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "mobile-pt-BR",
-      "at": 16500,
-      "actualAt": 16599,
-      "fragments": 50,
-      "phrase": [],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrante",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "seus clientes",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "trabalhar por você",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(0, 0, 0)",
-      "continuous": "visible",
-      "purpleFragments": "hidden"
-    },
-    {
-      "name": "mobile-pt-BR",
-      "at": 18400,
-      "actualAt": 18523,
-      "fragments": 50,
-      "phrase": [],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrante",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "seus clientes",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "trabalhar por você",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(0, 0, 0)",
-      "continuous": "visible",
-      "purpleFragments": "hidden"
-    },
-    {
-      "name": "mobile-pt-BR",
-      "at": 20700,
-      "actualAt": 20783,
-      "fragments": 50,
-      "phrase": [],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrante",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "seus clientes",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "trabalhar por você",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(0, 0, 0)",
-      "continuous": "visible",
-      "purpleFragments": "hidden"
-    },
-    {
-      "name": "mobile-pt-BR",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@30c5071dc33d2443703d3e24106a20a3.webm",
-      "videoDuration": 23.969,
-      "complete": true
-    },
-    {
-      "name": "desktop-en",
-      "at": 1800,
-      "actualAt": 1919,
-      "fragments": 100,
-      "phrase": [],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrating",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "your customers",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "work for you",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(255, 255, 255)",
-      "continuous": "hidden",
-      "purpleFragments": "visible"
-    },
-    {
-      "name": "desktop-en",
-      "at": 2700,
-      "actualAt": 2861,
-      "fragments": 100,
-      "phrase": [],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrating",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "your customers",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "work for you",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(255, 255, 255)",
-      "continuous": "hidden",
-      "purpleFragments": "visible"
-    },
-    {
-      "name": "desktop-en",
-      "at": 3900,
-      "actualAt": 4067,
-      "fragments": 100,
-      "phrase": [],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrating",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "your customers",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "work for you",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(255, 255, 255)",
-      "continuous": "hidden",
-      "purpleFragments": "visible"
-    },
-    {
-      "name": "desktop-en",
-      "at": 5300,
-      "actualAt": 5426,
-      "fragments": 100,
-      "phrase": [
-        "Frustrating, isn’t it?"
-      ],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrating",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "your customers",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "work for you",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(255, 255, 255)",
-      "continuous": "hidden",
-      "purpleFragments": "visible"
-    },
-    {
-      "name": "desktop-en",
-      "at": 8100,
-      "actualAt": 8256,
-      "fragments": 100,
-      "phrase": [
-        "Now imagine your customers."
-      ],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrating",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "your customers",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "work for you",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(255, 255, 255)",
-      "continuous": "hidden",
-      "purpleFragments": "visible"
-    },
-    {
-      "name": "desktop-en",
-      "at": 10700,
-      "actualAt": 10851,
-      "fragments": 100,
-      "phrase": [
-        "Your digital presence should work for you."
-      ],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrating",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "your customers",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        },
-        {
-          "text": "work for you",
-          "color": "rgb(57, 25, 189)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(255, 255, 255)",
-      "continuous": "hidden",
-      "purpleFragments": "visible"
-    },
-    {
-      "name": "desktop-en",
-      "at": 13300,
-      "actualAt": 13397,
-      "fragments": 100,
-      "phrase": [
-        "Your digital presence should work for you."
-      ],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrating",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "your customers",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "work for you",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(0, 0, 0)",
-      "continuous": "visible",
-      "purpleFragments": "hidden"
-    },
-    {
-      "name": "desktop-en",
-      "at": 14500,
-      "actualAt": 14679,
-      "fragments": 100,
-      "phrase": [],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrating",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "your customers",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "work for you",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(0, 0, 0)",
-      "continuous": "visible",
-      "purpleFragments": "hidden"
-    },
-    {
-      "name": "desktop-en",
-      "at": 15100,
-      "actualAt": 15796,
-      "fragments": 100,
-      "phrase": [],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrating",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "your customers",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "work for you",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(0, 0, 0)",
-      "continuous": "visible",
-      "purpleFragments": "hidden"
-    },
-    {
-      "name": "desktop-en",
-      "at": 15900,
-      "actualAt": 16155,
-      "fragments": 100,
-      "phrase": [],
-      "overflow": false,
-      "emphasis": [
-        {
-          "text": "Frustrating",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "your customers",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        },
-        {
-          "text": "work for you",
-          "color": "rgb(0, 0, 0)",
-          "weight": "700"
-        }
-      ],
-      "phraseColor": "rgb(0, 0, 0)",
-      "continuous": "visible",
-      "purpleFragments": "hidden"
-    },
-    {
-      "name": "desktop-en",
       "at": 16500,
       "actualAt": 16661,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 43.630924224853516,
+        "bounds": {
+          "x": 201.2423553466797,
+          "y": 422.287353515625,
+          "width": 87.26185607910156,
+          "height": 87.2618408203125,
+          "top": 422.287353515625,
+          "right": 288.50421142578125,
+          "bottom": 509.5491943359375,
+          "left": 201.2423553466797
+        }
+      },
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 18400,
+      "actualAt": 18466,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 14.71385669708252,
+        "bounds": {
+          "x": 230.159423828125,
+          "y": 451.20440673828125,
+          "width": 29.427703857421875,
+          "height": 29.427703857421875,
+          "top": 451.20440673828125,
+          "right": 259.5871276855469,
+          "bottom": 480.6321105957031,
+          "left": 230.159423828125
+        }
+      },
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 20700,
+      "actualAt": 20760,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 14.71385669708252,
+        "bounds": {
+          "x": 230.159423828125,
+          "y": 451.20440673828125,
+          "width": 29.427703857421875,
+          "height": 29.427703857421875,
+          "top": 451.20440673828125,
+          "right": 259.5871276855469,
+          "bottom": 480.6321105957031,
+          "left": 230.159423828125
+        }
+      },
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "mobile-pt-BR",
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@36d7d656755ba31d158fede951578c3e.webm",
+      "videoDuration": 26.925,
+      "complete": true
+    },
+    {
+      "name": "desktop-en",
+      "at": 1800,
+      "actualAt": 1916,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "desktop-en",
+      "at": 2700,
+      "actualAt": 2781,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "desktop-en",
+      "at": 3900,
+      "actualAt": 4016,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "desktop-en",
+      "at": 5300,
+      "actualAt": 5376,
+      "fragments": 100,
+      "phrase": [
+        "Frustrating, isn’t it?"
+      ],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "desktop-en",
+      "at": 8100,
+      "actualAt": 8182,
+      "fragments": 100,
+      "phrase": [
+        "Now imagine your customers"
+      ],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "desktop-en",
+      "at": 10700,
+      "actualAt": 10803,
+      "fragments": 100,
+      "phrase": [
+        "Your digital presence should work for you"
+      ],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "desktop-en",
+      "at": 13300,
+      "actualAt": 13509,
+      "fragments": 100,
+      "phrase": [
+        "Your digital presence should work for you"
+      ],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(4, 2, 14)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(4, 2, 14)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(4, 2, 14)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "desktop-en",
+      "at": 14500,
+      "actualAt": 14690,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1070,14 +1481,158 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 942.4385375976562,
+        "bounds": {
+          "x": -153.0242919921875,
+          "y": -431.3125305175781,
+          "width": 1884.8770751953125,
+          "height": 1884.8770751953125,
+          "top": -431.3125305175781,
+          "right": 1731.852783203125,
+          "bottom": 1453.5645446777344,
+          "left": -153.0242919921875
+        }
+      },
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "desktop-en",
+      "at": 15100,
+      "actualAt": 15350,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 610.3515625,
+        "bounds": {
+          "x": 179.06268310546875,
+          "y": -99.22555541992188,
+          "width": 1220.703125,
+          "height": 1220.703125,
+          "top": -99.22555541992188,
+          "right": 1399.7658081054688,
+          "bottom": 1121.4775695800781,
+          "left": 179.06268310546875
+        }
+      },
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "desktop-en",
+      "at": 15900,
+      "actualAt": 16106,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 172.1652374267578,
+        "bounds": {
+          "x": 617.2490234375,
+          "y": 338.96075439453125,
+          "width": 344.3304443359375,
+          "height": 344.33050537109375,
+          "top": 338.96075439453125,
+          "right": 961.5794677734375,
+          "bottom": 683.291259765625,
+          "left": 617.2490234375
+        }
+      },
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "desktop-en",
+      "at": 16500,
+      "actualAt": 16859,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 45.82283401489258,
+        "bounds": {
+          "x": 743.5914306640625,
+          "y": 465.30316162109375,
+          "width": 91.64569091796875,
+          "height": 91.64569091796875,
+          "top": 465.30316162109375,
+          "right": 835.2371215820312,
+          "bottom": 556.9488525390625,
+          "left": 743.5914306640625
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "desktop-en",
       "at": 18400,
-      "actualAt": 18562,
+      "actualAt": 18837,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1098,14 +1653,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 20.47893524169922,
+        "bounds": {
+          "x": 768.935302734375,
+          "y": 490.6470642089844,
+          "width": 40.9578857421875,
+          "height": 40.957855224609375,
+          "top": 490.6470642089844,
+          "right": 809.8931884765625,
+          "bottom": 531.6049194335938,
+          "left": 768.935302734375
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "desktop-en",
       "at": 20700,
-      "actualAt": 20943,
+      "actualAt": 20846,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1126,20 +1696,35 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 789.4142456054688,
+        "cy": 511.1260070800781,
+        "r": 20.47893524169922,
+        "bounds": {
+          "x": 768.935302734375,
+          "y": 490.6470642089844,
+          "width": 40.9578857421875,
+          "height": 40.957855224609375,
+          "top": 490.6470642089844,
+          "right": 809.8931884765625,
+          "bottom": 531.6049194335938,
+          "left": 768.935302734375
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "desktop-en",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@efdb5a312a332f94b28ef2953f9339b9.webm",
-      "videoDuration": 24.391,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@2423af6b993dc794478e436bd8823efc.webm",
+      "videoDuration": 27.105,
       "complete": true
     },
     {
       "name": "mobile-en",
       "at": 1800,
-      "actualAt": 1883,
+      "actualAt": 2027,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1162,12 +1747,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-en",
       "at": 2700,
-      "actualAt": 2788,
+      "actualAt": 2767,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1190,12 +1790,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-en",
       "at": 3900,
-      "actualAt": 4039,
+      "actualAt": 3953,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1218,12 +1833,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-en",
       "at": 5300,
-      "actualAt": 5357,
+      "actualAt": 5364,
       "fragments": 50,
       "phrase": [
         "Frustrating, isn’t it?"
@@ -1248,15 +1878,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-en",
       "at": 8100,
-      "actualAt": 8164,
+      "actualAt": 8151,
       "fragments": 50,
       "phrase": [
-        "Now imagine your customers."
+        "Now imagine your customers"
       ],
       "overflow": false,
       "emphasis": [
@@ -1278,15 +1923,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-en",
       "at": 10700,
-      "actualAt": 10768,
+      "actualAt": 10840,
       "fragments": 50,
       "phrase": [
-        "Your digital presence should work for you."
+        "Your digital presence should work for you"
       ],
       "overflow": false,
       "emphasis": [
@@ -1308,42 +1968,72 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "mobile-en",
       "at": 13300,
-      "actualAt": 13351,
+      "actualAt": 13468,
       "fragments": 50,
       "phrase": [
-        "Your digital presence should work for you."
+        "Your digital presence should work for you"
       ],
       "overflow": false,
       "emphasis": [
         {
           "text": "Frustrating",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(3, 1, 11)",
           "weight": "700"
         },
         {
           "text": "your customers",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(3, 1, 11)",
           "weight": "700"
         },
         {
           "text": "work for you",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(3, 1, 11)",
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.3485107421875,
+        "bounds": {
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
       "at": 14500,
-      "actualAt": 14555,
+      "actualAt": 14622,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1364,14 +2054,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 528.178466796875,
+        "bounds": {
+          "x": -283.30517578125,
+          "y": -62.26019287109375,
+          "width": 1056.35693359375,
+          "height": 1056.35693359375,
+          "top": -62.26019287109375,
+          "right": 773.0517578125,
+          "bottom": 994.0967407226562,
+          "left": -283.30517578125
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
       "at": 15100,
-      "actualAt": 15219,
+      "actualAt": 15285,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1392,14 +2097,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 345.4777526855469,
+        "bounds": {
+          "x": -100.60447692871094,
+          "y": 120.44052124023438,
+          "width": 690.9555053710938,
+          "height": 690.9554443359375,
+          "top": 120.44052124023438,
+          "right": 590.3510284423828,
+          "bottom": 811.3959655761719,
+          "left": -100.60447692871094
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
       "at": 15900,
-      "actualAt": 15962,
+      "actualAt": 15959,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1420,14 +2140,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 124.66105651855469,
+        "bounds": {
+          "x": 120.21221923828125,
+          "y": 341.2572021484375,
+          "width": 249.32211303710938,
+          "height": 249.3221435546875,
+          "top": 341.2572021484375,
+          "right": 369.5343322753906,
+          "bottom": 590.579345703125,
+          "left": 120.21221923828125
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
       "at": 16500,
-      "actualAt": 16575,
+      "actualAt": 16571,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1448,14 +2183,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 43.630924224853516,
+        "bounds": {
+          "x": 201.2423553466797,
+          "y": 422.287353515625,
+          "width": 87.26185607910156,
+          "height": 87.2618408203125,
+          "top": 422.287353515625,
+          "right": 288.50421142578125,
+          "bottom": 509.5491943359375,
+          "left": 201.2423553466797
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
       "at": 18400,
-      "actualAt": 18463,
+      "actualAt": 18465,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1476,14 +2226,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 14.71385669708252,
+        "bounds": {
+          "x": 230.159423828125,
+          "y": 451.20440673828125,
+          "width": 29.427703857421875,
+          "height": 29.427703857421875,
+          "top": 451.20440673828125,
+          "right": 259.5871276855469,
+          "bottom": 480.6321105957031,
+          "left": 230.159423828125
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
       "at": 20700,
-      "actualAt": 20896,
+      "actualAt": 20782,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1504,20 +2269,35 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 244.87327575683594,
+        "cy": 465.91827392578125,
+        "r": 14.71385669708252,
+        "bounds": {
+          "x": 230.159423828125,
+          "y": 451.20440673828125,
+          "width": 29.427703857421875,
+          "height": 29.427703857421875,
+          "top": 451.20440673828125,
+          "right": 259.5871276855469,
+          "bottom": 480.6321105957031,
+          "left": 230.159423828125
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@82c2943afbb4f4453b4ec51d69989ff3.webm",
-      "videoDuration": 23.975,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@08a2560df2d64e9b48b61a5fdc986eb0.webm",
+      "videoDuration": 27.841,
       "complete": true
     },
     {
       "name": "reduced-pt-BR",
       "at": 1600,
-      "actualAt": 1875,
+      "actualAt": 1766,
       "fragments": 0,
       "phrase": [
         "Frustrante, não é?"
@@ -1542,15 +2322,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
       "at": 4600,
-      "actualAt": 4767,
+      "actualAt": 4735,
       "fragments": 0,
       "phrase": [
-        "Agora imagine seus clientes."
+        "Agora imagine seus clientes"
       ],
       "overflow": false,
       "emphasis": [
@@ -1572,15 +2367,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
       "at": 7800,
-      "actualAt": 7876,
+      "actualAt": 7923,
       "fragments": 0,
       "phrase": [
-        "A presença digital do seu negócio deveria trabalhar por você."
+        "A presença digital do seu negócio deveria trabalhar por você"
       ],
       "overflow": false,
       "emphasis": [
@@ -1602,15 +2412,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
       "at": 9900,
-      "actualAt": 9980,
+      "actualAt": 10059,
       "fragments": 0,
       "phrase": [
-        "A presença digital do seu negócio deveria trabalhar por você."
+        "A presença digital do seu negócio deveria trabalhar por você"
       ],
       "overflow": false,
       "emphasis": [
@@ -1630,16 +2455,33 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
       "at": 10800,
-      "actualAt": 10904,
+      "actualAt": 10953,
       "fragments": 0,
-      "phrase": [],
+      "phrase": [
+        "A presença digital do seu negócio deveria trabalhar por você"
+      ],
       "overflow": false,
       "emphasis": [
         {
@@ -1658,14 +2500,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
       "at": 12500,
-      "actualAt": 12717,
+      "actualAt": 12695,
       "fragments": 0,
       "phrase": [],
       "overflow": false,
@@ -1686,14 +2543,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
       "at": 14400,
-      "actualAt": 14626,
+      "actualAt": 14583,
       "fragments": 0,
       "phrase": [],
       "overflow": false,
@@ -1714,20 +2586,35 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@d62bf1063d70cfb3dbaaeb040be9b1e6.webm",
-      "videoDuration": 19.447,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@24814ea9075387b37f973634204ed77e.webm",
+      "videoDuration": 21.309,
       "complete": true
     },
     {
       "name": "reduced-en",
       "at": 1600,
-      "actualAt": 1656,
+      "actualAt": 1679,
       "fragments": 0,
       "phrase": [
         "Frustrating, isn’t it?"
@@ -1752,15 +2639,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
       "at": 4600,
-      "actualAt": 4648,
+      "actualAt": 4657,
       "fragments": 0,
       "phrase": [
-        "Now imagine your customers."
+        "Now imagine your customers"
       ],
       "overflow": false,
       "emphasis": [
@@ -1782,6 +2684,21 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
@@ -1790,7 +2707,7 @@
       "actualAt": 7862,
       "fragments": 0,
       "phrase": [
-        "Your digital presence should work for you."
+        "Your digital presence should work for you"
       ],
       "overflow": false,
       "emphasis": [
@@ -1812,15 +2729,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
       "at": 9900,
-      "actualAt": 9934,
+      "actualAt": 9960,
       "fragments": 0,
       "phrase": [
-        "Your digital presence should work for you."
+        "Your digital presence should work for you"
       ],
       "overflow": false,
       "emphasis": [
@@ -1840,17 +2772,32 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
       "at": 10800,
-      "actualAt": 10839,
+      "actualAt": 10840,
       "fragments": 0,
       "phrase": [
-        "Your digital presence should work for you."
+        "Your digital presence should work for you"
       ],
       "overflow": false,
       "emphasis": [
@@ -1870,14 +2817,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
       "at": 12500,
-      "actualAt": 12589,
+      "actualAt": 12568,
       "fragments": 0,
       "phrase": [],
       "overflow": false,
@@ -1898,14 +2860,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
       "at": 14400,
-      "actualAt": 14462,
+      "actualAt": 14459,
       "fragments": 0,
       "phrase": [],
       "overflow": false,
@@ -1926,20 +2903,35 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 0,
+        "cy": 0,
+        "r": 0,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@7314ee2cc47d803d4eea3b676f71be1d.webm",
-      "videoDuration": 19.019,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@a3ff1b38f680bb0c8a796045a1d72681.webm",
+      "videoDuration": 20.553,
       "complete": true
     },
     {
       "name": "small-mobile",
       "at": 1800,
-      "actualAt": 1848,
+      "actualAt": 1874,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1962,12 +2954,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 381.2545471191406,
+        "bounds": {
+          "x": -179.25599670410156,
+          "y": -60.270751953125,
+          "width": 762.5090942382812,
+          "height": 762.5090942382812,
+          "top": -60.270751953125,
+          "right": 583.2530975341797,
+          "bottom": 702.2383422851562,
+          "left": -179.25599670410156
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "small-mobile",
       "at": 2700,
-      "actualAt": 2780,
+      "actualAt": 2744,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1990,12 +2997,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 381.2545471191406,
+        "bounds": {
+          "x": -179.25599670410156,
+          "y": -60.270751953125,
+          "width": 762.5090942382812,
+          "height": 762.5090942382812,
+          "top": -60.270751953125,
+          "right": 583.2530975341797,
+          "bottom": 702.2383422851562,
+          "left": -179.25599670410156
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "small-mobile",
       "at": 3900,
-      "actualAt": 3940,
+      "actualAt": 3959,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2018,12 +3040,27 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 381.2545471191406,
+        "bounds": {
+          "x": -179.25599670410156,
+          "y": -60.270751953125,
+          "width": 762.5090942382812,
+          "height": 762.5090942382812,
+          "top": -60.270751953125,
+          "right": 583.2530975341797,
+          "bottom": 702.2383422851562,
+          "left": -179.25599670410156
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "small-mobile",
       "at": 5300,
-      "actualAt": 5356,
+      "actualAt": 5362,
       "fragments": 50,
       "phrase": [
         "Frustrante, não é?"
@@ -2048,15 +3085,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 381.2545471191406,
+        "bounds": {
+          "x": -179.25599670410156,
+          "y": -60.270751953125,
+          "width": 762.5090942382812,
+          "height": 762.5090942382812,
+          "top": -60.270751953125,
+          "right": 583.2530975341797,
+          "bottom": 702.2383422851562,
+          "left": -179.25599670410156
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "small-mobile",
       "at": 8100,
-      "actualAt": 8141,
+      "actualAt": 8181,
       "fragments": 50,
       "phrase": [
-        "Agora imagine seus clientes."
+        "Agora imagine seus clientes"
       ],
       "overflow": false,
       "emphasis": [
@@ -2078,15 +3130,30 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 381.2545471191406,
+        "bounds": {
+          "x": -179.25599670410156,
+          "y": -60.270751953125,
+          "width": 762.5090942382812,
+          "height": 762.5090942382812,
+          "top": -60.270751953125,
+          "right": 583.2530975341797,
+          "bottom": 702.2383422851562,
+          "left": -179.25599670410156
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "small-mobile",
       "at": 10700,
-      "actualAt": 10747,
+      "actualAt": 10778,
       "fragments": 50,
       "phrase": [
-        "A presença digital do seu negócio deveria trabalhar por você."
+        "A presença digital do seu negócio deveria trabalhar por você"
       ],
       "overflow": false,
       "emphasis": [
@@ -2108,42 +3175,72 @@
       ],
       "phraseColor": "rgb(255, 255, 255)",
       "continuous": "hidden",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 381.2545471191406,
+        "bounds": {
+          "x": -179.25599670410156,
+          "y": -60.270751953125,
+          "width": 762.5090942382812,
+          "height": 762.5090942382812,
+          "top": -60.270751953125,
+          "right": 583.2530975341797,
+          "bottom": 702.2383422851562,
+          "left": -179.25599670410156
+        }
+      },
       "purpleFragments": "visible"
     },
     {
       "name": "small-mobile",
       "at": 13300,
-      "actualAt": 13360,
+      "actualAt": 13371,
       "fragments": 50,
       "phrase": [
-        "A presença digital do seu negócio deveria trabalhar por você."
+        "A presença digital do seu negócio deveria trabalhar por você"
       ],
       "overflow": false,
       "emphasis": [
         {
           "text": "Frustrante",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(15, 6, 49)",
           "weight": "700"
         },
         {
           "text": "seus clientes",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(15, 6, 49)",
           "weight": "700"
         },
         {
           "text": "trabalhar por você",
-          "color": "rgb(0, 0, 0)",
+          "color": "rgb(15, 6, 49)",
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 381.2545471191406,
+        "bounds": {
+          "x": -179.25599670410156,
+          "y": -60.270751953125,
+          "width": 762.5090942382812,
+          "height": 762.5090942382812,
+          "top": -60.270751953125,
+          "right": 583.2530975341797,
+          "bottom": 702.2383422851562,
+          "left": -179.25599670410156
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
       "at": 14500,
-      "actualAt": 14666,
+      "actualAt": 14568,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2164,14 +3261,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 381.2545471191406,
+        "bounds": {
+          "x": -179.25599670410156,
+          "y": -60.270751953125,
+          "width": 762.5090942382812,
+          "height": 762.5090942382812,
+          "top": -60.270751953125,
+          "right": 583.2530975341797,
+          "bottom": 702.2383422851562,
+          "left": -179.25599670410156
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
       "at": 15100,
-      "actualAt": 15200,
+      "actualAt": 15169,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2192,14 +3304,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 304.85736083984375,
+        "bounds": {
+          "x": -102.85881042480469,
+          "y": 16.126434326171875,
+          "width": 609.7147216796875,
+          "height": 609.7147216796875,
+          "top": 16.126434326171875,
+          "right": 506.8559112548828,
+          "bottom": 625.8411560058594,
+          "left": -102.85881042480469
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
       "at": 15900,
-      "actualAt": 16003,
+      "actualAt": 15960,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2220,14 +3347,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 109.4869384765625,
+        "bounds": {
+          "x": 92.51161193847656,
+          "y": 211.49685668945312,
+          "width": 218.97386169433594,
+          "height": 218.973876953125,
+          "top": 211.49685668945312,
+          "right": 311.4854736328125,
+          "bottom": 430.4707336425781,
+          "left": 92.51161193847656
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
       "at": 16500,
-      "actualAt": 16558,
+      "actualAt": 16559,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2248,14 +3390,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 40.998477935791016,
+        "bounds": {
+          "x": 161.0000762939453,
+          "y": 279.9853210449219,
+          "width": 81.99696350097656,
+          "height": 81.9969482421875,
+          "top": 279.9853210449219,
+          "right": 242.99703979492188,
+          "bottom": 361.9822692871094,
+          "left": 161.0000762939453
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
       "at": 18400,
-      "actualAt": 18442,
+      "actualAt": 18480,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2276,14 +3433,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 12.390617370605469,
+        "bounds": {
+          "x": 189.60794067382812,
+          "y": 308.5931701660156,
+          "width": 24.781234741210938,
+          "height": 24.781219482421875,
+          "top": 308.5931701660156,
+          "right": 214.38917541503906,
+          "bottom": 333.3743896484375,
+          "left": 189.60794067382812
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
       "at": 20700,
-      "actualAt": 20844,
+      "actualAt": 20762,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2304,14 +3476,29 @@
           "weight": "700"
         }
       ],
-      "phraseColor": "rgb(0, 0, 0)",
+      "phraseColor": "rgb(255, 255, 255)",
       "continuous": "visible",
+      "circle": {
+        "cx": 201.99855041503906,
+        "cy": 320.9837951660156,
+        "r": 12.390617370605469,
+        "bounds": {
+          "x": 189.60794067382812,
+          "y": 308.5931701660156,
+          "width": 24.781234741210938,
+          "height": 24.781219482421875,
+          "top": 308.5931701660156,
+          "right": 214.38917541503906,
+          "bottom": 333.3743896484375,
+          "left": 189.60794067382812
+        }
+      },
       "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@4f8e7ebdf196fb29208864823a316586.webm",
-      "videoDuration": 23.772,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@32289508e63dcacb0a09e2d213ff9e10.webm",
+      "videoDuration": 26.581,
       "complete": true
     }
   ],
@@ -2895,6 +4082,1973 @@
     {
       "name": "small-mobile",
       "status": "pass"
+    }
+  ],
+  "contact": [
+    {
+      "name": "desktop-pt-BR",
+      "normal": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "hovered": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      },
+      "keyboardUnderline": true
+    },
+    {
+      "name": "mobile-pt-BR",
+      "normal": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "hovered": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      },
+      "keyboardUnderline": true
+    },
+    {
+      "name": "desktop-en",
+      "normal": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "hovered": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      },
+      "keyboardUnderline": true
+    },
+    {
+      "name": "mobile-en",
+      "normal": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "hovered": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      },
+      "keyboardUnderline": true
+    },
+    {
+      "name": "reduced-pt-BR",
+      "normal": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0s"
+      },
+      "hovered": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0s"
+      },
+      "keyboardUnderline": true
+    },
+    {
+      "name": "reduced-en",
+      "normal": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0s"
+      },
+      "hovered": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0s"
+      },
+      "keyboardUnderline": true
+    },
+    {
+      "name": "small-mobile",
+      "normal": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "hovered": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      },
+      "keyboardUnderline": true
+    }
+  ],
+  "motion": [
+    {
+      "name": "desktop-pt-BR",
+      "colors": [
+        {
+          "at": 0.19999980926513672,
+          "color": "rgb(57, 25, 189)"
+        },
+        {
+          "at": 12692.899999856949,
+          "color": "rgb(55, 24, 182)"
+        },
+        {
+          "at": 12775.699999809265,
+          "color": "rgb(50, 22, 165)"
+        },
+        {
+          "at": 12858.099999904633,
+          "color": "rgb(44, 19, 147)"
+        },
+        {
+          "at": 12938.699999809265,
+          "color": "rgb(39, 17, 130)"
+        },
+        {
+          "at": 13022.399999856949,
+          "color": "rgb(34, 15, 112)"
+        },
+        {
+          "at": 13105.599999904633,
+          "color": "rgb(29, 13, 95)"
+        },
+        {
+          "at": 13190.399999856949,
+          "color": "rgb(23, 10, 77)"
+        },
+        {
+          "at": 13273.399999856949,
+          "color": "rgb(18, 8, 60)"
+        },
+        {
+          "at": 13358,
+          "color": "rgb(13, 6, 42)"
+        },
+        {
+          "at": 13440.299999952316,
+          "color": "rgb(7, 3, 24)"
+        },
+        {
+          "at": 13523.799999952316,
+          "color": "rgb(2, 1, 7)"
+        },
+        {
+          "at": 13607.199999809265,
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "radii": [
+        {
+          "at": 0.39999985694885254,
+          "radius": 942.4385375976562
+        },
+        {
+          "at": 14690.899999856949,
+          "radius": 941.1466674804688
+        },
+        {
+          "at": 14772.399999856949,
+          "radius": 927.5247192382812
+        },
+        {
+          "at": 14854.799999952316,
+          "radius": 900.6888427734375
+        },
+        {
+          "at": 14937.699999809265,
+          "radius": 861.4038696289062
+        },
+        {
+          "at": 15021.699999809265,
+          "radius": 813.1787109375
+        },
+        {
+          "at": 15104.599999904633,
+          "radius": 758.0564575195312
+        },
+        {
+          "at": 15189.699999809265,
+          "radius": 696.9794921875
+        },
+        {
+          "at": 15273.899999856949,
+          "radius": 635.1098022460938
+        },
+        {
+          "at": 15356.5,
+          "radius": 572.2809448242188
+        },
+        {
+          "at": 15438.399999856949,
+          "radius": 512.3577880859375
+        },
+        {
+          "at": 15519,
+          "radius": 465.9974060058594
+        },
+        {
+          "at": 15600.5,
+          "radius": 410.8697204589844
+        },
+        {
+          "at": 15681.699999809265,
+          "radius": 359.30560302734375
+        },
+        {
+          "at": 15771.299999952316,
+          "radius": 303.999267578125
+        },
+        {
+          "at": 15854.799999952316,
+          "radius": 263.26007080078125
+        },
+        {
+          "at": 15938.099999904633,
+          "radius": 226.72378540039062
+        },
+        {
+          "at": 16018.699999809265,
+          "radius": 200.8247833251953
+        },
+        {
+          "at": 16105,
+          "radius": 167.46920776367188
+        },
+        {
+          "at": 16194,
+          "radius": 143.37014770507812
+        },
+        {
+          "at": 16276.699999809265,
+          "radius": 122.94343566894531
+        },
+        {
+          "at": 16358.699999809265,
+          "radius": 105.50098419189453
+        },
+        {
+          "at": 16443.099999904633,
+          "radius": 90.02227783203125
+        },
+        {
+          "at": 16524.699999809265,
+          "radius": 77.85063171386719
+        },
+        {
+          "at": 16606.39999985695,
+          "radius": 67.19142150878906
+        },
+        {
+          "at": 16693.699999809265,
+          "radius": 57.95417404174805
+        },
+        {
+          "at": 16780.099999904633,
+          "radius": 50.92058563232422
+        },
+        {
+          "at": 16871.599999904633,
+          "radius": 43.637733459472656
+        },
+        {
+          "at": 16955.199999809265,
+          "radius": 38.637306213378906
+        },
+        {
+          "at": 17038.299999952316,
+          "radius": 34.483219146728516
+        },
+        {
+          "at": 17123.89999985695,
+          "radius": 31.011598587036133
+        },
+        {
+          "at": 17204.5,
+          "radius": 28.199405670166016
+        },
+        {
+          "at": 17288.299999952316,
+          "radius": 25.891281127929688
+        },
+        {
+          "at": 17372.599999904633,
+          "radius": 24.034643173217773
+        },
+        {
+          "at": 17455.5,
+          "radius": 22.661909103393555
+        },
+        {
+          "at": 17538.299999952316,
+          "radius": 21.607866287231445
+        },
+        {
+          "at": 17622.099999904633,
+          "radius": 20.91029930114746
+        },
+        {
+          "at": 17705.699999809265,
+          "radius": 20.539566040039062
+        },
+        {
+          "at": 17788.599999904633,
+          "radius": 20.47893524169922
+        }
+      ]
+    },
+    {
+      "name": "mobile-pt-BR",
+      "colors": [
+        {
+          "at": 0.10000014305114746,
+          "color": "rgb(57, 25, 189)"
+        },
+        {
+          "at": 12677.700000047684,
+          "color": "rgb(56, 25, 186)"
+        },
+        {
+          "at": 12760.5,
+          "color": "rgb(51, 22, 168)"
+        },
+        {
+          "at": 12844,
+          "color": "rgb(45, 20, 151)"
+        },
+        {
+          "at": 12927,
+          "color": "rgb(40, 18, 133)"
+        },
+        {
+          "at": 13009.5,
+          "color": "rgb(35, 15, 116)"
+        },
+        {
+          "at": 13099.700000047684,
+          "color": "rgb(29, 13, 97)"
+        },
+        {
+          "at": 13186.400000095367,
+          "color": "rgb(24, 10, 79)"
+        },
+        {
+          "at": 13266.800000190735,
+          "color": "rgb(19, 8, 62)"
+        },
+        {
+          "at": 13362.5,
+          "color": "rgb(13, 6, 42)"
+        },
+        {
+          "at": 13443.200000047684,
+          "color": "rgb(7, 3, 25)"
+        },
+        {
+          "at": 13525.900000095367,
+          "color": "rgb(2, 1, 7)"
+        },
+        {
+          "at": 13608.200000047684,
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "radii": [
+        {
+          "at": 0.3000001907348633,
+          "radius": 528.3485107421875
+        },
+        {
+          "at": 14684.700000047684,
+          "radius": 528.216064453125
+        },
+        {
+          "at": 14775.600000143051,
+          "radius": 520.7852172851562
+        },
+        {
+          "at": 14859.600000143051,
+          "radius": 506.4275207519531
+        },
+        {
+          "at": 14940.100000143051,
+          "radius": 490.6476745605469
+        },
+        {
+          "at": 15026.300000190735,
+          "radius": 460.5934753417969
+        },
+        {
+          "at": 15108.800000190735,
+          "radius": 431.387939453125
+        },
+        {
+          "at": 15192.700000047684,
+          "radius": 399.24078369140625
+        },
+        {
+          "at": 15275.400000095367,
+          "radius": 366.0842590332031
+        },
+        {
+          "at": 15360.900000095367,
+          "radius": 332.1748352050781
+        },
+        {
+          "at": 15442.5,
+          "radius": 299.1981201171875
+        },
+        {
+          "at": 15525.300000190735,
+          "radius": 267.44635009765625
+        },
+        {
+          "at": 15608.200000047684,
+          "radius": 237.44239807128906
+        },
+        {
+          "at": 15692.5,
+          "radius": 209.2250213623047
+        },
+        {
+          "at": 15776.400000095367,
+          "radius": 183.68458557128906
+        },
+        {
+          "at": 15859.700000047684,
+          "radius": 160.3026580810547
+        },
+        {
+          "at": 15943.900000095367,
+          "radius": 139.6327667236328
+        },
+        {
+          "at": 16025.600000143051,
+          "radius": 121.30463409423828
+        },
+        {
+          "at": 16106.100000143051,
+          "radius": 108.13057708740234
+        },
+        {
+          "at": 16192.200000047684,
+          "radius": 90.96370697021484
+        },
+        {
+          "at": 16273.200000047684,
+          "radius": 81.13615417480469
+        },
+        {
+          "at": 16355.200000047684,
+          "radius": 70.18299865722656
+        },
+        {
+          "at": 16442.700000047684,
+          "radius": 59.16218566894531
+        },
+        {
+          "at": 16527.200000047684,
+          "radius": 51.38351821899414
+        },
+        {
+          "at": 16610.5,
+          "radius": 44.843841552734375
+        },
+        {
+          "at": 16692.200000047684,
+          "radius": 39.29195785522461
+        },
+        {
+          "at": 16775.800000190735,
+          "radius": 34.59271240234375
+        },
+        {
+          "at": 16865,
+          "radius": 30.409130096435547
+        },
+        {
+          "at": 16945.700000047684,
+          "radius": 27.181049346923828
+        },
+        {
+          "at": 17025.900000095367,
+          "radius": 24.465002059936523
+        },
+        {
+          "at": 17108.400000095367,
+          "radius": 22.139766693115234
+        },
+        {
+          "at": 17192.10000014305,
+          "radius": 20.194141387939453
+        },
+        {
+          "at": 17275.10000014305,
+          "radius": 18.62152862548828
+        },
+        {
+          "at": 17358.900000095367,
+          "radius": 17.354066848754883
+        },
+        {
+          "at": 17441.900000095367,
+          "radius": 16.347976684570312
+        },
+        {
+          "at": 17525.400000095367,
+          "radius": 15.602093696594238
+        },
+        {
+          "at": 17608.60000014305,
+          "radius": 15.086090087890625
+        },
+        {
+          "at": 17691.700000047684,
+          "radius": 14.788993835449219
+        },
+        {
+          "at": 17775.800000190735,
+          "radius": 14.71385669708252
+        }
+      ]
+    },
+    {
+      "name": "desktop-en",
+      "colors": [
+        {
+          "at": 0.20000004768371582,
+          "color": "rgb(57, 25, 189)"
+        },
+        {
+          "at": 12677,
+          "color": "rgb(56, 25, 185)"
+        },
+        {
+          "at": 12759.5,
+          "color": "rgb(51, 22, 168)"
+        },
+        {
+          "at": 12842.5,
+          "color": "rgb(45, 20, 150)"
+        },
+        {
+          "at": 12925.700000047684,
+          "color": "rgb(40, 18, 133)"
+        },
+        {
+          "at": 13009.5,
+          "color": "rgb(35, 15, 115)"
+        },
+        {
+          "at": 13092.700000047684,
+          "color": "rgb(30, 13, 98)"
+        },
+        {
+          "at": 13176.900000095367,
+          "color": "rgb(24, 11, 80)"
+        },
+        {
+          "at": 13259.299999952316,
+          "color": "rgb(19, 8, 63)"
+        },
+        {
+          "at": 13343.599999904633,
+          "color": "rgb(14, 6, 45)"
+        },
+        {
+          "at": 13427,
+          "color": "rgb(8, 4, 28)"
+        },
+        {
+          "at": 13510.200000047684,
+          "color": "rgb(3, 1, 10)"
+        },
+        {
+          "at": 13590.400000095367,
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "radii": [
+        {
+          "at": 0.20000004768371582,
+          "radius": 942.4385375976562
+        },
+        {
+          "at": 14680.400000095367,
+          "radius": 942.0336303710938
+        },
+        {
+          "at": 14771.599999904633,
+          "radius": 931.4796752929688
+        },
+        {
+          "at": 14859.900000095367,
+          "radius": 899.8834838867188
+        },
+        {
+          "at": 14946.900000095367,
+          "radius": 859.8090209960938
+        },
+        {
+          "at": 15037.400000095367,
+          "radius": 812.5507202148438
+        },
+        {
+          "at": 15120.200000047684,
+          "radius": 757.3602905273438
+        },
+        {
+          "at": 15212.400000095367,
+          "radius": 683.675048828125
+        },
+        {
+          "at": 15302.900000095367,
+          "radius": 623.1026611328125
+        },
+        {
+          "at": 15387.099999904633,
+          "radius": 560.4348754882812
+        },
+        {
+          "at": 15474.099999904633,
+          "radius": 488.22686767578125
+        },
+        {
+          "at": 15557.799999952316,
+          "radius": 431.6622619628906
+        },
+        {
+          "at": 15641.900000095367,
+          "radius": 377.80902099609375
+        },
+        {
+          "at": 15724.900000095367,
+          "radius": 330.2532958984375
+        },
+        {
+          "at": 15807.799999952316,
+          "radius": 286.744873046875
+        },
+        {
+          "at": 15893.799999952316,
+          "radius": 247.47264099121094
+        },
+        {
+          "at": 15974.400000095367,
+          "radius": 213.231689453125
+        },
+        {
+          "at": 16059.700000047684,
+          "radius": 182.93800354003906
+        },
+        {
+          "at": 16141.200000047684,
+          "radius": 156.98388671875
+        },
+        {
+          "at": 16225.299999952316,
+          "radius": 134.6175537109375
+        },
+        {
+          "at": 16308,
+          "radius": 115.24589538574219
+        },
+        {
+          "at": 16394.799999952316,
+          "radius": 98.59014129638672
+        },
+        {
+          "at": 16475.5,
+          "radius": 85.126220703125
+        },
+        {
+          "at": 16558.599999904633,
+          "radius": 73.31205749511719
+        },
+        {
+          "at": 16642.900000095367,
+          "radius": 63.379154205322266
+        },
+        {
+          "at": 16726.700000047684,
+          "radius": 55.14270782470703
+        },
+        {
+          "at": 16808,
+          "radius": 48.24142074584961
+        },
+        {
+          "at": 16890.599999904633,
+          "radius": 42.474220275878906
+        },
+        {
+          "at": 16975.099999904633,
+          "radius": 37.66926193237305
+        },
+        {
+          "at": 17059,
+          "radius": 33.594173431396484
+        },
+        {
+          "at": 17141.799999952316,
+          "radius": 30.35280418395996
+        },
+        {
+          "at": 17227.5,
+          "radius": 27.60366439819336
+        },
+        {
+          "at": 17311.900000095367,
+          "radius": 25.39020538330078
+        },
+        {
+          "at": 17392.900000095367,
+          "radius": 23.715904235839844
+        },
+        {
+          "at": 17476.200000047684,
+          "radius": 22.391698837280273
+        },
+        {
+          "at": 17562.400000095367,
+          "radius": 21.781021118164062
+        },
+        {
+          "at": 17643.700000047684,
+          "radius": 20.802644729614258
+        },
+        {
+          "at": 17727.599999904633,
+          "radius": 20.500837326049805
+        },
+        {
+          "at": 17807.900000095367,
+          "radius": 20.47893524169922
+        }
+      ]
+    },
+    {
+      "name": "mobile-en",
+      "colors": [
+        {
+          "at": 0.20000004768371582,
+          "color": "rgb(57, 25, 189)"
+        },
+        {
+          "at": 12643,
+          "color": "rgb(54, 24, 178)"
+        },
+        {
+          "at": 12726.700000047684,
+          "color": "rgb(49, 21, 161)"
+        },
+        {
+          "at": 12807.900000095367,
+          "color": "rgb(43, 19, 144)"
+        },
+        {
+          "at": 12891.100000143051,
+          "color": "rgb(38, 17, 126)"
+        },
+        {
+          "at": 12974.900000095367,
+          "color": "rgb(33, 14, 109)"
+        },
+        {
+          "at": 13057.600000143051,
+          "color": "rgb(27, 12, 91)"
+        },
+        {
+          "at": 13143.300000190735,
+          "color": "rgb(22, 10, 73)"
+        },
+        {
+          "at": 13224.800000190735,
+          "color": "rgb(17, 7, 56)"
+        },
+        {
+          "at": 13308.800000190735,
+          "color": "rgb(12, 5, 38)"
+        },
+        {
+          "at": 13392.800000190735,
+          "color": "rgb(6, 3, 21)"
+        },
+        {
+          "at": 13474.800000190735,
+          "color": "rgb(1, 0, 4)"
+        },
+        {
+          "at": 13556.900000095367,
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "radii": [
+        {
+          "at": 0.7000000476837158,
+          "radius": 528.3485107421875
+        },
+        {
+          "at": 14636.200000047684,
+          "radius": 527.7102661132812
+        },
+        {
+          "at": 14723.400000095367,
+          "radius": 518.2964477539062
+        },
+        {
+          "at": 14807.600000143051,
+          "radius": 502.48834228515625
+        },
+        {
+          "at": 14889.900000095367,
+          "radius": 480.88934326171875
+        },
+        {
+          "at": 14973.300000190735,
+          "radius": 454.53765869140625
+        },
+        {
+          "at": 15057.400000095367,
+          "radius": 424.6766052246094
+        },
+        {
+          "at": 15141.300000190735,
+          "radius": 392.12969970703125
+        },
+        {
+          "at": 15223.800000190735,
+          "radius": 358.8148498535156
+        },
+        {
+          "at": 15306.700000047684,
+          "radius": 325.3521728515625
+        },
+        {
+          "at": 15390.400000095367,
+          "radius": 292.18756103515625
+        },
+        {
+          "at": 15473,
+          "radius": 260.7762145996094
+        },
+        {
+          "at": 15557.400000095367,
+          "radius": 231.20423889160156
+        },
+        {
+          "at": 15640.5,
+          "radius": 203.4835205078125
+        },
+        {
+          "at": 15723.100000143051,
+          "radius": 178.4640655517578
+        },
+        {
+          "at": 15806.5,
+          "radius": 155.8736572265625
+        },
+        {
+          "at": 15887.100000143051,
+          "radius": 139.39822387695312
+        },
+        {
+          "at": 15975,
+          "radius": 117.42568969726562
+        },
+        {
+          "at": 16056.600000143051,
+          "radius": 101.97007751464844
+        },
+        {
+          "at": 16139.600000143051,
+          "radius": 88.32344818115234
+        },
+        {
+          "at": 16223.100000143051,
+          "radius": 76.37032318115234
+        },
+        {
+          "at": 16306.200000047684,
+          "radius": 66.20394897460938
+        },
+        {
+          "at": 16389.60000014305,
+          "radius": 57.38872528076172
+        },
+        {
+          "at": 16473.300000190735,
+          "radius": 49.95649337768555
+        },
+        {
+          "at": 16554.60000014305,
+          "radius": 44.771358489990234
+        },
+        {
+          "at": 16640.300000190735,
+          "radius": 38.20478820800781
+        },
+        {
+          "at": 16724,
+          "radius": 33.67418670654297
+        },
+        {
+          "at": 16806.300000190735,
+          "radius": 29.853303909301758
+        },
+        {
+          "at": 16890.700000047684,
+          "radius": 26.60634994506836
+        },
+        {
+          "at": 16973.200000047684,
+          "radius": 23.923694610595703
+        },
+        {
+          "at": 17056.5,
+          "radius": 21.690324783325195
+        },
+        {
+          "at": 17140.900000095367,
+          "radius": 19.825185775756836
+        },
+        {
+          "at": 17225.5,
+          "radius": 18.322025299072266
+        },
+        {
+          "at": 17308.400000095367,
+          "radius": 17.103191375732422
+        },
+        {
+          "at": 17390.400000095367,
+          "radius": 16.165973663330078
+        },
+        {
+          "at": 17476.200000047684,
+          "radius": 15.464130401611328
+        },
+        {
+          "at": 17557,
+          "radius": 15.003507614135742
+        },
+        {
+          "at": 17640.10000014305,
+          "radius": 14.754592895507812
+        },
+        {
+          "at": 17725,
+          "radius": 14.71385669708252
+        }
+      ]
+    },
+    {
+      "name": "reduced-pt-BR",
+      "colors": [
+        {
+          "at": 0.19999980926513672,
+          "color": "rgb(57, 25, 189)"
+        },
+        {
+          "at": 9028.899999856949,
+          "color": "rgb(55, 24, 184)"
+        },
+        {
+          "at": 9112.199999809265,
+          "color": "rgb(50, 22, 166)"
+        },
+        {
+          "at": 9195.299999952316,
+          "color": "rgb(45, 20, 149)"
+        },
+        {
+          "at": 9277.399999856949,
+          "color": "rgb(41, 18, 135)"
+        },
+        {
+          "at": 9362.099999904633,
+          "color": "rgb(34, 15, 114)"
+        },
+        {
+          "at": 9445.5,
+          "color": "rgb(29, 13, 96)"
+        },
+        {
+          "at": 9528.5,
+          "color": "rgb(24, 10, 79)"
+        },
+        {
+          "at": 9612.199999809265,
+          "color": "rgb(18, 8, 61)"
+        },
+        {
+          "at": 9695.399999856949,
+          "color": "rgb(13, 6, 44)"
+        },
+        {
+          "at": 9779.099999904633,
+          "color": "rgb(8, 3, 26)"
+        },
+        {
+          "at": 9862.199999809265,
+          "color": "rgb(3, 1, 9)"
+        },
+        {
+          "at": 9943,
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "radii": []
+    },
+    {
+      "name": "reduced-en",
+      "colors": [
+        {
+          "at": 0.19999980926513672,
+          "color": "rgb(57, 25, 189)"
+        },
+        {
+          "at": 9021.799999952316,
+          "color": "rgb(54, 24, 180)"
+        },
+        {
+          "at": 9103,
+          "color": "rgb(50, 22, 166)"
+        },
+        {
+          "at": 9187.699999809265,
+          "color": "rgb(44, 19, 145)"
+        },
+        {
+          "at": 9270.899999856949,
+          "color": "rgb(38, 17, 127)"
+        },
+        {
+          "at": 9353.799999952316,
+          "color": "rgb(33, 15, 110)"
+        },
+        {
+          "at": 9437.599999904633,
+          "color": "rgb(28, 12, 92)"
+        },
+        {
+          "at": 9518.299999952316,
+          "color": "rgb(24, 10, 78)"
+        },
+        {
+          "at": 9604.299999952316,
+          "color": "rgb(17, 8, 57)"
+        },
+        {
+          "at": 9686.899999856949,
+          "color": "rgb(12, 5, 40)"
+        },
+        {
+          "at": 9769.699999809265,
+          "color": "rgb(8, 3, 26)"
+        },
+        {
+          "at": 9852.899999856949,
+          "color": "rgb(3, 1, 8)"
+        },
+        {
+          "at": 9934,
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "radii": []
+    },
+    {
+      "name": "small-mobile",
+      "colors": [
+        {
+          "at": 0.2999999523162842,
+          "color": "rgb(57, 25, 189)"
+        },
+        {
+          "at": 12707.799999952316,
+          "color": "rgb(55, 24, 182)"
+        },
+        {
+          "at": 12788.200000047684,
+          "color": "rgb(51, 22, 168)"
+        },
+        {
+          "at": 12874.700000047684,
+          "color": "rgb(44, 19, 147)"
+        },
+        {
+          "at": 12958,
+          "color": "rgb(39, 17, 130)"
+        },
+        {
+          "at": 13041.200000047684,
+          "color": "rgb(34, 15, 112)"
+        },
+        {
+          "at": 13125.400000095367,
+          "color": "rgb(29, 13, 95)"
+        },
+        {
+          "at": 13207.400000095367,
+          "color": "rgb(23, 10, 77)"
+        },
+        {
+          "at": 13291.5,
+          "color": "rgb(18, 8, 60)"
+        },
+        {
+          "at": 13375.099999904633,
+          "color": "rgb(13, 6, 42)"
+        },
+        {
+          "at": 13459.400000095367,
+          "color": "rgb(7, 3, 25)"
+        },
+        {
+          "at": 13541.200000047684,
+          "color": "rgb(2, 1, 7)"
+        },
+        {
+          "at": 13622,
+          "color": "rgb(0, 0, 0)"
+        }
+      ],
+      "radii": [
+        {
+          "at": 0.5,
+          "radius": 381.2545471191406
+        },
+        {
+          "at": 14708.099999904633,
+          "radius": 380.8138427734375
+        },
+        {
+          "at": 14791.099999904633,
+          "radius": 375.9411926269531
+        },
+        {
+          "at": 14874.299999952316,
+          "radius": 366.1048889160156
+        },
+        {
+          "at": 14957.099999904633,
+          "radius": 351.975341796875
+        },
+        {
+          "at": 15040.900000095367,
+          "radius": 334.1052551269531
+        },
+        {
+          "at": 15124.5,
+          "radius": 313.7643737792969
+        },
+        {
+          "at": 15207.599999904633,
+          "radius": 291.59326171875
+        },
+        {
+          "at": 15290.900000095367,
+          "radius": 268.0953063964844
+        },
+        {
+          "at": 15374.5,
+          "radius": 244.54220581054688
+        },
+        {
+          "at": 15455.299999952316,
+          "radius": 225.70306396484375
+        },
+        {
+          "at": 15539.400000095367,
+          "radius": 203.00241088867188
+        },
+        {
+          "at": 15623,
+          "radius": 181.3719940185547
+        },
+        {
+          "at": 15707.400000095367,
+          "radius": 156.89854431152344
+        },
+        {
+          "at": 15788.299999952316,
+          "radius": 142.14645385742188
+        },
+        {
+          "at": 15875.099999904633,
+          "radius": 121.5881576538086
+        },
+        {
+          "at": 15957.299999952316,
+          "radius": 106.71040344238281
+        },
+        {
+          "at": 16040.900000095367,
+          "radius": 93.11560821533203
+        },
+        {
+          "at": 16124.200000047684,
+          "radius": 81.24132537841797
+        },
+        {
+          "at": 16207.400000095367,
+          "radius": 70.6959457397461
+        },
+        {
+          "at": 16291.099999904633,
+          "radius": 61.61107635498047
+        },
+        {
+          "at": 16372.900000095367,
+          "radius": 55.250465393066406
+        },
+        {
+          "at": 16455.5,
+          "radius": 48.15351867675781
+        },
+        {
+          "at": 16541.200000047684,
+          "radius": 40.998477935791016
+        },
+        {
+          "at": 16624.200000047684,
+          "radius": 35.991207122802734
+        },
+        {
+          "at": 16706.200000047684,
+          "radius": 32.48749542236328
+        },
+        {
+          "at": 16790.799999952316,
+          "radius": 28.035951614379883
+        },
+        {
+          "at": 16873.200000047684,
+          "radius": 25.509143829345703
+        },
+        {
+          "at": 16958.099999904633,
+          "radius": 22.32010269165039
+        },
+        {
+          "at": 17040.799999952316,
+          "radius": 20.131101608276367
+        },
+        {
+          "at": 17122.299999952316,
+          "radius": 18.626117706298828
+        },
+        {
+          "at": 17207.400000095367,
+          "radius": 16.758342742919922
+        },
+        {
+          "at": 17291.099999904633,
+          "radius": 15.509237289428711
+        },
+        {
+          "at": 17374,
+          "radius": 14.499458312988281
+        },
+        {
+          "at": 17457.099999904633,
+          "radius": 13.704331398010254
+        },
+        {
+          "at": 17540.5,
+          "radius": 13.099356651306152
+        },
+        {
+          "at": 17624,
+          "radius": 12.686483383178711
+        },
+        {
+          "at": 17707.099999904633,
+          "radius": 12.449395179748535
+        },
+        {
+          "at": 17790.799999952316,
+          "radius": 12.390617370605469
+        }
+      ]
+    }
+  ],
+  "navigation": [
+    {
+      "name": "desktop-pt-BR",
+      "text": "Trabalhos",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "desktop-pt-BR",
+      "text": "Serviços",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "desktop-pt-BR",
+      "text": "Por que Side",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "desktop-pt-BR",
+      "text": "Vamos conversar",
+      "before": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "mobile-pt-BR",
+      "text": "Trabalhos",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "mobile-pt-BR",
+      "text": "Serviços",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "mobile-pt-BR",
+      "text": "Por que Side",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "mobile-pt-BR",
+      "text": "Vamos conversar",
+      "before": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "desktop-en",
+      "text": "Work",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "desktop-en",
+      "text": "Services",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "desktop-en",
+      "text": "Why Side",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "desktop-en",
+      "text": "Let’s talk",
+      "before": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "mobile-en",
+      "text": "Work",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "mobile-en",
+      "text": "Services",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "mobile-en",
+      "text": "Why Side",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "mobile-en",
+      "text": "Let’s talk",
+      "before": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "reduced-pt-BR",
+      "text": "Trabalhos",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "reduced-pt-BR",
+      "text": "Serviços",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "reduced-pt-BR",
+      "text": "Por que Side",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "reduced-pt-BR",
+      "text": "Vamos conversar",
+      "before": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0s"
+      },
+      "after": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "reduced-en",
+      "text": "Work",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "reduced-en",
+      "text": "Services",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "reduced-en",
+      "text": "Why Side",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "reduced-en",
+      "text": "Let’s talk",
+      "before": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0s"
+      },
+      "after": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "small-mobile",
+      "text": "Trabalhos",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "small-mobile",
+      "text": "Serviços",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "small-mobile",
+      "text": "Por que Side",
+      "before": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(8, 8, 8)",
+        "line": "none",
+        "border": "0px",
+        "weight": "400",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
+    },
+    {
+      "name": "small-mobile",
+      "text": "Vamos conversar",
+      "before": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 0,
+        "transition": "0.28s"
+      },
+      "after": {
+        "color": "rgb(57, 25, 189)",
+        "line": "none",
+        "border": "0px",
+        "weight": "600",
+        "origin": "0px 0.75px",
+        "scale": 1,
+        "transition": "0.28s"
+      }
     }
   ],
   "browser": "154.0.4258.48"
