@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "cursorFailureFallback": true,
+  "stationaryPointerPurpleActivation": true,
+  "edgeLabel": true,
+  "viewportPlaybackRace": true,
+  "liveReducedMotion": true,
+  "fakeErrorPixelsIdentical": true,
+  "console": []
+}

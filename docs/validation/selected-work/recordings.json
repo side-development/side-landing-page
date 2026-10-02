@@ -1,0 +1,25 @@
+{
+  "status": "captured",
+  "recordings": [
+    {
+      "name": "section-desktop",
+      "file": "section-desktop.mp4"
+    },
+    {
+      "name": "section-mobile",
+      "file": "section-mobile.mp4"
+    },
+    {
+      "name": "section-en",
+      "file": "section-en.mp4"
+    },
+    {
+      "name": "section-reduced",
+      "file": "section-reduced.mp4"
+    },
+    {
+      "name": "intro-cursor",
+      "file": "intro-cursor.mp4"
+    }
+  ]
+}

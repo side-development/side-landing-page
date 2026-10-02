@@ -1,0 +1,401 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "desktop-before",
+      "baseline": {
+        "timers": 0,
+        "listeners": [],
+        "animations": 2,
+        "triggers": 0
+      },
+      "before": {
+        "timers": 1,
+        "listeners": [
+          {
+            "type": "pointermove",
+            "name": "move"
+          },
+          {
+            "type": "pointermove",
+            "name": "remember"
+          },
+          {
+            "type": "ended",
+            "name": "ended"
+          },
+          {
+            "type": "timeupdate",
+            "name": "slow"
+          },
+          {
+            "type": "focusin",
+            "name": "focus"
+          },
+          {
+            "type": "pointermove",
+            "name": "move"
+          },
+          {
+            "type": "scroll",
+            "name": "scroll"
+          },
+          {
+            "type": "blur",
+            "name": "hide"
+          },
+          {
+            "type": "keydown",
+            "name": "key"
+          },
+          {
+            "type": "pointerleave",
+            "name": "hide"
+          },
+          {
+            "type": "visibilitychange",
+            "name": "sync"
+          },
+          {
+            "type": "change",
+            "name": "sync"
+          },
+          {
+            "type": "visibilitychange",
+            "name": "sync"
+          },
+          {
+            "type": "change",
+            "name": "sync"
+          }
+        ],
+        "animations": 9,
+        "triggers": 2
+      },
+      "after": {
+        "timers": 0,
+        "listeners": [],
+        "animations": 1,
+        "triggers": 0
+      },
+      "libraryCache": [
+        {
+          "duration": 0,
+          "delay": 0.2,
+          "paused": true,
+          "active": false,
+          "targets": [
+            "_refreshAll2"
+          ],
+          "callback": "function _refreshAll2(force, skipRevert) {\n    _docEl2 = _doc4.documentElement;\n    _body2 = _doc4.body;\n    _root2 = [_win4, _doc4, _docEl2, _body2];\n    if (_lastScrollTime && !f"
+        }
+      ],
+      "strictMode": true,
+      "status": "pass"
+    },
+    {
+      "name": "desktop-handoff",
+      "baseline": {
+        "timers": 0,
+        "listeners": [],
+        "animations": 2,
+        "triggers": 0
+      },
+      "before": {
+        "timers": 1,
+        "listeners": [
+          {
+            "type": "pointermove",
+            "name": "move"
+          },
+          {
+            "type": "pointermove",
+            "name": "remember"
+          },
+          {
+            "type": "ended",
+            "name": "ended"
+          },
+          {
+            "type": "timeupdate",
+            "name": "slow"
+          },
+          {
+            "type": "focusin",
+            "name": "focus"
+          },
+          {
+            "type": "pointermove",
+            "name": "move"
+          },
+          {
+            "type": "scroll",
+            "name": "scroll"
+          },
+          {
+            "type": "blur",
+            "name": "hide"
+          },
+          {
+            "type": "keydown",
+            "name": "key"
+          },
+          {
+            "type": "pointerleave",
+            "name": "hide"
+          },
+          {
+            "type": "visibilitychange",
+            "name": "sync"
+          },
+          {
+            "type": "change",
+            "name": "sync"
+          },
+          {
+            "type": "visibilitychange",
+            "name": "sync"
+          },
+          {
+            "type": "change",
+            "name": "sync"
+          }
+        ],
+        "animations": 16,
+        "triggers": 2
+      },
+      "after": {
+        "timers": 0,
+        "listeners": [],
+        "animations": 1,
+        "triggers": 0
+      },
+      "libraryCache": [
+        {
+          "duration": 0,
+          "delay": 0.2,
+          "paused": true,
+          "active": false,
+          "targets": [
+            "_refreshAll2"
+          ],
+          "callback": "function _refreshAll2(force, skipRevert) {\n    _docEl2 = _doc4.documentElement;\n    _body2 = _doc4.body;\n    _root2 = [_win4, _doc4, _docEl2, _body2];\n    if (_lastScrollTime && !f"
+        }
+      ],
+      "strictMode": true,
+      "status": "pass"
+    },
+    {
+      "name": "desktop-after",
+      "baseline": {
+        "timers": 0,
+        "listeners": [],
+        "animations": 2,
+        "triggers": 0
+      },
+      "before": {
+        "timers": 1,
+        "listeners": [
+          {
+            "type": "pointermove",
+            "name": "move"
+          },
+          {
+            "type": "pointermove",
+            "name": "remember"
+          },
+          {
+            "type": "ended",
+            "name": "ended"
+          },
+          {
+            "type": "timeupdate",
+            "name": "slow"
+          },
+          {
+            "type": "focusin",
+            "name": "focus"
+          },
+          {
+            "type": "pointermove",
+            "name": "move"
+          },
+          {
+            "type": "scroll",
+            "name": "scroll"
+          },
+          {
+            "type": "blur",
+            "name": "hide"
+          },
+          {
+            "type": "keydown",
+            "name": "key"
+          },
+          {
+            "type": "pointerleave",
+            "name": "hide"
+          },
+          {
+            "type": "visibilitychange",
+            "name": "sync"
+          },
+          {
+            "type": "change",
+            "name": "sync"
+          },
+          {
+            "type": "visibilitychange",
+            "name": "sync"
+          },
+          {
+            "type": "change",
+            "name": "sync"
+          }
+        ],
+        "animations": 9,
+        "triggers": 2
+      },
+      "after": {
+        "timers": 0,
+        "listeners": [],
+        "animations": 1,
+        "triggers": 0
+      },
+      "libraryCache": [
+        {
+          "duration": 0,
+          "delay": 0.2,
+          "paused": true,
+          "active": false,
+          "targets": [
+            "_refreshAll2"
+          ],
+          "callback": "function _refreshAll2(force, skipRevert) {\n    _docEl2 = _doc4.documentElement;\n    _body2 = _doc4.body;\n    _root2 = [_win4, _doc4, _docEl2, _body2];\n    if (_lastScrollTime && !f"
+        }
+      ],
+      "strictMode": true,
+      "status": "pass"
+    },
+    {
+      "name": "mobile",
+      "baseline": {
+        "timers": 0,
+        "listeners": [],
+        "animations": 2,
+        "triggers": 0
+      },
+      "before": {
+        "timers": 1,
+        "listeners": [
+          {
+            "type": "pointermove",
+            "name": "move"
+          },
+          {
+            "type": "pointermove",
+            "name": "remember"
+          },
+          {
+            "type": "visibilitychange",
+            "name": "sync"
+          },
+          {
+            "type": "change",
+            "name": "sync"
+          },
+          {
+            "type": "visibilitychange",
+            "name": "sync"
+          },
+          {
+            "type": "change",
+            "name": "sync"
+          }
+        ],
+        "animations": 8,
+        "triggers": 1
+      },
+      "after": {
+        "timers": 0,
+        "listeners": [],
+        "animations": 1,
+        "triggers": 0
+      },
+      "libraryCache": [
+        {
+          "duration": 0,
+          "delay": 0.2,
+          "paused": true,
+          "active": false,
+          "targets": [
+            "_refreshAll2"
+          ],
+          "callback": "function _refreshAll2(force, skipRevert) {\n    _docEl2 = _doc4.documentElement;\n    _body2 = _doc4.body;\n    _root2 = [_win4, _doc4, _docEl2, _body2];\n    if (_lastScrollTime && !f"
+        }
+      ],
+      "strictMode": true,
+      "status": "pass"
+    },
+    {
+      "name": "reduced",
+      "baseline": {
+        "timers": 0,
+        "listeners": [],
+        "animations": 2,
+        "triggers": 0
+      },
+      "before": {
+        "timers": 0,
+        "listeners": [
+          {
+            "type": "pointermove",
+            "name": "move"
+          },
+          {
+            "type": "pointermove",
+            "name": "remember"
+          },
+          {
+            "type": "visibilitychange",
+            "name": "sync"
+          },
+          {
+            "type": "change",
+            "name": "sync"
+          },
+          {
+            "type": "visibilitychange",
+            "name": "sync"
+          },
+          {
+            "type": "change",
+            "name": "sync"
+          }
+        ],
+        "animations": 7,
+        "triggers": 0
+      },
+      "after": {
+        "timers": 0,
+        "listeners": [],
+        "animations": 1,
+        "triggers": 0
+      },
+      "libraryCache": [
+        {
+          "duration": 0,
+          "delay": 0.2,
+          "paused": true,
+          "active": false,
+          "targets": [
+            "_refreshAll2"
+          ],
+          "callback": "function _refreshAll2(force, skipRevert) {\n    _docEl2 = _doc4.documentElement;\n    _body2 = _doc4.body;\n    _root2 = [_win4, _doc4, _docEl2, _body2];\n    if (_lastScrollTime && !f"
+        }
+      ],
+      "strictMode": true,
+      "status": "pass"
+    }
+  ]
+}
