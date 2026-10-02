@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "delayedScripts": true,
+  "errorVisibleBeforeSessionResolution": false,
+  "finalAfterHydration": true,
+  "errors": []
+}

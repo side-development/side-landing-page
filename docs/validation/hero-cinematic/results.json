@@ -1,0 +1,1148 @@
+{
+  "status": "pass",
+  "errors": [],
+  "sequences": [
+    {
+      "name": "desktop-pt-BR",
+      "at": 1500,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 2400,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 3900,
+      "fragments": 100,
+      "phrase": [
+        "Frustrante, não é?"
+      ],
+      "overflow": false
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 6700,
+      "fragments": 100,
+      "phrase": [
+        "Agora imagine seus clientes."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 9500,
+      "fragments": 100,
+      "phrase": [
+        "A presença digital do seu negócio deveria trabalhar por você."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 11600,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 12800,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 13700,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 14600,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 16100,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 17900,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-pt-BR",
+      "videoDuration": 21.477,
+      "complete": true,
+      "recording": "desktop-pt-BR.mp4"
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 1500,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 2400,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 3900,
+      "fragments": 50,
+      "phrase": [
+        "Frustrante, não é?"
+      ],
+      "overflow": false
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 6700,
+      "fragments": 50,
+      "phrase": [
+        "Agora imagine seus clientes."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 9500,
+      "fragments": 50,
+      "phrase": [
+        "A presença digital do seu negócio deveria trabalhar por você."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 11600,
+      "fragments": 50,
+      "phrase": [
+        "A presença digital do seu negócio deveria trabalhar por você."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 12800,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 13700,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 14600,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 16100,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 17900,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-pt-BR",
+      "videoDuration": 21.284,
+      "complete": true,
+      "recording": "mobile-pt-BR.mp4"
+    },
+    {
+      "name": "desktop-en",
+      "at": 1500,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-en",
+      "at": 2400,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-en",
+      "at": 3900,
+      "fragments": 100,
+      "phrase": [
+        "Frustrating, isn’t it?"
+      ],
+      "overflow": false
+    },
+    {
+      "name": "desktop-en",
+      "at": 6700,
+      "fragments": 100,
+      "phrase": [
+        "Now imagine your customers."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "desktop-en",
+      "at": 9500,
+      "fragments": 100,
+      "phrase": [
+        "Your digital presence should work for you."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "desktop-en",
+      "at": 11600,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-en",
+      "at": 12800,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-en",
+      "at": 13700,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-en",
+      "at": 14600,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-en",
+      "at": 16100,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-en",
+      "at": 17900,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "desktop-en",
+      "videoDuration": 21.423,
+      "complete": true,
+      "recording": "desktop-en.mp4"
+    },
+    {
+      "name": "mobile-en",
+      "at": 1500,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-en",
+      "at": 2400,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-en",
+      "at": 3900,
+      "fragments": 50,
+      "phrase": [
+        "Frustrating, isn’t it?"
+      ],
+      "overflow": false
+    },
+    {
+      "name": "mobile-en",
+      "at": 6700,
+      "fragments": 50,
+      "phrase": [
+        "Now imagine your customers."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "mobile-en",
+      "at": 9500,
+      "fragments": 50,
+      "phrase": [
+        "Your digital presence should work for you."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "mobile-en",
+      "at": 11600,
+      "fragments": 50,
+      "phrase": [
+        "Your digital presence should work for you."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "mobile-en",
+      "at": 12800,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-en",
+      "at": 13700,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-en",
+      "at": 14600,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-en",
+      "at": 16100,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-en",
+      "at": 17900,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "mobile-en",
+      "videoDuration": 20.732,
+      "complete": true,
+      "recording": "temporary recording, not included"
+    },
+    {
+      "name": "reduced-pt-BR",
+      "at": 1600,
+      "fragments": 0,
+      "phrase": [
+        "Frustrante, não é?"
+      ],
+      "overflow": false
+    },
+    {
+      "name": "reduced-pt-BR",
+      "at": 4600,
+      "fragments": 0,
+      "phrase": [
+        "Agora imagine seus clientes."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "reduced-pt-BR",
+      "at": 7800,
+      "fragments": 0,
+      "phrase": [
+        "A presença digital do seu negócio deveria trabalhar por você."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "reduced-pt-BR",
+      "at": 9900,
+      "fragments": 0,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "reduced-pt-BR",
+      "at": 11500,
+      "fragments": 0,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "reduced-pt-BR",
+      "at": 13300,
+      "fragments": 0,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "reduced-pt-BR",
+      "videoDuration": 17.873,
+      "complete": true,
+      "recording": "reduced-pt-BR.mp4"
+    },
+    {
+      "name": "reduced-en",
+      "at": 1600,
+      "fragments": 0,
+      "phrase": [
+        "Frustrating, isn’t it?"
+      ],
+      "overflow": false
+    },
+    {
+      "name": "reduced-en",
+      "at": 4600,
+      "fragments": 0,
+      "phrase": [
+        "Now imagine your customers."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "reduced-en",
+      "at": 7800,
+      "fragments": 0,
+      "phrase": [
+        "Your digital presence should work for you."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "reduced-en",
+      "at": 9900,
+      "fragments": 0,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "reduced-en",
+      "at": 11500,
+      "fragments": 0,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "reduced-en",
+      "at": 13300,
+      "fragments": 0,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "reduced-en",
+      "videoDuration": 18.146,
+      "complete": true,
+      "recording": "temporary recording, not included"
+    },
+    {
+      "name": "small-mobile",
+      "at": 1500,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "at": 2400,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "at": 3900,
+      "fragments": 50,
+      "phrase": [
+        "Frustrante, não é?"
+      ],
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "at": 6700,
+      "fragments": 50,
+      "phrase": [
+        "Agora imagine seus clientes."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "at": 9500,
+      "fragments": 50,
+      "phrase": [
+        "A presença digital do seu negócio deveria trabalhar por você."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "at": 11600,
+      "fragments": 50,
+      "phrase": [
+        "A presença digital do seu negócio deveria trabalhar por você."
+      ],
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "at": 12800,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "at": 13700,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "at": 14600,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "at": 16100,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "at": 17900,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "videoDuration": 20.865,
+      "complete": true,
+      "recording": "temporary recording, not included"
+    }
+  ],
+  "sizes": [
+    {
+      "route": "/",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "wordmark": {
+        "x": 40,
+        "y": 121.875,
+        "width": 1840,
+        "height": 764.25,
+        "top": 121.875,
+        "right": 1880,
+        "bottom": 886.125,
+        "left": 40
+      },
+      "support": {
+        "x": 40,
+        "y": 920,
+        "width": 1840,
+        "height": 128,
+        "top": 920,
+        "right": 1880,
+        "bottom": 1048,
+        "left": 40
+      }
+    },
+    {
+      "route": "/",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "wordmark": {
+        "x": 95.546875,
+        "y": 104.015625,
+        "width": 1174.890625,
+        "height": 487.984375,
+        "top": 104.015625,
+        "right": 1270.4375,
+        "bottom": 592,
+        "left": 95.546875
+      },
+      "support": {
+        "x": 40,
+        "y": 608,
+        "width": 1286,
+        "height": 128,
+        "top": 608,
+        "right": 1326,
+        "bottom": 736,
+        "left": 40
+      }
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "wordmark": {
+        "x": 40,
+        "y": 151.953125,
+        "width": 944,
+        "height": 392.09375,
+        "top": 151.953125,
+        "right": 984,
+        "bottom": 544.046875,
+        "left": 40
+      },
+      "support": {
+        "x": 40,
+        "y": 608,
+        "width": 944,
+        "height": 128,
+        "top": 608,
+        "right": 984,
+        "bottom": 736,
+        "left": 40
+      }
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "wordmark": {
+        "x": 24,
+        "y": 315.515625,
+        "width": 720,
+        "height": 299.046875,
+        "top": 315.515625,
+        "right": 744,
+        "bottom": 614.5625,
+        "left": 24
+      },
+      "support": {
+        "x": 24,
+        "y": 842.09375,
+        "width": 720,
+        "height": 141.90625,
+        "top": 842.09375,
+        "right": 744,
+        "bottom": 984,
+        "left": 24
+      }
+    },
+    {
+      "route": "/",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "wordmark": {
+        "x": 289.578125,
+        "y": 104.015625,
+        "width": 264.828125,
+        "height": 109.984375,
+        "top": 104.015625,
+        "right": 554.40625,
+        "bottom": 214,
+        "left": 289.578125
+      },
+      "support": {
+        "x": 40,
+        "y": 230,
+        "width": 764,
+        "height": 128,
+        "top": 230,
+        "right": 804,
+        "bottom": 358,
+        "left": 40
+      }
+    },
+    {
+      "route": "/",
+      "width": 412,
+      "height": 915,
+      "overflow": false,
+      "wordmark": {
+        "x": 24,
+        "y": 334.953125,
+        "width": 364,
+        "height": 151.1875,
+        "top": 334.953125,
+        "right": 388,
+        "bottom": 486.140625,
+        "left": 24
+      },
+      "support": {
+        "x": 24,
+        "y": 733.09375,
+        "width": 364,
+        "height": 141.90625,
+        "top": 733.09375,
+        "right": 388,
+        "bottom": 875,
+        "left": 24
+      }
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "wordmark": {
+        "x": 24,
+        "y": 304.015625,
+        "width": 342,
+        "height": 142.046875,
+        "top": 304.015625,
+        "right": 366,
+        "bottom": 446.0625,
+        "left": 24
+      },
+      "support": {
+        "x": 24,
+        "y": 662.09375,
+        "width": 342,
+        "height": 141.90625,
+        "top": 662.09375,
+        "right": 366,
+        "bottom": 804,
+        "left": 24
+      }
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "height": 667,
+      "overflow": false,
+      "wordmark": {
+        "x": 24,
+        "y": 203.921875,
+        "width": 327,
+        "height": 135.8125,
+        "top": 203.921875,
+        "right": 351,
+        "bottom": 339.734375,
+        "left": 24
+      },
+      "support": {
+        "x": 24,
+        "y": 455.65625,
+        "width": 327,
+        "height": 171.34375,
+        "top": 455.65625,
+        "right": 351,
+        "bottom": 627,
+        "left": 24
+      }
+    },
+    {
+      "route": "/",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "wordmark": {
+        "x": 24,
+        "y": 273.53125,
+        "width": 312,
+        "height": 129.578125,
+        "top": 273.53125,
+        "right": 336,
+        "bottom": 403.109375,
+        "left": 24
+      },
+      "support": {
+        "x": 24,
+        "y": 588.65625,
+        "width": 312,
+        "height": 171.34375,
+        "top": 588.65625,
+        "right": 336,
+        "bottom": 760,
+        "left": 24
+      }
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "wordmark": {
+        "x": 16,
+        "y": 167.640625,
+        "width": 288,
+        "height": 119.609375,
+        "top": 167.640625,
+        "right": 304,
+        "bottom": 287.25,
+        "left": 16
+      },
+      "support": {
+        "x": 16,
+        "y": 366.90625,
+        "width": 288,
+        "height": 161.09375,
+        "top": 366.90625,
+        "right": 304,
+        "bottom": 528,
+        "left": 16
+      }
+    },
+    {
+      "route": "/en",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "wordmark": {
+        "x": 40,
+        "y": 121.875,
+        "width": 1840,
+        "height": 764.25,
+        "top": 121.875,
+        "right": 1880,
+        "bottom": 886.125,
+        "left": 40
+      },
+      "support": {
+        "x": 40,
+        "y": 920,
+        "width": 1840,
+        "height": 128,
+        "top": 920,
+        "right": 1880,
+        "bottom": 1048,
+        "left": 40
+      }
+    },
+    {
+      "route": "/en",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "wordmark": {
+        "x": 95.546875,
+        "y": 104.015625,
+        "width": 1174.890625,
+        "height": 487.984375,
+        "top": 104.015625,
+        "right": 1270.4375,
+        "bottom": 592,
+        "left": 95.546875
+      },
+      "support": {
+        "x": 40,
+        "y": 608,
+        "width": 1286,
+        "height": 128,
+        "top": 608,
+        "right": 1326,
+        "bottom": 736,
+        "left": 40
+      }
+    },
+    {
+      "route": "/en",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "wordmark": {
+        "x": 40,
+        "y": 151.953125,
+        "width": 944,
+        "height": 392.09375,
+        "top": 151.953125,
+        "right": 984,
+        "bottom": 544.046875,
+        "left": 40
+      },
+      "support": {
+        "x": 40,
+        "y": 608,
+        "width": 944,
+        "height": 128,
+        "top": 608,
+        "right": 984,
+        "bottom": 736,
+        "left": 40
+      }
+    },
+    {
+      "route": "/en",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "wordmark": {
+        "x": 24,
+        "y": 330.234375,
+        "width": 720,
+        "height": 299.046875,
+        "top": 330.234375,
+        "right": 744,
+        "bottom": 629.28125,
+        "left": 24
+      },
+      "support": {
+        "x": 24,
+        "y": 871.53125,
+        "width": 720,
+        "height": 112.46875,
+        "top": 871.53125,
+        "right": 744,
+        "bottom": 984,
+        "left": 24
+      }
+    },
+    {
+      "route": "/en",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "wordmark": {
+        "x": 289.578125,
+        "y": 104.015625,
+        "width": 264.828125,
+        "height": 109.984375,
+        "top": 104.015625,
+        "right": 554.40625,
+        "bottom": 214,
+        "left": 289.578125
+      },
+      "support": {
+        "x": 40,
+        "y": 230,
+        "width": 764,
+        "height": 128,
+        "top": 230,
+        "right": 804,
+        "bottom": 358,
+        "left": 40
+      }
+    },
+    {
+      "route": "/en",
+      "width": 412,
+      "height": 915,
+      "overflow": false,
+      "wordmark": {
+        "x": 24,
+        "y": 334.953125,
+        "width": 364,
+        "height": 151.1875,
+        "top": 334.953125,
+        "right": 388,
+        "bottom": 486.140625,
+        "left": 24
+      },
+      "support": {
+        "x": 24,
+        "y": 733.09375,
+        "width": 364,
+        "height": 141.90625,
+        "top": 733.09375,
+        "right": 388,
+        "bottom": 875,
+        "left": 24
+      }
+    },
+    {
+      "route": "/en",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "wordmark": {
+        "x": 24,
+        "y": 304.015625,
+        "width": 342,
+        "height": 142.046875,
+        "top": 304.015625,
+        "right": 366,
+        "bottom": 446.0625,
+        "left": 24
+      },
+      "support": {
+        "x": 24,
+        "y": 662.09375,
+        "width": 342,
+        "height": 141.90625,
+        "top": 662.09375,
+        "right": 366,
+        "bottom": 804,
+        "left": 24
+      }
+    },
+    {
+      "route": "/en",
+      "width": 375,
+      "height": 667,
+      "overflow": false,
+      "wordmark": {
+        "x": 24,
+        "y": 218.640625,
+        "width": 327,
+        "height": 135.8125,
+        "top": 218.640625,
+        "right": 351,
+        "bottom": 354.453125,
+        "left": 24
+      },
+      "support": {
+        "x": 24,
+        "y": 485.09375,
+        "width": 327,
+        "height": 141.90625,
+        "top": 485.09375,
+        "right": 351,
+        "bottom": 627,
+        "left": 24
+      }
+    },
+    {
+      "route": "/en",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "wordmark": {
+        "x": 24,
+        "y": 288.25,
+        "width": 312,
+        "height": 129.578125,
+        "top": 288.25,
+        "right": 336,
+        "bottom": 417.828125,
+        "left": 24
+      },
+      "support": {
+        "x": 24,
+        "y": 618.09375,
+        "width": 312,
+        "height": 141.90625,
+        "top": 618.09375,
+        "right": 336,
+        "bottom": 760,
+        "left": 24
+      }
+    },
+    {
+      "route": "/en",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "wordmark": {
+        "x": 16,
+        "y": 181.078125,
+        "width": 288,
+        "height": 119.609375,
+        "top": 181.078125,
+        "right": 304,
+        "bottom": 300.6875,
+        "left": 16
+      },
+      "support": {
+        "x": 16,
+        "y": 393.78125,
+        "width": 288,
+        "height": 134.21875,
+        "top": 393.78125,
+        "right": 304,
+        "bottom": 528,
+        "left": 16
+      }
+    }
+  ],
+  "session": [
+    {
+      "name": "desktop-pt-BR",
+      "status": "pass"
+    },
+    {
+      "name": "mobile-pt-BR",
+      "status": "pass"
+    },
+    {
+      "name": "desktop-en",
+      "status": "pass"
+    },
+    {
+      "name": "mobile-en",
+      "status": "pass"
+    },
+    {
+      "name": "reduced-pt-BR",
+      "status": "pass"
+    },
+    {
+      "name": "reduced-en",
+      "status": "pass"
+    },
+    {
+      "name": "small-mobile",
+      "status": "pass"
+    }
+  ],
+  "keyboard": [
+    {
+      "name": "desktop-pt-BR",
+      "status": "pass"
+    },
+    {
+      "name": "mobile-pt-BR",
+      "status": "pass"
+    },
+    {
+      "name": "desktop-en",
+      "status": "pass"
+    },
+    {
+      "name": "mobile-en",
+      "status": "pass"
+    },
+    {
+      "name": "reduced-pt-BR",
+      "status": "pass"
+    },
+    {
+      "name": "reduced-en",
+      "status": "pass"
+    },
+    {
+      "name": "small-mobile",
+      "status": "pass"
+    }
+  ],
+  "browser": "154.0.4258.48"
+}

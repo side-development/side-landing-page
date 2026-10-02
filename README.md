@@ -40,16 +40,30 @@ Sem outras páginas, bibliotecas visuais, CMS ou infraestrutura antecipada.
 
 ## Hero 01 — issue #2
 
-As duas Homes começam no erro fictício com HTTP 200. O texto vem dos dicionários e o SVG do documento quebrado é próprio. Não há header, marca ou revelação pós-clique.
+Na primeira visita da sessão, as duas Homes começam no erro fictício com HTTP 200. O texto vem dos dicionários e o SVG do documento quebrado é próprio. Antes do clique, não há header ou marca visíveis.
 
 A revisão visual local usa a referência `ERR_CONNECTION_CLOSED imagem br 1.png`, conforme a instrução posterior à issue: título, descrição com `sidecode.com.br`, lista de tentativas, código `ERR_CONNECTION_CLOSED` e botão “Saiba mais”, com versão EN completa. Os textos azuis e “Saiba mais” mantêm hover/focus e aparência clicável, sem destinos ou navegação, conforme pedido. O indicador de desenvolvimento do Next está oculto para permitir avaliar a ilusão também em `npm run dev`.
 
-`src/features/hero/Hero.tsx` mantém `idle | triggered`; `FakeErrorIntro` cancela sua animação antes de chamar `onReload`. `Hero` expõe `onReloadTriggered` para um futuro componente cliente que orquestre a próxima fase. Sem reload real ou persistência; recarregar a URL reinicia a experiência.
+`FakeErrorIntro` preserva a implementação aprovada e cancela sua animação antes de chamar `onReload`. Na #4, `Hero` conecta esse mesmo limite `triggered` à sequência cinematográfica, sem reload real.
 
 A sequência fica estática por 1,86 s após montar, mostra cada corrupção inicial por 200 ms e a pista em 2,6 s por 400 ms, conforme o pedido de desacelerar. Depois usa intervalos aleatórios e pulsos de 580–720 ms. Reduced motion troca apenas a opacidade para mostrar uma pista única com tempo de leitura maior, sem corrupção rápida, e acompanha mudanças da preferência.
 
-Depois do clique, esta fase conserva a tela e o botão em estado pressionado, sem repetir o callback. A experiência seguinte depende de uma nova issue e de aprovação visual desta fase.
+Depois do clique, o botão mantém o estado pressionado por 340 ms antes da sequência da #4.
 
 Para revisão: abrir `/` e `/en`, observar os primeiros segundos sem interação, depois testar clique/Tab+Enter/Space e a preferência de movimento reduzido. Ver [validação da revisão visual](docs/validation/hero-reference.md) e [validação da foundation](docs/validation/foundation.md).
 
 Documentação consultada: [Next.js](https://nextjs.org/docs/app/getting-started/installation), [next-intl](https://next-intl.dev/docs/routing/setup), [GSAP/React](https://gsap.com/resources/React/).
+
+## Hero 02 — issue #4, revisão local
+
+Erro aprovado → corrupção neutra → quebra hierárquica → preto e três frases → reconstrução roxa → convergência no ponto → símbolo → wordmark oficial → Hero editorial. A versão reduced motion mantém a narrativa com fades e revelações leves, sem fragments ou scramble. `ScrambleTextPlugin` já pertence ao GSAP aprovado; não há novas dependências.
+
+`CinematicReveal` e sua timeline ficam restritos à Hero. Os fragments são descartados ao terminar; a mesma instância do wordmark chega à composição final. Paths e composição vêm de `public/brand/parts/side-wordmark-parts.svg`, sem redesenho. Referência editorial em `docs/references/hero/final-layout.png`.
+
+A conclusão completa grava `side:hero-complete:v1` em `sessionStorage`. As próximas visitas à Home e a troca de idioma entram direto na Hero final. Se storage estiver indisponível, a experiência continua funcionando sem persistência.
+
+Para revisar sempre a intro, abrir `/?intro=replay` ou `/en?intro=replay`. Ao terminar, “Rever intro” / “Replay intro” reinicia o erro sem limpar o storage. Em desenvolvimento, o controle também aparece na Hero final. Para testar uma primeira sessão, abrir uma nova guia sem copiar a sessão ou uma janela privada nova.
+
+Trabalhos, Serviços, Por que Side e contato mantêm aparência de navegação, sem destino, conforme decisão do usuário nesta entrega. A troca de idioma permanece funcional. Não há outras seções ou páginas.
+
+Evidências e critérios: [validação da Hero completa](docs/validation/hero-cinematic.md). Push/PR aguardam aprovação visual explícita.

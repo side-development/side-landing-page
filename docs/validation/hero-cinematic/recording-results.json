@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "recordings": [
+    {
+      "name": "desktop-pt-BR",
+      "duration": 24.84,
+      "playable": true
+    },
+    {
+      "name": "mobile-pt-BR",
+      "duration": 24.84,
+      "playable": true
+    },
+    {
+      "name": "desktop-en",
+      "duration": 26.08,
+      "playable": true
+    },
+    {
+      "name": "reduced-pt-BR",
+      "duration": 21.84,
+      "playable": true
+    }
+  ]
+}
