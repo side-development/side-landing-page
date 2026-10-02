@@ -80,13 +80,14 @@
   position: absolute;
   inset: auto 0 0;
   height: 1.5px;
-  background: currentColor;
+  background: #3919bd;
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 280ms ease;
 }
 
 .navigation button:not(.menuToggle):focus-visible::after { transform: scaleX(1); }
+.navigation button:not(.menuToggle):active::after { transform: scaleX(1); }
 
 @media (hover: hover) and (pointer: fine) {
   .navigation button:not(.menuToggle):hover::after { transform: scaleX(1); }
@@ -106,6 +107,7 @@
   align-items: center;
   min-width: 0;
   margin: 0;
+  transform-style: preserve-3d;
 }
 
 .wordmarkHeading:focus { outline: none; }
@@ -125,6 +127,7 @@
 }
 
 .supportCopy {
+  position: relative;
   max-width: 510px;
   font-size: clamp(18px, 1.5vw, 25px);
   line-height: 1.28;
@@ -132,11 +135,20 @@
 }
 
 .signature {
+  position: relative;
   max-width: 280px;
   font-size: clamp(16px, 1.22vw, 21px);
   line-height: 1.35;
   letter-spacing: -0.025em;
   text-align: right;
+}
+
+.copyGlitch {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .cinematic {
@@ -230,29 +242,55 @@
     left: 24px;
     right: 24px;
     z-index: 7;
-    display: none;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     gap: 16px;
     padding: 24px 0;
     border-bottom: 1px solid #080808;
     background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-12px);
+    clip-path: inset(0 0 100% 0);
+    pointer-events: none;
+    transition: opacity 280ms ease, transform 340ms cubic-bezier(.22, 1, .36, 1), clip-path 340ms cubic-bezier(.22, 1, .36, 1), visibility 0s 340ms;
   }
 
-  .sectionLinks[data-open="true"] { display: flex; flex-direction: column; }
+  .sectionLinks[data-open="true"] {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(0);
+    pointer-events: auto;
+    transition-delay: 0s;
+  }
   .sectionLinks button { font-size: 24px; }
 
   .navigation .menuToggle {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 6px;
     width: 28px;
     min-height: 40px;
   }
 
-  .menuToggle span { width: 24px; height: 1px; background: currentColor; }
-  .menuToggle[aria-expanded="true"] span:first-child { transform: translateY(3.5px) rotate(45deg); }
-  .menuToggle[aria-expanded="true"] span:last-child { transform: translateY(-3.5px) rotate(-45deg); }
+  .menuToggle path {
+    transform-origin: 12px 12px;
+    transition: transform 300ms cubic-bezier(.5,.85,.25,1.1);
+  }
+  .menuToggle path:first-child { transform: translateY(-7px); }
+  .menuToggle path:nth-child(2) { transition-timing-function: cubic-bezier(.5,.85,.25,1.8); }
+  .menuToggle path:last-child { transform: translateY(7px); }
+  .menuToggle[aria-expanded="true"] path:first-child { transform: translateY(0) rotate(315deg); }
+  .menuToggle[aria-expanded="true"] path:nth-child(2) { transform: rotate(45deg); }
+  .menuToggle[aria-expanded="true"] path:last-child { transform: translateY(0) rotate(135deg); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .menuToggle path { transition: none; }
+    .sectionLinks { transform: none; clip-path: none; transition: opacity 140ms ease, visibility 0s 140ms; }
+    .sectionLinks[data-open="true"] { transition-delay: 0s; }
+  }
 
   .finalSupport { flex-direction: column; align-items: flex-start; gap: 32px; }
   .supportCopy { max-width: 390px; font-size: 23px; }

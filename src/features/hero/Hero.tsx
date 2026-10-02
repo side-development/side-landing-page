@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef, useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { FakeErrorIntro, type FakeErrorCopy } from "./FakeErrorIntro";
 import { CinematicReveal } from "./CinematicReveal";
 import { FinalHero } from "./FinalHero";
@@ -39,10 +39,17 @@ export function Hero({ copy, finalCopy }: Props) {
   const review = useSyncExternalStore(subscribe, reviewEnabled, serverSession);
   const forced = useSyncExternalStore(subscribe, forceReplay, serverSession);
   const final = state === "final" || (visited && !forced && !replaying);
+  const start = useCallback(() => setState(current => current === "idle" ? "triggered" : current), []);
   const complete = useCallback(() => {
     try { sessionStorage.setItem(SESSION_KEY, "true"); } catch { /* Storage can be unavailable in private browsing. */ }
     setState("final");
   }, []);
+
+  useEffect(() => {
+    if (!ready || final || state !== "idle") return;
+    const timer = window.setTimeout(start, 4000);
+    return () => window.clearTimeout(timer);
+  }, [ready, final, state, start]);
 
   function replay() {
     setReplaying(true);
@@ -51,7 +58,7 @@ export function Hero({ copy, finalCopy }: Props) {
 
   return (
     <main ref={container} className={styles.hero} data-hero-state={final ? "final" : state} data-session-ready={ready}>
-      {!final && <div data-error-surface><FakeErrorIntro copy={copy} active={state === "idle"} onReload={() => setState("triggered")} /></div>}
+      {!final && <div data-error-surface><FakeErrorIntro copy={copy} active={state === "idle"} onReload={start} /></div>}
       <FinalHero copy={finalCopy} visible={final} focusOnReveal={state === "final"} />
       {state === "triggered" && !final && <CinematicReveal container={container} copy={finalCopy} onComplete={complete} />}
       {final && review && <button className={styles.replay} type="button" onClick={replay}>{finalCopy.replay}</button>}
