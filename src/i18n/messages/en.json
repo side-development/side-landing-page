@@ -12,5 +12,23 @@
     "runDiagnostics": "Running Windows Network Diagnostics",
     "reload": "Reload",
     "learnMore": "Learn more"
+  },
+  "Hero": {
+    "narrative": [
+      "Frustrating, isn’t it?",
+      "Now imagine your customers.",
+      "Your digital presence should work for you."
+    ],
+    "support": "We turn ideas and problems into digital experiences that work for your business.",
+    "signature": "Always by your side.",
+    "work": "Work",
+    "services": "Services",
+    "why": "Why Side",
+    "contact": "Let’s talk",
+    "menu": "Open menu",
+    "closeMenu": "Close menu",
+    "navigation": "Main navigation",
+    "switchLocale": "Switch to Portuguese",
+    "replay": "Replay intro"
   }
 }
