@@ -60,10 +60,12 @@ Erro aprovado → corrupção neutra → quebra hierárquica → preto e três f
 
 `CinematicReveal` e sua timeline ficam restritos à Hero. Os fragments são descartados ao terminar; a mesma instância do wordmark chega à composição final. Paths e composição vêm de `public/brand/parts/side-wordmark-parts.svg`, sem redesenho. Referência editorial em `docs/references/hero/final-layout.png`.
 
-A conclusão completa grava `side:hero-complete:v1` em `sessionStorage`. As próximas visitas à Home e a troca de idioma entram direto na Hero final. Se storage estiver indisponível, a experiência continua funcionando sem persistência.
+A conclusão completa grava `side:hero-complete:v1` em `sessionStorage`. As próximas visitas à Home, inclusive pelo endereço direto de outro idioma, entram na Hero final. Se storage estiver indisponível, a experiência continua funcionando sem persistência.
 
 Para revisar sempre a intro, abrir `/?intro=replay` ou `/en?intro=replay`. Ao terminar, “Rever intro” / “Replay intro” reinicia o erro sem limpar o storage. Em desenvolvimento, o controle também aparece na Hero final. Para testar uma primeira sessão, abrir uma nova guia sem copiar a sessão ou uma janela privada nova.
 
-Trabalhos, Serviços, Por que Side e contato mantêm aparência de navegação, sem destino, conforme decisão do usuário nesta entrega. A troca de idioma permanece funcional. Não há outras seções ou páginas.
+Trabalhos, Serviços, Por que Side e contato mantêm aparência de navegação, sem destino, conforme decisão do usuário nesta entrega. EN/PT foi removido da navbar na revisão visual; `/en` continua disponível diretamente. A futura troca de idioma no footer está fora deste escopo. Não há outras seções ou páginas.
+
+A revisão alonga a destruição, destaca palavras em negrito/roxo e mantém a frase inteiramente preta sobre o fundo roxo. A superfície roxa converge de forma contínua até o ponto, sem blocos independentes. Contato e replay usam o roxo Side; o contato preserva um único sublinhado, sem duplicá-lo no hover.
 
 Evidências e critérios: [validação da Hero completa](docs/validation/hero-cinematic.md). Push/PR aguardam aprovação visual explícita.

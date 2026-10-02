@@ -3,22 +3,22 @@
   "recordings": [
     {
       "name": "desktop-pt-BR",
-      "duration": 24.84,
+      "duration": 30.96,
       "playable": true
     },
     {
       "name": "mobile-pt-BR",
-      "duration": 24.84,
+      "duration": 30.2,
       "playable": true
     },
     {
       "name": "desktop-en",
-      "duration": 26.08,
+      "duration": 28.12,
       "playable": true
     },
     {
       "name": "reduced-pt-BR",
-      "duration": 21.84,
+      "duration": 24.92,
       "playable": true
     }
   ]

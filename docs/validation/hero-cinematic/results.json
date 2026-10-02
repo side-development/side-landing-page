@@ -4,562 +4,2315 @@
   "sequences": [
     {
       "name": "desktop-pt-BR",
-      "at": 1500,
+      "at": 1800,
+      "actualAt": 2134,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "desktop-pt-BR",
-      "at": 2400,
+      "at": 2700,
+      "actualAt": 2981,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "desktop-pt-BR",
       "at": 3900,
+      "actualAt": 4238,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 5300,
+      "actualAt": 5470,
       "fragments": 100,
       "phrase": [
         "Frustrante, não é?"
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "desktop-pt-BR",
-      "at": 6700,
+      "at": 8100,
+      "actualAt": 8325,
       "fragments": 100,
       "phrase": [
         "Agora imagine seus clientes."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "desktop-pt-BR",
-      "at": 9500,
+      "at": 10700,
+      "actualAt": 10809,
       "fragments": 100,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "desktop-pt-BR",
-      "at": 11600,
+      "at": 13300,
+      "actualAt": 13403,
+      "fragments": 100,
+      "phrase": [
+        "A presença digital do seu negócio deveria trabalhar por você."
+      ],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "desktop-pt-BR",
+      "at": 14500,
+      "actualAt": 15143,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
-      "at": 12800,
+      "at": 15100,
+      "actualAt": 15438,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
-      "at": 13700,
+      "at": 15900,
+      "actualAt": 16216,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
-      "at": 14600,
+      "at": 16500,
+      "actualAt": 16691,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
-      "at": 16100,
+      "at": 18400,
+      "actualAt": 18981,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
-      "at": 17900,
+      "at": 20700,
+      "actualAt": 20961,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-pt-BR",
-      "videoDuration": 21.477,
-      "complete": true,
-      "recording": "desktop-pt-BR.mp4"
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@78f2fd41dc22227b621974ee208ed771.webm",
+      "videoDuration": 25.508,
+      "complete": true
     },
     {
       "name": "mobile-pt-BR",
-      "at": 1500,
+      "at": 1800,
+      "actualAt": 1875,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "mobile-pt-BR",
-      "at": 2400,
+      "at": 2700,
+      "actualAt": 2773,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "mobile-pt-BR",
       "at": 3900,
+      "actualAt": 4015,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "mobile-pt-BR",
+      "at": 5300,
+      "actualAt": 5527,
       "fragments": 50,
       "phrase": [
         "Frustrante, não é?"
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "mobile-pt-BR",
-      "at": 6700,
+      "at": 8100,
+      "actualAt": 8167,
       "fragments": 50,
       "phrase": [
         "Agora imagine seus clientes."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "mobile-pt-BR",
-      "at": 9500,
+      "at": 10700,
+      "actualAt": 10800,
       "fragments": 50,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "mobile-pt-BR",
-      "at": 11600,
+      "at": 13300,
+      "actualAt": 13387,
       "fragments": 50,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-pt-BR",
-      "at": 12800,
+      "at": 14500,
+      "actualAt": 14579,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-pt-BR",
-      "at": 13700,
+      "at": 15100,
+      "actualAt": 15219,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-pt-BR",
-      "at": 14600,
+      "at": 15900,
+      "actualAt": 16067,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-pt-BR",
-      "at": 16100,
+      "at": 16500,
+      "actualAt": 16599,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-pt-BR",
-      "at": 17900,
+      "at": 18400,
+      "actualAt": 18523,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-pt-BR",
-      "videoDuration": 21.284,
-      "complete": true,
-      "recording": "mobile-pt-BR.mp4"
+      "at": 20700,
+      "actualAt": 20783,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "mobile-pt-BR",
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@30c5071dc33d2443703d3e24106a20a3.webm",
+      "videoDuration": 23.969,
+      "complete": true
     },
     {
       "name": "desktop-en",
-      "at": 1500,
+      "at": 1800,
+      "actualAt": 1919,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "desktop-en",
-      "at": 2400,
+      "at": 2700,
+      "actualAt": 2861,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "desktop-en",
       "at": 3900,
+      "actualAt": 4067,
+      "fragments": 100,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "desktop-en",
+      "at": 5300,
+      "actualAt": 5426,
       "fragments": 100,
       "phrase": [
         "Frustrating, isn’t it?"
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "desktop-en",
-      "at": 6700,
+      "at": 8100,
+      "actualAt": 8256,
       "fragments": 100,
       "phrase": [
         "Now imagine your customers."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "desktop-en",
-      "at": 9500,
+      "at": 10700,
+      "actualAt": 10851,
       "fragments": 100,
       "phrase": [
         "Your digital presence should work for you."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "desktop-en",
-      "at": 11600,
+      "at": 13300,
+      "actualAt": 13397,
+      "fragments": 100,
+      "phrase": [
+        "Your digital presence should work for you."
+      ],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "desktop-en",
+      "at": 14500,
+      "actualAt": 14679,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-en",
-      "at": 12800,
+      "at": 15100,
+      "actualAt": 15796,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-en",
-      "at": 13700,
+      "at": 15900,
+      "actualAt": 16155,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-en",
-      "at": 14600,
+      "at": 16500,
+      "actualAt": 16661,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-en",
-      "at": 16100,
+      "at": 18400,
+      "actualAt": 18562,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-en",
-      "at": 17900,
+      "at": 20700,
+      "actualAt": 20943,
       "fragments": 100,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "desktop-en",
-      "videoDuration": 21.423,
-      "complete": true,
-      "recording": "desktop-en.mp4"
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@efdb5a312a332f94b28ef2953f9339b9.webm",
+      "videoDuration": 24.391,
+      "complete": true
     },
     {
       "name": "mobile-en",
-      "at": 1500,
+      "at": 1800,
+      "actualAt": 1883,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "mobile-en",
-      "at": 2400,
+      "at": 2700,
+      "actualAt": 2788,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "mobile-en",
       "at": 3900,
+      "actualAt": 4039,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "mobile-en",
+      "at": 5300,
+      "actualAt": 5357,
       "fragments": 50,
       "phrase": [
         "Frustrating, isn’t it?"
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "mobile-en",
-      "at": 6700,
+      "at": 8100,
+      "actualAt": 8164,
       "fragments": 50,
       "phrase": [
         "Now imagine your customers."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "mobile-en",
-      "at": 9500,
+      "at": 10700,
+      "actualAt": 10768,
       "fragments": 50,
       "phrase": [
         "Your digital presence should work for you."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "mobile-en",
-      "at": 11600,
+      "at": 13300,
+      "actualAt": 13351,
       "fragments": 50,
       "phrase": [
         "Your digital presence should work for you."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
-      "at": 12800,
+      "at": 14500,
+      "actualAt": 14555,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
-      "at": 13700,
+      "at": 15100,
+      "actualAt": 15219,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
-      "at": 14600,
+      "at": 15900,
+      "actualAt": 15962,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
-      "at": 16100,
+      "at": 16500,
+      "actualAt": 16575,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
-      "at": 17900,
+      "at": 18400,
+      "actualAt": 18463,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "mobile-en",
-      "videoDuration": 20.732,
-      "complete": true,
-      "recording": "temporary recording, not included"
+      "at": 20700,
+      "actualAt": 20896,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "mobile-en",
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@82c2943afbb4f4453b4ec51d69989ff3.webm",
+      "videoDuration": 23.975,
+      "complete": true
     },
     {
       "name": "reduced-pt-BR",
       "at": 1600,
+      "actualAt": 1875,
       "fragments": 0,
       "phrase": [
         "Frustrante, não é?"
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
       "at": 4600,
+      "actualAt": 4767,
       "fragments": 0,
       "phrase": [
         "Agora imagine seus clientes."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
       "at": 7800,
+      "actualAt": 7876,
       "fragments": 0,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
       "at": 9900,
+      "actualAt": 9980,
       "fragments": 0,
-      "phrase": [],
-      "overflow": false
+      "phrase": [
+        "A presença digital do seu negócio deveria trabalhar por você."
+      ],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
-      "at": 11500,
+      "at": 10800,
+      "actualAt": 10904,
       "fragments": 0,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
-      "at": 13300,
+      "at": 12500,
+      "actualAt": 12717,
       "fragments": 0,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-pt-BR",
-      "videoDuration": 17.873,
-      "complete": true,
-      "recording": "reduced-pt-BR.mp4"
+      "at": 14400,
+      "actualAt": 14626,
+      "fragments": 0,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "reduced-pt-BR",
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@d62bf1063d70cfb3dbaaeb040be9b1e6.webm",
+      "videoDuration": 19.447,
+      "complete": true
     },
     {
       "name": "reduced-en",
       "at": 1600,
+      "actualAt": 1656,
       "fragments": 0,
       "phrase": [
         "Frustrating, isn’t it?"
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
       "at": 4600,
+      "actualAt": 4648,
       "fragments": 0,
       "phrase": [
         "Now imagine your customers."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
       "at": 7800,
+      "actualAt": 7862,
       "fragments": 0,
       "phrase": [
         "Your digital presence should work for you."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
       "at": 9900,
+      "actualAt": 9934,
       "fragments": 0,
-      "phrase": [],
-      "overflow": false
+      "phrase": [
+        "Your digital presence should work for you."
+      ],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
-      "at": 11500,
+      "at": 10800,
+      "actualAt": 10839,
       "fragments": 0,
-      "phrase": [],
-      "overflow": false
+      "phrase": [
+        "Your digital presence should work for you."
+      ],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
-      "at": 13300,
+      "at": 12500,
+      "actualAt": 12589,
       "fragments": 0,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "reduced-en",
-      "videoDuration": 18.146,
-      "complete": true,
-      "recording": "temporary recording, not included"
+      "at": 14400,
+      "actualAt": 14462,
+      "fragments": 0,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrating",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "your customers",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "work for you",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "reduced-en",
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@7314ee2cc47d803d4eea3b676f71be1d.webm",
+      "videoDuration": 19.019,
+      "complete": true
     },
     {
       "name": "small-mobile",
-      "at": 1500,
+      "at": 1800,
+      "actualAt": 1848,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "small-mobile",
-      "at": 2400,
+      "at": 2700,
+      "actualAt": 2780,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "small-mobile",
       "at": 3900,
+      "actualAt": 3940,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
+    },
+    {
+      "name": "small-mobile",
+      "at": 5300,
+      "actualAt": 5356,
       "fragments": 50,
       "phrase": [
         "Frustrante, não é?"
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "small-mobile",
-      "at": 6700,
+      "at": 8100,
+      "actualAt": 8141,
       "fragments": 50,
       "phrase": [
         "Agora imagine seus clientes."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "small-mobile",
-      "at": 9500,
+      "at": 10700,
+      "actualAt": 10747,
       "fragments": 50,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(57, 25, 189)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(255, 255, 255)",
+      "continuous": "hidden",
+      "purpleFragments": "visible"
     },
     {
       "name": "small-mobile",
-      "at": 11600,
+      "at": 13300,
+      "actualAt": 13360,
       "fragments": 50,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você."
       ],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
-      "at": 12800,
+      "at": 14500,
+      "actualAt": 14666,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
-      "at": 13700,
+      "at": 15100,
+      "actualAt": 15200,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
-      "at": 14600,
+      "at": 15900,
+      "actualAt": 16003,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
-      "at": 16100,
+      "at": 16500,
+      "actualAt": 16558,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
-      "at": 17900,
+      "at": 18400,
+      "actualAt": 18442,
       "fragments": 50,
       "phrase": [],
-      "overflow": false
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
     },
     {
       "name": "small-mobile",
-      "videoDuration": 20.865,
-      "complete": true,
-      "recording": "temporary recording, not included"
+      "at": 20700,
+      "actualAt": 20844,
+      "fragments": 50,
+      "phrase": [],
+      "overflow": false,
+      "emphasis": [
+        {
+          "text": "Frustrante",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "seus clientes",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        },
+        {
+          "text": "trabalhar por você",
+          "color": "rgb(0, 0, 0)",
+          "weight": "700"
+        }
+      ],
+      "phraseColor": "rgb(0, 0, 0)",
+      "continuous": "visible",
+      "purpleFragments": "hidden"
+    },
+    {
+      "name": "small-mobile",
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@4f8e7ebdf196fb29208864823a316586.webm",
+      "videoDuration": 23.772,
+      "complete": true
     }
   ],
   "sizes": [
