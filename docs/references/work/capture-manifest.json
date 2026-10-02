@@ -33,7 +33,9 @@
         "width": 1440,
         "height": 900,
         "frameRate": "30/1",
-        "pixelFormat": "yuvj420p",
+        "pixelFormat": "yuv420p",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
         "duration": 6.833333,
         "audioStreams": 0,
         "faststart": true
@@ -41,13 +43,13 @@
       "files": [
         {
           "path": "public/work/route/route-reel.mp4",
-          "bytes": 980857,
-          "sha256": "3f2fcde3cb86656d52cde5b6338d0d4f459c1eb27ddb5f0c4804913fa9807c3f"
+          "bytes": 880401,
+          "sha256": "f06328a23f8ac2d57915d1d6da02d245162a3dc0e17f1b07815b32466c25e27f"
         },
         {
           "path": "public/work/route/route-poster.webp",
-          "bytes": 44002,
-          "sha256": "07bbec6c6fa5ad5d088ebf8f937b912683c43d656b563846e7cca58a08943693"
+          "bytes": 43852,
+          "sha256": "073d8a25ae98fb6883bc59f872d0f4cbfd8685cb22d4e360b8aa58f8559e7534"
         }
       ]
     },
@@ -83,7 +85,9 @@
         "width": 1440,
         "height": 900,
         "frameRate": "30/1",
-        "pixelFormat": "yuvj420p",
+        "pixelFormat": "yuv420p",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
         "duration": 6.933333,
         "audioStreams": 0,
         "faststart": true
@@ -91,13 +95,13 @@
       "files": [
         {
           "path": "public/work/owl/owl-reel.mp4",
-          "bytes": 1759424,
-          "sha256": "d5032dea9e9f963a15e60274d41149723c28b60f151a1ebbfe6568bcb2c96fa7"
+          "bytes": 1634919,
+          "sha256": "98f1a12d5193fb5e1eb6eb7176a680905cd720531a683dc80d30770e15d76f22"
         },
         {
           "path": "public/work/owl/owl-poster.webp",
-          "bytes": 182036,
-          "sha256": "774a641fa7877e11db5dd03143ff0e578731dcd7817a7e50f4219f3308de4b08"
+          "bytes": 182654,
+          "sha256": "2e9f4c8b6cec2367e6ca835f87a16d1830885430aea496ec36f6041b2303ae39"
         }
       ]
     }
