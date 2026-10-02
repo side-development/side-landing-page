@@ -201,7 +201,7 @@
             "name": "sync"
           }
         ],
-        "animations": 20,
+        "animations": 21,
         "triggers": 2
       },
       "after": {
@@ -313,7 +313,7 @@
             "name": "sync"
           }
         ],
-        "animations": 27,
+        "animations": 28,
         "triggers": 2
       },
       "after": {

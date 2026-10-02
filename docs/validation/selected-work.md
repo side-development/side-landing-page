@@ -14,7 +14,7 @@ A intro mantém o início automático de 4 s e o botão Recarregar. Após o reve
 
 ## Implementado
 
-Revisão solicitada pelo usuário em 02/10/2026: substituir a apresentação anterior pela gravação `161550.mp4`. Entrada editorial com whitespace, título/contador em fade e deslocamento suave de 24 px. Cada projeto apresenta exatamente duas folhas em perspectiva: um print real atrás e um reel real em loop na frente. Copy lateral no desktop; copy abaixo no mobile. Nome, categoria, ano e teaser preservados. A mídia é o único link individual e abre a LP real em outra guia; não há CTA textual separado de projeto. O cursor mantém “ver projeto” / “view project”.
+Revisão solicitada pelo usuário em 02/10/2026: substituir a apresentação anterior pela gravação `161550.mp4`. Entrada editorial com whitespace, título/contador em fade de 1,65 s e deslocamento suave de 24 px. “Trabalhos selecionados / Selected work” e o CTA final usam caixa normal; CTA final de 18 px com underline discreto. Cada projeto apresenta exatamente duas folhas em perspectiva: um print real atrás e um reel real em loop na frente. Copy lateral no desktop; copy abaixo no mobile. Nomes Route Security e OWL em bold; categoria, ano e teaser preservados. A mídia é o único link individual e abre a LP real em outra guia; não há CTA textual separado de projeto. O cursor mostra “ver trabalho” / “view work”.
 
 No desktop com espaço suficiente, o palco ocupa uma viewport e fica parado durante a troca. A sequência tem 220 svh; o avanço de 120 svh controla a subida do par Route e a chegada do par OWL, de baixo, com scrub de 700 ms. A copy troca junto das folhas. Voltar o scroll reverte o mesmo movimento. Não há espera pelo final do vídeo ou correção/interceptação de roda do mouse. Os prints também são mídia real; não há glitch, blur, HUD ou produto reconstruído.
 
@@ -25,6 +25,8 @@ Mobile/tablet e viewports baixos mantêm as duas folhas por projeto em fluxo lin
 Cursor Side: ponto de 9 px em `#3919BD`, quickTo de 220 ms / power3.out para movimento mais suave, sem trail; links aumentam discretamente e mídia ganha label contextual. Contextos editáveis, teclado, saída da viewport, mudança de preferência e desmontagem restauram cursor nativo. A regra que oculta o cursor nativo depende da presença efetiva do cursor visual no DOM.
 
 Vídeos em loop contínuo enquanto visíveis, sem interrupção no hover e sem botão/estado manual de pausa, conforme decisão do usuário. Carregamento no viewport, pausa fora da viewport/aba ou quando o projeto sai de leitura, `muted`, `playsInline`, `preload="none"` e posters. Resolução tardia de `play()` também respeita viewport e cleanup. A Hero não solicita MP4s no primeiro paint.
+
+Refinamento das bordas: removida a máscara do conjunto que cortava as folhas, e o palco mantém clipping somente vertical durante a troca. Ambas têm borda de 1 px, radius de 14 px e sombras reforçadas; o fundo claro da Route fica distinguível do branco. O fade inferior atua somente nos últimos 10% da mídia, com opacidade final de 85%, preservando bordas e sombras completas. Margens mobile ajustadas para manter as folhas dentro da viewport.
 
 Scrollbar nativa personalizada: 10 px, thumb cinza quase branco `#e9e9e9` arredondado, fundo branco, sem botões/setas; hover `#dcdcdc`. Firefox usa as propriedades padronizadas de cor/largura. Scroll programático suave em motion normal, instantâneo em reduced motion, inclusive após mudança dinâmica da preferência. A roda, o toque e o arraste do thumb continuam nativos; nenhuma biblioteca de smooth scrolling adicionada.
 
@@ -49,6 +51,7 @@ Ambos: yuv420p, BT.709 / limited range, sem áudio e faststart. Posters WebP de 
 - Testes existentes relacionados: not applicable; não havia suíte no repositório. Verificação funcional via scripts temporários Playwright/esbuild, fora das dependências do projeto.
 - Nove combinações de viewport/locale/motion mais intro/sessão/replay: pass. Desktop 1440 × 900; mobile 390 × 844 e 320 × 568; tablet 768 × 1024; desktop baixo 1280 × 600; pt-BR/EN e reduced motion.
 - Console e hidratação sem erros ou warnings nos cenários executados.
+- Bordas e sombra: pass em 1440 × 900, mínimo desktop 1000 × 680 e mobile 320 × 568; folhas dentro da viewport com hover aberto, sem clipping horizontal do palco ou overflow. Entrada do título medida após 220 ms e ao final, confirmando o fade mais lento.
 - Cursor: ativação com ponteiro parado durante campo roxo, cor exata, estados, saída imediata do contexto, teclado, campo editável, limite direito e fallback se o DOM visual for removido: pass.
 - Vídeos/posters, pausa/reprodução, entrada/saída de viewport, mudança dinâmica de reduced motion: pass. MP4s não solicitados na Hero; reduced motion não carrega MP4 até reprodução voluntária.
 - Tab/Shift+Tab atravessam mídia de cada projeto e fazem a troca quando necessário; sem controles de reprodução ou links individuais duplicados. A revisão mantém a Hero sem alterações.
@@ -57,7 +60,7 @@ Ambos: yuv420p, BT.709 / limited range, sem áudio e faststart. Posters WebP de 
 - Novas gravações desktop, mobile, EN e reduced motion; gravação da intro/cursor e reels originais mantidos na página de revisão.
 - Zero MP4 no primeiro paint, confirmado novamente. A observação de LCP da implementação inicial não foi reutilizada como benchmark desta revisão.
 
-Resultados atuais: [revisão funcional, teclado e scrollbar](selected-work/revision-results.json), [cleanup da revisão](selected-work/revision-cleanup-results.json), [novas gravações](selected-work/revision-recordings.json), [playback da revisão](selected-work/revision-review-playback.json). Os demais JSONs registram a primeira implementação e permanecem como histórico.
+Resultados atuais: [revisão funcional, teclado e scrollbar](selected-work/revision-results.json), [bordas, sombras e timing do título](selected-work/refinement-edges.json), [cleanup da revisão](selected-work/revision-cleanup-results.json), [novas gravações](selected-work/revision-recordings.json), [playback da revisão](selected-work/revision-review-playback.json). Os demais JSONs registram a primeira implementação e permanecem como histórico.
 
 Limites: Edge/Chromium, mobile/touch emulados. Não houve teste em aparelho físico, Safari ou Firefox.
 
