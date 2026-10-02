@@ -2,33 +2,41 @@
   "status": "pass",
   "checks": [
     {
+      "src": "http://localhost:3206/validation/revision-scroll.mp4",
+      "duration": 26.4,
+      "currentTime": 0.277035,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    },
+    {
       "src": "http://localhost:3206/validation/revision-desktop.mp4",
-      "duration": 32.833333,
-      "currentTime": 0.255636,
+      "duration": 35.4,
+      "currentTime": 0.285658,
       "width": 1440,
       "height": 900,
       "error": null
     },
     {
       "src": "http://localhost:3206/validation/revision-mobile.mp4",
-      "duration": 23.566667,
-      "currentTime": 0.264009,
+      "duration": 23.2,
+      "currentTime": 0.28257,
       "width": 390,
       "height": 844,
       "error": null
     },
     {
       "src": "http://localhost:3206/validation/revision-en.mp4",
-      "duration": 29.6,
-      "currentTime": 0.273086,
+      "duration": 29.966667,
+      "currentTime": 0.284769,
       "width": 1440,
       "height": 900,
       "error": null
     },
     {
       "src": "http://localhost:3206/validation/revision-reduced.mp4",
-      "duration": 12.233333,
-      "currentTime": 0.270982,
+      "duration": 12.2,
+      "currentTime": 0.275061,
       "width": 1440,
       "height": 900,
       "error": null
@@ -36,7 +44,7 @@
     {
       "src": "http://localhost:3206/validation/intro-cursor.mp4",
       "duration": 28.333333,
-      "currentTime": 0.269673,
+      "currentTime": 0.277886,
       "width": 1440,
       "height": 900,
       "error": null
@@ -44,7 +52,7 @@
     {
       "src": "http://localhost:3206/work/route/route-reel.mp4",
       "duration": 6.833333,
-      "currentTime": 0.273755,
+      "currentTime": 0.264295,
       "width": 1440,
       "height": 900,
       "error": null
@@ -52,7 +60,7 @@
     {
       "src": "http://localhost:3206/work/owl/owl-reel.mp4",
       "duration": 6.933333,
-      "currentTime": 0.265632,
+      "currentTime": 0.263153,
       "width": 1440,
       "height": 900,
       "error": null

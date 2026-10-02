@@ -73,6 +73,38 @@
             "name": "hide"
           },
           {
+            "type": "wheel",
+            "name": "wheel"
+          },
+          {
+            "type": "keydown",
+            "name": "key"
+          },
+          {
+            "type": "pointerdown",
+            "name": "stop"
+          },
+          {
+            "type": "touchstart",
+            "name": "stop"
+          },
+          {
+            "type": "focusin",
+            "name": "stop"
+          },
+          {
+            "type": "resize",
+            "name": "stop"
+          },
+          {
+            "type": "blur",
+            "name": "stop"
+          },
+          {
+            "type": "hashchange",
+            "name": "stop"
+          },
+          {
             "type": "visibilitychange",
             "name": "sync"
           },
@@ -89,7 +121,7 @@
             "name": "sync"
           }
         ],
-        "animations": 28,
+        "animations": 29,
         "triggers": 2
       },
       "after": {
@@ -185,6 +217,38 @@
             "name": "hide"
           },
           {
+            "type": "wheel",
+            "name": "wheel"
+          },
+          {
+            "type": "keydown",
+            "name": "key"
+          },
+          {
+            "type": "pointerdown",
+            "name": "stop"
+          },
+          {
+            "type": "touchstart",
+            "name": "stop"
+          },
+          {
+            "type": "focusin",
+            "name": "stop"
+          },
+          {
+            "type": "resize",
+            "name": "stop"
+          },
+          {
+            "type": "blur",
+            "name": "stop"
+          },
+          {
+            "type": "hashchange",
+            "name": "stop"
+          },
+          {
             "type": "visibilitychange",
             "name": "sync"
           },
@@ -201,7 +265,7 @@
             "name": "sync"
           }
         ],
-        "animations": 21,
+        "animations": 29,
         "triggers": 2
       },
       "after": {
@@ -297,6 +361,38 @@
             "name": "hide"
           },
           {
+            "type": "wheel",
+            "name": "wheel"
+          },
+          {
+            "type": "keydown",
+            "name": "key"
+          },
+          {
+            "type": "pointerdown",
+            "name": "stop"
+          },
+          {
+            "type": "touchstart",
+            "name": "stop"
+          },
+          {
+            "type": "focusin",
+            "name": "stop"
+          },
+          {
+            "type": "resize",
+            "name": "stop"
+          },
+          {
+            "type": "blur",
+            "name": "stop"
+          },
+          {
+            "type": "hashchange",
+            "name": "stop"
+          },
+          {
             "type": "visibilitychange",
             "name": "sync"
           },
@@ -313,7 +409,7 @@
             "name": "sync"
           }
         ],
-        "animations": 28,
+        "animations": 29,
         "triggers": 2
       },
       "after": {
@@ -397,7 +493,7 @@
             "name": "sync"
           }
         ],
-        "animations": 20,
+        "animations": 21,
         "triggers": 2
       },
       "after": {
@@ -465,7 +561,7 @@
             "name": "sync"
           }
         ],
-        "animations": 6,
+        "animations": 7,
         "triggers": 0
       },
       "after": {

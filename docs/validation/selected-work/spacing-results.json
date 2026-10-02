@@ -1,0 +1,140 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "width": 1440,
+      "height": 900,
+      "stageWidth": 1360,
+      "stageHeight": 792,
+      "titleWidth": 1360,
+      "copySize": "54.72px",
+      "teaserSize": "20.88px",
+      "exitPadding": "28px",
+      "edges": [
+        {
+          "left": 29.67404556274414,
+          "right": 663.0330543518066,
+          "top": 110.49994659423828,
+          "bottom": 637.9059524536133,
+          "withinVerticalClip": true
+        },
+        {
+          "left": 255.57867431640625,
+          "right": 882.3709106445312,
+          "top": 189.36285400390625,
+          "bottom": 716.3475341796875,
+          "withinVerticalClip": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "stageWidth": 1782,
+      "stageHeight": 950.390625,
+      "titleWidth": 1782,
+      "copySize": "72.96px",
+      "teaserSize": "27.84px",
+      "exitPadding": "28px",
+      "edges": [
+        {
+          "left": 58.93867111206055,
+          "right": 890.5868644714355,
+          "top": 104.56228637695312,
+          "bottom": 797.4490051269531,
+          "withinVerticalClip": true
+        },
+        {
+          "left": 349.3388977050781,
+          "right": 1172.5682678222656,
+          "top": 206.26596069335938,
+          "bottom": 898.8566589355469,
+          "withinVerticalClip": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "stageWidth": 2200,
+      "stageHeight": 1267.1875,
+      "titleWidth": 2200,
+      "copySize": "88px",
+      "teaserSize": "28px",
+      "exitPadding": "28px",
+      "edges": [
+        {
+          "left": 169.13067626953125,
+          "right": 1208.9443969726562,
+          "top": 174.8199005126953,
+          "bottom": 1041.731704711914,
+          "withinVerticalClip": true
+        },
+        {
+          "left": 529.7481689453125,
+          "right": 1559.3775634765625,
+          "top": 300.8042297363281,
+          "bottom": 1167.7785949707031,
+          "withinVerticalClip": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "width": 3440,
+      "height": 1440,
+      "stageWidth": 2200,
+      "stageHeight": 1267.1875,
+      "titleWidth": 2200,
+      "copySize": "88px",
+      "teaserSize": "28px",
+      "exitPadding": "28px",
+      "edges": [
+        {
+          "left": 609.1306762695312,
+          "right": 1648.9443969726562,
+          "top": 174.8199005126953,
+          "bottom": 1041.731704711914,
+          "withinVerticalClip": true
+        },
+        {
+          "left": 969.7481689453125,
+          "right": 1999.3775634765625,
+          "top": 300.8042297363281,
+          "bottom": 1167.7785949707031,
+          "withinVerticalClip": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "width": 1000,
+      "height": 680,
+      "stageWidth": 920,
+      "stageHeight": 598.390625,
+      "titleWidth": 920,
+      "copySize": "38px",
+      "teaserSize": "17px",
+      "exitPadding": "28px",
+      "edges": [
+        {
+          "left": 28.30396842956543,
+          "right": 455.9187755584717,
+          "top": 103.13851165771484,
+          "bottom": 459.07918548583984,
+          "withinVerticalClip": true
+        },
+        {
+          "left": 189.81483459472656,
+          "right": 612.9173126220703,
+          "top": 158.60794067382812,
+          "bottom": 514.1649169921875,
+          "withinVerticalClip": true
+        }
+      ],
+      "status": "pass"
+    }
+  ]
+}
