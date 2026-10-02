@@ -10,8 +10,8 @@ export function BrandWordmark(props: SVGProps<SVGSVGElement>) {
 <svg viewBox="0 0 1654 687" aria-hidden="true" focusable="false" {...props}>
 <defs>
   <radialGradient id={lightId} data-brand-gradient gradientUnits="userSpaceOnUse" cx="827" cy="343" r="380">
-    <stop offset="0" stopColor="#fff" stopOpacity="0.18" />
-    <stop offset="0.5" stopColor="#fff" stopOpacity="0.07" />
+    <stop offset="0" stopColor="#fff" stopOpacity="0.12" />
+    <stop offset="0.5" stopColor="#fff" stopOpacity="0.045" />
     <stop offset="1" stopColor="#fff" stopOpacity="0" />
   </radialGradient>
   <mask id={maskId} style={{ maskType: "alpha" }}><use href={`#${geometryId}`} /></mask>
