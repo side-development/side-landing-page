@@ -36,7 +36,7 @@ export function CinematicReveal({ container, copy, onComplete }: {
         <div className={styles.fragmentLayer} data-interface-fragments />
         <div className={styles.fragmentLayer} data-purple-fragments />
         <svg className={styles.purpleField} data-purple-field preserveAspectRatio="none">
-          <path data-purple-surface fill="#3919BD" />
+          <circle data-purple-surface cx="0" cy="0" r="0" fill="#3919BD" />
         </svg>
         <div className={styles.phrases}>
           {copy.narrative.map((sentence, index) => {

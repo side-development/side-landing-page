@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import { partition, surfaceFragment } from "./fragments";
-import { purpleSurface } from "./convergence";
 import styles from "./hero.module.css";
 
 gsap.registerPlugin(ScrambleTextPlugin);
@@ -19,7 +18,7 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
   const uiLayer = stage.querySelector<HTMLElement>("[data-interface-fragments]")!;
   const purpleLayer = stage.querySelector<HTMLElement>("[data-purple-fragments]")!;
   const purpleField = stage.querySelector<SVGSVGElement>("[data-purple-field]")!;
-  const membrane = purpleField.querySelector<SVGPathElement>("[data-purple-surface]")!;
+  const circle = purpleField.querySelector<SVGCircleElement>("[data-purple-surface]")!;
   const phrases = Array.from(stage.querySelectorAll<HTMLElement>("[data-phrase]"));
   const width = window.innerWidth;
   const height = window.innerHeight;
@@ -36,7 +35,7 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
   const dotSize = 118.6 * unit * symbolScale;
   const fieldRegions = partition(width, height, mobile ? 4 : 5);
 
-  gsap.set(stage, { visibility: "visible" });
+  gsap.set(stage, { visibility: "visible", "--phrase-emphasis": "#3919BD" });
   gsap.set(brand, { transformOrigin: "0 0", x: symbolX, y: symbolY, scale: symbolScale });
   gsap.set([s, ...letters], { opacity: 0 });
   gsap.set(dot, { opacity: 0, x: -1102, y: 42, scale: 0.674, transformOrigin: "50% 50%" });
@@ -121,7 +120,7 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
 
   const purpleAt = sentenceTimes[2] + 1.9;
   const collapseAt = purpleAt + 2.75;
-  timeline.set(stage, { "--phrase-color": "#000", "--phrase-emphasis": "#000" }, purpleAt + (reduced ? 0.85 : 1.14));
+  timeline.to(stage, { "--phrase-emphasis": "#000", duration: 0.9, ease: "none" }, purpleAt + (reduced ? 0.4 : 0.75));
   if (reduced) {
     timeline.to(black, { backgroundColor: "#3919BD", duration: 0.85 }, purpleAt)
       .set(final, { visibility: "visible" }, collapseAt)
@@ -137,20 +136,25 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
     purple.forEach((tile, index) => {
       timeline.to(tile, { scaleX: 1, duration: 0.34, ease: "steps(4)" }, purpleAt + ((index * 7) % purple.length) / purple.length * 0.8);
     });
-    const shape = purpleSurface(width, height, dotX, dotY, dotSize / 2);
-    const suction = { progress: 0 };
+    const fullRadius = Math.hypot(Math.max(dotX, width - dotX), Math.max(dotY, height - dotY)) + 2;
+    const pointRadius = dotSize / 2;
+    const circularEase = (progress: number) => {
+      const pull = progress * progress * (3 - 2 * progress);
+      const radius = fullRadius * Math.pow(pointRadius / fullRadius, pull);
+      return (fullRadius - radius) / (fullRadius - pointRadius);
+    };
     purpleField.setAttribute("viewBox", `0 0 ${width} ${height}`);
-    membrane.setAttribute("d", shape(0));
+    gsap.set(circle, { attr: { cx: dotX, cy: dotY, r: fullRadius } });
     timeline.set(purpleField, { visibility: "visible" }, purpleAt + 1.14)
       .set(purpleLayer, { visibility: "hidden" }, purpleAt + 1.14)
       .set(black, { opacity: 0 }, collapseAt)
       .set(final, { visibility: "visible" }, collapseAt)
-      .to(suction, { progress: 1, duration: 1.65, ease: "power1.inOut", onUpdate: () => membrane.setAttribute("d", shape(suction.progress)) }, collapseAt)
-      .set(dot, { opacity: 1 }, collapseAt + 1.6)
-      .to(purpleField, { opacity: 0, duration: 0.12 }, collapseAt + 1.65);
+      .to(circle, { attr: { r: pointRadius }, duration: 3.1, ease: circularEase }, collapseAt)
+      .set(dot, { opacity: 1 }, collapseAt + 3.05)
+      .to(purpleField, { opacity: 0, duration: 0.12 }, collapseAt + 3.1);
   }
 
-  const symbolAt = collapseAt + (reduced ? 1.15 : 2.05);
+  const symbolAt = collapseAt + (reduced ? 1.15 : 3.6);
   timeline.fromTo(s, { opacity: 0, clipPath: "inset(100% 0 0 0)" }, { opacity: 1, clipPath: "inset(0% 0 0 0)", duration: reduced ? 0.65 : 0.85, ease: "power3.inOut" }, symbolAt);
   const expandAt = symbolAt + 1.25;
   const completeScale = mobile ? 0.85 : 0.63;

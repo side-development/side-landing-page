@@ -65,14 +65,35 @@
   white-space: nowrap;
 }
 
-.navigation button:not(.contact):hover {
-  text-decoration: underline;
-  text-underline-offset: 5px;
+.navigation button:not(.menuToggle) {
+  position: relative;
 }
 
 .navigation .contact {
   color: #3919bd;
-  border-bottom: 1.5px solid currentColor;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 600;
+}
+
+.navigation button:not(.menuToggle)::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 280ms ease;
+}
+
+.navigation button:not(.menuToggle):focus-visible::after { transform: scaleX(1); }
+
+@media (hover: hover) and (pointer: fine) {
+  .navigation button:not(.menuToggle):hover::after { transform: scaleX(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navigation button:not(.menuToggle)::after { transition: none; }
 }
 
 .navigation .menuToggle {
@@ -159,7 +180,7 @@
   align-items: center;
   justify-content: center;
   padding: 40px;
-  color: var(--phrase-color, #fff);
+  color: #fff;
   visibility: hidden;
 }
 
