@@ -54,7 +54,7 @@ export function useWorkMotion(section: RefObject<HTMLElement | null>, active: bo
       }
       handoff.eventCallback("onUpdate", sync);
       const trigger = ScrollTrigger.create({
-        trigger: sequence, start: "top top", end: "bottom bottom",
+        trigger: sequence, start: "top top", end: "bottom 88%",
         animation: handoff, scrub: 0.7,
       });
       function focus(event: FocusEvent) {

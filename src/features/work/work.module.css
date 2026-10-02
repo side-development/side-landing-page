@@ -6,11 +6,11 @@
   overflow: clip;
 }
 .work[hidden] { display: none; }
-.chapter { display: flex; align-items: baseline; justify-content: space-between; gap: 32px; margin-bottom: clamp(72px, 10vh, 140px); }
+.chapter { display: flex; align-items: baseline; justify-content: space-between; gap: 32px; max-width: 2200px; margin: 0 auto clamp(24px, 3vh, 40px); }
 .chapter h2 { max-width: 980px; margin: 0; font-size: clamp(32px, 3.5vw, 56px); font-weight: 400; line-height: 1.1; letter-spacing: -0.045em; }
 .chapter p { font-size: 14px; white-space: nowrap; }
-.stage { max-width: 1280px; margin-inline: auto; }
-.project { min-width: 0; display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 0.9fr); align-items: center; gap: clamp(40px, 7vw, 120px); }
+.stage { max-width: 2200px; margin-inline: auto; }
+.project { min-width: 0; display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 0.9fr); align-items: center; gap: clamp(40px, 6vw, 110px); }
 .project + .project { margin-top: 120px; }
 .media { position: relative; display: block; aspect-ratio: 1.6; text-decoration: none; perspective: 1400px; }
 .sheets { position: absolute; inset: -5%; }
@@ -22,17 +22,18 @@
 .frontSheet .sheetSurface { transform: perspective(1400px) rotateY(-20deg) rotateX(3deg) rotateZ(5deg); }
 .video, .still { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: inherit; mask-image: linear-gradient(#000 90%, #000d9 100%); }
 .caption { position: relative; padding-bottom: 36px; }
-.identity h3 { margin: 0 0 20px; font-size: clamp(36px, 3.5vw, 62px); font-weight: 700; letter-spacing: -0.055em; line-height: 1; }
-.metadata { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: 11px; line-height: 1.5; }
-.teaser { margin-top: 30px; max-width: 380px; font-size: clamp(17px, 1.35vw, 22px); line-height: 1.4; letter-spacing: -0.025em; }
-.exit { display: flex; justify-content: flex-end; padding: clamp(100px, 17vh, 200px) 0 clamp(80px, 12vh, 160px); }
+.identity h3 { margin: 0 0 20px; font-size: clamp(36px, 3.8vw, 88px); font-weight: 700; letter-spacing: -0.055em; line-height: 1; }
+.metadata { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: clamp(11px, 0.75vw, 15px); line-height: 1.5; }
+.teaser { margin-top: 30px; max-width: 520px; font-size: clamp(17px, 1.45vw, 28px); line-height: 1.4; letter-spacing: -0.025em; }
+.exit { display: flex; justify-content: flex-end; max-width: 2200px; margin-inline: auto; padding: 28px 0 clamp(64px, 8vh, 112px); }
 .exit a { position: relative; display: inline-flex; gap: 20px; padding-block: 8px; color: #080808; font-size: 18px; line-height: 1.35; letter-spacing: -0.02em; text-decoration: none; }
 .exit a::after { content: ""; position: absolute; inset: auto 0 0; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform 280ms ease; }
 .exit a:hover::after, .exit a:focus-visible::after { transform: scaleX(1); }
 
 @media (min-width: 1000px) and (min-height: 680px) and (prefers-reduced-motion: no-preference) {
-  .work[data-enhanced="true"] .sequence { height: 220svh; }
-  .work[data-enhanced="true"] .stage { position: sticky; top: 0; height: 100svh; overflow: visible clip; }
+  .work[data-enhanced="true"] .sequence { height: 208svh; }
+  .work[data-enhanced="true"] .stage { position: sticky; top: 0; height: 88svh; max-width: min(2200px, 165svh); overflow: visible; }
+  .work[data-enhanced="true"] .chapter, .work[data-enhanced="true"] .exit { max-width: min(2200px, 165svh); }
   .work[data-enhanced="true"] .project { position: absolute; inset: 0; }
   .work[data-enhanced="true"] .project + .project { margin-top: 0; }
 }
@@ -43,7 +44,7 @@
 }
 @media (max-width: 800px) {
   .work { padding: 116px 24px 0; }
-  .chapter { display: block; margin-bottom: 60px; }
+  .chapter { display: block; margin-bottom: 28px; }
   .chapter h2 { max-width: 510px; font-size: clamp(32px, 8.4vw, 54px); }
   .chapter p { margin-top: 20px; font-size: 12px; }
   .project { grid-template-columns: 1fr; gap: 16px; }
@@ -56,7 +57,7 @@
   .metadata { justify-content: space-between; gap: 16px; font-size: 11px; }
   .teaser { margin-top: 24px; max-width: 480px; font-size: 18px; }
   .project + .project { margin-top: 88px; }
-  .exit { justify-content: flex-start; padding: 104px 0 88px; }
+  .exit { justify-content: flex-start; padding: 40px 0 64px; }
   .exit a { gap: 20px; font-size: 18px; }
 }
 @media (max-width: 359px) {
