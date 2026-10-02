@@ -54,7 +54,7 @@ Para revisão: abrir `/` e `/en`, observar os primeiros segundos sem interação
 
 Documentação consultada: [Next.js](https://nextjs.org/docs/app/getting-started/installation), [next-intl](https://next-intl.dev/docs/routing/setup), [GSAP/React](https://gsap.com/resources/React/).
 
-## Hero 02 — issue #4, revisão local
+## Hero 02 — issue #4
 
 Erro aprovado → corrupção neutra → quebra hierárquica → preto e três frases → reconstrução roxa → convergência no ponto → símbolo → wordmark oficial → Hero editorial. A versão reduced motion mantém a narrativa com fades e revelações leves, sem fragments ou scramble. `ScrambleTextPlugin` já pertence ao GSAP aprovado; não há novas dependências.
 
@@ -68,6 +68,6 @@ Trabalhos, Serviços, Por que Side e contato mantêm aparência de navegação, 
 
 A revisão alonga a destruição e destaca palavras em negrito/roxo nas frases de impacto, sem ponto final. Sobre o fundo roxo, o texto continua branco e apenas o destaque passa gradualmente a preto. A superfície roxa converge circularmente até o ponto em 3,1 s, mantendo seu centro fixo e suavizando a chegada. Contato e replay usam o roxo Side; o contato tem peso semibold, enquanto os outros itens da navbar continuam pretos e com peso padrão. Todos os textos da navbar recebem sublinhado que entra da esquerda somente no hover/foco, sem animação com reduced motion.
 
-Evidências e critérios: [validação da Hero completa](docs/validation/hero-cinematic.md). Push/PR aguardam aprovação visual explícita.
+Evidências e critérios: [validação da Hero completa](docs/validation/hero-cinematic.md). Aprovação visual explícita recebida em 2026-10-02.
 
 Na revisão, o erro passa a iniciar a intro automaticamente após 4 s, mantendo Recarregar funcional. O menu mobile usa três traços que se transformam em X e painel com entrada/saída animadas, sem novas dependências. Apoio e assinatura recebem glitches curtos a cada 8–14 s; a marca tem luz difusa e movimento discreto sob o cursor. Reduced motion mantém os textos estáveis e a marca sem deslocamento/inclinação. Os textos da navbar usam sublinhado no hover/foco: preto nos itens comuns e roxo no contato, acompanhando a cor de cada texto.

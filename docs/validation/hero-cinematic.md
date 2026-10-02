@@ -2,7 +2,7 @@
 
 ## Status
 
-Ready for review. Implementação local, sem push ou PR. A #4 continua aberta. A aprovação humana do ritmo, da composição e da qualidade percebida está pendente.
+Aprovado visualmente pelo usuário em 2026-10-02: “100% aprovado, podemos subir!”. Implementação e evidências prontas para publicação e integração via PR.
 
 Escopo restrito à Hero completa; sem Work, novas páginas, header de scroll ou novas issues. Base: `origin/main`, merge da #2 em `91ca36f`. `FakeErrorIntro.tsx` permanece sem alterações.
 
@@ -91,7 +91,7 @@ Versão principal dura aproximadamente 23,1 s após a ativação; sem clique, co
 - [Prévia de revisão](hero-cinematic/review-preview.json): página local funcional e seis MP4s carregados no navegador, incluindo luz/glitch desktop e menu/glitch mobile.
 - O círculo temporário declara `cx`, `cy` e `r` iniciais válidos. O revert do GSAP restaura esses valores e evita avisos de atributos SVG vazios na conclusão, no replay e em mudanças de reduced motion.
 - Console e hidratação: sem erros ou warnings nos cenários executados. Browser: Edge/Chromium 154.0.4258.48.
-- Inspeção visual local da sequência, estados intermediários e Hero final comparados às referências. Qualidade subjetiva aguarda revisão humana.
+- Inspeção visual local da sequência, estados intermediários e Hero final comparados às referências. Qualidade subjetiva aprovada explicitamente pelo usuário em 2026-10-02.
 
 ## Limites da validação
 
@@ -99,16 +99,16 @@ Mobile emulado; sem validação em aparelho físico, Safari ou Firefox. Tipograf
 
 ## Critérios de aceite da issue
 
-Checkboxes abaixo distinguem verificações realizadas de julgamentos visuais que precisam da aprovação humana. Pendências de aprovação não são bloqueios técnicos.
+Critérios técnicos verificados e julgamentos visuais aprovados explicitamente pelo usuário em 2026-10-02. As decisões posteriores do usuário sobre copy, navbar, destinos e interações estão registradas acima e nos comentários da #4.
 
 ### Starting state
 - [x] Existing approved fake-error screen remains visually intact before activation.
 - [x] Reload trigger still works with mouse and keyboard without actual reload.
 
 ### Cinematic transition
-- [ ] Post-click delay/pressed state feels believable before the reveal starts.
+- [x] Post-click delay/pressed state feels believable before the reveal starts.
 - [x] Glitch language is black/white/neutral — no RGB split effect.
-- [ ] Text corruption looks authored rather than like a generic preset.
+- [x] Text corruption looks authored rather than like a generic preset.
 - [x] Error UI breaks apart using irregular pixel/fragment behavior inspired by the approved Pixel Broke reference.
 - [x] Breakup is hierarchical and not a uniform retro grid.
 - [x] Error interface fully resolves into a black viewport.
@@ -116,7 +116,7 @@ Checkboxes abaixo distinguem verificações realizadas de julgamentos visuais qu
 ### Narrative copy
 - [x] All three approved sentences appear in the correct order in pt-BR.
 - [x] English route uses the approved equivalent copy.
-- [ ] Copy remains readable and is not overwhelmed by continuous glitch effects.
+- [x] Copy remains readable and is not overwhelmed by continuous glitch effects.
 
 ### Brand transition
 - [x] Black transitions into full Side purple (`#3919BD`).
@@ -124,7 +124,7 @@ Checkboxes abaixo distinguem verificações realizadas de julgamentos visuais qu
 - [x] Brand dot uses the supplied asset/geometry.
 - [x] Side symbol is revealed from that moment without a hard cut.
 - [x] Individual wordmark parts reconstruct into complete `side.`.
-- [ ] Wordmark moves naturally into its final Hero composition.
+- [x] Wordmark moves naturally into its final Hero composition.
 
 ### Final Hero
 - [x] Final background is white.
@@ -132,8 +132,8 @@ Checkboxes abaixo distinguem verificações realizadas de julgamentos visuais qu
 - [x] Small Side symbol appears top-left.
 - [x] Desktop navigation is aligned to the right and localized correctly.
 - [x] Supporting copy and signature are present in both locales.
-- [ ] Final composition clearly follows the approved editorial-layout reference without copying its identity.
-- [ ] Final state feels intentionally designed even when no animation is running.
+- [x] Final composition clearly follows the approved editorial-layout reference without copying its identity.
+- [x] Final state feels intentionally designed even when no animation is running.
 
 ### Responsive/accessibility
 - [x] Desktop, laptop, tablet and common mobile widths are visually validated.
@@ -155,4 +155,4 @@ Checkboxes abaixo distinguem verificações realizadas de julgamentos visuais qu
 
 Implementação inicial em `0bc13f9`; assets e referência em `b78b66e`; seis refinamentos em `a3f0764`; revisão de copy, cor gradual, convergência circular e hover da navbar em `09e2674`; início automático, menu e interações finais em `f05839b`. Esta revisão substitui as evidências anteriores pelas capturas e gravações atualizadas. Sete sequências completas, incluindo 320×568, vinte layouts finais e 28 verificações de hover/cor/peso na navbar passaram. As amostras de motion registram treze cores ao longo da mudança dos destaques e 39 raios na contração circular das variantes principais. As gravações completas incluem o início automático; mais duas mostram as novas interações. MP4s verificados no navegador: [sequências](hero-cinematic/recording-results.json) e [prévia com seis vídeos](hero-cinematic/review-preview.json).
 
-A validação humana pendente deve avaliar principalmente ritmo, força da ruptura, continuidade da convergência/ponto/marca, composição final, chegada do menu mobile, sutileza da luz e frequência/intensidade dos glitches finais. Após aprovação, publicar esta branch e abrir PR com estas evidências. A issue permanece aberta até aprovação e integração conforme o fluxo solicitado.
+A aprovação explícita cobre a experiência e os refinamentos finais apresentados na prévia local. A publicação e integração seguem o fluxo de PR do repositório; a #4 será encerrada após a integração, conforme autorizado pelo usuário.
