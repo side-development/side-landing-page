@@ -12,5 +12,23 @@
     "runDiagnostics": "Executar o Diagnóstico de Rede do Windows",
     "reload": "Recarregar",
     "learnMore": "Saiba mais"
+  },
+  "Hero": {
+    "narrative": [
+      "Frustrante, não é?",
+      "Agora imagine seus clientes",
+      "A presença digital do seu negócio deveria trabalhar por você"
+    ],
+    "emphasis": ["Frustrante", "seus clientes", "trabalhar por você"],
+    "support": "Transformamos ideias e problemas em experiências digitais que trabalham a favor do seu negócio.",
+    "signature": "Sempre ao seu lado. By your side.",
+    "work": "Trabalhos",
+    "services": "Serviços",
+    "why": "Por que Side",
+    "contact": "Vamos conversar",
+    "menu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "navigation": "Navegação principal",
+    "replay": "Rever intro"
   }
 }

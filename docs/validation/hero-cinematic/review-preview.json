@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "recordings": [
+    {
+      "src": "/desktop-interactions.mp4",
+      "duration": 15.84,
+      "playable": true
+    },
+    {
+      "src": "/mobile-menu.mp4",
+      "duration": 12.72,
+      "playable": true
+    },
+    {
+      "src": "/desktop-pt-BR.mp4",
+      "duration": 32.76,
+      "playable": true
+    },
+    {
+      "src": "/mobile-pt-BR.mp4",
+      "duration": 30.24,
+      "playable": true
+    },
+    {
+      "src": "/desktop-en.mp4",
+      "duration": 30.12,
+      "playable": true
+    },
+    {
+      "src": "/reduced-pt-BR.mp4",
+      "duration": 23.76,
+      "playable": true
+    }
+  ],
+  "errors": []
+}

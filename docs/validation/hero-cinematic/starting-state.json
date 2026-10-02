@@ -1,0 +1,14 @@
+[
+  {
+    "name": "desktop",
+    "referenceHash": "83fbb7b86b4d763e6bbae45051ad37297bd36fe4cbc4ec6805cf669e80593b35",
+    "currentHash": "83fbb7b86b4d763e6bbae45051ad37297bd36fe4cbc4ec6805cf669e80593b35",
+    "exactMatch": true
+  },
+  {
+    "name": "mobile",
+    "referenceHash": "f77345afcc9424423fc348b29814d356855775bd7ef1d8fd232673ebcaa1ec5e",
+    "currentHash": "f77345afcc9424423fc348b29814d356855775bd7ef1d8fd232673ebcaa1ec5e",
+    "exactMatch": true
+  }
+]

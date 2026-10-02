@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "errors": [],
+  "checks": [
+    {
+      "preferenceChange": "full → reduce during narrative",
+      "status": "pass"
+    },
+    {
+      "unavailableStorage": "complete intro + next visit remain usable",
+      "status": "pass"
+    }
+  ]
+}
