@@ -12,106 +12,90 @@ export function useWorkMotion(section: RefObject<HTMLElement | null>, active: bo
     if (!active || !section.current) return;
     const root = section.current;
     const media = gsap.matchMedia();
-    media.add("(min-width: 1000px) and (min-height: 680px) and (prefers-reduced-motion: no-preference)", context => {
+    media.add("(prefers-reduced-motion: no-preference)", () => {
+      gsap.from(root.querySelectorAll("header h2, header p"), {
+        y: 24, opacity: 0, duration: 0.8, stagger: 0.1, ease: "power3.out",
+        scrollTrigger: { trigger: root.querySelector("header"), start: "top 88%", toggleActions: "play none none reverse" },
+      });
+    });
+    media.add("(min-width: 1000px) and (min-height: 680px) and (prefers-reduced-motion: no-preference)", () => {
       const sequence = root.querySelector<HTMLElement>("[data-work-sequence]")!;
       const stage = root.querySelector<HTMLElement>("[data-work-stage]")!;
       const route = stage.querySelector<HTMLElement>("[data-project='route']")!;
       const owl = stage.querySelector<HTMLElement>("[data-project='owl']")!;
-      const routeMedia = route.querySelector<HTMLElement>("[data-project-media]")!;
-      const owlMedia = owl.querySelector<HTMLElement>("[data-project-media]")!;
+      const routeMedia = route.querySelector("[data-project-media]")!;
+      const owlMedia = owl.querySelector("[data-project-media]")!;
       const routeCaption = route.querySelector("[data-project-caption]")!;
       const owlCaption = owl.querySelector("[data-project-caption]")!;
-      const routeVideo = route.querySelector<HTMLVideoElement>("video")!;
-      let requested = false;
-      let showingOwl = false;
-      let hold: number | undefined;
-      let transition: gsap.core.Timeline | undefined;
       root.dataset.enhanced = "true";
+      root.dataset.workActive = "route";
       owl.dataset.hidden = "true";
-      gsap.set(owlMedia, { yPercent: 108, scale: 0.96 });
-      gsap.set(owlCaption, { opacity: 0, y: 14 });
-      gsap.set(owl, { pointerEvents: "none" });
+      owl.inert = true;
+      gsap.set(owlMedia, { yPercent: 115, opacity: 0 });
+      gsap.set(owlCaption, { y: 30, opacity: 0 });
 
-      const handoff = context.add("handoff", (immediate = false) => {
-        if (showingOwl) { if (immediate) transition?.progress(1); return; }
-        showingOwl = true;
-        window.clearTimeout(hold);
-        transition?.kill();
-        route.dataset.hidden = "true";
-        owl.dataset.hidden = "false";
-        routeVideo.pause();
-        root.dataset.workActive = "owl";
-        transition = gsap.timeline()
-          .to(routeCaption, { opacity: 0, y: -10, duration: 0.18 }, 0)
-          .to(routeMedia, { scale: 0.92, duration: 0.3, ease: "power2.inOut" }, 0)
-          .to(routeMedia, { yPercent: -108, duration: 0.6, ease: "power3.inOut" }, 0.12)
-          .to(owlMedia, { yPercent: 0, scale: 1, duration: 0.6, ease: "power3.inOut" }, 0.12)
-          .set(route, { pointerEvents: "none" }, 0)
-          .set(owl, { pointerEvents: "auto" }, 0.72)
-          .to(owlCaption, { opacity: 1, y: 0, duration: 0.32, ease: "power2.out" }, 0.74);
-        if (immediate) transition.progress(1);
-      });
-      const reset = context.add("reset", () => {
-        window.clearTimeout(hold);
-        transition?.revert(); transition = undefined;
-        showingOwl = false; requested = false;
-        root.dataset.workActive = "route";
-        route.dataset.hidden = "false";
-        owl.dataset.hidden = "true";
-        gsap.set(routeMedia, { yPercent: 0, scale: 1 });
-        gsap.set(routeCaption, { opacity: 1, y: 0 });
-        gsap.set(owlMedia, { yPercent: 108, scale: 0.96 });
-        gsap.set(owlCaption, { opacity: 0, y: 14 });
-        gsap.set(route, { pointerEvents: "auto" });
-        gsap.set(owl, { pointerEvents: "none" });
-      });
-      function ended() {
-        if (requested && !showingOwl) handoff();
+      const handoff = gsap.timeline({ paused: true })
+        .to(routeMedia, { yPercent: -115, rotation: -3, opacity: 0, duration: 0.64, ease: "power2.inOut" }, 0.14)
+        .to(routeCaption, { y: -30, opacity: 0, duration: 0.26, ease: "power2.in" }, 0.2)
+        .to(owlMedia, { yPercent: 0, opacity: 1, duration: 0.64, ease: "power2.inOut" }, 0.3)
+        .to(owlCaption, { y: 0, opacity: 1, duration: 0.24, ease: "power2.out" }, 0.72)
+        .to({}, { duration: 0.2 });
+
+      function sync() {
+        const progress = handoff.progress();
+        const showingOwl = progress >= 0.5;
+        const current = showingOwl ? "owl" : "route";
+        const routeHidden = String(progress >= 0.7);
+        const owlHidden = String(progress <= 0.26);
+        if (root.dataset.workActive !== current) root.dataset.workActive = current;
+        if (route.dataset.hidden !== routeHidden) route.dataset.hidden = routeHidden;
+        if (owl.dataset.hidden !== owlHidden) owl.dataset.hidden = owlHidden;
+        route.inert = showingOwl; owl.inert = !showingOwl;
       }
-      function slow() {
-        if (!routeVideo.duration) return;
-        const remaining = routeVideo.duration - routeVideo.currentTime;
-        routeVideo.playbackRate = remaining > 0.5 && remaining < 1 ? 0.85 : 1;
-      }
-      function focus(event: FocusEvent) {
-        if (owl.contains(event.target as Node)) handoff(true);
-        else if (route.contains(event.target as Node) && showingOwl) reset();
-      }
-      routeVideo.addEventListener("ended", ended);
-      routeVideo.addEventListener("timeupdate", slow);
-      stage.addEventListener("focusin", focus);
+      handoff.eventCallback("onUpdate", sync);
       const trigger = ScrollTrigger.create({
-        trigger: sequence,
-        start: "top 24px",
-        end: "bottom bottom",
-        onUpdate: self => {
-          if (self.progress < 0.12 && showingOwl) reset();
-          if (self.progress > 0.35 && !showingOwl) {
-            requested = true;
-            if (routeVideo.ended) handoff();
-            else if (!routeVideo.getAttribute("src") || routeVideo.error) {
-              if (hold === undefined) hold = window.setTimeout(() => handoff(), 350);
-            }
-          }
-          if (self.progress > 0.85) handoff(true);
-        },
+        trigger: sequence, start: "top top", end: "bottom bottom",
+        animation: handoff, scrub: 0.7,
       });
-      gsap.fromTo(routeMedia, { opacity: 0.65 }, { opacity: 1, duration: 0.65, ease: "power2.out", scrollTrigger: { trigger: sequence, start: "top 90%", toggleActions: "play none none reverse" } });
+      function focus(event: FocusEvent) {
+        if (route.contains(event.target as Node) && handoff.progress() > 0.5) {
+          window.scrollTo({ top: trigger.start, behavior: "instant" });
+          handoff.progress(0); sync();
+        }
+        if (owl.contains(event.target as Node) && handoff.progress() < 0.5) {
+          window.scrollTo({ top: trigger.end, behavior: "instant" });
+          handoff.progress(1); sync();
+        }
+      }
+      function key(event: KeyboardEvent) {
+        if (event.key !== "Tab") return;
+        const forward = !event.shiftKey && event.target === route.querySelector("button");
+        const backward = event.shiftKey && event.target === owl.querySelector("a");
+        if (!forward && !backward) return;
+        event.preventDefault();
+        window.scrollTo({ top: forward ? trigger.end : trigger.start, behavior: "instant" });
+        ScrollTrigger.update();
+        trigger.getTween()?.progress(1);
+        handoff.progress(forward ? 1 : 0); sync();
+        (forward ? owl.querySelector("a") : route.querySelector("button"))?.focus({ preventScroll: true });
+      }
+      stage.addEventListener("focusin", focus);
+      stage.addEventListener("keydown", key);
       ScrollTrigger.refresh();
       return () => {
-        window.clearTimeout(hold);
-        transition?.revert(); trigger.kill();
-        routeVideo.removeEventListener("ended", ended);
-        routeVideo.removeEventListener("timeupdate", slow);
-        routeVideo.playbackRate = 1;
+        trigger.kill();
         stage.removeEventListener("focusin", focus);
+        stage.removeEventListener("keydown", key);
+        route.inert = false; owl.inert = false;
         delete root.dataset.enhanced; delete root.dataset.workActive;
         delete route.dataset.hidden; delete owl.dataset.hidden;
       };
     });
     media.add("(max-width: 999px) and (prefers-reduced-motion: no-preference), (max-height: 679px) and (prefers-reduced-motion: no-preference)", () => {
-      const owlMedia = root.querySelector("[data-project='owl'] [data-project-media]")!;
-      gsap.fromTo(owlMedia, { opacity: 0.7, y: 18 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out", scrollTrigger: { trigger: owlMedia, start: "top 92%", toggleActions: "play none none reverse" } });
+      gsap.from(root.querySelector("[data-project='owl']"), {
+        y: 24, opacity: 0, duration: 0.5, ease: "power2.out",
+        scrollTrigger: { trigger: root.querySelector("[data-project='owl']"), start: "top 88%", toggleActions: "play none none reverse" },
+      });
     });
     return () => media.revert();
   }, { scope: section, dependencies: [active], revertOnUpdate: true });

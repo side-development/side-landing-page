@@ -50,6 +50,14 @@
           "path": "public/work/route/route-poster.webp",
           "bytes": 43852,
           "sha256": "073d8a25ae98fb6883bc59f872d0f4cbfd8685cb22d4e360b8aa58f8559e7534"
+        },
+        {
+          "path": "public/work/route/route-still.webp",
+          "bytes": 51838,
+          "sha256": "6d870101250aa4e4705de777d3143678fdc55e2106ca6efd9b17d68a01f56ea6",
+          "source": "route-reel.mp4",
+          "sourceTimeSeconds": 6.4,
+          "purpose": "Static rear sheet; real captured LP frame"
         }
       ]
     },
@@ -102,8 +110,22 @@
           "path": "public/work/owl/owl-poster.webp",
           "bytes": 182654,
           "sha256": "2e9f4c8b6cec2367e6ca835f87a16d1830885430aea496ec36f6041b2303ae39"
+        },
+        {
+          "path": "public/work/owl/owl-still.webp",
+          "bytes": 17674,
+          "sha256": "eabadae1c319134019394c0f1e30b6fcdbad1c663f26a21fe465b75e99965fed",
+          "source": "owl-reel.mp4",
+          "sourceTimeSeconds": 3.5,
+          "purpose": "Static rear sheet; real captured LP frame"
         }
       ]
     }
-  ]
+  ],
+  "reviewRevision": {
+    "date": "2026-10-02",
+    "reference": "editorial-sheets-reference.mp4",
+    "composition": "One real still behind one looping real video for each project",
+    "publication": "Local preview only; awaiting explicit visual approval"
+  }
 }
