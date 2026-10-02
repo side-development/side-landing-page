@@ -14,10 +14,10 @@
     "learnMore": "Learn more"
   },
   "SelectedWork": {
-    "heading": "SELECTED WORK",
+    "heading": "Selected work",
     "count": "02 projects",
-    "view": "View project",
-    "all": "VIEW ALL WORK",
+    "view": "View work",
+    "all": "View all work",
     "route": {
       "category": "Website · Digital Experience",
       "teaser": "A digital presence built to turn security engineering, technology and operations into a clear, memorable experience."

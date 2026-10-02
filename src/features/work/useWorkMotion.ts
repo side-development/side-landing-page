@@ -14,7 +14,7 @@ export function useWorkMotion(section: RefObject<HTMLElement | null>, active: bo
     const media = gsap.matchMedia();
     media.add("(prefers-reduced-motion: no-preference)", () => {
       gsap.from(root.querySelectorAll("header h2, header p"), {
-        y: 24, opacity: 0, duration: 0.8, stagger: 0.1, ease: "power3.out",
+        y: 24, opacity: 0, duration: 1.65, stagger: 0.18, ease: "power2.inOut",
         scrollTrigger: { trigger: root.querySelector("header"), start: "top 88%", toggleActions: "play none none reverse" },
       });
     });
