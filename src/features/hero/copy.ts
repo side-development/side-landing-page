@@ -1,5 +1,6 @@
 export type HeroCopy = {
   narrative: [string, string, string];
+  emphasis: [string, string, string];
   support: string;
   signature: string;
   work: string;
@@ -9,6 +10,5 @@ export type HeroCopy = {
   menu: string;
   closeMenu: string;
   navigation: string;
-  switchLocale: string;
   replay: string;
 };

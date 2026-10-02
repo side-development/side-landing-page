@@ -19,6 +19,7 @@
       "Now imagine your customers.",
       "Your digital presence should work for you."
     ],
+    "emphasis": ["Frustrating", "your customers", "work for you"],
     "support": "We turn ideas and problems into digital experiences that work for your business.",
     "signature": "Always by your side.",
     "work": "Work",
@@ -28,7 +29,6 @@
     "menu": "Open menu",
     "closeMenu": "Close menu",
     "navigation": "Main navigation",
-    "switchLocale": "Switch to Portuguese",
     "replay": "Replay intro"
   }
 }

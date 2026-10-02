@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import { partition, surfaceFragment } from "./fragments";
+import { purpleSurface } from "./convergence";
 import styles from "./hero.module.css";
 
 gsap.registerPlugin(ScrambleTextPlugin);
@@ -17,6 +18,8 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
   const whiteLayer = stage.querySelector<HTMLElement>("[data-white-fragments]")!;
   const uiLayer = stage.querySelector<HTMLElement>("[data-interface-fragments]")!;
   const purpleLayer = stage.querySelector<HTMLElement>("[data-purple-fragments]")!;
+  const purpleField = stage.querySelector<SVGSVGElement>("[data-purple-field]")!;
+  const membrane = purpleField.querySelector<SVGPathElement>("[data-purple-surface]")!;
   const phrases = Array.from(stage.querySelectorAll<HTMLElement>("[data-phrase]"));
   const width = window.innerWidth;
   const height = window.innerHeight;
@@ -57,11 +60,11 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
       .to(heading, { x: 0, clipPath: "inset(0 0 0 0)", duration: 0.12 }, 0.7);
 
     const groups: [string, number][] = [
-      [`.${styles.description}, .${styles.suggestionLink}`, 0.94],
-      [`.${styles.suggestions}`, 1.16],
-      [`.${styles.errorCode}`, 1.37],
-      [`.${styles.heading}`, 1.6],
-      [`.${styles.actions} button, .${styles.icon}`, 1.84],
+      [`.${styles.description}, .${styles.suggestionLink}`, 1.1],
+      [`.${styles.suggestions}`, 1.5],
+      [`.${styles.errorCode}`, 1.9],
+      [`.${styles.heading}`, 2.3],
+      [`.${styles.actions} button, .${styles.icon}`, 2.7],
     ];
     groups.forEach(([selector, at], groupIndex) => {
       surface.querySelectorAll<HTMLElement>(selector).forEach((element, elementIndex) => {
@@ -85,8 +88,8 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
           uiLayer.appendChild(fragment);
           const start = at + (elementIndex % 2) * 0.05;
           timeline.set(fragment, { opacity: 1 }, start)
-            .to(fragment, { x: (index % 2 ? 1 : -1) * travel, y: (index % 3 - 1) * 4, scaleX: 0.88, duration: 0.16, ease: "steps(2)" }, start + 0.06 + index * 0.07)
-            .set(fragment, { opacity: 0 }, start + 0.27 + index * 0.075 + groupIndex * 0.015);
+            .to(fragment, { x: (index % 2 ? 1 : -1) * travel, y: (index % 3 - 1) * 4, scaleX: 0.88, duration: 0.24, ease: "steps(2)" }, start + 0.09 + index * 0.1)
+            .set(fragment, { opacity: 0 }, start + 0.4 + index * 0.1 + groupIndex * 0.015);
         });
         timeline.set(element, { visibility: "hidden" }, at + (elementIndex % 2) * 0.05);
       });
@@ -98,26 +101,27 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
       return tile;
     });
     gsap.set(white, { visibility: "hidden" });
-    timeline.set(white, { visibility: "visible" }, 2.03)
-      .set(black, { opacity: 1 }, 2.03)
-      .set(surface, { visibility: "hidden" }, 2.03);
+    timeline.set(white, { visibility: "visible" }, 3.2)
+      .set(black, { opacity: 1 }, 3.2)
+      .set(surface, { visibility: "hidden" }, 3.2);
     white.forEach((tile, index) => {
-      timeline.to(tile, { scaleX: index % 3 === 0 ? 0.02 : 0.92, scaleY: index % 3 === 0 ? 0.94 : 0.02, opacity: 0, duration: 0.21, ease: "steps(3)" }, 2.04 + ((index * 13) % white.length) / white.length * 0.7);
+      timeline.to(tile, { scaleX: index % 3 === 0 ? 0.02 : 0.92, scaleY: index % 3 === 0 ? 0.94 : 0.02, opacity: 0, duration: 0.3, ease: "steps(3)" }, 3.21 + ((index * 13) % white.length) / white.length * 0.85);
     });
   }
 
-  const sentenceStart = reduced ? 1.34 : 3.3;
+  const sentenceStart = reduced ? 1.34 : 4.7;
   timeline.call(() => window.scrollTo({ top: 0, behavior: "instant" }), [], sentenceStart - 0.32);
   const sentenceTimes = [sentenceStart, sentenceStart + 2.65, sentenceStart + 5.4];
   phrases.forEach((phrase, index) => {
     const text = phrase.firstElementChild;
     timeline.set(phrase, { visibility: "visible" }, sentenceTimes[index])
       .fromTo(text, { yPercent: reduced ? 0 : 106, opacity: reduced ? 0 : 1 }, { yPercent: 0, opacity: 1, duration: reduced ? 0.55 : 0.7, ease: "power3.out" }, sentenceTimes[index])
-      .to(text, { opacity: 0, yPercent: reduced ? 0 : -12, duration: 0.4 }, sentenceTimes[index] + (index === 2 ? 3 : 2.15));
+      .to(text, { opacity: 0, yPercent: reduced ? 0 : -12, duration: 0.4 }, sentenceTimes[index] + (index === 2 ? 4.15 : 2.15));
   });
 
   const purpleAt = sentenceTimes[2] + 1.9;
-  const collapseAt = purpleAt + 1.65;
+  const collapseAt = purpleAt + 2.75;
+  timeline.set(stage, { "--phrase-color": "#000", "--phrase-emphasis": "#000" }, purpleAt + (reduced ? 0.85 : 1.14));
   if (reduced) {
     timeline.to(black, { backgroundColor: "#3919BD", duration: 0.85 }, purpleAt)
       .set(final, { visibility: "visible" }, collapseAt)
@@ -131,23 +135,22 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
     });
     gsap.set(purple, { scaleX: 0, transformOrigin: "left center" });
     purple.forEach((tile, index) => {
-      const region = fieldRegions[index];
-      const dx = dotX - region.x - region.width / 2;
-      const dy = dotY - region.y - region.height / 2;
-      const distance = Math.hypot(dx / width, dy / height);
-      const delay = distance * 0.22;
-      timeline.to(tile, { scaleX: 1, duration: 0.34, ease: "steps(4)" }, purpleAt + ((index * 7) % purple.length) / purple.length * 0.8)
-        .set(tile, { transformOrigin: "center center" }, collapseAt)
-        .to(tile, { x: dx * 0.44, y: dy * 0.44, scaleX: 0.66, scaleY: 0.66, borderRadius: "8%", duration: 0.5, ease: "power2.in" }, collapseAt + delay)
-        .to(tile, { x: dx, y: dy, scaleX: dotSize / region.width, scaleY: dotSize / region.height, borderRadius: "50%", duration: 0.7, ease: "power3.inOut" }, collapseAt + 0.5 + delay)
-        .to(tile, { opacity: 0, duration: 0.12 }, collapseAt + 1.23 + delay);
+      timeline.to(tile, { scaleX: 1, duration: 0.34, ease: "steps(4)" }, purpleAt + ((index * 7) % purple.length) / purple.length * 0.8);
     });
-    timeline.set(black, { opacity: 0 }, collapseAt)
+    const shape = purpleSurface(width, height, dotX, dotY, dotSize / 2);
+    const suction = { progress: 0 };
+    purpleField.setAttribute("viewBox", `0 0 ${width} ${height}`);
+    membrane.setAttribute("d", shape(0));
+    timeline.set(purpleField, { visibility: "visible" }, purpleAt + 1.14)
+      .set(purpleLayer, { visibility: "hidden" }, purpleAt + 1.14)
+      .set(black, { opacity: 0 }, collapseAt)
       .set(final, { visibility: "visible" }, collapseAt)
-      .set(dot, { opacity: 1 }, collapseAt + 1.1);
+      .to(suction, { progress: 1, duration: 1.65, ease: "power1.inOut", onUpdate: () => membrane.setAttribute("d", shape(suction.progress)) }, collapseAt)
+      .set(dot, { opacity: 1 }, collapseAt + 1.6)
+      .to(purpleField, { opacity: 0, duration: 0.12 }, collapseAt + 1.65);
   }
 
-  const symbolAt = collapseAt + (reduced ? 1.15 : 1.75);
+  const symbolAt = collapseAt + (reduced ? 1.15 : 2.05);
   timeline.fromTo(s, { opacity: 0, clipPath: "inset(100% 0 0 0)" }, { opacity: 1, clipPath: "inset(0% 0 0 0)", duration: reduced ? 0.65 : 0.85, ease: "power3.inOut" }, symbolAt);
   const expandAt = symbolAt + 1.25;
   const completeScale = mobile ? 0.85 : 0.63;

@@ -2,17 +2,15 @@
 
 import Image from "next/image";
 import { useId, useLayoutEffect, useRef, useState } from "react";
-import { Link } from "@/i18n/navigation";
 import { BrandWordmark } from "./BrandWordmark";
 import type { HeroCopy } from "./copy";
 import styles from "./hero.module.css";
 
-export function FinalHero({ copy, locale, visible, focusOnReveal }: { copy: HeroCopy; locale: string; visible: boolean; focusOnReveal: boolean }) {
+export function FinalHero({ copy, visible, focusOnReveal }: { copy: HeroCopy; visible: boolean; focusOnReveal: boolean }) {
   const [open, setOpen] = useState(false);
   const menuId = useId();
   const toggle = useRef<HTMLButtonElement>(null);
   const section = useRef<HTMLElement>(null);
-  const english = locale === "en";
 
   useLayoutEffect(() => {
     if (!visible) return;
@@ -45,7 +43,6 @@ export function FinalHero({ copy, locale, visible, focusOnReveal }: { copy: Hero
             <button type="button">{copy.services}</button>
             <button type="button">{copy.why}</button>
           </div>
-          <Link href="/" locale={english ? "pt-BR" : "en"} aria-label={copy.switchLocale} className={styles.localeLink} hrefLang={english ? "pt-BR" : "en"}>{english ? "PT" : "EN"}</Link>
           <button className={styles.contact} type="button">{copy.contact}</button>
           <button ref={toggle} className={styles.menuToggle} type="button" aria-label={open ? copy.closeMenu : copy.menu} aria-expanded={open} aria-controls={menuId} onClick={toggleMenu}>
             <span /><span />

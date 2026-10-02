@@ -1,10 +1,9 @@
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { Hero } from "@/features/hero/Hero";
 
 export default async function Home() {
   const t = await getTranslations("FakeError");
   const h = await getTranslations("Hero");
-  const locale = await getLocale();
 
   return (
     <Hero copy={{
@@ -16,12 +15,13 @@ export default async function Home() {
       runDiagnostics: t("runDiagnostics"),
       reload: t("reload"),
       learnMore: t("learnMore"),
-    }} locale={locale} finalCopy={{
+    }} finalCopy={{
       narrative: [h("narrative.0"), h("narrative.1"), h("narrative.2")],
+      emphasis: [h("emphasis.0"), h("emphasis.1"), h("emphasis.2")],
       support: h("support"), signature: h("signature"), work: h("work"),
       services: h("services"), why: h("why"), contact: h("contact"),
       menu: h("menu"), closeMenu: h("closeMenu"), navigation: h("navigation"),
-      switchLocale: h("switchLocale"), replay: h("replay"),
+      replay: h("replay"),
     }} />
   );
 }

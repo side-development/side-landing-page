@@ -28,10 +28,9 @@ function forceReplay() {
 type Props = {
   copy: FakeErrorCopy;
   finalCopy: HeroCopy;
-  locale: string;
 };
 
-export function Hero({ copy, finalCopy, locale }: Props) {
+export function Hero({ copy, finalCopy }: Props) {
   const container = useRef<HTMLElement>(null);
   const [state, setState] = useState<"idle" | "triggered" | "final">("idle");
   const [replaying, setReplaying] = useState(false);
@@ -53,7 +52,7 @@ export function Hero({ copy, finalCopy, locale }: Props) {
   return (
     <main ref={container} className={styles.hero} data-hero-state={final ? "final" : state} data-session-ready={ready}>
       {!final && <div data-error-surface><FakeErrorIntro copy={copy} active={state === "idle"} onReload={() => setState("triggered")} /></div>}
-      <FinalHero copy={finalCopy} locale={locale} visible={final} focusOnReveal={state === "final"} />
+      <FinalHero copy={finalCopy} visible={final} focusOnReveal={state === "final"} />
       {state === "triggered" && !final && <CinematicReveal container={container} copy={finalCopy} onComplete={complete} />}
       {final && review && <button className={styles.replay} type="button" onClick={replay}>{finalCopy.replay}</button>}
     </main>

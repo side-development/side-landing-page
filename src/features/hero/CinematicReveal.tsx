@@ -35,8 +35,15 @@ export function CinematicReveal({ container, copy, onComplete }: {
         <div className={styles.fragmentLayer} data-white-fragments />
         <div className={styles.fragmentLayer} data-interface-fragments />
         <div className={styles.fragmentLayer} data-purple-fragments />
+        <svg className={styles.purpleField} data-purple-field preserveAspectRatio="none">
+          <path data-purple-surface fill="#3919BD" />
+        </svg>
         <div className={styles.phrases}>
-          {copy.narrative.map(sentence => <p key={sentence} className={styles.phrase} data-phrase><span>{sentence}</span></p>)}
+          {copy.narrative.map((sentence, index) => {
+            const emphasis = copy.emphasis[index];
+            const start = sentence.indexOf(emphasis);
+            return <p key={sentence} className={styles.phrase} data-phrase><span>{sentence.slice(0, start)}<strong>{emphasis}</strong>{sentence.slice(start + emphasis.length)}</span></p>;
+          })}
         </div>
       </div>
       <div className={styles.srOnly} role="status" aria-live="polite">{copy.narrative.join(" ")}</div>
