@@ -10,7 +10,7 @@ Usar para: duas páginas sobrepostas em perspectiva, deslocamentos suaves e inde
 
 Não copiar: fundo preto, conteúdo JOBS/ARTICLES, textos, thumbnails, marcas ou UI desse site.
 
-Adaptação Side: fundo branco solicitado pelo usuário, um print real atrás e o reel real em loop na frente em cada projeto. Os prints vêm dos reels já capturados: Route em 6,4 s, câmera explodida; OWL em 3,5 s, geolimits/violação real. Dois pares de folhas, um por projeto; nunca dois vídeos sobrepostos do mesmo projeto. Scroll mantém o palco desktop parado e troca o par Route pelo par OWL, junto da copy. A revisão substitui a apresentação anterior de vídeo grande e handoff condicionado ao fim do reel. A mídia é o único link individual; o CTA textual restante é o acesso a todos os trabalhos.
+Adaptação Side: fundo branco solicitado pelo usuário, um print real atrás e o reel real em loop na frente em cada projeto. Os prints vêm dos reels já capturados: Route em 6,4 s, câmera explodida; OWL em 3,5 s, geolimits/violação real. Dois pares de folhas, um por projeto; nunca dois vídeos sobrepostos do mesmo projeto. Folhas lateralizadas, radius de 14 px e abertura suave/oposta no hover, sem acompanhar a posição do ponteiro. Não existe botão de pausa, conforme refinamento solicitado; reduced motion fica com posters estáticos. Scroll mantém o palco desktop parado e troca o par Route pelo par OWL, junto da copy. A revisão substitui a apresentação anterior de vídeo grande e handoff condicionado ao fim do reel. A mídia é o único link individual; o CTA textual restante é o acesso a todos os trabalhos.
 
 ## Route Security
 

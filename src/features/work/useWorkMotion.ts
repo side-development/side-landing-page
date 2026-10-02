@@ -69,7 +69,7 @@ export function useWorkMotion(section: RefObject<HTMLElement | null>, active: bo
       }
       function key(event: KeyboardEvent) {
         if (event.key !== "Tab") return;
-        const forward = !event.shiftKey && event.target === route.querySelector("button");
+        const forward = !event.shiftKey && event.target === route.querySelector("a");
         const backward = event.shiftKey && event.target === owl.querySelector("a");
         if (!forward && !backward) return;
         event.preventDefault();
@@ -77,7 +77,7 @@ export function useWorkMotion(section: RefObject<HTMLElement | null>, active: bo
         ScrollTrigger.update();
         trigger.getTween()?.progress(1);
         handoff.progress(forward ? 1 : 0); sync();
-        (forward ? owl.querySelector("a") : route.querySelector("button"))?.focus({ preventScroll: true });
+        (forward ? owl.querySelector("a") : route.querySelector("a"))?.focus({ preventScroll: true });
       }
       stage.addEventListener("focusin", focus);
       stage.addEventListener("keydown", key);

@@ -10,8 +10,6 @@ export type WorkCopy = {
   view: string;
   all: string;
   allHref: string;
-  pause: string;
-  play: string;
   route: ProjectCopy;
   owl: ProjectCopy;
 };

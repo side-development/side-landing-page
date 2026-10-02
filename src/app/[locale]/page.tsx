@@ -27,7 +27,6 @@ export default async function Home() {
     }} workCopy={{
       heading: w("heading"), count: w("count"), view: w("view"), all: w("all"),
       allHref: locale === "en" ? "/en/work" : "/trabalhos",
-      pause: w("pause"), play: w("play"),
       route: { name: "Route Security", category: w("route.category"), teaser: w("route.teaser") },
       owl: { name: "OWL", category: w("owl.category"), teaser: w("owl.teaser") },
     }} />

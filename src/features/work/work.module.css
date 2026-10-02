@@ -15,19 +15,16 @@
 .media { position: relative; display: block; aspect-ratio: 1.6; text-decoration: none; perspective: 1400px; }
 .sheets { position: absolute; inset: -5%; mask-image: linear-gradient(#000 72%, transparent 98%); }
 .sheet { position: absolute; width: 69%; aspect-ratio: 4 / 3; }
-.sheetSurface { position: absolute; inset: 0; overflow: hidden; border-radius: 8px; background: #f3f3f3; box-shadow: 0 20px 48px #00000017, 0 3px 10px #0000000a; transform-origin: center; }
+.sheetSurface { position: absolute; inset: 0; overflow: hidden; border-radius: 14px; background: #f3f3f3; box-shadow: 0 20px 48px #00000017, 0 3px 10px #0000000a; transform-origin: center; }
 .backSheet { left: 4%; top: 4%; }
 .frontSheet { left: 25%; top: 16%; }
-.backSheet .sheetSurface { transform: perspective(1400px) rotateY(12deg) rotateX(3deg) rotateZ(-4deg); }
-.frontSheet .sheetSurface { transform: perspective(1400px) rotateY(-11deg) rotateX(3deg) rotateZ(4deg); }
-.video, .still { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.backSheet .sheetSurface { transform: perspective(1400px) rotateY(18deg) rotateX(3deg) rotateZ(-5deg); }
+.frontSheet .sheetSurface { transform: perspective(1400px) rotateY(-20deg) rotateX(3deg) rotateZ(5deg); }
+.video, .still { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: inherit; }
 .caption { position: relative; padding-bottom: 36px; }
 .identity h3 { margin: 0 0 20px; font-size: clamp(36px, 3.5vw, 62px); font-weight: 400; letter-spacing: -0.055em; line-height: 1; }
 .metadata { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: 11px; line-height: 1.5; }
 .teaser { margin-top: 30px; max-width: 380px; font-size: clamp(17px, 1.35vw, 22px); line-height: 1.4; letter-spacing: -0.025em; }
-.actions { margin-top: 18px; }
-.playback { padding: 8px 0; border: 0; background: none; color: #6b6b6b; font-size: 11px; }
-.playback:hover { color: #080808; }
 .exit { display: flex; justify-content: flex-end; padding: clamp(100px, 17vh, 200px) 0 clamp(80px, 12vh, 160px); }
 .exit a { position: relative; display: inline-flex; gap: 42px; padding-bottom: 6px; color: #080808; font-size: clamp(18px, 2.4vw, 38px); line-height: 1.1; letter-spacing: -0.045em; text-decoration: none; }
 .exit a::after { content: ""; position: absolute; inset: auto 0 0; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform 280ms ease; }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Image from "next/image";
 import type { ProjectCopy, WorkCopy } from "./copy";
 import { useReelPlayback } from "./useReelPlayback";
@@ -10,13 +10,12 @@ import styles from "./work.module.css";
 export function ProjectFeature({ id, copy, labels, active }: {
   id: "route" | "owl";
   copy: ProjectCopy;
-  labels: Pick<WorkCopy, "view" | "pause" | "play">;
+  labels: Pick<WorkCopy, "view">;
   active: boolean;
 }) {
   const video = useRef<HTMLVideoElement>(null);
   const media = useRef<HTMLAnchorElement>(null);
-  const [playing, setPlaying] = useState(false);
-  const playback = useReelPlayback(video, active);
+  useReelPlayback(video, active);
   useProjectMotion(media, active);
   const href = id === "route" ? "https://routesecurity.com.br/" : "https://owlloc.com/";
 
@@ -30,7 +29,7 @@ export function ProjectFeature({ id, copy, labels, active }: {
         </div>
         <div className={`${styles.sheet} ${styles.frontSheet}`} data-sheet="front">
           <div className={styles.sheetSurface}>
-            <video ref={video} className={styles.video} width={1440} height={900} loop muted playsInline preload="none" poster={active ? `/work/${id}/${id}-poster.webp` : undefined} data-reel={id} aria-hidden="true" tabIndex={-1} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)}>
+            <video ref={video} className={styles.video} width={1440} height={900} loop muted playsInline preload="none" poster={active ? `/work/${id}/${id}-poster.webp` : undefined} data-reel={id} aria-hidden="true" tabIndex={-1}>
               {copy.name}
             </video>
           </div>
@@ -44,9 +43,6 @@ export function ProjectFeature({ id, copy, labels, active }: {
       </div>
       <div>
         <p className={styles.teaser}>{copy.teaser}</p>
-        <div className={styles.actions}>
-          <button className={styles.playback} type="button" onClick={playback.toggle} aria-label={`${playing ? labels.pause : labels.play}: ${copy.name}`}>{playing ? labels.pause : labels.play}</button>
-        </div>
       </div>
     </div>
   </article>;

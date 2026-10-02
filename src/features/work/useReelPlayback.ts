@@ -1,10 +1,8 @@
 "use client";
 
-import { useEffect, useRef, type RefObject } from "react";
+import { useEffect, type RefObject } from "react";
 
 export function useReelPlayback(video: RefObject<HTMLVideoElement | null>, active: boolean) {
-  const pausedByUser = useRef(false);
-
   useEffect(() => {
     if (!active || !video.current) return;
     const node = video.current;
@@ -15,10 +13,10 @@ export function useReelPlayback(video: RefObject<HTMLVideoElement | null>, activ
       if (!node.getAttribute("src")) node.src = `/work/${node.dataset.reel}/${node.dataset.reel}-reel.mp4`;
     }
     function sync() {
-      if (visible && !document.hidden && !reduced.matches && !pausedByUser.current && node.closest<HTMLElement>("[data-project]")?.dataset.hidden !== "true") {
+      if (visible && !document.hidden && !reduced.matches && node.closest<HTMLElement>("[data-project]")?.dataset.hidden !== "true") {
         load();
         if (!node.ended) node.play().then(() => {
-          if (disposed || !visible || document.hidden || pausedByUser.current || reduced.matches || node.closest<HTMLElement>("[data-project]")?.dataset.hidden === "true") node.pause();
+          if (disposed || !visible || document.hidden || reduced.matches || node.closest<HTMLElement>("[data-project]")?.dataset.hidden === "true") node.pause();
         }).catch(() => {});
       } else node.pause();
     }
@@ -38,16 +36,4 @@ export function useReelPlayback(video: RefObject<HTMLVideoElement | null>, activ
     };
   }, [active, video]);
 
-  function toggle() {
-    const node = video.current;
-    if (!node) return;
-    if (!node.paused) { pausedByUser.current = true; node.pause(); }
-    else {
-      pausedByUser.current = false;
-      if (!node.getAttribute("src")) node.setAttribute("src", `/work/${node.dataset.reel}/${node.dataset.reel}-reel.mp4`);
-      if (node.ended) node.load();
-      node.play().catch(() => {});
-    }
-  }
-  return { toggle };
 }
