@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "desktop-interactions",
+      "errors": []
+    },
+    {
+      "name": "mobile-menu",
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "errors": [],
+  "checks": [
+    {
+      "name": "auto-desktop",
+      "autoDelay": 4064.899999856949,
+      "light": 1,
+      "transform": {
+        "x": -2.5,
+        "y": 0,
+        "rx": 0,
+        "ry": 0.00872654
+      },
+      "glitches": 2,
+      "repeatedVisit": "pass"
+    },
+    {
+      "name": "auto-mobile",
+      "autoDelay": 4038.7999999523163,
+      "light": 1,
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rx": 0,
+        "ry": 0
+      },
+      "glitches": 0,
+      "repeatedVisit": "pass"
+    }
+  ]
+}

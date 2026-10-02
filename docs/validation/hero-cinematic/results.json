@@ -5,7 +5,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 1800,
-      "actualAt": 1978,
+      "actualAt": 1994,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -48,7 +48,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 2700,
-      "actualAt": 2842,
+      "actualAt": 2934,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -91,7 +91,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 3900,
-      "actualAt": 4129,
+      "actualAt": 4137,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -134,7 +134,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 5300,
-      "actualAt": 5448,
+      "actualAt": 5425,
       "fragments": 100,
       "phrase": [
         "Frustrante, não é?"
@@ -179,7 +179,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 8100,
-      "actualAt": 8195,
+      "actualAt": 8227,
       "fragments": 100,
       "phrase": [
         "Agora imagine seus clientes"
@@ -224,7 +224,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 10700,
-      "actualAt": 10785,
+      "actualAt": 10849,
       "fragments": 100,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você"
@@ -269,7 +269,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 13300,
-      "actualAt": 13463,
+      "actualAt": 13647,
       "fragments": 100,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você"
@@ -278,17 +278,17 @@
       "emphasis": [
         {
           "text": "Frustrante",
-          "color": "rgb(6, 3, 21)",
+          "color": "rgb(0, 0, 0)",
           "weight": "700"
         },
         {
           "text": "seus clientes",
-          "color": "rgb(6, 3, 21)",
+          "color": "rgb(0, 0, 0)",
           "weight": "700"
         },
         {
           "text": "trabalhar por você",
-          "color": "rgb(6, 3, 21)",
+          "color": "rgb(0, 0, 0)",
           "weight": "700"
         }
       ],
@@ -314,7 +314,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 14500,
-      "actualAt": 14638,
+      "actualAt": 15112,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -340,16 +340,16 @@
       "circle": {
         "cx": 789.4142456054688,
         "cy": 511.1260070800781,
-        "r": 942.4385375976562,
+        "r": 755.9660034179688,
         "bounds": {
-          "x": -153.0242919921875,
-          "y": -431.3125305175781,
-          "width": 1884.8770751953125,
-          "height": 1884.8770751953125,
-          "top": -431.3125305175781,
-          "right": 1731.852783203125,
-          "bottom": 1453.5645446777344,
-          "left": -153.0242919921875
+          "x": 33.4482421875,
+          "y": -244.83999633789062,
+          "width": 1511.9320068359375,
+          "height": 1511.9320068359375,
+          "top": -244.83999633789062,
+          "right": 1545.3802490234375,
+          "bottom": 1267.0920104980469,
+          "left": 33.4482421875
         }
       },
       "purpleFragments": "hidden"
@@ -357,7 +357,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 15100,
-      "actualAt": 15274,
+      "actualAt": 15731,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -383,16 +383,16 @@
       "circle": {
         "cx": 789.4142456054688,
         "cy": 511.1260070800781,
-        "r": 648.6087646484375,
+        "r": 320.95947265625,
         "bounds": {
-          "x": 140.80548095703125,
-          "y": -137.48275756835938,
-          "width": 1297.217529296875,
-          "height": 1297.217529296875,
-          "top": -137.48275756835938,
-          "right": 1438.0230102539062,
-          "bottom": 1159.7347717285156,
-          "left": 140.80548095703125
+          "x": 468.45477294921875,
+          "y": 190.16653442382812,
+          "width": 641.9190063476562,
+          "height": 641.9189453125,
+          "top": 190.16653442382812,
+          "right": 1110.373779296875,
+          "bottom": 832.0854797363281,
+          "left": 468.45477294921875
         }
       },
       "purpleFragments": "hidden"
@@ -400,7 +400,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 15900,
-      "actualAt": 16103,
+      "actualAt": 16360,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -426,16 +426,16 @@
       "circle": {
         "cx": 789.4142456054688,
         "cy": 511.1260070800781,
-        "r": 182.60247802734375,
+        "r": 102.0759506225586,
         "bounds": {
-          "x": 606.811767578125,
-          "y": 328.5235290527344,
-          "width": 365.2049560546875,
-          "height": 365.2049865722656,
-          "top": 328.5235290527344,
-          "right": 972.0167236328125,
-          "bottom": 693.728515625,
-          "left": 606.811767578125
+          "x": 687.3383178710938,
+          "y": 409.050048828125,
+          "width": 204.15191650390625,
+          "height": 204.15191650390625,
+          "top": 409.050048828125,
+          "right": 891.490234375,
+          "bottom": 613.2019653320312,
+          "left": 687.3383178710938
         }
       },
       "purpleFragments": "hidden"
@@ -443,7 +443,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 16500,
-      "actualAt": 16779,
+      "actualAt": 16774,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -469,16 +469,16 @@
       "circle": {
         "cx": 789.4142456054688,
         "cy": 511.1260070800781,
-        "r": 52.25082778930664,
+        "r": 52.33549499511719,
         "bounds": {
-          "x": 737.1633911132812,
-          "y": 458.87518310546875,
-          "width": 104.50164794921875,
-          "height": 104.50164794921875,
-          "top": 458.87518310546875,
-          "right": 841.6650390625,
-          "bottom": 563.3768310546875,
-          "left": 737.1633911132812
+          "x": 737.0787353515625,
+          "y": 458.79052734375,
+          "width": 104.6710205078125,
+          "height": 104.6710205078125,
+          "top": 458.79052734375,
+          "right": 841.749755859375,
+          "bottom": 563.4615478515625,
+          "left": 737.0787353515625
         }
       },
       "purpleFragments": "hidden"
@@ -486,7 +486,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 18400,
-      "actualAt": 18553,
+      "actualAt": 18943,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -529,7 +529,7 @@
     {
       "name": "desktop-pt-BR",
       "at": 20700,
-      "actualAt": 20882,
+      "actualAt": 20895,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -571,14 +571,14 @@
     },
     {
       "name": "desktop-pt-BR",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@ba21b04eb21e7a938daf7cbab44106a0.webm",
-      "videoDuration": 29.006,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@23784ed166493f6bd29a1a8d7687fa9d.webm",
+      "videoDuration": 29.669,
       "complete": true
     },
     {
       "name": "mobile-pt-BR",
       "at": 1800,
-      "actualAt": 1854,
+      "actualAt": 1849,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -621,7 +621,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 2700,
-      "actualAt": 2763,
+      "actualAt": 2769,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -664,7 +664,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 3900,
-      "actualAt": 3969,
+      "actualAt": 3950,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -707,7 +707,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 5300,
-      "actualAt": 5370,
+      "actualAt": 5365,
       "fragments": 50,
       "phrase": [
         "Frustrante, não é?"
@@ -752,7 +752,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 8100,
-      "actualAt": 8161,
+      "actualAt": 8172,
       "fragments": 50,
       "phrase": [
         "Agora imagine seus clientes"
@@ -797,7 +797,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 10700,
-      "actualAt": 10774,
+      "actualAt": 10832,
       "fragments": 50,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você"
@@ -842,7 +842,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 13300,
-      "actualAt": 13450,
+      "actualAt": 13379,
       "fragments": 50,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você"
@@ -851,17 +851,17 @@
       "emphasis": [
         {
           "text": "Frustrante",
-          "color": "rgb(7, 3, 25)",
+          "color": "rgb(14, 6, 46)",
           "weight": "700"
         },
         {
           "text": "seus clientes",
-          "color": "rgb(7, 3, 25)",
+          "color": "rgb(14, 6, 46)",
           "weight": "700"
         },
         {
           "text": "trabalhar por você",
-          "color": "rgb(7, 3, 25)",
+          "color": "rgb(14, 6, 46)",
           "weight": "700"
         }
       ],
@@ -887,7 +887,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 14500,
-      "actualAt": 14563,
+      "actualAt": 14624,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -930,7 +930,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 15100,
-      "actualAt": 15184,
+      "actualAt": 15181,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -956,16 +956,16 @@
       "circle": {
         "cx": 244.87327575683594,
         "cy": 465.91827392578125,
-        "r": 405.1180114746094,
+        "r": 418.2393493652344,
         "bounds": {
-          "x": -160.24473571777344,
-          "y": 60.800262451171875,
-          "width": 810.2360229492188,
-          "height": 810.2359619140625,
-          "top": 60.800262451171875,
-          "right": 649.9912872314453,
-          "bottom": 871.0362243652344,
-          "left": -160.24473571777344
+          "x": -173.36607360839844,
+          "y": 47.678924560546875,
+          "width": 836.4786987304688,
+          "height": 836.4786376953125,
+          "top": 47.678924560546875,
+          "right": 663.1126251220703,
+          "bottom": 884.1575622558594,
+          "left": -173.36607360839844
         }
       },
       "purpleFragments": "hidden"
@@ -973,7 +973,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 15900,
-      "actualAt": 15992,
+      "actualAt": 15994,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -999,16 +999,16 @@
       "circle": {
         "cx": 244.87327575683594,
         "cy": 465.91827392578125,
-        "r": 131.84808349609375,
+        "r": 135.46292114257812,
         "bounds": {
-          "x": 113.02519226074219,
-          "y": 334.0701904296875,
-          "width": 263.6961669921875,
-          "height": 263.6961669921875,
-          "top": 334.0701904296875,
-          "right": 376.7213592529297,
-          "bottom": 597.766357421875,
-          "left": 113.02519226074219
+          "x": 109.41035461425781,
+          "y": 330.4553527832031,
+          "width": 270.92584228515625,
+          "height": 270.9258728027344,
+          "top": 330.4553527832031,
+          "right": 380.33619689941406,
+          "bottom": 601.3812255859375,
+          "left": 109.41035461425781
         }
       },
       "purpleFragments": "hidden"
@@ -1016,7 +1016,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 16500,
-      "actualAt": 16661,
+      "actualAt": 16620,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1042,16 +1042,16 @@
       "circle": {
         "cx": 244.87327575683594,
         "cy": 465.91827392578125,
-        "r": 43.630924224853516,
+        "r": 47.31758117675781,
         "bounds": {
-          "x": 201.2423553466797,
-          "y": 422.287353515625,
-          "width": 87.26185607910156,
-          "height": 87.2618408203125,
-          "top": 422.287353515625,
-          "right": 288.50421142578125,
-          "bottom": 509.5491943359375,
-          "left": 201.2423553466797
+          "x": 197.55569458007812,
+          "y": 418.6007080078125,
+          "width": 94.63516235351562,
+          "height": 94.6351318359375,
+          "top": 418.6007080078125,
+          "right": 292.19085693359375,
+          "bottom": 513.23583984375,
+          "left": 197.55569458007812
         }
       },
       "purpleFragments": "hidden"
@@ -1059,7 +1059,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 18400,
-      "actualAt": 18466,
+      "actualAt": 18550,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1102,7 +1102,7 @@
     {
       "name": "mobile-pt-BR",
       "at": 20700,
-      "actualAt": 20760,
+      "actualAt": 20816,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1144,14 +1144,14 @@
     },
     {
       "name": "mobile-pt-BR",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@36d7d656755ba31d158fede951578c3e.webm",
-      "videoDuration": 26.925,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@8c36f368dcdb13982ca5b11c93d842c9.webm",
+      "videoDuration": 27.574,
       "complete": true
     },
     {
       "name": "desktop-en",
       "at": 1800,
-      "actualAt": 1916,
+      "actualAt": 2049,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1194,7 +1194,7 @@
     {
       "name": "desktop-en",
       "at": 2700,
-      "actualAt": 2781,
+      "actualAt": 3078,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1237,7 +1237,7 @@
     {
       "name": "desktop-en",
       "at": 3900,
-      "actualAt": 4016,
+      "actualAt": 4313,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1280,7 +1280,7 @@
     {
       "name": "desktop-en",
       "at": 5300,
-      "actualAt": 5376,
+      "actualAt": 5522,
       "fragments": 100,
       "phrase": [
         "Frustrating, isn’t it?"
@@ -1325,7 +1325,7 @@
     {
       "name": "desktop-en",
       "at": 8100,
-      "actualAt": 8182,
+      "actualAt": 8230,
       "fragments": 100,
       "phrase": [
         "Now imagine your customers"
@@ -1370,7 +1370,7 @@
     {
       "name": "desktop-en",
       "at": 10700,
-      "actualAt": 10803,
+      "actualAt": 10880,
       "fragments": 100,
       "phrase": [
         "Your digital presence should work for you"
@@ -1415,7 +1415,7 @@
     {
       "name": "desktop-en",
       "at": 13300,
-      "actualAt": 13509,
+      "actualAt": 13501,
       "fragments": 100,
       "phrase": [
         "Your digital presence should work for you"
@@ -1424,17 +1424,17 @@
       "emphasis": [
         {
           "text": "Frustrating",
-          "color": "rgb(4, 2, 14)",
+          "color": "rgb(5, 2, 17)",
           "weight": "700"
         },
         {
           "text": "your customers",
-          "color": "rgb(4, 2, 14)",
+          "color": "rgb(5, 2, 17)",
           "weight": "700"
         },
         {
           "text": "work for you",
-          "color": "rgb(4, 2, 14)",
+          "color": "rgb(5, 2, 17)",
           "weight": "700"
         }
       ],
@@ -1460,7 +1460,7 @@
     {
       "name": "desktop-en",
       "at": 14500,
-      "actualAt": 14690,
+      "actualAt": 14643,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1503,7 +1503,7 @@
     {
       "name": "desktop-en",
       "at": 15100,
-      "actualAt": 15350,
+      "actualAt": 15290,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1529,16 +1529,16 @@
       "circle": {
         "cx": 789.4142456054688,
         "cy": 511.1260070800781,
-        "r": 610.3515625,
+        "r": 660.5850830078125,
         "bounds": {
-          "x": 179.06268310546875,
-          "y": -99.22555541992188,
-          "width": 1220.703125,
-          "height": 1220.703125,
-          "top": -99.22555541992188,
-          "right": 1399.7658081054688,
-          "bottom": 1121.4775695800781,
-          "left": 179.06268310546875
+          "x": 128.82916259765625,
+          "y": -149.45907592773438,
+          "width": 1321.170166015625,
+          "height": 1321.170166015625,
+          "top": -149.45907592773438,
+          "right": 1449.9993286132812,
+          "bottom": 1171.7110900878906,
+          "left": 128.82916259765625
         }
       },
       "purpleFragments": "hidden"
@@ -1546,7 +1546,7 @@
     {
       "name": "desktop-en",
       "at": 15900,
-      "actualAt": 16106,
+      "actualAt": 16036,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1572,16 +1572,16 @@
       "circle": {
         "cx": 789.4142456054688,
         "cy": 511.1260070800781,
-        "r": 172.1652374267578,
+        "r": 200.45919799804688,
         "bounds": {
-          "x": 617.2490234375,
-          "y": 338.96075439453125,
-          "width": 344.3304443359375,
-          "height": 344.33050537109375,
-          "top": 338.96075439453125,
-          "right": 961.5794677734375,
-          "bottom": 683.291259765625,
-          "left": 617.2490234375
+          "x": 588.955078125,
+          "y": 310.66680908203125,
+          "width": 400.91839599609375,
+          "height": 400.91839599609375,
+          "top": 310.66680908203125,
+          "right": 989.8734741210938,
+          "bottom": 711.585205078125,
+          "left": 588.955078125
         }
       },
       "purpleFragments": "hidden"
@@ -1589,7 +1589,7 @@
     {
       "name": "desktop-en",
       "at": 16500,
-      "actualAt": 16859,
+      "actualAt": 16607,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1615,16 +1615,16 @@
       "circle": {
         "cx": 789.4142456054688,
         "cy": 511.1260070800781,
-        "r": 45.82283401489258,
+        "r": 71.28395080566406,
         "bounds": {
-          "x": 743.5914306640625,
-          "y": 465.30316162109375,
-          "width": 91.64569091796875,
-          "height": 91.64569091796875,
-          "top": 465.30316162109375,
-          "right": 835.2371215820312,
-          "bottom": 556.9488525390625,
-          "left": 743.5914306640625
+          "x": 718.1303100585938,
+          "y": 439.842041015625,
+          "width": 142.56793212890625,
+          "height": 142.56787109375,
+          "top": 439.842041015625,
+          "right": 860.6982421875,
+          "bottom": 582.409912109375,
+          "left": 718.1303100585938
         }
       },
       "purpleFragments": "hidden"
@@ -1632,7 +1632,7 @@
     {
       "name": "desktop-en",
       "at": 18400,
-      "actualAt": 18837,
+      "actualAt": 18549,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1675,7 +1675,7 @@
     {
       "name": "desktop-en",
       "at": 20700,
-      "actualAt": 20846,
+      "actualAt": 20849,
       "fragments": 100,
       "phrase": [],
       "overflow": false,
@@ -1717,14 +1717,14 @@
     },
     {
       "name": "desktop-en",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@2423af6b993dc794478e436bd8823efc.webm",
-      "videoDuration": 27.105,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@202483cefa9887505409b7becb3ad4c1.webm",
+      "videoDuration": 27.04,
       "complete": true
     },
     {
       "name": "mobile-en",
       "at": 1800,
-      "actualAt": 2027,
+      "actualAt": 1834,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1767,7 +1767,7 @@
     {
       "name": "mobile-en",
       "at": 2700,
-      "actualAt": 2767,
+      "actualAt": 2760,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1810,7 +1810,7 @@
     {
       "name": "mobile-en",
       "at": 3900,
-      "actualAt": 3953,
+      "actualAt": 4098,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -1853,7 +1853,7 @@
     {
       "name": "mobile-en",
       "at": 5300,
-      "actualAt": 5364,
+      "actualAt": 5427,
       "fragments": 50,
       "phrase": [
         "Frustrating, isn’t it?"
@@ -1898,7 +1898,7 @@
     {
       "name": "mobile-en",
       "at": 8100,
-      "actualAt": 8151,
+      "actualAt": 8162,
       "fragments": 50,
       "phrase": [
         "Now imagine your customers"
@@ -1943,7 +1943,7 @@
     {
       "name": "mobile-en",
       "at": 10700,
-      "actualAt": 10840,
+      "actualAt": 10744,
       "fragments": 50,
       "phrase": [
         "Your digital presence should work for you"
@@ -1988,7 +1988,7 @@
     {
       "name": "mobile-en",
       "at": 13300,
-      "actualAt": 13468,
+      "actualAt": 13348,
       "fragments": 50,
       "phrase": [
         "Your digital presence should work for you"
@@ -1997,17 +1997,17 @@
       "emphasis": [
         {
           "text": "Frustrating",
-          "color": "rgb(3, 1, 11)",
+          "color": "rgb(16, 7, 52)",
           "weight": "700"
         },
         {
           "text": "your customers",
-          "color": "rgb(3, 1, 11)",
+          "color": "rgb(16, 7, 52)",
           "weight": "700"
         },
         {
           "text": "work for you",
-          "color": "rgb(3, 1, 11)",
+          "color": "rgb(16, 7, 52)",
           "weight": "700"
         }
       ],
@@ -2033,7 +2033,7 @@
     {
       "name": "mobile-en",
       "at": 14500,
-      "actualAt": 14622,
+      "actualAt": 14553,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2059,16 +2059,16 @@
       "circle": {
         "cx": 244.87327575683594,
         "cy": 465.91827392578125,
-        "r": 528.178466796875,
+        "r": 528.3485107421875,
         "bounds": {
-          "x": -283.30517578125,
-          "y": -62.26019287109375,
-          "width": 1056.35693359375,
-          "height": 1056.35693359375,
-          "top": -62.26019287109375,
-          "right": 773.0517578125,
-          "bottom": 994.0967407226562,
-          "left": -283.30517578125
+          "x": -283.4752197265625,
+          "y": -62.43023681640625,
+          "width": 1056.697021484375,
+          "height": 1056.697021484375,
+          "top": -62.43023681640625,
+          "right": 773.2218017578125,
+          "bottom": 994.2667846679688,
+          "left": -283.4752197265625
         }
       },
       "purpleFragments": "hidden"
@@ -2076,7 +2076,7 @@
     {
       "name": "mobile-en",
       "at": 15100,
-      "actualAt": 15285,
+      "actualAt": 15153,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2102,16 +2102,16 @@
       "circle": {
         "cx": 244.87327575683594,
         "cy": 465.91827392578125,
-        "r": 345.4777526855469,
+        "r": 430.6479187011719,
         "bounds": {
-          "x": -100.60447692871094,
-          "y": 120.44052124023438,
-          "width": 690.9555053710938,
-          "height": 690.9554443359375,
-          "top": 120.44052124023438,
-          "right": 590.3510284423828,
-          "bottom": 811.3959655761719,
-          "left": -100.60447692871094
+          "x": -185.77464294433594,
+          "y": 35.270355224609375,
+          "width": 861.2958374023438,
+          "height": 861.2957763671875,
+          "top": 35.270355224609375,
+          "right": 675.5211944580078,
+          "bottom": 896.5661315917969,
+          "left": -185.77464294433594
         }
       },
       "purpleFragments": "hidden"
@@ -2119,7 +2119,7 @@
     {
       "name": "mobile-en",
       "at": 15900,
-      "actualAt": 15959,
+      "actualAt": 15949,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2145,16 +2145,16 @@
       "circle": {
         "cx": 244.87327575683594,
         "cy": 465.91827392578125,
-        "r": 124.66105651855469,
+        "r": 147.31890869140625,
         "bounds": {
-          "x": 120.21221923828125,
-          "y": 341.2572021484375,
-          "width": 249.32211303710938,
-          "height": 249.3221435546875,
-          "top": 341.2572021484375,
-          "right": 369.5343322753906,
-          "bottom": 590.579345703125,
-          "left": 120.21221923828125
+          "x": 97.55436706542969,
+          "y": 318.599365234375,
+          "width": 294.6378173828125,
+          "height": 294.6378173828125,
+          "top": 318.599365234375,
+          "right": 392.1921844482422,
+          "bottom": 613.2371826171875,
+          "left": 97.55436706542969
         }
       },
       "purpleFragments": "hidden"
@@ -2162,7 +2162,7 @@
     {
       "name": "mobile-en",
       "at": 16500,
-      "actualAt": 16571,
+      "actualAt": 16563,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2188,16 +2188,16 @@
       "circle": {
         "cx": 244.87327575683594,
         "cy": 465.91827392578125,
-        "r": 43.630924224853516,
+        "r": 51.38351821899414,
         "bounds": {
-          "x": 201.2423553466797,
-          "y": 422.287353515625,
-          "width": 87.26185607910156,
-          "height": 87.2618408203125,
-          "top": 422.287353515625,
-          "right": 288.50421142578125,
-          "bottom": 509.5491943359375,
-          "left": 201.2423553466797
+          "x": 193.48976135253906,
+          "y": 414.5347595214844,
+          "width": 102.76704406738281,
+          "height": 102.76705932617188,
+          "top": 414.5347595214844,
+          "right": 296.2568054199219,
+          "bottom": 517.3018188476562,
+          "left": 193.48976135253906
         }
       },
       "purpleFragments": "hidden"
@@ -2205,7 +2205,7 @@
     {
       "name": "mobile-en",
       "at": 18400,
-      "actualAt": 18465,
+      "actualAt": 18450,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2248,7 +2248,7 @@
     {
       "name": "mobile-en",
       "at": 20700,
-      "actualAt": 20782,
+      "actualAt": 20756,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2290,14 +2290,14 @@
     },
     {
       "name": "mobile-en",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@08a2560df2d64e9b48b61a5fdc986eb0.webm",
-      "videoDuration": 27.841,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@7ed99c4fcd1c8109e8553ab4e69c0491.webm",
+      "videoDuration": 26.571,
       "complete": true
     },
     {
       "name": "reduced-pt-BR",
       "at": 1600,
-      "actualAt": 1766,
+      "actualAt": 1674,
       "fragments": 0,
       "phrase": [
         "Frustrante, não é?"
@@ -2342,7 +2342,7 @@
     {
       "name": "reduced-pt-BR",
       "at": 4600,
-      "actualAt": 4735,
+      "actualAt": 4671,
       "fragments": 0,
       "phrase": [
         "Agora imagine seus clientes"
@@ -2387,7 +2387,7 @@
     {
       "name": "reduced-pt-BR",
       "at": 7800,
-      "actualAt": 7923,
+      "actualAt": 7873,
       "fragments": 0,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você"
@@ -2432,7 +2432,7 @@
     {
       "name": "reduced-pt-BR",
       "at": 9900,
-      "actualAt": 10059,
+      "actualAt": 9983,
       "fragments": 0,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você"
@@ -2477,7 +2477,7 @@
     {
       "name": "reduced-pt-BR",
       "at": 10800,
-      "actualAt": 10953,
+      "actualAt": 10876,
       "fragments": 0,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você"
@@ -2522,7 +2522,7 @@
     {
       "name": "reduced-pt-BR",
       "at": 12500,
-      "actualAt": 12695,
+      "actualAt": 12623,
       "fragments": 0,
       "phrase": [],
       "overflow": false,
@@ -2565,7 +2565,7 @@
     {
       "name": "reduced-pt-BR",
       "at": 14400,
-      "actualAt": 14583,
+      "actualAt": 14484,
       "fragments": 0,
       "phrase": [],
       "overflow": false,
@@ -2607,14 +2607,14 @@
     },
     {
       "name": "reduced-pt-BR",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@24814ea9075387b37f973634204ed77e.webm",
-      "videoDuration": 21.309,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@9f4f3ef59420408ce2f2769a2015da45.webm",
+      "videoDuration": 20.159,
       "complete": true
     },
     {
       "name": "reduced-en",
       "at": 1600,
-      "actualAt": 1679,
+      "actualAt": 1641,
       "fragments": 0,
       "phrase": [
         "Frustrating, isn’t it?"
@@ -2659,7 +2659,7 @@
     {
       "name": "reduced-en",
       "at": 4600,
-      "actualAt": 4657,
+      "actualAt": 4660,
       "fragments": 0,
       "phrase": [
         "Now imagine your customers"
@@ -2704,7 +2704,7 @@
     {
       "name": "reduced-en",
       "at": 7800,
-      "actualAt": 7862,
+      "actualAt": 7858,
       "fragments": 0,
       "phrase": [
         "Your digital presence should work for you"
@@ -2749,7 +2749,7 @@
     {
       "name": "reduced-en",
       "at": 9900,
-      "actualAt": 9960,
+      "actualAt": 9943,
       "fragments": 0,
       "phrase": [
         "Your digital presence should work for you"
@@ -2794,7 +2794,7 @@
     {
       "name": "reduced-en",
       "at": 10800,
-      "actualAt": 10840,
+      "actualAt": 10847,
       "fragments": 0,
       "phrase": [
         "Your digital presence should work for you"
@@ -2839,7 +2839,7 @@
     {
       "name": "reduced-en",
       "at": 12500,
-      "actualAt": 12568,
+      "actualAt": 12567,
       "fragments": 0,
       "phrase": [],
       "overflow": false,
@@ -2882,7 +2882,7 @@
     {
       "name": "reduced-en",
       "at": 14400,
-      "actualAt": 14459,
+      "actualAt": 14443,
       "fragments": 0,
       "phrase": [],
       "overflow": false,
@@ -2924,14 +2924,14 @@
     },
     {
       "name": "reduced-en",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@a3ff1b38f680bb0c8a796045a1d72681.webm",
-      "videoDuration": 20.553,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@50b069772365f4ec0e51a54e67ab3789.webm",
+      "videoDuration": 20.534,
       "complete": true
     },
     {
       "name": "small-mobile",
       "at": 1800,
-      "actualAt": 1874,
+      "actualAt": 1849,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -2974,7 +2974,7 @@
     {
       "name": "small-mobile",
       "at": 2700,
-      "actualAt": 2744,
+      "actualAt": 2747,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -3017,7 +3017,7 @@
     {
       "name": "small-mobile",
       "at": 3900,
-      "actualAt": 3959,
+      "actualAt": 3933,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -3060,7 +3060,7 @@
     {
       "name": "small-mobile",
       "at": 5300,
-      "actualAt": 5362,
+      "actualAt": 5333,
       "fragments": 50,
       "phrase": [
         "Frustrante, não é?"
@@ -3105,7 +3105,7 @@
     {
       "name": "small-mobile",
       "at": 8100,
-      "actualAt": 8181,
+      "actualAt": 8144,
       "fragments": 50,
       "phrase": [
         "Agora imagine seus clientes"
@@ -3150,7 +3150,7 @@
     {
       "name": "small-mobile",
       "at": 10700,
-      "actualAt": 10778,
+      "actualAt": 10747,
       "fragments": 50,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você"
@@ -3195,7 +3195,7 @@
     {
       "name": "small-mobile",
       "at": 13300,
-      "actualAt": 13371,
+      "actualAt": 13369,
       "fragments": 50,
       "phrase": [
         "A presença digital do seu negócio deveria trabalhar por você"
@@ -3204,17 +3204,17 @@
       "emphasis": [
         {
           "text": "Frustrante",
-          "color": "rgb(15, 6, 49)",
+          "color": "rgb(16, 7, 52)",
           "weight": "700"
         },
         {
           "text": "seus clientes",
-          "color": "rgb(15, 6, 49)",
+          "color": "rgb(16, 7, 52)",
           "weight": "700"
         },
         {
           "text": "trabalhar por você",
-          "color": "rgb(15, 6, 49)",
+          "color": "rgb(16, 7, 52)",
           "weight": "700"
         }
       ],
@@ -3240,7 +3240,7 @@
     {
       "name": "small-mobile",
       "at": 14500,
-      "actualAt": 14568,
+      "actualAt": 14548,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -3283,7 +3283,7 @@
     {
       "name": "small-mobile",
       "at": 15100,
-      "actualAt": 15169,
+      "actualAt": 15149,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -3309,16 +3309,16 @@
       "circle": {
         "cx": 201.99855041503906,
         "cy": 320.9837951660156,
-        "r": 304.85736083984375,
+        "r": 317.8533020019531,
         "bounds": {
-          "x": -102.85881042480469,
-          "y": 16.126434326171875,
-          "width": 609.7147216796875,
-          "height": 609.7147216796875,
-          "top": 16.126434326171875,
-          "right": 506.8559112548828,
-          "bottom": 625.8411560058594,
-          "left": -102.85881042480469
+          "x": -115.85475158691406,
+          "y": 3.1304931640625,
+          "width": 635.7066040039062,
+          "height": 635.7066040039062,
+          "top": 3.1304931640625,
+          "right": 519.8518524169922,
+          "bottom": 638.8370971679688,
+          "left": -115.85475158691406
         }
       },
       "purpleFragments": "hidden"
@@ -3326,7 +3326,7 @@
     {
       "name": "small-mobile",
       "at": 15900,
-      "actualAt": 15960,
+      "actualAt": 15923,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -3352,16 +3352,16 @@
       "circle": {
         "cx": 201.99855041503906,
         "cy": 320.9837951660156,
-        "r": 109.4869384765625,
+        "r": 121.5881576538086,
         "bounds": {
-          "x": 92.51161193847656,
-          "y": 211.49685668945312,
-          "width": 218.97386169433594,
-          "height": 218.973876953125,
-          "top": 211.49685668945312,
-          "right": 311.4854736328125,
-          "bottom": 430.4707336425781,
-          "left": 92.51161193847656
+          "x": 80.41039276123047,
+          "y": 199.3956298828125,
+          "width": 243.17630004882812,
+          "height": 243.17633056640625,
+          "top": 199.3956298828125,
+          "right": 323.5866928100586,
+          "bottom": 442.57196044921875,
+          "left": 80.41039276123047
         }
       },
       "purpleFragments": "hidden"
@@ -3369,7 +3369,7 @@
     {
       "name": "small-mobile",
       "at": 16500,
-      "actualAt": 16559,
+      "actualAt": 16548,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -3395,16 +3395,16 @@
       "circle": {
         "cx": 201.99855041503906,
         "cy": 320.9837951660156,
-        "r": 40.998477935791016,
+        "r": 43.21570587158203,
         "bounds": {
-          "x": 161.0000762939453,
-          "y": 279.9853210449219,
-          "width": 81.99696350097656,
-          "height": 81.9969482421875,
-          "top": 279.9853210449219,
-          "right": 242.99703979492188,
-          "bottom": 361.9822692871094,
-          "left": 161.0000762939453
+          "x": 158.7828369140625,
+          "y": 277.7680969238281,
+          "width": 86.43141174316406,
+          "height": 86.43142700195312,
+          "top": 277.7680969238281,
+          "right": 245.21424865722656,
+          "bottom": 364.19952392578125,
+          "left": 158.7828369140625
         }
       },
       "purpleFragments": "hidden"
@@ -3412,7 +3412,7 @@
     {
       "name": "small-mobile",
       "at": 18400,
-      "actualAt": 18480,
+      "actualAt": 18449,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -3455,7 +3455,7 @@
     {
       "name": "small-mobile",
       "at": 20700,
-      "actualAt": 20762,
+      "actualAt": 20746,
       "fragments": 50,
       "phrase": [],
       "overflow": false,
@@ -3497,8 +3497,8 @@
     },
     {
       "name": "small-mobile",
-      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@32289508e63dcacb0a09e2d213ff9e10.webm",
-      "videoDuration": 26.581,
+      "video": "C:\\Users\\vitol\\Repositórios\\side-landing-page\\artifacts\\hero-4-recordings\\page@452adc315f61566492ede4673b7b5883.webm",
+      "videoDuration": 26.434,
       "complete": true
     }
   ],
@@ -4245,213 +4245,209 @@
       "name": "desktop-pt-BR",
       "colors": [
         {
-          "at": 0.19999980926513672,
+          "at": 0.3000001907348633,
           "color": "rgb(57, 25, 189)"
         },
         {
-          "at": 12692.899999856949,
-          "color": "rgb(55, 24, 182)"
+          "at": 12715.800000190735,
+          "color": "rgb(52, 23, 172)"
         },
         {
-          "at": 12775.699999809265,
-          "color": "rgb(50, 22, 165)"
+          "at": 12798.200000047684,
+          "color": "rgb(46, 20, 154)"
         },
         {
-          "at": 12858.099999904633,
-          "color": "rgb(44, 19, 147)"
+          "at": 12881,
+          "color": "rgb(41, 18, 137)"
         },
         {
-          "at": 12938.699999809265,
-          "color": "rgb(39, 17, 130)"
+          "at": 12963.900000095367,
+          "color": "rgb(36, 16, 119)"
         },
         {
-          "at": 13022.399999856949,
-          "color": "rgb(34, 15, 112)"
+          "at": 13048,
+          "color": "rgb(31, 13, 102)"
         },
         {
-          "at": 13105.599999904633,
-          "color": "rgb(29, 13, 95)"
+          "at": 13129.700000047684,
+          "color": "rgb(25, 11, 84)"
         },
         {
-          "at": 13190.399999856949,
-          "color": "rgb(23, 10, 77)"
+          "at": 13214.700000047684,
+          "color": "rgb(20, 9, 67)"
         },
         {
-          "at": 13273.399999856949,
-          "color": "rgb(18, 8, 60)"
+          "at": 13299.400000095367,
+          "color": "rgb(15, 6, 49)"
         },
         {
-          "at": 13358,
-          "color": "rgb(13, 6, 42)"
+          "at": 13381.100000143051,
+          "color": "rgb(10, 4, 32)"
         },
         {
-          "at": 13440.299999952316,
-          "color": "rgb(7, 3, 24)"
+          "at": 13464.600000143051,
+          "color": "rgb(4, 2, 14)"
         },
         {
-          "at": 13523.799999952316,
-          "color": "rgb(2, 1, 7)"
-        },
-        {
-          "at": 13607.199999809265,
+          "at": 13546.400000095367,
           "color": "rgb(0, 0, 0)"
         }
       ],
       "radii": [
         {
-          "at": 0.39999985694885254,
+          "at": 0.5,
           "radius": 942.4385375976562
         },
         {
-          "at": 14690.899999856949,
-          "radius": 941.1466674804688
+          "at": 14646.5,
+          "radius": 942.4340209960938
         },
         {
-          "at": 14772.399999856949,
-          "radius": 927.5247192382812
+          "at": 14734.800000190735,
+          "radius": 931.26318359375
         },
         {
-          "at": 14854.799999952316,
-          "radius": 900.6888427734375
+          "at": 14821.5,
+          "radius": 912.284912109375
         },
         {
-          "at": 14937.699999809265,
+          "at": 14912.300000190735,
           "radius": 861.4038696289062
         },
         {
-          "at": 15021.699999809265,
-          "radius": 813.1787109375
+          "at": 14993.900000095367,
+          "radius": 822.4765014648438
         },
         {
-          "at": 15104.599999904633,
-          "radius": 758.0564575195312
+          "at": 15082.100000143051,
+          "radius": 755.9660034179688
         },
         {
-          "at": 15189.699999809265,
-          "radius": 696.9794921875
+          "at": 15164.900000095367,
+          "radius": 697.7158203125
         },
         {
-          "at": 15273.899999856949,
-          "radius": 635.1098022460938
+          "at": 15248.800000190735,
+          "radius": 634.3594360351562
         },
         {
-          "at": 15356.5,
+          "at": 15333.600000143051,
           "radius": 572.2809448242188
         },
         {
-          "at": 15438.399999856949,
-          "radius": 512.3577880859375
+          "at": 15415,
+          "radius": 510.20904541015625
         },
         {
-          "at": 15519,
-          "radius": 465.9974060058594
+          "at": 15497.300000190735,
+          "radius": 454.39654541015625
         },
         {
-          "at": 15600.5,
-          "radius": 410.8697204589844
+          "at": 15581.200000047684,
+          "radius": 399.44451904296875
         },
         {
-          "at": 15681.699999809265,
-          "radius": 359.30560302734375
+          "at": 15664,
+          "radius": 348.8526916503906
         },
         {
-          "at": 15771.299999952316,
+          "at": 15746.400000095367,
           "radius": 303.999267578125
         },
         {
-          "at": 15854.799999952316,
-          "radius": 263.26007080078125
+          "at": 15830,
+          "radius": 262.79766845703125
         },
         {
-          "at": 15938.099999904633,
-          "radius": 226.72378540039062
+          "at": 15914.5,
+          "radius": 226.31649780273438
         },
         {
-          "at": 16018.699999809265,
-          "radius": 200.8247833251953
+          "at": 15998.100000143051,
+          "radius": 194.69158935546875
         },
         {
-          "at": 16105,
-          "radius": 167.46920776367188
+          "at": 16079.300000190735,
+          "radius": 167.16050720214844
         },
         {
-          "at": 16194,
+          "at": 16165.400000095367,
           "radius": 143.37014770507812
         },
         {
-          "at": 16276.699999809265,
-          "radius": 122.94343566894531
+          "at": 16251.100000143051,
+          "radius": 122.48954772949219
         },
         {
-          "at": 16358.699999809265,
-          "radius": 105.50098419189453
+          "at": 16331.900000095367,
+          "radius": 105.30751037597656
         },
         {
-          "at": 16443.099999904633,
-          "radius": 90.02227783203125
+          "at": 16415.5,
+          "radius": 90.51252746582031
         },
         {
-          "at": 16524.699999809265,
+          "at": 16499.60000014305,
           "radius": 77.85063171386719
         },
         {
-          "at": 16606.39999985695,
-          "radius": 67.19142150878906
+          "at": 16582.900000095367,
+          "radius": 67.42422485351562
         },
         {
-          "at": 16693.699999809265,
-          "radius": 57.95417404174805
+          "at": 16665.200000047684,
+          "radius": 58.44041061401367
         },
         {
-          "at": 16780.099999904633,
-          "radius": 50.92058563232422
+          "at": 16746.800000190735,
+          "radius": 51.00239181518555
         },
         {
-          "at": 16871.599999904633,
-          "radius": 43.637733459472656
+          "at": 16831.900000095367,
+          "radius": 44.71120071411133
         },
         {
-          "at": 16955.199999809265,
-          "radius": 38.637306213378906
+          "at": 16916.300000190735,
+          "radius": 39.53108596801758
         },
         {
-          "at": 17038.299999952316,
-          "radius": 34.483219146728516
+          "at": 16997.5,
+          "radius": 35.224403381347656
         },
         {
-          "at": 17123.89999985695,
-          "radius": 31.011598587036133
+          "at": 17081.200000047684,
+          "radius": 31.62134552001953
         },
         {
-          "at": 17204.5,
-          "radius": 28.199405670166016
+          "at": 17166,
+          "radius": 28.6979923248291
         },
         {
-          "at": 17288.299999952316,
-          "radius": 25.891281127929688
+          "at": 17249.300000190735,
+          "radius": 26.292695999145508
         },
         {
-          "at": 17372.599999904633,
-          "radius": 24.034643173217773
+          "at": 17340.700000047684,
+          "radius": 24.370351791381836
         },
         {
-          "at": 17455.5,
-          "radius": 22.661909103393555
+          "at": 17438.400000095367,
+          "radius": 22.603439331054688
         },
         {
-          "at": 17538.299999952316,
-          "radius": 21.607866287231445
+          "at": 17528.10000014305,
+          "radius": 21.587116241455078
         },
         {
-          "at": 17622.099999904633,
-          "radius": 20.91029930114746
+          "at": 17618.60000014305,
+          "radius": 20.802644729614258
         },
         {
-          "at": 17705.699999809265,
-          "radius": 20.539566040039062
+          "at": 17707.900000095367,
+          "radius": 20.505422592163086
         },
         {
-          "at": 17788.599999904633,
+          "at": 17797.60000014305,
           "radius": 20.47893524169922
         }
       ]
@@ -4460,213 +4456,205 @@
       "name": "mobile-pt-BR",
       "colors": [
         {
-          "at": 0.10000014305114746,
+          "at": 0.20000004768371582,
           "color": "rgb(57, 25, 189)"
         },
         {
-          "at": 12677.700000047684,
-          "color": "rgb(56, 25, 186)"
+          "at": 12765.100000143051,
+          "color": "rgb(52, 23, 172)"
         },
         {
-          "at": 12760.5,
-          "color": "rgb(51, 22, 168)"
+          "at": 12845.799999952316,
+          "color": "rgb(48, 21, 158)"
         },
         {
-          "at": 12844,
-          "color": "rgb(45, 20, 151)"
+          "at": 12927.900000095367,
+          "color": "rgb(42, 19, 140)"
         },
         {
-          "at": 12927,
-          "color": "rgb(40, 18, 133)"
+          "at": 13015.5,
+          "color": "rgb(36, 16, 119)"
         },
         {
-          "at": 13009.5,
-          "color": "rgb(35, 15, 116)"
+          "at": 13103,
+          "color": "rgb(31, 13, 101)"
         },
         {
-          "at": 13099.700000047684,
-          "color": "rgb(29, 13, 97)"
+          "at": 13190.799999952316,
+          "color": "rgb(25, 11, 84)"
         },
         {
-          "at": 13186.400000095367,
-          "color": "rgb(24, 10, 79)"
+          "at": 13282,
+          "color": "rgb(19, 8, 63)"
         },
         {
-          "at": 13266.800000190735,
-          "color": "rgb(19, 8, 62)"
+          "at": 13366.100000143051,
+          "color": "rgb(14, 6, 46)"
         },
         {
-          "at": 13362.5,
-          "color": "rgb(13, 6, 42)"
+          "at": 13447,
+          "color": "rgb(8, 4, 28)"
         },
         {
-          "at": 13443.200000047684,
-          "color": "rgb(7, 3, 25)"
+          "at": 13531.600000143051,
+          "color": "rgb(3, 1, 11)"
         },
         {
-          "at": 13525.900000095367,
-          "color": "rgb(2, 1, 7)"
-        },
-        {
-          "at": 13608.200000047684,
+          "at": 13612.799999952316,
           "color": "rgb(0, 0, 0)"
         }
       ],
       "radii": [
         {
-          "at": 0.3000001907348633,
+          "at": 0.40000009536743164,
           "radius": 528.3485107421875
         },
         {
-          "at": 14684.700000047684,
-          "radius": 528.216064453125
+          "at": 14778.100000143051,
+          "radius": 524.3673095703125
         },
         {
-          "at": 14775.600000143051,
-          "radius": 520.7852172851562
+          "at": 14864.5,
+          "radius": 509.684814453125
         },
         {
-          "at": 14859.600000143051,
-          "radius": 506.4275207519531
+          "at": 14947.400000095367,
+          "radius": 490.3814392089844
         },
         {
-          "at": 14940.100000143051,
-          "radius": 490.6476745605469
+          "at": 15030.700000047684,
+          "radius": 465.8276062011719
         },
         {
-          "at": 15026.300000190735,
-          "radius": 460.5934753417969
+          "at": 15111.5,
+          "radius": 443.0160827636719
         },
         {
-          "at": 15108.800000190735,
-          "radius": 431.387939453125
+          "at": 15197.200000047684,
+          "radius": 405.508056640625
         },
         {
-          "at": 15192.700000047684,
-          "radius": 399.24078369140625
+          "at": 15281.100000143051,
+          "radius": 372.5329284667969
         },
         {
-          "at": 15275.400000095367,
-          "radius": 366.0842590332031
+          "at": 15365.5,
+          "radius": 338.2140197753906
         },
         {
-          "at": 15360.900000095367,
-          "radius": 332.1748352050781
+          "at": 15447.100000143051,
+          "radius": 311.8011474609375
         },
         {
-          "at": 15442.5,
-          "radius": 299.1981201171875
+          "at": 15540.200000047684,
+          "radius": 272.6916809082031
         },
         {
-          "at": 15525.300000190735,
-          "radius": 267.44635009765625
+          "at": 15620.5,
+          "radius": 242.3634033203125
         },
         {
-          "at": 15608.200000047684,
-          "radius": 237.44239807128906
+          "at": 15708.900000095367,
+          "radius": 214.42092895507812
         },
         {
-          "at": 15692.5,
-          "radius": 209.2250213623047
+          "at": 15799.799999952316,
+          "radius": 183.3915557861328
         },
         {
-          "at": 15776.400000095367,
-          "radius": 183.68458557128906
+          "at": 15880.700000047684,
+          "radius": 160.039306640625
         },
         {
-          "at": 15859.700000047684,
-          "radius": 160.3026580810547
+          "at": 15965.700000047684,
+          "radius": 139.39822387695312
         },
         {
-          "at": 15943.900000095367,
-          "radius": 139.6327667236328
+          "at": 16047.799999952316,
+          "radius": 121.09760284423828
         },
         {
-          "at": 16025.600000143051,
-          "radius": 121.30463409423828
+          "at": 16130.5,
+          "radius": 105.00736999511719
         },
         {
-          "at": 16106.100000143051,
-          "radius": 108.13057708740234
+          "at": 16212.400000095367,
+          "radius": 93.52008056640625
         },
         {
-          "at": 16192.200000047684,
-          "radius": 90.96370697021484
+          "at": 16296.700000047684,
+          "radius": 78.64799499511719
         },
         {
-          "at": 16273.200000047684,
-          "radius": 81.13615417480469
+          "at": 16381.5,
+          "radius": 68.1623306274414
         },
         {
-          "at": 16355.200000047684,
-          "radius": 70.18299865722656
+          "at": 16464.299999952316,
+          "radius": 59.06206130981445
         },
         {
-          "at": 16442.700000047684,
-          "radius": 59.16218566894531
-        },
-        {
-          "at": 16527.200000047684,
+          "at": 16547.5,
           "radius": 51.38351821899414
         },
         {
-          "at": 16610.5,
-          "radius": 44.843841552734375
+          "at": 16630.900000095367,
+          "radius": 44.771358489990234
         },
         {
-          "at": 16692.200000047684,
-          "radius": 39.29195785522461
+          "at": 16715.400000095367,
+          "radius": 39.16920852661133
         },
         {
-          "at": 16775.800000190735,
-          "radius": 34.59271240234375
+          "at": 16799,
+          "radius": 34.54079055786133
         },
         {
-          "at": 16865,
-          "radius": 30.409130096435547
+          "at": 16880.700000047684,
+          "radius": 30.539554595947266
         },
         {
-          "at": 16945.700000047684,
-          "radius": 27.181049346923828
+          "at": 16963.5,
+          "radius": 27.21762466430664
         },
         {
-          "at": 17025.900000095367,
-          "radius": 24.465002059936523
+          "at": 17047.400000095367,
+          "radius": 24.434364318847656
         },
         {
-          "at": 17108.400000095367,
-          "radius": 22.139766693115234
+          "at": 17130.400000095367,
+          "radius": 22.114309310913086
         },
         {
-          "at": 17192.10000014305,
-          "radius": 20.194141387939453
+          "at": 17213.700000047684,
+          "radius": 20.173221588134766
         },
         {
-          "at": 17275.10000014305,
-          "radius": 18.62152862548828
+          "at": 17296.799999952316,
+          "radius": 18.604516983032227
         },
         {
-          "at": 17358.900000095367,
-          "radius": 17.354066848754883
+          "at": 17383.60000014305,
+          "radius": 17.326995849609375
         },
         {
-          "at": 17441.900000095367,
-          "radius": 16.347976684570312
+          "at": 17464.10000014305,
+          "radius": 16.33756446838379
         },
         {
-          "at": 17525.400000095367,
-          "radius": 15.602093696594238
+          "at": 17548.400000095367,
+          "radius": 15.587008476257324
         },
         {
-          "at": 17608.60000014305,
-          "radius": 15.086090087890625
+          "at": 17631.900000095367,
+          "radius": 15.081231117248535
         },
         {
-          "at": 17691.700000047684,
-          "radius": 14.788993835449219
+          "at": 17713.799999952316,
+          "radius": 14.786810874938965
         },
         {
-          "at": 17775.800000190735,
+          "at": 17797.299999952316,
           "radius": 14.71385669708252
         }
       ]
@@ -4679,209 +4667,205 @@
           "color": "rgb(57, 25, 189)"
         },
         {
-          "at": 12677,
-          "color": "rgb(56, 25, 185)"
+          "at": 12730.599999904633,
+          "color": "rgb(53, 23, 175)"
         },
         {
-          "at": 12759.5,
-          "color": "rgb(51, 22, 168)"
+          "at": 12814.299999952316,
+          "color": "rgb(47, 21, 157)"
         },
         {
-          "at": 12842.5,
-          "color": "rgb(45, 20, 150)"
+          "at": 12897.200000047684,
+          "color": "rgb(42, 19, 140)"
         },
         {
-          "at": 12925.700000047684,
-          "color": "rgb(40, 18, 133)"
+          "at": 12981.799999952316,
+          "color": "rgb(37, 16, 122)"
         },
         {
-          "at": 13009.5,
-          "color": "rgb(35, 15, 115)"
+          "at": 13064.299999952316,
+          "color": "rgb(32, 14, 105)"
         },
         {
-          "at": 13092.700000047684,
-          "color": "rgb(30, 13, 98)"
+          "at": 13145.799999952316,
+          "color": "rgb(26, 12, 88)"
         },
         {
-          "at": 13176.900000095367,
-          "color": "rgb(24, 11, 80)"
+          "at": 13234.899999856949,
+          "color": "rgb(21, 9, 70)"
         },
         {
-          "at": 13259.299999952316,
-          "color": "rgb(19, 8, 63)"
+          "at": 13315.399999856949,
+          "color": "rgb(16, 7, 52)"
         },
         {
-          "at": 13343.599999904633,
-          "color": "rgb(14, 6, 45)"
+          "at": 13401.099999904633,
+          "color": "rgb(11, 5, 35)"
         },
         {
-          "at": 13427,
-          "color": "rgb(8, 4, 28)"
+          "at": 13483.299999952316,
+          "color": "rgb(5, 2, 17)"
         },
         {
-          "at": 13510.200000047684,
-          "color": "rgb(3, 1, 10)"
-        },
-        {
-          "at": 13590.400000095367,
+          "at": 13564.200000047684,
           "color": "rgb(0, 0, 0)"
         }
       ],
       "radii": [
         {
-          "at": 0.20000004768371582,
+          "at": 0.39999985694885254,
           "radius": 942.4385375976562
         },
         {
-          "at": 14680.400000095367,
-          "radius": 942.0336303710938
+          "at": 14725.899999856949,
+          "radius": 939.6566162109375
         },
         {
-          "at": 14771.599999904633,
-          "radius": 931.4796752929688
+          "at": 14812.299999952316,
+          "radius": 918.2256469726562
         },
         {
-          "at": 14859.900000095367,
-          "radius": 899.8834838867188
+          "at": 14900,
+          "radius": 885.6416015625
         },
         {
-          "at": 14946.900000095367,
-          "radius": 859.8090209960938
+          "at": 14980.099999904633,
+          "radius": 842.640869140625
         },
         {
-          "at": 15037.400000095367,
-          "radius": 812.5507202148438
+          "at": 15062,
+          "radius": 791.29296875
         },
         {
-          "at": 15120.200000047684,
-          "radius": 757.3602905273438
+          "at": 15145,
+          "radius": 734.0494384765625
         },
         {
-          "at": 15212.400000095367,
-          "radius": 683.675048828125
+          "at": 15229.200000047684,
+          "radius": 672.5256958007812
         },
         {
-          "at": 15302.900000095367,
-          "radius": 623.1026611328125
+          "at": 15313.299999952316,
+          "radius": 609.60205078125
         },
         {
-          "at": 15387.099999904633,
-          "radius": 560.4348754882812
+          "at": 15396.399999856949,
+          "radius": 548.6535034179688
         },
         {
-          "at": 15474.099999904633,
+          "at": 15478.399999856949,
           "radius": 488.22686767578125
         },
         {
-          "at": 15557.799999952316,
+          "at": 15561.899999856949,
           "radius": 431.6622619628906
         },
         {
-          "at": 15641.900000095367,
-          "radius": 377.80902099609375
+          "at": 15644.299999952316,
+          "radius": 379.0242919921875
         },
         {
-          "at": 15724.900000095367,
-          "radius": 330.2532958984375
+          "at": 15727.899999856949,
+          "radius": 330.8061218261719
         },
         {
-          "at": 15807.799999952316,
+          "at": 15812.700000047684,
           "radius": 286.744873046875
         },
         {
-          "at": 15893.799999952316,
-          "radius": 247.47264099121094
+          "at": 15895.299999952316,
+          "radius": 247.9124298095703
         },
         {
-          "at": 15974.400000095367,
-          "radius": 213.231689453125
+          "at": 15978.399999856949,
+          "radius": 213.61814880371094
         },
         {
-          "at": 16059.700000047684,
-          "radius": 182.93800354003906
+          "at": 16062.5,
+          "radius": 183.2740936279297
         },
         {
-          "at": 16141.200000047684,
-          "radius": 156.98388671875
+          "at": 16145.200000047684,
+          "radius": 157.27447509765625
         },
         {
-          "at": 16225.299999952316,
-          "radius": 134.6175537109375
+          "at": 16228.5,
+          "radius": 134.86717224121094
         },
         {
-          "at": 16308,
-          "radius": 115.24589538574219
+          "at": 16311.399999856949,
+          "radius": 115.4587173461914
         },
         {
-          "at": 16394.799999952316,
-          "radius": 98.59014129638672
+          "at": 16394.5,
+          "radius": 99.1318588256836
         },
         {
-          "at": 16475.5,
-          "radius": 85.126220703125
+          "at": 16479.799999952316,
+          "radius": 85.2794189453125
         },
         {
-          "at": 16558.599999904633,
-          "radius": 73.31205749511719
+          "at": 16561,
+          "radius": 75.67524719238281
         },
         {
-          "at": 16642.900000095367,
-          "radius": 63.379154205322266
+          "at": 16644.599999904633,
+          "radius": 63.59596633911133
         },
         {
-          "at": 16726.700000047684,
-          "radius": 55.14270782470703
+          "at": 16728.200000047684,
+          "radius": 55.23356246948242
         },
         {
-          "at": 16808,
-          "radius": 48.24142074584961
+          "at": 16814.200000047684,
+          "radius": 48.08986282348633
         },
         {
-          "at": 16890.599999904633,
-          "radius": 42.474220275878906
+          "at": 16895,
+          "radius": 42.53765869140625
         },
         {
-          "at": 16975.099999904633,
-          "radius": 37.66926193237305
+          "at": 16979.200000047684,
+          "radius": 37.722023010253906
         },
         {
-          "at": 17059,
-          "radius": 33.594173431396484
+          "at": 17062.700000047684,
+          "radius": 33.68124771118164
         },
         {
-          "at": 17141.799999952316,
-          "radius": 30.35280418395996
+          "at": 17145.5,
+          "radius": 30.38866424560547
         },
         {
-          "at": 17227.5,
-          "radius": 27.60366439819336
+          "at": 17226.200000047684,
+          "radius": 28.168901443481445
         },
         {
-          "at": 17311.900000095367,
-          "radius": 25.39020538330078
+          "at": 17311.799999952316,
+          "radius": 25.483430862426758
         },
         {
-          "at": 17392.900000095367,
-          "radius": 23.715904235839844
+          "at": 17396.299999952316,
+          "radius": 23.734189987182617
         },
         {
-          "at": 17476.200000047684,
-          "radius": 22.391698837280273
+          "at": 17478.799999952316,
+          "radius": 22.405447006225586
         },
         {
-          "at": 17562.400000095367,
-          "radius": 21.781021118164062
+          "at": 17562.89999985695,
+          "radius": 21.437761306762695
         },
         {
-          "at": 17643.700000047684,
-          "radius": 20.802644729614258
+          "at": 17645.299999952316,
+          "radius": 20.8082218170166
         },
         {
-          "at": 17727.599999904633,
-          "radius": 20.500837326049805
+          "at": 17728.799999952316,
+          "radius": 20.50704574584961
         },
         {
-          "at": 17807.900000095367,
+          "at": 17811.89999985695,
           "radius": 20.47893524169922
         }
       ]
@@ -4890,213 +4874,213 @@
       "name": "mobile-en",
       "colors": [
         {
-          "at": 0.20000004768371582,
+          "at": 0,
           "color": "rgb(57, 25, 189)"
         },
         {
-          "at": 12643,
+          "at": 12741.299999952316,
           "color": "rgb(54, 24, 178)"
         },
         {
-          "at": 12726.700000047684,
+          "at": 12824.200000047684,
           "color": "rgb(49, 21, 161)"
         },
         {
-          "at": 12807.900000095367,
-          "color": "rgb(43, 19, 144)"
+          "at": 12907.100000143051,
+          "color": "rgb(43, 19, 143)"
         },
         {
-          "at": 12891.100000143051,
+          "at": 12990.700000047684,
           "color": "rgb(38, 17, 126)"
         },
         {
-          "at": 12974.900000095367,
+          "at": 13074.299999952316,
           "color": "rgb(33, 14, 109)"
         },
         {
-          "at": 13057.600000143051,
+          "at": 13157.299999952316,
           "color": "rgb(27, 12, 91)"
         },
         {
-          "at": 13143.300000190735,
+          "at": 13240.5,
           "color": "rgb(22, 10, 73)"
         },
         {
-          "at": 13224.800000190735,
-          "color": "rgb(17, 7, 56)"
+          "at": 13320.700000047684,
+          "color": "rgb(18, 8, 60)"
         },
         {
-          "at": 13308.800000190735,
-          "color": "rgb(12, 5, 38)"
+          "at": 13407.299999952316,
+          "color": "rgb(12, 5, 39)"
         },
         {
-          "at": 13392.800000190735,
+          "at": 13491.5,
           "color": "rgb(6, 3, 21)"
         },
         {
-          "at": 13474.800000190735,
+          "at": 13574.200000047684,
           "color": "rgb(1, 0, 4)"
         },
         {
-          "at": 13556.900000095367,
+          "at": 13655.799999952316,
           "color": "rgb(0, 0, 0)"
         }
       ],
       "radii": [
         {
-          "at": 0.7000000476837158,
+          "at": 0.10000014305114746,
           "radius": 528.3485107421875
         },
         {
-          "at": 14636.200000047684,
+          "at": 14739.400000095367,
           "radius": 527.7102661132812
         },
         {
-          "at": 14723.400000095367,
+          "at": 14823.200000047684,
           "radius": 518.2964477539062
         },
         {
-          "at": 14807.600000143051,
-          "radius": 502.48834228515625
+          "at": 14905.700000047684,
+          "radius": 506.2162170410156
         },
         {
-          "at": 14889.900000095367,
+          "at": 14990.200000047684,
           "radius": 480.88934326171875
         },
         {
-          "at": 14973.300000190735,
+          "at": 15073.5,
           "radius": 454.53765869140625
         },
         {
-          "at": 15057.400000095367,
+          "at": 15156.600000143051,
           "radius": 424.6766052246094
         },
         {
-          "at": 15141.300000190735,
-          "radius": 392.12969970703125
+          "at": 15239,
+          "radius": 398.8473205566406
         },
         {
-          "at": 15223.800000190735,
+          "at": 15323.5,
           "radius": 358.8148498535156
         },
         {
-          "at": 15306.700000047684,
-          "radius": 325.3521728515625
+          "at": 15406.900000095367,
+          "radius": 324.9516906738281
         },
         {
-          "at": 15390.400000095367,
+          "at": 15490.200000047684,
           "radius": 292.18756103515625
         },
         {
-          "at": 15473,
-          "radius": 260.7762145996094
+          "at": 15572.299999952316,
+          "radius": 266.7010498046875
         },
         {
-          "at": 15557.400000095367,
+          "at": 15657,
           "radius": 231.20423889160156
         },
         {
-          "at": 15640.5,
+          "at": 15740.400000095367,
           "radius": 203.4835205078125
         },
         {
-          "at": 15723.100000143051,
+          "at": 15823.700000047684,
           "radius": 178.4640655517578
         },
         {
-          "at": 15806.5,
-          "radius": 155.8736572265625
+          "at": 15906,
+          "radius": 160.039306640625
         },
         {
-          "at": 15887.100000143051,
-          "radius": 139.39822387695312
+          "at": 15990.5,
+          "radius": 135.46292114257812
         },
         {
-          "at": 15975,
-          "radius": 117.42568969726562
+          "at": 16073.799999952316,
+          "radius": 117.6269760131836
         },
         {
-          "at": 16056.600000143051,
-          "radius": 101.97007751464844
+          "at": 16155.799999952316,
+          "radius": 104.82633972167969
         },
         {
-          "at": 16139.600000143051,
-          "radius": 88.32344818115234
+          "at": 16240.299999952316,
+          "radius": 88.17053985595703
         },
         {
-          "at": 16223.100000143051,
+          "at": 16323.600000143051,
           "radius": 76.37032318115234
         },
         {
-          "at": 16306.200000047684,
-          "radius": 66.20394897460938
+          "at": 16407,
+          "radius": 66.09066009521484
         },
         {
-          "at": 16389.60000014305,
-          "radius": 57.38872528076172
+          "at": 16488.900000095367,
+          "radius": 59.06206130981445
         },
         {
-          "at": 16473.300000190735,
-          "radius": 49.95649337768555
+          "at": 16572.299999952316,
+          "radius": 51.38351821899414
         },
         {
-          "at": 16554.60000014305,
-          "radius": 44.771358489990234
+          "at": 16657,
+          "radius": 43.56084060668945
         },
         {
-          "at": 16640.300000190735,
+          "at": 16739.799999952316,
           "radius": 38.20478820800781
         },
         {
-          "at": 16724,
+          "at": 16823.799999952316,
           "radius": 33.67418670654297
         },
         {
-          "at": 16806.300000190735,
-          "radius": 29.853303909301758
+          "at": 16907.200000047684,
+          "radius": 29.81117057800293
         },
         {
-          "at": 16890.700000047684,
+          "at": 16990,
           "radius": 26.60634994506836
         },
         {
-          "at": 16973.200000047684,
-          "radius": 23.923694610595703
+          "at": 17072.400000095367,
+          "radius": 24.434364318847656
         },
         {
-          "at": 17056.5,
-          "radius": 21.690324783325195
+          "at": 17155.200000047684,
+          "radius": 22.088911056518555
         },
         {
-          "at": 17140.900000095367,
+          "at": 17240.299999952316,
           "radius": 19.825185775756836
         },
         {
-          "at": 17225.5,
-          "radius": 18.322025299072266
+          "at": 17321.10000014305,
+          "radius": 18.604516983032227
         },
         {
-          "at": 17308.400000095367,
+          "at": 17406.700000047684,
           "radius": 17.103191375732422
         },
         {
-          "at": 17390.400000095367,
-          "radius": 16.165973663330078
+          "at": 17489.10000014305,
+          "radius": 16.33756446838379
         },
         {
-          "at": 17476.200000047684,
-          "radius": 15.464130401611328
+          "at": 17573.200000047684,
+          "radius": 15.471094131469727
         },
         {
-          "at": 17557,
-          "radius": 15.003507614135742
+          "at": 17655.700000047684,
+          "radius": 15.07640266418457
         },
         {
-          "at": 17640.10000014305,
-          "radius": 14.754592895507812
+          "at": 17739.200000047684,
+          "radius": 14.786810874938965
         },
         {
-          "at": 17725,
+          "at": 17823.60000014305,
           "radius": 14.71385669708252
         }
       ]
@@ -5105,55 +5089,51 @@
       "name": "reduced-pt-BR",
       "colors": [
         {
-          "at": 0.19999980926513672,
+          "at": 0.2999999523162842,
           "color": "rgb(57, 25, 189)"
         },
         {
-          "at": 9028.899999856949,
-          "color": "rgb(55, 24, 184)"
+          "at": 9075.299999952316,
+          "color": "rgb(52, 23, 173)"
         },
         {
-          "at": 9112.199999809265,
-          "color": "rgb(50, 22, 166)"
+          "at": 9158.399999856949,
+          "color": "rgb(47, 21, 156)"
         },
         {
-          "at": 9195.299999952316,
-          "color": "rgb(45, 20, 149)"
+          "at": 9241.799999952316,
+          "color": "rgb(42, 18, 138)"
         },
         {
-          "at": 9277.399999856949,
-          "color": "rgb(41, 18, 135)"
+          "at": 9325.5,
+          "color": "rgb(36, 16, 121)"
         },
         {
-          "at": 9362.099999904633,
-          "color": "rgb(34, 15, 114)"
+          "at": 9408.599999904633,
+          "color": "rgb(31, 14, 103)"
         },
         {
-          "at": 9445.5,
-          "color": "rgb(29, 13, 96)"
+          "at": 9490.599999904633,
+          "color": "rgb(27, 12, 89)"
         },
         {
-          "at": 9528.5,
-          "color": "rgb(24, 10, 79)"
+          "at": 9575.199999809265,
+          "color": "rgb(21, 9, 68)"
         },
         {
-          "at": 9612.199999809265,
-          "color": "rgb(18, 8, 61)"
+          "at": 9658.5,
+          "color": "rgb(15, 7, 51)"
         },
         {
-          "at": 9695.399999856949,
-          "color": "rgb(13, 6, 44)"
+          "at": 9740.799999952316,
+          "color": "rgb(11, 5, 37)"
         },
         {
-          "at": 9779.099999904633,
-          "color": "rgb(8, 3, 26)"
+          "at": 9823.199999809265,
+          "color": "rgb(6, 3, 19)"
         },
         {
-          "at": 9862.199999809265,
-          "color": "rgb(3, 1, 9)"
-        },
-        {
-          "at": 9943,
+          "at": 9908.599999904633,
           "color": "rgb(0, 0, 0)"
         }
       ],
@@ -5163,55 +5143,55 @@
       "name": "reduced-en",
       "colors": [
         {
-          "at": 0.19999980926513672,
+          "at": 0.10000014305114746,
           "color": "rgb(57, 25, 189)"
         },
         {
-          "at": 9021.799999952316,
-          "color": "rgb(54, 24, 180)"
+          "at": 9080,
+          "color": "rgb(53, 23, 176)"
         },
         {
-          "at": 9103,
-          "color": "rgb(50, 22, 166)"
+          "at": 9163.799999952316,
+          "color": "rgb(48, 21, 159)"
         },
         {
-          "at": 9187.699999809265,
-          "color": "rgb(44, 19, 145)"
+          "at": 9246.600000143051,
+          "color": "rgb(43, 19, 141)"
         },
         {
-          "at": 9270.899999856949,
-          "color": "rgb(38, 17, 127)"
+          "at": 9330,
+          "color": "rgb(37, 16, 124)"
         },
         {
-          "at": 9353.799999952316,
-          "color": "rgb(33, 15, 110)"
+          "at": 9413.299999952316,
+          "color": "rgb(32, 14, 106)"
         },
         {
-          "at": 9437.599999904633,
-          "color": "rgb(28, 12, 92)"
+          "at": 9497.5,
+          "color": "rgb(27, 12, 89)"
         },
         {
-          "at": 9518.299999952316,
-          "color": "rgb(24, 10, 78)"
+          "at": 9580.5,
+          "color": "rgb(22, 9, 71)"
         },
         {
-          "at": 9604.299999952316,
+          "at": 9662.799999952316,
           "color": "rgb(17, 8, 57)"
         },
         {
-          "at": 9686.899999856949,
-          "color": "rgb(12, 5, 40)"
+          "at": 9746.900000095367,
+          "color": "rgb(11, 5, 36)"
         },
         {
-          "at": 9769.699999809265,
-          "color": "rgb(8, 3, 26)"
+          "at": 9830.100000143051,
+          "color": "rgb(6, 2, 19)"
         },
         {
-          "at": 9852.899999856949,
-          "color": "rgb(3, 1, 8)"
+          "at": 9912.900000095367,
+          "color": "rgb(1, 1, 5)"
         },
         {
-          "at": 9934,
+          "at": 9995.299999952316,
           "color": "rgb(0, 0, 0)"
         }
       ],
@@ -5221,213 +5201,213 @@
       "name": "small-mobile",
       "colors": [
         {
-          "at": 0.2999999523162842,
+          "at": 0.09999990463256836,
           "color": "rgb(57, 25, 189)"
         },
         {
-          "at": 12707.799999952316,
+          "at": 12739.799999952316,
           "color": "rgb(55, 24, 182)"
         },
         {
-          "at": 12788.200000047684,
-          "color": "rgb(51, 22, 168)"
+          "at": 12823.299999952316,
+          "color": "rgb(50, 22, 164)"
         },
         {
-          "at": 12874.700000047684,
+          "at": 12906.099999904633,
           "color": "rgb(44, 19, 147)"
         },
         {
-          "at": 12958,
+          "at": 12989.200000047684,
           "color": "rgb(39, 17, 130)"
         },
         {
-          "at": 13041.200000047684,
+          "at": 13072.599999904633,
           "color": "rgb(34, 15, 112)"
         },
         {
-          "at": 13125.400000095367,
+          "at": 13156.700000047684,
           "color": "rgb(29, 13, 95)"
         },
         {
-          "at": 13207.400000095367,
+          "at": 13239.299999952316,
           "color": "rgb(23, 10, 77)"
         },
         {
-          "at": 13291.5,
-          "color": "rgb(18, 8, 60)"
+          "at": 13320.400000095367,
+          "color": "rgb(19, 8, 63)"
         },
         {
-          "at": 13375.099999904633,
+          "at": 13406.099999904633,
           "color": "rgb(13, 6, 42)"
         },
         {
-          "at": 13459.400000095367,
+          "at": 13489.599999904633,
           "color": "rgb(7, 3, 25)"
         },
         {
-          "at": 13541.200000047684,
+          "at": 13573,
           "color": "rgb(2, 1, 7)"
         },
         {
-          "at": 13622,
+          "at": 13653.5,
           "color": "rgb(0, 0, 0)"
         }
       ],
       "radii": [
         {
-          "at": 0.5,
+          "at": 0.2999999523162842,
           "radius": 381.2545471191406
         },
         {
-          "at": 14708.099999904633,
+          "at": 14738.599999904633,
           "radius": 380.8138427734375
         },
         {
-          "at": 14791.099999904633,
-          "radius": 375.9411926269531
+          "at": 14821.900000095367,
+          "radius": 375.8510437011719
         },
         {
-          "at": 14874.299999952316,
-          "radius": 366.1048889160156
+          "at": 14905.200000047684,
+          "radius": 365.9587097167969
         },
         {
-          "at": 14957.099999904633,
-          "radius": 351.975341796875
+          "at": 14988.200000047684,
+          "radius": 354.8125915527344
         },
         {
-          "at": 15040.900000095367,
-          "radius": 334.1052551269531
+          "at": 15072,
+          "radius": 333.87432861328125
         },
         {
-          "at": 15124.5,
-          "radius": 313.7643737792969
+          "at": 15152.900000095367,
+          "radius": 317.8533020019531
         },
         {
-          "at": 15207.599999904633,
-          "radius": 291.59326171875
+          "at": 15239.5,
+          "radius": 291.0431213378906
         },
         {
-          "at": 15290.900000095367,
-          "radius": 268.0953063964844
+          "at": 15322.5,
+          "radius": 267.81219482421875
         },
         {
-          "at": 15374.5,
-          "radius": 244.54220581054688
+          "at": 15405.5,
+          "radius": 244.25900268554688
         },
         {
-          "at": 15455.299999952316,
-          "radius": 225.70306396484375
+          "at": 15489.599999904633,
+          "radius": 220.7073516845703
         },
         {
-          "at": 15539.400000095367,
-          "radius": 203.00241088867188
+          "at": 15572.5,
+          "radius": 198.20913696289062
         },
         {
-          "at": 15623,
-          "radius": 181.3719940185547
+          "at": 15653.799999952316,
+          "radius": 180.86656188964844
         },
         {
-          "at": 15707.400000095367,
-          "radius": 156.89854431152344
+          "at": 15738.799999952316,
+          "radius": 156.66746520996094
         },
         {
-          "at": 15788.299999952316,
-          "radius": 142.14645385742188
+          "at": 15819.700000047684,
+          "radius": 141.93084716796875
         },
         {
-          "at": 15875.099999904633,
-          "radius": 121.5881576538086
+          "at": 15900.299999952316,
+          "radius": 124.87551879882812
         },
         {
-          "at": 15957.299999952316,
-          "radius": 106.71040344238281
+          "at": 15987.299999952316,
+          "radius": 109.3116226196289
         },
         {
-          "at": 16040.900000095367,
-          "radius": 93.11560821533203
+          "at": 16071.700000047684,
+          "radius": 92.96351623535156
         },
         {
-          "at": 16124.200000047684,
-          "radius": 81.24132537841797
+          "at": 16155.400000095367,
+          "radius": 81.10730743408203
         },
         {
-          "at": 16207.400000095367,
-          "radius": 70.6959457397461
+          "at": 16238.5,
+          "radius": 72.59593963623047
         },
         {
-          "at": 16291.099999904633,
-          "radius": 61.61107635498047
+          "at": 16322.700000047684,
+          "radius": 61.50919723510742
         },
         {
-          "at": 16372.900000095367,
-          "radius": 55.250465393066406
+          "at": 16405.599999904633,
+          "radius": 53.639198303222656
         },
         {
-          "at": 16455.5,
-          "radius": 48.15351867675781
+          "at": 16489.700000047684,
+          "radius": 46.76707458496094
         },
         {
-          "at": 16541.200000047684,
-          "radius": 40.998477935791016
+          "at": 16570,
+          "radius": 42.05655288696289
         },
         {
-          "at": 16624.200000047684,
-          "radius": 35.991207122802734
+          "at": 16655.900000095367,
+          "radius": 35.935543060302734
         },
         {
-          "at": 16706.200000047684,
-          "radius": 32.48749542236328
+          "at": 16739.200000047684,
+          "radius": 31.620773315429688
         },
         {
-          "at": 16790.799999952316,
-          "radius": 28.035951614379883
+          "at": 16822.700000047684,
+          "radius": 27.99570655822754
         },
         {
-          "at": 16873.200000047684,
-          "radius": 25.509143829345703
+          "at": 16904.900000095367,
+          "radius": 25.473939895629883
         },
         {
-          "at": 16958.099999904633,
+          "at": 16988.599999904633,
           "radius": 22.32010269165039
         },
         {
-          "at": 17040.799999952316,
-          "radius": 20.131101608276367
+          "at": 17072.599999904633,
+          "radius": 20.10700035095215
         },
         {
-          "at": 17122.299999952316,
-          "radius": 18.626117706298828
+          "at": 17156.099999904633,
+          "radius": 18.278093338012695
         },
         {
-          "at": 17207.400000095367,
-          "radius": 16.758342742919922
+          "at": 17239.299999952316,
+          "radius": 16.74175262451172
         },
         {
-          "at": 17291.099999904633,
-          "radius": 15.509237289428711
+          "at": 17322.900000095367,
+          "radius": 15.495701789855957
         },
         {
-          "at": 17374,
-          "radius": 14.499458312988281
+          "at": 17405.700000047684,
+          "radius": 14.488643646240234
         },
         {
-          "at": 17457.099999904633,
-          "radius": 13.704331398010254
+          "at": 17488.400000095367,
+          "radius": 13.695979118347168
         },
         {
-          "at": 17540.5,
-          "radius": 13.099356651306152
+          "at": 17571.700000047684,
+          "radius": 13.093308448791504
         },
         {
-          "at": 17624,
-          "radius": 12.686483383178711
+          "at": 17655.599999904633,
+          "radius": 12.682598114013672
         },
         {
-          "at": 17707.099999904633,
-          "radius": 12.449395179748535
+          "at": 17738.099999904633,
+          "radius": 12.480619430541992
         },
         {
-          "at": 17790.799999952316,
+          "at": 17822,
           "radius": 12.390617370605469
         }
       ]
