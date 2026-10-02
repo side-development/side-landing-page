@@ -13,6 +13,22 @@
     "reload": "Reload",
     "learnMore": "Learn more"
   },
+  "SelectedWork": {
+    "heading": "SELECTED WORK",
+    "count": "02 projects",
+    "view": "View project",
+    "all": "VIEW ALL WORK",
+    "pause": "Pause reel",
+    "play": "Play reel",
+    "route": {
+      "category": "Website · Digital Experience",
+      "teaser": "A digital presence built to turn security engineering, technology and operations into a clear, memorable experience."
+    },
+    "owl": {
+      "category": "Website · Digital Product",
+      "teaser": "A digital experience that makes a real-time, centimeter-precision location system visible."
+    }
+  },
   "Hero": {
     "narrative": [
       "Frustrating, isn’t it?",

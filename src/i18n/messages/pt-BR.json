@@ -13,6 +13,22 @@
     "reload": "Recarregar",
     "learnMore": "Saiba mais"
   },
+  "SelectedWork": {
+    "heading": "TRABALHOS SELECIONADOS",
+    "count": "02 projetos",
+    "view": "Ver projeto",
+    "all": "VER TODOS OS TRABALHOS",
+    "pause": "Pausar reel",
+    "play": "Reproduzir reel",
+    "route": {
+      "category": "Website · Experiência digital",
+      "teaser": "Uma presença digital criada para traduzir engenharia, tecnologia e operação de segurança em uma experiência clara e marcante."
+    },
+    "owl": {
+      "category": "Website · Produto digital",
+      "teaser": "Uma experiência digital para tornar visível um sistema de localização em tempo real com precisão centimétrica."
+    }
+  },
   "Hero": {
     "narrative": [
       "Frustrante, não é?",

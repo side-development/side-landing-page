@@ -5,7 +5,7 @@ import styles from "./hero.module.css";
 
 gsap.registerPlugin(ScrambleTextPlugin);
 
-export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduced: boolean, onComplete: () => void) {
+export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduced: boolean, onComplete: () => void, onPurple?: () => void) {
   const surface = root.querySelector<HTMLElement>("[data-error-surface]")!;
   const final = root.querySelector<HTMLElement>("[data-final-hero]")!;
   const brand = root.querySelector<SVGSVGElement>("[data-wordmark]")!;
@@ -120,6 +120,7 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
 
   const purpleAt = sentenceTimes[2] + 1.9;
   const collapseAt = purpleAt + 2.75;
+  timeline.call(() => onPurple?.(), [], purpleAt + (reduced ? 0.85 : 1.14));
   timeline.to(stage, { "--phrase-emphasis": "#000", duration: 0.9, ease: "none" }, purpleAt + (reduced ? 0.4 : 0.75));
   if (reduced) {
     timeline.to(black, { backgroundColor: "#3919BD", duration: 0.85 }, purpleAt)

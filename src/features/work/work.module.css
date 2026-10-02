@@ -1,0 +1,96 @@
+.work {
+  background: #fff;
+  color: #080808;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: clamp(120px, 18vh, 240px) 40px 0;
+}
+.work[hidden] { display: none; }
+.chapter {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: clamp(72px, 10vh, 140px);
+}
+.chapter h2 {
+  max-width: 980px;
+  margin: 0;
+  font-size: clamp(32px, 4.2vw, 74px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+.chapter p { font-size: 14px; white-space: nowrap; }
+.project { min-width: 0; }
+.project + .project { margin-top: 120px; }
+.mediaFrame { overflow: clip; }
+.media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #0a0a0a;
+  aspect-ratio: 8 / 5;
+  text-decoration: none;
+}
+.video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.caption {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 60px;
+  align-items: start;
+  padding-top: 32px;
+}
+.identity h3 {
+  margin: 0 0 18px;
+  font-size: clamp(36px, 4.4vw, 76px);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+.metadata { display: flex; gap: 28px; font-size: 12px; line-height: 1.5; }
+.teaser { max-width: 480px; font-size: clamp(17px, 1.45vw, 23px); line-height: 1.35; letter-spacing: -0.02em; }
+.actions { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 22px; }
+.projectLink { display: inline-flex; gap: 28px; color: inherit; font-size: 14px; text-decoration: none; }
+.projectLink, .exit a { position: relative; padding-bottom: 6px; }
+.projectLink::after, .exit a::after { content: ""; position: absolute; inset: auto 0 0; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform 280ms ease; }
+.projectLink:hover::after, .projectLink:focus-visible::after, .exit a:hover::after, .exit a:focus-visible::after { transform: scaleX(1); }
+.playback { padding: 8px 0; border: 0; background: none; color: #565656; font-size: 11px; }
+.playback:hover { color: #080808; }
+.exit { display: flex; justify-content: flex-end; padding: clamp(100px, 17vh, 200px) 0 clamp(80px, 12vh, 160px); }
+.exit a { display: inline-flex; gap: 42px; color: #080808; font-size: clamp(18px, 2.4vw, 38px); line-height: 1.1; letter-spacing: -0.045em; text-decoration: none; }
+
+@media (min-width: 1000px) and (min-height: 680px) and (prefers-reduced-motion: no-preference) {
+  .work[data-enhanced="true"] .sequence { height: 195svh; }
+  .work[data-enhanced="true"] .stage { position: sticky; top: 24px; height: calc(100svh - 48px); overflow: clip; }
+  .work[data-enhanced="true"] .project { position: absolute; inset: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; }
+  .work[data-enhanced="true"] .project + .project { margin-top: 0; }
+  .work[data-enhanced="true"] .media { aspect-ratio: auto; min-height: 0; transform-origin: center bottom; }
+  .work[data-enhanced="true"] .media { height: 100%; }
+  .work[data-enhanced="true"] .caption { min-height: 194px; background: #fff; }
+}
+
+@media (max-width: 800px) {
+  .work { padding: 116px 24px 0; }
+  .chapter { display: block; margin-bottom: 60px; }
+  .chapter h2 { max-width: 510px; font-size: clamp(32px, 8.4vw, 54px); letter-spacing: -0.055em; }
+  .chapter p { margin-top: 20px; font-size: 12px; }
+  .mediaFrame { margin-inline: -24px; }
+  .media { aspect-ratio: 4 / 3; }
+  .video { object-position: 50% 50%; }
+  .caption { grid-template-columns: 1fr; gap: 28px; padding-top: 28px; }
+  .identity h3 { font-size: clamp(37px, 9.5vw, 64px); margin-bottom: 16px; }
+  .metadata { justify-content: space-between; gap: 16px; font-size: 11px; }
+  .teaser { max-width: 480px; font-size: 18px; line-height: 1.4; }
+  .actions { margin-top: 24px; }
+  .project + .project { margin-top: 88px; }
+  .exit { justify-content: flex-start; padding: 104px 0 88px; }
+  .exit a { gap: 24px; font-size: 21px; }
+}
+@media (max-width: 359px) {
+  .work { padding-inline: 16px; }
+  .mediaFrame { margin-inline: -16px; }
+  .exit a { font-size: 18px; gap: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .projectLink::after, .exit a::after { transition: none; }
+}

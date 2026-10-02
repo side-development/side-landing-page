@@ -28,9 +28,10 @@ function forceReplay() {
 type Props = {
   copy: FakeErrorCopy;
   finalCopy: HeroCopy;
+  onPhase?: (phase: "idle" | "purple" | "final") => void;
 };
 
-export function Hero({ copy, finalCopy }: Props) {
+export function Hero({ copy, finalCopy, onPhase }: Props) {
   const container = useRef<HTMLElement>(null);
   const [state, setState] = useState<"idle" | "triggered" | "final">("idle");
   const [replaying, setReplaying] = useState(false);
@@ -45,6 +46,8 @@ export function Hero({ copy, finalCopy }: Props) {
     setState("final");
   }, []);
 
+  useEffect(() => { onPhase?.(final ? "final" : "idle"); }, [final, replaying, onPhase]);
+
   useEffect(() => {
     if (!ready || final || state !== "idle") return;
     const timer = window.setTimeout(start, 4000);
@@ -57,11 +60,11 @@ export function Hero({ copy, finalCopy }: Props) {
   }
 
   return (
-    <main ref={container} className={styles.hero} data-hero-state={final ? "final" : state} data-session-ready={ready}>
+    <section ref={container} className={styles.hero} data-hero-state={final ? "final" : state} data-session-ready={ready}>
       {!final && <div data-error-surface><FakeErrorIntro copy={copy} active={state === "idle"} onReload={start} /></div>}
       <FinalHero copy={finalCopy} visible={final} focusOnReveal={state === "final"} />
-      {state === "triggered" && !final && <CinematicReveal container={container} copy={finalCopy} onComplete={complete} />}
+      {state === "triggered" && !final && <CinematicReveal container={container} copy={finalCopy} onComplete={complete} onPurple={() => onPhase?.("purple")} />}
       {final && review && <button className={styles.replay} type="button" onClick={replay}>{finalCopy.replay}</button>}
-    </main>
+    </section>
   );
 }
