@@ -1,0 +1,21 @@
+{
+  "status": "captured",
+  "videos": [
+    {
+      "name": "revision-desktop",
+      "file": "revision-desktop.mp4"
+    },
+    {
+      "name": "revision-en",
+      "file": "revision-en.mp4"
+    },
+    {
+      "name": "revision-mobile",
+      "file": "revision-mobile.mp4"
+    },
+    {
+      "name": "revision-reduced",
+      "file": "revision-reduced.mp4"
+    }
+  ]
+}

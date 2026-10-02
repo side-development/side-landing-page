@@ -14,17 +14,19 @@ A intro mantém o início automático de 4 s e o botão Recarregar. Após o reve
 
 ## Implementado
 
-Entrada editorial com whitespace, título e contador; dois projetos somente, cada um com um reel, nome/categoria/ano, teaser e CTA. Os CTAs de projeto abrem as LPs reais em outra guia. Não existem cases ou páginas Work nesta entrega.
+Revisão solicitada pelo usuário em 02/10/2026: substituir a apresentação anterior pela gravação `161550.mp4`. Entrada editorial com whitespace, título/contador em fade e deslocamento suave de 24 px. Cada projeto apresenta exatamente duas folhas em perspectiva: um print real atrás e um reel real em loop na frente. Copy lateral no desktop; copy abaixo no mobile. Nome, categoria, ano e teaser preservados. A mídia é o único link individual e abre a LP real em outra guia; não há CTA textual separado de projeto. O cursor mantém “ver projeto” / “view project”.
 
-No desktop com espaço suficiente, a área de mídia permanece brevemente na viewport enquanto o usuário avança pela seção. Scroll solicita o handoff; o fim real do reel Route e o hold de aproximadamente 500 ms incorporado ao arquivo precedem a saída. Scale 1 → 0,92 e deslocamento para cima; OWL entra de baixo, escala 0,96 → 1. Os dois reels coexistem por aproximadamente 600 ms. Copy/metadata OWL começam a entrar depois da mídia estabilizar, aos 740 ms do handoff. Não há glitch, blur, match-cut forçado, overlays, HUD ou produto reconstruído.
+No desktop com espaço suficiente, o palco ocupa uma viewport e fica parado durante a troca. A sequência tem 220 svh; o avanço de 120 svh controla a subida do par Route e a chegada do par OWL, de baixo, com scrub de 700 ms. A copy troca junto das folhas. Voltar o scroll reverte o mesmo movimento. Não há espera pelo final do vídeo ou correção/interceptação de roda do mouse. Os prints também são mídia real; não há glitch, blur, HUD ou produto reconstruído.
 
-Scroll rápido e navegação por teclado priorizam acesso ao conteúdo, sem travar ou corrigir o scroll do usuário. Ao voltar ao início da área, Route volta a ser o projeto principal. A Hero só informa os marcos idle/roxo/final a um shell local; Work e cursor possuem hooks/cleanup próprios.
+Refinamento adicional solicitado pelo usuário: folhas mais lateralizadas, radius de 14 px e abertura do par no hover. A folha de trás recua 18 px à esquerda, a da frente avança 18 px à direita; ângulos opostos abrem suavemente em 800–900 ms. A pose permanece estável enquanto o mouse se move dentro da mídia e retorna ao sair. O hover não acompanha a posição do ponteiro. O projeto fora de leitura fica inert. Tab da mídia Route revela/foca a mídia OWL, e Shift+Tab faz o caminho inverso; a mudança de posição ocorre apenas para tornar o item focado visível. A Hero só informa os marcos idle/roxo/final a um shell local; Work, hover e cursor possuem hooks/cleanup próprios.
 
-Mobile/tablet e viewports baixos usam composição linear: mídia até as bordas, metadata/copy reposicionadas e fade/deslocamento de 18 px na entrada de OWL, sem retenção de scroll. Reduced motion usa fluxo direto e posters, com reprodução voluntária pelo controle acessível. Nenhum cursor customizado em touch/mobile ou reduced motion.
+Mobile/tablet e viewports baixos mantêm as duas folhas por projeto em fluxo linear, sem retenção de scroll, com tipografia/metadata reposicionadas e entrada curta de OWL. Reduced motion usa fluxo direto e posters estáticos, sem autoplay, hover 3D ou scrub. Nenhum cursor customizado em touch/mobile ou reduced motion.
 
-Cursor Side: ponto de 9 px em `#3919BD`, quickTo de 120 ms, sem trail; links aumentam discretamente e mídia ganha label contextual. Contextos editáveis, teclado, saída da viewport, mudança de preferência e desmontagem restauram cursor nativo. A regra que oculta o cursor nativo depende da presença efetiva do cursor visual no DOM.
+Cursor Side: ponto de 9 px em `#3919BD`, quickTo de 220 ms / power3.out para movimento mais suave, sem trail; links aumentam discretamente e mídia ganha label contextual. Contextos editáveis, teclado, saída da viewport, mudança de preferência e desmontagem restauram cursor nativo. A regra que oculta o cursor nativo depende da presença efetiva do cursor visual no DOM.
 
-Vídeos sem loop automático: carregamento no viewport, pausa fora da viewport/aba, `muted`, `playsInline`, `preload="none"`, posters e controles de reprodução/pausa. Resolução tardia de `play()` também respeita viewport e cleanup. A Hero não solicita MP4s no primeiro paint.
+Vídeos em loop contínuo enquanto visíveis, sem interrupção no hover e sem botão/estado manual de pausa, conforme decisão do usuário. Carregamento no viewport, pausa fora da viewport/aba ou quando o projeto sai de leitura, `muted`, `playsInline`, `preload="none"` e posters. Resolução tardia de `play()` também respeita viewport e cleanup. A Hero não solicita MP4s no primeiro paint.
+
+Scrollbar nativa personalizada: 10 px, thumb cinza quase branco `#e9e9e9` arredondado, fundo branco, sem botões/setas; hover `#dcdcdc`. Firefox usa as propriedades padronizadas de cor/largura. Scroll programático suave em motion normal, instantâneo em reduced motion, inclusive após mudança dinâmica da preferência. A roda, o toque e o arraste do thumb continuam nativos; nenhuma biblioteca de smooth scrolling adicionada.
 
 Decisão do usuário durante execução: manter `/trabalhos` e `/en/work` como destinos mesmo com as páginas indisponíveis; serão implementadas depois. Não foram criados placeholders.
 
@@ -49,22 +51,22 @@ Ambos: yuv420p, BT.709 / limited range, sem áudio e faststart. Posters WebP de 
 - Console e hidratação sem erros ou warnings nos cenários executados.
 - Cursor: ativação com ponteiro parado durante campo roxo, cor exata, estados, saída imediata do contexto, teclado, campo editável, limite direito e fallback se o DOM visual for removido: pass.
 - Vídeos/posters, pausa/reprodução, entrada/saída de viewport, mudança dinâmica de reduced motion: pass. MP4s não solicitados na Hero; reduced motion não carrega MP4 até reprodução voluntária.
-- Tab/Shift+Tab atravessam mídia/CTA/controle de cada projeto; projeto focado é visível. Enter/Escape e foco do menu mobile da Hero preservados.
+- Tab/Shift+Tab atravessam mídia de cada projeto e fazem a troca quando necessário; sem controles de reprodução ou links individuais duplicados. A revisão mantém a Hero sem alterações.
 - Cinco desmontagens StrictMode: nenhum timer, listener próprio, ScrollTrigger ou animação da aplicação restante. GSAP retém seu cache interno pausado `_refreshAll`, identificado no relatório; não há animação ativa ali.
-- Falso erro: pixels idênticos à captura aprovada da #4 no mesmo viewport. Hero final desktop/mobile: pixels idênticos na área de 1440 × 868 / 390 × 812, excluindo a faixa inferior de 32 px do controle de replay. Sem alterações em FakeErrorIntro.tsx, hero.module.css, marca ou motion aprovado.
-- Cinco gravações de experiência + dois reels reproduzíveis na página de revisão.
-- Medição local, produção, sem throttling: LCP ~392 ms; zero MP4 no primeiro paint. É uma observação local, não benchmark Lighthouse nem promessa para dispositivos/rede reais.
+- Hero/falso erro: fontes e motion aprovados preservados nesta revisão. A alteração global autorizada é a scrollbar e o scroll programático. A comparação de pixels registrada na implementação inicial precede essa alteração global.
+- Novas gravações desktop, mobile, EN e reduced motion; gravação da intro/cursor e reels originais mantidos na página de revisão.
+- Zero MP4 no primeiro paint, confirmado novamente. A observação de LCP da implementação inicial não foi reutilizada como benchmark desta revisão.
 
-Resultados: [funcionais](selected-work/results.json), [delta final/fallback/erro aprovado](selected-work/final-delta.json), [cleanup](selected-work/cleanup-results.json), [teclado e requisições](selected-work/keyboard-performance.json), [playback de evidências](selected-work/review-playback.json).
+Resultados atuais: [revisão funcional, teclado e scrollbar](selected-work/revision-results.json), [cleanup da revisão](selected-work/revision-cleanup-results.json), [novas gravações](selected-work/revision-recordings.json), [playback da revisão](selected-work/revision-review-playback.json). Os demais JSONs registram a primeira implementação e permanecem como histórico.
 
 Limites: Edge/Chromium, mobile/touch emulados. Não houve teste em aparelho físico, Safari ou Firefox.
 
 ## Evidências
 
-- [Desktop pt-BR / Route](selected-work/desktop-pt-route.png), [OWL / dashboard](selected-work/section-desktop-owl-dashboard.png), [entrada editorial](selected-work/desktop-pt-chapter.png).
-- [Mobile pt-BR](selected-work/mobile-pt-route.png), [mobile EN](selected-work/mobile-en-route.png), [desktop EN](selected-work/desktop-en-route.png).
-- [Handoff](selected-work/section-desktop-handoff.png), [cursor contextual](selected-work/cursor-project.png), [cursor no campo roxo](selected-work/cursor-purple.png).
-- [Seção desktop MP4](selected-work/section-desktop.mp4), [mobile MP4](selected-work/section-mobile.mp4), [EN MP4](selected-work/section-en.mp4), [reduced motion MP4](selected-work/section-reduced.mp4), [intro e cursor MP4](selected-work/intro-cursor.mp4).
+- [Desktop / Route](selected-work/revision-desktop-pt-route.png), [OWL](selected-work/revision-desktop-pt-owl.png), [entrada editorial](selected-work/revision-desktop-pt-chapter.png).
+- [Mobile pt-BR](selected-work/revision-mobile-pt-route.png), [mobile EN](selected-work/revision-mobile-en-route.png), [desktop EN](selected-work/revision-desktop-en-route.png).
+- [Troca das folhas](selected-work/revision-desktop-pt-handoff.png), [hover em perspectiva](selected-work/revision-desktop-pt-hover.png), [cursor no campo roxo original](selected-work/cursor-purple.png).
+- [Desktop MP4](selected-work/revision-desktop.mp4), [mobile MP4](selected-work/revision-mobile.mp4), [EN MP4](selected-work/revision-en.mp4), [reduced motion MP4](selected-work/revision-reduced.mp4), [intro/cursor preservados](selected-work/intro-cursor.mp4).
 
 ## Critérios de aceite
 
@@ -90,7 +92,7 @@ Limites: Edge/Chromium, mobile/touch emulados. Não houve teste em aparelho fís
 
 - [x] Route → OWL sem glitch.
 - [x] Sem HUD/radar/tracking sintético.
-- [x] Handoff transforma somente os vídeos reais.
+- [x] Handoff transforma as folhas com mídia real, conforme revisão autorizada: print atrás, vídeo na frente.
 - [x] Motion-match não foi forçado; variante opcional não utilizada.
 
 ### Conteúdo

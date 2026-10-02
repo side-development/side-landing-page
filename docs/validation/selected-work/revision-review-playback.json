@@ -1,0 +1,62 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "src": "http://localhost:3206/validation/revision-desktop.mp4",
+      "duration": 39.2,
+      "currentTime": 0.269313,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/validation/revision-mobile.mp4",
+      "duration": 23.266667,
+      "currentTime": 0.265353,
+      "width": 390,
+      "height": 844,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/validation/revision-en.mp4",
+      "duration": 29.8,
+      "currentTime": 0.269022,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/validation/revision-reduced.mp4",
+      "duration": 12.266667,
+      "currentTime": 0.261912,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/validation/intro-cursor.mp4",
+      "duration": 28.333333,
+      "currentTime": 0.261939,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/work/route/route-reel.mp4",
+      "duration": 6.833333,
+      "currentTime": 0.267391,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/work/owl/owl-reel.mp4",
+      "duration": 6.933333,
+      "currentTime": 0.268411,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    }
+  ],
+  "console": []
+}
