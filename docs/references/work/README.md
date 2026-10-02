@@ -18,7 +18,7 @@ Fonte: https://routesecurity.com.br/ — visitada e capturada em 2026-10-02, Edg
 
 Usar para: Hero real, scroll intermediário, rigor técnico e sequência existente da câmera fechada → girada → explodida. Composição sólida, mídia grande e pouca copy.
 
-Não copiar: identidade Route na interface Side, site inteiro, navegação, formulários ou quaisquer elementos de produto reconstruídos. Nenhum overlay foi acrescentado à câmera.
+Não copiar: identidade Route no restante da interface Side, site inteiro, navegação, formulários ou quaisquer elementos de produto reconstruídos. Nenhum overlay foi acrescentado à câmera. A identificação do projeto usa a wordmark real fornecida pelo usuário, conforme revisão explícita.
 
 Adaptação Side: três trechos da LP real cortados num reel curto. Tipografia e metadata ficam em HTML, fora do vídeo. A revisão usa print e vídeo em folhas; o link fica no conjunto de mídia.
 
@@ -28,11 +28,15 @@ Fonte: https://owlloc.com/ — visitada e capturada nas mesmas condições.
 
 Usar para: frases reais da Hero, mapa/geolimits/violação que efetivamente aparecem na LP e dashboard existente. A UI gravada é a protagonista.
 
-Não copiar: identidade OWL na interface Side, páginas internas, mapa, gráficos ou tracking reconstruídos. Os pontos e a violação presentes no vídeo pertencem à própria LP.
+Não copiar: identidade OWL no restante da interface Side, páginas internas, mapa, gráficos ou tracking reconstruídos. Os pontos e a violação presentes no vídeo pertencem à própria LP. A identificação do projeto usa a wordmark real fornecida pelo usuário, conforme revisão explícita.
 
 Adaptação Side: três trechos reais, sem hardware adicional porque o fechamento no dashboard já cumpre o teaser. Nenhum HUD, radar, glitch ou continuidade câmera → mapa.
 
 ## Captura e edição
+
+Wordmarks fornecidas pelo usuário em 02/10/2026: `C:\Users\vitol\Downloads\wordmark-route.svg` e `C:\Users\vitol\Downloads\wordmark-owl.svg`. Cópias integrais em `public/work/route/route-wordmark.svg` e `public/work/owl/owl-wordmark.svg`, preservando paths, cores e proporções. Usar somente para identificar os projetos no lugar dos nomes tipográficos. Não reconstruir com fonte nem alterar a marca. Route preserva o amarelo `#FFDD0F` e o lettering Security; OWL permanece preta. Nomes acessíveis continuam disponíveis no alt dentro de cada heading.
+
+SHA-256 Route: `769ede668f94767c5c5eda83837171924b2d58bcc4a2e3867f91026a100cfa10`; OWL: `3ffa4f1b97dab282fa55f4ee17abda4334e6ca257a1ddfa8dd449d6659c11647`.
 
 Captura de frames renderizados via CDP `Page.startScreencast`, JPEG quality 100. Os timestamps preservam o tempo dos movimentos reais; imagens com pouca alteração mantêm o frame até o próximo frame capturado. Não há interpolação de elementos, reconstrução de UI ou geração de imagens.
 

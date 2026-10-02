@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "checks": [
+    "first visit: auto start; navbar hidden until final reveal",
+    "same session: Hero final and fixed navbar directly",
+    "review replay: navbar hides and reappears",
+    "replay button: navbar hides again"
+  ],
+  "console": []
+}

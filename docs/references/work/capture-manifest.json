@@ -127,5 +127,23 @@
     "reference": "editorial-sheets-reference.mp4",
     "composition": "One real still behind one looping real video for each project",
     "publication": "Local preview only; awaiting explicit visual approval"
-  }
+  },
+  "wordmarks": [
+    {
+      "id": "route",
+      "source": "C:/Users/vitol/Downloads/wordmark-route.svg",
+      "destination": "public/work/route/route-wordmark.svg",
+      "sha256": "769ede668f94767c5c5eda83837171924b2d58bcc4a2e3867f91026a100cfa10",
+      "changes": "None; original paths, colors, dimensions and viewBox preserved",
+      "providedBy": "User, 2026-10-02"
+    },
+    {
+      "id": "owl",
+      "source": "C:/Users/vitol/Downloads/wordmark-owl.svg",
+      "destination": "public/work/owl/owl-wordmark.svg",
+      "sha256": "3ffa4f1b97dab282fa55f4ee17abda4334e6ca257a1ddfa8dd449d6659c11647",
+      "changes": "None; original paths, colors, dimensions and viewBox preserved",
+      "providedBy": "User, 2026-10-02"
+    }
+  ]
 }

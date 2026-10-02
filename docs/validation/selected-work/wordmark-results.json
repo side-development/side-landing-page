@@ -1,0 +1,179 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "locale": "/",
+      "reducedMotion": "no-preference",
+      "sizes": [
+        {
+          "id": "route",
+          "x": 1272.21875,
+          "right": 1589.703125,
+          "width": 317.484375,
+          "height": 109.4375,
+          "naturalWidth": 1320,
+          "naturalHeight": 455
+        },
+        {
+          "id": "owl",
+          "x": 1272.21875,
+          "right": 1487.15625,
+          "width": 214.9375,
+          "height": 72.953125,
+          "naturalWidth": 330,
+          "naturalHeight": 112
+        }
+      ],
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "wide",
+      "width": 3440,
+      "height": 1440,
+      "locale": "/",
+      "reducedMotion": "no-preference",
+      "sizes": [
+        {
+          "id": "route",
+          "x": 2096.53125,
+          "right": 2479.46875,
+          "width": 382.9375,
+          "height": 132,
+          "naturalWidth": 1320,
+          "naturalHeight": 455
+        },
+        {
+          "id": "owl",
+          "x": 2096.53125,
+          "right": 2355.8125,
+          "width": 259.28125,
+          "height": 88,
+          "naturalWidth": 330,
+          "naturalHeight": 112
+        }
+      ],
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "en",
+      "width": 1440,
+      "height": 900,
+      "locale": "/en",
+      "reducedMotion": "no-preference",
+      "sizes": [
+        {
+          "id": "route",
+          "x": 959.125,
+          "right": 1197.234375,
+          "width": 238.109375,
+          "height": 82.078125,
+          "naturalWidth": 1320,
+          "naturalHeight": 455
+        },
+        {
+          "id": "owl",
+          "x": 959.125,
+          "right": 1120.34375,
+          "width": 161.21875,
+          "height": 54.71875,
+          "naturalWidth": 330,
+          "naturalHeight": 112
+        }
+      ],
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "locale": "/",
+      "reducedMotion": "no-preference",
+      "sizes": [
+        {
+          "id": "route",
+          "x": 24,
+          "right": 185.1875,
+          "width": 161.1875,
+          "height": 55.5625,
+          "naturalWidth": 1320,
+          "naturalHeight": 455
+        },
+        {
+          "id": "owl",
+          "x": 24,
+          "right": 133.140625,
+          "width": 109.140625,
+          "height": 37.046875,
+          "naturalWidth": 330,
+          "naturalHeight": 112
+        }
+      ],
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "small-mobile",
+      "width": 320,
+      "height": 568,
+      "locale": "/",
+      "reducedMotion": "no-preference",
+      "sizes": [
+        {
+          "id": "route",
+          "x": 16,
+          "right": 177,
+          "width": 161,
+          "height": 55.5,
+          "naturalWidth": 1320,
+          "naturalHeight": 455
+        },
+        {
+          "id": "owl",
+          "x": 16,
+          "right": 125.015625,
+          "width": 109.015625,
+          "height": 37,
+          "naturalWidth": 330,
+          "naturalHeight": 112
+        }
+      ],
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "reduced",
+      "width": 1440,
+      "height": 900,
+      "locale": "/",
+      "reducedMotion": "reduce",
+      "sizes": [
+        {
+          "id": "route",
+          "x": 959.125,
+          "right": 1197.234375,
+          "width": 238.109375,
+          "height": 82.078125,
+          "naturalWidth": 1320,
+          "naturalHeight": 455
+        },
+        {
+          "id": "owl",
+          "x": 959.125,
+          "right": 1120.34375,
+          "width": 161.21875,
+          "height": 54.71875,
+          "naturalWidth": 330,
+          "naturalHeight": 112
+        }
+      ],
+      "console": [],
+      "status": "pass"
+    }
+  ]
+}
