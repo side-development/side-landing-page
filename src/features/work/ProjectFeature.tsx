@@ -38,7 +38,7 @@ export function ProjectFeature({ id, copy, labels, active }: {
     </a>
     <div className={styles.caption} data-project-caption>
       <div className={styles.identity}>
-        <h3 id={`${id}-title`}>{copy.name}</h3>
+        <h3 id={`${id}-title`}><Image src={`/work/${id}/${id}-wordmark.svg`} alt={copy.name} width={id === "route" ? 1320 : 330} height={id === "route" ? 455 : 112} className={styles.projectWordmark} /></h3>
         <p className={styles.metadata}><span>{copy.category}</span><span>2026</span></p>
       </div>
       <div>
