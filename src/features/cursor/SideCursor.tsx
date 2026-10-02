@@ -23,8 +23,8 @@ export function SideCursor({ active }: { active: boolean }) {
     const media = gsap.matchMedia();
     media.add("(min-width: 801px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)", () => {
       const label = node.querySelector<HTMLElement>("span")!;
-      const x = gsap.quickTo(node, "x", { duration: 0.12, ease: "power2.out" });
-      const y = gsap.quickTo(node, "y", { duration: 0.12, ease: "power2.out" });
+      const x = gsap.quickTo(node, "x", { duration: 0.22, ease: "power3.out" });
+      const y = gsap.quickTo(node, "y", { duration: 0.22, ease: "power3.out" });
       let shown = false;
 
       function hide() {
