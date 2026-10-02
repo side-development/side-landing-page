@@ -1,0 +1,105 @@
+{
+  "status": "Local visual review; not approved",
+  "projects": [
+    {
+      "id": "route",
+      "url": "https://routesecurity.com.br/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "recordedAt": "2026-10-02T18:37:13.247Z",
+      "capture": "Chromium CDP screencast JPEG quality 100; original rendered frames",
+      "frames": 224,
+      "shots": [
+        {
+          "label": "hero",
+          "start": 1790966217.001,
+          "end": 1790966218.437
+        },
+        {
+          "label": "process-scroll",
+          "start": 1790966219.748,
+          "end": 1790966220.544
+        },
+        {
+          "label": "camera-closed-rotated-exploded",
+          "start": 1790966222.298,
+          "end": 1790966226.834
+        }
+      ],
+      "output": {
+        "codec": "h264",
+        "width": 1440,
+        "height": 900,
+        "frameRate": "30/1",
+        "pixelFormat": "yuvj420p",
+        "duration": 6.833333,
+        "audioStreams": 0,
+        "faststart": true
+      },
+      "files": [
+        {
+          "path": "public/work/route/route-reel.mp4",
+          "bytes": 980857,
+          "sha256": "3f2fcde3cb86656d52cde5b6338d0d4f459c1eb27ddb5f0c4804913fa9807c3f"
+        },
+        {
+          "path": "public/work/route/route-poster.webp",
+          "bytes": 44002,
+          "sha256": "07bbec6c6fa5ad5d088ebf8f937b912683c43d656b563846e7cca58a08943693"
+        }
+      ]
+    },
+    {
+      "id": "owl",
+      "url": "https://owlloc.com/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "recordedAt": "2026-10-02T18:37:39.900Z",
+      "capture": "Chromium CDP screencast JPEG quality 100; original rendered frames",
+      "frames": 397,
+      "shots": [
+        {
+          "label": "hero-phrases",
+          "start": 1790966244.566,
+          "end": 1790966246.485
+        },
+        {
+          "label": "real-map-geolimit-violation",
+          "start": 1790966248.297,
+          "end": 1790966250.333
+        },
+        {
+          "label": "dashboard-violations",
+          "start": 1790966251.848,
+          "end": 1790966254.774
+        }
+      ],
+      "output": {
+        "codec": "h264",
+        "width": 1440,
+        "height": 900,
+        "frameRate": "30/1",
+        "pixelFormat": "yuvj420p",
+        "duration": 6.933333,
+        "audioStreams": 0,
+        "faststart": true
+      },
+      "files": [
+        {
+          "path": "public/work/owl/owl-reel.mp4",
+          "bytes": 1759424,
+          "sha256": "d5032dea9e9f963a15e60274d41149723c28b60f151a1ebbfe6568bcb2c96fa7"
+        },
+        {
+          "path": "public/work/owl/owl-poster.webp",
+          "bytes": 182036,
+          "sha256": "774a641fa7877e11db5dd03143ff0e578731dcd7817a7e50f4219f3308de4b08"
+        }
+      ]
+    }
+  ]
+}
