@@ -21,10 +21,13 @@ export function DashboardReview({ locale }: { locale: DashboardLocale }) {
     media.add({ motion: "(prefers-reduced-motion: no-preference)", reduced: "(prefers-reduced-motion: reduce)" }, context => {
       if (context.conditions?.reduced) return;
       const title = root.current!.querySelector<HTMLElement>("[data-review-title]")!;
-      gsap.timeline({ scrollTrigger: { trigger: "[data-review-section]", start: "top top", end: () => `+=${innerHeight * 0.6}`, scrub: 0.5, invalidateOnRefresh: true } })
-        .to("[data-review-title-stage]", { height: () => innerHeight * 0.6 + title.offsetHeight + 132, duration: 1, ease: "power2.inOut" }, 0)
-        .to(title, { top: () => innerHeight * 0.6 + 76 + title.offsetHeight / 2, duration: 1, ease: "power2.inOut" }, 0)
-        .from("[data-review-description]", { opacity: 0, y: 24, duration: 0.55, ease: "power2.out" }, 0.45);
+      gsap.fromTo(title, { opacity: 0, filter: "blur(10px)" }, {
+        opacity: 1, filter: "blur(0px)", duration: 1, ease: "power2.out", clearProps: "filter,opacity",
+        scrollTrigger: { trigger: "[data-review-section]", start: "top 75%", toggleActions: "play none none none" },
+      });
+      gsap.timeline({ scrollTrigger: { trigger: "[data-review-section]", start: "top top", end: () => `+=${Math.round(Math.max(120, innerHeight / 2 - 76 - title.offsetHeight / 2))}`, scrub: 0.5, invalidateOnRefresh: true } })
+        .to("[data-review-title-stage]", { height: () => innerHeight / 2 + title.offsetHeight / 2 + 56, duration: 1, ease: "power2.inOut" }, 0)
+        .fromTo("[data-review-description]", { opacity: 0, y: 20, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power2.out", clearProps: "filter" }, 0.45);
     });
     return () => media.revert();
   }, { scope: root });

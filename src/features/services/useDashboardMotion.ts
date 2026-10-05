@@ -39,7 +39,7 @@ export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: 
       node.dataset.animation = "waiting";
       node.inert = true;
       const timeline = gsap.timeline({ paused: true, defaults: { ease: "power2.out" }, onStart: () => { node.dataset.animation = "playing"; }, onComplete: () => { node.dataset.animation = "settled"; node.inert = false; revealed.current = true; } });
-      timeline.from(node, { opacity: 0, scale: 0.97, y: 14, duration: 0.8 })
+      timeline.fromTo(node, { opacity: 0, y: 18, filter: "blur(4px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, clearProps: "filter" })
         .from(shell, { opacity: 0, y: 8, duration: 0.55, stagger: 0.08 }, 0.35)
         .from(metrics, { opacity: 0, y: 12, duration: 0.65, stagger: 0.1 }, 0.65);
       counters.forEach((counter, index) => {
