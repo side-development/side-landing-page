@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "url": "/review/services",
+      "status": 404,
+      "reviewUnavailable": true
+    },
+    {
+      "url": "/en/review/services",
+      "status": 404,
+      "reviewUnavailable": true
+    },
+    {
+      "url": "/review/services/terminal",
+      "status": 404,
+      "reviewUnavailable": true
+    },
+    {
+      "url": "/en/review/services/terminal",
+      "status": 404,
+      "reviewUnavailable": true
+    },
+    {
+      "url": "/",
+      "approvedHomeUnchanged": true,
+      "console": []
+    },
+    {
+      "url": "/en",
+      "approvedHomeUnchanged": true,
+      "console": []
+    }
+  ]
+}

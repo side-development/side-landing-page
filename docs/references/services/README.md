@@ -297,3 +297,30 @@ Adaptação Side:
 - preservar roxo Side no cursor, marca, navegação e foco. A nova direção de cor dos gráficos atende à solicitação visual do usuário e substitui o tratamento monocromático anterior neste checkpoint.
 
 O movimento contínuo dos gráficos e a remoção da atividade são alterações explícitas do usuário ao estado final estático e à tabela inicialmente descritos na #8. Counters, construção e reveals continuam finitos. Nenhum mapa, gráfico geográfico ou dependência nova foi criado.
+
+## Checkpoint 2 — terminal isolado
+
+Dashboard aprovado explicitamente pelo usuário em 05/10/2026: “Feito, vamos para a próxima fase!”. Terminal segue em revisão isolada antes da experiência 01 e da integração.
+
+Usar para:
+- `terminal-claude-code.jpg`: separação da titlebar, cores e escala dos traffic lights;
+- `terminal-cli.jpg`: hairline clara sobre charcoal, sombra externa, monospace, espaçamento entre prompt e saída;
+- janela como objeto central com espaço negativo evidente.
+
+Não copiar:
+- arte ASCII Claude, branding Anthropic, mensagens de login ou comandos Meta;
+- valores de campanhas, URLs de autenticação e saídas artificiais para preencher a janela;
+- screenshot como interface.
+
+Adaptação Side:
+- HTML/CSS, janela `min(76vw, 1180px)` × `60svh` no desktop, com limites de altura para legibilidade;
+- mobile com 16px de margem por lado, 400px de altura mínima e mensagem final com quebra natural;
+- titlebar de 43px, traffic lights de 12px, borda fina, carvão profundo e estados verdes/cianos contidos;
+- sequência curta da #8, typing finito com pausas após comandos, saída rápida e cursor vivo;
+- transcript acessível estático, sem `aria-live` caractere a caractere; cursor nativo para selecionar o texto;
+- reduced motion: conteúdo final com fade curto, sem typing e sem cursor piscante;
+- replay exclusivo da prévia, pausa fora da viewport/aba e cleanup local.
+
+Comandos reconferidos em 05/10/2026: `claude` inicia a sessão interativa na [referência oficial de CLI](https://code.claude.com/docs/en/cli-usage); `/mcp` verifica/gerencia servidores dentro da sessão, conforme a [documentação oficial de MCP](https://code.claude.com/docs/en/mcp). A apresentação visual, os servidores demonstrativos e a mensagem final são representação editorial Side, não reprodução exata de uma versão oficial do aplicativo. Não há conexão real.
+
+Comparação das duas referências com a implementação: `docs/validation/services/terminal-comparison.png`. A passagem dashboard → terminal será implementada somente na fase de integração; o review atual começa em atmosfera escura para isolar o objeto visual.

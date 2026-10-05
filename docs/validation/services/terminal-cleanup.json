@@ -1,0 +1,64 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "strict-mode-unmount-0",
+      "status": "pass",
+      "counts": {
+        "observers": 0,
+        "listeners": 0,
+        "triggers": 0,
+        "animations": 0
+      }
+    },
+    {
+      "name": "strict-mode-unmount-1",
+      "status": "pass",
+      "counts": {
+        "observers": 0,
+        "listeners": 0,
+        "triggers": 0,
+        "animations": 0
+      }
+    },
+    {
+      "name": "strict-mode-unmount-2",
+      "status": "pass",
+      "counts": {
+        "observers": 0,
+        "listeners": 0,
+        "triggers": 0,
+        "animations": 0
+      }
+    },
+    {
+      "name": "strict-mode-unmount-3",
+      "status": "pass",
+      "counts": {
+        "observers": 0,
+        "listeners": 0,
+        "triggers": 0,
+        "animations": 0
+      }
+    },
+    {
+      "name": "strict-mode-unmount-4",
+      "status": "pass",
+      "counts": {
+        "observers": 0,
+        "listeners": 0,
+        "triggers": 0,
+        "animations": 0
+      }
+    },
+    {
+      "name": "locale-and-replay-update-mid-typing",
+      "status": "pass"
+    },
+    {
+      "name": "dynamic-reduced-motion",
+      "status": "pass"
+    }
+  ],
+  "console": []
+}
