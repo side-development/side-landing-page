@@ -1,0 +1,149 @@
+{
+  "status": "Visually approved by user on 2026-10-05; publication authorized",
+  "projects": [
+    {
+      "id": "route",
+      "url": "https://routesecurity.com.br/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "recordedAt": "2026-10-02T18:37:13.247Z",
+      "capture": "Chromium CDP screencast JPEG quality 100; original rendered frames",
+      "frames": 224,
+      "shots": [
+        {
+          "label": "hero",
+          "start": 1790966217.001,
+          "end": 1790966218.437
+        },
+        {
+          "label": "process-scroll",
+          "start": 1790966219.748,
+          "end": 1790966220.544
+        },
+        {
+          "label": "camera-closed-rotated-exploded",
+          "start": 1790966222.298,
+          "end": 1790966226.834
+        }
+      ],
+      "output": {
+        "codec": "h264",
+        "width": 1440,
+        "height": 900,
+        "frameRate": "30/1",
+        "pixelFormat": "yuv420p",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "duration": 6.833333,
+        "audioStreams": 0,
+        "faststart": true
+      },
+      "files": [
+        {
+          "path": "public/work/route/route-reel.mp4",
+          "bytes": 880401,
+          "sha256": "f06328a23f8ac2d57915d1d6da02d245162a3dc0e17f1b07815b32466c25e27f"
+        },
+        {
+          "path": "public/work/route/route-poster.webp",
+          "bytes": 43852,
+          "sha256": "073d8a25ae98fb6883bc59f872d0f4cbfd8685cb22d4e360b8aa58f8559e7534"
+        },
+        {
+          "path": "public/work/route/route-still.webp",
+          "bytes": 51838,
+          "sha256": "6d870101250aa4e4705de777d3143678fdc55e2106ca6efd9b17d68a01f56ea6",
+          "source": "route-reel.mp4",
+          "sourceTimeSeconds": 6.4,
+          "purpose": "Static rear sheet; real captured LP frame"
+        }
+      ]
+    },
+    {
+      "id": "owl",
+      "url": "https://owlloc.com/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "recordedAt": "2026-10-02T18:37:39.900Z",
+      "capture": "Chromium CDP screencast JPEG quality 100; original rendered frames",
+      "frames": 397,
+      "shots": [
+        {
+          "label": "hero-phrases",
+          "start": 1790966244.566,
+          "end": 1790966246.485
+        },
+        {
+          "label": "real-map-geolimit-violation",
+          "start": 1790966248.297,
+          "end": 1790966250.333
+        },
+        {
+          "label": "dashboard-violations",
+          "start": 1790966251.848,
+          "end": 1790966254.774
+        }
+      ],
+      "output": {
+        "codec": "h264",
+        "width": 1440,
+        "height": 900,
+        "frameRate": "30/1",
+        "pixelFormat": "yuv420p",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "duration": 6.933333,
+        "audioStreams": 0,
+        "faststart": true
+      },
+      "files": [
+        {
+          "path": "public/work/owl/owl-reel.mp4",
+          "bytes": 1634919,
+          "sha256": "98f1a12d5193fb5e1eb6eb7176a680905cd720531a683dc80d30770e15d76f22"
+        },
+        {
+          "path": "public/work/owl/owl-poster.webp",
+          "bytes": 182654,
+          "sha256": "2e9f4c8b6cec2367e6ca835f87a16d1830885430aea496ec36f6041b2303ae39"
+        },
+        {
+          "path": "public/work/owl/owl-still.webp",
+          "bytes": 17674,
+          "sha256": "eabadae1c319134019394c0f1e30b6fcdbad1c663f26a21fe465b75e99965fed",
+          "source": "owl-reel.mp4",
+          "sourceTimeSeconds": 3.5,
+          "purpose": "Static rear sheet; real captured LP frame"
+        }
+      ]
+    }
+  ],
+  "reviewRevision": {
+    "date": "2026-10-02",
+    "reference": "editorial-sheets-reference.mp4",
+    "composition": "One real still behind one looping real video for each project",
+    "publication": "Local preview only; awaiting explicit visual approval"
+  },
+  "wordmarks": [
+    {
+      "id": "route",
+      "source": "C:/Users/vitol/Downloads/wordmark-route.svg",
+      "destination": "public/work/route/route-wordmark.svg",
+      "sha256": "769ede668f94767c5c5eda83837171924b2d58bcc4a2e3867f91026a100cfa10",
+      "changes": "None; original paths, colors, dimensions and viewBox preserved",
+      "providedBy": "User, 2026-10-02"
+    },
+    {
+      "id": "owl",
+      "source": "C:/Users/vitol/Downloads/wordmark-owl.svg",
+      "destination": "public/work/owl/owl-wordmark.svg",
+      "sha256": "3ffa4f1b97dab282fa55f4ee17abda4334e6ca257a1ddfa8dd449d6659c11647",
+      "changes": "None; original paths, colors, dimensions and viewBox preserved",
+      "providedBy": "User, 2026-10-02"
+    }
+  ]
+}

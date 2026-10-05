@@ -1,0 +1,35 @@
+SIDE — gravação dos reels
+
+O objetivo não é gravar o site inteiro. Grave clips-fonte limpos e recorte somente os melhores momentos.
+
+ROUTE
+1. 1440×900, 30 fps.
+2. Comece na Hero.
+3. Faça scroll suave.
+4. Capture principalmente a seção “rigor técnico” e a sequência real da câmera:
+   fechada → girada → vista explodida.
+5. Gere um master de 5–7 s.
+
+OWL
+1. 1440×900, 30 fps.
+2. Comece na Hero.
+3. Capture as frases iniciais.
+4. Passe pelo sistema/dashboard real.
+5. Capture geolimits/violações/mapa somente quando realmente visíveis.
+6. Hardware pode entrar no fim.
+7. Gere um master de 6–8 s.
+
+Evite:
+- mouse aparecendo no vídeo;
+- DevTools;
+- barras do navegador;
+- zoom do navegador diferente de 100%;
+- overlays externos;
+- inventar radar/HUD;
+- cortes rápidos demais.
+
+Assets finais:
+public/work/route/route-reel.mp4
+public/work/route/route-poster.webp
+public/work/owl/owl-reel.mp4
+public/work/owl/owl-poster.webp

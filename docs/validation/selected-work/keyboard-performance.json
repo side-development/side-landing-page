@@ -1,0 +1,120 @@
+{
+  "status": "pass",
+  "sequence": [
+    {
+      "tag": "A",
+      "text": "Route Security",
+      "label": "Ver projeto: Route Security",
+      "project": "route",
+      "opacity": null
+    },
+    {
+      "tag": "A",
+      "text": "Ver projeto↗",
+      "label": null,
+      "project": "route",
+      "opacity": "1"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Pausar reel",
+      "label": "Pausar reel: Route Security",
+      "project": "route",
+      "opacity": "1"
+    },
+    {
+      "tag": "A",
+      "text": "OWL",
+      "label": "Ver projeto: OWL",
+      "project": "owl",
+      "opacity": null
+    },
+    {
+      "tag": "A",
+      "text": "Ver projeto↗",
+      "label": null,
+      "project": "owl",
+      "opacity": "1"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Reproduzir reel",
+      "label": "Reproduzir reel: OWL",
+      "project": "owl",
+      "opacity": "1"
+    }
+  ],
+  "heroMenuPreserved": true,
+  "performance": {
+    "lcp": 392,
+    "resources": [
+      {
+        "url": "http://localhost:3106/_next/static/chunks/42ylaq3awf_06.css",
+        "bytes": 937,
+        "type": "link"
+      },
+      {
+        "url": "http://localhost:3106/_next/static/chunks/3huafdmucnni9.css",
+        "bytes": 3727,
+        "type": "link"
+      },
+      {
+        "url": "http://localhost:3106/_next/static/chunks/3s6nzrbk-8mnv.js",
+        "bytes": 2329,
+        "type": "link"
+      },
+      {
+        "url": "http://localhost:3106/_next/static/chunks/19mx3mg6lkumu.js",
+        "bytes": 7914,
+        "type": "script"
+      },
+      {
+        "url": "http://localhost:3106/_next/static/chunks/3g4px251sg85e.js",
+        "bytes": 71876,
+        "type": "script"
+      },
+      {
+        "url": "http://localhost:3106/_next/static/chunks/2z-e6jheq0ftu.js",
+        "bytes": 45485,
+        "type": "script"
+      },
+      {
+        "url": "http://localhost:3106/_next/static/chunks/turbopack-03rfayxv7ep_b.js",
+        "bytes": 4151,
+        "type": "script"
+      },
+      {
+        "url": "http://localhost:3106/_next/static/chunks/3fntmmi971322.js",
+        "bytes": 3961,
+        "type": "script"
+      },
+      {
+        "url": "http://localhost:3106/_next/static/chunks/3s67-p88xtc3p.js",
+        "bytes": 10424,
+        "type": "script"
+      },
+      {
+        "url": "http://localhost:3106/_next/static/chunks/2dofudx-xcl_i.js",
+        "bytes": 69371,
+        "type": "script"
+      },
+      {
+        "url": "http://localhost:3106/brand/side-logo-black.svg",
+        "bytes": 1201,
+        "type": "img"
+      },
+      {
+        "url": "http://localhost:3106/work/route/route-poster.webp",
+        "bytes": 44152,
+        "type": "video"
+      },
+      {
+        "url": "http://localhost:3106/work/owl/owl-poster.webp",
+        "bytes": 182954,
+        "type": "video"
+      }
+    ],
+    "mediaRequests": 0
+  },
+  "measurement": "Local production, Edge/Chromium, unthrottled; not Lighthouse benchmark"
+}

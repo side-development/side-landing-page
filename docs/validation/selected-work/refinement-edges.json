@@ -1,0 +1,72 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "width": 1440,
+      "height": 900,
+      "opacity": {
+        "early": 0.0001,
+        "complete": 1
+      },
+      "edges": [
+        {
+          "left": 69.44480895996094,
+          "right": 655.8564910888672,
+          "radius": "14px",
+          "shadow": "rgba(0, 0, 0, 0.14) 0px 26px 60px 0px, rgba(0, 0, 0, 0.09) 0px 8px 24px 0px, rgba(0, 0, 0, 0.08) 0px 1px 3px 0px",
+          "border": "1px"
+        },
+        {
+          "left": 280.4322509765625,
+          "right": 860.7356567382812,
+          "radius": "14px",
+          "shadow": "rgba(0, 0, 0, 0.14) 0px 26px 60px 0px, rgba(0, 0, 0, 0.09) 0px 8px 24px 0px, rgba(0, 0, 0, 0.08) 0px 1px 3px 0px",
+          "border": "1px"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "width": 1000,
+      "height": 680,
+      "edges": [
+        {
+          "left": 28.251968383789062,
+          "right": 450.9037628173828,
+          "radius": "14px",
+          "shadow": "rgba(0, 0, 0, 0.14) 0px 26px 60px 0px, rgba(0, 0, 0, 0.09) 0px 8px 24px 0px, rgba(0, 0, 0, 0.08) 0px 1px 3px 0px",
+          "border": "1px"
+        },
+        {
+          "left": 188.2454833984375,
+          "right": 606.4359130859375,
+          "radius": "14px",
+          "shadow": "rgba(0, 0, 0, 0.14) 0px 26px 60px 0px, rgba(0, 0, 0, 0.09) 0px 8px 24px 0px, rgba(0, 0, 0, 0.08) 0px 1px 3px 0px",
+          "border": "1px"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "edges": [
+        {
+          "left": 15.653797149658203,
+          "right": 242.00799942016602,
+          "radius": "14px",
+          "shadow": "rgba(0, 0, 0, 0.14) 0px 26px 60px 0px, rgba(0, 0, 0, 0.09) 0px 8px 24px 0px, rgba(0, 0, 0, 0.08) 0px 1px 3px 0px",
+          "border": "1px"
+        },
+        {
+          "left": 76.28685760498047,
+          "right": 300.24877166748047,
+          "radius": "14px",
+          "shadow": "rgba(0, 0, 0, 0.14) 0px 26px 60px 0px, rgba(0, 0, 0, 0.09) 0px 8px 24px 0px, rgba(0, 0, 0, 0.08) 0px 1px 3px 0px",
+          "border": "1px"
+        }
+      ],
+      "status": "pass"
+    }
+  ]
+}

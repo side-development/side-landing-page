@@ -9,10 +9,11 @@ import styles from "./hero.module.css";
 
 gsap.registerPlugin(useGSAP);
 
-export function CinematicReveal({ container, copy, onComplete }: {
+export function CinematicReveal({ container, copy, onComplete, onPurple }: {
   container: RefObject<HTMLElement | null>;
   copy: HeroCopy;
   onComplete: () => void;
+  onPurple?: () => void;
 }) {
   const stage = useRef<HTMLDivElement>(null);
 
@@ -22,7 +23,7 @@ export function CinematicReveal({ container, copy, onComplete }: {
     const visual = stage.current;
     const media = gsap.matchMedia();
     media.add({ reduced: "(prefers-reduced-motion: reduce)", full: "(prefers-reduced-motion: no-preference)" }, context => {
-      const cleanup = createHeroTimeline(root, visual, Boolean(context.conditions?.reduced), onComplete);
+      const cleanup = createHeroTimeline(root, visual, Boolean(context.conditions?.reduced), onComplete, onPurple);
       return cleanup;
     });
     return () => media.revert();

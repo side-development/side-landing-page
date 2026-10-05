@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "width": 1440,
+      "x": 567.3037719726562,
+      "y": 852,
+      "stageBottom": 792,
+      "frontTop": 367.78594970703125,
+      "frontBottom": 897.83154296875,
+      "visible": true,
+      "hit": "VIDEO",
+      "overflow": "visible",
+      "status": "pass"
+    },
+    {
+      "width": 1846,
+      "x": 751.8796081542969,
+      "y": 852,
+      "stageBottom": 792,
+      "frontTop": 369.36676025390625,
+      "frontBottom": 942.2537841796875,
+      "visible": true,
+      "hit": "VIDEO",
+      "overflow": "visible",
+      "status": "pass"
+    }
+  ]
+}

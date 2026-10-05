@@ -1,0 +1,62 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "src": "http://localhost:3206/validation/section-desktop.mp4",
+      "duration": 19.4,
+      "currentTime": 0.255401,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/validation/section-mobile.mp4",
+      "duration": 25.8,
+      "currentTime": 0.28281,
+      "width": 390,
+      "height": 844,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/validation/section-en.mp4",
+      "duration": 19.566667,
+      "currentTime": 0.280596,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/validation/section-reduced.mp4",
+      "duration": 12.666667,
+      "currentTime": 0.269612,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/validation/intro-cursor.mp4",
+      "duration": 28.333333,
+      "currentTime": 0.268947,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/work/route/route-reel.mp4",
+      "duration": 6.833333,
+      "currentTime": 0.268933,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    },
+    {
+      "src": "http://localhost:3206/work/owl/owl-reel.mp4",
+      "duration": 6.933333,
+      "currentTime": 0.266642,
+      "width": 1440,
+      "height": 900,
+      "error": null
+    }
+  ],
+  "console": []
+}

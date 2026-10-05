@@ -1,0 +1,105 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "desktop-pt",
+      "width": 1440,
+      "height": 900,
+      "locale": "pt-BR",
+      "reducedMotion": "no-preference",
+      "status": "pass",
+      "mp4Requests": 2,
+      "console": []
+    },
+    {
+      "name": "desktop-en",
+      "width": 1440,
+      "height": 900,
+      "locale": "en",
+      "reducedMotion": "no-preference",
+      "status": "pass",
+      "mp4Requests": 2,
+      "console": []
+    },
+    {
+      "name": "mobile-pt",
+      "width": 390,
+      "height": 844,
+      "locale": "pt-BR",
+      "reducedMotion": "no-preference",
+      "status": "pass",
+      "mp4Requests": 2,
+      "console": []
+    },
+    {
+      "name": "mobile-en",
+      "width": 390,
+      "height": 844,
+      "locale": "en",
+      "reducedMotion": "no-preference",
+      "status": "pass",
+      "mp4Requests": 2,
+      "console": []
+    },
+    {
+      "name": "small-mobile",
+      "width": 320,
+      "height": 568,
+      "locale": "pt-BR",
+      "reducedMotion": "no-preference",
+      "status": "pass",
+      "mp4Requests": 2,
+      "console": []
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "locale": "pt-BR",
+      "reducedMotion": "no-preference",
+      "status": "pass",
+      "mp4Requests": 2,
+      "console": []
+    },
+    {
+      "name": "short-desktop",
+      "width": 1280,
+      "height": 600,
+      "locale": "pt-BR",
+      "reducedMotion": "no-preference",
+      "status": "pass",
+      "mp4Requests": 2,
+      "console": []
+    },
+    {
+      "name": "reduced-pt",
+      "width": 1440,
+      "height": 900,
+      "locale": "pt-BR",
+      "reducedMotion": "reduce",
+      "status": "pass",
+      "mp4Requests": 1,
+      "console": []
+    },
+    {
+      "name": "reduced-en",
+      "width": 1440,
+      "height": 900,
+      "locale": "en",
+      "reducedMotion": "reduce",
+      "status": "pass",
+      "mp4Requests": 1,
+      "console": []
+    },
+    {
+      "name": "intro-cursor-session-replay-input-fallback",
+      "status": "pass",
+      "milestone": {
+        "hero": "triggered",
+        "purple": "visible",
+        "hidden": true,
+        "cursor": "true"
+      }
+    }
+  ]
+}

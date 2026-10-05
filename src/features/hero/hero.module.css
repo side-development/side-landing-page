@@ -43,6 +43,15 @@
   gap: 24px;
 }
 
+.finalHero[data-visible="true"] .finalHeader {
+  position: fixed;
+  top: 24px;
+  left: 40px;
+  right: 40px;
+  z-index: 4;
+  background: transparent;
+}
+
 .smallSymbol {
   width: 40px;
   height: auto;
@@ -102,6 +111,7 @@
 }
 
 .wordmarkHeading {
+  grid-row: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,6 +130,7 @@
 }
 
 .finalSupport {
+  grid-row: 3;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -233,6 +244,7 @@
   }
 
   .smallSymbol { width: 32px; }
+  .finalHero[data-visible="true"] .finalHeader { left: 24px; right: 24px; }
   .navigation { gap: 24px; }
   .navigation button, .navigation a { font-size: 13px; }
 
@@ -265,6 +277,7 @@
     pointer-events: auto;
     transition-delay: 0s;
   }
+  .finalHero[data-visible="true"] .sectionLinks { top: 58px; left: 0; right: 0; }
   .sectionLinks button { font-size: 24px; }
 
   .navigation .menuToggle {
@@ -302,6 +315,7 @@
 
 @media (max-width: 359px) {
   .finalHero { padding-inline: 16px; }
+  .finalHero[data-visible="true"] .finalHeader { left: 16px; right: 16px; }
   .navigation { gap: 14px; }
   .supportCopy { font-size: 21px; }
 }

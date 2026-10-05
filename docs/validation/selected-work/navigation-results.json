@@ -1,0 +1,116 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "locale": "/",
+      "reducedMotion": "no-preference",
+      "margin": 40,
+      "header": {
+        "x": 40,
+        "y": 24,
+        "width": 1840,
+        "height": 35.59375
+      },
+      "alignment": {
+        "left": 40,
+        "right": 1880,
+        "width": 1920,
+        "overflow": false
+      },
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "en",
+      "width": 1440,
+      "height": 900,
+      "locale": "/en",
+      "reducedMotion": "no-preference",
+      "margin": 40,
+      "header": {
+        "x": 40,
+        "y": 24,
+        "width": 1360,
+        "height": 35.59375
+      },
+      "alignment": {
+        "left": 40,
+        "right": 1400,
+        "width": 1440,
+        "overflow": false
+      },
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "locale": "/",
+      "reducedMotion": "no-preference",
+      "margin": 24,
+      "header": {
+        "x": 24,
+        "y": 24,
+        "width": 342,
+        "height": 40
+      },
+      "alignment": {
+        "left": 24,
+        "right": 366,
+        "width": 390,
+        "overflow": false
+      },
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "small-mobile",
+      "width": 320,
+      "height": 568,
+      "locale": "/",
+      "reducedMotion": "no-preference",
+      "margin": 16,
+      "header": {
+        "x": 16,
+        "y": 24,
+        "width": 288,
+        "height": 40
+      },
+      "alignment": {
+        "left": 16,
+        "right": 304,
+        "width": 320,
+        "overflow": false
+      },
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "reduced",
+      "width": 1440,
+      "height": 900,
+      "locale": "/",
+      "reducedMotion": "reduce",
+      "margin": 40,
+      "header": {
+        "x": 40,
+        "y": 24,
+        "width": 1360,
+        "height": 35.59375
+      },
+      "alignment": {
+        "left": 40,
+        "right": 1400,
+        "width": 1440,
+        "overflow": false
+      },
+      "console": [],
+      "status": "pass"
+    }
+  ],
+  "intro": "navigation hidden during fake error"
+}
