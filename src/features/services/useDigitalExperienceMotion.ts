@@ -7,10 +7,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-function rightAlignment(element: HTMLElement) {
-  const mask = element.parentElement!;
-  const padding = parseFloat(getComputedStyle(mask).paddingLeft);
-  return Math.max(0, mask.clientWidth - padding - element.offsetWidth);
+const palettes = [
+  { "--digital-ink": "#171719", "--digital-accent": "#3919bd", "--digital-light": "#6b4dea", "--digital-dark": "#260e88", "--digital-fold": "#230c80", "--digital-front": "#785be6", "--digital-back": "#28108a", "--digital-highlight": "#876cee", "--digital-muted": "#77747d", "--digital-border": "#d9d4ee" },
+  { "--digital-ink": "#b82332", "--digital-accent": "#c62d3c", "--digital-light": "#ed6470", "--digital-dark": "#831326", "--digital-fold": "#76101f", "--digital-front": "#f17b84", "--digital-back": "#881528", "--digital-highlight": "#f7959e", "--digital-muted": "#a43a46", "--digital-border": "#edd0d4" },
+];
+
+function supportingPositions(node: HTMLElement, composed: boolean) {
+  const note = node.querySelector<HTMLElement>("[data-digital-note-layout]")!;
+  const action = node.querySelector<HTMLElement>("[data-digital-action-layout]")!;
+  const lower = note.parentElement!.parentElement!;
+  const actionSlot = action.parentElement!;
+  return { note, action, noteX: composed ? lower.clientWidth - note.offsetWidth - note.parentElement!.offsetLeft : 0, actionX: composed ? note.parentElement!.offsetLeft - actionSlot.offsetLeft : 0 };
 }
 
 export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, replay: number) {
@@ -22,6 +29,8 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
       const reduced = context.conditions?.reduced;
       const desktop = context.conditions?.desktop;
       const composed = node.dataset.composed === "true";
+      gsap.set(node, palettes[Number(composed)]);
+      gsap.set(node.querySelectorAll("[data-digital-headline], [data-digital-note]"), { autoAlpha: (_index, element: HTMLElement) => Number(element.dataset.digitalHeadline ?? element.dataset.digitalNote) === Number(composed) ? 1 : 0, xPercent: 0 });
       node.querySelectorAll<SVGPathElement>("[data-digital-strand]").forEach(strand => {
         strand.dataset.digitalClosed ??= strand.getAttribute("d") ?? "";
         gsap.set(strand, { attr: { d: (composed ? strand.dataset.digitalOpen : strand.dataset.digitalClosed) ?? "" } });
@@ -31,12 +40,17 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
       gsap.set(layout, { rotation: 0, scale: composed ? .84 : 1, xPercent: composed && window.matchMedia("(min-width: 801px)").matches ? -112 : 0 });
       const art = node.querySelector("[data-digital-art-scroll]");
       const lines = node.querySelectorAll("[data-digital-line]");
-      gsap.set(lines, { x: (_index, element: HTMLElement) => composed ? rightAlignment(element) : 0 });
-      const linePositions = [...lines].map(element => ({ element: element as HTMLElement, set: gsap.quickSetter(element, "x", "px") }));
       const layoutPosition = gsap.quickSetter(layout, "xPercent");
+      const initial = supportingPositions(node, composed);
+      gsap.set(initial.note, { x: initial.noteX });
+      gsap.set(initial.action, { x: initial.actionX });
+      const notePosition = gsap.quickSetter(initial.note, "x", "px");
+      const actionPosition = gsap.quickSetter(initial.action, "x", "px");
       const resizeLayout = () => {
         const active = node.dataset.composed === "true";
-        linePositions.forEach(({ element, set }) => set(active ? rightAlignment(element) : 0));
+        const positions = supportingPositions(node, active);
+        notePosition(positions.noteX);
+        actionPosition(positions.actionX);
         layoutPosition(active && window.matchMedia("(min-width: 801px)").matches ? -112 : 0);
       };
       window.addEventListener("resize", resizeLayout);
@@ -97,12 +111,19 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
   return contextSafe((composed: boolean) => {
     const node = root.current;
     if (!node) return;
-    const duration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 1.2;
+    const duration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 1.8;
+    gsap.to(node, { ...palettes[Number(composed)], duration, ease: "sine.inOut", overwrite: "auto" });
     node.querySelectorAll<SVGPathElement>("[data-digital-strand]").forEach(strand => {
-      gsap.to(strand, { attr: { d: (composed ? strand.dataset.digitalOpen : strand.dataset.digitalClosed) ?? "" }, duration, ease: "power3.inOut", overwrite: "auto" });
+      gsap.to(strand, { attr: { d: (composed ? strand.dataset.digitalOpen : strand.dataset.digitalClosed) ?? "" }, duration, ease: "sine.inOut", overwrite: "auto" });
     });
     gsap.to(node.querySelector("[data-digital-highlight]"), { opacity: composed ? 0 : 1, duration: duration ? .4 : 0, overwrite: "auto" });
     gsap.to(node.querySelector("[data-digital-layout]"), { rotation: 0, scale: composed ? .84 : 1, xPercent: composed && window.matchMedia("(min-width: 801px)").matches ? -112 : 0, duration, ease: "power3.inOut", overwrite: "auto" });
-    gsap.to(node.querySelectorAll("[data-digital-line]"), { x: (_index, element: HTMLElement) => composed ? rightAlignment(element) : 0, duration, ease: "power3.inOut", overwrite: "auto" });
+    node.querySelectorAll<HTMLElement>("[data-digital-headline], [data-digital-note]").forEach(element => {
+      const active = Number(element.dataset.digitalHeadline ?? element.dataset.digitalNote) === Number(composed);
+      gsap.to(element, { autoAlpha: active ? 1 : 0, xPercent: active ? 0 : composed ? 6 : -6, duration: duration ? active ? 1.4 : .6 : 0, ease: "sine.inOut", overwrite: "auto" });
+    });
+    const positions = supportingPositions(node, composed);
+    gsap.to(positions.note, { x: positions.noteX, duration, ease: "sine.inOut", overwrite: "auto" });
+    gsap.to(positions.action, { x: positions.actionX, duration, ease: "sine.inOut", overwrite: "auto" });
   });
 }
