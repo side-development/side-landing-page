@@ -1,0 +1,15 @@
+.review { min-height: 100svh; background: #fff; color: #171719; padding-bottom: 80px; }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 40px; }
+.brand { width: 50px; }
+.header nav { display: flex; gap: 22px; }
+.header a { color: #77747d; font-size: 11px; text-decoration: none; }
+.header a[aria-current] { color: #3919bd; }
+.intro { padding: 110px 24px 80px; text-align: center; }
+.intro > span { color: #3919bd; font-size: 11px; }
+.intro h1 { max-width: 1100px; margin: 20px auto 0; font-size: clamp(34px, 4.4vw, 78px); font-weight: 400; line-height: 1.12; letter-spacing: -.045em; }
+.intro p { max-width: 650px; margin: 24px auto 0; color: #77747d; font-size: 14px; line-height: 1.7; }
+.intro small { display: block; margin: 14px auto 0; color: #8a8790; font-size: 10px; line-height: 1.8; }
+.replay { text-align: center; padding-top: 30px; }
+.replay button { display: inline-flex; align-items: center; gap: 12px; padding: 8px; border: 0; background: transparent; color: #3919bd; font-size: 11px; }
+.review :focus-visible { outline: 2px solid #3919bd; outline-offset: 5px; }
+@media (max-width: 800px) { .header { padding: 24px 20px; } .header nav { gap: 18px; } .header a:nth-child(-n+2) { display: none; } .intro { padding: 70px 24px 55px; } .intro p { max-width: 360px; font-size: 13px; } .intro small { max-width: 300px; } .review { padding-bottom: 50px; } }
