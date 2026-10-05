@@ -1,7 +1,10 @@
 "use client";
 
 import { useId, useRef, useState } from "react";
-import { dashboardCopy, date, getDashboardData, money, number, type DashboardLocale, type DashboardPeriod } from "./dashboardData";
+import { dashboardCopy, getDashboardData, money, number, type DashboardLocale, type DashboardPeriod } from "./dashboardData";
+import { DashboardPeriodSelect } from "./DashboardPeriodSelect";
+import { DashboardMetric } from "./DashboardMetric";
+import { DashboardDataModal } from "./DashboardDataModal";
 import { RevenueChart } from "./RevenueChart";
 import { useDashboardMotion } from "./useDashboardMotion";
 import styles from "./dashboard.module.css";
@@ -9,11 +12,11 @@ import styles from "./dashboard.module.css";
 export function ProductDashboardDemo({ locale, active = true }: { locale: DashboardLocale; active?: boolean }) {
   const copy = dashboardCopy[locale];
   const [period, setPeriod] = useState<DashboardPeriod>(30);
-  const [replay, setReplay] = useState(0);
+  const [modal, setModal] = useState(false);
   const root = useRef<HTMLElement>(null);
   const id = useId();
   const data = getDashboardData(period);
-  useDashboardMotion(root, locale, period, replay, active);
+  useDashboardMotion(root, locale, period, active);
   const metrics = [
     { value: data.total, prefix: "R$", decimals: 0, change: data.revenueChange, unit: "%" },
     { value: data.users, prefix: "", decimals: 0, change: data.usersChange, unit: "%" },
@@ -22,24 +25,17 @@ export function ProductDashboardDemo({ locale, active = true }: { locale: Dashbo
   ];
 
   return <div className={styles.demo} data-product-demo>
-    <div className={styles.affordance}>
-      <button type="button" onClick={() => setReplay(value => value + 1)} aria-label={copy.replay} aria-controls={id}>{copy.open}<span aria-hidden="true">↗</span></button>
-    </div>
     <article ref={root} id={id} className={styles.dashboard} data-dashboard aria-labelledby={`${id}-heading`} aria-describedby={`${id}-disclaimer`}>
       <header className={styles.header} data-dashboard-shell>
         <div><p className={styles.context}><i aria-hidden="true" />{copy.context}</p><h3 id={`${id}-heading`}>{copy.overview}</h3></div>
         <div className={styles.controls}>
           <span className={styles.demoLabel}>Demo data</span>
-          <label className={styles.period}><span className={styles.srOnly}>{copy.period}</span><svg width="14" height="14" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" /><path d="M6 2v4m8-4v4M3 8h14" stroke="currentColor" /></svg><select value={period} onChange={event => setPeriod(Number(event.target.value) as DashboardPeriod)}><option value="30">{copy.last30}</option><option value="7">{copy.last7}</option></select></label>
+          <DashboardPeriodSelect period={period} locale={locale} onChange={setPeriod} />
         </div>
       </header>
       <p id={`${id}-disclaimer`} className={styles.srOnly}>{copy.summary}</p>
       <dl className={styles.metrics}>
-        {metrics.map((metric, index) => <div key={copy.metrics[index]} className={styles.metric} data-dashboard-metric>
-          <dt>{copy.metrics[index]}</dt>
-          <dd className={styles.value}><span className={styles.srOnly}>{metric.prefix ? money(metric.value, locale) : `${number(metric.value, locale, metric.decimals)}${metric.suffix ?? ""}`}</span><span className={styles.visualValue} aria-hidden="true">{metric.prefix && <small>{metric.prefix}</small>}<span data-dashboard-counter data-value={metric.value} data-decimals={metric.decimals}>{number(metric.value, locale, metric.decimals)}</span>{metric.suffix && <small className={styles.suffix}>{metric.suffix}</small>}</span></dd>
-          <dd className={styles.change}><span>{metric.change >= 0 ? "+" : ""}{number(metric.change, locale, 1)}{metric.unit}</span><span>{copy.compared}</span></dd>
-        </div>)}
+        {metrics.map((metric, index) => <DashboardMetric key={`${period}-${index}`} metric={metric} label={copy.metrics[index]} compared={copy.compared} locale={locale} />)}
       </dl>
       <div className={styles.body}>
         <div className={styles.analytics}>
@@ -58,11 +54,9 @@ export function ProductDashboardDemo({ locale, active = true }: { locale: Dashbo
       </div>
       <footer className={styles.footer} data-dashboard-shell>
         <span>{copy.footer}<i aria-hidden="true">·</i>Demo data</span>
-        <details className={styles.dataTable}>
-          <summary>{copy.table}<span aria-hidden="true">↗</span></summary>
-          <table><caption>{copy.tableCaption}</caption><thead><tr><th scope="col">{copy.day}</th><th scope="col">{copy.daily}</th><th scope="col">{copy.previous}</th></tr></thead><tbody>{data.points.map(point => <tr key={point.day}><th scope="row">{date(point.day, locale)}</th><td>{money(point.value, locale)}</td><td>{money(point.previous, locale)}</td></tr>)}</tbody></table>
-        </details>
+        <button type="button" className={styles.explore} aria-haspopup="dialog" onClick={() => setModal(true)}>{copy.table}<span aria-hidden="true">↗</span></button>
       </footer>
+      {modal && <DashboardDataModal data={data} locale={locale} dashboard={root} onClose={() => setModal(false)} />}
     </article>
   </div>;
 }

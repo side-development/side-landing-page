@@ -7,9 +7,8 @@ import { number, type DashboardLocale, type DashboardPeriod } from "./dashboardD
 
 gsap.registerPlugin(useGSAP);
 
-export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: DashboardLocale, period: DashboardPeriod, replay: number, active: boolean) {
+export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: DashboardLocale, period: DashboardPeriod, active: boolean) {
   const revealed = useRef(false);
-  const lastReplay = useRef(replay);
 
   useGSAP(() => {
     const node = root.current;
@@ -19,8 +18,6 @@ export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: 
     const restoreCounters = () => counters.forEach(counter => {
       counter.textContent = number(Number(counter.dataset.value), locale, Number(counter.dataset.decimals));
     });
-    const replayRequested = lastReplay.current !== replay;
-    lastReplay.current = replay;
 
     media.add("(prefers-reduced-motion: reduce)", () => {
       node.dataset.animation = "settled";
@@ -28,7 +25,7 @@ export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: 
       revealed.current = true;
     });
     media.add("(prefers-reduced-motion: no-preference)", () => {
-      if (!active || (revealed.current && !replayRequested)) {
+      if (!active || revealed.current) {
         node.dataset.animation = "settled";
         restoreCounters();
         return;
@@ -36,7 +33,7 @@ export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: 
       const shell = node.querySelectorAll("[data-dashboard-shell]");
       const metrics = node.querySelectorAll("[data-dashboard-metric]");
       const chart = node.querySelector("[data-dashboard-chart]");
-      const lines = node.querySelectorAll("[data-dashboard-line]");
+      const lines = node.querySelectorAll("[data-dashboard-draw]");
       const sources = node.querySelectorAll("[data-dashboard-bar]");
       const rows = node.querySelectorAll("[data-dashboard-row]");
       node.dataset.animation = "waiting";
@@ -51,7 +48,7 @@ export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: 
         timeline.to(value, { amount: Number(counter.dataset.value), duration: 1.25, onUpdate: () => { counter.textContent = number(value.amount, locale, Number(counter.dataset.decimals)); } }, 0.8 + index * 0.1);
       });
       timeline.from(chart, { opacity: 0, duration: 0.5 }, 1.2)
-        .fromTo(lines, { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.45, stagger: 0.15, ease: "power2.inOut", clearProps: "strokeDasharray,strokeDashoffset" }, 1.3)
+        .fromTo(lines, { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, autoRound: false, duration: 1.45, stagger: 0.15, ease: "power2.inOut", clearProps: "strokeDasharray,strokeDashoffset" }, 1.3)
         .from(sources, { scaleX: 0, transformOrigin: "left center", duration: 0.7, stagger: 0.1 }, 1.9)
         .from(rows, { opacity: 0, y: 6, duration: 0.45, stagger: 0.09 }, 2.3);
       let visible = false;
@@ -79,5 +76,5 @@ export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: 
       };
     });
     return () => media.revert();
-  }, { scope: root, dependencies: [locale, period, replay, active], revertOnUpdate: true });
+  }, { scope: root, dependencies: [locale, period, active], revertOnUpdate: true });
 }

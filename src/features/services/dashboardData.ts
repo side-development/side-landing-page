@@ -33,8 +33,12 @@ export function getDashboardData(period: DashboardPeriod) {
   };
 }
 
+const numberFormats = new Map<string, Intl.NumberFormat>();
+
 export function number(value: number, locale: DashboardLocale, decimals = 0) {
-  return new Intl.NumberFormat(locale, { minimumFractionDigits: decimals, maximumFractionDigits: decimals }).format(value);
+  const key = `${locale}-${decimals}`;
+  if (!numberFormats.has(key)) numberFormats.set(key, new Intl.NumberFormat(locale, { minimumFractionDigits: decimals, maximumFractionDigits: decimals }));
+  return numberFormats.get(key)!.format(value);
 }
 
 export function money(value: number, locale: DashboardLocale) {
@@ -50,7 +54,7 @@ export const dashboardCopy = {
     service: "Produtos & software",
     description: "Software pensado para simplificar processos, organizar informação e acompanhar a operação.",
     territories: "Plataformas · Dashboards · Sistemas internos · Produtos digitais",
-    open: "Abrir produto", replay: "Rever construção", overview: "Visão geral", context: "Operação digital",
+    close: "Fechar dados", overview: "Visão geral", context: "Operação digital",
     period: "Período", last30: "Últimos 30 dias", last7: "Últimos 7 dias", compared: "vs. período anterior",
     metrics: ["Receita", "Usuários ativos", "Conversão", "Retenção"],
     chart: "Receita diária", current: "Período atual", previous: "Período anterior", comparison: "Mostrar comparação",
@@ -70,7 +74,7 @@ export const dashboardCopy = {
     service: "Products & software",
     description: "Software designed to simplify processes, organize information and keep operations moving.",
     territories: "Platforms · Dashboards · Internal systems · Digital products",
-    open: "Open product", replay: "Replay reveal", overview: "Overview", context: "Digital operations",
+    close: "Close data", overview: "Overview", context: "Digital operations",
     period: "Date range", last30: "Last 30 days", last7: "Last 7 days", compared: "vs. previous period",
     metrics: ["Revenue", "Active users", "Conversion", "Retention"],
     chart: "Daily revenue", current: "Current period", previous: "Previous period", comparison: "Show comparison",
