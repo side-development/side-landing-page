@@ -1,0 +1,90 @@
+[
+  {
+    "name": "desktop",
+    "status": "pass",
+    "console": [],
+    "modal": {
+      "x": 375,
+      "y": 217.203125,
+      "width": 680,
+      "height": 510
+    }
+  },
+  {
+    "name": "wide",
+    "status": "pass",
+    "console": [],
+    "modal": {
+      "x": 615,
+      "y": 432.71875,
+      "width": 680,
+      "height": 510
+    }
+  },
+  {
+    "name": "en",
+    "status": "pass",
+    "console": [],
+    "modal": {
+      "x": 375,
+      "y": 217.203125,
+      "width": 680,
+      "height": 510
+    }
+  },
+  {
+    "name": "mobile",
+    "status": "pass",
+    "console": [],
+    "modal": {
+      "x": 32,
+      "y": 134.78125,
+      "width": 326,
+      "height": 510
+    }
+  },
+  {
+    "name": "small-mobile",
+    "status": "pass",
+    "console": [],
+    "modal": {
+      "x": 32,
+      "y": 35.9921875,
+      "width": 256,
+      "height": 431.671875
+    }
+  },
+  {
+    "name": "tablet",
+    "status": "pass",
+    "console": [],
+    "modal": {
+      "x": 44,
+      "y": 225.078125,
+      "width": 680,
+      "height": 510
+    }
+  },
+  {
+    "name": "reduced",
+    "status": "pass",
+    "console": [],
+    "modal": {
+      "x": 375,
+      "y": 217.203125,
+      "width": 680,
+      "height": 510
+    }
+  },
+  {
+    "name": "mobile-en",
+    "status": "pass",
+    "console": [],
+    "modal": {
+      "x": 32,
+      "y": 134.78125,
+      "width": 326,
+      "height": 510
+    }
+  }
+]
