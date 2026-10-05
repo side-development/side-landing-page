@@ -4,28 +4,30 @@ Issue [#8](https://github.com/side-development/side-landing-page/issues/8). Base
 
 ## Status
 
-**Partial. Terminal isolado: Ready for review.** Dashboard aprovado explicitamente pelo usuário. A aprovação deste terminal precede experiência de sites e integração. Sem push/PR; issue aberta.
+**Partial. Terminal isolado: Ready for review.** Dashboard aprovado explicitamente pelo usuário. O terminal precisa de aprovação antes da experiência de sites e da integração. Sem push/PR; issue aberta.
 
 ## Prévia
 
 - pt-BR: http://localhost:3000/review/services/terminal
 - EN: http://localhost:3000/en/review/services/terminal
-- Scroll mostra o terminal e dispara a narrativa; replay na prévia pode repetir a sequência com mouse ou teclado.
-- Rota de desenvolvimento, bloqueada com `notFound()` em produção. Home e rotas de produto intactas.
+- Scroll dispara automaticamente a sequência; replay na prévia funciona com mouse e teclado.
+- Rotas exclusivas de desenvolvimento, bloqueadas com `notFound()` em produção. Home e dashboard aprovado preservados.
 
-## Implementação
+## Direção final desta revisão
 
-`IntegrationTerminalDemo.tsx`, `terminalData.ts`, `useTerminalMotion.ts` e CSS Module próprios. Wrapper `TerminalReview.tsx`/CSS e rota dev separados. Nenhuma dependência nova. Terminal é HTML/CSS; somente o pequeno ícone de pasta da titlebar é SVG. Imagens de referência não são usadas como interface.
+O usuário corrigiu a referência de abertura: `docs/references/services/terminal-claude-mcp.png` substitui o exemplo com lettering gigante. Pediu copiar a composição completa, traduzir, usar “desenvolvedor” na saudação e somente “side mcp” como servidor. A caixa coral criada em `MCP servers` foi rejeitada e removida. As instruções mais recentes substituem a narrativa/lista inicial e a frase final originalmente propostas na #8.
 
-Janela central no stage: largura `min(76vw, 1180px)`, altura `clamp(400px, 60svh, 680px)`. Em 1440×900 mede 1094,4×540px; em 1366×768, 1038,2×460,8px; em 1920×1080, 1180×648px. Espaço escuro em volta. Mobile: largura `100vw - 32px`, altura mínima 400px, quebra natural da mensagem final e fonte legível de 12px. Sem fullscreen ou pinning.
+Reprodução em HTML/CSS/SVG: titlebar com traffic lights, pasta e título central; linha de login e comando `claude`; painel coral com versão, boas-vindas, mascote, ambiente, dicas e atividade; comando `/mcp`; separador lavanda, contagem de um servidor, configuração do usuário, Side MCP conectado, endereço de ajuda e legenda de teclas. Sem screenshots como interface, lettering antigo, Figma ou GitHub. pt-BR e EN completos.
 
-Titlebar charcoal de 43px, traffic lights de 12px, pasta/título central, hairline clara e sombra externa controlada. Monospace 14–18px desktop, 16px em telas baixas. Texto neutro, prompts cianos contidos e status verdes suaves. Sem neon ou ASCII gigante.
+`IntegrationTerminalDemo.tsx`, `ClaudeCodeWelcome.tsx`, `terminalData.ts`, `useTerminalMotion.ts` e CSS Module próprios. Wrapper/rota de review separados. Nenhuma dependência npm adicional. JetBrains Mono Regular local: 92.380 bytes, licença OFL incluída em `public/fonts/jetbrains-mono/`.
 
-Sequência: janela/nitidez → `$ claude` → pausa → `> /mcp` → `MCP servers` com side/github/figma → três status → mensagem final localizada → prompt em espera. Typing conclui em aproximadamente 6,5–6,8s; somente cursor CSS pisca ao final. Digitação/cursor pausam fora da viewport ou em aba oculta. Cleanup remove timeline, ScrollTrigger, observer e listener da demonstração.
+Janela central com largura `min(76vw, 1180px)` e altura `clamp(400px, 62svh, 680px)`: 1094,4×558px em 1440×900, 1038,2×476,2px em 1366×768 e 1180×669,6px em 1920×1080. Mantém espaço preto externo e o limite de 54–64vh desktop da #8. A referência é mais alta; a composição adapta o espaçamento à janela da entrega. Titlebar de 40px, controls de 14px, corpo `#262a33`, cantos de 15px, borda fina e sombra externa. Fonte de 12–16px desktop, 12,5px em telas baixas.
 
-Transcript completo disponível semanticamente desde o início. A renderização animada é `aria-hidden`, sem anúncio caractere a caractere e sem controles macOS falsamente interativos. Texto permanece selecionável: cursor nativo dentro da janela; Side cursor no restante do review. Reduced motion mostra texto final com fade de 350ms e cursor estático. Replay e troca de locale durante typing restauram o conteúdo correto.
+Mobile: largura `100vw - 32px`, altura 500px, titlebar de 36px e fonte de 12px. Dicas/atividade auxiliares ficam ocultas visualmente para preservar legibilidade; transcript mantém o conteúdo completo. Identidade/mascote e MCP permanecem protagonistas. Linha de login tem ellipsis; mensagens e ajuda quebram naturalmente. Painel de boas-vindas reduz para 150px abaixo de 380px, preservando margem do rodapé. Sem overflow horizontal ou recortes internos.
 
-`claude` e `/mcp` conferidos nas documentações oficiais, registradas em `docs/references/services/README.md`. Os servidores/saída são representação editorial Side, com `Demo` discreto e descrição acessível; não há Claude Code/MCP real. Copies de serviço seguem a #8.
+Sequência local: janela → `claude` digitado → painel Claude → `/mcp` digitado → servidor → legenda final. Conclui em 4,35s; somente cursor CSS pisca no estado estável. Timeline/cursor pausam fora da viewport/aba oculta. Reduced motion: interface completa com fade de 350ms, sem typing e cursor estático. Cleanup remove timeline, trigger, observer e listener. Locale/replay durante typing restauram os comandos corretamente.
+
+Transcript completo disponível semanticamente desde o início; apresentação visual `aria-hidden`, sem anúncios caractere a caractere. Texto selecionável com cursor nativo dentro da janela; Side cursor no restante do review. Controles macOS e legenda de teclas fazem parte da representação visual; replay é o controle efetivo da demonstração. Não há processo Claude Code, autenticação ou conexão MCP real. Versão/modelo/login são conteúdo editorial da referência, não identificação do ambiente da Side. A descrição acessível e o comentário de implementação registram essa distinção.
 
 ## Validações
 
@@ -36,38 +38,40 @@ Transcript completo disponível semanticamente desde o início. A renderização
 | `npm run build` | pass |
 | Console / hydration | pass, nove cenários sem erros/warnings |
 | Desktop 1440×900 / 1366×768 / 1920×1080 | pass, janela central e espaço externo |
-| Mobile 390×844 / 320×568 / tablet 768×1024 | pass, sem overflow ou recorte de texto |
-| pt-BR / EN | pass, copy e mensagem final |
-| Reduced motion desktop/mobile | pass, texto completo sem typing/cursor piscante |
+| Mobile 390×844 / 320×568 / tablet 768×1024 | pass, sem overflow ou recorte interno |
+| pt-BR / EN | pass, interface localizada e um servidor |
+| Reduced motion desktop/mobile | pass, sem typing/cursor piscante |
 | Replay por Enter / typing finito | pass |
-| Pausa fora da viewport e retomada | pass |
+| Pausa fora da viewport / retomada | pass |
+| Cursor nativo na janela / texto selecionável | pass |
 | Transcript estático sem `aria-live` | pass |
-| Cinco desmontagens React StrictMode | pass, zero timelines/triggers/observers/listeners locais remanescentes |
+| Cinco desmontagens React StrictMode | pass, zero instâncias locais remanescentes |
 | Locale/replay durante typing | pass |
 | Troca dinâmica para reduced motion | pass |
 | Gates review em produção / Home preservada | pass |
 
-QA em Edge/Chromium, com Playwright temporário fora das dependências do produto. Scripts em `artifacts/services-8/`, ignorado pelo Git. Sem suíte persistente no repositório. Resultados: `services/terminal-results.json`, `terminal-cleanup.json` e `terminal-production.json`. Globais do plugin ScrollTrigger são distinguidos das instâncias locais no harness de cleanup. Sem teste em dispositivos físicos/Safari/Firefox.
+QA em Edge/Chromium com Playwright/esbuild temporários fora das dependências do produto. Scripts em `artifacts/services-8/`, ignorado pelo Git. Sem suíte persistente. Resultados: `services/terminal-results.json`, `terminal-cleanup.json` e `terminal-production.json`. Sem teste em aparelhos físicos/Safari/Firefox.
 
 ## Evidências
 
-- `services/terminal-comparison.png`: implementação lado a lado com as duas referências;
-- `terminal-desktop.png`, `terminal-laptop.png`, `terminal-wide.png`, `terminal-en.png`: janela no stage;
-- `terminal-mobile.png`, `terminal-small-mobile.png`, `terminal-tablet.png`, `terminal-mobile-reduced.png`: composição responsiva;
+- `services/terminal-comparison.png`: implementação versus referência correta e referência CLI;
+- `terminal-desktop.png`, `terminal-laptop.png`, `terminal-wide.png`, `terminal-en.png`;
+- `terminal-mobile.png`, `terminal-small-mobile.png`, `terminal-tablet.png`, `terminal-mobile-reduced.png`;
 - `terminal-{desktop,en,mobile,reduced}-window.png`: janela isolada;
 - `terminal-{desktop,en,mobile,reduced}.mp4`: entrada, typing e replay.
 
 ## Critérios e pendências
 
 - [x] Dashboard aprovado no checkpoint 1.
-- [x] Referências reais analisadas, documentadas e comparação preparada.
-- [x] Janela central, macOS convincente, HTML/CSS e espaço negativo.
-- [x] Comandos plausíveis, `MCP side connected`, typing finito e sem neon.
+- [x] Referência corrigida pelo usuário analisada e documentada.
+- [x] Janela central, composição macOS, HTML/CSS/SVG e espaço negativo.
+- [x] Painel nativo, mascote, saudação “desenvolvedor” e somente Side MCP.
+- [x] Typing automático finito, sem neon/lettering antigo.
 - [x] pt-BR/EN, teclado, mobile/reduced motion e cleanup.
 - [x] Hero/Selected Work/dashboard aprovados preservados.
 - [ ] Aprovação visual do terminal pelo usuário.
 - [ ] Experiência original de sites — checkpoint 3.
-- [ ] Integração e transições 01→02 / 02→03 — checkpoint 4.
-- [ ] Validação da seção integrada e aprovação final antes de push/PR.
+- [ ] Integração/transições 01→02 / 02→03 — checkpoint 4.
+- [ ] Validação integrada e aprovação final antes de push/PR.
 
-Esta prévia isola o terminal em atmosfera escura. Não demonstra a transição do dashboard para o terminal; essa coreografia permanece para integração. O replay e a navegação de revisão não são UX final da Home.
+Esta prévia não demonstra a transição dashboard → terminal. Replay/navegação de revisão não são UX final da Home.

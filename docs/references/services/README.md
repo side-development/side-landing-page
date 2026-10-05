@@ -256,7 +256,7 @@ Usar para:
 - janela como objeto central, com fundo externo visível.
 
 Não copiar:
-- arte ASCII gigante, comandos Meta, números publicitários ou marca Claude como marca Side;
+- comandos Meta, números publicitários ou marca Claude como marca Side;
 - screenshot como implementação final.
 
 Adaptação Side:
@@ -300,27 +300,38 @@ O movimento contínuo dos gráficos e a remoção da atividade são alterações
 
 ## Checkpoint 2 — terminal isolado
 
-Dashboard aprovado explicitamente pelo usuário em 05/10/2026: “Feito, vamos para a próxima fase!”. Terminal segue em revisão isolada antes da experiência 01 e da integração.
+Dashboard aprovado pelo usuário em 05/10/2026: “Feito, vamos para a próxima fase!”. Terminal segue isolado, aguardando sua aprovação antes da experiência 01/integração.
+
+### Referência principal corrigida
+
+Arquivo: `terminal-claude-mcp.png`, fornecido diretamente pelo usuário. Substitui a referência anterior com lettering gigante: o usuário informou que o exemplo anterior estava errado e autorizou copiar a interface completa, traduzindo, mudando a saudação para “desenvolvedor” e mantendo apenas Side MCP.
 
 Usar para:
-- `terminal-claude-code.jpg`: separação da titlebar, cores e escala dos traffic lights;
-- `terminal-cli.jpg`: hairline clara sobre charcoal, sombra externa, monospace, espaçamento entre prompt e saída;
-- janela como objeto central com espaço negativo evidente.
+- titlebar cinza escura, traffic lights, pasta/título central e monospace;
+- painel coral com legend, boas-vindas, mascote pixelado, contexto, dicas e atividade;
+- barra `/mcp`, separador/heading lavanda, contagem, configuração e servidor conectado;
+- hierarquia, alinhamentos, spacing e rodapé.
 
 Não copiar:
-- arte ASCII Claude, branding Anthropic, mensagens de login ou comandos Meta;
-- valores de campanhas, URLs de autenticação e saídas artificiais para preencher a janela;
-- screenshot como interface.
+- usuário Sriram, servidor DeCode ou outros servidores;
+- screenshot como interface;
+- proporção que tornaria a janela fullscreen, contrariando a #8.
 
 Adaptação Side:
-- HTML/CSS, janela `min(76vw, 1180px)` × `60svh` no desktop, com limites de altura para legibilidade;
-- mobile com 16px de margem por lado, 400px de altura mínima e mensagem final com quebra natural;
-- titlebar de 43px, traffic lights de 12px, borda fina, carvão profundo e estados verdes/cianos contidos;
-- sequência curta da #8, typing finito com pausas após comandos, saída rápida e cursor vivo;
-- transcript acessível estático, sem `aria-live` caractere a caractere; cursor nativo para selecionar o texto;
-- reduced motion: conteúdo final com fade curto, sem typing e sem cursor piscante;
-- replay exclusivo da prévia, pausa fora da viewport/aba e cleanup local.
+- HTML/CSS e mascote em SVG, sem dependências novas;
+- terminal `min(76vw, 1180px)` × `62svh` desktop, com limites de altura; espaço preto externo;
+- textos completos em pt-BR/EN, “desenvolvedor”/“developer” e caminhos demonstrativos `/Users/desenvolvedor`;
+- apenas `side mcp` conectado, versão/modelo reproduzidos da referência como conteúdo demonstrativo;
+- typing curto em `claude` e `/mcp`, revelação de painel e saída, estado final estável;
+- transcript estático acessível e cursor nativo para selecionar texto;
+- mobile com janela de 500px, mascote/MCP legíveis e detalhes auxiliares só no transcript;
+- reduced motion: conteúdo final com fade curto, sem typing/cursor piscante;
+- cleanup, pausa fora da viewport/aba e replay exclusivo da prévia.
 
-Comandos reconferidos em 05/10/2026: `claude` inicia a sessão interativa na [referência oficial de CLI](https://code.claude.com/docs/en/cli-usage); `/mcp` verifica/gerencia servidores dentro da sessão, conforme a [documentação oficial de MCP](https://code.claude.com/docs/en/mcp). A apresentação visual, os servidores demonstrativos e a mensagem final são representação editorial Side, não reprodução exata de uma versão oficial do aplicativo. Não há conexão real.
+A caixa coral criada em `MCP servers` foi rejeitada. O lettering antigo foi removido. Esta revisão substitui a lista de três servidores e a mensagem final da proposta original por instrução explícita do usuário. Controles macOS/legenda de teclas são elementos da representação; não existe processo/auth/MCP real.
 
-Comparação das duas referências com a implementação: `docs/validation/services/terminal-comparison.png`. A passagem dashboard → terminal será implementada somente na fase de integração; o review atual começa em atmosfera escura para isolar o objeto visual.
+Referências anteriores `terminal-claude-code.jpg` e `terminal-cli.webp` permanecem como pesquisa histórica. A referência MCP corrigida determina a composição atual. Comparação: `docs/validation/services/terminal-comparison.png`. Transição dashboard → terminal somente na fase de integração.
+
+Verificação de comandos: `claude` inicia sessão interativa na [documentação oficial](https://code.claude.com/docs/en/cli-usage); `/mcp` verifica/gerencia servidores conforme a [documentação MCP](https://code.claude.com/docs/en/mcp). A versão/modelo exibidos são os da imagem fornecida, não afirmação sobre a versão corrente instalada.
+
+Recurso tipográfico: [JetBrains Mono](https://www.jetbrains.com/lp/mono/), Regular WOFF2 de 92.380 bytes em `public/fonts/jetbrains-mono/`, com [licença SIL OFL](https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt) incluída. Uso restrito ao terminal para consistência entre sistemas. Nenhuma biblioteca npm adicional.
