@@ -1,0 +1,101 @@
+[
+  {
+    "name": "desktop",
+    "status": "pass",
+    "frame": {
+      "x": 40,
+      "y": 312.796875,
+      "width": 1360,
+      "height": 900
+    },
+    "console": []
+  },
+  {
+    "name": "laptop",
+    "status": "pass",
+    "frame": {
+      "x": 40,
+      "y": 294.953125,
+      "width": 1286,
+      "height": 768
+    },
+    "console": []
+  },
+  {
+    "name": "wide",
+    "status": "pass",
+    "frame": {
+      "x": 60,
+      "y": 341.390625,
+      "width": 1800,
+      "height": 1080
+    },
+    "console": []
+  },
+  {
+    "name": "en",
+    "status": "pass",
+    "frame": {
+      "x": 40,
+      "y": 312.796875,
+      "width": 1360,
+      "height": 900
+    },
+    "console": []
+  },
+  {
+    "name": "mobile",
+    "status": "pass",
+    "frame": {
+      "x": 16,
+      "y": 297.453125,
+      "width": 358,
+      "height": 1476
+    },
+    "console": []
+  },
+  {
+    "name": "small-mobile",
+    "status": "pass",
+    "frame": {
+      "x": 16,
+      "y": 323.4375,
+      "width": 288,
+      "height": 1529
+    },
+    "console": []
+  },
+  {
+    "name": "tablet",
+    "status": "pass",
+    "frame": {
+      "x": 16,
+      "y": 322.0625,
+      "width": 736,
+      "height": 1489.59375
+    },
+    "console": []
+  },
+  {
+    "name": "reduced",
+    "status": "pass",
+    "frame": {
+      "x": 40,
+      "y": 309.796875,
+      "width": 1360,
+      "height": 900
+    },
+    "console": []
+  },
+  {
+    "name": "mobile-en",
+    "status": "pass",
+    "frame": {
+      "x": 16,
+      "y": 297.453125,
+      "width": 358,
+      "height": 1476
+    },
+    "console": []
+  }
+]

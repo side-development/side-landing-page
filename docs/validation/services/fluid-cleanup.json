@@ -1,0 +1,84 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "offscreen-pause-and-resume",
+      "paused": [
+        "93.808",
+        "1.033",
+        "0,3",
+        "0,0"
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "strict-mode-unmount-0",
+      "counts": {
+        "observers": 0,
+        "mutations": 0,
+        "listeners": 0,
+        "triggers": 0,
+        "animations": 0,
+        "cursorNative": true
+      },
+      "status": "pass"
+    },
+    {
+      "name": "strict-mode-unmount-1",
+      "counts": {
+        "observers": 0,
+        "mutations": 0,
+        "listeners": 0,
+        "triggers": 0,
+        "animations": 0,
+        "cursorNative": true
+      },
+      "status": "pass"
+    },
+    {
+      "name": "strict-mode-unmount-2",
+      "counts": {
+        "observers": 0,
+        "mutations": 0,
+        "listeners": 0,
+        "triggers": 0,
+        "animations": 0,
+        "cursorNative": true
+      },
+      "status": "pass"
+    },
+    {
+      "name": "strict-mode-unmount-3",
+      "counts": {
+        "observers": 0,
+        "mutations": 0,
+        "listeners": 0,
+        "triggers": 0,
+        "animations": 0,
+        "cursorNative": true
+      },
+      "status": "pass"
+    },
+    {
+      "name": "strict-mode-unmount-4",
+      "counts": {
+        "observers": 0,
+        "mutations": 0,
+        "listeners": 0,
+        "triggers": 0,
+        "animations": 0,
+        "cursorNative": true
+      },
+      "status": "pass"
+    },
+    {
+      "name": "unmount-open-modal-restores-scroll",
+      "status": "pass"
+    },
+    {
+      "name": "unmount-open-period-dropdown",
+      "status": "pass"
+    }
+  ],
+  "console": []
+}
