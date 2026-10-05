@@ -36,23 +36,24 @@ Não copiar:
 - vídeos/screenshots como implementação da experiência Side.
 
 Adaptação Side:
-- forma abstrata autoral em SVG, com gradientes contidos e mudança de paleta no CTA;
-- máscaras tipográficas, reorganização suave e CTA funcional;
+- forma abstrata autoral em SVG, com gradientes contidos e mudança de paleta no scroll;
+- máscaras tipográficas e reorganização suave pelo scroll;
 - pointer motion limitado, com retorno ao centro e sem loops permanentes.
 
 Foram reexaminados os frames das gravações originais já registrados nesta pasta: `services-layout-wkndhrs-frames.jpg` e `interactive-homepage-range-rak-frames.jpg`. A ferramenta web não conseguiu reabrir as páginas Awwwards nesta revisão; a análise visual utiliza as mídias previamente capturadas, não uma descrição presumida do conteúdo inacessível.
 
 ## Composição e interação Side
 
-- Branco como base, preto na tipografia e `#3919BD` nos controles/arte iniciais. Ponto decorativo removido por solicitação do usuário.
+- Branco como base; título, apoio e legenda permanecem pretos (`#171719`) nos dois estados e durante a transformação. Arte inicial em `#3919BD`. Ponto decorativo removido por solicitação do usuário.
 - Texto inicial: “Da ideia / à experiência.” e “Forma, movimento e intenção.”. Segundo estado solicitado pelo usuário: “Da experiência / à ação.”; apoio “Clareza, direção e resultado.”. EN: “From experience / to action.” e “Clarity, direction and results.”. A copy comercial do serviço permanece exatamente a da #8.
 - Arte abstrata de fita dobrada criada em SVG; não é logo Side, interface de cliente, mockup ou asset externo.
-- Scroll dispara máscaras de texto, revelação da arte e detalhes. Uma segunda timeline local ajusta escala/alinhamento da arte durante a passagem natural da viewport, sem pinning.
-- CTA “Mude a perspectiva / Shift your perspective” desfaz as fitas emaranhadas, passa a arte à esquerda e revela a nova frase à direita. Apoio e CTA trocam de lado; ambos continuam utilizáveis no mobile. É um botão real com `aria-pressed`, não um link sem destino. O segundo clique restaura o estado inicial.
-- Segundo estado em vermelho, por direção explícita do usuário: accent `#C62D3C`, tinta `#B82332`, luz `#ED6470`, sombras `#831326`/`#76101F` e highlight `#F17B84`. Mantém os stops e a profundidade do gradiente roxo, com interpolação gradual de toda a peça: arte, título, apoio, CTA, bordas, sombra e legenda. Cursor Side e navegação externa à peça permanecem na identidade aprovada.
-- Curvas abertas inteiramente em Béziers cúbicas com tangentes contínuas, sem segmentos retos nas junções. Quantidade/tipo de comandos compatíveis com o estado fechado, mantendo interpolação no GSAP existente. Abertura em 1,8s com easing suave; nenhum loop permanente acrescentado.
+- Scroll dispara máscaras de texto, revelação da arte e detalhes. Uma timeline local com scrub suave desfaz as fitas, passa a arte à esquerda e revela a nova frase à direita; apoio muda de copy/posição. A transformação ocorre entre o topo da peça em 20% e 4% da viewport, mantendo o resultado visível, sem pinning. Ao voltar, forma, frase e gradiente retornam progressivamente ao estado inicial.
+- Botão “Mude a perspectiva / Shift your perspective” removido por instrução explícita do usuário. Nenhum controle de interação dentro da peça; mouse apenas complementa o scroll. Replay permanece somente no wrapper de revisão, reposicionando o scroll antes da transformação.
+- Arte passa para vermelho: accent `#C62D3C`, luz `#ED6470`, sombras `#831326`/`#76101F` e highlight `#F17B84`. Mantém stops e profundidade do gradiente roxo, com interpolação gradual. A correção posterior do usuário determina textos pretos em ambos os estados, substituindo a proposta anterior de texto vermelho. Cursor Side e navegação externa à peça permanecem na identidade aprovada.
+- Curvas abertas inteiramente em Béziers cúbicas com tangentes contínuas, sem segmentos retos nas junções. Quantidade/tipo de comandos compatíveis com o estado fechado, mantendo interpolação no GSAP existente. Easing suave e scrub de 1s; nenhum loop permanente acrescentado.
 - Título e apoio têm camadas decorativas com crossfade, mantendo apenas a frase atual no nome acessível. A máscara contém o deslocamento das camadas sem overflow. Removida a indicação “Explore com o scroll / Explore as you scroll”.
-- Desktop: reação sutil ao ponteiro e CTA magnético. Mobile: composição vertical e menos layers, sem magnetismo/cursor customizado.
-- Reduced motion: fade curto, estado refinado, CTA muda imediatamente a composição, sem pointer motion ou reflow por scroll.
+- Desktop: reação sutil da arte ao ponteiro. Mobile: composição vertical e menos layers, sem magnetismo/cursor customizado.
+- Reduced motion: scroll controla fades e mudança de cor; geometrias/alinhamentos trocam diretamente no intervalo de dissolução, sem morph prolongado, pointer motion ou deslocamentos contínuos.
+- Trigger de entrada permanece estável enquanto a timeline de perspectiva é reconstruída por preferências/breakpoints, preservando a posição do scroll durante reduced motion. Cleanup no contexto local GSAP.
 
 Nenhuma dependência, fonte, asset raster ou referência visual adicional foi introduzida. Não integra os três capítulos nem modifica Hero/Selected Work nesta fase.
