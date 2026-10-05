@@ -14,12 +14,13 @@
 .trafficLights i:nth-child(2) { background: #ffbf30; }
 .trafficLights i:nth-child(3) { background: #28c840; }
 .windowTitle { display: inline-flex; align-items: center; gap: 7px; }
-.body { height: calc(100% - 40px); padding: 10px 12px 16px; font: 400 clamp(12px, 1.1vw, 17px)/1.45 "Side Terminal Mono", "SFMono-Regular", Consolas, Menlo, monospace; font-variant-ligatures: none; letter-spacing: 0.01em; }
+.body { display: flex; flex-direction: column; height: calc(100% - 40px); padding: 10px 12px 32px; font: 400 clamp(12px, 1.1vw, 17px)/1.45 "Side Terminal Mono", "SFMono-Regular", Consolas, Menlo, monospace; font-variant-ligatures: none; letter-spacing: 0.01em; }
+.body > * { flex-shrink: 0; }
 .body p { margin: 0; }
 .lastLogin { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #aeb4c0; }
 .shell { display: flex; align-items: center; gap: 1ch; min-height: 1.45em; color: #9dbc7c; }
 .shell > span:nth-child(2) { color: #62b6c5; }
-.welcome { position: relative; display: grid; grid-template-columns: 56% 44%; height: clamp(158px, 24svh, 240px); margin-top: 16px; padding: 12px 16px; border: 1px solid #d77b5b; border-radius: 6px; }
+.welcome { position: relative; display: grid; grid-template-columns: 56% 44%; flex-shrink: 1; min-height: 0; height: clamp(158px, 24svh, 240px); margin-top: 16px; padding: 12px 16px; border: 1px solid #d77b5b; border-radius: 6px; }
 .welcomeLegend { position: absolute; top: -0.8em; left: 30px; padding-inline: 10px; background: #262a33; color: #d77b5b; }
 .welcomeLegend > span { color: #93979a; }
 .welcomeIdentity { display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 12px 16px 2px; text-align: center; }
@@ -46,7 +47,7 @@
 .final > span + span::before { content: "·"; margin-right: 1.5ch; color: #96999e; }
 .srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); border: 0; white-space: pre; }
 @media (max-height: 820px) and (min-width: 801px) {
-  .body { padding: 8px 12px 14px; font-size: 13.5px; }
+  .body { padding: 8px 12px 32px; font-size: 13.5px; }
   .welcome { height: clamp(158px, 22svh, 200px); margin-top: 14px; }
   .command { margin-top: 16px !important; }
   .mcp { margin-top: 22px; }
@@ -59,7 +60,7 @@
   .trafficLights { left: 11px; gap: 7px; }
   .trafficLights i { width: 11px; height: 11px; }
   .windowTitle svg { width: 13px; height: 12px; }
-  .body { height: calc(100% - 36px); padding: 10px 10px 14px; font-size: 12px; }
+  .body { height: calc(100% - 36px); padding: 10px 10px 32px; font-size: 12px; }
   .welcome { grid-template-columns: 1fr; height: 160px; margin-top: 14px; padding: 12px; }
   .welcomeLegend { left: 16px; }
   .welcomeIdentity { padding: 8px 0 0; }
