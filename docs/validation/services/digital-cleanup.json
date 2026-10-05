@@ -1,0 +1,55 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "strict-mode-unmount-0",
+      "status": "pass",
+      "counts": {
+        "triggers": 0,
+        "animations": 0,
+        "listeners": 0
+      }
+    },
+    {
+      "name": "strict-mode-unmount-1",
+      "status": "pass",
+      "counts": {
+        "triggers": 0,
+        "animations": 0,
+        "listeners": 0
+      }
+    },
+    {
+      "name": "strict-mode-unmount-2",
+      "status": "pass",
+      "counts": {
+        "triggers": 0,
+        "animations": 0,
+        "listeners": 0
+      }
+    },
+    {
+      "name": "strict-mode-unmount-3",
+      "status": "pass",
+      "counts": {
+        "triggers": 0,
+        "animations": 0,
+        "listeners": 0
+      }
+    },
+    {
+      "name": "strict-mode-unmount-4",
+      "status": "pass",
+      "counts": {
+        "triggers": 0,
+        "animations": 0,
+        "listeners": 0
+      }
+    },
+    {
+      "name": "dynamic-reduced-motion-and-interaction",
+      "status": "pass"
+    }
+  ],
+  "console": []
+}

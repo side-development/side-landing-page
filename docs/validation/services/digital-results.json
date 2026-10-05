@@ -1,0 +1,116 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "desktop",
+      "status": "pass",
+      "locale": "pt-BR",
+      "reduced": false,
+      "keyboard": true,
+      "recomposition": true,
+      "pointer": "pass",
+      "overflow": false,
+      "console": []
+    },
+    {
+      "name": "laptop",
+      "status": "pass",
+      "locale": "pt-BR",
+      "reduced": false,
+      "keyboard": true,
+      "recomposition": true,
+      "pointer": "pass",
+      "overflow": false,
+      "console": []
+    },
+    {
+      "name": "wide",
+      "status": "pass",
+      "locale": "en",
+      "reduced": false,
+      "keyboard": true,
+      "recomposition": true,
+      "pointer": "pass",
+      "overflow": false,
+      "console": []
+    },
+    {
+      "name": "en",
+      "status": "pass",
+      "locale": "en",
+      "reduced": false,
+      "keyboard": true,
+      "recomposition": true,
+      "pointer": "pass",
+      "overflow": false,
+      "console": []
+    },
+    {
+      "name": "mobile",
+      "status": "pass",
+      "locale": "pt-BR",
+      "reduced": false,
+      "keyboard": true,
+      "recomposition": true,
+      "pointer": "disabled",
+      "overflow": false,
+      "console": []
+    },
+    {
+      "name": "small-mobile",
+      "status": "pass",
+      "locale": "en",
+      "reduced": false,
+      "keyboard": true,
+      "recomposition": true,
+      "pointer": "disabled",
+      "overflow": false,
+      "console": []
+    },
+    {
+      "name": "tablet",
+      "status": "pass",
+      "locale": "pt-BR",
+      "reduced": false,
+      "keyboard": true,
+      "recomposition": true,
+      "pointer": "disabled",
+      "overflow": false,
+      "console": []
+    },
+    {
+      "name": "reduced",
+      "status": "pass",
+      "locale": "pt-BR",
+      "reduced": true,
+      "keyboard": true,
+      "recomposition": true,
+      "pointer": "disabled",
+      "overflow": false,
+      "console": []
+    },
+    {
+      "name": "mobile-reduced",
+      "status": "pass",
+      "locale": "en",
+      "reduced": true,
+      "keyboard": true,
+      "recomposition": true,
+      "pointer": "disabled",
+      "overflow": false,
+      "console": []
+    },
+    {
+      "name": "labels-pt-BR",
+      "status": "pass",
+      "dashboardModal": true,
+      "terminal": true
+    },
+    {
+      "name": "labels-en",
+      "status": "pass",
+      "dashboardModal": true,
+      "terminal": true
+    }
+  ]
+}
