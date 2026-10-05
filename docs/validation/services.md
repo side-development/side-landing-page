@@ -10,7 +10,7 @@ Issue [#8](https://github.com/side-development/side-landing-page/issues/8), base
 
 - pt-BR: http://localhost:3000/review/services
 - EN: http://localhost:3000/en/review/services
-- Título começa no centro; scroll o posiciona no topo da composição e revela subtítulo/dashboard. Sem botão de abrir produto e sem prender a página.
+- Título aparece do blur no centro e segue somente para cima pelo scroll, até o topo da composição. Subtítulo e dashboard surgem depois, também do blur. Sem botão de abrir produto e sem prender a página.
 - KPIs: hover em desktop valoriza o valor demonstrativo, torna o número verde e revela uma seta. Fonte e escala permanecem iguais; ao sair, retorna ao valor base. Percentuais usam pontos percentuais conforme o indicador.
 - Lista de período própria, com seleção de 30/7 dias, navegação por setas, Escape e fechamento externo. Muda os dados efetivamente.
 - Legenda anterior ativa/desativa a comparação. Gráfico responde a mouse/touch e teclado com setas, Home/End.
@@ -27,6 +27,7 @@ A rota existe somente em desenvolvimento: produção responde 404 nos dois idiom
 - Setembro/2026: soma exata de R$ 248.420 e comparação anterior de aproximadamente +18,7%. Sete dias compara com os sete dias imediatamente anteriores.
 - Entrada automática: frame → shell → KPIs/count-up → traçados → barras → atividade. Pausa fora da viewport/aba e termina estática.
 - Reflow mobile, cursor nativo touch/reduced motion e dados finais imediatos em reduced motion.
+- Entrada revisada: blur transitório de 10px no título, 6px no subtítulo e 4px no dashboard, removido ao finalizar cada reveal. Título mantém sua âncora no documento e sobe pelo scroll natural, sem tween de posição descendente. Reduced motion preserva composição estática sem blur.
 
 ## Correção do gráfico
 
@@ -47,6 +48,7 @@ Formatadores numéricos agora são reutilizados: a amostra anterior criava 304 i
 | pt-BR / EN / EN mobile | pass |
 | Reduced motion | pass |
 | Título central → topo; entrada por scroll | pass |
+| Entrada com blur, título sem movimento descendente, filtros removidos | pass, desktop/mobile/EN; sem blur em reduced motion |
 | KPI verde, valor maior, fonte igual e sem transform | pass |
 | Seletor customizado, comparação, tooltip e teclado | pass |
 | Modal, scroll interno, foco, Escape, blur local e cursor visível | pass |
@@ -58,16 +60,17 @@ Formatadores numéricos agora são reutilizados: a amostra anterior criava 304 i
 | Home de produção PT/EN | pass, seções aprovadas presentes e console sem erros/warnings |
 | Diff em Hero, Work, cursor, estilos globais, i18n e dependências | zero |
 
-Não há suíte persistente de testes no repositório. QA e regressões foram executados com Playwright/Edge temporários, fora das dependências do produto. Scripts descartáveis em `artifacts/services-8/` (ignorado pelo Git); resultados em `services/revision-results.json`, `services/dashboard-cleanup.json`, `services/chart-reveal.json` e `services/phase-one-production.json`.
+Não há suíte persistente de testes no repositório. QA e regressões foram executados com Playwright/Edge temporários, fora das dependências do produto. Scripts descartáveis em `artifacts/services-8/` (ignorado pelo Git); resultados em `services/revision-results.json`, `services/blur-entrance-results.json`, `services/dashboard-cleanup.json`, `services/chart-reveal.json` e `services/phase-one-production.json`.
 
 ## Evidências atuais
 
 - `services/revision-desktop.png`, `revision-wide.png`, `revision-en.png`;
 - `services/revision-mobile.png`, `revision-small-mobile.png`, `revision-tablet.png`, `revision-mobile-en.png`, `revision-reduced.png`;
 - `revision-*-intro.png`, `revision-*-kpi.png`, `revision-*-period.png` e `revision-*-modal.png` demonstram as interações aplicáveis;
-- `services/revision-desktop.mp4`, `revision-en.mp4`, `revision-mobile.mp4`, `revision-reduced.mp4`: entrada por scroll, construção, gráfico, seletor e modal.
+- `services/blur-desktop.mp4`, `blur-en.mp4`, `blur-mobile.mp4`, `blur-reduced.mp4`: entrada atual por scroll com blur, construção, gráfico, seletor e modal.
+- `services/blur-*-mid.png` e `blur-*-final.png`: fases da entrada revisada.
 
-Os arquivos `dashboard-*` registram a primeira proposta, anterior a esta revisão; suas capturas/gravações não representam as interações atuais.
+Os arquivos `dashboard-*` registram a primeira proposta. Os vídeos `revision-*.mp4` registram a revisão anterior à entrada com blur. Para avaliar o motion atual, use `blur-*.mp4`.
 
 ## Critérios e pendências
 
