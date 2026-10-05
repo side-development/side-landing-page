@@ -319,19 +319,19 @@ Não copiar:
 
 Adaptação Side:
 - HTML/CSS e mascote em SVG, sem dependências novas;
-- terminal `min(76vw, 1180px)` × `62svh` desktop, com limites de altura; espaço preto externo;
-- textos completos em pt-BR/EN, “desenvolvedor”/“developer” e caminhos demonstrativos `/Users/desenvolvedor`;
-- apenas `side mcp` conectado, versão/modelo reproduzidos da referência como conteúdo demonstrativo;
-- typing curto em `claude` e `/mcp`, revelação de painel e saída, estado final estável;
+- terminal `min(78vw, 1240px)` × `70svh` desktop, com limites de altura; espaço preto externo;
+- textos completos em pt-BR/EN, “desenvolvedor”/“developer” e caminhos demonstrativos `/Users/desenvolvedor` e `/Users/developer`;
+- apenas `side mcp` conectado, versão reproduzida da referência e Opus 5.5 solicitado pelo usuário, como conteúdo demonstrativo;
+- typing em `claude` e `/mcp`, pausa breve e saída linha a linha, estado final estável sem caret;
 - transcript estático acessível e cursor nativo para selecionar texto;
-- mobile com janela de 500px, mascote/MCP legíveis e detalhes auxiliares só no transcript;
-- reduced motion: conteúdo final com fade curto, sem typing/cursor piscante;
+- mobile com janela de 520px, mascote/MCP legíveis e detalhes auxiliares só no transcript;
+- reduced motion: conteúdo final com fade curto, sem typing ou caret;
 - cleanup, pausa fora da viewport/aba e replay exclusivo da prévia.
 
 A caixa coral criada em `MCP servers` foi rejeitada. O lettering antigo foi removido. Esta revisão substitui a lista de três servidores e a mensagem final da proposta original por instrução explícita do usuário. Controles macOS/legenda de teclas são elementos da representação; não existe processo/auth/MCP real.
 
 Referências anteriores `terminal-claude-code.jpg` e `terminal-cli.webp` permanecem como pesquisa histórica. A referência MCP corrigida determina a composição atual. Comparação: `docs/validation/services/terminal-comparison.png`. Transição dashboard → terminal somente na fase de integração.
 
-Verificação de comandos: `claude` inicia sessão interativa na [documentação oficial](https://code.claude.com/docs/en/cli-usage); `/mcp` verifica/gerencia servidores conforme a [documentação MCP](https://code.claude.com/docs/en/mcp). A versão/modelo exibidos são os da imagem fornecida, não afirmação sobre a versão corrente instalada.
+Verificação de comandos: `claude` inicia sessão interativa na [documentação oficial](https://code.claude.com/docs/en/cli-usage); `/mcp` verifica/gerencia servidores conforme a [documentação MCP](https://code.claude.com/docs/en/mcp). A versão exibida vem da imagem; o modelo Opus 5.5 segue solicitação posterior do usuário. São conteúdo editorial, não identificação da instalação da Side. O aumento de altura para 70vh e a remoção do caret também foram solicitados explicitamente.
 
 Recurso tipográfico: [JetBrains Mono](https://www.jetbrains.com/lp/mono/), Regular WOFF2 de 92.380 bytes em `public/fonts/jetbrains-mono/`, com [licença SIL OFL](https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt) incluída. Uso restrito ao terminal para consistência entre sistemas. Nenhuma biblioteca npm adicional.
