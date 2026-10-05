@@ -1,0 +1,128 @@
+{
+  "phase": 1,
+  "status": "pass",
+  "checks": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "locale": "pt-BR",
+      "reducedMotion": "no-preference",
+      "period": true,
+      "keyboard": true,
+      "comparison": true,
+      "tooltip": "17 de set.\n\nR$ 8.842\nPeríodo anterior\nR$ 7.599",
+      "console": [],
+      "overflow": false,
+      "status": "pass"
+    },
+    {
+      "name": "wide",
+      "width": 1920,
+      "height": 1080,
+      "locale": "pt-BR",
+      "reducedMotion": "no-preference",
+      "period": true,
+      "keyboard": true,
+      "comparison": true,
+      "tooltip": "17 de set.\n\nR$ 8.842\nPeríodo anterior\nR$ 7.599",
+      "console": [],
+      "overflow": false,
+      "status": "pass"
+    },
+    {
+      "name": "en",
+      "width": 1440,
+      "height": 900,
+      "locale": "en",
+      "reducedMotion": "no-preference",
+      "period": true,
+      "keyboard": true,
+      "comparison": true,
+      "tooltip": "Sep 17\n\nR$8,842\nPrevious period\nR$7,599",
+      "console": [],
+      "overflow": false,
+      "status": "pass"
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "locale": "pt-BR",
+      "reducedMotion": "no-preference",
+      "period": true,
+      "keyboard": true,
+      "comparison": true,
+      "tooltip": "17 de set.\n\nR$ 8.842\nPeríodo anterior\nR$ 7.599",
+      "console": [],
+      "overflow": false,
+      "status": "pass"
+    },
+    {
+      "name": "small-mobile",
+      "width": 320,
+      "height": 568,
+      "locale": "pt-BR",
+      "reducedMotion": "no-preference",
+      "period": true,
+      "keyboard": true,
+      "comparison": true,
+      "tooltip": "17 de set.\n\nR$ 8.842\nPeríodo anterior\nR$ 7.599",
+      "console": [],
+      "overflow": false,
+      "status": "pass"
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "locale": "pt-BR",
+      "reducedMotion": "no-preference",
+      "period": true,
+      "keyboard": true,
+      "comparison": true,
+      "tooltip": "17 de set.\n\nR$ 8.842\nPeríodo anterior\nR$ 7.599",
+      "console": [],
+      "overflow": false,
+      "status": "pass"
+    },
+    {
+      "name": "reduced",
+      "width": 1440,
+      "height": 900,
+      "locale": "pt-BR",
+      "reducedMotion": "reduce",
+      "period": true,
+      "keyboard": true,
+      "comparison": true,
+      "tooltip": "17 de set.\n\nR$ 8.842\nPeríodo anterior\nR$ 7.599",
+      "console": [],
+      "overflow": false,
+      "status": "pass"
+    },
+    {
+      "name": "mobile-en",
+      "width": 390,
+      "height": 844,
+      "locale": "en",
+      "reducedMotion": "no-preference",
+      "period": true,
+      "keyboard": true,
+      "comparison": true,
+      "tooltip": "Sep 17\n\nR$8,842\nPrevious period\nR$7,599",
+      "console": [],
+      "overflow": false,
+      "status": "pass"
+    },
+    {
+      "name": "replay-and-dynamic-reduced-motion",
+      "during": [
+        "35.162",
+        "0",
+        "0,0",
+        "0,0"
+      ],
+      "status": "pass"
+    }
+  ]
+}

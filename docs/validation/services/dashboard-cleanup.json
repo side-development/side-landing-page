@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "offscreen-pause-and-resume",
+      "paused": [
+        "142.101",
+        "2.028",
+        "3,0",
+        "1,3"
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "strict-mode-unmount-0",
+      "counts": {
+        "observers": 0,
+        "listeners": 0,
+        "animations": 0,
+        "cursorNative": true
+      },
+      "status": "pass"
+    },
+    {
+      "name": "strict-mode-unmount-1",
+      "counts": {
+        "observers": 0,
+        "listeners": 0,
+        "animations": 0,
+        "cursorNative": true
+      },
+      "status": "pass"
+    },
+    {
+      "name": "strict-mode-unmount-2",
+      "counts": {
+        "observers": 0,
+        "listeners": 0,
+        "animations": 0,
+        "cursorNative": true
+      },
+      "status": "pass"
+    },
+    {
+      "name": "strict-mode-unmount-3",
+      "counts": {
+        "observers": 0,
+        "listeners": 0,
+        "animations": 0,
+        "cursorNative": true
+      },
+      "status": "pass"
+    },
+    {
+      "name": "strict-mode-unmount-4",
+      "counts": {
+        "observers": 0,
+        "listeners": 0,
+        "animations": 0,
+        "cursorNative": true
+      },
+      "status": "pass"
+    }
+  ],
+  "console": []
+}
