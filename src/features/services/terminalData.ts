@@ -6,7 +6,7 @@ export const terminalCopy = {
     description: "Quando o problema não cabe em uma categoria, conectamos ferramentas, automatizamos fluxos e construímos a solução ao redor dele.",
     territories: "Integrações · Automações · MCPs · Ferramentas internas · MVPs",
     replay: "Rever terminal",
-    accessible: "Demonstração editorial da abertura do Claude Code com Side MCP conectado. Não é uma conexão real.",
+    accessible: "Representação editorial da abertura do Claude Code com Side MCP conectado. Não é uma conexão real.",
     dashboard: "Dashboard aprovado",
   },
   en: {

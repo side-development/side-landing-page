@@ -31,7 +31,6 @@ export function ProductDashboardDemo({ locale, active = true }: { locale: Dashbo
       <header className={styles.header} data-dashboard-shell>
         <div><p className={styles.context}><i aria-hidden="true" />{copy.context}</p><h3 id={`${id}-heading`}>{copy.overview}</h3></div>
         <div className={styles.controls}>
-          <span className={styles.demoLabel}>Demo data</span>
           <DashboardPeriodSelect period={period} locale={locale} onChange={setPeriod} />
         </div>
       </header>
@@ -45,7 +44,7 @@ export function ProductDashboardDemo({ locale, active = true }: { locale: Dashbo
         <ConversionFlow key={`flow-${period}`} data={data} locale={locale} enabled={active} />
       </div>
       <footer className={styles.footer} data-dashboard-shell>
-        <span>{copy.footer}<i aria-hidden="true">·</i>Demo data</span>
+        <span>{copy.footer}<i aria-hidden="true">·</i>{copy.dataLabel}</span>
         <button type="button" className={styles.explore} aria-haspopup="dialog" onClick={() => setModal(true)}>{copy.table}<span aria-hidden="true">↗</span></button>
       </footer>
       {modal && <DashboardDataModal data={data} locale={locale} dashboard={root} onClose={() => setModal(false)} />}
