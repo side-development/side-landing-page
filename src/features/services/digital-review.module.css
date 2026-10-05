@@ -1,4 +1,4 @@
-.review { min-height: 100svh; background: #fff; color: #171719; padding-bottom: 80px; }
+.review { min-height: 100svh; background: #fff; color: #171719; padding-bottom: max(80px, 55svh); }
 .header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 40px; }
 .brand { width: 50px; }
 .header nav { display: flex; gap: 22px; }
@@ -12,4 +12,4 @@
 .replay { text-align: center; padding-top: 30px; }
 .replay button { display: inline-flex; align-items: center; gap: 12px; padding: 8px; border: 0; background: transparent; color: #3919bd; font-size: 11px; }
 .review :focus-visible { outline: 2px solid #3919bd; outline-offset: 5px; }
-@media (max-width: 800px) { .header { padding: 24px 20px; } .header nav { gap: 18px; } .header a:nth-child(-n+2) { display: none; } .intro { padding: 70px 24px 55px; } .intro p { max-width: 360px; font-size: 13px; } .intro small { max-width: 300px; } .review { padding-bottom: 50px; } }
+@media (max-width: 800px) { .header { padding: 24px 20px; } .header nav { gap: 18px; } .header a:nth-child(-n+2) { display: none; } .intro { padding: 70px 24px 55px; } .intro p { max-width: 360px; font-size: 13px; } .intro small { max-width: 300px; } }
