@@ -1,11 +1,13 @@
 "use client";
 
 import { useId, useRef, useState } from "react";
-import { dashboardCopy, getDashboardData, money, number, type DashboardLocale, type DashboardPeriod } from "./dashboardData";
+import { dashboardCopy, getDashboardData, type DashboardLocale, type DashboardPeriod } from "./dashboardData";
 import { DashboardPeriodSelect } from "./DashboardPeriodSelect";
 import { DashboardMetric } from "./DashboardMetric";
 import { DashboardDataModal } from "./DashboardDataModal";
 import { RevenueChart } from "./RevenueChart";
+import { SourceChart } from "./SourceChart";
+import { ConversionFlow } from "./ConversionFlow";
 import { useDashboardMotion } from "./useDashboardMotion";
 import styles from "./dashboard.module.css";
 
@@ -38,19 +40,9 @@ export function ProductDashboardDemo({ locale, active = true }: { locale: Dashbo
         {metrics.map((metric, index) => <DashboardMetric key={`${period}-${index}`} metric={metric} label={copy.metrics[index]} compared={copy.compared} locale={locale} />)}
       </dl>
       <div className={styles.body}>
-        <div className={styles.analytics}>
-          <RevenueChart key={period} points={data.points} locale={locale} enabled={active} />
-          <section className={styles.sources} aria-labelledby={`${id}-sources`}>
-            <div className={styles.sectionHeading} data-dashboard-shell><h4 id={`${id}-sources`}>{copy.sources}</h4><span>{number(data.users, locale)} {copy.metrics[1].toLowerCase()}</span></div>
-            <ul>{data.sources.map((share, index) => <li key={index} data-dashboard-row><div><span>{copy.sourceLabels[index]}</span><strong>{share}%</strong></div><div className={styles.barTrack} aria-hidden="true"><div className={styles.bar} data-dashboard-bar style={{ width: `${share / 38 * 100}%`, opacity: 1 - index * 0.18 }} /></div></li>)}</ul>
-          </section>
-        </div>
-        <section className={styles.activity} aria-labelledby={`${id}-activity`}>
-          <div className={styles.sectionHeading} data-dashboard-shell><h4 id={`${id}-activity`}>{copy.activity}</h4></div>
-          <p className={styles.activityCount} data-dashboard-shell>{copy.activityCount}</p>
-          <ol>{copy.activities.map(item => <li key={item.title} data-dashboard-row><span className={styles.activityMark} aria-hidden="true">{item.mark}</span><div><p>{item.title}</p><span>{item.detail}</span><small><i aria-hidden="true" />{copy.activityStatus}</small></div><time dateTime={`2026-09-30T${item.time}:00-03:00`}>{item.time}</time></li>)}</ol>
-          <div className={styles.activityNote} data-dashboard-shell><span aria-hidden="true">↗</span><p>{copy.total}<strong>{money(data.total, locale)}</strong></p></div>
-        </section>
+        <RevenueChart key={period} points={data.points} locale={locale} enabled={active} />
+        <SourceChart key={`sources-${period}`} data={data} locale={locale} enabled={active} id={`${id}-sources`} />
+        <ConversionFlow key={`flow-${period}`} data={data} locale={locale} enabled={active} />
       </div>
       <footer className={styles.footer} data-dashboard-shell>
         <span>{copy.footer}<i aria-hidden="true">·</i>Demo data</span>

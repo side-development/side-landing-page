@@ -30,6 +30,7 @@ export function getDashboardData(period: DashboardPeriod) {
     retentionChange: period === 30 ? 5.1 : 2.1,
     points: values.map((value, index) => ({ day: 31 - period + index, value, previous: comparison[index] })),
     sources: [38, 27, 21, 14],
+    sourceUsers: distribute(period === 30 ? 4821 : 1264, [38, 27, 21, 14]),
   };
 }
 
@@ -54,18 +55,13 @@ export const dashboardCopy = {
     service: "Produtos & software",
     description: "Software pensado para simplificar processos, organizar informação e acompanhar a operação.",
     territories: "Plataformas · Dashboards · Sistemas internos · Produtos digitais",
-    close: "Fechar dados", overview: "Visão geral", context: "Operação digital",
+    close: "Fechar dados", overview: "Visão geral", context: "Ao vivo",
     period: "Período", last30: "Últimos 30 dias", last7: "Últimos 7 dias", compared: "vs. período anterior",
     metrics: ["Receita", "Usuários ativos", "Conversão", "Retenção"],
     chart: "Receita diária", current: "Período atual", previous: "Período anterior", comparison: "Mostrar comparação",
     chartHelp: "Use as setas para explorar os dias. Home e End acessam o primeiro e último dia.",
     sources: "Origem dos usuários", sourceLabels: ["Direto", "Orgânico", "Referral", "Campanhas"],
-    activity: "Atividade recente", activityCount: "30 set · 3 eventos", activityStatus: "Concluído",
-    activities: [
-      { title: "Pagamento confirmado", detail: "Fatura #4829 · R$ 1.240", time: "14:32", mark: "↗" },
-      { title: "Novo workspace", detail: "Workspace 018 · Plano Pro", time: "14:18", mark: "+" },
-      { title: "Relatório atualizado", detail: "Receita · Setembro 2026", time: "14:02", mark: "✓" },
-    ],
+    flow: "Da presença à conversão", flowContext: "Funil demonstrativo", retained: "Retidos", converted: "Convertidos", flowNote: "Participação sobre a base de usuários ativos · Demo data",
     summary: "Dados demonstrativos de uma operação digital. Não representam resultados da Side ou de clientes.",
     table: "Explorar dados", day: "Dia", daily: "Receita diária", tableCaption: "Série demonstrativa em reais (BRL)",
     footer: "Valores em BRL", total: "Total no período",
@@ -80,12 +76,7 @@ export const dashboardCopy = {
     chart: "Daily revenue", current: "Current period", previous: "Previous period", comparison: "Show comparison",
     chartHelp: "Use arrow keys to explore days. Home and End select the first and last day.",
     sources: "User acquisition", sourceLabels: ["Direct", "Organic", "Referral", "Campaigns"],
-    activity: "Recent activity", activityCount: "Sep 30 · 3 events", activityStatus: "Completed",
-    activities: [
-      { title: "Payment confirmed", detail: "Invoice #4829 · R$ 1,240", time: "14:32", mark: "↗" },
-      { title: "New workspace", detail: "Workspace 018 · Pro plan", time: "14:18", mark: "+" },
-      { title: "Report updated", detail: "Revenue · September 2026", time: "14:02", mark: "✓" },
-    ],
+    flow: "From presence to conversion", flowContext: "Demo funnel", retained: "Retained", converted: "Converted", flowNote: "Share of the active user base · Demo data",
     summary: "Demo data for a digital operation. These are not results from Side or its clients.",
     table: "Explore data", day: "Day", daily: "Daily revenue", tableCaption: "Demo time series in Brazilian reais (BRL)",
     footer: "Values in BRL", total: "Period total",
