@@ -4,7 +4,7 @@ Issue [#8](https://github.com/side-development/side-landing-page/issues/8). Bran
 
 ## Status
 
-**Partial. Experiência de sites isolada em refinamento.** O usuário autorizou avançar após o checkpoint do terminal. As divisórias e os rótulos internos foram removidos; o CTA agora desfaz as fitas e troca o lado da composição. Nova frase e mudança de cor aguardam definição do usuário. Sem push/PR, issue aberta.
+**Ready for review: checkpoint 3 isolado. Issue #8 ainda Partial.** O usuário definiu a frase e a paleta do segundo estado. Os cinco refinamentos desta revisão estão implementados e validados localmente; aprovação visual pendente. Sem push/PR, issue aberta. A integração continua no próximo checkpoint.
 
 ## Prévia
 
@@ -18,9 +18,11 @@ Issue [#8](https://github.com/side-development/side-landing-page/issues/8). Bran
 
 `DigitalExperienceDemo.tsx` é a peça isolada; `DigitalExperienceArtwork.tsx` contém a arte SVG autoral; `useDigitalExperienceMotion.ts` isola reveal, reflow, pointer e composição. Copy, CSS Module e wrapper de review separados. Não existe controlador global da Home ou nova dependência.
 
-Composição branca editorial sem linhas divisórias ou rótulos “Side / 01” e “Composição livre”, tipografia grande com máscaras, ponto roxo, forma abstrata dominante e CTA com ação real. Desktop responde ao ponteiro com deslocamentos limitados; keyboard usa o mesmo CTA, com foco visível e `aria-pressed`. Layout EN considera o maior comprimento do texto. Mobile empilha tipografia/arte/ação e reduz layers; não usa cursor customizado. Reduced motion tem fade curto e mudanças imediatas de perspectiva.
+Composição branca editorial sem linhas divisórias ou rótulos “Side / 01” e “Composição livre”, tipografia grande com máscaras, forma abstrata dominante e CTA com ação real. Ponto decorativo e indicação de scroll removidos. Desktop responde ao ponteiro com deslocamentos limitados; keyboard usa o mesmo CTA, com foco visível e `aria-pressed`. Layout EN considera o maior comprimento do texto. Mobile empilha tipografia/arte/ação e reduz layers; não usa cursor customizado. Reduced motion tem fade curto e mudanças imediatas de perspectiva.
 
-No CTA, os paths SVG interpolam de uma forma emaranhada para fitas separadas. A arte passa à esquerda e o texto à direita no desktop; em mobile o texto alinha à direita dentro da composição vertical. O segundo clique restaura a forma/alinhamento. Geometrias finais usam os mesmos tipos e quantidades de comandos SVG, permitindo interpolação no GSAP existente sem novo plugin/dependência. Alinhamento recalculado ao redimensionar.
+No CTA, os paths SVG interpolam de uma forma emaranhada para fitas separadas em 1,8s. As junções abertas são curvas cúbicas com tangentes contínuas, sem os segmentos retos que causavam aparência travada. A arte passa à esquerda e a nova frase à direita no desktop; mobile preserva a composição vertical. O segundo clique restaura forma, frase e paleta. Geometrias usam os mesmos tipos e quantidades de comandos SVG, permitindo interpolação no GSAP existente sem novo plugin/dependência.
+
+O segundo estado mostra “Da experiência / à ação.” e “Clareza, direção e resultado.”; EN “From experience / to action.” e “Clarity, direction and results.”. Apoio e CTA trocam de lado; posições recalculadas ao redimensionar. Gradientes, título, apoio, CTA, borda, sombra e legenda passam gradualmente à família vermelha. Camadas visuais crossfade sem duplicar anúncios acessíveis ou alterar a altura da composição. Branco continua como base. A mudança de paleta/copy foi solicitada explicitamente pelo usuário; Hero, Selected Work, cursor e navegação externa permanecem aprovados.
 
 Scroll é o gatilho principal. Não há screenshot, iframe, laptop, glitch, RGB, animação recorrente ou pinning. Timelines, ScrollTriggers, callbacks do CTA e quickTo estão no contexto local GSAP, com cleanup de listeners e tweens. Arte decorativa `aria-hidden`; headings e copy permanecem semanticamente disponíveis.
 
@@ -45,9 +47,11 @@ Referências e decisões: `docs/references/services/digital-experience.md`.
 | Mobile 390×844 / 320×568 / tablet 768×1024 | pass |
 | pt-BR / EN | pass |
 | Reduced motion desktop/mobile | pass |
-| CTA por Enter, retorno e foco visível | pass |
+| CTA por Enter, retorno, nova frase/paleta, apoio e foco visível | pass |
+| Cliques rápidos com reversão durante a abertura | pass |
 | Pointer/cursor desktop e ausência em touch/reduced | pass |
 | Replay e ausência de overflow horizontal | pass |
+| Estado vermelho após resize 800/390/320/1920 e replay | pass, apoio/CTA sem sobreposição |
 | Console/hydration | pass, sem erros/warnings nos cenários |
 | Cinco desmontagens React StrictMode após CTA/hover | pass, zero timelines/triggers/listeners locais remanescentes |
 | Troca dinâmica para reduced motion | pass |
@@ -60,9 +64,9 @@ QA com Playwright/esbuild temporários fora das dependências do produto. Script
 
 - `services/digital-{desktop,laptop,wide,en,mobile,small-mobile,tablet,reduced,mobile-reduced}.png`;
 - `services/digital-{desktop,en,mobile,reduced}.mp4`: entrada, scroll, hover/CTA e replay.
-- `services/digital-{desktop,mobile,reduced}-open.png`: fitas desfeitas e texto no lado oposto, ainda sem a nova frase/cor.
+- `services/digital-{desktop,laptop,wide,en,mobile,small-mobile,tablet,reduced,mobile-reduced}-open.png`: fitas desfeitas, nova frase, apoio reposicionado e paleta vermelha.
 
-Os MP4 registram a versão anterior do checkpoint. Os screenshots e a prévia local refletem o refinamento atual; novas gravações completas serão feitas após a definição da frase/cor.
+Screenshots e quatro MP4 foram atualizados nesta revisão e mostram os dois estados atuais.
 
 ## Critérios e pendências
 
@@ -73,7 +77,10 @@ Os MP4 registram a versão anterior do checkpoint. Os screenshots e a prévia lo
 - [x] Remoção dos textos “Demo” solicitada pelo usuário.
 - [x] Remoção das divisórias e rótulos internos da peça.
 - [x] CTA desfaz as fitas e muda o lado do texto.
-- [ ] Definição e implementação da nova frase e mudança de cor no CTA.
+- [x] Nova frase “Da experiência à ação” e gradiente vermelho no CTA, incluindo detalhes da peça.
+- [x] Curvas mais fluidas, sem junções retas no estado aberto.
+- [x] Remoção do ponto e da indicação de scroll.
+- [x] Apoio muda para “Clareza, direção e resultado” e troca de posição.
 - [ ] Aprovação visual da experiência de sites.
 - [ ] Integração da seção contínua, headline `O que construímos. / What we build.` e ordem 01→02→03.
 - [ ] Transições por reorganização/dissolução e escurecimento gradual.

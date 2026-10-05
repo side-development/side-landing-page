@@ -10,7 +10,12 @@
       "recomposition": true,
       "pointer": "pass",
       "overflow": false,
-      "console": []
+      "console": [],
+      "alternateCopy": true,
+      "redPalette": true,
+      "supportingCopy": true,
+      "rapidReversal": true,
+      "pointAndScrollRemoved": true
     },
     {
       "name": "laptop",
@@ -21,7 +26,12 @@
       "recomposition": true,
       "pointer": "pass",
       "overflow": false,
-      "console": []
+      "console": [],
+      "alternateCopy": true,
+      "redPalette": true,
+      "supportingCopy": true,
+      "rapidReversal": true,
+      "pointAndScrollRemoved": true
     },
     {
       "name": "wide",
@@ -32,7 +42,12 @@
       "recomposition": true,
       "pointer": "pass",
       "overflow": false,
-      "console": []
+      "console": [],
+      "alternateCopy": true,
+      "redPalette": true,
+      "supportingCopy": true,
+      "rapidReversal": true,
+      "pointAndScrollRemoved": true
     },
     {
       "name": "en",
@@ -43,7 +58,12 @@
       "recomposition": true,
       "pointer": "pass",
       "overflow": false,
-      "console": []
+      "console": [],
+      "alternateCopy": true,
+      "redPalette": true,
+      "supportingCopy": true,
+      "rapidReversal": true,
+      "pointAndScrollRemoved": true
     },
     {
       "name": "mobile",
@@ -54,7 +74,12 @@
       "recomposition": true,
       "pointer": "disabled",
       "overflow": false,
-      "console": []
+      "console": [],
+      "alternateCopy": true,
+      "redPalette": true,
+      "supportingCopy": true,
+      "rapidReversal": true,
+      "pointAndScrollRemoved": true
     },
     {
       "name": "small-mobile",
@@ -65,7 +90,12 @@
       "recomposition": true,
       "pointer": "disabled",
       "overflow": false,
-      "console": []
+      "console": [],
+      "alternateCopy": true,
+      "redPalette": true,
+      "supportingCopy": true,
+      "rapidReversal": true,
+      "pointAndScrollRemoved": true
     },
     {
       "name": "tablet",
@@ -76,7 +106,12 @@
       "recomposition": true,
       "pointer": "disabled",
       "overflow": false,
-      "console": []
+      "console": [],
+      "alternateCopy": true,
+      "redPalette": true,
+      "supportingCopy": true,
+      "rapidReversal": true,
+      "pointAndScrollRemoved": true
     },
     {
       "name": "reduced",
@@ -87,7 +122,12 @@
       "recomposition": true,
       "pointer": "disabled",
       "overflow": false,
-      "console": []
+      "console": [],
+      "alternateCopy": true,
+      "redPalette": true,
+      "supportingCopy": true,
+      "rapidReversal": true,
+      "pointAndScrollRemoved": true
     },
     {
       "name": "mobile-reduced",
@@ -98,7 +138,12 @@
       "recomposition": true,
       "pointer": "disabled",
       "overflow": false,
-      "console": []
+      "console": [],
+      "alternateCopy": true,
+      "redPalette": true,
+      "supportingCopy": true,
+      "rapidReversal": true,
+      "pointAndScrollRemoved": true
     },
     {
       "name": "labels-pt-BR",
