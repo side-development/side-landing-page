@@ -29,6 +29,8 @@ Sequência local: janela → `claude` digitado → painel Claude → `/mcp` digi
 
 Área MCP com mais espaço após o comando, heading, configuração e ajuda. A legenda usa três grupos de teclas separados por espaços maiores, com quebra entre grupos em mobile. Ajuste do painel de boas-vindas em desktops baixos preserva a altura da janela e evita cortes no rodapé.
 
+Refinamento do rodapé: padding inferior de 32px no corpo, em desktop e mobile. O painel de boas-vindas pode ajustar sua altura para reservar esse espaço sem alterar o tamanho da janela ou comprimir as mensagens MCP. QA mede a distância entre a legenda e a borda inferior em todos os nove cenários.
+
 Transcript completo disponível semanticamente desde o início; apresentação visual `aria-hidden`, sem anúncios caractere a caractere. Texto selecionável com cursor nativo dentro da janela; Side cursor no restante do review. Controles macOS e legenda de teclas fazem parte da representação visual; replay é o controle efetivo da demonstração. Não há processo Claude Code, autenticação ou conexão MCP real. Versão/login são conteúdo editorial da referência; Opus 5.5 atende à instrução mais recente do usuário, não identificação do ambiente da Side. A descrição acessível e o comentário de implementação registram essa distinção.
 
 ## Validações
