@@ -9,7 +9,8 @@
       "height": 630
     },
     "noBlinkingCaret": true,
-    "localizedPaths": true,
+    "terminalEnglishBothLocales": true,
+    "mcpOutputTogether": true,
     "opus": "5.5",
     "mcpTypingBeforeOutput": "pass",
     "console": []
@@ -24,7 +25,8 @@
       "height": 537.59375
     },
     "noBlinkingCaret": true,
-    "localizedPaths": true,
+    "terminalEnglishBothLocales": true,
+    "mcpOutputTogether": true,
     "opus": "5.5",
     "mcpTypingBeforeOutput": "pass",
     "console": []
@@ -39,7 +41,8 @@
       "height": 756
     },
     "noBlinkingCaret": true,
-    "localizedPaths": true,
+    "terminalEnglishBothLocales": true,
+    "mcpOutputTogether": true,
     "opus": "5.5",
     "mcpTypingBeforeOutput": "pass",
     "console": []
@@ -54,7 +57,8 @@
       "height": 630
     },
     "noBlinkingCaret": true,
-    "localizedPaths": true,
+    "terminalEnglishBothLocales": true,
+    "mcpOutputTogether": true,
     "opus": "5.5",
     "mcpTypingBeforeOutput": "pass",
     "console": []
@@ -64,12 +68,13 @@
     "status": "pass",
     "frame": {
       "x": 16,
-      "y": 162.484375,
+      "y": 146.484375,
       "width": 358,
-      "height": 520
+      "height": 552
     },
     "noBlinkingCaret": true,
-    "localizedPaths": true,
+    "terminalEnglishBothLocales": true,
+    "mcpOutputTogether": true,
     "opus": "5.5",
     "mcpTypingBeforeOutput": "pass",
     "console": []
@@ -79,12 +84,13 @@
     "status": "pass",
     "frame": {
       "x": 16,
-      "y": 70.296875,
+      "y": 54.296875,
       "width": 288,
-      "height": 520
+      "height": 552
     },
     "noBlinkingCaret": true,
-    "localizedPaths": true,
+    "terminalEnglishBothLocales": true,
+    "mcpOutputTogether": true,
     "opus": "5.5",
     "mcpTypingBeforeOutput": "pass",
     "console": []
@@ -94,12 +100,13 @@
     "status": "pass",
     "frame": {
       "x": 16,
-      "y": 251.765625,
+      "y": 235.765625,
       "width": 736,
-      "height": 520
+      "height": 552
     },
     "noBlinkingCaret": true,
-    "localizedPaths": true,
+    "terminalEnglishBothLocales": true,
+    "mcpOutputTogether": true,
     "opus": "5.5",
     "mcpTypingBeforeOutput": "pass",
     "console": []
@@ -114,7 +121,8 @@
       "height": 630
     },
     "noBlinkingCaret": true,
-    "localizedPaths": true,
+    "terminalEnglishBothLocales": true,
+    "mcpOutputTogether": true,
     "opus": "5.5",
     "mcpTypingBeforeOutput": "not applicable",
     "console": []
@@ -124,12 +132,13 @@
     "status": "pass",
     "frame": {
       "x": 16,
-      "y": 162.390625,
+      "y": 146.390625,
       "width": 358,
-      "height": 520
+      "height": 552
     },
     "noBlinkingCaret": true,
-    "localizedPaths": true,
+    "terminalEnglishBothLocales": true,
+    "mcpOutputTogether": true,
     "opus": "5.5",
     "mcpTypingBeforeOutput": "not applicable",
     "console": []
