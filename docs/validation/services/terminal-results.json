@@ -8,6 +8,7 @@
       "width": 1123.1875,
       "height": 630
     },
+    "footerBottomGap": 33,
     "noBlinkingCaret": true,
     "terminalEnglishBothLocales": true,
     "mcpOutputTogether": true,
@@ -24,6 +25,7 @@
       "width": 1065.46875,
       "height": 537.59375
     },
+    "footerBottomGap": 33,
     "noBlinkingCaret": true,
     "terminalEnglishBothLocales": true,
     "mcpOutputTogether": true,
@@ -40,6 +42,7 @@
       "width": 1240,
       "height": 756
     },
+    "footerBottomGap": 97.4375,
     "noBlinkingCaret": true,
     "terminalEnglishBothLocales": true,
     "mcpOutputTogether": true,
@@ -56,6 +59,7 @@
       "width": 1123.1875,
       "height": 630
     },
+    "footerBottomGap": 33,
     "noBlinkingCaret": true,
     "terminalEnglishBothLocales": true,
     "mcpOutputTogether": true,
@@ -72,6 +76,7 @@
       "width": 358,
       "height": 552
     },
+    "footerBottomGap": 35.46875,
     "noBlinkingCaret": true,
     "terminalEnglishBothLocales": true,
     "mcpOutputTogether": true,
@@ -88,6 +93,7 @@
       "width": 288,
       "height": 552
     },
+    "footerBottomGap": 33,
     "noBlinkingCaret": true,
     "terminalEnglishBothLocales": true,
     "mcpOutputTogether": true,
@@ -104,6 +110,7 @@
       "width": 736,
       "height": 552
     },
+    "footerBottomGap": 44.765625,
     "noBlinkingCaret": true,
     "terminalEnglishBothLocales": true,
     "mcpOutputTogether": true,
@@ -120,6 +127,7 @@
       "width": 1123.1875,
       "height": 630
     },
+    "footerBottomGap": 33,
     "noBlinkingCaret": true,
     "terminalEnglishBothLocales": true,
     "mcpOutputTogether": true,
@@ -136,6 +144,7 @@
       "width": 358,
       "height": 552
     },
+    "footerBottomGap": 35.46875,
     "noBlinkingCaret": true,
     "terminalEnglishBothLocales": true,
     "mcpOutputTogether": true,

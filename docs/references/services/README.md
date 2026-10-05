@@ -324,6 +324,7 @@ Adaptação Side:
 - apenas `side mcp` conectado, versão reproduzida da referência e Opus 5.5 solicitado pelo usuário, como conteúdo demonstrativo;
 - typing em `claude` e `/mcp`, pausa breve e bloco MCP completo aparecendo de uma vez, incluindo ajuda/legenda; estado final estável sem caret;
 - espaçamento ampliado na área MCP e entre os três grupos de teclas, preservando a janela em desktop baixo e mobile;
+- padding inferior de 32px reservado abaixo da legenda; painel de boas-vindas ajusta sua altura quando necessário, mantendo tamanho da janela e espaçamento MCP;
 - transcript estático acessível e cursor nativo para selecionar texto;
 - mobile com janela de 552px, mascote/MCP legíveis e detalhes auxiliares só no transcript;
 - reduced motion: conteúdo final com fade curto, sem typing ou caret;
