@@ -1,6 +1,6 @@
 # Selected Work — issue #6
 
-Status: **Ready for review**. Implementação e evidências locais, aguardando aprovação visual explícita. Sem push, PR ou fechamento da issue.
+Status: **Completed — aprovado visualmente**. Aprovação explícita para publicar recebida em 2026-10-05, condicionada ao último ajuste: início automático da intro de 4 s para 2 s. Esse ajuste mantém o botão Recarregar e a sequência existente.
 
 Base: `main` em `932d795`, merge do PR #5. Issue #6 e #1 lidas integralmente; AGENTS.md e os dois documentos do pacote v2 respeitados. Falso erro e narrativa da Hero preservados; navbar passa a acompanhar o scroll conforme revisão explícita do usuário. Nenhuma dependência adicionada.
 
@@ -10,7 +10,7 @@ Base: `main` em `932d795`, merge do PR #5. Issue #6 e #1 lidas integralmente; AG
 - Experiência EN: http://localhost:3106/en?intro=replay
 - Gravações, reels e evidências: http://localhost:3206/
 
-A intro mantém o início automático de 4 s e o botão Recarregar. Após o reveal, role naturalmente até a seção. O cursor aparece no campo roxo, inclusive se o ponteiro já estiver parado ali. Na sessão concluída, Home abre na Hero final. Replay continua disponível em review.
+A intro começa automaticamente após 2 s e mantém o botão Recarregar. Após o reveal, role naturalmente até a seção. O cursor aparece no campo roxo, inclusive se o ponteiro já estiver parado ali. Na sessão concluída, Home abre na Hero final. Replay continua disponível em review.
 
 ## Implementado
 
@@ -54,6 +54,7 @@ Ambos: yuv420p, BT.709 / limited range, sem áudio e faststart. Posters WebP de 
 - `npm run lint`: pass, zero warnings.
 - `npm run typecheck`: pass.
 - `npm run build`: pass.
+- Ajuste final de início automático: ~2 s medidos em produção, desktop pt-BR/EN, mobile e reduced motion; Recarregar continua imediato. [Resultado](selected-work/auto-start-two-seconds.json).
 - Testes existentes relacionados: not applicable; não havia suíte no repositório. Verificação funcional via scripts temporários Playwright/esbuild, fora das dependências do projeto.
 - Nove combinações de viewport/locale/motion mais intro/sessão/replay: pass. Desktop 1440 × 900; mobile 390 × 844 e 320 × 568; tablet 768 × 1024; desktop baixo 1280 × 600; pt-BR/EN e reduced motion.
 - Console e hidratação sem erros ou warnings nos cenários executados em produção.
@@ -125,8 +126,8 @@ Limites: Edge/Chromium, mobile/touch emulados. Não houve teste em aparelho fís
 
 ### Responsividade / a11y
 
-- [ ] Desktop aprovado visualmente pelo usuário.
-- [ ] Mobile aprovado visualmente pelo usuário.
+- [x] Desktop aprovado visualmente pelo usuário em 2026-10-05.
+- [x] Mobile aprovado visualmente pelo usuário na mesma autorização final de publicação.
 - [x] Reduced motion próprio.
 - [x] Sem overflow horizontal nos viewports testados.
 - [x] Teclado funcional.
@@ -143,4 +144,4 @@ Limites: Edge/Chromium, mobile/touch emulados. Não houve teste em aparelho fís
 
 ## Pendências
 
-Aprovação visual explícita dos reels, composição desktop/mobile, cursor, passagem Hero → Selected Work e handoff Route → OWL. Após aprovação: avaliar necessidade de otimização final de peso, publicar branch e abrir PR com as evidências. Issue permanece aberta até validação e integração conforme o fluxo definido pelo usuário.
+Nenhuma pendência de implementação ou validação. Revisão visual aprovada pelo usuário, com publicação autorizada após reduzir o início automático para 2 s. Reels finais somam cerca de 2,5 MB; não foi necessária compressão adicional que comprometa a qualidade aprovada. Integração via PR conforme fluxo do repositório; encerramento da issue somente após merge.

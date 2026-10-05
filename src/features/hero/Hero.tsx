@@ -50,7 +50,7 @@ export function Hero({ copy, finalCopy, onPhase }: Props) {
 
   useEffect(() => {
     if (!ready || final || state !== "idle") return;
-    const timer = window.setTimeout(start, 4000);
+    const timer = window.setTimeout(start, 2000);
     return () => window.clearTimeout(timer);
   }, [ready, final, state, start]);
 

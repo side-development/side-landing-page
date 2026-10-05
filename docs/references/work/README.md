@@ -44,4 +44,4 @@ Edição: cortes entre momentos escolhidos, codificação H.264 / CRF 18 / prese
 
 Os registros em `capture-manifest.json` identificam fontes, trechos, timestamps, especificações e hashes dos arquivos finais. Capturas de referência: `route-camera.png`, `owl-map.png`, `owl-dashboard.png`. Frames brutos permanecem em `artifacts/` e não entram na aplicação.
 
-Esta é a versão local para revisão. A compressão final só deve ocorrer depois da aprovação visual, caso necessária.
+Versão aprovada visualmente pelo usuário em 2026-10-05, com publicação autorizada. Os reels somam cerca de 2,5 MB; nenhuma compressão adicional foi necessária para esta entrega.

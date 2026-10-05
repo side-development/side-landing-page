@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "desktop-pt",
+      "elapsedMs": 2040,
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "desktop-en",
+      "elapsedMs": 2037,
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "mobile",
+      "elapsedMs": 2021,
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "reduced",
+      "elapsedMs": 2024,
+      "console": [],
+      "status": "pass"
+    },
+    {
+      "name": "reload-button-remains-immediate",
+      "status": "pass"
+    }
+  ]
+}
