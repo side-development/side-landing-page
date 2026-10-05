@@ -4,7 +4,7 @@ Issue [#8](https://github.com/side-development/side-landing-page/issues/8). Base
 
 ## Status
 
-**Partial. Terminal isolado: Ready for review.** Dashboard aprovado explicitamente pelo usuário. O terminal precisa de aprovação antes da experiência de sites e da integração. Sem push/PR; issue aberta.
+**Partial. Checkpoint do terminal aprovado para avançar.** Após os refinamentos, o usuário autorizou a próxima fase em 05/10/2026. Experiência de sites ainda isolada, aguardando revisão antes da integração. Sem push/PR; issue aberta.
 
 ## Prévia
 
@@ -74,7 +74,7 @@ QA em Edge/Chromium com Playwright/esbuild temporários fora das dependências d
 - [x] Typing automático finito, sem neon/lettering antigo.
 - [x] pt-BR/EN, teclado, mobile/reduced motion e cleanup.
 - [x] Hero/Selected Work/dashboard aprovados preservados.
-- [ ] Aprovação visual do terminal pelo usuário.
+- [x] Autorização do usuário para avançar após o checkpoint do terminal.
 - [ ] Experiência original de sites — checkpoint 3.
 - [ ] Integração/transições 01→02 / 02→03 — checkpoint 4.
 - [ ] Validação integrada e aprovação final antes de push/PR.

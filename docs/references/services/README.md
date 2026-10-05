@@ -300,7 +300,7 @@ O movimento contínuo dos gráficos e a remoção da atividade são alterações
 
 ## Checkpoint 2 — terminal isolado
 
-Dashboard aprovado pelo usuário em 05/10/2026: “Feito, vamos para a próxima fase!”. Terminal segue isolado, aguardando sua aprovação antes da experiência 01/integração.
+Dashboard aprovado pelo usuário em 05/10/2026: “Feito, vamos para a próxima fase!”. Após os refinamentos do terminal, o usuário autorizou avançar em 05/10/2026: “pode prosseguir para a próxima fase”. A experiência 01 segue isolada, aguardando revisão antes da integração.
 
 ### Referência principal corrigida
 
@@ -337,3 +337,9 @@ Referências anteriores `terminal-claude-code.jpg` e `terminal-cli.webp` permane
 Verificação de comandos: `claude` inicia sessão interativa na [documentação oficial](https://code.claude.com/docs/en/cli-usage); `/mcp` verifica/gerencia servidores conforme a [documentação MCP](https://code.claude.com/docs/en/mcp). A versão exibida vem da imagem; o modelo Opus 5.5 segue solicitação posterior do usuário. São conteúdo editorial, não identificação da instalação da Side. O aumento de altura para 70vh e a remoção do caret também foram solicitados explicitamente.
 
 Recurso tipográfico: [JetBrains Mono](https://www.jetbrains.com/lp/mono/), Regular WOFF2 de 92.380 bytes em `public/fonts/jetbrains-mono/`, com [licença SIL OFL](https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt) incluída. Uso restrito ao terminal para consistência entre sistemas. Nenhuma biblioteca npm adicional.
+
+## Checkpoint 3 — experiência de sites
+
+O usuário autorizou a próxima fase após os refinamentos do terminal. Referências WKNDHRS/RANGE reexaminadas; decisões específicas e adaptação Side em [digital-experience.md](digital-experience.md). Peça original DOM/CSS/SVG com máscaras tipográficas, reflow ao scroll, CTA funcional e reação limitada ao ponteiro. Versões pt-BR/EN, composição mobile e alternativa reduced motion isoladas para revisão antes da integração.
+
+Nesta mesma revisão, o usuário pediu remover todos os textos “Demo”. Header/modal/sufixos do dashboard foram simplificados; a identificação dos números fictícios fica discretamente no rodapé como “Dados ilustrativos / Illustrative data”. Esse ajuste substitui os labels `Demo data` registrados nas revisões históricas acima, preservando a clareza de que os números não são resultados reais.
