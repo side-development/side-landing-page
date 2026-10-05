@@ -1,0 +1,12 @@
+.review { min-height: 100svh; background: #fff; color: #171719; padding-bottom: 80px; }
+.header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; font-size: 13px; }
+.reviewBrand { width: 50px; height: auto; }
+.header nav { display: flex; gap: 20px; }
+.header a { text-decoration: none; color: #777780; font-size: 11px; }
+.header a[aria-current] { color: #3919bd; }
+.copy { text-align: center; padding: 14px 24px 20px; }
+.index { display: block; color: #3919bd; font-size: 11px; margin-bottom: 12px; }
+.copy h1 { margin: 0; font-size: clamp(29px, 3vw, 46px); font-weight: 400; letter-spacing: -0.045em; line-height: 1.1; }
+.copy p { max-width: 700px; margin: 14px auto 0; color: #6e6e76; font-size: 13px; line-height: 1.7; }
+.territories { display: block; margin-top: 12px; font-size: 10px; color: #8a8a93; line-height: 1.8; }
+@media (max-width: 800px) { .header { padding: 24px; } .copy { padding: 20px 24px 32px; } .copy p { font-size: 13px; max-width: 320px; } .territories { max-width: 290px; margin-inline: auto; } }
