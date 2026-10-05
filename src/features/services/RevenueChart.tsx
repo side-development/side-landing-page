@@ -12,6 +12,7 @@ export function RevenueChart({ points, locale, enabled }: { points: Point[]; loc
   const [selected, setSelected] = useState<number | null>(null);
   const [compare, setCompare] = useState(true);
   const helpId = useId();
+  const maskId = useId();
   const max = Math.ceil(Math.max(...points.flatMap(point => [point.value, point.previous])) / 3000) * 3000;
   const x = (index: number) => plot.left + index / (points.length - 1) * (plot.right - plot.left);
   const y = (value: number) => plot.bottom - value / max * (plot.bottom - plot.top);
@@ -45,9 +46,10 @@ export function RevenueChart({ points, locale, enabled }: { points: Point[]; loc
     <p id={helpId} className={styles.srOnly}>{copy.chartHelp}</p>
     <div className={styles.plot} role="slider" tabIndex={enabled ? 0 : -1} aria-label={copy.chart} aria-describedby={helpId} aria-valuemin={points[0].day} aria-valuemax={points.at(-1)!.day} aria-valuenow={point.day} aria-valuetext={`${date(point.day, locale)}: ${money(point.value, locale)}; ${copy.previous}: ${money(point.previous, locale)}`} aria-disabled={!enabled} onPointerMove={inspect} onPointerDown={inspect} onPointerLeave={() => setSelected(null)} onFocus={() => setSelected(points.length - 1)} onBlur={() => setSelected(null)} onKeyDown={navigate}>
       <svg viewBox={`0 0 ${plot.width} ${plot.height}`} preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>{(["value", "previous"] as const).map(key => <mask key={key} id={`${maskId}-${key}`} maskUnits="userSpaceOnUse" x="0" y="0" width={plot.width} height={plot.height}><path d={path(key)} fill="none" stroke="white" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round" pathLength="1" data-dashboard-draw /></mask>)}</defs>
         {[0, 1, 2, 3].map(tick => <line key={tick} x1={plot.left} x2={plot.right} y1={y(max * tick / 3)} y2={y(max * tick / 3)} className={styles.gridline} />)}
-        {compare && <path d={path("previous")} className={styles.previousLine} data-dashboard-line pathLength="1" />}
-        <path d={path("value")} className={styles.revenueLine} data-dashboard-line pathLength="1" />
+        {compare && <path d={path("previous")} className={styles.previousLine} data-dashboard-line pathLength="1" mask={`url(#${maskId}-previous)`} />}
+        <path d={path("value")} className={styles.revenueLine} data-dashboard-line pathLength="1" mask={`url(#${maskId}-value)`} />
         {show && <g><line x1={x(index)} x2={x(index)} y1={plot.top} y2={plot.bottom} className={styles.crosshair} /><circle cx={x(index)} cy={y(point.value)} r="5" className={styles.chartPoint} />{compare && <circle cx={x(index)} cy={y(point.previous)} r="3" className={styles.previousPoint} />}</g>}
       </svg>
       <div className={styles.yLabels} aria-hidden="true">{[0, 1, 2, 3].map(tick => <span key={tick} style={{ top: `${y(max * tick / 3) / plot.height * 100}%` }}>{tick === 0 ? "0" : `${max * tick / 3000}k`}</span>)}</div>
