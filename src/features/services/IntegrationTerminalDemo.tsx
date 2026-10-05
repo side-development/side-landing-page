@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useRef } from "react";
+import { ClaudeCodeWelcome } from "./ClaudeCodeWelcome";
 import { terminalCopy, terminalTranscript, type TerminalLocale } from "./terminalData";
 import { useTerminalMotion } from "./useTerminalMotion";
 import styles from "./terminal.module.css";
@@ -17,19 +18,20 @@ export function IntegrationTerminalDemo({ locale, replay = 0 }: { locale: Termin
     <div className={styles.visual} aria-hidden="true" data-native-cursor>
       <div className={styles.titlebar} data-terminal-titlebar>
         <span className={styles.trafficLights}><i /><i /><i /></span>
-        <span className={styles.windowTitle}><svg width="13" height="12" viewBox="0 0 16 14" fill="none"><path d="M1 3a1 1 0 0 1 1-1h4l2 2h6a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1Z" stroke="currentColor" /></svg>side — claude</span>
-        <span className={styles.demo}>Demo</span>
+        <span className={styles.windowTitle}><svg width="17" height="15" viewBox="0 0 17 15" fill="none"><path d="M1 3V1h6l2 2h7v11H1Z" fill="#299ac4" /><path d="M1 5h15v9H1Z" fill="#57bee5" /><path d="M6 8.5 8.5 6 11 8.5V12H6Z" fill="#2686b3" /><path d="M8 9h1v3H8Z" fill="#88d0eb" /></svg>✳ Claude Code</span>
       </div>
       <div className={styles.body} data-terminal-body>
-        <p className={styles.command} data-terminal-command><span className={styles.shellPrompt}>$</span><span data-terminal-type="claude" data-terminal-text="claude">claude</span><i className={styles.caret} data-terminal-caret="claude" /></p>
-        <p className={styles.command} data-terminal-command><span className={styles.replPrompt}>&gt;</span><span data-terminal-type="mcp" data-terminal-text="/mcp">/mcp</span><i className={styles.caret} data-terminal-caret="mcp" /></p>
-        <div className={styles.servers} data-terminal-response>
-          <p className={styles.serverHeading}>MCP servers</p>
-          <div className={styles.serverRows}>{["side", "github", "figma"].map(server => <p key={server} data-terminal-server><span>{server}</span><span className={styles.connected}>connected</span></p>)}</div>
+        <p className={styles.lastLogin}>{copy.lastLogin}</p>
+        <p className={styles.shell} data-terminal-shell><span>→</span><span>~</span><span data-terminal-type="claude" data-terminal-text="claude">claude</span><i className={styles.caret} data-terminal-caret="claude" /></p>
+        <ClaudeCodeWelcome locale={locale} />
+        <p className={styles.command} data-terminal-command><span>›</span><span data-terminal-type="mcp" data-terminal-text="/mcp">/mcp</span><i className={styles.caret} data-terminal-caret="mcp" /></p>
+        <div className={styles.mcp} data-terminal-response>
+          <p className={styles.mcpHeading}>{copy.manage}</p>
+          <p className={styles.muted}>{copy.serverCount}</p>
+          <div className={styles.serverGroup}><p>{copy.userMcps} <span className={styles.muted}>(/Users/desenvolvedor/.claude.json)</span></p><p className={styles.server} data-terminal-status><span>› side mcp</span><span className={styles.muted}>·</span><span className={styles.check}>✓</span><span>{copy.connected}</span></p></div>
+          <p className={styles.help}>https://code.claude.com/docs/en/mcp {copy.help}</p>
         </div>
-        <div className={styles.statuses}>{["MCP side connected", "context ready", "tools available"].map(status => <p key={status} data-terminal-status><span className={styles.check}>✓</span><span>{status}</span></p>)}</div>
-        <p className={`${styles.command} ${styles.final}`} data-terminal-command><span className={styles.replPrompt}>&gt;</span><span data-terminal-type="final" data-terminal-text={copy.final}>{copy.final}</span><i className={styles.caret} data-terminal-caret="final" /></p>
-        <p className={styles.idle} data-terminal-idle><span className={styles.replPrompt}>&gt;</span><i className={styles.caret} data-terminal-caret="idle" /></p>
+        <p className={styles.final} data-terminal-final>{copy.keys}<i className={styles.caret} data-terminal-caret="idle" /></p>
       </div>
     </div>
   </figure>;

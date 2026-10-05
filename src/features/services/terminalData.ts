@@ -5,23 +5,50 @@ export const terminalCopy = {
     service: "Integrações & soluções sob medida",
     description: "Quando o problema não cabe em uma categoria, conectamos ferramentas, automatizamos fluxos e construímos a solução ao redor dele.",
     territories: "Integrações · Automações · MCPs · Ferramentas internas · MVPs",
-    final: "Você já tem acesso a tudo o que precisa.",
     replay: "Rever terminal",
-    accessible: "Demonstração editorial de um terminal com servidores MCP conectados. Não é uma conexão real.",
+    accessible: "Demonstração editorial da abertura do Claude Code com Side MCP conectado. Não é uma conexão real.",
     dashboard: "Dashboard aprovado",
+    lastLogin: "Último login: seg 9 mar 14:26:11 em ttys014",
+    welcome: "Bem-vindo de volta, desenvolvedor!",
+    environment: "Opus 4.6 · Cobrança por uso da API · Side",
+    tips: "Dicas para começar",
+    init: "Execute /init para criar um arquivo CLAUDE.md",
+    note: "Nota: Você iniciou o Claude Code",
+    recent: "Atividade recente",
+    noActivity: "Nenhuma atividade recente",
+    manage: "Gerenciar servidores MCP",
+    serverCount: "1 servidor",
+    userMcps: "MCPs do usuário",
+    connected: "conectado",
+    help: "para ajuda",
+    keys: "↑↓ para navegar · Enter para confirmar · Esc para cancelar",
   },
   en: {
     service: "Integrations & custom solutions",
     description: "When the problem does not fit a category, we connect tools, automate workflows and build the solution around it.",
     territories: "Integrations · Automations · MCPs · Internal tools · MVPs",
-    final: "You already have access to everything you need.",
     replay: "Replay terminal",
-    accessible: "An editorial terminal demonstration with connected MCP servers. This is not a live connection.",
+    accessible: "An editorial Claude Code welcome screen with Side MCP connected. This is not a live connection.",
     dashboard: "Approved dashboard",
+    lastLogin: "Last login: Mon Mar 9 14:26:11 on ttys014",
+    welcome: "Welcome back, developer!",
+    environment: "Opus 4.6 · API Usage Billing · Side",
+    tips: "Tips for getting started",
+    init: "Run /init to create a CLAUDE.md file",
+    note: "Note: You have launched Claude Code",
+    recent: "Recent activity",
+    noActivity: "No recent activity",
+    manage: "Manage MCP servers",
+    serverCount: "1 server",
+    userMcps: "User MCPs",
+    connected: "connected",
+    help: "for help",
+    keys: "↑↓ to navigate · Enter to confirm · Esc to cancel",
   },
 } as const;
 
-// Editorial representation based on Claude Code commands; no real process or MCP connection.
+// Editorial reproduction of the referenced welcome screen; no real process or MCP connection.
 export function terminalTranscript(locale: TerminalLocale) {
-  return `$ claude\n\n> /mcp\n\nMCP servers\n  side        connected\n  github      connected\n  figma       connected\n\n✓ MCP side connected\n✓ context ready\n✓ tools available\n\n> ${terminalCopy[locale].final}`;
+  const copy = terminalCopy[locale];
+  return `${copy.lastLogin}\n→ ~ claude\n\nClaude Code v2.1.72\n${copy.welcome}\n${copy.environment}\n/Users/desenvolvedor\n\n${copy.tips}\n${copy.init}\n${copy.note}\n${copy.recent}\n${copy.noActivity}\n\n> /mcp\n\n${copy.manage}\n${copy.serverCount}\n${copy.userMcps} (/Users/desenvolvedor/.claude.json)\n› side mcp · ✓ ${copy.connected}\n\nhttps://code.claude.com/docs/en/mcp ${copy.help}\n${copy.keys}`;
 }

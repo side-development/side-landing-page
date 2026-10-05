@@ -1,43 +1,77 @@
-.terminal { width: min(76vw, 1180px); height: clamp(400px, 60svh, 680px); margin: 0; color: #e1e2df; }
-.visual { height: 100%; overflow: hidden; border: 1px solid #515654; border-radius: 13px; background: #1d2022; box-shadow: 0 26px 70px rgb(0 0 0 / 32%), 0 1px 0 rgb(255 255 255 / 5%) inset; }
-.titlebar { position: relative; display: flex; align-items: center; justify-content: center; height: 43px; padding-inline: 18px; border-bottom: 1px solid #383c3c; background: #2d3032; font: 12px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #a8acab; }
-.trafficLights { position: absolute; left: 18px; display: flex; gap: 8px; }
-.trafficLights i { width: 12px; height: 12px; border-radius: 50%; background: #ff6058; box-shadow: 0 0 0 0.5px rgb(0 0 0 / 20%) inset; }
-.trafficLights i:nth-child(2) { background: #febd2e; }
+@font-face {
+  font-family: "Side Terminal Mono";
+  src: url("/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.terminal { width: min(76vw, 1180px); height: clamp(400px, 62svh, 680px); margin: 0; color: #aeb4c0; }
+.visual { height: 100%; overflow: hidden; border: 1px solid #686b70; border-radius: 15px; background: #262a33; box-shadow: 0 28px 60px -14px rgb(0 0 0 / 55%), 0 0 0 1px rgb(255 255 255 / 5%) inset; }
+.titlebar { position: relative; display: flex; align-items: center; justify-content: center; height: 40px; background: #262a33; font: 600 13px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #aeb4c0; }
+.trafficLights { position: absolute; left: 13px; display: flex; gap: 10px; }
+.trafficLights i { width: 14px; height: 14px; border-radius: 50%; background: #ff6058; box-shadow: 0 0 0 0.5px rgb(0 0 0 / 15%) inset; }
+.trafficLights i:nth-child(2) { background: #ffbf30; }
 .trafficLights i:nth-child(3) { background: #28c840; }
 .windowTitle { display: inline-flex; align-items: center; gap: 7px; }
-.windowTitle svg { color: #aeb2ad; }
-.demo { position: absolute; right: 18px; font-size: 10px; color: #8d9491; }
-.body { padding: clamp(24px, 3vw, 40px); font: 400 clamp(14px, 1.25vw, 18px)/1.55 "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; letter-spacing: -0.025em; }
+.body { height: calc(100% - 40px); padding: 10px 12px 16px; font: 400 clamp(12px, 1.05vw, 16px)/1.45 "Side Terminal Mono", "SFMono-Regular", Consolas, Menlo, monospace; font-variant-ligatures: none; letter-spacing: 0.01em; }
 .body p { margin: 0; }
-.command { min-height: 1.55em; }
-.command + .command { margin-top: 16px; }
-.shellPrompt, .replPrompt { display: inline-block; width: 2ch; color: #93b7cf; }
-.replPrompt { color: #a0a6a5; }
-.servers { margin-top: 14px; }
-.serverHeading { color: #cdd2ce; }
-.serverRows { padding-left: 2ch; }
-.serverRows p { display: grid; grid-template-columns: 11ch auto; }
-.connected { color: #a0baa4; }
-.statuses { margin-top: 14px; color: #b9c3b9; }
-.check { display: inline-block; width: 2ch; color: #9cb7a0; }
-.final { margin-top: 20px !important; }
-.idle { min-height: 1.55em; margin-top: 8px !important; }
-.caret { display: none; vertical-align: -0.13em; width: 0.55em; height: 1.08em; margin-left: 0.12em; background: #c5ccc5; animation: blink 1.1s step-end infinite; }
-.terminal[data-caret="claude"] [data-terminal-caret="claude"], .terminal[data-caret="mcp"] [data-terminal-caret="mcp"], .terminal[data-caret="final"] [data-terminal-caret="final"], .terminal[data-caret="idle"] [data-terminal-caret="idle"] { display: inline-block; }
+.lastLogin { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #aeb4c0; }
+.shell { display: flex; align-items: center; gap: 1ch; min-height: 1.45em; color: #9dbc7c; }
+.shell > span:nth-child(2) { color: #62b6c5; }
+.welcome { position: relative; display: grid; grid-template-columns: 56% 44%; height: clamp(158px, 22svh, 224px); margin-top: 16px; padding: 12px 16px; border: 1px solid #d77b5b; border-radius: 6px; }
+.welcomeLegend { position: absolute; top: -0.8em; left: 30px; padding-inline: 10px; background: #262a33; color: #d77b5b; }
+.welcomeLegend > span { color: #93979a; }
+.welcomeIdentity { display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 12px 16px 2px; text-align: center; }
+.welcomeBack { font-weight: 700; }
+.mascot { width: 78px; height: 54px; color: #d77b5b; }
+.environment { color: #96999e; font-size: 0.92em; }
+.welcomeTips { min-width: 0; padding-left: 16px; border-left: 1px solid #a86a56; }
+.welcomeTips p { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tipsHeading { color: #d77b5b; font-weight: 700; }
+.recent { margin-top: 14px; padding-top: 12px; border-top: 1px solid #a86a56; color: #96999e; }
+.command { display: flex; align-items: center; gap: 1ch; min-height: 1.45em; margin-top: 20px !important; padding-inline: 2px; background: #363737; color: #eeeeea; }
+.command > span:first-child { color: #666968; }
+.mcp { margin-top: 20px; padding: 10px 16px 0; border-top: 1px solid #b2b7f1; }
+.mcpHeading { color: #b2b7f1; font-weight: 700; }
+.muted { color: #96999e; }
+.serverGroup { margin-top: 16px; padding-left: 2ch; }
+.server { display: flex; align-items: baseline; gap: 0.5ch; }
+.server > span:first-child { color: #b2b7f1; }
+.check { color: #67be76; }
+.help { margin-top: 16px !important; color: #96999e; font-size: 0.85em; overflow-wrap: anywhere; }
+.final { min-height: 1.45em; margin-top: 10px !important; color: #aeb4c0; font-size: 0.85em; font-style: italic; }
+.caret { display: none; vertical-align: -0.13em; width: 0.55em; height: 1.08em; margin-left: 0.12em; background: #b8bdc6; animation: blink 1.1s step-end infinite; }
+.terminal[data-caret="claude"] [data-terminal-caret="claude"], .terminal[data-caret="mcp"] [data-terminal-caret="mcp"], .terminal[data-caret="idle"] [data-terminal-caret="idle"] { display: inline-block; }
 .terminal:not([data-visible="true"]) .caret { animation-play-state: paused; }
 .srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); border: 0; white-space: pre; }
 @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
-@media (max-height: 820px) and (min-width: 801px) { .body { padding: 28px; font-size: 16px; } }
+@media (max-height: 820px) and (min-width: 801px) {
+  .body { padding: 8px 12px 14px; font-size: 12.5px; }
+  .welcome { margin-top: 14px; }
+  .command, .mcp { margin-top: 16px !important; }
+  .serverGroup, .help { margin-top: 12px !important; }
+}
 @media (max-width: 800px) {
-  .terminal { width: calc(100vw - 32px); height: auto; min-height: 400px; }
-  .visual { min-height: 400px; border-radius: 11px; }
-  .titlebar { height: 39px; padding-inline: 12px; font-size: 10px; }
-  .trafficLights { left: 12px; gap: 6px; }
-  .trafficLights i { width: 10px; height: 10px; }
-  .demo { right: 12px; font-size: 8px; }
-  .body { padding: 24px 18px 28px; font-size: 12px; line-height: 1.6; }
-  .final { padding-left: 2ch; text-indent: -2ch; overflow-wrap: break-word; }
-  .serverRows p { grid-template-columns: 10ch auto; }
+  .terminal { width: calc(100vw - 32px); height: 500px; }
+  .visual { border-radius: 13px; }
+  .titlebar { height: 36px; font-size: 11px; }
+  .trafficLights { left: 11px; gap: 7px; }
+  .trafficLights i { width: 11px; height: 11px; }
+  .windowTitle svg { width: 13px; height: 12px; }
+  .body { height: calc(100% - 36px); padding: 10px 10px 14px; font-size: 12px; }
+  .welcome { grid-template-columns: 1fr; height: 160px; margin-top: 14px; padding: 12px; }
+  .welcomeLegend { left: 16px; }
+  .welcomeIdentity { padding: 8px 0 0; }
+  .mascot { width: 65px; height: 45px; }
+  .environment { font-size: 10px; }
+  .welcomeTips { display: none; }
+  .command, .mcp { margin-top: 16px !important; }
+  .mcp { padding-inline: 4px; }
+  .serverGroup { padding-left: 1ch; }
+  .serverGroup > p:first-child { font-size: 10px; }
+  .help { margin-top: 12px !important; font-size: 10px; }
+  .final { min-height: 2.9em; font-size: 11px; }
 }
 @media (prefers-reduced-motion: reduce) { .caret { animation: none; } }
+@media (max-width: 380px) { .welcome { height: 150px; } }
