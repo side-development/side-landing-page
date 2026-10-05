@@ -57,7 +57,7 @@ export function DashboardDataModal({ data, locale, dashboard, onClose }: { data:
       const bounds = event.currentTarget.getBoundingClientRect();
       if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) onClose();
     }}>
-      <header className={styles.modalHeader}><div><span>Demo data</span><h4 id={`${id}-title`}>{copy.table}</h4><p id={`${id}-description`}>{date(data.points[0].day, locale)} — {date(data.points.at(-1)!.day, locale)}, 2026 · BRL</p></div><button type="button" aria-label={copy.close} autoFocus onClick={onClose}><svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" strokeWidth="1.3" /></svg></button></header>
+      <header className={styles.modalHeader}><div><h4 id={`${id}-title`}>{copy.table}</h4><p id={`${id}-description`}>{date(data.points[0].day, locale)} — {date(data.points.at(-1)!.day, locale)}, 2026 · BRL</p></div><button type="button" aria-label={copy.close} autoFocus onClick={onClose}><svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" strokeWidth="1.3" /></svg></button></header>
       <div className={styles.modalScroll} tabIndex={0} aria-label={copy.tableCaption}>
         <table><caption className={styles.srOnly}>{copy.tableCaption}</caption><thead><tr><th scope="col">{copy.day}</th><th scope="col">{copy.daily}</th><th scope="col">{copy.previous}</th></tr></thead><tbody>{data.points.map(point => <tr key={point.day}><th scope="row">{date(point.day, locale)}</th><td>{money(point.value, locale)}</td><td>{money(point.previous, locale)}</td></tr>)}</tbody></table>
       </div>
