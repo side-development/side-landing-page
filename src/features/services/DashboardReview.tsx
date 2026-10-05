@@ -2,6 +2,7 @@
 
 import { SideCursor } from "@/features/cursor/SideCursor";
 import { BrandWordmark } from "@/features/hero/BrandWordmark";
+import { useSmoothScroll } from "@/features/scroll/useSmoothScroll";
 import Link from "next/link";
 import { useRef } from "react";
 import gsap from "gsap";
@@ -16,18 +17,21 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 export function DashboardReview({ locale }: { locale: DashboardLocale }) {
   const copy = dashboardCopy[locale];
   const root = useRef<HTMLElement>(null);
+  useSmoothScroll(true);
   useGSAP(() => {
     const media = gsap.matchMedia();
     media.add({ motion: "(prefers-reduced-motion: no-preference)", reduced: "(prefers-reduced-motion: reduce)" }, context => {
       if (context.conditions?.reduced) return;
       const title = root.current!.querySelector<HTMLElement>("[data-review-title]")!;
-      gsap.fromTo(title, { opacity: 0, filter: "blur(10px)" }, {
-        opacity: 1, filter: "blur(0px)", duration: 1, ease: "power2.out", clearProps: "filter,opacity",
-        scrollTrigger: { trigger: "[data-review-section]", start: "top 75%", toggleActions: "play none none none" },
+      const section = root.current!.querySelector<HTMLElement>("[data-review-section]")!;
+      gsap.fromTo(title, { opacity: 0, filter: "blur(14px)" }, {
+        opacity: 1, filter: "blur(0px)", duration: 1.8, ease: "sine.out", clearProps: "filter,opacity",
+        scrollTrigger: { trigger: section, start: "top 75%", once: true },
       });
-      gsap.timeline({ scrollTrigger: { trigger: "[data-review-section]", start: "top top", end: () => `+=${Math.round(Math.max(120, innerHeight / 2 - 76 - title.offsetHeight / 2))}`, scrub: 0.5, invalidateOnRefresh: true } })
-        .to("[data-review-title-stage]", { height: () => innerHeight / 2 + title.offsetHeight / 2 + 56, duration: 1, ease: "power2.inOut" }, 0)
-        .fromTo("[data-review-description]", { opacity: 0, y: 20, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power2.out", clearProps: "filter" }, 0.45);
+      gsap.fromTo("[data-review-description]", { opacity: 0, y: 12, filter: "blur(10px)" }, {
+        opacity: 1, y: 0, filter: "blur(0px)", duration: 1.8, ease: "sine.out", clearProps: "filter",
+        scrollTrigger: { trigger: section, start: "top -32px", once: true },
+      });
     });
     return () => media.revert();
   }, { scope: root });

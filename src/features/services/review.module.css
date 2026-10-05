@@ -4,7 +4,7 @@
 .header nav { display: flex; gap: 20px; }
 .header a { text-decoration: none; color: #777780; font-size: 11px; }
 .header a[aria-current] { color: #3919bd; }
-.titleStage { position: relative; height: 100svh; }
+.titleStage { position: relative; height: 62svh; }
 .title { position: absolute; top: 50svh; inset-inline: 24px; transform: translateY(-50%); text-align: center; }
 .title h1 { margin: 0; font-size: clamp(34px, 5vw, 84px); font-weight: 400; letter-spacing: -0.045em; line-height: 1.1; }
 .index { position: absolute; top: -30px; inset-inline: 0; color: #3919bd; font-size: 11px; }

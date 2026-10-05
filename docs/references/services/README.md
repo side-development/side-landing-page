@@ -267,4 +267,33 @@ Verificação técnica: https://code.claude.com/docs/en/cli-usage e https://code
 
 ## Direção para o checkpoint 1
 
-Dashboard claro e original, sem navegação fictícia: overview/período, quatro KPIs, receita diária e comparação, origens e atividade. Frame ~78vw desktop com cantos contidos e sombra quase imperceptível. Mobile: dois KPIs por linha, gráfico em largura total, depois origens/atividade. SVG próprio, nenhuma dependência adicional. A integração com Services só começa após aprovação visual deste checkpoint.
+Dashboard claro e original, sem navegação fictícia: overview/período, quatro KPIs, receita diária e comparação, origens e conversão. Na revisão atual, frame com altura de uma viewport desktop, margens de 40px e largura máxima de 1800px. Cantos contidos e sombra quase imperceptível. Mobile: dois KPIs por linha e gráficos empilhados. SVG próprio, nenhuma dependência adicional. A integração com Services só começa após aprovação visual deste checkpoint.
+
+## Refinamento dos gráficos — referência enviada em 05/10/2026
+
+Arquivo: `dashboard-user-reference.png`. Referência direta enviada pelo usuário durante o checkpoint; sem fonte externa atribuída. O usuário confirmou aplicar a direção aos gráficos atuais e acrescentar gráficos da referência, exceto o mapa. Depois solicitou movimento contínuo e suave, números pequenos junto ao crosshair sem card preto e remoção da atividade. A última revisão substitui a proposta compacta por um dashboard do tamanho de uma página normal; título ocupa espaço adicional acima. Entrada fica mais fluida, com reveals sobrepostos, blur mais lento e sem reorganização de altura durante o scroll.
+
+Usar para:
+- curvas contínuas e delicadas, áreas de cor leves, gridlines discretas;
+- paleta verde, laranja/vermelho e cinza frio com leitura clara;
+- gauge aberto e fino, bandas de fluxo e valores destacados;
+- marcadores vazados e crosshair pontilhado;
+- superfícies brancas, espaçamento e cantos refinados.
+
+Não copiar:
+- mapa australiano, dados de empréstimos, textos ou imagens como interface;
+- widgets de calendário/menu sem ação;
+- layout literal de quatro cards idênticos, tooltip preto rejeitado na revisão ou gráficos sem contexto.
+
+Adaptação Side:
+- manter série de receita e comparação anterior; transformar origens em gauge interativo e acrescentar um fluxo de usuários ativos, retidos e convertidos;
+- interpolar os dados com curvas sem ultrapassar máximos/mínimos entre amostras;
+- usar tons quentes na receita, comparação cinza e verde nos deltas positivos;
+- associar quatro cores estáveis aos canais de aquisição e mostrar contagens coerentes com o total;
+- inspeção por mouse/touch/teclado e seleção das origens, mantendo Demo data explícito;
+- mover suavemente a curvatura entre as amostras, preservando valores e pontos reais da série demonstrativa; pausar fora da viewport/aba e manter estático em reduced motion;
+- substituir os cards de hover por valores pequenos junto à linha de inspeção, limitados à área do gráfico nas extremidades;
+- retirar atividade e agrupar os três gráficos em uma linha desktop, preenchendo o frame de uma viewport; empilhar em mobile preservando leitura;
+- preservar roxo Side no cursor, marca, navegação e foco. A nova direção de cor dos gráficos atende à solicitação visual do usuário e substitui o tratamento monocromático anterior neste checkpoint.
+
+O movimento contínuo dos gráficos e a remoção da atividade são alterações explícitas do usuário ao estado final estático e à tabela inicialmente descritos na #8. Counters, construção e reveals continuam finitos. Nenhum mapa, gráfico geográfico ou dependência nova foi criado.
