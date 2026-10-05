@@ -32,24 +32,28 @@
 .recent { margin-top: 14px; padding-top: 12px; border-top: 1px solid #a86a56; color: #96999e; }
 .command { display: flex; align-items: center; gap: 1ch; min-height: 1.45em; margin-top: 20px !important; padding-inline: 2px; background: #363737; color: #eeeeea; }
 .command > span:first-child { color: #666968; }
-.mcp { margin-top: 20px; padding: 10px 16px 0; border-top: 1px solid #b2b7f1; }
+.mcp { margin-top: 28px; padding: 16px 16px 0; border-top: 1px solid #b2b7f1; }
 .mcpHeading { color: #b2b7f1; font-weight: 700; }
+.mcpHeading + .muted { margin-top: 4px; }
 .muted { color: #96999e; }
-.serverGroup { margin-top: 16px; padding-left: 2ch; }
-.server { display: flex; align-items: baseline; gap: 0.5ch; }
+.serverGroup { margin-top: 22px; padding-left: 2ch; }
+.server { display: flex; align-items: baseline; gap: 0.5ch; margin-top: 6px !important; }
 .server > span:first-child { color: #b2b7f1; }
 .check { color: #67be76; }
-.help { margin-top: 16px !important; color: #96999e; font-size: 0.85em; overflow-wrap: anywhere; }
-.final { min-height: 1.45em; margin-top: 10px !important; color: #aeb4c0; font-size: 0.85em; font-style: italic; }
+.help { margin-top: 22px !important; color: #96999e; font-size: 0.85em; overflow-wrap: anywhere; }
+.final { display: flex; flex-wrap: wrap; column-gap: 1.5ch; row-gap: 6px; min-height: 1.6em; margin-top: 16px !important; color: #aeb4c0; font-size: 0.85em; line-height: 1.6; font-style: italic; }
+.final > span { white-space: nowrap; }
+.final > span + span::before { content: "·"; margin-right: 1.5ch; color: #96999e; }
 .srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); border: 0; white-space: pre; }
 @media (max-height: 820px) and (min-width: 801px) {
   .body { padding: 8px 12px 14px; font-size: 13.5px; }
-  .welcome { margin-top: 14px; }
-  .command, .mcp { margin-top: 16px !important; }
-  .serverGroup, .help { margin-top: 12px !important; }
+  .welcome { height: clamp(158px, 22svh, 200px); margin-top: 14px; }
+  .command { margin-top: 16px !important; }
+  .mcp { margin-top: 22px; }
+  .serverGroup, .help { margin-top: 18px !important; }
 }
 @media (max-width: 800px) {
-  .terminal { width: calc(100vw - 32px); height: 520px; }
+  .terminal { width: calc(100vw - 32px); height: 552px; }
   .visual { border-radius: 13px; }
   .titlebar { height: 36px; font-size: 11px; }
   .trafficLights { left: 11px; gap: 7px; }
@@ -62,11 +66,12 @@
   .mascot { width: 65px; height: 45px; }
   .environment { font-size: 10px; }
   .welcomeTips { display: none; }
-  .command, .mcp { margin-top: 16px !important; }
+  .command { margin-top: 16px !important; }
+  .mcp { margin-top: 22px; }
   .mcp { padding-inline: 4px; }
   .serverGroup { padding-left: 1ch; }
   .serverGroup > p:first-child { font-size: 10px; }
-  .help { margin-top: 12px !important; font-size: 10px; }
+  .help { margin-top: 18px !important; font-size: 10px; }
   .final { min-height: 2.9em; font-size: 11px; }
 }
 @media (max-width: 380px) { .welcome { height: 150px; } }

@@ -28,9 +28,7 @@ export function useTerminalMotion(root: RefObject<HTMLElement | null>, locale: T
         const shell = node.querySelector("[data-terminal-shell]");
         const welcome = node.querySelector("[data-terminal-welcome]");
         const response = node.querySelector("[data-terminal-response]");
-        const lines = node.querySelectorAll("[data-terminal-line]");
-        const footer = node.querySelector("[data-terminal-final]");
-        gsap.set([shell, command, welcome, response, lines, footer], { opacity: 0 });
+        gsap.set([shell, command, welcome, response], { opacity: 0 });
         timeline.fromTo(node, { opacity: 0, scale: 0.97, filter: "blur(6px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 1.1, ease: "power2.out", clearProps: "filter,transform" });
         function type(index: number, at: number, speed: number) {
           const { element, text } = typed[index];
@@ -42,9 +40,7 @@ export function useTerminalMotion(root: RefObject<HTMLElement | null>, locale: T
         timeline.to(welcome, { opacity: 1, duration: 0.3 }, 1.65)
           .to(command, { opacity: 1, duration: 0.15 }, 2.95);
         type(1, 3.15, 0.16);
-        timeline.to(response, { opacity: 1, duration: 0.18 }, 4)
-          .to(lines, { opacity: 1, duration: 0.18, stagger: 0.14 }, 4.12)
-          .to(footer, { opacity: 1, duration: 0.2 }, 5.05);
+        timeline.set(response, { opacity: 1 }, 4);
       }
       let entered = false, visible = false;
       const sync = () => {
