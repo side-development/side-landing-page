@@ -20,5 +20,5 @@
   .intro p { font-size: 13px; max-width: 360px; }
   .intro small { max-width: 300px; margin-inline: auto; }
   .stage { min-height: max(660px, 100svh); }
-  .replay { top: calc(50% + 288px); }
+  .replay { top: calc(50% + 304px); }
 }

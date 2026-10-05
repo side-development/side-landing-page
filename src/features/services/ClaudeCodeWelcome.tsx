@@ -1,9 +1,9 @@
 import styles from "./terminal.module.css";
 
-import { terminalCopy, type TerminalLocale } from "./terminalData";
+import { terminalScreenCopy } from "./terminalData";
 
-export function ClaudeCodeWelcome({ locale }: { locale: TerminalLocale }) {
-  const copy = terminalCopy[locale];
+export function ClaudeCodeWelcome() {
+  const copy = terminalScreenCopy;
   return <div className={styles.welcome} data-terminal-welcome>
     <p className={styles.welcomeLegend}>Claude Code <span>v2.1.72</span></p>
     <div className={styles.welcomeIdentity}>
