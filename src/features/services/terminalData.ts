@@ -10,7 +10,8 @@ export const terminalCopy = {
     dashboard: "Dashboard aprovado",
     lastLogin: "Último login: seg 9 mar 14:26:11 em ttys014",
     welcome: "Bem-vindo de volta, desenvolvedor!",
-    environment: "Opus 4.6 · Cobrança por uso da API · Side",
+    environment: "Opus 5.5 · Cobrança por uso da API · Side",
+    userDirectory: "/Users/desenvolvedor",
     tips: "Dicas para começar",
     init: "Execute /init para criar um arquivo CLAUDE.md",
     note: "Nota: Você iniciou o Claude Code",
@@ -32,7 +33,8 @@ export const terminalCopy = {
     dashboard: "Approved dashboard",
     lastLogin: "Last login: Mon Mar 9 14:26:11 on ttys014",
     welcome: "Welcome back, developer!",
-    environment: "Opus 4.6 · API Usage Billing · Side",
+    environment: "Opus 5.5 · API Usage Billing · Side",
+    userDirectory: "/Users/developer",
     tips: "Tips for getting started",
     init: "Run /init to create a CLAUDE.md file",
     note: "Note: You have launched Claude Code",
@@ -50,5 +52,5 @@ export const terminalCopy = {
 // Editorial reproduction of the referenced welcome screen; no real process or MCP connection.
 export function terminalTranscript(locale: TerminalLocale) {
   const copy = terminalCopy[locale];
-  return `${copy.lastLogin}\n→ ~ claude\n\nClaude Code v2.1.72\n${copy.welcome}\n${copy.environment}\n/Users/desenvolvedor\n\n${copy.tips}\n${copy.init}\n${copy.note}\n${copy.recent}\n${copy.noActivity}\n\n> /mcp\n\n${copy.manage}\n${copy.serverCount}\n${copy.userMcps} (/Users/desenvolvedor/.claude.json)\n› side mcp · ✓ ${copy.connected}\n\nhttps://code.claude.com/docs/en/mcp ${copy.help}\n${copy.keys}`;
+  return `${copy.lastLogin}\n→ ~ claude\n\nClaude Code v2.1.72\n${copy.welcome}\n${copy.environment}\n${copy.userDirectory}\n\n${copy.tips}\n${copy.init}\n${copy.note}\n${copy.recent}\n${copy.noActivity}\n\n> /mcp\n\n${copy.manage}\n${copy.serverCount}\n${copy.userMcps} (${copy.userDirectory}/.claude.json)\n› side mcp · ✓ ${copy.connected}\n\nhttps://code.claude.com/docs/en/mcp ${copy.help}\n${copy.keys}`;
 }
