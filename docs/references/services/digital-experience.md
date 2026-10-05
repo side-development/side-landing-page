@@ -20,7 +20,7 @@ Não copiar:
 Adaptação Side:
 - título/copy de serviço exatamente como aprovados na #8;
 - uma composição editorial interativa, com duas linhas de texto e arte original;
-- índice secundário, sem cards ou chrome de navegador falso.
+- composição limpa, sem cards ou chrome de navegador falso; índice e rótulos internos removidos na revisão do usuário.
 
 ### RANGE RAK — Interactive Homepage
 
@@ -48,7 +48,7 @@ Foram reexaminados os frames das gravações originais já registrados nesta pas
 - Texto autoral da peça: “Da ideia / à experiência.”, “Forma, movimento e intenção.”, “Uma página. Muitas possibilidades.”; EN idiomático. A copy comercial do serviço permanece exatamente a da #8.
 - Arte abstrata de fita dobrada criada em SVG; não é logo Side, interface de cliente, mockup ou asset externo.
 - Scroll dispara máscaras de texto, revelação da arte e detalhes. Uma segunda timeline local ajusta escala/alinhamento da arte durante a passagem natural da viewport, sem pinning.
-- CTA “Mude a perspectiva / Shift your perspective” alterna orientação/posição da arte e alinhamento do texto. É um botão real com `aria-pressed`, não um link sem destino.
+- CTA “Mude a perspectiva / Shift your perspective” desfaz as fitas emaranhadas, passa a arte à esquerda e alinha o texto à direita. É um botão real com `aria-pressed`, não um link sem destino. Nova frase e mudança de cor aguardam definição do usuário.
 - Desktop: reação sutil ao ponteiro e CTA magnético. Mobile: composição vertical e menos layers, sem magnetismo/cursor customizado.
 - Reduced motion: fade curto, estado refinado, CTA muda imediatamente a composição, sem pointer motion ou reflow por scroll.
 

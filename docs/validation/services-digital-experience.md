@@ -4,7 +4,7 @@ Issue [#8](https://github.com/side-development/side-landing-page/issues/8). Bran
 
 ## Status
 
-**Partial. Experiência de sites isolada: Ready for review.** O usuário autorizou avançar após o checkpoint do terminal. Esta prévia aguarda aprovação antes da integração/transições. Sem push/PR, issue aberta.
+**Partial. Experiência de sites isolada em refinamento.** O usuário autorizou avançar após o checkpoint do terminal. As divisórias e os rótulos internos foram removidos; o CTA agora desfaz as fitas e troca o lado da composição. Nova frase e mudança de cor aguardam definição do usuário. Sem push/PR, issue aberta.
 
 ## Prévia
 
@@ -18,7 +18,9 @@ Issue [#8](https://github.com/side-development/side-landing-page/issues/8). Bran
 
 `DigitalExperienceDemo.tsx` é a peça isolada; `DigitalExperienceArtwork.tsx` contém a arte SVG autoral; `useDigitalExperienceMotion.ts` isola reveal, reflow, pointer e composição. Copy, CSS Module e wrapper de review separados. Não existe controlador global da Home ou nova dependência.
 
-Composição branca editorial, tipografia grande com máscaras, ponto roxo, forma abstrata dominante e CTA com ação real. Desktop responde ao ponteiro com deslocamentos limitados; keyboard usa o mesmo CTA, com foco visível e `aria-pressed`. Layout EN considera o maior comprimento do texto. Mobile empilha tipografia/arte/ação e reduz layers; não usa cursor customizado. Reduced motion tem fade curto e mudanças imediatas de perspectiva.
+Composição branca editorial sem linhas divisórias ou rótulos “Side / 01” e “Composição livre”, tipografia grande com máscaras, ponto roxo, forma abstrata dominante e CTA com ação real. Desktop responde ao ponteiro com deslocamentos limitados; keyboard usa o mesmo CTA, com foco visível e `aria-pressed`. Layout EN considera o maior comprimento do texto. Mobile empilha tipografia/arte/ação e reduz layers; não usa cursor customizado. Reduced motion tem fade curto e mudanças imediatas de perspectiva.
+
+No CTA, os paths SVG interpolam de uma forma emaranhada para fitas separadas. A arte passa à esquerda e o texto à direita no desktop; em mobile o texto alinha à direita dentro da composição vertical. O segundo clique restaura a forma/alinhamento. Geometrias finais usam os mesmos tipos e quantidades de comandos SVG, permitindo interpolação no GSAP existente sem novo plugin/dependência. Alinhamento recalculado ao redimensionar.
 
 Scroll é o gatilho principal. Não há screenshot, iframe, laptop, glitch, RGB, animação recorrente ou pinning. Timelines, ScrollTriggers, callbacks do CTA e quickTo estão no contexto local GSAP, com cleanup de listeners e tweens. Arte decorativa `aria-hidden`; headings e copy permanecem semanticamente disponíveis.
 
@@ -58,6 +60,9 @@ QA com Playwright/esbuild temporários fora das dependências do produto. Script
 
 - `services/digital-{desktop,laptop,wide,en,mobile,small-mobile,tablet,reduced,mobile-reduced}.png`;
 - `services/digital-{desktop,en,mobile,reduced}.mp4`: entrada, scroll, hover/CTA e replay.
+- `services/digital-{desktop,mobile,reduced}-open.png`: fitas desfeitas e texto no lado oposto, ainda sem a nova frase/cor.
+
+Os MP4 registram a versão anterior do checkpoint. Os screenshots e a prévia local refletem o refinamento atual; novas gravações completas serão feitas após a definição da frase/cor.
 
 ## Critérios e pendências
 
@@ -66,6 +71,9 @@ QA com Playwright/esbuild temporários fora das dependências do produto. Script
 - [x] Base branca, composição editorial, sem cards/glitch/mockup.
 - [x] pt-BR/EN, teclado, mobile/reduced motion e cleanup no checkpoint isolado.
 - [x] Remoção dos textos “Demo” solicitada pelo usuário.
+- [x] Remoção das divisórias e rótulos internos da peça.
+- [x] CTA desfaz as fitas e muda o lado do texto.
+- [ ] Definição e implementação da nova frase e mudança de cor no CTA.
 - [ ] Aprovação visual da experiência de sites.
 - [ ] Integração da seção contínua, headline `O que construímos. / What we build.` e ordem 01→02→03.
 - [ ] Transições por reorganização/dissolução e escurecimento gradual.
