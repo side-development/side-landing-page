@@ -14,7 +14,6 @@ export function DigitalExperienceDemo({ locale, replay = 0 }: { locale: DigitalE
   const changePerspective = useDigitalExperienceMotion(root, replay);
 
   return <article ref={root} className={styles.experience} aria-labelledby={`${id}-title`} data-digital-experience data-composed={composed} data-locale={locale}>
-    <header className={styles.canvasHeader} data-digital-detail><span>Side / 01</span><span>{composed ? copy.composed : copy.free}</span></header>
     <div className={styles.composition}>
       <div className={styles.art} data-digital-art-scroll><div data-digital-reflow><div data-digital-layout><div data-digital-pointer><DigitalExperienceArtwork /></div></div></div></div>
       <h2 id={`${id}-title`} className={styles.headline} data-digital-type-layout>{copy.headline.map((line, index) => <span className={styles.lineMask} key={line}><span data-digital-line>{line}{index === 0 && <i aria-hidden="true" />}</span></span>)}</h2>

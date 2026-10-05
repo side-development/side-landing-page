@@ -7,6 +7,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+function rightAlignment(element: HTMLElement) {
+  const mask = element.parentElement!;
+  const padding = parseFloat(getComputedStyle(mask).paddingLeft);
+  return Math.max(0, mask.clientWidth - padding - element.offsetWidth);
+}
+
 export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, replay: number) {
   const { contextSafe } = useGSAP(() => {
     const node = root.current;
@@ -16,10 +22,24 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
       const reduced = context.conditions?.reduced;
       const desktop = context.conditions?.desktop;
       const composed = node.dataset.composed === "true";
-      gsap.set(node.querySelector("[data-digital-layout]"), { rotation: composed ? -28 : 0, scale: composed ? .84 : 1, xPercent: composed ? -8 : 0 });
-      gsap.set(node.querySelector("[data-digital-type-layout]"), { xPercent: composed ? 3 : 0 });
+      node.querySelectorAll<SVGPathElement>("[data-digital-strand]").forEach(strand => {
+        strand.dataset.digitalClosed ??= strand.getAttribute("d") ?? "";
+        gsap.set(strand, { attr: { d: (composed ? strand.dataset.digitalOpen : strand.dataset.digitalClosed) ?? "" } });
+      });
+      gsap.set(node.querySelector("[data-digital-highlight]"), { opacity: composed ? 0 : 1 });
+      const layout = node.querySelector("[data-digital-layout]");
+      gsap.set(layout, { rotation: 0, scale: composed ? .84 : 1, xPercent: composed && window.matchMedia("(min-width: 801px)").matches ? -112 : 0 });
       const art = node.querySelector("[data-digital-art-scroll]");
       const lines = node.querySelectorAll("[data-digital-line]");
+      gsap.set(lines, { x: (_index, element: HTMLElement) => composed ? rightAlignment(element) : 0 });
+      const linePositions = [...lines].map(element => ({ element: element as HTMLElement, set: gsap.quickSetter(element, "x", "px") }));
+      const layoutPosition = gsap.quickSetter(layout, "xPercent");
+      const resizeLayout = () => {
+        const active = node.dataset.composed === "true";
+        linePositions.forEach(({ element, set }) => set(active ? rightAlignment(element) : 0));
+        layoutPosition(active && window.matchMedia("(min-width: 801px)").matches ? -112 : 0);
+      };
+      window.addEventListener("resize", resizeLayout);
       const detail = node.querySelectorAll("[data-digital-detail]");
       const entrance = gsap.timeline({
         onStart: () => { node.dataset.animation = "playing"; },
@@ -65,10 +85,11 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
           node.removeEventListener("pointerenter", measure); node.removeEventListener("pointermove", move); node.removeEventListener("pointerleave", reset);
           window.removeEventListener("scroll", measure); window.removeEventListener("resize", measure); window.removeEventListener("blur", reset);
           [x, y, angle, buttonX, buttonY].forEach(value => value.tween.kill());
+          window.removeEventListener("resize", resizeLayout);
           delete node.dataset.animation;
         };
       }
-      return () => { delete node.dataset.animation; };
+      return () => { window.removeEventListener("resize", resizeLayout); delete node.dataset.animation; };
     });
     return () => media.revert();
   }, { scope: root, dependencies: [replay], revertOnUpdate: true });
@@ -77,7 +98,11 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
     const node = root.current;
     if (!node) return;
     const duration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 1.2;
-    gsap.to(node.querySelector("[data-digital-layout]"), { rotation: composed ? -28 : 0, scale: composed ? .84 : 1, xPercent: composed ? -8 : 0, duration, ease: "power3.inOut", overwrite: "auto" });
-    gsap.to(node.querySelector("[data-digital-type-layout]"), { xPercent: composed ? 3 : 0, duration, ease: "power3.inOut", overwrite: "auto" });
+    node.querySelectorAll<SVGPathElement>("[data-digital-strand]").forEach(strand => {
+      gsap.to(strand, { attr: { d: (composed ? strand.dataset.digitalOpen : strand.dataset.digitalClosed) ?? "" }, duration, ease: "power3.inOut", overwrite: "auto" });
+    });
+    gsap.to(node.querySelector("[data-digital-highlight]"), { opacity: composed ? 0 : 1, duration: duration ? .4 : 0, overwrite: "auto" });
+    gsap.to(node.querySelector("[data-digital-layout]"), { rotation: 0, scale: composed ? .84 : 1, xPercent: composed && window.matchMedia("(min-width: 801px)").matches ? -112 : 0, duration, ease: "power3.inOut", overwrite: "auto" });
+    gsap.to(node.querySelectorAll("[data-digital-line]"), { x: (_index, element: HTMLElement) => composed ? rightAlignment(element) : 0, duration, ease: "power3.inOut", overwrite: "auto" });
   });
 }
