@@ -1,32 +1,38 @@
 # Services — checkpoint 1 / dashboard
 
-Issue [#8](https://github.com/side-development/side-landing-page/issues/8), base `main` `e3077a2`. Data: 05/10/2026. Branch local `feat/issue-8-services`.
+Issue [#8](https://github.com/side-development/side-landing-page/issues/8), base `main` `e3077a2`. Revisão: 05/10/2026. Branch local `feat/issue-8-services`.
 
 ## Status
 
-**Partial. Dashboard isolado: Ready for review.** A #8 inteira ainda não está concluída. O usuário exige aprovação deste checkpoint antes de integrar a seção. Nenhum push/PR foi feito.
+**Partial. Dashboard isolado: Ready for review.** A #8 inteira ainda está incompleta. A aprovação visual deste checkpoint precede terminal, experiência de sites e integração. Nenhum push/PR foi feito. Hero e Selected Work permanecem intactos.
 
 ## Prévia funcional
 
 - pt-BR: http://localhost:3000/review/services
 - EN: http://localhost:3000/en/review/services
-- `Abrir produto / Open product` repete a construção; a primeira entrada é automática.
-- Período de 30/7 dias efetivamente modifica dados e gráfico.
-- Legenda anterior ativa/desativa a comparação.
-- Gráfico: mouse/touch consulta dias; teclado usa setas, Home/End.
-- `Explorar dados / Explore data` abre a tabela da série.
+- Título começa no centro; scroll o posiciona no topo da composição e revela subtítulo/dashboard. Sem botão de abrir produto e sem prender a página.
+- KPIs: hover em desktop valoriza o valor demonstrativo, torna o número verde e revela uma seta. Fonte e escala permanecem iguais; ao sair, retorna ao valor base. Percentuais usam pontos percentuais conforme o indicador.
+- Lista de período própria, com seleção de 30/7 dias, navegação por setas, Escape e fechamento externo. Muda os dados efetivamente.
+- Legenda anterior ativa/desativa a comparação. Gráfico responde a mouse/touch e teclado com setas, Home/End.
+- Explorar dados abre modal responsivo com tabela, cabeçalho fixo e scroll interno. Escape fecha, Tab permanece na janela e foco retorna ao acionador.
+- Blur de 0,7px restrito ao dashboard; backdrop global transparente. Cursor nativo no modal evita que o cursor Side fique abaixo da camada superior do dialog. O cursor Side retoma fora do modal.
 
-A rota é temporária e só existe em desenvolvimento: produção responde 404 nos dois idiomas. O dashboard não foi conectado à Home. O wrapper de review e a rota serão removidos ao concluir a integração aprovada.
+A rota existe somente em desenvolvimento: produção responde 404 nos dois idiomas. O dashboard ainda não está conectado à Home. A rota e o wrapper de review serão removidos na integração aprovada.
 
-## Implementação
+## Implementação e dados
 
-- Pesquisa de todas as referências registrada em `docs/references/services/README.md`, com imagens reais e amostras dos vídeos. Limites de acesso e registros históricos descritos sem atribuir motion a screenshots estáticas.
-- Frame claro com hairlines, pouca sombra, faixa de quatro KPIs, receita diária em SVG próprio, comparação, origens e atividade contextual.
-- `Demo data` explícito nos dois idiomas; textos acessíveis explicam que não são resultados Side/clientes.
-- Série de setembro/2026 determinística: soma exata de R$ 248.420, comparação anterior de aproximadamente +18,7%. Período de sete dias compara com os sete dias imediatamente anteriores.
-- Reveal local: frame → shell → KPIs/count-up → paths → barras → activity. Pausa fora da viewport/aba; termina estático; replay explícito.
-- Números ganham presença sem layout shift; barras e linhas de activity reagem discretamente. Tooltip usa valores reais do dataset.
-- Reflow próprio mobile; dados finais imediatos em reduced motion; nenhum framework ou biblioteca de charts adicionado.
+- Pesquisa de todas as referências em `docs/references/services/README.md`, incluindo fontes reais, imagens/vídeos e limites de acesso.
+- Dashboard em DOM/CSS/SVG, sem dependências novas: hierarquia contínua de quatro KPIs, receita diária com comparação, origens, atividade e dados contextuais.
+- `Demo data` explícito em PT/EN; descrição acessível informa que os números não representam resultados da Side/clientes. Hover é uma simulação local, sem modificar a série de dados.
+- Setembro/2026: soma exata de R$ 248.420 e comparação anterior de aproximadamente +18,7%. Sete dias compara com os sete dias imediatamente anteriores.
+- Entrada automática: frame → shell → KPIs/count-up → traçados → barras → atividade. Pausa fora da viewport/aba e termina estática.
+- Reflow mobile, cursor nativo touch/reduced motion e dados finais imediatos em reduced motion.
+
+## Correção do gráfico
+
+A regressão frame a frame reproduziu progresso normalizado arredondado para apenas `1px`/`0px`: o desenho saltava em vez de avançar continuamente. `autoRound: false` preserva valores intermediários. Máscaras SVG ao longo dos próprios paths revelam as linhas sem transformar o pontilhado da comparação em traço contínuo durante a animação.
+
+Formatadores numéricos agora são reutilizados: a amostra anterior criava 304 instâncias durante o count-up; a posterior cria zero. O teste posterior observou 62/64 frames intermediários, sem pausa de desenho acima de 100ms, em CPU normal e limitação 4×. Isso não é uma garantia de FPS em outros dispositivos. Relatório: `services/chart-reveal.json`.
 
 ## Validações
 
@@ -35,47 +41,47 @@ A rota é temporária e só existe em desenvolvimento: produção responde 404 n
 | `npm run lint` | pass, zero warnings |
 | `npm run typecheck` | pass |
 | `npm run build` | pass |
-| Console / hydration da prévia | pass, oito cenários sem erros/warnings |
+| Console / hydration | pass, oito cenários sem erros/warnings |
 | Desktop 1440×900 e 1920×1080 | pass |
-| Mobile 390×844, 320×568, tablet 768×1024 | pass, sem overflow horizontal |
+| Mobile 390×844, 320×568 e tablet 768×1024 | pass, sem overflow horizontal |
 | pt-BR / EN / EN mobile | pass |
-| Reduced motion e mudança dinâmica da preferência | pass |
-| Seletor, comparação, tooltip, tabela e teclado | pass |
-| Cursor Side desktop / nativo touch e reduced motion | pass |
-| Replay com contagem intermediária | pass |
+| Reduced motion | pass |
+| Título central → topo; entrada por scroll | pass |
+| KPI verde, valor maior, fonte igual e sem transform | pass |
+| Seletor customizado, comparação, tooltip e teclado | pass |
+| Modal, scroll interno, foco, Escape, blur local e cursor visível | pass |
+| Desenho contínuo e pontilhado estável, CPU normal/4× | pass |
 | Pausa fora da viewport e retomada | pass |
-| Cinco ciclos de desmontagem em React StrictMode | pass, zero observers/listeners/GSAP animations da demonstração após cleanup |
-| Gate de produção da rota review | pass, HTTP 404 pt-BR/EN |
-| Home de produção nos dois idiomas | pass, sem Services; Hero e Selected Work existentes presentes, console sem erros/warnings |
-| Diff nas seções aprovadas, global CSS, i18n e dependências | zero |
+| Cinco desmontagens em React StrictMode | pass, zero observers/listeners/animações da demonstração após cleanup |
+| Desmontagem com modal/lista abertos | pass, scroll restaurado e janelas removidas |
+| Rota review em produção | pass, HTTP 404 pt-BR/EN |
+| Home de produção PT/EN | pass, seções aprovadas presentes e console sem erros/warnings |
+| Diff em Hero, Work, cursor, estilos globais, i18n e dependências | zero |
 
-Não existe suíte persistente de testes no repositório. Verificações funcionais executadas com Playwright/Edge temporários fora das dependências do produto. Relatórios: `services/dashboard-results.json`, `services/dashboard-cleanup.json`, `services/phase-one-production.json`.
+Não há suíte persistente de testes no repositório. QA e regressões foram executados com Playwright/Edge temporários, fora das dependências do produto. Scripts descartáveis em `artifacts/services-8/` (ignorado pelo Git); resultados em `services/revision-results.json`, `services/dashboard-cleanup.json`, `services/chart-reveal.json` e `services/phase-one-production.json`.
 
-### Evidências
+## Evidências atuais
 
-- `services/dashboard-desktop.png`, `dashboard-wide.png`, `dashboard-en.png`;
-- `services/dashboard-mobile.png`, `dashboard-small-mobile.png`, `dashboard-tablet.png`, `dashboard-mobile-en.png`;
-- arquivos `*-hover.png` demonstram crosshair/tooltip;
-- `services/dashboard-desktop.mp4`: construção, KPI hover, consulta de dias, troca de período e replay;
-- `services/dashboard-en.mp4`, `dashboard-mobile.mp4`, `dashboard-reduced.mp4`.
+- `services/revision-desktop.png`, `revision-wide.png`, `revision-en.png`;
+- `services/revision-mobile.png`, `revision-small-mobile.png`, `revision-tablet.png`, `revision-mobile-en.png`, `revision-reduced.png`;
+- `revision-*-intro.png`, `revision-*-kpi.png`, `revision-*-period.png` e `revision-*-modal.png` demonstram as interações aplicáveis;
+- `services/revision-desktop.mp4`, `revision-en.mp4`, `revision-mobile.mp4`, `revision-reduced.mp4`: entrada por scroll, construção, gráfico, seletor e modal.
 
-## Critérios do checkpoint
+Os arquivos `dashboard-*` registram a primeira proposta, anterior a esta revisão; suas capturas/gravações não representam as interações atuais.
 
-- [x] Pesquisa Linear/Stripe/Vercel/Awwwards registrada.
-- [x] Quatro KPIs, período/comparação, gráfico principal e suporte contextual.
-- [x] Dados claramente demonstrativos e coerentes.
-- [x] Count-up, path drawing, barras e stagger na entrada automática.
-- [x] Estado final estático e replay funcional.
-- [x] Interação real no gráfico, hovers contidos e informação sem dependência de hover.
+## Critérios e pendências
+
+- [x] Pesquisa das referências obrigatórias registrada.
+- [x] Quatro KPIs, período/comparação, gráfico e contexto.
+- [x] Dados demonstrativos coerentes e sinalizados.
+- [x] Construção automática e estado final estático.
+- [x] Ajustes solicitados de título, hover, período, modal e gráfico.
 - [x] Mobile/EN/reduced motion/teclado/cleanup verificados.
 - [x] Seções aprovadas preservadas; nenhuma dependência adicionada.
-- [ ] Direção visual do dashboard aprovada pelo usuário.
+- [ ] Aprovação visual do dashboard pelo usuário.
 - [ ] Terminal isolado e comparação com referências aprovados.
 - [ ] Experiência original de sites implementada e revisada.
 - [ ] Integração dos três capítulos e transições 01→02 / 02→03.
-- [ ] Validação completa da seção integrada.
-- [ ] Aprovação visual final antes de push/PR.
+- [ ] Validação da seção integrada e aprovação final antes de push/PR.
 
-## Limites
-
-QA em Edge/Chromium, com emulação de viewport/touch/reduced motion; nenhum teste em dispositivos físicos ou Safari/Firefox. O dashboard interativo foi testado na rota de desenvolvimento. O build de produção validou a Home preservada e o bloqueio da rota de review; a seção integrada terá sua própria validação de produção após os checkpoints.
+QA em Edge/Chromium com emulação de viewport/touch/reduced motion. Sem testes em dispositivos físicos ou Safari/Firefox. O build de produção valida a Home preservada e o bloqueio do review; a seção integrada terá validação própria após os checkpoints.

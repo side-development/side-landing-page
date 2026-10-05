@@ -1,0 +1,32 @@
+{
+  "before": {
+    "normalizedOffsets": ["1px", "0px"],
+    "comparisonPatterns": [
+      "1px, 0.012px",
+      "0.008px, 0.012px"
+    ],
+    "formatterInstancesDuringCountup": 304,
+    "regression": "comparison must preserve dashed styling during reveal"
+  },
+  "after": {
+    "formatterInstancesDuringCountup": 0,
+    "checks": [
+      {
+        "cpuRate": 1,
+        "comparisonPattern": "0.008px, 0.012px",
+        "intermediateFrames": 62,
+        "maxStallMs": 0,
+        "maxFrameMs": 50,
+        "status": "pass"
+      },
+      {
+        "cpuRate": 4,
+        "comparisonPattern": "0.008px, 0.012px",
+        "intermediateFrames": 64,
+        "maxStallMs": 0,
+        "maxFrameMs": 17.09999999999991,
+        "status": "pass"
+      }
+    ]
+  }
+}
