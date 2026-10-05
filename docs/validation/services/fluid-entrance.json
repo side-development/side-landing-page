@@ -1,0 +1,3638 @@
+[
+  {
+    "name": "desktop",
+    "status": "pass",
+    "blurAfter1s": 4.1431,
+    "samples": [
+      {
+        "time": 9.199999809265137,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 25.599999809264773,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 42.2999998092655,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 58.99999980926441,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 75.69999980926514,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 92.49999980926441,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 108.99999980926441,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 125.69999980926514,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 142.39999980926586,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 158.9999998092644,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 175.59999980926477,
+        "scroll": 16,
+        "titleTop": 394.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 192.39999980926586,
+        "scroll": 31,
+        "titleTop": 379.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 208.9999998092644,
+        "scroll": 45,
+        "titleTop": 365.40625,
+        "stage": 558,
+        "frameBlur": 11.8325,
+        "copyBlur": 10,
+        "frameOpacity": 0.014,
+        "copyOpacity": 0
+      },
+      {
+        "time": 225.59999980926477,
+        "scroll": 60,
+        "titleTop": 350.40625,
+        "stage": 558,
+        "frameBlur": 11.644,
+        "copyBlur": 9.8429,
+        "frameOpacity": 0.0297,
+        "copyOpacity": 0.0157
+      },
+      {
+        "time": 242.2999998092655,
+        "scroll": 80,
+        "titleTop": 330.40625,
+        "stage": 558,
+        "frameBlur": 11.3406,
+        "copyBlur": 9.59,
+        "frameOpacity": 0.055,
+        "copyOpacity": 0.041
+      },
+      {
+        "time": 275.69999980926514,
+        "scroll": 84,
+        "titleTop": 326.40625,
+        "stage": 558,
+        "frameBlur": 11.2674,
+        "copyBlur": 9.5289,
+        "frameOpacity": 0.061,
+        "copyOpacity": 0.0471
+      },
+      {
+        "time": 292.7999998092655,
+        "scroll": 101,
+        "titleTop": 309.40625,
+        "stage": 558,
+        "frameBlur": 10.9541,
+        "copyBlur": 9.2676,
+        "frameOpacity": 0.0872,
+        "copyOpacity": 0.0732
+      },
+      {
+        "time": 342.2999998092655,
+        "scroll": 110,
+        "titleTop": 300.40625,
+        "stage": 558,
+        "frameBlur": 10.7561,
+        "copyBlur": 9.1024,
+        "frameOpacity": 0.1037,
+        "copyOpacity": 0.0898
+      },
+      {
+        "time": 359.19999980926514,
+        "scroll": 129,
+        "titleTop": 281.40625,
+        "stage": 558,
+        "frameBlur": 10.2366,
+        "copyBlur": 8.6688,
+        "frameOpacity": 0.1469,
+        "copyOpacity": 0.1331
+      },
+      {
+        "time": 376.4999998092644,
+        "scroll": 133,
+        "titleTop": 277.40625,
+        "stage": 558,
+        "frameBlur": 10.0918,
+        "copyBlur": 8.5478,
+        "frameOpacity": 0.159,
+        "copyOpacity": 0.1452
+      },
+      {
+        "time": 392.2999998092655,
+        "scroll": 139,
+        "titleTop": 271.40625,
+        "stage": 558,
+        "frameBlur": 9.8544,
+        "copyBlur": 8.3495,
+        "frameOpacity": 0.1788,
+        "copyOpacity": 0.165
+      },
+      {
+        "time": 408.9999998092644,
+        "scroll": 141,
+        "titleTop": 269.40625,
+        "stage": 558,
+        "frameBlur": 9.7514,
+        "copyBlur": 8.2635,
+        "frameOpacity": 0.1874,
+        "copyOpacity": 0.1736
+      },
+      {
+        "time": 425.7999998092655,
+        "scroll": 144,
+        "titleTop": 266.40625,
+        "stage": 558,
+        "frameBlur": 9.5768,
+        "copyBlur": 8.1176,
+        "frameOpacity": 0.2019,
+        "copyOpacity": 0.1882
+      },
+      {
+        "time": 442.2999998092655,
+        "scroll": 147,
+        "titleTop": 263.40625,
+        "stage": 558,
+        "frameBlur": 9.4027,
+        "copyBlur": 7.9721,
+        "frameOpacity": 0.2164,
+        "copyOpacity": 0.2028
+      },
+      {
+        "time": 459.2999998092655,
+        "scroll": 150,
+        "titleTop": 260.40625,
+        "stage": 558,
+        "frameBlur": 9.2394,
+        "copyBlur": 7.8356,
+        "frameOpacity": 0.23,
+        "copyOpacity": 0.2164
+      },
+      {
+        "time": 509.0999998092648,
+        "scroll": 152,
+        "titleTop": 258.40625,
+        "stage": 558,
+        "frameBlur": 9.0563,
+        "copyBlur": 7.6825,
+        "frameOpacity": 0.2453,
+        "copyOpacity": 0.2317
+      },
+      {
+        "time": 542.2999998092655,
+        "scroll": 156,
+        "titleTop": 254.40625,
+        "stage": 558,
+        "frameBlur": 8.5517,
+        "copyBlur": 7.2604,
+        "frameOpacity": 0.2874,
+        "copyOpacity": 0.274
+      },
+      {
+        "time": 558.8999998092659,
+        "scroll": 158,
+        "titleTop": 252.40625,
+        "stage": 558,
+        "frameBlur": 8.2321,
+        "copyBlur": 6.9929,
+        "frameOpacity": 0.314,
+        "copyOpacity": 0.3007
+      },
+      {
+        "time": 575.5999998092648,
+        "scroll": 159,
+        "titleTop": 251.40625,
+        "stage": 558,
+        "frameBlur": 8.0536,
+        "copyBlur": 6.8435,
+        "frameOpacity": 0.3289,
+        "copyOpacity": 0.3156
+      },
+      {
+        "time": 592.2999998092655,
+        "scroll": 159,
+        "titleTop": 251.40625,
+        "stage": 558,
+        "frameBlur": 7.7779,
+        "copyBlur": 6.6126,
+        "frameOpacity": 0.3518,
+        "copyOpacity": 0.3387
+      },
+      {
+        "time": 608.9999998092644,
+        "scroll": 159,
+        "titleTop": 251.40625,
+        "stage": 558,
+        "frameBlur": 7.6996,
+        "copyBlur": 6.547,
+        "frameOpacity": 0.3584,
+        "copyOpacity": 0.3453
+      },
+      {
+        "time": 625.5999998092648,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 7.563,
+        "copyBlur": 6.4326,
+        "frameOpacity": 0.3697,
+        "copyOpacity": 0.3567
+      },
+      {
+        "time": 642.2999998092655,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 7.4078,
+        "copyBlur": 6.3025,
+        "frameOpacity": 0.3827,
+        "copyOpacity": 0.3697
+      },
+      {
+        "time": 658.9999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 7.1862,
+        "copyBlur": 6.1168,
+        "frameOpacity": 0.4011,
+        "copyOpacity": 0.3883
+      },
+      {
+        "time": 676.4999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 7.1,
+        "copyBlur": 6.0445,
+        "frameOpacity": 0.4083,
+        "copyOpacity": 0.3955
+      },
+      {
+        "time": 692.6999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 6.8244,
+        "copyBlur": 5.8134,
+        "frameOpacity": 0.4313,
+        "copyOpacity": 0.4187
+      },
+      {
+        "time": 742.3999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 6.7584,
+        "copyBlur": 5.758,
+        "frameOpacity": 0.4368,
+        "copyOpacity": 0.4242
+      },
+      {
+        "time": 759.3999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 6.2741,
+        "copyBlur": 5.3516,
+        "frameOpacity": 0.4772,
+        "copyOpacity": 0.4648
+      },
+      {
+        "time": 775.6999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 6.164,
+        "copyBlur": 5.2591,
+        "frameOpacity": 0.4863,
+        "copyOpacity": 0.4741
+      },
+      {
+        "time": 842.3999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 6,
+        "copyBlur": 5.1214,
+        "frameOpacity": 0.5,
+        "copyOpacity": 0.4879
+      },
+      {
+        "time": 858.8999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 5.4117,
+        "copyBlur": 4.627,
+        "frameOpacity": 0.549,
+        "copyOpacity": 0.5373
+      },
+      {
+        "time": 875.9999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 5.2637,
+        "copyBlur": 4.5025,
+        "frameOpacity": 0.5614,
+        "copyOpacity": 0.5498
+      },
+      {
+        "time": 909.1999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 5.1257,
+        "copyBlur": 4.3864,
+        "frameOpacity": 0.5729,
+        "copyOpacity": 0.5614
+      },
+      {
+        "time": 925.8999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.8369,
+        "copyBlur": 4.1433,
+        "frameOpacity": 0.5969,
+        "copyOpacity": 0.5857
+      },
+      {
+        "time": 942.3999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.6949,
+        "copyBlur": 4.0237,
+        "frameOpacity": 0.6088,
+        "copyOpacity": 0.5976
+      },
+      {
+        "time": 992.5999998092648,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.538,
+        "copyBlur": 3.8916,
+        "frameOpacity": 0.6218,
+        "copyOpacity": 0.6108
+      },
+      {
+        "time": 1008.9999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.1431,
+        "copyBlur": 3.5588,
+        "frameOpacity": 0.6547,
+        "copyOpacity": 0.6441
+      },
+      {
+        "time": 1042.5999998092648,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.0251,
+        "copyBlur": 3.4592,
+        "frameOpacity": 0.6646,
+        "copyOpacity": 0.6541
+      },
+      {
+        "time": 1058.8999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.7702,
+        "copyBlur": 3.2441,
+        "frameOpacity": 0.6858,
+        "copyOpacity": 0.6756
+      },
+      {
+        "time": 1075.6999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.6265,
+        "copyBlur": 3.1228,
+        "frameOpacity": 0.6978,
+        "copyOpacity": 0.6877
+      },
+      {
+        "time": 1092.3999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.5147,
+        "copyBlur": 3.0283,
+        "frameOpacity": 0.7071,
+        "copyOpacity": 0.6972
+      },
+      {
+        "time": 1125.6999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.3971,
+        "copyBlur": 2.9289,
+        "frameOpacity": 0.7169,
+        "copyOpacity": 0.7071
+      },
+      {
+        "time": 1142.7999998092655,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.1527,
+        "copyBlur": 2.7223,
+        "frameOpacity": 0.7373,
+        "copyOpacity": 0.7278
+      },
+      {
+        "time": 1209.2999998092655,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.9641,
+        "copyBlur": 2.5627,
+        "frameOpacity": 0.753,
+        "copyOpacity": 0.7437
+      },
+      {
+        "time": 1242.2999998092655,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.5632,
+        "copyBlur": 2.2231,
+        "frameOpacity": 0.7864,
+        "copyOpacity": 0.7777
+      },
+      {
+        "time": 1258.8999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.3787,
+        "copyBlur": 2.0665,
+        "frameOpacity": 0.8018,
+        "copyOpacity": 0.7934
+      },
+      {
+        "time": 1275.6999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.2734,
+        "copyBlur": 1.977,
+        "frameOpacity": 0.8106,
+        "copyOpacity": 0.8023
+      },
+      {
+        "time": 1292.1999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.1762,
+        "copyBlur": 1.8945,
+        "frameOpacity": 0.8187,
+        "copyOpacity": 0.8106
+      },
+      {
+        "time": 1325.6999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.075,
+        "copyBlur": 1.8085,
+        "frameOpacity": 0.8271,
+        "copyOpacity": 0.8192
+      },
+      {
+        "time": 1342.2999998092655,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.8849,
+        "copyBlur": 1.6467,
+        "frameOpacity": 0.8429,
+        "copyOpacity": 0.8353
+      },
+      {
+        "time": 1392.6999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.7903,
+        "copyBlur": 1.5661,
+        "frameOpacity": 0.8508,
+        "copyOpacity": 0.8434
+      },
+      {
+        "time": 1425.5999998092648,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.4944,
+        "copyBlur": 1.3137,
+        "frameOpacity": 0.8755,
+        "copyOpacity": 0.8686
+      },
+      {
+        "time": 1442.3999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.3414,
+        "copyBlur": 1.1828,
+        "frameOpacity": 0.8882,
+        "copyOpacity": 0.8817
+      },
+      {
+        "time": 1459.0999998092648,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.2748,
+        "copyBlur": 1.1259,
+        "frameOpacity": 0.8938,
+        "copyOpacity": 0.8874
+      },
+      {
+        "time": 1492.2999998092655,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.1916,
+        "copyBlur": 1.0546,
+        "frameOpacity": 0.9007,
+        "copyOpacity": 0.8945
+      },
+      {
+        "time": 1525.5999998092648,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.0078,
+        "copyBlur": 0.8968,
+        "frameOpacity": 0.916,
+        "copyOpacity": 0.9103
+      },
+      {
+        "time": 1542.4999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.9134,
+        "copyBlur": 0.8155,
+        "frameOpacity": 0.9239,
+        "copyOpacity": 0.9184
+      },
+      {
+        "time": 1575.6999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.8388,
+        "copyBlur": 0.7512,
+        "frameOpacity": 0.9301,
+        "copyOpacity": 0.9249
+      },
+      {
+        "time": 1592.4999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.7201,
+        "copyBlur": 0.6486,
+        "frameOpacity": 0.94,
+        "copyOpacity": 0.9351
+      },
+      {
+        "time": 1625.8999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.6301,
+        "copyBlur": 0.5707,
+        "frameOpacity": 0.9475,
+        "copyOpacity": 0.9429
+      },
+      {
+        "time": 1642.1999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.5554,
+        "copyBlur": 0.5057,
+        "frameOpacity": 0.9537,
+        "copyOpacity": 0.9494
+      },
+      {
+        "time": 1692.3999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.5091,
+        "copyBlur": 0.4655,
+        "frameOpacity": 0.9576,
+        "copyOpacity": 0.9535
+      },
+      {
+        "time": 1709.1999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.3514,
+        "copyBlur": 0.3273,
+        "frameOpacity": 0.9707,
+        "copyOpacity": 0.9673
+      },
+      {
+        "time": 1725.6999998092651,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.3194,
+        "copyBlur": 0.2992,
+        "frameOpacity": 0.9734,
+        "copyOpacity": 0.9701
+      },
+      {
+        "time": 1742.2999998092655,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.2755,
+        "copyBlur": 0.2602,
+        "frameOpacity": 0.977,
+        "copyOpacity": 0.974
+      },
+      {
+        "time": 1792.3999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.2472,
+        "copyBlur": 0.2352,
+        "frameOpacity": 0.9794,
+        "copyOpacity": 0.9765
+      },
+      {
+        "time": 1809.2999998092655,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.1413,
+        "copyBlur": 0.14,
+        "frameOpacity": 0.9882,
+        "copyOpacity": 0.986
+      },
+      {
+        "time": 1825.9999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.1197,
+        "copyBlur": 0.1204,
+        "frameOpacity": 0.99,
+        "copyOpacity": 0.988
+      },
+      {
+        "time": 1842.3999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.1027,
+        "copyBlur": 0.1047,
+        "frameOpacity": 0.9914,
+        "copyOpacity": 0.9895
+      },
+      {
+        "time": 1858.9999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.082,
+        "copyBlur": 0.0856,
+        "frameOpacity": 0.9932,
+        "copyOpacity": 0.9914
+      },
+      {
+        "time": 1908.9999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.0636,
+        "copyBlur": 0.0683,
+        "frameOpacity": 0.9947,
+        "copyOpacity": 0.9932
+      },
+      {
+        "time": 1925.5999998092648,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.0199,
+        "copyBlur": 0.0256,
+        "frameOpacity": 0.9983,
+        "copyOpacity": 0.9974
+      },
+      {
+        "time": 1942.4999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.0119,
+        "copyBlur": 0.0171,
+        "frameOpacity": 0.999,
+        "copyOpacity": 0.9983
+      },
+      {
+        "time": 1992.3999998092659,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.0029,
+        "copyBlur": 0.0064,
+        "frameOpacity": 0.9998,
+        "copyOpacity": 0.9994
+      },
+      {
+        "time": 2009.5999998092648,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2025.5999998092648,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2058.899999809266,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2075.699999809265,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2092.599999809265,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2109.099999809265,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2125.899999809266,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2142.199999809265,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2158.9999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2175.899999809266,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2192.4999998092644,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2225.599999809265,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      }
+    ]
+  },
+  {
+    "name": "en",
+    "status": "pass",
+    "blurAfter1s": 3.1527,
+    "samples": [
+      {
+        "time": 0.6000001430511475,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 17.20000014305151,
+        "scroll": 0,
+        "titleTop": 410.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 33.90000014305133,
+        "scroll": 21,
+        "titleTop": 389.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 50.60000014305115,
+        "scroll": 33,
+        "titleTop": 377.40625,
+        "stage": 558,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 67.20000014305151,
+        "scroll": 48,
+        "titleTop": 362.40625,
+        "stage": 558,
+        "frameBlur": 11.822,
+        "copyBlur": 9.8517,
+        "frameOpacity": 0.0148,
+        "copyOpacity": 0.0148
+      },
+      {
+        "time": 83.90000014305133,
+        "scroll": 60,
+        "titleTop": 350.40625,
+        "stage": 558,
+        "frameBlur": 11.6545,
+        "copyBlur": 9.7121,
+        "frameOpacity": 0.0288,
+        "copyOpacity": 0.0288
+      },
+      {
+        "time": 100.70000014305151,
+        "scroll": 72,
+        "titleTop": 338.40625,
+        "stage": 558,
+        "frameBlur": 11.4766,
+        "copyBlur": 9.5638,
+        "frameOpacity": 0.0436,
+        "copyOpacity": 0.0436
+      },
+      {
+        "time": 117.50000014305078,
+        "scroll": 84,
+        "titleTop": 326.40625,
+        "stage": 558,
+        "frameBlur": 11.2883,
+        "copyBlur": 9.4069,
+        "frameOpacity": 0.0593,
+        "copyOpacity": 0.0593
+      },
+      {
+        "time": 134.00000014305078,
+        "scroll": 93,
+        "titleTop": 317.40625,
+        "stage": 558,
+        "frameBlur": 11.1211,
+        "copyBlur": 9.2676,
+        "frameOpacity": 0.0732,
+        "copyOpacity": 0.0732
+      },
+      {
+        "time": 150.7000001430515,
+        "scroll": 102,
+        "titleTop": 308.40625,
+        "stage": 558,
+        "frameBlur": 10.9541,
+        "copyBlur": 9.1284,
+        "frameOpacity": 0.0872,
+        "copyOpacity": 0.0872
+      },
+      {
+        "time": 167.2000001430515,
+        "scroll": 109,
+        "titleTop": 301.40625,
+        "stage": 558,
+        "frameBlur": 10.7873,
+        "copyBlur": 8.9894,
+        "frameOpacity": 0.1011,
+        "copyOpacity": 0.1011
+      },
+      {
+        "time": 184.00000014305078,
+        "scroll": 117,
+        "titleTop": 293.40625,
+        "stage": 558,
+        "frameBlur": 10.6104,
+        "copyBlur": 8.842,
+        "frameOpacity": 0.1158,
+        "copyOpacity": 0.1158
+      },
+      {
+        "time": 200.60000014305115,
+        "scroll": 123,
+        "titleTop": 287.40625,
+        "stage": 558,
+        "frameBlur": 10.4337,
+        "copyBlur": 8.6947,
+        "frameOpacity": 0.1305,
+        "copyOpacity": 0.1305
+      },
+      {
+        "time": 217.30000014305097,
+        "scroll": 128,
+        "titleTop": 282.40625,
+        "stage": 558,
+        "frameBlur": 10.2677,
+        "copyBlur": 8.5564,
+        "frameOpacity": 0.1444,
+        "copyOpacity": 0.1444
+      },
+      {
+        "time": 233.90000014305133,
+        "scroll": 133,
+        "titleTop": 277.40625,
+        "stage": 558,
+        "frameBlur": 10.1021,
+        "copyBlur": 8.4184,
+        "frameOpacity": 0.1582,
+        "copyOpacity": 0.1582
+      },
+      {
+        "time": 250.7000001430515,
+        "scroll": 138,
+        "titleTop": 272.40625,
+        "stage": 558,
+        "frameBlur": 9.9265,
+        "copyBlur": 8.2721,
+        "frameOpacity": 0.1728,
+        "copyOpacity": 0.1728
+      },
+      {
+        "time": 267.30000014305097,
+        "scroll": 141,
+        "titleTop": 269.40625,
+        "stage": 558,
+        "frameBlur": 9.7514,
+        "copyBlur": 8.1262,
+        "frameOpacity": 0.1874,
+        "copyOpacity": 0.1874
+      },
+      {
+        "time": 283.90000014305133,
+        "scroll": 145,
+        "titleTop": 265.40625,
+        "stage": 558,
+        "frameBlur": 9.5768,
+        "copyBlur": 7.9807,
+        "frameOpacity": 0.2019,
+        "copyOpacity": 0.2019
+      },
+      {
+        "time": 300.7000001430515,
+        "scroll": 148,
+        "titleTop": 262.40625,
+        "stage": 558,
+        "frameBlur": 9.4129,
+        "copyBlur": 7.8441,
+        "frameOpacity": 0.2156,
+        "copyOpacity": 0.2156
+      },
+      {
+        "time": 317.30000014305097,
+        "scroll": 150,
+        "titleTop": 260.40625,
+        "stage": 558,
+        "frameBlur": 9.2394,
+        "copyBlur": 7.6995,
+        "frameOpacity": 0.23,
+        "copyOpacity": 0.23
+      },
+      {
+        "time": 333.90000014305133,
+        "scroll": 152,
+        "titleTop": 258.40625,
+        "stage": 558,
+        "frameBlur": 9.0665,
+        "copyBlur": 7.5554,
+        "frameOpacity": 0.2445,
+        "copyOpacity": 0.2445
+      },
+      {
+        "time": 350.60000014305115,
+        "scroll": 154,
+        "titleTop": 256.40625,
+        "stage": 558,
+        "frameBlur": 8.8942,
+        "copyBlur": 7.4118,
+        "frameOpacity": 0.2588,
+        "copyOpacity": 0.2588
+      },
+      {
+        "time": 367.2000001430515,
+        "scroll": 155,
+        "titleTop": 255.40625,
+        "stage": 558,
+        "frameBlur": 8.7326,
+        "copyBlur": 7.2772,
+        "frameOpacity": 0.2723,
+        "copyOpacity": 0.2723
+      },
+      {
+        "time": 383.90000014305133,
+        "scroll": 156,
+        "titleTop": 254.40625,
+        "stage": 558,
+        "frameBlur": 8.5517,
+        "copyBlur": 7.1264,
+        "frameOpacity": 0.2874,
+        "copyOpacity": 0.2874
+      },
+      {
+        "time": 400.60000014305115,
+        "scroll": 157,
+        "titleTop": 253.40625,
+        "stage": 558,
+        "frameBlur": 8.3915,
+        "copyBlur": 6.9929,
+        "frameOpacity": 0.3007,
+        "copyOpacity": 0.3007
+      },
+      {
+        "time": 417.30000014305097,
+        "scroll": 158,
+        "titleTop": 252.40625,
+        "stage": 558,
+        "frameBlur": 8.2221,
+        "copyBlur": 6.8518,
+        "frameOpacity": 0.3148,
+        "copyOpacity": 0.3148
+      },
+      {
+        "time": 434.0000001430508,
+        "scroll": 159,
+        "titleTop": 251.40625,
+        "stage": 558,
+        "frameBlur": 8.0635,
+        "copyBlur": 6.7196,
+        "frameOpacity": 0.328,
+        "copyOpacity": 0.328
+      },
+      {
+        "time": 450.60000014305115,
+        "scroll": 159,
+        "titleTop": 251.40625,
+        "stage": 558,
+        "frameBlur": 7.9056,
+        "copyBlur": 6.588,
+        "frameOpacity": 0.3412,
+        "copyOpacity": 0.3412
+      },
+      {
+        "time": 467.2000001430515,
+        "scroll": 159,
+        "titleTop": 251.40625,
+        "stage": 558,
+        "frameBlur": 7.7191,
+        "copyBlur": 6.4326,
+        "frameOpacity": 0.3567,
+        "copyOpacity": 0.3567
+      },
+      {
+        "time": 484.0000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 7.5728,
+        "copyBlur": 6.3106,
+        "frameOpacity": 0.3689,
+        "copyOpacity": 0.3689
+      },
+      {
+        "time": 500.60000014305115,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 7.4175,
+        "copyBlur": 6.1812,
+        "frameOpacity": 0.3819,
+        "copyOpacity": 0.3819
+      },
+      {
+        "time": 517.5000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 7.2535,
+        "copyBlur": 6.0445,
+        "frameOpacity": 0.3955,
+        "copyOpacity": 0.3955
+      },
+      {
+        "time": 534.0000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 7.0905,
+        "copyBlur": 5.9087,
+        "frameOpacity": 0.4091,
+        "copyOpacity": 0.4091
+      },
+      {
+        "time": 550.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 6.9381,
+        "copyBlur": 5.7817,
+        "frameOpacity": 0.4218,
+        "copyOpacity": 0.4218
+      },
+      {
+        "time": 567.300000143051,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 6.7772,
+        "copyBlur": 5.6477,
+        "frameOpacity": 0.4352,
+        "copyOpacity": 0.4352
+      },
+      {
+        "time": 583.9000001430513,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 6.6175,
+        "copyBlur": 5.5146,
+        "frameOpacity": 0.4485,
+        "copyOpacity": 0.4485
+      },
+      {
+        "time": 600.7000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 6.459,
+        "copyBlur": 5.3825,
+        "frameOpacity": 0.4617,
+        "copyOpacity": 0.4617
+      },
+      {
+        "time": 617.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 6.3109,
+        "copyBlur": 5.2591,
+        "frameOpacity": 0.4741,
+        "copyOpacity": 0.4741
+      },
+      {
+        "time": 633.9000001430513,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 6.1457,
+        "copyBlur": 5.1214,
+        "frameOpacity": 0.4879,
+        "copyOpacity": 0.4879
+      },
+      {
+        "time": 650.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 5.9819,
+        "copyBlur": 4.9849,
+        "frameOpacity": 0.5015,
+        "copyOpacity": 0.5015
+      },
+      {
+        "time": 667.300000143051,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 5.8555,
+        "copyBlur": 4.8796,
+        "frameOpacity": 0.512,
+        "copyOpacity": 0.512
+      },
+      {
+        "time": 684.0000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 5.7033,
+        "copyBlur": 4.7527,
+        "frameOpacity": 0.5247,
+        "copyOpacity": 0.5247
+      },
+      {
+        "time": 701.1000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 5.5612,
+        "copyBlur": 4.6344,
+        "frameOpacity": 0.5366,
+        "copyOpacity": 0.5366
+      },
+      {
+        "time": 717.4000001430513,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 5.4117,
+        "copyBlur": 4.5098,
+        "frameOpacity": 0.549,
+        "copyOpacity": 0.549
+      },
+      {
+        "time": 734.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 5.2637,
+        "copyBlur": 4.3864,
+        "frameOpacity": 0.5614,
+        "copyOpacity": 0.5614
+      },
+      {
+        "time": 751.1000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 5.1171,
+        "copyBlur": 4.2642,
+        "frameOpacity": 0.5736,
+        "copyOpacity": 0.5736
+      },
+      {
+        "time": 767.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.9805,
+        "copyBlur": 4.1504,
+        "frameOpacity": 0.585,
+        "copyOpacity": 0.585
+      },
+      {
+        "time": 784.0000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.8453,
+        "copyBlur": 4.0378,
+        "frameOpacity": 0.5962,
+        "copyOpacity": 0.5962
+      },
+      {
+        "time": 800.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.7032,
+        "copyBlur": 3.9193,
+        "frameOpacity": 0.6081,
+        "copyOpacity": 0.6081
+      },
+      {
+        "time": 817.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.5627,
+        "copyBlur": 3.8022,
+        "frameOpacity": 0.6198,
+        "copyOpacity": 0.6198
+      },
+      {
+        "time": 834.0000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.4319,
+        "copyBlur": 3.6932,
+        "frameOpacity": 0.6307,
+        "copyOpacity": 0.6307
+      },
+      {
+        "time": 850.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.2946,
+        "copyBlur": 3.5788,
+        "frameOpacity": 0.6421,
+        "copyOpacity": 0.6421
+      },
+      {
+        "time": 867.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.159,
+        "copyBlur": 3.4658,
+        "frameOpacity": 0.6534,
+        "copyOpacity": 0.6534
+      },
+      {
+        "time": 883.9000001430513,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 4.0251,
+        "copyBlur": 3.3542,
+        "frameOpacity": 0.6646,
+        "copyOpacity": 0.6646
+      },
+      {
+        "time": 900.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.8775,
+        "copyBlur": 3.2312,
+        "frameOpacity": 0.6769,
+        "copyOpacity": 0.6769
+      },
+      {
+        "time": 917.5000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.7626,
+        "copyBlur": 3.1355,
+        "frameOpacity": 0.6865,
+        "copyOpacity": 0.6865
+      },
+      {
+        "time": 933.8000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.649,
+        "copyBlur": 3.0409,
+        "frameOpacity": 0.6959,
+        "copyOpacity": 0.6959
+      },
+      {
+        "time": 950.5000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.5221,
+        "copyBlur": 2.9351,
+        "frameOpacity": 0.7065,
+        "copyOpacity": 0.7065
+      },
+      {
+        "time": 967.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.4044,
+        "copyBlur": 2.837,
+        "frameOpacity": 0.7163,
+        "copyOpacity": 0.7163
+      },
+      {
+        "time": 984.0000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.2739,
+        "copyBlur": 2.7283,
+        "frameOpacity": 0.7272,
+        "copyOpacity": 0.7272
+      },
+      {
+        "time": 1001.1000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.1527,
+        "copyBlur": 2.6272,
+        "frameOpacity": 0.7373,
+        "copyOpacity": 0.7373
+      },
+      {
+        "time": 1017.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 3.0403,
+        "copyBlur": 2.5336,
+        "frameOpacity": 0.7466,
+        "copyOpacity": 0.7466
+      },
+      {
+        "time": 1034.1000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.9229,
+        "copyBlur": 2.4358,
+        "frameOpacity": 0.7564,
+        "copyOpacity": 0.7564
+      },
+      {
+        "time": 1050.7000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.8075,
+        "copyBlur": 2.3396,
+        "frameOpacity": 0.766,
+        "copyOpacity": 0.766
+      },
+      {
+        "time": 1067.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.7007,
+        "copyBlur": 2.2506,
+        "frameOpacity": 0.7749,
+        "copyOpacity": 0.7749
+      },
+      {
+        "time": 1083.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.5892,
+        "copyBlur": 2.1576,
+        "frameOpacity": 0.7842,
+        "copyOpacity": 0.7842
+      },
+      {
+        "time": 1101.1000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.467,
+        "copyBlur": 2.0559,
+        "frameOpacity": 0.7944,
+        "copyOpacity": 0.7944
+      },
+      {
+        "time": 1117.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.3787,
+        "copyBlur": 1.9822,
+        "frameOpacity": 0.8018,
+        "copyOpacity": 0.8018
+      },
+      {
+        "time": 1133.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.2795,
+        "copyBlur": 1.8996,
+        "frameOpacity": 0.81,
+        "copyOpacity": 0.81
+      },
+      {
+        "time": 1150.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.1762,
+        "copyBlur": 1.8135,
+        "frameOpacity": 0.8187,
+        "copyOpacity": 0.8187
+      },
+      {
+        "time": 1167.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 2.075,
+        "copyBlur": 1.7292,
+        "frameOpacity": 0.8271,
+        "copyOpacity": 0.8271
+      },
+      {
+        "time": 1183.8000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.9818,
+        "copyBlur": 1.6515,
+        "frameOpacity": 0.8348,
+        "copyOpacity": 0.8348
+      },
+      {
+        "time": 1200.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.8849,
+        "copyBlur": 1.5708,
+        "frameOpacity": 0.8429,
+        "copyOpacity": 0.8429
+      },
+      {
+        "time": 1217.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.7903,
+        "copyBlur": 1.4919,
+        "frameOpacity": 0.8508,
+        "copyOpacity": 0.8508
+      },
+      {
+        "time": 1234.0000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.7032,
+        "copyBlur": 1.4194,
+        "frameOpacity": 0.8581,
+        "copyOpacity": 0.8581
+      },
+      {
+        "time": 1250.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.6129,
+        "copyBlur": 1.3441,
+        "frameOpacity": 0.8656,
+        "copyOpacity": 0.8656
+      },
+      {
+        "time": 1267.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.5249,
+        "copyBlur": 1.2708,
+        "frameOpacity": 0.8729,
+        "copyOpacity": 0.8729
+      },
+      {
+        "time": 1283.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.4442,
+        "copyBlur": 1.2035,
+        "frameOpacity": 0.8796,
+        "copyOpacity": 0.8796
+      },
+      {
+        "time": 1300.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.3607,
+        "copyBlur": 1.1339,
+        "frameOpacity": 0.8866,
+        "copyOpacity": 0.8866
+      },
+      {
+        "time": 1317.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.2795,
+        "copyBlur": 1.0663,
+        "frameOpacity": 0.8934,
+        "copyOpacity": 0.8934
+      },
+      {
+        "time": 1334.1000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.2007,
+        "copyBlur": 1.0006,
+        "frameOpacity": 0.8999,
+        "copyOpacity": 0.8999
+      },
+      {
+        "time": 1350.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.1287,
+        "copyBlur": 0.9406,
+        "frameOpacity": 0.9059,
+        "copyOpacity": 0.9059
+      },
+      {
+        "time": 1367.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 1.0546,
+        "copyBlur": 0.8788,
+        "frameOpacity": 0.9121,
+        "copyOpacity": 0.9121
+      },
+      {
+        "time": 1384.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.9828,
+        "copyBlur": 0.819,
+        "frameOpacity": 0.9181,
+        "copyOpacity": 0.9181
+      },
+      {
+        "time": 1400.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.9094,
+        "copyBlur": 0.7579,
+        "frameOpacity": 0.9242,
+        "copyOpacity": 0.9242
+      },
+      {
+        "time": 1417.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.8504,
+        "copyBlur": 0.7087,
+        "frameOpacity": 0.9291,
+        "copyOpacity": 0.9291
+      },
+      {
+        "time": 1433.8000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.7895,
+        "copyBlur": 0.658,
+        "frameOpacity": 0.9342,
+        "copyOpacity": 0.9342
+      },
+      {
+        "time": 1450.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.7273,
+        "copyBlur": 0.6061,
+        "frameOpacity": 0.9394,
+        "copyOpacity": 0.9394
+      },
+      {
+        "time": 1467.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.6675,
+        "copyBlur": 0.5562,
+        "frameOpacity": 0.9444,
+        "copyOpacity": 0.9444
+      },
+      {
+        "time": 1483.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.6135,
+        "copyBlur": 0.5112,
+        "frameOpacity": 0.9489,
+        "copyOpacity": 0.9489
+      },
+      {
+        "time": 1500.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.5585,
+        "copyBlur": 0.4655,
+        "frameOpacity": 0.9535,
+        "copyOpacity": 0.9535
+      },
+      {
+        "time": 1517.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.5061,
+        "copyBlur": 0.4218,
+        "frameOpacity": 0.9578,
+        "copyOpacity": 0.9578
+      },
+      {
+        "time": 1533.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.4562,
+        "copyBlur": 0.3802,
+        "frameOpacity": 0.962,
+        "copyOpacity": 0.962
+      },
+      {
+        "time": 1550.7000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.4062,
+        "copyBlur": 0.3385,
+        "frameOpacity": 0.9662,
+        "copyOpacity": 0.9662
+      },
+      {
+        "time": 1567.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.3667,
+        "copyBlur": 0.3055,
+        "frameOpacity": 0.9694,
+        "copyOpacity": 0.9694
+      },
+      {
+        "time": 1583.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.3267,
+        "copyBlur": 0.2722,
+        "frameOpacity": 0.9728,
+        "copyOpacity": 0.9728
+      },
+      {
+        "time": 1600.5000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.2867,
+        "copyBlur": 0.2389,
+        "frameOpacity": 0.9761,
+        "copyOpacity": 0.9761
+      },
+      {
+        "time": 1617.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.2493,
+        "copyBlur": 0.2078,
+        "frameOpacity": 0.9792,
+        "copyOpacity": 0.9792
+      },
+      {
+        "time": 1633.8000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.2165,
+        "copyBlur": 0.1804,
+        "frameOpacity": 0.982,
+        "copyOpacity": 0.982
+      },
+      {
+        "time": 1650.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.1841,
+        "copyBlur": 0.1534,
+        "frameOpacity": 0.9847,
+        "copyOpacity": 0.9847
+      },
+      {
+        "time": 1667.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.1544,
+        "copyBlur": 0.1286,
+        "frameOpacity": 0.9871,
+        "copyOpacity": 0.9871
+      },
+      {
+        "time": 1683.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.1287,
+        "copyBlur": 0.1073,
+        "frameOpacity": 0.9893,
+        "copyOpacity": 0.9893
+      },
+      {
+        "time": 1700.5000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.104,
+        "copyBlur": 0.0867,
+        "frameOpacity": 0.9913,
+        "copyOpacity": 0.9913
+      },
+      {
+        "time": 1717.3000001430519,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.082,
+        "copyBlur": 0.0683,
+        "frameOpacity": 0.9932,
+        "copyOpacity": 0.9932
+      },
+      {
+        "time": 1733.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.0625,
+        "copyBlur": 0.0521,
+        "frameOpacity": 0.9948,
+        "copyOpacity": 0.9948
+      },
+      {
+        "time": 1750.7000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.0466,
+        "copyBlur": 0.0388,
+        "frameOpacity": 0.9961,
+        "copyOpacity": 0.9961
+      },
+      {
+        "time": 1767.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.0322,
+        "copyBlur": 0.0269,
+        "frameOpacity": 0.9973,
+        "copyOpacity": 0.9973
+      },
+      {
+        "time": 1783.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.0211,
+        "copyBlur": 0.0176,
+        "frameOpacity": 0.9982,
+        "copyOpacity": 0.9982
+      },
+      {
+        "time": 1800.7000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.0114,
+        "copyBlur": 0.0095,
+        "frameOpacity": 0.999,
+        "copyOpacity": 0.999
+      },
+      {
+        "time": 1817.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.0056,
+        "copyBlur": 0.0047,
+        "frameOpacity": 0.9995,
+        "copyOpacity": 0.9995
+      },
+      {
+        "time": 1834.0000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0.0015,
+        "copyBlur": 0.0012,
+        "frameOpacity": 0.9999,
+        "copyOpacity": 0.9999
+      },
+      {
+        "time": 1850.5000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1867.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1884.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1900.5000001430508,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1917.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1933.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1950.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1967.4000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1983.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2000.6000001430511,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2017.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2033.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2050.500000143051,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2067.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2083.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2100.600000143051,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2117.300000143052,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2133.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2150.600000143051,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2167.2000001430515,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2183.9000001430504,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2200.500000143051,
+        "scroll": 160,
+        "titleTop": 250.40625,
+        "stage": 558,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      }
+    ]
+  },
+  {
+    "name": "mobile",
+    "status": "pass",
+    "blurAfter1s": 3.1598,
+    "samples": [
+      {
+        "time": 8.400000095367432,
+        "scroll": 0,
+        "titleTop": 403.3046875,
+        "stage": 523.265625,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 24.700000095367614,
+        "scroll": 0,
+        "titleTop": 403.3046875,
+        "stage": 523.265625,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 41.30000009536707,
+        "scroll": 0,
+        "titleTop": 403.3046875,
+        "stage": 523.265625,
+        "frameBlur": 12,
+        "copyBlur": 10,
+        "frameOpacity": 0,
+        "copyOpacity": 0
+      },
+      {
+        "time": 58.000000095367795,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 12,
+        "copyBlur": 9.8342,
+        "frameOpacity": 0,
+        "copyOpacity": 0.0166
+      },
+      {
+        "time": 74.70000009536761,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 11.8429,
+        "copyBlur": 9.7033,
+        "frameOpacity": 0.0131,
+        "copyOpacity": 0.0297
+      },
+      {
+        "time": 91.5000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 11.6545,
+        "copyBlur": 9.5464,
+        "frameOpacity": 0.0288,
+        "copyOpacity": 0.0454
+      },
+      {
+        "time": 108.20000009536761,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 11.487,
+        "copyBlur": 9.4069,
+        "frameOpacity": 0.0427,
+        "copyOpacity": 0.0593
+      },
+      {
+        "time": 124.80000009536707,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 11.2988,
+        "copyBlur": 9.2502,
+        "frameOpacity": 0.0584,
+        "copyOpacity": 0.075
+      },
+      {
+        "time": 141.60000009536725,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 11.1316,
+        "copyBlur": 9.1111,
+        "frameOpacity": 0.0724,
+        "copyOpacity": 0.0889
+      },
+      {
+        "time": 158.2000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 10.9646,
+        "copyBlur": 8.9721,
+        "frameOpacity": 0.0863,
+        "copyOpacity": 0.1028
+      },
+      {
+        "time": 175.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 10.7977,
+        "copyBlur": 8.8333,
+        "frameOpacity": 0.1002,
+        "copyOpacity": 0.1167
+      },
+      {
+        "time": 191.5000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 10.6208,
+        "copyBlur": 8.6861,
+        "frameOpacity": 0.1149,
+        "copyOpacity": 0.1314
+      },
+      {
+        "time": 208.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 10.4441,
+        "copyBlur": 8.5392,
+        "frameOpacity": 0.1297,
+        "copyOpacity": 0.1461
+      },
+      {
+        "time": 225.90000009536743,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 10.2574,
+        "copyBlur": 8.384,
+        "frameOpacity": 0.1452,
+        "copyOpacity": 0.1616
+      },
+      {
+        "time": 241.40000009536743,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 10.1021,
+        "copyBlur": 8.2549,
+        "frameOpacity": 0.1582,
+        "copyOpacity": 0.1745
+      },
+      {
+        "time": 258.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 9.9369,
+        "copyBlur": 8.1176,
+        "frameOpacity": 0.1719,
+        "copyOpacity": 0.1882
+      },
+      {
+        "time": 274.60000009536725,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 9.7411,
+        "copyBlur": 7.955,
+        "frameOpacity": 0.1882,
+        "copyOpacity": 0.2045
+      },
+      {
+        "time": 291.30000009536707,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 9.5871,
+        "copyBlur": 7.8271,
+        "frameOpacity": 0.2011,
+        "copyOpacity": 0.2173
+      },
+      {
+        "time": 308.2000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 9.4129,
+        "copyBlur": 7.6825,
+        "frameOpacity": 0.2156,
+        "copyOpacity": 0.2317
+      },
+      {
+        "time": 324.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 9.2394,
+        "copyBlur": 7.5385,
+        "frameOpacity": 0.23,
+        "copyOpacity": 0.2462
+      },
+      {
+        "time": 342.90000009536743,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 9.0056,
+        "copyBlur": 7.3444,
+        "frameOpacity": 0.2495,
+        "copyOpacity": 0.2656
+      },
+      {
+        "time": 358.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 8.9043,
+        "copyBlur": 7.2604,
+        "frameOpacity": 0.258,
+        "copyOpacity": 0.274
+      },
+      {
+        "time": 375.80000009536707,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 8.7125,
+        "copyBlur": 7.1013,
+        "frameOpacity": 0.274,
+        "copyOpacity": 0.2899
+      },
+      {
+        "time": 391.40000009536743,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 8.5818,
+        "copyBlur": 6.9929,
+        "frameOpacity": 0.2849,
+        "copyOpacity": 0.3007
+      },
+      {
+        "time": 408.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 8.4015,
+        "copyBlur": 6.8435,
+        "frameOpacity": 0.2999,
+        "copyOpacity": 0.3156
+      },
+      {
+        "time": 424.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 8.2321,
+        "copyBlur": 6.7031,
+        "frameOpacity": 0.314,
+        "copyOpacity": 0.3297
+      },
+      {
+        "time": 441.40000009536743,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 8.0635,
+        "copyBlur": 6.5634,
+        "frameOpacity": 0.328,
+        "copyOpacity": 0.3437
+      },
+      {
+        "time": 458.2000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 7.9056,
+        "copyBlur": 6.4326,
+        "frameOpacity": 0.3412,
+        "copyOpacity": 0.3567
+      },
+      {
+        "time": 474.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 7.7289,
+        "copyBlur": 6.2863,
+        "frameOpacity": 0.3559,
+        "copyOpacity": 0.3714
+      },
+      {
+        "time": 491.40000009536743,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 7.5825,
+        "copyBlur": 6.1651,
+        "frameOpacity": 0.3681,
+        "copyOpacity": 0.3835
+      },
+      {
+        "time": 508.10000009536725,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 7.4272,
+        "copyBlur": 6.0365,
+        "frameOpacity": 0.3811,
+        "copyOpacity": 0.3963
+      },
+      {
+        "time": 524.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 7.2631,
+        "copyBlur": 5.9008,
+        "frameOpacity": 0.3947,
+        "copyOpacity": 0.4099
+      },
+      {
+        "time": 541.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 7.1096,
+        "copyBlur": 5.7738,
+        "frameOpacity": 0.4075,
+        "copyOpacity": 0.4226
+      },
+      {
+        "time": 558.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 6.9476,
+        "copyBlur": 5.6398,
+        "frameOpacity": 0.421,
+        "copyOpacity": 0.436
+      },
+      {
+        "time": 574.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 6.7772,
+        "copyBlur": 5.499,
+        "frameOpacity": 0.4352,
+        "copyOpacity": 0.4501
+      },
+      {
+        "time": 591.5000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 6.6269,
+        "copyBlur": 5.3748,
+        "frameOpacity": 0.4478,
+        "copyOpacity": 0.4625
+      },
+      {
+        "time": 608.1000000953672,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 6.4683,
+        "copyBlur": 5.2438,
+        "frameOpacity": 0.461,
+        "copyOpacity": 0.4756
+      },
+      {
+        "time": 624.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 6.3202,
+        "copyBlur": 5.1214,
+        "frameOpacity": 0.4733,
+        "copyOpacity": 0.4879
+      },
+      {
+        "time": 641.5000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 6.164,
+        "copyBlur": 4.9924,
+        "frameOpacity": 0.4863,
+        "copyOpacity": 0.5008
+      },
+      {
+        "time": 658.3000000953671,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 6,
+        "copyBlur": 4.8571,
+        "frameOpacity": 0.5,
+        "copyOpacity": 0.5143
+      },
+      {
+        "time": 674.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 5.8645,
+        "copyBlur": 4.7453,
+        "frameOpacity": 0.5113,
+        "copyOpacity": 0.5255
+      },
+      {
+        "time": 691.5000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 5.7033,
+        "copyBlur": 4.6123,
+        "frameOpacity": 0.5247,
+        "copyOpacity": 0.5388
+      },
+      {
+        "time": 708.3000000953671,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 5.5612,
+        "copyBlur": 4.4952,
+        "frameOpacity": 0.5366,
+        "copyOpacity": 0.5505
+      },
+      {
+        "time": 725.3000000953671,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 5.403,
+        "copyBlur": 4.3647,
+        "frameOpacity": 0.5498,
+        "copyOpacity": 0.5635
+      },
+      {
+        "time": 741.5000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 5.2723,
+        "copyBlur": 4.2571,
+        "frameOpacity": 0.5606,
+        "copyOpacity": 0.5743
+      },
+      {
+        "time": 758.2000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 5.1257,
+        "copyBlur": 4.1363,
+        "frameOpacity": 0.5729,
+        "copyOpacity": 0.5864
+      },
+      {
+        "time": 774.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 4.9805,
+        "copyBlur": 4.0168,
+        "frameOpacity": 0.585,
+        "copyOpacity": 0.5983
+      },
+      {
+        "time": 791.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 4.8453,
+        "copyBlur": 3.9055,
+        "frameOpacity": 0.5962,
+        "copyOpacity": 0.6095
+      },
+      {
+        "time": 808.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 4.67,
+        "copyBlur": 3.7612,
+        "frameOpacity": 0.6108,
+        "copyOpacity": 0.6239
+      },
+      {
+        "time": 824.8000000953671,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 4.5544,
+        "copyBlur": 3.6662,
+        "frameOpacity": 0.6205,
+        "copyOpacity": 0.6334
+      },
+      {
+        "time": 841.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 4.44,
+        "copyBlur": 3.5721,
+        "frameOpacity": 0.63,
+        "copyOpacity": 0.6428
+      },
+      {
+        "time": 858.1000000953672,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 4.3026,
+        "copyBlur": 3.4592,
+        "frameOpacity": 0.6414,
+        "copyOpacity": 0.6541
+      },
+      {
+        "time": 874.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 4.1669,
+        "copyBlur": 3.3477,
+        "frameOpacity": 0.6528,
+        "copyOpacity": 0.6652
+      },
+      {
+        "time": 891.8000000953671,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 4.0251,
+        "copyBlur": 3.2312,
+        "frameOpacity": 0.6646,
+        "copyOpacity": 0.6769
+      },
+      {
+        "time": 908.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 3.9006,
+        "copyBlur": 3.1291,
+        "frameOpacity": 0.6749,
+        "copyOpacity": 0.6871
+      },
+      {
+        "time": 924.9000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 3.7702,
+        "copyBlur": 3.0221,
+        "frameOpacity": 0.6858,
+        "copyOpacity": 0.6978
+      },
+      {
+        "time": 941.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 3.649,
+        "copyBlur": 2.9228,
+        "frameOpacity": 0.6959,
+        "copyOpacity": 0.7077
+      },
+      {
+        "time": 958.9000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 3.5073,
+        "copyBlur": 2.8066,
+        "frameOpacity": 0.7077,
+        "copyOpacity": 0.7193
+      },
+      {
+        "time": 974.9000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 3.3898,
+        "copyBlur": 2.7103,
+        "frameOpacity": 0.7175,
+        "copyOpacity": 0.729
+      },
+      {
+        "time": 991.3000000953671,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 3.2811,
+        "copyBlur": 2.6213,
+        "frameOpacity": 0.7266,
+        "copyOpacity": 0.7379
+      },
+      {
+        "time": 1008.5000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 3.1598,
+        "copyBlur": 2.522,
+        "frameOpacity": 0.7367,
+        "copyOpacity": 0.7478
+      },
+      {
+        "time": 1024.800000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 3.0473,
+        "copyBlur": 2.43,
+        "frameOpacity": 0.7461,
+        "copyOpacity": 0.757
+      },
+      {
+        "time": 1041.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 2.9366,
+        "copyBlur": 2.3396,
+        "frameOpacity": 0.7553,
+        "copyOpacity": 0.766
+      },
+      {
+        "time": 1058.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 2.8142,
+        "copyBlur": 2.2395,
+        "frameOpacity": 0.7655,
+        "copyOpacity": 0.776
+      },
+      {
+        "time": 1074.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 2.7073,
+        "copyBlur": 2.1522,
+        "frameOpacity": 0.7744,
+        "copyOpacity": 0.7848
+      },
+      {
+        "time": 1091.6000000953672,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 2.5957,
+        "copyBlur": 2.0612,
+        "frameOpacity": 0.7837,
+        "copyOpacity": 0.7939
+      },
+      {
+        "time": 1108.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 2.4734,
+        "copyBlur": 1.9614,
+        "frameOpacity": 0.7939,
+        "copyOpacity": 0.8039
+      },
+      {
+        "time": 1124.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 2.385,
+        "copyBlur": 1.8894,
+        "frameOpacity": 0.8013,
+        "copyOpacity": 0.8111
+      },
+      {
+        "time": 1141.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 2.2795,
+        "copyBlur": 1.8035,
+        "frameOpacity": 0.81,
+        "copyOpacity": 0.8197
+      },
+      {
+        "time": 1158.300000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 2.1762,
+        "copyBlur": 1.7194,
+        "frameOpacity": 0.8187,
+        "copyOpacity": 0.8281
+      },
+      {
+        "time": 1174.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 2.0692,
+        "copyBlur": 1.6324,
+        "frameOpacity": 0.8276,
+        "copyOpacity": 0.8368
+      },
+      {
+        "time": 1191.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.9818,
+        "copyBlur": 1.5614,
+        "frameOpacity": 0.8348,
+        "copyOpacity": 0.8439
+      },
+      {
+        "time": 1208.1000000953672,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.8737,
+        "copyBlur": 1.4736,
+        "frameOpacity": 0.8439,
+        "copyOpacity": 0.8526
+      },
+      {
+        "time": 1224.800000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.7793,
+        "copyBlur": 1.397,
+        "frameOpacity": 0.8517,
+        "copyOpacity": 0.8603
+      },
+      {
+        "time": 1241.300000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.7086,
+        "copyBlur": 1.3397,
+        "frameOpacity": 0.8576,
+        "copyOpacity": 0.866
+      },
+      {
+        "time": 1258.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.6182,
+        "copyBlur": 1.2665,
+        "frameOpacity": 0.8652,
+        "copyOpacity": 0.8733
+      },
+      {
+        "time": 1274.9000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.53,
+        "copyBlur": 1.1952,
+        "frameOpacity": 0.8725,
+        "copyOpacity": 0.8805
+      },
+      {
+        "time": 1291.6000000953672,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.4442,
+        "copyBlur": 1.1259,
+        "frameOpacity": 0.8796,
+        "copyOpacity": 0.8874
+      },
+      {
+        "time": 1308.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.3656,
+        "copyBlur": 1.0624,
+        "frameOpacity": 0.8862,
+        "copyOpacity": 0.8938
+      },
+      {
+        "time": 1324.9000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.2843,
+        "copyBlur": 0.9968,
+        "frameOpacity": 0.893,
+        "copyOpacity": 0.9003
+      },
+      {
+        "time": 1341.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.2007,
+        "copyBlur": 0.9296,
+        "frameOpacity": 0.8999,
+        "copyOpacity": 0.907
+      },
+      {
+        "time": 1358.300000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.1243,
+        "copyBlur": 0.8681,
+        "frameOpacity": 0.9063,
+        "copyOpacity": 0.9132
+      },
+      {
+        "time": 1374.800000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 1.0589,
+        "copyBlur": 0.8155,
+        "frameOpacity": 0.9118,
+        "copyOpacity": 0.9184
+      },
+      {
+        "time": 1391.5000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.9869,
+        "copyBlur": 0.7579,
+        "frameOpacity": 0.9178,
+        "copyOpacity": 0.9242
+      },
+      {
+        "time": 1408.1000000953672,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.9175,
+        "copyBlur": 0.7022,
+        "frameOpacity": 0.9235,
+        "copyOpacity": 0.9298
+      },
+      {
+        "time": 1425.1000000953672,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.8543,
+        "copyBlur": 0.6517,
+        "frameOpacity": 0.9288,
+        "copyOpacity": 0.9348
+      },
+      {
+        "time": 1441.6000000953672,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.7895,
+        "copyBlur": 0.6001,
+        "frameOpacity": 0.9342,
+        "copyOpacity": 0.94
+      },
+      {
+        "time": 1458.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.7201,
+        "copyBlur": 0.5448,
+        "frameOpacity": 0.94,
+        "copyOpacity": 0.9455
+      },
+      {
+        "time": 1474.800000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.6709,
+        "copyBlur": 0.5057,
+        "frameOpacity": 0.9441,
+        "copyOpacity": 0.9494
+      },
+      {
+        "time": 1491.7000000953676,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.6102,
+        "copyBlur": 0.4576,
+        "frameOpacity": 0.9492,
+        "copyOpacity": 0.9542
+      },
+      {
+        "time": 1508.300000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.5585,
+        "copyBlur": 0.4168,
+        "frameOpacity": 0.9535,
+        "copyOpacity": 0.9583
+      },
+      {
+        "time": 1524.800000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.5031,
+        "copyBlur": 0.3731,
+        "frameOpacity": 0.9581,
+        "copyOpacity": 0.9627
+      },
+      {
+        "time": 1541.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.4591,
+        "copyBlur": 0.3385,
+        "frameOpacity": 0.9617,
+        "copyOpacity": 0.9662
+      },
+      {
+        "time": 1558.300000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.4116,
+        "copyBlur": 0.3013,
+        "frameOpacity": 0.9657,
+        "copyOpacity": 0.9699
+      },
+      {
+        "time": 1575.9000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.3641,
+        "copyBlur": 0.2642,
+        "frameOpacity": 0.9697,
+        "copyOpacity": 0.9736
+      },
+      {
+        "time": 1591.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.3267,
+        "copyBlur": 0.2352,
+        "frameOpacity": 0.9728,
+        "copyOpacity": 0.9765
+      },
+      {
+        "time": 1608.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.2867,
+        "copyBlur": 0.2042,
+        "frameOpacity": 0.9761,
+        "copyOpacity": 0.9796
+      },
+      {
+        "time": 1624.7000000953667,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.2515,
+        "copyBlur": 0.1771,
+        "frameOpacity": 0.979,
+        "copyOpacity": 0.9823
+      },
+      {
+        "time": 1642.800000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.2126,
+        "copyBlur": 0.1474,
+        "frameOpacity": 0.9823,
+        "copyOpacity": 0.9853
+      },
+      {
+        "time": 1658.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.186,
+        "copyBlur": 0.1272,
+        "frameOpacity": 0.9845,
+        "copyOpacity": 0.9873
+      },
+      {
+        "time": 1674.800000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.156,
+        "copyBlur": 0.1047,
+        "frameOpacity": 0.987,
+        "copyOpacity": 0.9895
+      },
+      {
+        "time": 1691.300000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.1303,
+        "copyBlur": 0.0856,
+        "frameOpacity": 0.9891,
+        "copyOpacity": 0.9914
+      },
+      {
+        "time": 1708.1000000953682,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.104,
+        "copyBlur": 0.0663,
+        "frameOpacity": 0.9913,
+        "copyOpacity": 0.9934
+      },
+      {
+        "time": 1724.6000000953682,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.0832,
+        "copyBlur": 0.0512,
+        "frameOpacity": 0.9931,
+        "copyOpacity": 0.9949
+      },
+      {
+        "time": 1741.300000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.0636,
+        "copyBlur": 0.0373,
+        "frameOpacity": 0.9947,
+        "copyOpacity": 0.9963
+      },
+      {
+        "time": 1774.7000000953667,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.0322,
+        "copyBlur": 0.0161,
+        "frameOpacity": 0.9973,
+        "copyOpacity": 0.9984
+      },
+      {
+        "time": 1791.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.0205,
+        "copyBlur": 0.0088,
+        "frameOpacity": 0.9983,
+        "copyOpacity": 0.9991
+      },
+      {
+        "time": 1808.1000000953682,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.0124,
+        "copyBlur": 0.0041,
+        "frameOpacity": 0.999,
+        "copyOpacity": 0.9996
+      },
+      {
+        "time": 1825.9000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.005,
+        "copyBlur": 0.0007,
+        "frameOpacity": 0.9996,
+        "copyOpacity": 0.9999
+      },
+      {
+        "time": 1841.7000000953667,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0.0015,
+        "copyBlur": 0,
+        "frameOpacity": 0.9999,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1858.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1874.7000000953667,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1891.7000000953667,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1908.2000000953667,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1925.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1941.800000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1958.0000000953678,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1974.7000000953667,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 1991.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2008.1000000953682,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2024.800000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2041.800000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2058.000000095368,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2074.7000000953667,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2091.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2108.100000095368,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2124.800000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2141.300000095367,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2158.000000095368,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2175.100000095368,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2191.4000000953674,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      },
+      {
+        "time": 2208.500000095368,
+        "scroll": 160,
+        "titleTop": 243.3046875,
+        "stage": 523.265625,
+        "frameBlur": 0,
+        "copyBlur": 0,
+        "frameOpacity": 1,
+        "copyOpacity": 1
+      }
+    ]
+  },
+  {
+    "name": "reduced",
+    "static": true,
+    "status": "pass"
+  }
+]

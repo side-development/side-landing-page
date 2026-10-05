@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "checks": [
+    "comparison-toggle",
+    "dynamic-reduced-motion-and-resume",
+    "desktop-side-cursor",
+    "touch-native-cursor",
+    "touch-readout"
+  ],
+  "console": []
+}
