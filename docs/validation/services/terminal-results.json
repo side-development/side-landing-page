@@ -3,44 +3,60 @@
     "name": "desktop",
     "status": "pass",
     "frame": {
-      "x": 172.796875,
-      "y": 171.234375,
-      "width": 1094.390625,
-      "height": 558
+      "x": 158.40625,
+      "y": 135.234375,
+      "width": 1123.1875,
+      "height": 630
     },
+    "noBlinkingCaret": true,
+    "localizedPaths": true,
+    "opus": "5.5",
+    "mcpTypingBeforeOutput": "pass",
     "console": []
   },
   {
     "name": "laptop",
     "status": "pass",
     "frame": {
-      "x": 163.921875,
-      "y": 145.703125,
-      "width": 1038.15625,
-      "height": 476.15625
+      "x": 150.265625,
+      "y": 114.984375,
+      "width": 1065.46875,
+      "height": 537.59375
     },
+    "noBlinkingCaret": true,
+    "localizedPaths": true,
+    "opus": "5.5",
+    "mcpTypingBeforeOutput": "pass",
     "console": []
   },
   {
     "name": "wide",
     "status": "pass",
     "frame": {
-      "x": 370,
-      "y": 205,
-      "width": 1180,
-      "height": 669.59375
+      "x": 340,
+      "y": 161.796875,
+      "width": 1240,
+      "height": 756
     },
+    "noBlinkingCaret": true,
+    "localizedPaths": true,
+    "opus": "5.5",
+    "mcpTypingBeforeOutput": "pass",
     "console": []
   },
   {
     "name": "en",
     "status": "pass",
     "frame": {
-      "x": 172.796875,
-      "y": 171.234375,
-      "width": 1094.390625,
-      "height": 558
+      "x": 158.40625,
+      "y": 135.234375,
+      "width": 1123.1875,
+      "height": 630
     },
+    "noBlinkingCaret": true,
+    "localizedPaths": true,
+    "opus": "5.5",
+    "mcpTypingBeforeOutput": "pass",
     "console": []
   },
   {
@@ -48,10 +64,14 @@
     "status": "pass",
     "frame": {
       "x": 16,
-      "y": 172.484375,
+      "y": 162.484375,
       "width": 358,
-      "height": 500
+      "height": 520
     },
+    "noBlinkingCaret": true,
+    "localizedPaths": true,
+    "opus": "5.5",
+    "mcpTypingBeforeOutput": "pass",
     "console": []
   },
   {
@@ -59,10 +79,14 @@
     "status": "pass",
     "frame": {
       "x": 16,
-      "y": 80.296875,
+      "y": 70.296875,
       "width": 288,
-      "height": 500
+      "height": 520
     },
+    "noBlinkingCaret": true,
+    "localizedPaths": true,
+    "opus": "5.5",
+    "mcpTypingBeforeOutput": "pass",
     "console": []
   },
   {
@@ -70,21 +94,29 @@
     "status": "pass",
     "frame": {
       "x": 16,
-      "y": 261.765625,
+      "y": 251.765625,
       "width": 736,
-      "height": 500
+      "height": 520
     },
+    "noBlinkingCaret": true,
+    "localizedPaths": true,
+    "opus": "5.5",
+    "mcpTypingBeforeOutput": "pass",
     "console": []
   },
   {
     "name": "reduced",
     "status": "pass",
     "frame": {
-      "x": 172.796875,
-      "y": 171.234375,
-      "width": 1094.390625,
-      "height": 558
+      "x": 158.40625,
+      "y": 135.234375,
+      "width": 1123.1875,
+      "height": 630
     },
+    "noBlinkingCaret": true,
+    "localizedPaths": true,
+    "opus": "5.5",
+    "mcpTypingBeforeOutput": "not applicable",
     "console": []
   },
   {
@@ -92,10 +124,14 @@
     "status": "pass",
     "frame": {
       "x": 16,
-      "y": 172.390625,
+      "y": 162.390625,
       "width": 358,
-      "height": 500
+      "height": 520
     },
+    "noBlinkingCaret": true,
+    "localizedPaths": true,
+    "opus": "5.5",
+    "mcpTypingBeforeOutput": "not applicable",
     "console": []
   }
 ]
