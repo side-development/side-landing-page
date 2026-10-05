@@ -4,7 +4,7 @@ Issue [#8](https://github.com/side-development/side-landing-page/issues/8), base
 
 ## Status
 
-**Partial. Dashboard isolado: Ready for review.** A #8 inteira continua incompleta. Aprovação visual deste checkpoint precede terminal, experiência de sites e integração. Nenhum push/PR foi feito. Hero e Selected Work permanecem intactos.
+**Partial. Dashboard isolado aprovado pelo usuário em 05/10/2026.** Aprovação explícita: “Feito, vamos para a próxima fase!”. A #8 inteira continua incompleta. Terminal isolado segue para o checkpoint 2, registrado em `services-terminal.md`. Nenhum push/PR foi feito. Hero e Selected Work permanecem intactos.
 
 ## Prévia funcional
 
@@ -88,7 +88,7 @@ Evidências `dashboard-*`, `revision-*` e `blur-*` registram propostas anteriore
 - [x] Readouts discretos, extremidades corrigidas, atividade removida e dashboard do tamanho de uma página.
 - [x] Mobile/EN/reduced motion/teclado/touch/cleanup verificados.
 - [x] Seções aprovadas preservadas; nenhuma dependência adicionada.
-- [ ] Aprovação visual do dashboard pelo usuário.
+- [x] Aprovação visual do dashboard pelo usuário.
 - [ ] Terminal isolado e comparação com referências aprovados.
 - [ ] Experiência original de sites implementada e revisada.
 - [ ] Integração dos três capítulos e transições 01→02 / 02→03.
