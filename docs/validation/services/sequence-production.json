@@ -1,0 +1,44 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "path": "/review/services/sequence",
+      "http": 404,
+      "status": "pass"
+    },
+    {
+      "path": "/en/review/services/sequence",
+      "http": 404,
+      "status": "pass"
+    },
+    {
+      "path": "/review/services/experience",
+      "http": 404,
+      "status": "pass"
+    },
+    {
+      "path": "/en/review/services",
+      "http": 404,
+      "status": "pass"
+    },
+    {
+      "path": "/review/services/terminal",
+      "http": 404,
+      "status": "pass"
+    },
+    {
+      "path": "/",
+      "http": 200,
+      "homeServices": true,
+      "status": "pass",
+      "console": []
+    },
+    {
+      "path": "/en",
+      "http": 200,
+      "homeServices": true,
+      "status": "pass",
+      "console": []
+    }
+  ]
+}

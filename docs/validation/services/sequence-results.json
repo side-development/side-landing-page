@@ -1,0 +1,868 @@
+[
+  {
+    "case": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "locale": "pt-BR"
+    },
+    "initial": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "false",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "opened": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "product": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "playing"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "exit": {
+      "overflow": false,
+      "bg": "rgb(96, 96, 97)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "terminal": {
+      "overflow": false,
+      "bg": "rgb(16, 16, 17)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "settled",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "reverse": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "playing"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "settled",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "console": [],
+    "checks": "copy, order, scroll, reverse, charts pause/resume, period control, modal, cursor, overflow, centered terminal"
+  },
+  {
+    "case": {
+      "name": "en",
+      "width": 1920,
+      "height": 1080,
+      "locale": "en"
+    },
+    "initial": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "false",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "opened": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "product": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "playing"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "exit": {
+      "overflow": false,
+      "bg": "rgb(96, 96, 97)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "terminal": {
+      "overflow": false,
+      "bg": "rgb(16, 16, 17)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "settled",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "reverse": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "playing"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "settled",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "console": [],
+    "checks": "copy, order, scroll, reverse, charts pause/resume, period control, modal, cursor, overflow, centered terminal"
+  },
+  {
+    "case": {
+      "name": "laptop",
+      "width": 1366,
+      "height": 768,
+      "locale": "pt-BR"
+    },
+    "initial": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "false",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "opened": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "product": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "playing"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "exit": {
+      "overflow": false,
+      "bg": "rgb(97, 97, 97)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "terminal": {
+      "overflow": false,
+      "bg": "rgb(16, 16, 17)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "settled",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "reverse": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "playing"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "settled",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "console": [],
+    "checks": "copy, order, scroll, reverse, charts pause/resume, period control, modal, cursor, overflow, centered terminal"
+  },
+  {
+    "case": {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "locale": "pt-BR",
+      "touch": true
+    },
+    "initial": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "false",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "opened": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "product": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "exit": {
+      "overflow": false,
+      "bg": "rgb(59, 59, 59)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "terminal": {
+      "overflow": false,
+      "bg": "rgb(16, 16, 17)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "settled",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "reverse": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "settled",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "console": [],
+    "checks": "copy, order, scroll, reverse, charts pause/resume, period control, modal, cursor, overflow, centered terminal"
+  },
+  {
+    "case": {
+      "name": "small-en",
+      "width": 320,
+      "height": 568,
+      "locale": "en",
+      "touch": true
+    },
+    "initial": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "false",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "opened": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "product": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "exit": {
+      "overflow": false,
+      "bg": "rgb(58, 58, 59)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "terminal": {
+      "overflow": false,
+      "bg": "rgb(16, 16, 17)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "settled",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "reverse": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "settled",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "console": [],
+    "checks": "copy, order, scroll, reverse, charts pause/resume, period control, modal, cursor, overflow, centered terminal"
+  },
+  {
+    "case": {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "locale": "pt-BR",
+      "touch": true
+    },
+    "initial": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "false",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "opened": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "waiting",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "product": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "exit": {
+      "overflow": false,
+      "bg": "rgb(58, 58, 59)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "terminal": {
+      "overflow": false,
+      "bg": "rgb(16, 16, 17)",
+      "composed": "true",
+      "live": [
+        "paused",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "settled",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "reverse": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [
+        "playing",
+        "paused"
+      ],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "settled",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "console": [],
+    "checks": "copy, order, scroll, reverse, charts pause/resume, period control, modal, cursor, overflow, centered terminal"
+  },
+  {
+    "case": {
+      "name": "reduced",
+      "width": 1440,
+      "height": 900,
+      "locale": "pt-BR",
+      "reduced": true
+    },
+    "initial": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "false",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "opened": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "product": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "exit": {
+      "overflow": false,
+      "bg": "rgb(16, 16, 17)",
+      "composed": "true",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "terminal": {
+      "overflow": false,
+      "bg": "rgb(16, 16, 17)",
+      "composed": "true",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "settled",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "reverse": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "settled",
+      "headings": [
+        "Sites & experiências digitais",
+        "Produtos & software",
+        "Integrações & soluções sob medida"
+      ]
+    },
+    "console": [],
+    "checks": "copy, order, scroll, reverse, charts pause/resume, period control, modal, cursor, overflow, centered terminal"
+  },
+  {
+    "case": {
+      "name": "mobile-reduced",
+      "width": 390,
+      "height": 844,
+      "locale": "en",
+      "touch": true,
+      "reduced": true
+    },
+    "initial": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "false",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "opened": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "product": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "exit": {
+      "overflow": false,
+      "bg": "rgb(16, 16, 17)",
+      "composed": "true",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "waiting",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "terminal": {
+      "overflow": false,
+      "bg": "rgb(16, 16, 17)",
+      "composed": "true",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "false",
+      "terminal": "settled",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "reverse": {
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "composed": "true",
+      "live": [],
+      "dash": "settled",
+      "serviceActive": "true",
+      "terminal": "settled",
+      "headings": [
+        "Websites & digital experiences",
+        "Products & software",
+        "Integrations & custom solutions"
+      ]
+    },
+    "console": [],
+    "checks": "copy, order, scroll, reverse, charts pause/resume, period control, modal, cursor, overflow, centered terminal"
+  }
+]

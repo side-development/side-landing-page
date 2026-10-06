@@ -1,0 +1,56 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "case": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "path": "/"
+      },
+      "status": "pass",
+      "checks": "approved Hero/Work structure, handoff, 7-day data via keyboard, modal/focus/Escape, period-change dissolution, transparent fixed navbar contrast, reverse, intro replay unmounts demo DOM",
+      "console": []
+    },
+    {
+      "case": {
+        "name": "en",
+        "width": 1440,
+        "height": 900,
+        "path": "/en"
+      },
+      "status": "pass",
+      "checks": "approved Hero/Work structure, handoff, 7-day data via keyboard, modal/focus/Escape, period-change dissolution, transparent fixed navbar contrast, reverse, intro replay unmounts demo DOM",
+      "console": []
+    },
+    {
+      "case": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "path": "/",
+        "touch": true
+      },
+      "status": "pass",
+      "checks": "approved Hero/Work structure, handoff, 7-day data via keyboard, modal/focus/Escape, period-change dissolution, transparent fixed navbar contrast, reverse, intro replay unmounts demo DOM",
+      "console": []
+    },
+    {
+      "case": {
+        "name": "reduced",
+        "width": 1440,
+        "height": 900,
+        "path": "/",
+        "reduced": true
+      },
+      "status": "pass",
+      "checks": "approved Hero/Work structure, handoff, 7-day data via keyboard, modal/focus/Escape, period-change dissolution, transparent fixed navbar contrast, reverse, intro replay unmounts demo DOM",
+      "console": []
+    },
+    {
+      "name": "first-visit-and-repeat-session",
+      "status": "pass",
+      "console": []
+    }
+  ]
+}
