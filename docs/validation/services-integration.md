@@ -45,6 +45,14 @@ Refinamento da navbar mobile: seis configurações PT/EN, de 320 a 768 px, inclu
 - [EN em 320 px](services/navbar-mobile-en-light.png).
 - [Resultados da navbar](services/mobile-navbar.json).
 
+Nova direção da navbar: quatro desenhos SVG diferentes, stroke progressivo em hover/foco/toque, pesos 600/700 e cores corretas no claro/escuro. Desktop PT/EN, mobile PT e reduced desktop passaram; máscara e ordem de entrada dos itens também foram medidas. O teste identificou e corrigiu a prioridade CSS de reduced motion sobre hover, garantindo traços instantâneos nessa preferência. Uma checagem raster dos SVGs inativos também elimina resíduos visíveis nas palavras maiores do mobile. Menus PT/EN entre 320 e 768 px, landscape, Escape/foco/resize e preenchimento somente no topo/laterais foram revalidados. Nenhum erro/hydration capturado. Gravações contêm interações reais da Home local, sem montagem de UI.
+
+- [Gravação desktop](services/navbar-drawing-desktop.mp4).
+- [Gravação mobile](services/navbar-drawing-mobile.mp4).
+- [Menu mobile claro](services/navbar-drawing-mobile-light-preview.png).
+- [Menu mobile escuro](services/navbar-drawing-mobile-dark-preview.png).
+- [Medições dos traços e abertura](services/navbar-drawing.json).
+
 Estabilidade da intro com scrollbar clássica: repro original detectou encolhimento de 10 px no wordmark e deslocamento de 10 px na borda direita da navbar. Após reservar o gutter, os mesmos elementos permanecem com largura/posição constantes. Primeira passagem completa e reduced motion foram medidas, além do cleanup do fundo/overflow. A cor da área reservada durante as frases foi inspecionada visualmente. [Antes](services/intro-layout-before.json), [depois](services/intro-layout-after.json), [reduced motion EN](services/intro-layout-reduced-after.json) e [mobile](services/intro-layout-mobile-after.json).
 
 Gravações completas, browser-only, H.264/yuv420p, sem áudio, faststart:

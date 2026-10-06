@@ -66,6 +66,8 @@ Após o screenshot de 06/10 e a clarificação do usuário, o menu mobile aberto
 
 A correção fica em `FinalHero` e seus estilos, autorizada especificamente pelo usuário. A navegação permanece não modal e o scroll livre. Abrir transfere o foco para o primeiro item; Escape/fechamento restaura o foco. Atravessar o breakpoint fecha o menu e recupera a navbar desktop. A animação do ícone e o fade de chegada dos links permanecem, com alternativa reduced motion. Navbar fechada continua transparente.
 
+Na revisão seguinte, o vídeo `Gravação de Tela 2026-10-06 104634.mp4` passa a orientar os traços escritos de cada link e a abertura do painel. Itens semibold e contato bold, quatro desenhos SVG diferentes, máscara descendente e entrada sequencial dos links substituem os sublinhados retos e o fade conjunto. Referência, limites e timings em [navbar-motion.md](navbar-motion.md).
+
 ### Estabilidade no término da intro
 
 Com a scrollbar clássica visível, o término da intro liberava `overflow: hidden` e a largura útil passava de 1440 para 1430 px. O wordmark encolhia 10 px e a borda direita da navbar se deslocava 10 px. O repro headless inicial ocultava a scrollbar por padrão; o harness passa a remover `--hide-scrollbars`, reproduzindo o comportamento desktop.

@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "case": "desktop-pt",
+      "status": "pass",
+      "checks": "four unique handwritten paths; progressive drawing; semibold/bold; correct currentColor; keyboard; dark contrast; console/hydration",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "desktop-en",
+      "status": "pass",
+      "checks": "four unique handwritten paths; progressive drawing; semibold/bold; correct currentColor; keyboard; dark contrast; console/hydration",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "reduced",
+      "status": "pass",
+      "checks": "four unique handwritten paths; progressive drawing; semibold/bold; correct currentColor; keyboard; dark contrast; console/hydration",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "mobile",
+      "early": {
+        "clip": "inset(0px 0px 53.6792% round 0px 0px 18px 18px)",
+        "opacity": [
+          0,
+          0,
+          0
+        ]
+      },
+      "middle": {
+        "clip": "inset(0px 0px 2.8823% round 0px 0px 18px 18px)",
+        "opacity": [
+          0.873422,
+          0.705395,
+          0.408155
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "case": "mobile",
+      "status": "pass",
+      "checks": "four unique handwritten paths; progressive drawing; semibold/bold; correct currentColor; keyboard; dark contrast; console/hydration",
+      "errors": [],
+      "devImageAdvisories": []
+    }
+  ]
+}
