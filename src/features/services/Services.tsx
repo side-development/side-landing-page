@@ -12,7 +12,6 @@ import styles from "./services.module.css";
 
 export function Services({ locale, active = true }: { locale: DigitalExperienceLocale; active?: boolean }) {
   const root = useRef<HTMLElement>(null);
-  const experience = useRef<HTMLDivElement>(null);
   useServicesMotion(root, active);
   const copies = [digitalExperienceCopy[locale], dashboardCopy[locale], terminalCopy[locale]];
 
@@ -24,7 +23,7 @@ export function Services({ locale, active = true }: { locale: DigitalExperienceL
           <div className={styles.title} data-service-title><span className={styles.index}>0{index + 1}</span><h3 id={`service-${index + 1}`}>{copy.service}</h3></div>
           <div className={styles.copy} data-service-copy><p>{copy.description}</p><small>{copy.territories}</small></div>
         </div>
-        {active && index === 0 && <div ref={experience} className={styles.experienceRun} data-experience-run><div className={styles.experienceShell} data-experience-shell><DigitalExperienceDemo locale={locale} scene={experience} /></div></div>}
+        {active && index === 0 && <div className={styles.experienceRun} data-experience-run><div className={styles.experienceShell} data-experience-shell><DigitalExperienceDemo locale={locale} /></div></div>}
         {active && index === 1 && <><ProductDashboardDemo locale={locale} /><div className={styles.atmosphere} data-service-atmosphere aria-hidden="true" /></>}
         {active && index === 2 && <div className={styles.terminalStage}><IntegrationTerminalDemo locale={locale} /></div>}
       </section>)}

@@ -13,17 +13,17 @@ const palettes = [
   { "--digital-accent": "#c62d3c", "--digital-light": "#ed6470", "--digital-dark": "#831326", "--digital-fold": "#76101f", "--digital-front": "#f17b84", "--digital-back": "#881528", "--digital-highlight": "#f7959e" },
 ];
 
-export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, replay: number, onPerspectiveChange: (composed: boolean) => void, scene?: RefObject<HTMLElement | null>) {
+export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, replay: number, onPerspectiveChange: (composed: boolean) => void) {
   useGSAP(() => {
     const node = root.current;
     if (!node) return;
     let reveal: gsap.core.Timeline | undefined;
     const revealTrigger = ScrollTrigger.create({ ...serviceEntrance(node), onEnter: () => reveal?.play(), onRefresh: self => { if (self.progress > 0) reveal?.play(); } });
     const media = gsap.matchMedia();
-    media.add({ motion: "(prefers-reduced-motion: no-preference)", reduced: "(prefers-reduced-motion: reduce)", desktop: "(min-width: 801px) and (hover: hover) and (pointer: fine)", sticky: "(min-width: 1000px) and (min-height: 680px)" }, context => {
+    media.add({ motion: "(prefers-reduced-motion: no-preference)", reduced: "(prefers-reduced-motion: reduce)", desktop: "(min-width: 801px) and (hover: hover) and (pointer: fine)" }, context => {
       const reduced = context.conditions?.reduced;
       const desktop = context.conditions?.desktop;
-      const integrated = scene?.current && context.conditions?.sticky && !reduced;
+      const integrated = Boolean(node.closest("[data-experience-run]"));
       let composed = false;
       onPerspectiveChange(false);
       gsap.set(node, palettes[0]);
@@ -50,7 +50,7 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
       };
       const perspective = gsap.timeline({
         defaults: { duration: 1, ease: "sine.inOut" },
-        scrollTrigger: { trigger: integrated ? scene.current : node, start: "top 20%", end: integrated ? "top -30%" : "top 4%", scrub: reduced ? true : 1, invalidateOnRefresh: true, onRefresh: self => updateCopy(self.progress) },
+        scrollTrigger: { trigger: node, start: integrated ? "top 35%" : "top 20%", end: integrated ? "top -5%" : "top 4%", scrub: reduced ? true : .55, invalidateOnRefresh: true, onRefresh: self => updateCopy(self.progress) },
         onUpdate: function () { updateCopy(this.progress()); },
       });
       perspective.to(node, palettes[1], 0)
@@ -111,5 +111,5 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
       return () => { delete node.dataset.animation; };
     });
     return () => media.revert();
-  }, { scope: root, dependencies: [replay, onPerspectiveChange, scene], revertOnUpdate: true });
+  }, { scope: root, dependencies: [replay, onPerspectiveChange], revertOnUpdate: true });
 }
