@@ -17,7 +17,7 @@ export function SourceChart({ data, locale, enabled, id }: { data: ReturnType<ty
   const arc = `M${start.x},${start.y} A82,82 0 1,1 ${end.x},${end.y}`;
   const share = active === null ? 100 : data.sources[active];
 
-  return <section className={styles.sources} aria-labelledby={id}>
+  return <section className={styles.sources} aria-labelledby={id} data-dashboard-chart>
     <div className={styles.sectionHeading} data-dashboard-shell><h4 id={id}>{copy.sources}</h4><span>{number(data.users, locale)} {copy.metrics[1].toLowerCase()}</span></div>
     <div className={styles.sourceGauge} aria-hidden="true">
       <svg viewBox="0 0 220 178" focusable="false"><defs><linearGradient id={gradient} x1="28" x2="192" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop stopColor="#88d33a" /><stop offset="0.42" stopColor="#f3ad2e" /><stop offset="1" stopColor="#ff3538" /></linearGradient><mask id={`${gradient}-reveal`}><path d={arc} fill="none" stroke="white" strokeWidth="8" pathLength="1" data-dashboard-draw /></mask></defs><path d={arc} className={styles.gaugeTrack} /><path d={arc} className={styles.gaugeProgress} pathLength="1" style={{ stroke: active === null ? `url(#${gradient})` : colors[active], strokeDasharray: `${share / 100} 1` }} mask={`url(#${gradient}-reveal)`} /></svg>

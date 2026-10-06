@@ -1,0 +1,10 @@
+.home { background: #fff; }
+.home :global([data-final-hero] > header) { transition: color 400ms ease; }
+.home:has(:global([data-services][data-dark="true"])) :global([data-final-hero] > header) { color: #eae8ed; }
+.home:has(:global([data-services][data-dark="true"])) :global([data-final-hero] > header img) { content: url("/brand/side-logo-white.svg") / "Side"; }
+@media (max-width: 800px) {
+  .home:has(:global([data-services][data-dark="true"])) :global([data-final-hero] > header nav > div) { color: #171719; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home :global([data-final-hero] > header) { transition: none; }
+}

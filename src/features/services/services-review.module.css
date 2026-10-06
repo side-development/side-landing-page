@@ -1,0 +1,8 @@
+.review { min-height: 100svh; background: #fff; }
+.header { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; font-size: 11px; }
+.brand { width: 50px; height: auto; }
+.header nav { display: flex; gap: 20px; }
+.header a { color: #777780; text-decoration: none; }
+.header a[aria-current] { color: #3919bd; }
+.header :focus-visible { outline: 2px solid #3919bd; outline-offset: 5px; }
+@media (max-width: 800px) { .header { padding: 20px; } }

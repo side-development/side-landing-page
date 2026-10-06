@@ -58,19 +58,23 @@ export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: 
       let started = false;
       let triggered = false;
       function sync() {
-        if (triggered && visible && !document.hidden && !timeline.isActive() && timeline.progress() < 1) {
+        const running = visible && !document.hidden && node!.dataset.serviceActive !== "false";
+        if (triggered && running && !timeline.isActive() && timeline.progress() < 1) {
           timeline.play();
-        } else if (!visible || document.hidden) timeline.pause();
+        } else if (!running) timeline.pause();
       }
       const observer = new IntersectionObserver(entries => {
         visible = entries[0].isIntersecting;
         sync();
       }, { threshold: Math.min(0.18, window.innerHeight / node.offsetHeight * 0.25) });
       observer.observe(node);
+      const readiness = new MutationObserver(sync);
+      readiness.observe(node, { attributes: true, attributeFilter: ["data-service-active"] });
       const entrance = ScrollTrigger.create({ trigger: node, start: "top 70%", once: true, onEnter: () => { triggered = true; sync(); } });
       document.addEventListener("visibilitychange", sync);
       return () => {
         observer.disconnect();
+        readiness.disconnect();
         entrance.kill();
         document.removeEventListener("visibilitychange", sync);
         timeline.kill();
