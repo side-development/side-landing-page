@@ -22,6 +22,22 @@ export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: He
   const toggle = useRef<HTMLButtonElement>(null);
   const section = useRef<HTMLElement>(null);
   const mobile = useSyncExternalStore(subscribeMobile, mobileSnapshot, desktopSnapshot);
+  const menuOpen = mobile && visible && open;
+
+  useLayoutEffect(() => {
+    const media = window.matchMedia(mobileQuery);
+    const resetMenu = () => setOpen(false);
+    media.addEventListener("change", resetMenu);
+    return () => media.removeEventListener("change", resetMenu);
+  }, []);
+
+  useLayoutEffect(() => {
+    if (!menuOpen) return;
+    const header = section.current?.querySelector("header");
+    if (!header) return;
+    const frame = requestAnimationFrame(() => header.querySelector<HTMLButtonElement>("nav button")?.focus({ preventScroll: true }));
+    return () => cancelAnimationFrame(frame);
+  }, [menuOpen]);
 
   useLayoutEffect(() => {
     if (!visible) return;
@@ -37,27 +53,29 @@ export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: He
 
   function close() {
     setOpen(false);
-    toggle.current?.focus();
+    toggle.current?.focus({ preventScroll: true });
   }
 
   function toggleMenu() {
-    if (open) { close(); return; }
+    if (menuOpen) { close(); return; }
     setOpen(true);
-    requestAnimationFrame(() => section.current?.querySelector<HTMLElement>(`#${CSS.escape(menuId)} button`)?.focus());
   }
 
   return (
     <section ref={section} className={styles.finalHero} data-final-hero data-visible={visible} aria-label="Side" aria-hidden={!visible} inert={!visible}>
-      <header className={styles.finalHeader} data-final-chrome>
+      <header className={styles.finalHeader} data-final-chrome data-menu-open={menuOpen}>
         <Image src="/brand/side-logo-black.svg" alt="Side" width={1265} height={1126} className={styles.smallSymbol} />
-        <nav className={styles.navigation} aria-label={copy.navigation} onKeyDown={event => { if (event.key === "Escape") close(); }}>
-          <div id={menuId} className={styles.sectionLinks} data-open={open} inert={mobile && !open} aria-hidden={mobile && !open}>
+        <nav className={styles.navigation} aria-label={copy.navigation} onKeyDown={event => {
+          if (!menuOpen) return;
+          if (event.key === "Escape") { event.preventDefault(); close(); }
+        }}>
+          <div id={menuId} className={styles.sectionLinks} data-open={menuOpen} inert={mobile && !menuOpen} aria-hidden={mobile && !menuOpen}>
             <button type="button">{copy.work}</button>
             <button type="button">{copy.services}</button>
             <button type="button">{copy.why}</button>
           </div>
           <button className={styles.contact} type="button">{copy.contact}</button>
-          <button ref={toggle} className={styles.menuToggle} type="button" aria-label={open ? copy.closeMenu : copy.menu} aria-expanded={open} aria-controls={menuId} onClick={toggleMenu}>
+          <button ref={toggle} className={styles.menuToggle} type="button" aria-label={menuOpen ? copy.closeMenu : copy.menu} aria-expanded={menuOpen} aria-controls={menuId} onClick={toggleMenu}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
               <path d="M4 12H20" /><path d="M4 12H20" /><path d="M4 12H20" />
             </svg>
