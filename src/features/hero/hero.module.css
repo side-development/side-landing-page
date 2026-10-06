@@ -64,6 +64,8 @@
 }
 
 .navigation { font-family: "Segoe UI", system-ui, sans-serif; }
+.sectionLinkList, .sectionLinkItems { display: contents; }
+.navigation .menuContact { display: none; }
 
 .navigation button, .navigation a {
   padding: 8px 0;
@@ -100,6 +102,7 @@
 }
 
 .navUnderline path {
+  stroke-width: 2.4px;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
   transition: stroke-dashoffset 220ms ease;
@@ -270,17 +273,40 @@
 
   .smallSymbol { width: 32px; }
   .finalHero[data-visible="true"] .finalHeader { left: 24px; right: 24px; }
-  .finalHero[data-visible="true"] .finalHeader[data-menu-open="true"] {
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: max(24px, env(safe-area-inset-top)) 24px;
-    z-index: 10;
+  .finalHeader { --menu-reveal-duration: 540ms; }
+  .finalHeader::before {
+    content: "";
+    position: absolute;
+    inset: -12px;
+    z-index: -1;
+    border: 1px solid rgb(128 128 128 / 24%);
+    border-radius: 18px;
     background: var(--mobile-menu-background, #fff);
+    box-shadow: 0 12px 32px rgb(0 0 0 / 10%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease 320ms;
+  }
+  .finalHeader .smallSymbol { position: absolute; top: 0; left: 0; }
+  .finalHero[data-visible="true"] .finalHeader[data-menu-open="true"] {
+    z-index: 10;
     color: var(--mobile-menu-color, #080808);
   }
-  .finalHeader { --menu-reveal-duration: 560ms; }
-  .navigation { gap: 24px; }
+  .finalHeader[data-menu-open="true"]::before { opacity: 1; transition-delay: 0s; }
+  .navigation {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 32px minmax(0, 1fr) 28px;
+    column-gap: 24px;
+    row-gap: 0;
+  }
+  .navigation .contact {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+  }
+  .finalHeader[data-menu-open="true"] .navigation > .contact { visibility: hidden; }
   .navigation button, .navigation a { font-size: 13px; }
   .navigation button:focus .navUnderline { opacity: 1; }
   .navigation button:focus .navUnderline path {
@@ -289,34 +315,39 @@
   }
 
   .sectionLinks {
-    position: fixed;
-    top: calc(max(24px, env(safe-area-inset-top)) + 64px);
-    left: 0;
-    right: 0;
-    max-height: calc(100dvh - max(24px, env(safe-area-inset-top)) - 64px);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 24px 24px max(32px, env(safe-area-inset-bottom));
-    background: var(--mobile-menu-background, #fff);
-    border-radius: 0 0 18px 18px;
-    overflow-y: auto;
-    overscroll-behavior: contain;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 0fr;
+    align-items: stretch;
+    gap: 0;
+    margin-top: 0;
     visibility: hidden;
-    clip-path: inset(0 0 100% 0 round 0 0 18px 18px);
     pointer-events: none;
-    transition: clip-path var(--menu-reveal-duration) cubic-bezier(.22, 1, .36, 1), visibility 0s var(--menu-reveal-duration);
+    transition: grid-template-rows var(--menu-reveal-duration) cubic-bezier(.22, 1, .36, 1), margin-top var(--menu-reveal-duration) cubic-bezier(.22, 1, .36, 1), visibility 0s var(--menu-reveal-duration);
   }
 
   .sectionLinks[data-open="true"] {
     visibility: visible;
-    clip-path: inset(0 0 0 0 round 0 0 18px 18px);
+    grid-template-rows: 1fr;
+    margin-top: 24px;
     pointer-events: auto;
     transition-delay: 0s;
   }
+  .sectionLinkList {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .sectionLinkItems { display: flex; flex-direction: column; flex-shrink: 0; }
+  .navLabel { position: relative; display: inline-block; }
   .sectionLinks button {
-    font-size: 24px;
+    align-self: stretch;
+    padding: 12px 0;
+    border-bottom: 1px solid rgb(128 128 128 / 20%);
+    text-align: left;
+    font-size: 22px;
     opacity: 0;
     transform: translateY(9px);
     transition: opacity 160ms ease, transform 220ms ease;
@@ -329,9 +360,28 @@
   }
   .sectionLinks[data-open="true"] button:nth-child(2) { transition-delay: 150ms; }
   .sectionLinks[data-open="true"] button:nth-child(3) { transition-delay: 210ms; }
-  .sectionLinks .navUnderline { height: 10px; }
+  .sectionLinks .navUnderline { bottom: -6px; height: 10px; }
+  .sectionLinks .navUnderline path { stroke-width: 2.2px; }
+  .sectionLinks .menuContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 12px;
+    margin-top: 24px;
+    min-height: 46px;
+    border: 1px solid rgb(255 255 255 / 20%);
+    border-radius: 10px;
+    background: #3919bd;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .sectionLinks[data-open="true"] .menuContact { transition-delay: 240ms; }
 
   .navigation .menuToggle {
+    grid-column: 3;
+    grid-row: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -354,7 +404,8 @@
     .menuToggle path { transition: none; }
     .navigation button:focus .navUnderline path { transition: none; }
     .finalHeader { --menu-reveal-duration: 140ms; }
-    .sectionLinks { clip-path: none; opacity: 0; transition: opacity 140ms ease, visibility 0s 140ms; }
+    .finalHeader::before { transition: opacity 140ms ease; }
+    .sectionLinks { opacity: 0; transition: opacity 140ms ease, visibility 0s 140ms; }
     .sectionLinks[data-open="true"] { opacity: 1; transition-delay: 0s; }
     .sectionLinks button, .sectionLinks[data-open="true"] button { transform: none; transition: opacity 140ms ease; transition-delay: 0s; }
   }
@@ -369,9 +420,8 @@
 @media (max-width: 359px) {
   .finalHero { padding-inline: 16px; }
   .finalHero[data-visible="true"] .finalHeader { left: 16px; right: 16px; }
-  .finalHero[data-visible="true"] .finalHeader[data-menu-open="true"] { left: 0; right: 0; padding-inline: 16px; }
-  .sectionLinks { padding-inline: 16px; }
-  .navigation { gap: 14px; }
+  .finalHeader::before { inset: -8px; }
+  .navigation { column-gap: 14px; }
   .supportCopy { font-size: 21px; }
 }
 
