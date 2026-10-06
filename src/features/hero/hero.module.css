@@ -249,39 +249,46 @@
 
   .smallSymbol { width: 32px; }
   .finalHero[data-visible="true"] .finalHeader { left: 24px; right: 24px; }
+  .finalHero[data-visible="true"] .finalHeader[data-menu-open="true"] {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: max(24px, env(safe-area-inset-top)) 24px;
+    z-index: 10;
+    background: var(--mobile-menu-background, #fff);
+    color: var(--mobile-menu-color, #080808);
+  }
   .navigation { gap: 24px; }
   .navigation button, .navigation a { font-size: 13px; }
 
   .sectionLinks {
-    position: absolute;
-    top: 82px;
-    left: 24px;
-    right: 24px;
-    z-index: 7;
+    position: fixed;
+    top: calc(max(24px, env(safe-area-inset-top)) + 64px);
+    left: 0;
+    right: 0;
+    max-height: calc(100dvh - max(24px, env(safe-area-inset-top)) - 64px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    padding: 24px 0;
-    border-bottom: 1px solid #080808;
-    background: #fff;
+    padding: 24px 24px max(32px, env(safe-area-inset-bottom));
+    background: var(--mobile-menu-background, #fff);
+    overflow-y: auto;
+    overscroll-behavior: contain;
     visibility: hidden;
     opacity: 0;
     transform: translateY(-12px);
-    clip-path: inset(0 0 100% 0);
     pointer-events: none;
-    transition: opacity 280ms ease, transform 340ms cubic-bezier(.22, 1, .36, 1), clip-path 340ms cubic-bezier(.22, 1, .36, 1), visibility 0s 340ms;
+    transition: opacity 280ms ease, transform 340ms cubic-bezier(.22, 1, .36, 1), visibility 0s 340ms;
   }
 
   .sectionLinks[data-open="true"] {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-    clip-path: inset(0);
     pointer-events: auto;
     transition-delay: 0s;
   }
-  .finalHero[data-visible="true"] .sectionLinks { top: 58px; left: 0; right: 0; }
   .sectionLinks button { font-size: 24px; }
 
   .navigation .menuToggle {
@@ -305,7 +312,7 @@
 
   @media (prefers-reduced-motion: reduce) {
     .menuToggle path { transition: none; }
-    .sectionLinks { transform: none; clip-path: none; transition: opacity 140ms ease, visibility 0s 140ms; }
+    .sectionLinks { transform: none; transition: opacity 140ms ease, visibility 0s 140ms; }
     .sectionLinks[data-open="true"] { transition-delay: 0s; }
   }
 
@@ -319,6 +326,8 @@
 @media (max-width: 359px) {
   .finalHero { padding-inline: 16px; }
   .finalHero[data-visible="true"] .finalHeader { left: 16px; right: 16px; }
+  .finalHero[data-visible="true"] .finalHeader[data-menu-open="true"] { left: 0; right: 0; padding-inline: 16px; }
+  .sectionLinks { padding-inline: 16px; }
   .navigation { gap: 14px; }
   .supportCopy { font-size: 21px; }
 }
