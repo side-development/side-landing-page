@@ -63,12 +63,15 @@
   gap: clamp(24px, 3.4vw, 64px);
 }
 
+.navigation { font-family: "Segoe UI", system-ui, sans-serif; }
+
 .navigation button, .navigation a {
   padding: 8px 0;
   border: 0;
   background: none;
   color: inherit;
   font-size: 14px;
+  font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
   white-space: nowrap;
@@ -80,30 +83,48 @@
 
 .navigation .contact {
   color: #3919bd;
-  font-family: "Segoe UI", system-ui, sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-.navigation button:not(.menuToggle)::after {
-  content: "";
+.navUnderline {
   position: absolute;
-  inset: auto 0 0;
-  height: 1.5px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 280ms ease;
+  left: -2px;
+  bottom: 0;
+  width: calc(100% + 4px);
+  height: 8px;
+  max-width: none;
+  overflow: visible;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 100ms linear;
 }
 
-.navigation button:not(.menuToggle):focus-visible::after { transform: scaleX(1); }
-.navigation button:not(.menuToggle):active::after { transform: scaleX(1); }
+.navUnderline path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 220ms ease;
+}
+
+.navigation button:focus-visible .navUnderline path,
+.navigation button:active .navUnderline path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 480ms cubic-bezier(.25, .46, .45, .94);
+}
+
+.navigation button:is(:focus-visible, :active) .navUnderline { opacity: 1; }
 
 @media (hover: hover) and (pointer: fine) {
-  .navigation button:not(.menuToggle):hover::after { transform: scaleX(1); }
+  .navigation button:hover .navUnderline { opacity: 1; }
+  .navigation button:hover .navUnderline path {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 480ms cubic-bezier(.25, .46, .45, .94);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .navigation button:not(.menuToggle)::after { transition: none; }
+  .navUnderline { transition: none; }
+  .navigation button .navUnderline path,
+  .navigation button:is(:hover, :focus-visible, :active) .navUnderline path { transition: none; }
 }
 
 .navigation .menuToggle {
@@ -258,8 +279,14 @@
     background: var(--mobile-menu-background, #fff);
     color: var(--mobile-menu-color, #080808);
   }
+  .finalHeader { --menu-reveal-duration: 560ms; }
   .navigation { gap: 24px; }
   .navigation button, .navigation a { font-size: 13px; }
+  .navigation button:focus .navUnderline { opacity: 1; }
+  .navigation button:focus .navUnderline path {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 480ms cubic-bezier(.25, .46, .45, .94);
+  }
 
   .sectionLinks {
     position: fixed;
@@ -273,23 +300,36 @@
     gap: 16px;
     padding: 24px 24px max(32px, env(safe-area-inset-bottom));
     background: var(--mobile-menu-background, #fff);
+    border-radius: 0 0 18px 18px;
     overflow-y: auto;
     overscroll-behavior: contain;
     visibility: hidden;
-    opacity: 0;
-    transform: translateY(-12px);
+    clip-path: inset(0 0 100% 0 round 0 0 18px 18px);
     pointer-events: none;
-    transition: opacity 280ms ease, transform 340ms cubic-bezier(.22, 1, .36, 1), visibility 0s 340ms;
+    transition: clip-path var(--menu-reveal-duration) cubic-bezier(.22, 1, .36, 1), visibility 0s var(--menu-reveal-duration);
   }
 
   .sectionLinks[data-open="true"] {
     visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
+    clip-path: inset(0 0 0 0 round 0 0 18px 18px);
     pointer-events: auto;
     transition-delay: 0s;
   }
-  .sectionLinks button { font-size: 24px; }
+  .sectionLinks button {
+    font-size: 24px;
+    opacity: 0;
+    transform: translateY(9px);
+    transition: opacity 160ms ease, transform 220ms ease;
+  }
+  .sectionLinks[data-open="true"] button {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 360ms ease, transform 460ms cubic-bezier(.22, 1, .36, 1);
+    transition-delay: 90ms;
+  }
+  .sectionLinks[data-open="true"] button:nth-child(2) { transition-delay: 150ms; }
+  .sectionLinks[data-open="true"] button:nth-child(3) { transition-delay: 210ms; }
+  .sectionLinks .navUnderline { height: 10px; }
 
   .navigation .menuToggle {
     display: flex;
@@ -312,8 +352,11 @@
 
   @media (prefers-reduced-motion: reduce) {
     .menuToggle path { transition: none; }
-    .sectionLinks { transform: none; transition: opacity 140ms ease, visibility 0s 140ms; }
-    .sectionLinks[data-open="true"] { transition-delay: 0s; }
+    .navigation button:focus .navUnderline path { transition: none; }
+    .finalHeader { --menu-reveal-duration: 140ms; }
+    .sectionLinks { clip-path: none; opacity: 0; transition: opacity 140ms ease, visibility 0s 140ms; }
+    .sectionLinks[data-open="true"] { opacity: 1; transition-delay: 0s; }
+    .sectionLinks button, .sectionLinks[data-open="true"] button { transform: none; transition: opacity 140ms ease; transition-delay: 0s; }
   }
 
   .finalSupport { flex-direction: column; align-items: flex-start; gap: 32px; }
