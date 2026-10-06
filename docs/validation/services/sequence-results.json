@@ -32,7 +32,7 @@
         "paused"
       ],
       "dash": "waiting",
-      "serviceActive": "false",
+      "serviceActive": "true",
       "terminal": "waiting",
       "headings": [
         "Sites & experiências digitais",
@@ -144,7 +144,7 @@
         "paused"
       ],
       "dash": "waiting",
-      "serviceActive": "false",
+      "serviceActive": "true",
       "terminal": "waiting",
       "headings": [
         "Websites & digital experiences",
@@ -256,7 +256,7 @@
         "paused"
       ],
       "dash": "waiting",
-      "serviceActive": "false",
+      "serviceActive": "true",
       "terminal": "waiting",
       "headings": [
         "Sites & experiências digitais",
@@ -283,7 +283,7 @@
     },
     "exit": {
       "overflow": false,
-      "bg": "rgb(97, 97, 97)",
+      "bg": "rgb(96, 96, 97)",
       "composed": "true",
       "live": [
         "paused",

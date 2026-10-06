@@ -1,0 +1,50 @@
+[
+  {
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "locale": "pt-BR",
+    "reduced": false,
+    "previousDashboardHeight": 1476,
+    "dashboardHeight": 1184,
+    "savedHeight": 292,
+    "flowVisible": false,
+    "console": []
+  },
+  {
+    "name": "small-en",
+    "width": 320,
+    "height": 568,
+    "locale": "en",
+    "reduced": false,
+    "previousDashboardHeight": 1502,
+    "dashboardHeight": 1195,
+    "savedHeight": 307,
+    "flowVisible": false,
+    "console": []
+  },
+  {
+    "name": "mobile-reduced",
+    "width": 390,
+    "height": 844,
+    "locale": "pt-BR",
+    "reduced": true,
+    "previousDashboardHeight": 1476,
+    "dashboardHeight": 1184,
+    "savedHeight": 292,
+    "flowVisible": false,
+    "console": []
+  },
+  {
+    "name": "desktop",
+    "width": 1440,
+    "height": 900,
+    "locale": "pt-BR",
+    "reduced": false,
+    "previousDashboardHeight": 900,
+    "dashboardHeight": 900,
+    "savedHeight": 0,
+    "flowVisible": true,
+    "console": []
+  }
+]

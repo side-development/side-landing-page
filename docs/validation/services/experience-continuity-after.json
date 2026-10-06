@@ -1,0 +1,136 @@
+{
+  "samples": [
+    {
+      "y": 314,
+      "top": 450.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 343,
+      "top": 421.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 379,
+      "top": 385.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 414,
+      "top": 350.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 451,
+      "top": 313.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 486,
+      "top": 278.203125,
+      "color": "rgba(59,25,187,1)",
+      "composed": "false"
+    },
+    {
+      "y": 522,
+      "top": 242.203125,
+      "color": "rgba(67,26,180,1)",
+      "composed": "false"
+    },
+    {
+      "y": 558,
+      "top": 206.203125,
+      "color": "rgba(81,28,167,1)",
+      "composed": "false"
+    },
+    {
+      "y": 594,
+      "top": 170.203125,
+      "color": "rgba(99,31,150,1)",
+      "composed": "false"
+    },
+    {
+      "y": 630,
+      "top": 134.203125,
+      "color": "rgba(121,34,131,1)",
+      "composed": "false"
+    },
+    {
+      "y": 666,
+      "top": 98.203125,
+      "color": "rgba(142,37,111,1)",
+      "composed": "true"
+    },
+    {
+      "y": 702,
+      "top": 62.203125,
+      "color": "rgba(163,40,92,1)",
+      "composed": "true"
+    },
+    {
+      "y": 738,
+      "top": 26.203125,
+      "color": "rgba(180,42,76,1)",
+      "composed": "true"
+    },
+    {
+      "y": 773,
+      "top": -8.796875,
+      "color": "rgba(192,44,65,1)",
+      "composed": "true"
+    },
+    {
+      "y": 810,
+      "top": -45.796875,
+      "color": "rgba(198,45,60,1)",
+      "composed": "true"
+    },
+    {
+      "y": 846,
+      "top": -81.796875,
+      "color": "rgba(198,45,60,1)",
+      "composed": "true"
+    },
+    {
+      "y": 882,
+      "top": -117.796875,
+      "color": "rgba(198,45,60,1)",
+      "composed": "true"
+    },
+    {
+      "y": 918,
+      "top": -153.7928466796875,
+      "color": "#c62d3c",
+      "composed": "true"
+    },
+    {
+      "y": 954,
+      "top": -189.8482666015625,
+      "color": "#c62d3c",
+      "composed": "true"
+    },
+    {
+      "y": 990,
+      "top": -225.94717407226562,
+      "color": "#c62d3c",
+      "composed": "true"
+    },
+    {
+      "y": 1034,
+      "top": -270.1986083984375,
+      "color": "#c62d3c",
+      "composed": "true"
+    }
+  ],
+  "held": [],
+  "frames": {
+    "median": 16.699999999999818,
+    "p95": 17.100000000000364,
+    "max": 17.30000000000109
+  }
+}
