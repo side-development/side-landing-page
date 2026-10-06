@@ -71,11 +71,16 @@ export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: He
           if (event.key === "Escape") { event.preventDefault(); close(); }
         }}>
           <div id={menuId} className={styles.sectionLinks} data-open={menuOpen} inert={mobile && !menuOpen} aria-hidden={mobile && !menuOpen}>
-            <button type="button">{copy.work}<NavUnderline variant="work" /></button>
-            <button type="button">{copy.services}<NavUnderline variant="services" /></button>
-            <button type="button">{copy.why}<NavUnderline variant="why" /></button>
+            <div className={styles.sectionLinkList}>
+              <div className={styles.sectionLinkItems}>
+                <button type="button"><span className={styles.navLabel}>{copy.work}<NavUnderline variant="work" /></span></button>
+                <button type="button"><span className={styles.navLabel}>{copy.services}<NavUnderline variant="services" /></span></button>
+                <button type="button"><span className={styles.navLabel}>{copy.why}<NavUnderline variant="why" /></span></button>
+              </div>
+              <button className={styles.menuContact} type="button">{copy.contact}<span aria-hidden="true">→</span></button>
+            </div>
           </div>
-          <button className={styles.contact} type="button">{copy.contact}<NavUnderline variant="contact" /></button>
+          <button className={styles.contact} type="button" inert={menuOpen} aria-hidden={menuOpen || undefined}>{copy.contact}<NavUnderline variant="contact" /></button>
           <button ref={toggle} className={styles.menuToggle} type="button" aria-label={menuOpen ? copy.closeMenu : copy.menu} aria-expanded={menuOpen} aria-controls={menuId} onClick={toggleMenu}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
               <path d="M4 12H20" /><path d="M4 12H20" /><path d="M4 12H20" />

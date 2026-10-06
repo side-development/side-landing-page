@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState } from "react";
 import styles from "./hero.module.css";
 
 const strokes = {
@@ -8,9 +9,32 @@ const strokes = {
 };
 
 export function NavUnderline({ variant }: { variant: keyof typeof strokes }) {
+  const svg = useRef<SVGSVGElement>(null);
+  const [viewport, setViewport] = useState({ width: 120, height: 16 });
+
+  useLayoutEffect(() => {
+    const element = svg.current;
+    if (!element) return;
+    const observer = new ResizeObserver(() => {
+      const { width, height } = element.getBoundingClientRect();
+      if (!width || !height) return;
+      setViewport(current => (
+        current.width === width && current.height === height ? current : { width, height }
+      ));
+    });
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
+  let coordinate = 0;
+  const path = strokes[variant].replace(/\d+(?:\.\d+)?/g, value => {
+    const scale = coordinate++ % 2 === 0 ? viewport.width / 120 : viewport.height / 16;
+    return (Number(value) * scale).toFixed(3);
+  });
+
   return (
-    <svg className={styles.navUnderline} viewBox="0 0 120 16" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-      <path d={strokes[variant]} pathLength="1" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+    <svg ref={svg} className={styles.navUnderline} viewBox={`0 0 ${viewport.width} ${viewport.height}`} aria-hidden="true" focusable="false">
+      <path d={path} pathLength="1" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
