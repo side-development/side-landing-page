@@ -70,6 +70,12 @@ Na revisão seguinte, o vídeo `Gravação de Tela 2026-10-06 104634.mp4` passa 
 
 Após pedir uma reprodução mais fiel da expansão, o usuário autorizou substituir essa faixa por uma janela arredondada única, com borda/sombra discretas, crescimento da altura, divisórias entre itens e CTA preenchido na base. A navbar fechada mantém sua posição e transparência. A paleta acompanha a seção clara/escura. Os traços engrossados agora são renderizados em coordenadas equivalentes aos pixels CSS de cada palavra, preservando espessura uniforme também no mobile; o observer de tamanho tem cleanup local. Não há nova dependência nem mudança dos destinos.
 
+### Interação dos gráficos durante o scroll
+
+O usuário reportou perda das interações. O repro na Home confirmou que, ao iniciar a dissolução (`bottom 86%`), o dashboard recebia `inert` mesmo com os gráficos a 98,02% de opacity. Mover o mouse retornava sempre o dia 30; remover somente o bloqueio restaurava a seleção. A disponibilidade agora combina presença na viewport com a aparência real dos gráficos: permanece ativa até os panels chegarem a 10% de opacity, pausa ao desaparecer e volta ao reverter a rolagem. A coreografia e os timings aprovados não foram alterados.
+
+A validação também encontrou uma falha em touch: `pointerleave` e foco substituíam o ponto selecionado pelo dia final. Receita e conversão passam a limpar a seleção ao sair com mouse, preservando o toque; foco inicial mantém uma seleção já feita. Teclado continua usando Home/End/setas e blur limpa a leitura. Correção local, sem dependências ou controlador global. Evidências em `docs/validation/services/chart-interaction.json` e `chart-interaction-cleanup.json`.
+
 ### Estabilidade no término da intro
 
 Com a scrollbar clássica visível, o término da intro liberava `overflow: hidden` e a largura útil passava de 1440 para 1430 px. O wordmark encolhia 10 px e a borda direita da navbar se deslocava 10 px. O repro headless inicial ocultava a scrollbar por padrão; o harness passa a remover `--hide-scrollbars`, reproduzindo o comportamento desktop.

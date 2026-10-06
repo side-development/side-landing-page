@@ -1,0 +1,73 @@
+{
+  "status": "pass",
+  "before": {
+    "command": "node artifacts/services-8/chart-interaction-minimal.cjs",
+    "first": "30",
+    "second": "30",
+    "inert": true,
+    "opacity": "0.9802",
+    "probe": "Removing only inert restores pointer selection"
+  },
+  "after": {
+    "first": "5",
+    "second": "25",
+    "inert": false,
+    "opacity": "0.9802"
+  },
+  "checks": [
+    {
+      "case": "desktop-pt",
+      "status": "pass",
+      "first": "5",
+      "second": "25",
+      "checks": "chart pointer/touch; keyboard endpoints; source hover/tap; conversion keyboard desktop; visible during dissolution; offscreen/faded pause and reverse; 7-day data; comparison; modal; terminal return; console/hydration",
+      "errors": [],
+      "advisories": []
+    },
+    {
+      "case": "desktop-en",
+      "status": "pass",
+      "first": "5",
+      "second": "25",
+      "checks": "chart pointer/touch; keyboard endpoints; source hover/tap; conversion keyboard desktop; visible during dissolution; offscreen/faded pause and reverse; 7-day data; comparison; modal; terminal return; console/hydration",
+      "errors": [],
+      "advisories": []
+    },
+    {
+      "case": "short-desktop",
+      "status": "pass",
+      "first": "5",
+      "second": "25",
+      "checks": "chart pointer/touch; keyboard endpoints; source hover/tap; conversion keyboard desktop; visible during dissolution; offscreen/faded pause and reverse; 7-day data; comparison; modal; terminal return; console/hydration",
+      "errors": [],
+      "advisories": []
+    },
+    {
+      "case": "mobile-pt",
+      "status": "pass",
+      "first": "5",
+      "second": "25",
+      "checks": "chart pointer/touch; keyboard endpoints; source hover/tap; conversion keyboard desktop; visible during dissolution; offscreen/faded pause and reverse; 7-day data; comparison; modal; terminal return; console/hydration",
+      "errors": [],
+      "advisories": []
+    },
+    {
+      "case": "mobile-en-reduced",
+      "status": "pass",
+      "first": "5",
+      "second": "25",
+      "checks": "chart pointer/touch; keyboard endpoints; source hover/tap; conversion keyboard desktop; visible during dissolution; offscreen/faded pause and reverse; 7-day data; comparison; modal; terminal return; console/hydration",
+      "errors": [],
+      "advisories": []
+    },
+    {
+      "case": "reduced-pt",
+      "status": "pass",
+      "first": "5",
+      "second": "25",
+      "checks": "chart pointer/touch; keyboard endpoints; source hover/tap; conversion keyboard desktop; visible during dissolution; offscreen/faded pause and reverse; 7-day data; comparison; modal; terminal return; console/hydration",
+      "errors": [],
+      "advisories": []
+    }
+  ]
+}
