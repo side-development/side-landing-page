@@ -46,7 +46,8 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
 
   if (reduced) {
     timeline.to(surface, { opacity: 0, duration: 0.65 }, 0.34)
-      .to(black, { opacity: 1, duration: 0.65 }, 0.34);
+      .to(black, { opacity: 1, duration: 0.65 }, 0.34)
+      .to(document.body, { backgroundColor: "#000", duration: 0.65 }, 0.34);
   } else {
     timeline.set(surface, { filter: "grayscale(1)" }, 0.34);
     const code = surface.querySelector(`.${styles.errorCode} span[aria-hidden]`)!;
@@ -102,6 +103,7 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
     gsap.set(white, { visibility: "hidden" });
     timeline.set(white, { visibility: "visible" }, 3.2)
       .set(black, { opacity: 1 }, 3.2)
+      .set(document.body, { backgroundColor: "#000" }, 3.2)
       .set(surface, { visibility: "hidden" }, 3.2);
     white.forEach((tile, index) => {
       timeline.to(tile, { scaleX: index % 3 === 0 ? 0.02 : 0.92, scaleY: index % 3 === 0 ? 0.94 : 0.02, opacity: 0, duration: 0.3, ease: "steps(3)" }, 3.21 + ((index * 13) % white.length) / white.length * 0.85);
@@ -124,9 +126,11 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
   timeline.to(stage, { "--phrase-emphasis": "#000", duration: 0.9, ease: "none" }, purpleAt + (reduced ? 0.4 : 0.75));
   if (reduced) {
     timeline.to(black, { backgroundColor: "#3919BD", duration: 0.85 }, purpleAt)
+      .to(document.body, { backgroundColor: "#3919BD", duration: 0.85 }, purpleAt)
       .set(final, { visibility: "visible" }, collapseAt)
       .set(dot, { opacity: 1 }, collapseAt)
-      .to(black, { opacity: 0, duration: 0.85 }, collapseAt);
+      .to(black, { opacity: 0, duration: 0.85 }, collapseAt)
+      .to(document.body, { backgroundColor: "#fff", duration: 0.85 }, collapseAt);
   } else {
     const purple = fieldRegions.map(region => {
       const tile = surfaceFragment(region, "#3919BD");
@@ -147,9 +151,11 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
     purpleField.setAttribute("viewBox", `0 0 ${width} ${height}`);
     gsap.set(circle, { attr: { cx: dotX, cy: dotY, r: fullRadius } });
     timeline.set(purpleField, { visibility: "visible" }, purpleAt + 1.14)
+      .set(document.body, { backgroundColor: "#3919BD" }, purpleAt + 1.14)
       .set(purpleLayer, { visibility: "hidden" }, purpleAt + 1.14)
       .set(black, { opacity: 0 }, collapseAt)
       .set(final, { visibility: "visible" }, collapseAt)
+      .to(document.body, { backgroundColor: "#fff", duration: 0.4 }, collapseAt)
       .to(circle, { attr: { r: pointRadius }, duration: 3.1, ease: circularEase }, collapseAt)
       .set(dot, { opacity: 1 }, collapseAt + 3.05)
       .to(purpleField, { opacity: 0, duration: 0.12 }, collapseAt + 3.1);
