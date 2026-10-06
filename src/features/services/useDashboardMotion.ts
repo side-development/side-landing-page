@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { number, type DashboardLocale, type DashboardPeriod } from "./dashboardData";
+import { serviceEntrance, serviceRevealDuration } from "./serviceEntrance";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -41,7 +42,7 @@ export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: 
       node.dataset.animation = "waiting";
       node.inert = true;
       const timeline = gsap.timeline({ paused: true, defaults: { ease: "power2.out" }, onStart: () => { started = true; node.dataset.animation = "playing"; }, onComplete: () => { node.dataset.animation = "settled"; node.inert = false; revealed.current = true; } });
-      timeline.fromTo(node, { opacity: 0, y: 12, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.8, ease: "sine.out", clearProps: "filter" })
+      timeline.fromTo(node, { opacity: 0, y: 12, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: serviceRevealDuration, ease: "sine.out", clearProps: "filter" })
         .from(shell, { opacity: 0, y: 8, duration: 0.75, stagger: 0.08 }, 0.55)
         .from(metrics, { opacity: 0, y: 10, duration: 0.85, stagger: 0.1 }, 0.8);
       counters.forEach((counter, index) => {
@@ -70,7 +71,7 @@ export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: 
       observer.observe(node);
       const readiness = new MutationObserver(sync);
       readiness.observe(node, { attributes: true, attributeFilter: ["data-service-active"] });
-      const entrance = ScrollTrigger.create({ trigger: node, start: "top 70%", once: true, onEnter: () => { triggered = true; sync(); } });
+      const entrance = ScrollTrigger.create({ ...serviceEntrance(node), once: true, onEnter: () => { triggered = true; sync(); }, onRefresh: self => { if (self.progress > 0) triggered = true; sync(); } });
       document.addEventListener("visibilitychange", sync);
       return () => {
         observer.disconnect();

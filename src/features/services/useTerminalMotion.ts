@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { type TerminalLocale } from "./terminalData";
+import { serviceEntrance, serviceRevealDuration } from "./serviceEntrance";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -14,7 +15,7 @@ export function useTerminalMotion(root: RefObject<HTMLElement | null>, locale: T
     if (!node) return;
     let entered = false;
     let sync: (() => void) | undefined;
-    const entrance = ScrollTrigger.create({ trigger: node, start: "top 80%", once: true, onEnter: () => { entered = true; sync?.(); }, onRefresh: self => { if (self.progress > 0) entered = true; sync?.(); } });
+    const entrance = ScrollTrigger.create({ ...serviceEntrance(node), once: true, onEnter: () => { entered = true; sync?.(); }, onRefresh: self => { if (self.progress > 0) entered = true; sync?.(); } });
     if (entrance.progress > 0) entered = true;
     const typed = [...node.querySelectorAll<HTMLElement>("[data-terminal-type]")].map(element => ({ element, text: element.dataset.terminalText ?? "" }));
     const media = gsap.matchMedia();
@@ -33,7 +34,7 @@ export function useTerminalMotion(root: RefObject<HTMLElement | null>, locale: T
         const welcome = node.querySelector("[data-terminal-welcome]");
         const response = node.querySelector("[data-terminal-response]");
         gsap.set([shell, command, welcome, response], { opacity: 0 });
-        timeline.fromTo(node, { opacity: 0, scale: 0.97, filter: "blur(6px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 1.1, ease: "power2.out", clearProps: "filter,transform" });
+        timeline.fromTo(node, { opacity: 0, scale: 0.97, filter: "blur(12px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: serviceRevealDuration, ease: "sine.out", clearProps: "filter,transform" });
         function type(index: number, at: number, speed: number) {
           const { element, text } = typed[index];
           const position = { count: 0 };

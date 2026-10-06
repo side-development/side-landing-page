@@ -4,6 +4,7 @@ import { type RefObject } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { serviceEntrance, serviceRevealDuration } from "./serviceEntrance";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -12,6 +13,9 @@ export function useServicesMotion(root: RefObject<HTMLElement | null>, active: b
     const node = root.current;
     if (!node || !active) return;
     node.setAttribute("data-motion-ready", "true");
+    const page = document.documentElement;
+    const scrollbarProperties = ["--page-scroll-track", "--page-scroll-thumb", "--page-scroll-hover"];
+    const previousScrollbar = scrollbarProperties.map(property => page.style.getPropertyValue(property));
     const dashboard = node.querySelector<HTMLElement>("[data-dashboard]")!;
     const panels = dashboard.querySelector<HTMLElement>("[data-dashboard-panels]")!;
     const metrics = dashboard.querySelector<HTMLElement>("[data-dashboard-metrics]")!;
@@ -34,15 +38,13 @@ export function useServicesMotion(root: RefObject<HTMLElement | null>, active: b
       gsap.timeline({ scrollTrigger: { trigger: node.querySelector("header"), start: "top 86%", once: true } })
         .from(node.querySelector("header h2"), { opacity: 0, y: reduced ? 0 : 20, duration: reduced ? .4 : 1.4, ease: "sine.out" });
       chapters.forEach(chapter => {
-        const titleStage = chapter.querySelector("[data-service-title-stage]");
-        gsap.timeline({ scrollTrigger: { trigger: titleStage, start: "top 68%", once: true } })
-          .fromTo(chapter.querySelector("[data-service-title]"), { opacity: 0, y: reduced ? 0 : 22, filter: reduced ? "none" : "blur(14px)" }, {
-            opacity: 1, y: 0, filter: "blur(0px)", duration: reduced ? .4 : 1.8, ease: "sine.out", clearProps: "filter,transform",
-          });
-        gsap.timeline({ scrollTrigger: { trigger: titleStage, start: "top 26%", once: true } })
-          .fromTo(chapter.querySelector("[data-service-copy]"), { opacity: 0, y: reduced ? 0 : 10, filter: reduced ? "none" : "blur(10px)" }, {
-            opacity: 1, y: 0, filter: "blur(0px)", duration: reduced ? .4 : 1.8, ease: "sine.out", clearProps: "filter,transform",
-          });
+        gsap.timeline({ scrollTrigger: { ...serviceEntrance(chapter), once: true, invalidateOnRefresh: true } })
+          .fromTo(chapter.querySelector("[data-service-title]"), { opacity: 0, filter: reduced ? "none" : "blur(14px)" }, {
+            opacity: 1, filter: "blur(0px)", duration: reduced ? .4 : serviceRevealDuration, ease: "sine.out", clearProps: "filter",
+          }, 0)
+          .fromTo(chapter.querySelector("[data-service-copy]"), { opacity: 0, filter: reduced ? "none" : "blur(10px)" }, {
+            opacity: 1, filter: "blur(0px)", duration: reduced ? .4 : serviceRevealDuration, ease: "sine.out", clearProps: "filter",
+          }, 0);
       });
 
       if (!reduced) {
@@ -59,8 +61,18 @@ export function useServicesMotion(root: RefObject<HTMLElement | null>, active: b
           .to(node.querySelector("[data-product-demo]"), { opacity: 0, duration: .3 }, .75);
       }
       gsap.timeline({ scrollTrigger: { trigger: atmosphere, start: "top 85%", end: "bottom 30%", scrub: reduced ? true : 1 } })
-        .fromTo(node, { backgroundColor: "#ffffff" }, { backgroundColor: "#101011", ease: "sine.inOut", onUpdate: function () { node.dataset.dark = String(this.progress() > .65); } });
+        .fromTo(node, { backgroundColor: "#ffffff" }, { backgroundColor: "#101011", ease: "sine.inOut", onUpdate: function () { node.dataset.dark = String(this.progress() > .65); } }, 0)
+        .fromTo(page, { "--page-scroll-track": "#ffffff", "--page-scroll-thumb": "#e9e9e9", "--page-scroll-hover": "#dcdcdc" }, {
+          "--page-scroll-track": "#101011", "--page-scroll-thumb": "#232324", "--page-scroll-hover": "#303032", ease: "sine.inOut",
+        }, 0);
     });
-    return () => { media.revert(); panels.inert = metrics.inert = false; delete dashboard.dataset.serviceActive; delete node.dataset.motionReady; delete node.dataset.dark; };
+    return () => {
+      media.revert();
+      scrollbarProperties.forEach((property, index) => {
+        if (previousScrollbar[index]) page.style.setProperty(property, previousScrollbar[index]);
+        else page.style.removeProperty(property);
+      });
+      panels.inert = metrics.inert = false; delete dashboard.dataset.serviceActive; delete node.dataset.motionReady; delete node.dataset.dark;
+    };
   }, { scope: root, dependencies: [active], revertOnUpdate: true });
 }

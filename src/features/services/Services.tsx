@@ -22,8 +22,8 @@ export function Services({ locale, active = true }: { locale: DigitalExperienceL
       {copies.map((copy, index) => <section key={index} className={styles.chapter} data-service-chapter={index + 1} aria-labelledby={`service-${index + 1}`}>
         <div className={styles.titleStage} data-service-title-stage>
           <div className={styles.title} data-service-title><span className={styles.index}>0{index + 1}</span><h3 id={`service-${index + 1}`}>{copy.service}</h3></div>
+          <div className={styles.copy} data-service-copy><p>{copy.description}</p><small>{copy.territories}</small></div>
         </div>
-        <div className={styles.copy} data-service-copy><p>{copy.description}</p><small>{copy.territories}</small></div>
         {active && index === 0 && <div ref={experience} className={styles.experienceRun} data-experience-run><div className={styles.experienceShell} data-experience-shell><DigitalExperienceDemo locale={locale} scene={experience} /></div></div>}
         {active && index === 1 && <><ProductDashboardDemo locale={locale} /><div className={styles.atmosphere} data-service-atmosphere aria-hidden="true" /></>}
         {active && index === 2 && <div className={styles.terminalStage}><IntegrationTerminalDemo locale={locale} /></div>}

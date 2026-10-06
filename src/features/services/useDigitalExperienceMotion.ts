@@ -4,6 +4,7 @@ import { type RefObject } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { serviceEntrance, serviceRevealDuration } from "./serviceEntrance";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -17,7 +18,7 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
     const node = root.current;
     if (!node) return;
     let reveal: gsap.core.Timeline | undefined;
-    const revealTrigger = ScrollTrigger.create({ trigger: node, start: "top 85%", onEnter: () => reveal?.play(), onRefresh: self => { if (self.progress > 0) reveal?.play(); } });
+    const revealTrigger = ScrollTrigger.create({ ...serviceEntrance(node), onEnter: () => reveal?.play(), onRefresh: self => { if (self.progress > 0) reveal?.play(); } });
     const media = gsap.matchMedia();
     media.add({ motion: "(prefers-reduced-motion: no-preference)", reduced: "(prefers-reduced-motion: reduce)", desktop: "(min-width: 801px) and (hover: hover) and (pointer: fine)", sticky: "(min-width: 1000px) and (min-height: 680px)" }, context => {
       const reduced = context.conditions?.reduced;
@@ -75,7 +76,7 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
       });
       if (reduced) entrance.fromTo(node, { opacity: 0 }, { opacity: 1, duration: .4, clearProps: "opacity" });
       else entrance.fromTo(node.querySelectorAll("[data-digital-line]"), { yPercent: 115 }, { yPercent: 0, duration: 1.5, stagger: .12, ease: "power3.out" }, 0)
-        .fromTo(art, { opacity: 0, scale: .9, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 1.8, ease: "power3.out" }, .12)
+        .fromTo(art, { opacity: 0, scale: .9, rotation: -12, filter: "blur(12px)" }, { opacity: 1, scale: 1, rotation: 0, filter: "blur(0px)", duration: serviceRevealDuration, ease: "sine.out", clearProps: "filter" }, 0)
         .fromTo(node.querySelectorAll("[data-digital-detail]"), { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 1, stagger: .08, ease: "sine.out" }, .6);
       reveal = entrance;
       if (revealTrigger.progress > 0) entrance.play();
