@@ -35,10 +35,10 @@ export function ProductDashboardDemo({ locale, active = true }: { locale: Dashbo
         </div>
       </header>
       <p id={`${id}-disclaimer`} className={styles.srOnly}>{copy.summary}</p>
-      <dl className={styles.metrics}>
+      <dl className={styles.metrics} data-dashboard-metrics>
         {metrics.map((metric, index) => <DashboardMetric key={`${period}-${index}`} metric={metric} label={copy.metrics[index]} compared={copy.compared} locale={locale} />)}
       </dl>
-      <div className={styles.body}>
+      <div className={styles.body} data-dashboard-panels>
         <RevenueChart key={period} points={data.points} locale={locale} enabled={active} />
         <SourceChart key={`sources-${period}`} data={data} locale={locale} enabled={active} id={`${id}-sources`} />
         <ConversionFlow key={`flow-${period}`} data={data} locale={locale} enabled={active} />

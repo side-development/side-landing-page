@@ -8,19 +8,23 @@ import { SideCursor } from "@/features/cursor/SideCursor";
 import { SelectedWork } from "@/features/work/SelectedWork";
 import type { WorkCopy } from "@/features/work/copy";
 import { useSmoothScroll } from "@/features/scroll/useSmoothScroll";
+import { Services } from "@/features/services/Services";
+import styles from "./home.module.css";
 
-export function HomeExperience({ errorCopy, heroCopy, workCopy }: {
+export function HomeExperience({ errorCopy, heroCopy, workCopy, locale }: {
   errorCopy: FakeErrorCopy;
   heroCopy: HeroCopy;
   workCopy: WorkCopy;
+  locale: "pt-BR" | "en";
 }) {
   const [phase, setPhase] = useState<"idle" | "purple" | "final">("idle");
   const onPhase = useCallback((next: typeof phase) => setPhase(next), []);
   useSmoothScroll(phase === "final");
 
-  return <main style={{ background: "#fff" }}>
+  return <main className={styles.home}>
     <Hero copy={errorCopy} finalCopy={heroCopy} onPhase={onPhase} />
     <SelectedWork copy={workCopy} active={phase === "final"} />
+    <Services locale={locale} active={phase === "final"} />
     <SideCursor active={phase !== "idle"} />
   </main>;
 }

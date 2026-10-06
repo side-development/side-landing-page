@@ -8,7 +8,7 @@ export default async function Home() {
   const locale = await getLocale();
 
   return (
-    <HomeExperience errorCopy={{
+    <HomeExperience locale={locale === "en" ? "en" : "pt-BR"} errorCopy={{
       heading: t("heading"),
       description: t("description"),
       tryLabel: t("tryLabel"),
