@@ -1,0 +1,50 @@
+{
+  "before": {
+    "phase": "triggered",
+    "viewport": 1440,
+    "client": 1440,
+    "bodyWidth": 1430,
+    "wordmarkLeft": 40,
+    "wordmarkWidth": 1350,
+    "headerLeft": 40,
+    "headerRight": 1390,
+    "bodyOverflow": "hidden",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "rootOverflow": "visible",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "time": 19850.799999952316
+  },
+  "first": {
+    "phase": "final",
+    "viewport": 1440,
+    "client": 1440,
+    "bodyWidth": 1430,
+    "wordmarkLeft": 40,
+    "wordmarkWidth": 1350,
+    "headerLeft": 40,
+    "headerRight": 1390,
+    "bodyOverflow": "visible",
+    "bodyBackground": "rgb(250, 250, 250)",
+    "rootOverflow": "visible",
+    "transform": "none",
+    "time": 19875.099999904633
+  },
+  "last": {
+    "phase": "final",
+    "viewport": 1440,
+    "client": 1430,
+    "bodyWidth": 1430,
+    "wordmarkLeft": 40,
+    "wordmarkWidth": 1350,
+    "headerLeft": 40,
+    "headerRight": 1390,
+    "bodyOverflow": "visible",
+    "bodyBackground": "rgb(250, 250, 250)",
+    "rootOverflow": "visible",
+    "transform": "none",
+    "time": 21898.099999904633
+  },
+  "maxWidthChange": 0,
+  "maxLeftChange": 0,
+  "console": []
+}

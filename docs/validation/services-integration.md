@@ -38,6 +38,15 @@ Status: **Ready for review** deste checkpoint; aprovação final da issue penden
 
 ## Evidências
 
+Refinamento da navbar mobile: seis configurações PT/EN, de 320 a 768 px, incluindo landscape e reduced motion, nos estados claro e escuro. Faixa superior e links preenchem as duas laterais; o restante da página continua visível, sem overlay fullscreen ou overflow horizontal. Foco/Tab/Escape, scroll livre e resize mobile→desktop→mobile: pass. Nenhum erro de console/hydration capturado; avisos LCP da mídia Work em desenvolvimento são registrados separadamente. Validação em Edge headless, sem substituir a revisão visual em dispositivo físico.
+
+- [Menu claro](services/navbar-mobile-pt-light.png).
+- [Menu escuro](services/navbar-mobile-pt-dark.png).
+- [EN em 320 px](services/navbar-mobile-en-light.png).
+- [Resultados da navbar](services/mobile-navbar.json).
+
+Estabilidade da intro com scrollbar clássica: repro original detectou encolhimento de 10 px no wordmark e deslocamento de 10 px na borda direita da navbar. Após reservar o gutter, os mesmos elementos permanecem com largura/posição constantes. Primeira passagem completa e reduced motion foram medidas, além do cleanup do fundo/overflow. A cor da área reservada durante as frases foi inspecionada visualmente. [Antes](services/intro-layout-before.json), [depois](services/intro-layout-after.json), [reduced motion EN](services/intro-layout-reduced-after.json) e [mobile](services/intro-layout-mobile-after.json).
+
 Gravações completas, browser-only, H.264/yuv420p, sem áudio, faststart:
 
 - [Desktop PT](services/sequence-desktop.mp4).
