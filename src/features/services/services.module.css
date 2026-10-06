@@ -1,6 +1,6 @@
 .services { position: relative; background: #fff; color: #171719; padding-top: clamp(80px, 14svh, 180px); }
 .heading { margin: 0 40px 14svh; }
-.heading h2 { margin: 0; font-size: clamp(34px, 4.2vw, 76px); font-weight: 400; letter-spacing: -.05em; line-height: 1.1; }
+.heading h2 { margin: 0; font-size: clamp(32px, 3.5vw, 56px); font-weight: 400; letter-spacing: -.045em; line-height: 1.1; }
 .stage { position: relative; }
 .chapter { position: relative; }
 .titleStage { position: relative; display: flex; flex-direction: column; align-items: center; min-height: 44svh; padding: 8svh 40px 28px; }
@@ -20,13 +20,13 @@
 .services :focus-visible { outline: 2px solid #3919bd; outline-offset: 5px; }
 .services :global([data-dashboard-counter]) { opacity: var(--services-values-opacity, 1); }
 @media (min-width: 1000px) and (min-height: 680px) and (prefers-reduced-motion: no-preference) {
-  .experienceRun { min-height: 145svh; }
+  .experienceRun::after { content: ""; display: block; height: 38svh; }
   .experienceShell { position: sticky; top: 8svh; }
 }
 @media (max-width: 800px) {
   .services { padding-top: 90px; }
   .heading { margin: 0 20px 20svh; }
-  .heading h2 { font-size: clamp(32px, 7.6vw, 52px); }
+  .heading h2 { font-size: clamp(32px, 8.4vw, 54px); }
   .titleStage { padding: 8svh 20px 24px; }
   .title h3 { font-size: clamp(30px, 7.8vw, 54px); }
   .copy { margin-top: 16px; }

@@ -62,9 +62,8 @@ export function Hero({ copy, finalCopy, onPhase }: Props) {
   return (
     <section ref={container} className={styles.hero} data-hero-state={final ? "final" : state} data-session-ready={ready}>
       {!final && <div data-error-surface><FakeErrorIntro copy={copy} active={state === "idle"} onReload={start} /></div>}
-      <FinalHero copy={finalCopy} visible={final} focusOnReveal={state === "final"} />
+      <FinalHero copy={finalCopy} visible={final} focusOnReveal={state === "final"} onReplay={final && review ? replay : undefined} />
       {state === "triggered" && !final && <CinematicReveal container={container} copy={finalCopy} onComplete={complete} onPurple={() => onPhase?.("purple")} />}
-      {final && review && <button className={styles.replay} type="button" onClick={replay}>{finalCopy.replay}</button>}
     </section>
   );
 }
