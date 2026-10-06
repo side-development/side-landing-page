@@ -38,6 +38,8 @@ Status: **Ready for review** deste checkpoint; aprovação final da issue penden
 
 ## Evidências
 
+Fase 5 concluída localmente: matriz de oito configurações desktop/mobile/tablet/horizontal, PT/EN e reduced motion, incluindo primeira visita e sessão repetida em produção. Títulos visíveis ao cruzar o centro, conteúdo do terminal sem clipping, interações, modal/foco, scroll e reversão passaram; cleanup e validações técnicas também. Nenhuma mudança de código foi necessária nesta etapa. Gravações completas e limites da auditoria em [services-final-review.md](services-final-review.md). Publicação permanece pendente de aprovação visual explícita.
+
 Regressão de interação nos gráficos: o repro na Home falhou duas vezes ao iniciar a dissolução, com opacity de 0,9802 e `inert=true`; a seleção permanecia no dia 30. Um probe removendo apenas `inert` restaurou o hover. Após vincular a disponibilidade à viewport e à opacity real, o mesmo repro seleciona dias 5 e 25 sem mudar os tempos da transição. Um segundo repro em touch mostrou o dia 5 sendo apagado por pointerleave/foco; após corrigir esses handlers, o toque preserva a seleção e a leitura.
 
 Seis configurações (desktop PT, EN 1920×1080, desktop 1366×768, mobile PT, mobile EN reduced e desktop PT reduced) verificam mouse/toque, valores nas extremidades por teclado, origem, conversão desktop, período de 7 dias, comparação, modal, pausa após dissolução e retomada ao voltar do terminal. Console/hydration sem erros capturados. Cleanup em Strict Mode passou nas cinco desmontagens, incluindo ausência de triggers/animações/listeners remanescentes e mudança dinâmica de reduced motion/resize. Lint, typecheck e build passaram novamente. Sem novas dependências ou alterações na Hero/Work/navbar.
@@ -97,4 +99,4 @@ Mobile compacto: [resultados](services/compact-mobile.json) e frames `services/c
 
 Código novo restrito a Services/review e montagem na Home, com scrollbar/seleção em CSS global conforme o pedido de revisão. Os demos recebem pequenos pontos de integração e lifecycle. A alteração na Hero é restrita ao reposicionamento do replay explicitamente solicitado; Selected Work, cursor e smooth scroll preservam seus arquivos. Navbar recebe somente adaptação de contraste no CSS da Home. Não há novas dependências, backend, MCP real ou seção posterior.
 
-Pendências: revisão visual explícita do checkpoint 4; refinamentos que surgirem; fase 5 de auditoria/revisão final mobile/reduced motion; aprovação final antes de push/PR. A alteração preexistente do usuário em `dashboardData.ts` permanece separada e não foi revertida.
+Pendências: aprovação visual explícita da experiência completa antes de push/PR e eventuais refinamentos pedidos na revisão. A fase 5 de auditoria desktop/mobile/reduced motion foi concluída localmente. A alteração preexistente do usuário em `dashboardData.ts` permanece separada e não foi revertida.
