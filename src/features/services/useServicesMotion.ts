@@ -29,9 +29,8 @@ export function useServicesMotion(root: RefObject<HTMLElement | null>, active: b
     });
     setDashboardActive(Boolean(visibility.isActive));
     const media = gsap.matchMedia();
-    media.add({ motion: "(prefers-reduced-motion: no-preference)", reduced: "(prefers-reduced-motion: reduce)", desktop: "(min-width: 1000px) and (min-height: 680px)" }, context => {
+    media.add({ motion: "(prefers-reduced-motion: no-preference)", reduced: "(prefers-reduced-motion: reduce)" }, context => {
       const reduced = context.conditions?.reduced;
-      const desktop = context.conditions?.desktop;
       const chapters = [...node.querySelectorAll<HTMLElement>("[data-service-chapter]")];
       const atmosphere = node.querySelector<HTMLElement>("[data-service-atmosphere]")!;
 
@@ -49,7 +48,7 @@ export function useServicesMotion(root: RefObject<HTMLElement | null>, active: b
 
       if (!reduced) {
         const experience = node.querySelector("[data-experience-run]");
-        const dissolve = gsap.timeline({ defaults: { ease: "sine.inOut" }, scrollTrigger: { trigger: experience, start: desktop ? "top -30%" : "bottom 65%", end: desktop ? "top -75%" : "bottom 15%", scrub: .9 } });
+        const dissolve = gsap.timeline({ defaults: { ease: "sine.inOut" }, scrollTrigger: { trigger: experience, start: "bottom 65%", end: "bottom 15%", scrub: .7 } });
         dissolve.to(chapters[0].querySelectorAll("[data-digital-experience] h2, [data-digital-detail]"), { opacity: 0, duration: .45 }, 0)
           .to(chapters[0].querySelector("[data-experience-shell]"), { scale: .97, y: -12, duration: .85 }, 0)
           .to(chapters[0].querySelector("[data-digital-art-scroll] svg"), { opacity: 0, duration: .6 }, .3);

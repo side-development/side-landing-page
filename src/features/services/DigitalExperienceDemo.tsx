@@ -1,17 +1,17 @@
 "use client";
 
-import { useId, useRef, useState, type RefObject } from "react";
+import { useId, useRef, useState } from "react";
 import { DigitalExperienceArtwork } from "./DigitalExperienceArtwork";
 import { digitalExperienceCopy, type DigitalExperienceLocale } from "./digitalExperienceCopy";
 import { useDigitalExperienceMotion } from "./useDigitalExperienceMotion";
 import styles from "./digital-experience.module.css";
 
-export function DigitalExperienceDemo({ locale, replay = 0, scene }: { locale: DigitalExperienceLocale; replay?: number; scene?: RefObject<HTMLElement | null> }) {
+export function DigitalExperienceDemo({ locale, replay = 0 }: { locale: DigitalExperienceLocale; replay?: number }) {
   const root = useRef<HTMLElement>(null);
   const id = useId();
   const [composed, setComposed] = useState(false);
   const copy = digitalExperienceCopy[locale];
-  useDigitalExperienceMotion(root, replay, setComposed, scene);
+  useDigitalExperienceMotion(root, replay, setComposed);
 
   return <article ref={root} className={styles.experience} aria-labelledby={`${id}-title`} data-digital-experience data-composed={composed} data-locale={locale}>
     <div className={styles.composition}>

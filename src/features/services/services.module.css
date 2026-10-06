@@ -19,10 +19,6 @@
 .terminalStage { display: flex; align-items: center; justify-content: center; padding: 24px 0 12svh; }
 .services :focus-visible { outline: 2px solid #3919bd; outline-offset: 5px; }
 .services :global([data-dashboard-counter]) { opacity: var(--services-values-opacity, 1); }
-@media (min-width: 1000px) and (min-height: 680px) and (prefers-reduced-motion: no-preference) {
-  .experienceRun::after { content: ""; display: block; height: 38svh; }
-  .experienceShell { position: sticky; top: 8svh; }
-}
 @media (max-width: 800px) {
   .services { padding-top: 90px; }
   .heading { margin: 0 20px 20svh; }
