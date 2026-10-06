@@ -70,7 +70,7 @@ export const dashboardCopy = {
     service: "Products & software",
     description: "Software designed to simplify processes, organize information and keep operations moving.",
     territories: "Platforms · Dashboards · Internal systems · Digital products",
-    close: "Close data", overview: "Overview", context: "Digital operations",
+    close: "Close data", overview: "Overview", context: "Real time",
     period: "Date range", last30: "Last 30 days", last7: "Last 7 days", compared: "vs. previous period",
     metrics: ["Revenue", "Active users", "Conversion", "Retention"],
     chart: "Daily revenue", current: "Current period", previous: "Previous period", comparison: "Show comparison",

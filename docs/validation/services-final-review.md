@@ -1,6 +1,6 @@
 # Services — revisão final / fase 5
 
-Status: **Ready for review**. Revisão local da #8, após os refinamentos dos checkpoints anteriores. Nenhuma mudança de código foi necessária nesta fase; não houve push, PR ou fechamento da issue.
+Status: **Ready for review**. Revisão da #8, após os refinamentos dos checkpoints anteriores. Nenhuma mudança de código foi necessária na fase 5. Aprovação visual explícita recebida em 06/10/2026: “Pode subir!”. Publicação da branch e abertura do PR autorizadas; a issue permanece aberta até o merge.
 
 ## Prévia
 
@@ -60,6 +60,8 @@ Validação em Edge headless com emulação de viewport, touch, densidade e pref
 
 As revisões explícitas do usuário prevalecem sobre sugestões iniciais da issue: gráfico vivo durante a visualização, hover com valorização verde sem aumento de tamanho, remoção de activity e de botões de abertura/perspectiva, dados sinalizados como ilustrativos sem “Demo”, terminal de referência em inglês e maior, replay da intro somente na Hero, além da navbar revisada.
 
-O arquivo `dashboardData.ts` mantém a edição preexistente do usuário (`Real time` em EN); não foi revertido nem incluído nos commits desta revisão.
+O arquivo `dashboardData.ts` mantém a edição preexistente do usuário (`Real time` em EN). Essa copy já estava presente na prévia e em todas as validações finais; foi incluída na publicação para que o PR corresponda ao resultado aprovado.
 
-Pendência única para publicação: aprovação visual explícita da experiência completa. Manter #8 aberta em Ready for review; push/PR somente após essa aprovação. Nenhuma seção posterior foi iniciada.
+Pendências: revisão de código/checks do PR e merge pelo fluxo normal. A aprovação visual da experiência completa foi recebida. Manter #8 aberta em Ready for review até o merge. Nenhuma seção posterior foi iniciada.
+
+Para o PR, [dashboard e hover](services/final/dashboard-hover.mp4) e [terminal](services/final/terminal.mp4) são recortes contínuos da gravação desktop final acima, sem alteração da UI ou da velocidade de reprodução.
