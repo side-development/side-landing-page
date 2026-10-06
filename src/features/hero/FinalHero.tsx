@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useId, useLayoutEffect, useRef, useState, useSyncExternalStore } from "react";
 import { BrandWordmark } from "./BrandWordmark";
+import { NavUnderline } from "./NavUnderline";
 import { useFinalHeroMotion } from "./useFinalHeroMotion";
 import type { HeroCopy } from "./copy";
 import styles from "./hero.module.css";
@@ -70,11 +71,11 @@ export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: He
           if (event.key === "Escape") { event.preventDefault(); close(); }
         }}>
           <div id={menuId} className={styles.sectionLinks} data-open={menuOpen} inert={mobile && !menuOpen} aria-hidden={mobile && !menuOpen}>
-            <button type="button">{copy.work}</button>
-            <button type="button">{copy.services}</button>
-            <button type="button">{copy.why}</button>
+            <button type="button">{copy.work}<NavUnderline variant="work" /></button>
+            <button type="button">{copy.services}<NavUnderline variant="services" /></button>
+            <button type="button">{copy.why}<NavUnderline variant="why" /></button>
           </div>
-          <button className={styles.contact} type="button">{copy.contact}</button>
+          <button className={styles.contact} type="button">{copy.contact}<NavUnderline variant="contact" /></button>
           <button ref={toggle} className={styles.menuToggle} type="button" aria-label={menuOpen ? copy.closeMenu : copy.menu} aria-expanded={menuOpen} aria-controls={menuId} onClick={toggleMenu}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
               <path d="M4 12H20" /><path d="M4 12H20" /><path d="M4 12H20" />
