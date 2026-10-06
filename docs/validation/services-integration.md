@@ -38,6 +38,18 @@ Status: **Ready for review** deste checkpoint; aprovação final da issue penden
 
 ## Evidências
 
+Última revisão da navbar: a janela arredondada da referência substitui a faixa anterior. A altura de todo o painel cresce/encolhe continuamente em 540 ms; logo e ícone permanecem na posição original, links entram em sequência e o CTA roxo preenchido fica na base. Seis configurações mobile PT/EN entre 320 e 768 px, landscape e reduced motion passaram nos estados claro/escuro. Reversão durante a abertura, Escape/foco, contato acessível único, resize e ausência de scroll lock/overflow também passaram.
+
+A correção óptica mede o SVG e adapta suas coordenadas sem esticar a espessura do stroke. Desktop PT/EN, mobile PT em DPR 3, EN em DPR 2 e reduced mobile verificam viewBox equivalente ao tamanho CSS, traço uniforme, desenho progressivo, cor, ausência de resíduo inativo e atualização após resize. Frames foram inspecionados visualmente; não houve erros de console/hydration capturados. Lint, typecheck e build passaram novamente. A validação headless não substitui a aprovação visual do usuário ou um dispositivo físico.
+
+- [Nova abertura mobile](services/navbar-panel-mobile.mp4).
+- [Traços desktop](services/navbar-panel-desktop.mp4).
+- [Janela clara](services/navbar-panel-mobile-light-preview.png).
+- [Janela escura](services/navbar-panel-mobile-dark-preview.png).
+- [Traço mobile em alta densidade](services/navbar-optical-mobile-pt-2.png).
+- [Resultados do painel](services/navbar-panel.json).
+- [Resultados ópticos](services/navbar-optical.json).
+
 Refinamento da navbar mobile: seis configurações PT/EN, de 320 a 768 px, incluindo landscape e reduced motion, nos estados claro e escuro. Faixa superior e links preenchem as duas laterais; o restante da página continua visível, sem overlay fullscreen ou overflow horizontal. Foco/Tab/Escape, scroll livre e resize mobile→desktop→mobile: pass. Nenhum erro de console/hydration capturado; avisos LCP da mídia Work em desenvolvimento são registrados separadamente. Validação em Edge headless, sem substituir a revisão visual em dispositivo físico.
 
 - [Menu claro](services/navbar-mobile-pt-light.png).

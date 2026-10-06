@@ -1,0 +1,3635 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "case": "mobile-pt",
+      "mode": "light",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 158.046875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 182.046875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 194.046875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0.636027"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "50.7188px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 278.046875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 302.046875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 314.046875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.792374,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.557927,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.199512,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.557927,
+            "weight": "700"
+          }
+        ],
+        "grid": "206.266px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 112.828125,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 136.828125,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 148.828125,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.0469159,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.0469159,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.0469159,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.0469159,
+            "weight": "700"
+          }
+        ],
+        "grid": "19.3125px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "mobile-pt",
+      "mode": "dark",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 228.71875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 252.71875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 264.71875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0.957496"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.129365,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "129.625px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 283.5625,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 307.5625,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 319.5625,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.904061,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.762736,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.505588,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.762736,
+            "weight": "700"
+          }
+        ],
+        "grid": "215.938px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 88.671875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 112.671875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 124.671875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.0023497,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.0023497,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.0023497,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.0023497,
+            "weight": "700"
+          }
+        ],
+        "grid": "8.625px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "mobile-pt",
+      "status": "pass",
+      "checks": "rapid reversal; desktop/mobile resize; closed transparent header; one accessible contact; Enter/Escape; no scroll lock; console/hydration",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "small-en",
+      "mode": "light",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 64,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 72,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 180.3125,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 204.3125,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 212.3125,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0.762701"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "71.6562px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 280.328125,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 304.328125,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 312.328125,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.836941,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.638328,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.304076,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.638328,
+            "weight": "700"
+          }
+        ],
+        "grid": "210.234px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 320.171875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 99.515625,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 123.515625,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 131.515625,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.016466,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.016466,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.016466,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.016466,
+            "weight": "700"
+          }
+        ],
+        "grid": "12.8906px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 64,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 72,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "small-en",
+      "mode": "dark",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 64,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 72,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 180.03125,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 204.03125,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 212.03125,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0.761299"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "71.375px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 278.078125,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 302.078125,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 310.078125,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.793052,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.559136,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.200898,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.559136,
+            "weight": "700"
+          }
+        ],
+        "grid": "206.328px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 320.171875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 113.046875,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 137.046875,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 145.046875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.0474604,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.0474604,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.0474604,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.0474604,
+            "weight": "700"
+          }
+        ],
+        "grid": "19.4219px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 64,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 72,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "small-en",
+      "status": "pass",
+      "checks": "rapid reversal; desktop/mobile resize; closed transparent header; one accessible contact; Enter/Escape; no scroll lock; console/hydration",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "tablet",
+      "mode": "light",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 180.1875,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 204.1875,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 216.1875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0.762112"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "71.5469px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 275.3125,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 299.3125,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 311.3125,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.740817,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.467649,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.112162,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.467649,
+            "weight": "700"
+          }
+        ],
+        "grid": "201.547px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 128.84375,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 152.84375,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 164.84375,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.0984062,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.0984062,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.0984062,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.0984062,
+            "weight": "700"
+          }
+        ],
+        "grid": "28.7344px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "tablet",
+      "mode": "dark",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 180.28125,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 204.28125,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 216.28125,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0.762499"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "71.625px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 278.078125,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 302.078125,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 314.078125,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.79302,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.55908,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.200834,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.55908,
+            "weight": "700"
+          }
+        ],
+        "grid": "206.328px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 112.96875,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 136.96875,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 148.96875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.0472938,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.0472938,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.0472938,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.0472938,
+            "weight": "700"
+          }
+        ],
+        "grid": "19.375px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 744,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 756,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "tablet",
+      "status": "pass",
+      "checks": "rapid reversal; desktop/mobile resize; closed transparent header; one accessible contact; Enter/Escape; no scroll lock; console/hydration",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "landscape",
+      "mode": "light",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 180.296875,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 204.296875,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 216.296875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0.762632"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "71.6406px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 278.09375,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 302.09375,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 314.09375,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.793366,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.559697,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.201543,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.559697,
+            "weight": "700"
+          }
+        ],
+        "grid": "206.359px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 112.859375,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 136.859375,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 148.859375,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.0469543,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.0469543,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.0469543,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.0469543,
+            "weight": "700"
+          }
+        ],
+        "grid": "19.3125px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "landscape",
+      "mode": "dark",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 158.3125,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 182.3125,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 194.3125,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0.637644"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "50.9531px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 278.125,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 302.125,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 314.125,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.793757,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.560394,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.202346,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.560394,
+            "weight": "700"
+          }
+        ],
+        "grid": "206.406px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 112.875,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 136.875,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 148.875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.0470192,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.0470192,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.0470192,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.0470192,
+            "weight": "700"
+          }
+        ],
+        "grid": "19.3281px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 716,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 728,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "landscape",
+      "status": "pass",
+      "checks": "rapid reversal; desktop/mobile resize; closed transparent header; one accessible contact; Enter/Escape; no scroll lock; console/hydration",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "reduced-pt",
+      "mode": "light",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0.881699"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.881699,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.983342,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.688392,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.983342,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0.0160758"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.0160758,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.0160758,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.0160758,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.0160758,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "reduced-pt",
+      "mode": "dark",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0.882843"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.882843,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.983838,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.691709,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.983838,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 324.171875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0.0163548"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0.0163548,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0.0163548,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0.0163548,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0.0163548,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 24,
+        "top": 24,
+        "right": 366,
+        "bottom": 64,
+        "frame": {
+          "left": 12,
+          "right": 378,
+          "top": 12,
+          "bottom": 76,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Trabalhos",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Serviços",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Por que Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Vamos conversar→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "reduced-pt",
+      "status": "pass",
+      "checks": "rapid reversal; desktop/mobile resize; closed transparent header; one accessible contact; Enter/Escape; no scroll lock; console/hydration",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "reduced-en",
+      "mode": "light",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 64,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 72,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 288.171875,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 320.171875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0.777242"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.777242,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 288.171875,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 320.171875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.983392,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.688723,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.983392,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 320.171875,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 40,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 64,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 72,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0.0162402"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.0162402,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.0162402,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.0162402,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.0162402,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 64,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 72,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "reduced-en",
+      "mode": "dark",
+      "status": "pass",
+      "initial": {
+        "height": 40,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 64,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 72,
+          "background": "rgb(255, 255, 255)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": false,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "early": {
+        "height": 288.171875,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 320.171875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0.883392"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.883392,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "middle": {
+        "height": 288.171875,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 320.171875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.984004,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.692822,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.984004,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "final": {
+        "height": 288.171875,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 312.171875,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 320.171875,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "1"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 1,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 1,
+            "weight": "700"
+          }
+        ],
+        "grid": "224.172px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(57, 25, 189)"
+          }
+        ]
+      },
+      "closing": {
+        "height": 40,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 64,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 72,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0.0520982"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0.0520982,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0.0520982,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0.0520982,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0.0520982,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      "closed": {
+        "height": 40,
+        "left": 16,
+        "top": 24,
+        "right": 304,
+        "bottom": 64,
+        "frame": {
+          "left": 8,
+          "right": 312,
+          "top": 16,
+          "bottom": 72,
+          "background": "rgb(16, 16, 17)",
+          "radius": "18px",
+          "opacity": "0"
+        },
+        "items": [
+          {
+            "copy": "Work",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Services",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Why Side",
+            "opacity": 0,
+            "weight": "600"
+          },
+          {
+            "copy": "Let’s talk→",
+            "opacity": 0,
+            "weight": "700"
+          }
+        ],
+        "grid": "0px",
+        "overflow": false,
+        "rootLocked": false,
+        "bodyLocked": false,
+        "focus": true,
+        "visibleContact": [
+          {
+            "color": "rgb(57, 25, 189)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "reduced-en",
+      "status": "pass",
+      "checks": "rapid reversal; desktop/mobile resize; closed transparent header; one accessible contact; Enter/Escape; no scroll lock; console/hydration",
+      "errors": [],
+      "devImageAdvisories": []
+    }
+  ]
+}

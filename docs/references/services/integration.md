@@ -68,6 +68,8 @@ A correção fica em `FinalHero` e seus estilos, autorizada especificamente pelo
 
 Na revisão seguinte, o vídeo `Gravação de Tela 2026-10-06 104634.mp4` passa a orientar os traços escritos de cada link e a abertura do painel. Itens semibold e contato bold, quatro desenhos SVG diferentes, máscara descendente e entrada sequencial dos links substituem os sublinhados retos e o fade conjunto. Referência, limites e timings em [navbar-motion.md](navbar-motion.md).
 
+Após pedir uma reprodução mais fiel da expansão, o usuário autorizou substituir essa faixa por uma janela arredondada única, com borda/sombra discretas, crescimento da altura, divisórias entre itens e CTA preenchido na base. A navbar fechada mantém sua posição e transparência. A paleta acompanha a seção clara/escura. Os traços engrossados agora são renderizados em coordenadas equivalentes aos pixels CSS de cada palavra, preservando espessura uniforme também no mobile; o observer de tamanho tem cleanup local. Não há nova dependência nem mudança dos destinos.
+
 ### Estabilidade no término da intro
 
 Com a scrollbar clássica visível, o término da intro liberava `overflow: hidden` e a largura útil passava de 1440 para 1430 px. O wordmark encolhia 10 px e a borda direita da navbar se deslocava 10 px. O repro headless inicial ocultava a scrollbar por padrão; o harness passa a remover `--hide-scrollbars`, reproduzindo o comportamento desktop.
