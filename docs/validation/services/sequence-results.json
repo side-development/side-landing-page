@@ -509,7 +509,7 @@
     },
     "exit": {
       "overflow": false,
-      "bg": "rgb(58, 58, 59)",
+      "bg": "rgb(59, 59, 60)",
       "composed": "true",
       "live": [
         "paused",
@@ -622,7 +622,7 @@
     },
     "exit": {
       "overflow": false,
-      "bg": "rgb(58, 58, 59)",
+      "bg": "rgb(59, 59, 59)",
       "composed": "true",
       "live": [
         "paused",
@@ -731,7 +731,7 @@
       "live": [],
       "dash": "settled",
       "serviceActive": "false",
-      "terminal": "waiting",
+      "terminal": "settled",
       "headings": [
         "Sites & experiências digitais",
         "Produtos & software",
@@ -827,7 +827,7 @@
       "live": [],
       "dash": "settled",
       "serviceActive": "false",
-      "terminal": "waiting",
+      "terminal": "settled",
       "headings": [
         "Websites & digital experiences",
         "Products & software",

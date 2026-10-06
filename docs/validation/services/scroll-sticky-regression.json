@@ -1,0 +1,19 @@
+{
+  "scenario": "desktop 1440x900, wheel after the digital composition finishes opening",
+  "before": {
+    "pageStart": 1063,
+    "pageEnd": 1333,
+    "experienceStart": 72,
+    "experienceEnd": 42.3348388671875,
+    "result": "fail: 270px of page scroll with only 29.7px of visual exit"
+  },
+  "after": {
+    "pageStart": 1052,
+    "pageEnd": 1322,
+    "experienceStart": 54.208160400390625,
+    "experienceEnd": -217.0257568359375,
+    "result": "pass: continuous visual exit follows 270px of page scroll"
+  },
+  "cause": "The fixed 145svh run held the sticky composition stationary after the perspective timeline completed.",
+  "fix": "The run now follows the real composition height plus 38svh of scroll space: 8svh sticky offset plus 30svh of perspective travel. Dissolution starts as that travel finishes."
+}

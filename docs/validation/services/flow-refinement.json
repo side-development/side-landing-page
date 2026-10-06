@@ -1,0 +1,282 @@
+[
+  {
+    "name": "desktop",
+    "hero": {
+      "position": "static",
+      "copyBottom": 840,
+      "buttonTop": 852,
+      "buttonBottom": 868,
+      "heroBottom": 900,
+      "inside": true
+    },
+    "titleSizes": {
+      "work": "50.4px",
+      "services": "50.4px"
+    },
+    "scroll": [
+      {
+        "before": 4148,
+        "after": 4181
+      },
+      {
+        "before": 4181,
+        "after": 4216
+      },
+      {
+        "before": 4216,
+        "after": 4252
+      },
+      {
+        "before": 4252,
+        "after": 4288
+      },
+      {
+        "before": 4288,
+        "after": 4324
+      },
+      {
+        "before": 4324,
+        "after": 4360
+      },
+      {
+        "before": 4360,
+        "after": 4396
+      },
+      {
+        "before": 4396,
+        "after": 4432
+      }
+    ],
+    "dialogScroll": {
+      "top": 250,
+      "height": 1268,
+      "client": 358
+    },
+    "console": [],
+    "warnings": []
+  },
+  {
+    "name": "en",
+    "hero": {
+      "position": "static",
+      "copyBottom": 1020,
+      "buttonTop": 1032,
+      "buttonBottom": 1048,
+      "heroBottom": 1080,
+      "inside": true
+    },
+    "titleSizes": {
+      "work": "56px",
+      "services": "56px"
+    },
+    "scroll": [
+      {
+        "before": 4954,
+        "after": 4987
+      },
+      {
+        "before": 4987,
+        "after": 5022
+      },
+      {
+        "before": 5022,
+        "after": 5058
+      },
+      {
+        "before": 5059,
+        "after": 5095
+      },
+      {
+        "before": 5095,
+        "after": 5131
+      },
+      {
+        "before": 5131,
+        "after": 5166
+      },
+      {
+        "before": 5166,
+        "after": 5202
+      },
+      {
+        "before": 5202,
+        "after": 5238
+      }
+    ],
+    "dialogScroll": {
+      "top": 250,
+      "height": 1268,
+      "client": 369
+    },
+    "console": [],
+    "warnings": []
+  },
+  {
+    "name": "mobile",
+    "hero": {
+      "position": "static",
+      "copyBottom": 722.40625,
+      "buttonTop": 734.40625,
+      "buttonBottom": 750.40625,
+      "heroBottom": 844,
+      "inside": true
+    },
+    "titleSizes": {
+      "work": "32.76px",
+      "services": "32.76px"
+    },
+    "scroll": [
+      {
+        "before": 3169,
+        "after": 3205
+      },
+      {
+        "before": 3205,
+        "after": 3241
+      },
+      {
+        "before": 3241,
+        "after": 3277
+      },
+      {
+        "before": 3277,
+        "after": 3313
+      },
+      {
+        "before": 3313,
+        "after": 3349
+      },
+      {
+        "before": 3349,
+        "after": 3385
+      },
+      {
+        "before": 3385,
+        "after": 3421
+      },
+      {
+        "before": 3421,
+        "after": 3457
+      }
+    ],
+    "dialogScroll": {
+      "top": 250,
+      "height": 1115,
+      "client": 377
+    },
+    "console": [],
+    "warnings": []
+  },
+  {
+    "name": "small-en",
+    "hero": {
+      "position": "static",
+      "copyBottom": 446.40625,
+      "buttonTop": 458.40625,
+      "buttonBottom": 474.40625,
+      "heroBottom": 568,
+      "inside": true
+    },
+    "titleSizes": {
+      "work": "32px",
+      "services": "32px"
+    },
+    "scroll": [
+      {
+        "before": 2527,
+        "after": 2563
+      },
+      {
+        "before": 2563,
+        "after": 2599
+      },
+      {
+        "before": 2599,
+        "after": 2635
+      },
+      {
+        "before": 2635,
+        "after": 2671
+      },
+      {
+        "before": 2671,
+        "after": 2707
+      },
+      {
+        "before": 2707,
+        "after": 2743
+      },
+      {
+        "before": 2743,
+        "after": 2779
+      },
+      {
+        "before": 2779,
+        "after": 2815
+      }
+    ],
+    "dialogScroll": {
+      "top": 250,
+      "height": 1115,
+      "client": 299
+    },
+    "console": [],
+    "warnings": []
+  },
+  {
+    "name": "reduced",
+    "hero": {
+      "position": "static",
+      "copyBottom": 840,
+      "buttonTop": 852,
+      "buttonBottom": 868,
+      "heroBottom": 900,
+      "inside": true
+    },
+    "titleSizes": {
+      "work": "50.4px",
+      "services": "50.4px"
+    },
+    "scroll": [
+      {
+        "before": 3383,
+        "after": 3419
+      },
+      {
+        "before": 3419,
+        "after": 3455
+      },
+      {
+        "before": 3455,
+        "after": 3491
+      },
+      {
+        "before": 3491,
+        "after": 3527
+      },
+      {
+        "before": 3527,
+        "after": 3563
+      },
+      {
+        "before": 3563,
+        "after": 3599
+      },
+      {
+        "before": 3599,
+        "after": 3635
+      },
+      {
+        "before": 3635,
+        "after": 3671
+      }
+    ],
+    "dialogScroll": {
+      "top": 250,
+      "height": 1268,
+      "client": 358
+    },
+    "console": [],
+    "warnings": []
+  }
+]

@@ -38,6 +38,18 @@ Durante a validação dinâmica de reduced motion, a recriação de gatilhos avu
 
 Referências técnicas consultadas: [ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/) e [CSS content](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/content). Nenhuma nova referência de art direction.
 
+## Refinamento da entrada — 06/10/2026
+
+Os títulos e subtítulos passam a ocupar o mesmo grupo, separados por 20 px no desktop e 16 px no mobile. A entrada é calculada pelo centro desse título na viewport, compartilhada com o reveal de cada demonstração. A subida acompanha o scroll natural: não há uma segunda animação deslocando o título, pin da introdução ou espera para mostrar o subtítulo.
+
+O fade/blur principal usa 1,8 s nas três partes. Counters, desenho dos charts e typing mantêm seus ritmos internos aprovados; sua construção não exige clique. Reduced motion conserva fades curtos, sem blur intenso. A peça editorial mantém apenas o sticky local já aprovado.
+
+A scrollbar acompanha a mesma interpolação do fundo branco→charcoal, incluindo track, thumb e hover. Ao voltar, recupera a aparência clara; o cleanup restaura as propriedades da página. A seleção global usa `#3919BD` com letras brancas, conforme a nova referência fornecida pelo usuário (`Captura de tela 2026-10-06 085925.png`), adaptando a cor verde do exemplo à marca Side.
+
+Na revisão seguinte, o run fixo de 145svh mantinha a peça sticky mesmo depois de concluir a perspectiva. O repro avançou 270 px na página, mas a composição saiu apenas 29,7 px, reproduzindo a sensação de travada. O espaço agora acompanha a altura real da peça + 38svh (offset sticky de 8svh + percurso de 30svh); ao concluir a abertura, começa a dissolução/saída. O mesmo repro passou com saída visual contínua de 271,2 px. Não foi alterado o smooth scroll global para mascarar essa permanência.
+
+`O que construímos.` recebe os mesmos valores tipográficos responsivos de `Trabalhos selecionados`. Por pedido explícito do usuário, a única alteração na Hero é mover o controle de review/replay para abaixo da copy de apoio, dentro de `FinalHero`. O botão deixa de ser fixo na viewport e sai junto com a Hero; as regras existentes de sessão/review, intro, marca e navegação continuam preservadas.
+
 ## Revisão
 
 Prévia isolada: `/review/services/sequence` e `/en/review/services/sequence`, somente em desenvolvimento. A Home local também contém a sequência completa. Evidências e limites da validação em [services-integration.md](../../validation/services-integration.md).
