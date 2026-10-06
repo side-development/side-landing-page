@@ -84,4 +84,4 @@ Com a scrollbar clássica visível, o término da intro liberava `overflow: hidd
 
 Prévia isolada: `/review/services/sequence` e `/en/review/services/sequence`, somente em desenvolvimento. A Home local também contém a sequência completa. Evidências e limites da validação em [services-integration.md](../../validation/services-integration.md).
 
-Aguardar revisão visual do ritmo 01→02, da dissolução 02→03 e da entrada após Selected Work. Push/PR e fechamento permanecem pendentes de aprovação explícita. A fase 5 continua sendo a revisão final de mobile/reduced motion, incorporando ajustes desta integração.
+Aguardar revisão visual do ritmo 01→02, da dissolução 02→03 e da entrada após Selected Work. Push/PR e fechamento permanecem pendentes de aprovação explícita. A fase 5 foi concluída localmente; matriz, gravações e limites em [services-final-review.md](../../validation/services-final-review.md).

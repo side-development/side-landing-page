@@ -1,0 +1,274 @@
+{
+  "status": "pass",
+  "browser": "Edge headless",
+  "results": [
+    {
+      "case": {
+        "name": "desktop-pt",
+        "width": 1440,
+        "height": 900,
+        "path": "/"
+      },
+      "status": "pass",
+      "centers": [
+        445.765625,
+        {
+          "wheelDeltas": [
+            42,
+            44,
+            45,
+            45,
+            45,
+            45,
+            45
+          ]
+        },
+        446.265625,
+        446.265625,
+        {
+          "terminalHeight": 630,
+          "terminalWidth": 1123.1875,
+          "terminalFooterPadding": 33
+        }
+      ],
+      "errors": [],
+      "devImageAdvisories": [
+        "Image with src \"/work/owl/owl-still.webp\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading"
+      ]
+    },
+    {
+      "case": {
+        "name": "desktop-en",
+        "width": 1366,
+        "height": 768,
+        "path": "/en"
+      },
+      "status": "pass",
+      "centers": [
+        380.1875,
+        {
+          "wheelDeltas": [
+            42,
+            45,
+            43,
+            45,
+            45,
+            45,
+            45
+          ]
+        },
+        379.546875,
+        380.359375,
+        {
+          "terminalHeight": 537.59375,
+          "terminalWidth": 1065.46875,
+          "terminalFooterPadding": 33
+        }
+      ],
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": {
+        "name": "mobile-pt",
+        "width": 390,
+        "height": 844,
+        "path": "/",
+        "touch": true,
+        "dpr": 3
+      },
+      "status": "pass",
+      "centers": [
+        418.4765625,
+        {
+          "wheelDeltas": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            45,
+            45
+          ]
+        },
+        417.6796875,
+        418.078125,
+        {
+          "terminalHeight": 552,
+          "terminalWidth": 358,
+          "terminalFooterPadding": 35.46875
+        }
+      ],
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": {
+        "name": "small-en",
+        "width": 320,
+        "height": 568,
+        "path": "/en",
+        "touch": true,
+        "dpr": 2
+      },
+      "status": "pass",
+      "centers": [
+        279.578125,
+        {
+          "wheelDeltas": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            45,
+            45
+          ]
+        },
+        279.984375,
+        280.421875,
+        {
+          "terminalHeight": 552,
+          "terminalWidth": 288,
+          "terminalFooterPadding": 33
+        }
+      ],
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": {
+        "name": "tablet-pt",
+        "width": 768,
+        "height": 1024,
+        "path": "/",
+        "touch": true,
+        "dpr": 2
+      },
+      "status": "pass",
+      "centers": [
+        508.4921875,
+        {
+          "wheelDeltas": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            45,
+            45
+          ]
+        },
+        507.5078125,
+        508.0625,
+        {
+          "terminalHeight": 552,
+          "terminalWidth": 736,
+          "terminalFooterPadding": 44.765625
+        }
+      ],
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": {
+        "name": "landscape-en",
+        "width": 740,
+        "height": 360,
+        "path": "/en",
+        "touch": true
+      },
+      "status": "pass",
+      "centers": [
+        175.9140625,
+        {
+          "wheelDeltas": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            45,
+            45
+          ]
+        },
+        175.8359375,
+        175.8046875,
+        {
+          "terminalHeight": 552,
+          "terminalWidth": 708,
+          "terminalFooterPadding": 44.765625
+        }
+      ],
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": {
+        "name": "reduced-en",
+        "width": 1440,
+        "height": 900,
+        "path": "/en",
+        "reduced": true
+      },
+      "status": "pass",
+      "centers": [
+        445.515625,
+        {
+          "wheelDeltas": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            45,
+            45
+          ]
+        },
+        446.015625,
+        446.015625,
+        {
+          "terminalHeight": 630,
+          "terminalWidth": 1123.1875,
+          "terminalFooterPadding": 33
+        }
+      ],
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": {
+        "name": "mobile-reduced-pt",
+        "width": 390,
+        "height": 844,
+        "path": "/",
+        "touch": true,
+        "reduced": true
+      },
+      "status": "pass",
+      "centers": [
+        418.4765625,
+        {
+          "wheelDeltas": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            45,
+            45
+          ]
+        },
+        418.0390625,
+        417.796875,
+        {
+          "terminalHeight": 552,
+          "terminalWidth": 358,
+          "terminalFooterPadding": 35.46875
+        }
+      ],
+      "errors": [],
+      "devImageAdvisories": []
+    }
+  ]
+}

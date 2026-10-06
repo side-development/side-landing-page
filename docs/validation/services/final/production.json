@@ -1,0 +1,44 @@
+{
+  "status": "pass",
+  "results": [
+    {
+      "case": "mobile-first-pt",
+      "status": "pass",
+      "autoDelayMs": 2369,
+      "checks": "first visit; auto reload; complete intro; repeated session; Home services; chart keyboard; terminal; production console/hydration",
+      "errors": []
+    },
+    {
+      "case": "reduced-first-en",
+      "status": "pass",
+      "autoDelayMs": 2423,
+      "checks": "first visit; auto reload; complete intro; repeated session; Home services; chart keyboard; terminal; production console/hydration",
+      "errors": []
+    },
+    {
+      "path": "/review/services/sequence",
+      "status": "pass",
+      "http": 404
+    },
+    {
+      "path": "/en/review/services/sequence",
+      "status": "pass",
+      "http": 404
+    },
+    {
+      "path": "/review/services",
+      "status": "pass",
+      "http": 404
+    },
+    {
+      "path": "/review/services/terminal",
+      "status": "pass",
+      "http": 404
+    },
+    {
+      "path": "/review/services/experience",
+      "status": "pass",
+      "http": 404
+    }
+  ]
+}
