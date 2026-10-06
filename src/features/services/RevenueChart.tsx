@@ -55,7 +55,7 @@ export function RevenueChart({ points, locale, enabled }: { points: Point[]; loc
       </div>
     </figcaption>
     <p id={helpId} className={styles.srOnly}>{copy.chartHelp}</p>
-    <div className={styles.plot} role="slider" tabIndex={enabled ? 0 : -1} aria-label={copy.chart} aria-describedby={helpId} aria-valuemin={points[0].day} aria-valuemax={points.at(-1)!.day} aria-valuenow={point.day} aria-valuetext={`${date(point.day, locale)}: ${money(point.value, locale)}; ${copy.previous}: ${money(point.previous, locale)}`} aria-disabled={!enabled} onPointerMove={inspect} onPointerDown={inspect} onPointerLeave={() => setSelected(null)} onFocus={() => setSelected(points.length - 1)} onBlur={() => setSelected(null)} onKeyDown={navigate}>
+    <div className={styles.plot} role="slider" tabIndex={enabled ? 0 : -1} aria-label={copy.chart} aria-describedby={helpId} aria-valuemin={points[0].day} aria-valuemax={points.at(-1)!.day} aria-valuenow={point.day} aria-valuetext={`${date(point.day, locale)}: ${money(point.value, locale)}; ${copy.previous}: ${money(point.previous, locale)}`} aria-disabled={!enabled} onPointerMove={inspect} onPointerDown={inspect} onPointerLeave={event => { if (event.pointerType === "mouse") setSelected(null); }} onFocus={() => setSelected(current => current ?? points.length - 1)} onBlur={() => setSelected(null)} onKeyDown={navigate}>
       <svg viewBox={`0 0 ${plot.width} ${plot.height}`} preserveAspectRatio="none" aria-hidden="true" focusable="false">
         <defs>
           <linearGradient id={`${maskId}-line`} x1={plot.left} x2={plot.right} y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop stopColor="#f0ad2c" /><stop offset="0.45" stopColor="#ff842b" /><stop offset="1" stopColor="#ff3835" /></linearGradient>

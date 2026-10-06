@@ -19,18 +19,27 @@ export function useServicesMotion(root: RefObject<HTMLElement | null>, active: b
     const dashboard = node.querySelector<HTMLElement>("[data-dashboard]")!;
     const panels = dashboard.querySelector<HTMLElement>("[data-dashboard-panels]")!;
     const metrics = dashboard.querySelector<HTMLElement>("[data-dashboard-metrics]")!;
+    let inViewport = false;
+    let chartsVisible = true;
     const setDashboardActive = (active: boolean) => {
       dashboard.dataset.serviceActive = String(Boolean(active));
       panels.inert = metrics.inert = !active;
     };
+    const syncDashboard = () => setDashboardActive(inViewport && chartsVisible);
+    const updateVisibility = (self: ScrollTrigger) => {
+      inViewport = self.isActive;
+      syncDashboard();
+    };
     const visibility = ScrollTrigger.create({
-      trigger: dashboard, start: "top bottom", end: () => window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "bottom top" : "bottom 86%",
-      onToggle: self => setDashboardActive(self.isActive), onRefresh: self => setDashboardActive(self.isActive),
+      trigger: dashboard, start: "top bottom", end: "bottom top",
+      onToggle: updateVisibility, onRefresh: updateVisibility,
     });
-    setDashboardActive(Boolean(visibility.isActive));
+    updateVisibility(visibility);
     const media = gsap.matchMedia();
     media.add({ motion: "(prefers-reduced-motion: no-preference)", reduced: "(prefers-reduced-motion: reduce)" }, context => {
       const reduced = context.conditions?.reduced;
+      chartsVisible = true;
+      syncDashboard();
       const chapters = [...node.querySelectorAll<HTMLElement>("[data-service-chapter]")];
       const atmosphere = node.querySelector<HTMLElement>("[data-service-atmosphere]")!;
 
@@ -55,7 +64,13 @@ export function useServicesMotion(root: RefObject<HTMLElement | null>, active: b
 
         const fade = gsap.timeline({ defaults: { ease: "sine.inOut" }, scrollTrigger: { trigger: dashboard, start: "bottom 86%", end: "bottom 28%", scrub: .8 } });
         fade.fromTo(dashboard, { "--services-values-opacity": 1 }, { "--services-values-opacity": .25, duration: .35 }, 0)
-          .to(dashboard.querySelector("[data-dashboard-panels]"), { opacity: 0, duration: .5 }, .12)
+          .to(panels, { opacity: 0, duration: .5, onUpdate: () => {
+            const visible = Number(panels.style.opacity || 1) > .1;
+            if (visible !== chartsVisible) {
+              chartsVisible = visible;
+              syncDashboard();
+            }
+          } }, .12)
           .to(dashboard.querySelectorAll("[data-dashboard-shell], [data-dashboard-metrics]"), { opacity: 0, duration: .45, stagger: .07 }, .32)
           .to(node.querySelector("[data-product-demo]"), { opacity: 0, duration: .3 }, .75);
       }
