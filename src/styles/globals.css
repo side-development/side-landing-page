@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
   scrollbar-width: thin;
   scrollbar-color: var(--page-scroll-thumb) var(--page-scroll-track);
 }
