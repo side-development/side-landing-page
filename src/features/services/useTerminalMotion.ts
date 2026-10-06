@@ -12,6 +12,10 @@ export function useTerminalMotion(root: RefObject<HTMLElement | null>, locale: T
   useGSAP(() => {
     const node = root.current;
     if (!node) return;
+    let entered = false;
+    let sync: (() => void) | undefined;
+    const entrance = ScrollTrigger.create({ trigger: node, start: "top 80%", once: true, onEnter: () => { entered = true; sync?.(); }, onRefresh: self => { if (self.progress > 0) entered = true; sync?.(); } });
+    if (entrance.progress > 0) entered = true;
     const typed = [...node.querySelectorAll<HTMLElement>("[data-terminal-type]")].map(element => ({ element, text: element.dataset.terminalText ?? "" }));
     const media = gsap.matchMedia();
     const restore = () => typed.forEach(({ element, text }) => { element.textContent = element.dataset.terminalText ?? text; });
@@ -42,20 +46,21 @@ export function useTerminalMotion(root: RefObject<HTMLElement | null>, locale: T
         type(1, 3.15, 0.16);
         timeline.set(response, { opacity: 1 }, 4);
       }
-      let entered = false, visible = false;
-      const sync = () => {
+      let visible = false;
+      sync = () => {
         const running = entered && visible && !document.hidden;
         node.dataset.visible = String(visible && !document.hidden);
         if (running && timeline.progress() < 1) timeline.play();
         else if (!running) timeline.pause();
       };
-      const viewport = new IntersectionObserver(entries => { visible = entries[0].isIntersecting; sync(); }, { threshold: 0.12 });
+      const viewport = new IntersectionObserver(entries => { visible = entries[0].isIntersecting; sync?.(); }, { threshold: 0.12 });
       viewport.observe(node);
-      const entrance = ScrollTrigger.create({ trigger: node, start: "top 80%", once: true, onEnter: () => { entered = true; sync(); } });
+      sync();
       document.addEventListener("visibilitychange", sync);
       return () => {
-        viewport.disconnect(); entrance.kill(); timeline.kill();
-        document.removeEventListener("visibilitychange", sync);
+        viewport.disconnect(); timeline.kill();
+        if (sync) document.removeEventListener("visibilitychange", sync);
+        sync = undefined;
         restore();
         delete node.dataset.animation; delete node.dataset.visible;
       };
