@@ -38,6 +38,15 @@ Status: **Ready for review** deste checkpoint; aprovação final da issue penden
 
 ## Evidências
 
+Regressão de interação nos gráficos: o repro na Home falhou duas vezes ao iniciar a dissolução, com opacity de 0,9802 e `inert=true`; a seleção permanecia no dia 30. Um probe removendo apenas `inert` restaurou o hover. Após vincular a disponibilidade à viewport e à opacity real, o mesmo repro seleciona dias 5 e 25 sem mudar os tempos da transição. Um segundo repro em touch mostrou o dia 5 sendo apagado por pointerleave/foco; após corrigir esses handlers, o toque preserva a seleção e a leitura.
+
+Seis configurações (desktop PT, EN 1920×1080, desktop 1366×768, mobile PT, mobile EN reduced e desktop PT reduced) verificam mouse/toque, valores nas extremidades por teclado, origem, conversão desktop, período de 7 dias, comparação, modal, pausa após dissolução e retomada ao voltar do terminal. Console/hydration sem erros capturados. Cleanup em Strict Mode passou nas cinco desmontagens, incluindo ausência de triggers/animações/listeners remanescentes e mudança dinâmica de reduced motion/resize. Lint, typecheck e build passaram novamente. Sem novas dependências ou alterações na Hero/Work/navbar.
+
+- [Repro antes/depois e verificações](services/chart-interaction.json).
+- [Cleanup](services/chart-interaction-cleanup.json).
+- [Interação desktop](services/chart-interaction-desktop-pt.png).
+- [Interação mobile](services/chart-interaction-mobile-pt.png).
+
 Última revisão da navbar: a janela arredondada da referência substitui a faixa anterior. A altura de todo o painel cresce/encolhe continuamente em 540 ms; logo e ícone permanecem na posição original, links entram em sequência e o CTA roxo preenchido fica na base. Seis configurações mobile PT/EN entre 320 e 768 px, landscape e reduced motion passaram nos estados claro/escuro. Reversão durante a abertura, Escape/foco, contato acessível único, resize e ausência de scroll lock/overflow também passaram.
 
 A correção óptica mede o SVG e adapta suas coordenadas sem esticar a espessura do stroke. Desktop PT/EN, mobile PT em DPR 3, EN em DPR 2 e reduced mobile verificam viewBox equivalente ao tamanho CSS, traço uniforme, desenho progressivo, cor, ausência de resíduo inativo e atualização após resize. Frames foram inspecionados visualmente; não houve erros de console/hydration capturados. Lint, typecheck e build passaram novamente. A validação headless não substitui a aprovação visual do usuário ou um dispositivo físico.
