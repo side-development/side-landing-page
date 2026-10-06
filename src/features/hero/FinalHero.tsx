@@ -16,7 +16,7 @@ function subscribeMobile(callback: () => void) {
   return () => media.removeEventListener("change", callback);
 }
 
-export function FinalHero({ copy, visible, focusOnReveal }: { copy: HeroCopy; visible: boolean; focusOnReveal: boolean }) {
+export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: HeroCopy; visible: boolean; focusOnReveal: boolean; onReplay?: () => void }) {
   const [open, setOpen] = useState(false);
   const menuId = useId();
   const toggle = useRef<HTMLButtonElement>(null);
@@ -68,7 +68,10 @@ export function FinalHero({ copy, visible, focusOnReveal }: { copy: HeroCopy; vi
         <BrandWordmark className={styles.wordmark} data-wordmark />
       </h1>
       <div className={styles.finalSupport} data-final-chrome>
-        <p className={styles.supportCopy}><span className={styles.srOnly}>{copy.support}</span><span aria-hidden="true" data-support-text>{copy.support}</span><span className={styles.copyGlitch} aria-hidden="true" data-support-glitch /></p>
+        <div className={styles.supportGroup}>
+          <p className={styles.supportCopy}><span className={styles.srOnly}>{copy.support}</span><span aria-hidden="true" data-support-text>{copy.support}</span><span className={styles.copyGlitch} aria-hidden="true" data-support-glitch /></p>
+          {onReplay && <button className={styles.replay} type="button" onClick={onReplay}>{copy.replay}</button>}
+        </div>
         <p className={styles.signature}><span className={styles.srOnly}>{copy.signature}</span><span aria-hidden="true" data-support-text>{copy.signature}</span><span className={styles.copyGlitch} aria-hidden="true" data-support-glitch /></p>
       </div>
     </section>

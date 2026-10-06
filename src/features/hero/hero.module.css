@@ -145,6 +145,14 @@
   letter-spacing: -0.025em;
 }
 
+.supportGroup {
+  max-width: 510px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
 .signature {
   position: relative;
   max-width: 280px;
@@ -223,10 +231,6 @@
 }
 
 .replay {
-  position: fixed;
-  bottom: 8px;
-  left: 40px;
-  z-index: 8;
   padding: 2px 0;
   border: 0;
   background: none;
@@ -310,7 +314,6 @@
   .signature { max-width: none; font-size: 16px; text-align: left; }
   .phrase { padding: 24px; }
   .phrase span { font-size: clamp(32px, 7.8vw, 56px); letter-spacing: -0.045em; }
-  .replay { left: 24px; bottom: 12px; }
 }
 
 @media (max-width: 359px) {
