@@ -1,0 +1,347 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "case": "mobile-pt",
+      "mode": "light",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 390,
+          "bottom": 310.390625,
+          "background": "rgb(255, 255, 255)"
+        },
+        "color": "rgb(8, 8, 8)",
+        "background": "rgb(255, 255, 255)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "mobile-pt",
+      "mode": "dark",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 390,
+          "bottom": 310.390625,
+          "background": "rgb(16, 16, 17)"
+        },
+        "color": "rgb(234, 232, 237)",
+        "background": "rgb(16, 16, 17)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "mobile-pt",
+      "status": "pass",
+      "checks": "top and link surface fill both lateral edges; rest of page visible; nonmodal navigation; Escape and close restore focus; no scroll lock; resize closes menu and restores desktop navbar; mobile stays closed after resize; no console/hydration errors",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "mobile-en",
+      "mode": "light",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 320,
+          "bottom": 310.390625,
+          "background": "rgb(255, 255, 255)"
+        },
+        "color": "rgb(8, 8, 8)",
+        "background": "rgb(255, 255, 255)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "mobile-en",
+      "mode": "dark",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 320,
+          "bottom": 310.390625,
+          "background": "rgb(16, 16, 17)"
+        },
+        "color": "rgb(234, 232, 237)",
+        "background": "rgb(16, 16, 17)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "mobile-en",
+      "status": "pass",
+      "checks": "top and link surface fill both lateral edges; rest of page visible; nonmodal navigation; Escape and close restore focus; no scroll lock; resize closes menu and restores desktop navbar; mobile stays closed after resize; no console/hydration errors",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "mobile-reference",
+      "mode": "light",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 360,
+          "bottom": 310.390625,
+          "background": "rgb(255, 255, 255)"
+        },
+        "color": "rgb(8, 8, 8)",
+        "background": "rgb(255, 255, 255)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "mobile-reference",
+      "mode": "dark",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 360,
+          "bottom": 310.390625,
+          "background": "rgb(16, 16, 17)"
+        },
+        "color": "rgb(234, 232, 237)",
+        "background": "rgb(16, 16, 17)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "mobile-reference",
+      "status": "pass",
+      "checks": "top and link surface fill both lateral edges; rest of page visible; nonmodal navigation; Escape and close restore focus; no scroll lock; resize closes menu and restores desktop navbar; mobile stays closed after resize; no console/hydration errors",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "tablet",
+      "mode": "light",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 768,
+          "bottom": 310.390625,
+          "background": "rgb(255, 255, 255)"
+        },
+        "color": "rgb(8, 8, 8)",
+        "background": "rgb(255, 255, 255)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "tablet",
+      "mode": "dark",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 768,
+          "bottom": 310.390625,
+          "background": "rgb(16, 16, 17)"
+        },
+        "color": "rgb(234, 232, 237)",
+        "background": "rgb(16, 16, 17)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "tablet",
+      "status": "pass",
+      "checks": "top and link surface fill both lateral edges; rest of page visible; nonmodal navigation; Escape and close restore focus; no scroll lock; resize closes menu and restores desktop navbar; mobile stays closed after resize; no console/hydration errors",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "landscape",
+      "mode": "light",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 740,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 740,
+          "bottom": 310.390625,
+          "background": "rgb(255, 255, 255)"
+        },
+        "color": "rgb(8, 8, 8)",
+        "background": "rgb(255, 255, 255)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "landscape",
+      "mode": "dark",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 740,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 740,
+          "bottom": 310.390625,
+          "background": "rgb(16, 16, 17)"
+        },
+        "color": "rgb(234, 232, 237)",
+        "background": "rgb(16, 16, 17)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "landscape",
+      "status": "pass",
+      "checks": "top and link surface fill both lateral edges; rest of page visible; nonmodal navigation; Escape and close restore focus; no scroll lock; resize closes menu and restores desktop navbar; mobile stays closed after resize; no console/hydration errors",
+      "errors": [],
+      "devImageAdvisories": []
+    },
+    {
+      "case": "reduced",
+      "mode": "light",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 390,
+          "bottom": 310.390625,
+          "background": "rgb(255, 255, 255)"
+        },
+        "color": "rgb(8, 8, 8)",
+        "background": "rgb(255, 255, 255)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "reduced",
+      "mode": "dark",
+      "status": "pass",
+      "surface": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 88,
+        "panel": {
+          "x": 0,
+          "y": 88,
+          "width": 390,
+          "bottom": 310.390625,
+          "background": "rgb(16, 16, 17)"
+        },
+        "color": "rgb(234, 232, 237)",
+        "background": "rgb(16, 16, 17)",
+        "overflow": "",
+        "focus": true,
+        "covered": true,
+        "restVisible": true,
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "case": "reduced",
+      "status": "pass",
+      "checks": "top and link surface fill both lateral edges; rest of page visible; nonmodal navigation; Escape and close restore focus; no scroll lock; resize closes menu and restores desktop navbar; mobile stays closed after resize; no console/hydration errors",
+      "errors": [],
+      "devImageAdvisories": []
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "before": {
+    "phase": "triggered",
+    "viewport": 390,
+    "client": 390,
+    "bodyWidth": 390,
+    "wordmarkLeft": 24,
+    "wordmarkWidth": 342,
+    "headerLeft": 24,
+    "headerRight": 366,
+    "bodyOverflow": "hidden",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "rootOverflow": "visible",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "time": 25941.200000047684
+  },
+  "first": {
+    "phase": "final",
+    "viewport": 390,
+    "client": 390,
+    "bodyWidth": 390,
+    "wordmarkLeft": 24,
+    "wordmarkWidth": 342,
+    "headerLeft": 24,
+    "headerRight": 366,
+    "bodyOverflow": "visible",
+    "bodyBackground": "rgb(250, 250, 250)",
+    "rootOverflow": "visible",
+    "transform": "none",
+    "time": 25966.599999904633
+  },
+  "last": {
+    "phase": "final",
+    "viewport": 390,
+    "client": 390,
+    "bodyWidth": 390,
+    "wordmarkLeft": 24,
+    "wordmarkWidth": 342,
+    "headerLeft": 24,
+    "headerRight": 366,
+    "bodyOverflow": "visible",
+    "bodyBackground": "rgb(250, 250, 250)",
+    "rootOverflow": "visible",
+    "transform": "none",
+    "time": 27989.799999952316
+  },
+  "maxWidthChange": 0,
+  "maxLeftChange": 0,
+  "console": []
+}

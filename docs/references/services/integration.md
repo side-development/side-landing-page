@@ -32,7 +32,7 @@ Não aplicar um pin da viewport a toda a sequência: ele impediria percorrer o d
 
 A pausa do dashboard usa um atributo local, observado pelos gráficos e pelo reveal. Métricas/gráficos deixam de receber interação durante a dissolução; período/modal continuam disponíveis. A transição atua nos wrappers permanentes, preservando o resultado após alternar 30/7 dias.
 
-A navbar conserva posição, espaçamento, fundo transparente, contato roxo e comportamentos aprovados. No trecho escuro, links recebem contraste claro e o símbolo usa `/brand/side-logo-white.svg`, mantendo o ponto `#3919BD`. A adaptação fica no CSS da Home, sem alterar arquivos da Hero/Selected Work. O menu mobile aberto mantém sua superfície clara e texto preto.
+A navbar fechada conserva posição, espaçamento, fundo transparente, contato roxo e comportamentos aprovados. No trecho escuro, links recebem contraste claro e o símbolo usa `/brand/side-logo-white.svg`, mantendo o ponto `#3919BD`. A adaptação de contraste fica no CSS da Home. O menu mobile aberto foi corrigido conforme o pedido abaixo; Selected Work continua preservado.
 
 Durante a validação dinâmica de reduced motion, a recriação de gatilhos avulsos dentro de matchMedia zerava o scroll registrado durante o refresh. Entradas/visibilidade permanecem fora desse ciclo; as animações adaptáveis são timelines locais. O repro originalmente falhou com `scrollY=0` e terminal `waiting`; a correção preservou uma posição não zero e terminal `settled`, inclusive em React Strict Mode. Nenhum log de debug foi adicionado ao produto.
 
@@ -59,6 +59,18 @@ A integração deixa de usar sticky e espaço artificial nesse capítulo. Copy, 
 Para compactar mobile (até 800 px), o gráfico final `Da presença à conversão` fica oculto; o observer existente o mantém pausado e seus controles deixam de estar disponíveis por teclado/leitor de tela. Desktop conserva os três gráficos. KPIs, receita, origem, período e modal continuam funcionando. A pergunta sobre qual “última parte” o usuário pretendia remover foi enviada; esta interpretação foi informada durante o trabalho e permanece sujeita à revisão visual. Nenhum dos três serviços foi removido.
 
 ## Revisão
+
+### Navbar mobile preenchida
+
+Após o screenshot de 06/10 e a clarificação do usuário, o menu mobile aberto preenche somente a faixa superior e a área dos links, de ponta a ponta. O restante da página permanece visível. A superfície usa branco nas seções claras e `#101011` no trecho escuro, com texto e asset da marca acompanhando o contraste. Gutters ficam somente dentro da superfície; o fundo não recebe margem lateral. O contato conserva o roxo oficial.
+
+A correção fica em `FinalHero` e seus estilos, autorizada especificamente pelo usuário. A navegação permanece não modal e o scroll livre. Abrir transfere o foco para o primeiro item; Escape/fechamento restaura o foco. Atravessar o breakpoint fecha o menu e recupera a navbar desktop. A animação do ícone e o fade de chegada dos links permanecem, com alternativa reduced motion. Navbar fechada continua transparente.
+
+### Estabilidade no término da intro
+
+Com a scrollbar clássica visível, o término da intro liberava `overflow: hidden` e a largura útil passava de 1440 para 1430 px. O wordmark encolhia 10 px e a borda direita da navbar se deslocava 10 px. O repro headless inicial ocultava a scrollbar por padrão; o harness passa a remover `--hide-scrollbars`, reproduzindo o comportamento desktop.
+
+`scrollbar-gutter: stable` reserva o espaço desde o primeiro layout, inclusive durante o bloqueio da intro, conforme a [documentação CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scrollbar-gutter). A área reservada acompanha preto/roxo/branco pela mesma timeline local, sem faixa clara durante as frases; o cleanup restaura o fundo anterior do body. Não há medição manual de scrollbar, dependência nova ou alteração de timings/copy. A medição original passa com variação zero de largura/posição da marca e navbar.
 
 Prévia isolada: `/review/services/sequence` e `/en/review/services/sequence`, somente em desenvolvimento. A Home local também contém a sequência completa. Evidências e limites da validação em [services-integration.md](../../validation/services-integration.md).
 
