@@ -1,0 +1,247 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "case": "desktop-pt",
+      "status": "pass",
+      "dpr": 1,
+      "metrics": [
+        {
+          "width": 64.859375,
+          "height": 8,
+          "viewBox": "0 0 64.859375 8",
+          "stroke": "2.4px",
+          "d": "M1.081 4.000 C7.567 2.500 12.431 5.500 19.458 4.000 S31.349 3.000 38.375 4.000 S49.185 4.500 63.778 2.500"
+        },
+        {
+          "width": 56.546875,
+          "height": 8,
+          "viewBox": "0 0 56.546875 8",
+          "stroke": "2.4px",
+          "d": "M0.942 3.000 C11.309 2.500 22.148 2.500 29.216 3.500 C36.755 4.500 37.698 6.500 31.572 6.000 C24.975 5.500 24.032 3.500 30.158 3.000 C39.112 2.500 48.065 3.000 55.604 4.000"
+        },
+        {
+          "width": 84.15625,
+          "height": 8,
+          "viewBox": "0 0 84.15625 8",
+          "stroke": "2.4px",
+          "d": "M1.403 5.000 C16.831 3.500 26.649 2.500 37.870 3.500 S55.403 6.000 65.922 4.000 L82.754 2.500"
+        },
+        {
+          "width": 114.921875,
+          "height": 8,
+          "viewBox": "0 0 114.921875 8",
+          "stroke": "2.4px",
+          "d": "M1.915 3.500 C23.942 5.000 45.969 5.000 67.038 4.000 S96.726 3.000 113.007 2.000 M9.577 6.000 C40.223 4.500 74.699 4.500 104.387 5.500"
+        }
+      ],
+      "resized": [
+        {
+          "width": 64.859375,
+          "viewBox": 64.859375
+        },
+        {
+          "width": 56.546875,
+          "viewBox": 56.546875
+        },
+        {
+          "width": 84.15625,
+          "viewBox": 84.15625
+        },
+        {
+          "width": 114.921875,
+          "viewBox": 114.921875
+        }
+      ],
+      "checks": "native pixel coordinates; uniform stroke; no idle residue; progressive drawing; currentColor; responsive ResizeObserver; console/hydration",
+      "errors": []
+    },
+    {
+      "case": "desktop-en",
+      "status": "pass",
+      "dpr": 1,
+      "metrics": [
+        {
+          "width": 38.0625,
+          "height": 8,
+          "viewBox": "0 0 38.0625 8",
+          "stroke": "2.4px",
+          "d": "M0.634 4.000 C4.441 2.500 7.295 5.500 11.419 4.000 S18.397 3.000 22.520 4.000 S28.864 4.500 37.428 2.500"
+        },
+        {
+          "width": 55.625,
+          "height": 8,
+          "viewBox": "0 0 55.625 8",
+          "stroke": "2.4px",
+          "d": "M0.927 3.000 C11.125 2.500 21.786 2.500 28.740 3.500 C36.156 4.500 37.083 6.500 31.057 6.000 C24.568 5.500 23.641 3.500 29.667 3.000 C38.474 2.500 47.281 3.000 54.698 4.000"
+        },
+        {
+          "width": 63.796875,
+          "height": 8,
+          "viewBox": "0 0 63.796875 8",
+          "stroke": "2.4px",
+          "d": "M1.063 5.000 C12.759 3.500 20.202 2.500 28.709 3.500 S42.000 6.000 49.974 4.000 L62.734 2.500"
+        },
+        {
+          "width": 61.921875,
+          "height": 8,
+          "viewBox": "0 0 61.921875 8",
+          "stroke": "2.4px",
+          "d": "M1.032 3.500 C12.900 5.000 24.769 5.000 36.121 4.000 S52.118 3.000 60.890 2.000 M5.160 6.000 C21.673 4.500 40.249 4.500 56.246 5.500"
+        }
+      ],
+      "resized": [
+        {
+          "width": 38.0625,
+          "viewBox": 38.0625
+        },
+        {
+          "width": 55.625,
+          "viewBox": 55.625
+        },
+        {
+          "width": 63.796875,
+          "viewBox": 63.796875
+        },
+        {
+          "width": 61.921875,
+          "viewBox": 61.921875
+        }
+      ],
+      "checks": "native pixel coordinates; uniform stroke; no idle residue; progressive drawing; currentColor; responsive ResizeObserver; console/hydration",
+      "errors": []
+    },
+    {
+      "case": "mobile-pt",
+      "status": "pass",
+      "dpr": 3,
+      "metrics": [
+        {
+          "width": 99.640625,
+          "height": 10,
+          "viewBox": "0 0 99.640625 10",
+          "stroke": "2.2px",
+          "d": "M1.661 5.000 C11.625 3.125 19.098 6.875 29.892 5.000 S48.160 3.750 58.954 5.000 S75.561 5.625 97.980 3.125"
+        },
+        {
+          "width": 86.578125,
+          "height": 10,
+          "viewBox": "0 0 86.578125 10",
+          "stroke": "2.2px",
+          "d": "M1.443 3.750 C17.316 3.125 33.910 3.125 44.732 4.375 C56.276 5.625 57.719 8.125 48.339 7.500 C38.239 6.875 36.796 4.375 46.175 3.750 C59.883 3.125 73.591 3.750 85.135 5.000"
+        },
+        {
+          "width": 129.953125,
+          "height": 10,
+          "viewBox": "0 0 129.953125 10",
+          "stroke": "2.2px",
+          "d": "M2.166 6.250 C25.991 4.375 41.152 3.125 58.479 4.375 S85.552 7.500 101.797 5.000 L127.787 3.125"
+        }
+      ],
+      "resized": [
+        {
+          "width": 99.640625,
+          "viewBox": 99.640625
+        },
+        {
+          "width": 86.578125,
+          "viewBox": 86.578125
+        },
+        {
+          "width": 129.953125,
+          "viewBox": 129.953125
+        }
+      ],
+      "checks": "native pixel coordinates; uniform stroke; no idle residue; progressive drawing; currentColor; responsive ResizeObserver; console/hydration",
+      "errors": []
+    },
+    {
+      "case": "small-en",
+      "status": "pass",
+      "dpr": 2,
+      "metrics": [
+        {
+          "width": 57.53125,
+          "height": 10,
+          "viewBox": "0 0 57.53125 10",
+          "stroke": "2.2px",
+          "d": "M0.959 5.000 C6.712 3.125 11.027 6.875 17.259 5.000 S27.807 3.750 34.039 5.000 S43.628 5.625 56.572 3.125"
+        },
+        {
+          "width": 85.125,
+          "height": 10,
+          "viewBox": "0 0 85.125 10",
+          "stroke": "2.2px",
+          "d": "M1.419 3.750 C17.025 3.125 33.341 3.125 43.981 4.375 C55.331 5.625 56.750 8.125 47.528 7.500 C37.597 6.875 36.178 4.375 45.400 3.750 C58.878 3.125 72.356 3.750 83.706 5.000"
+        },
+        {
+          "width": 97.953125,
+          "height": 10,
+          "viewBox": "0 0 97.953125 10",
+          "stroke": "2.2px",
+          "d": "M1.633 6.250 C19.591 4.375 31.018 3.125 44.079 4.375 S64.486 7.500 76.730 5.000 L96.321 3.125"
+        }
+      ],
+      "resized": [
+        {
+          "width": 57.53125,
+          "viewBox": 57.53125
+        },
+        {
+          "width": 85.125,
+          "viewBox": 85.125
+        },
+        {
+          "width": 97.953125,
+          "viewBox": 97.953125
+        }
+      ],
+      "checks": "native pixel coordinates; uniform stroke; no idle residue; progressive drawing; currentColor; responsive ResizeObserver; console/hydration",
+      "errors": []
+    },
+    {
+      "case": "reduced-mobile",
+      "status": "pass",
+      "dpr": 1,
+      "metrics": [
+        {
+          "width": 99.640625,
+          "height": 10,
+          "viewBox": "0 0 99.640625 10",
+          "stroke": "2.2px",
+          "d": "M1.661 5.000 C11.625 3.125 19.098 6.875 29.892 5.000 S48.160 3.750 58.954 5.000 S75.561 5.625 97.980 3.125"
+        },
+        {
+          "width": 86.578125,
+          "height": 10,
+          "viewBox": "0 0 86.578125 10",
+          "stroke": "2.2px",
+          "d": "M1.443 3.750 C17.316 3.125 33.910 3.125 44.732 4.375 C56.276 5.625 57.719 8.125 48.339 7.500 C38.239 6.875 36.796 4.375 46.175 3.750 C59.883 3.125 73.591 3.750 85.135 5.000"
+        },
+        {
+          "width": 129.953125,
+          "height": 10,
+          "viewBox": "0 0 129.953125 10",
+          "stroke": "2.2px",
+          "d": "M2.166 6.250 C25.991 4.375 41.152 3.125 58.479 4.375 S85.552 7.500 101.797 5.000 L127.787 3.125"
+        }
+      ],
+      "resized": [
+        {
+          "width": 99.640625,
+          "viewBox": 99.640625
+        },
+        {
+          "width": 86.578125,
+          "viewBox": 86.578125
+        },
+        {
+          "width": 129.953125,
+          "viewBox": 129.953125
+        }
+      ],
+      "checks": "native pixel coordinates; uniform stroke; no idle residue; progressive drawing; currentColor; responsive ResizeObserver; console/hydration",
+      "errors": []
+    }
+  ]
+}
