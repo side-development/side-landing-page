@@ -15,7 +15,9 @@ Status: **Ready for review** deste checkpoint; aprovação final da issue penden
 - Mobile sem sticky/cursor; reduced motion com fluxo natural, fades curtos, dados estáticos e transcript final sem typing intenso.
 - Refinamento de 06/10: título/subtítulo próximos, entrada no centro da viewport e subida pelo scroll natural, com gatilho compartilhado e fade/blur principal de 1,8 s nas três partes.
 - Scrollbar adaptada gradualmente ao trecho escuro; seleção global roxa `#3919BD` com letras brancas.
-- Revisão seguinte: replay no fluxo da Hero, abaixo da copy; headline Services com o mesmo tamanho responsivo de Selected Work; permanência sticky termina junto da perspectiva, eliminando o intervalo visual parado.
+- Replay no fluxo da Hero, abaixo da copy; headline Services com o mesmo tamanho responsivo de Selected Work.
+- Última revisão: toda a primeira demonstração percorre o fluxo natural, sem sticky ou espaço artificial. A troca de copy/cor e abertura das linhas acontecem durante essa passagem.
+- Mobile até 800 px: gráfico final de conversão oculto/pausado, mantendo KPIs, receita, origem e controles; desktop conserva sua composição completa.
 
 ## Validação técnica e de navegador
 
@@ -49,7 +51,9 @@ Resultados estruturados: [sequência](services/sequence-results.json), [Home](se
 
 Novas entradas: [medições](services/entrance-refinement.json), [título no centro](services/entrance-desktop-2-center.png), [título após subir](services/entrance-desktop-2-risen.png), [mobile](services/entrance-mobile-2-risen.png) e [seleção](services/entrance-desktop-selection.png). Frames equivalentes das três partes, EN e reduced estão em `services/entrance-*.png`.
 
-Fluidez: [repro antes/depois da permanência sticky](services/scroll-sticky-regression.json) e [fluxos completos](services/flow-refinement.json). Desktop PT/EN, mobile PT, mobile EN 320×568 e reduced desktop verificam wheel após a primeira demonstração, retorno entre capítulos, ausência de replay sobre Services, posição abaixo da copy e tamanho igual dos títulos. A rolagem do modal permanece local, sem mover a Home. Frames da Hero após reposicionar o replay: `services/flow-*-hero.png`.
+Fluidez: [repro inicial da saída](services/scroll-sticky-regression.json), nova medição da transformação inteira [antes](services/experience-continuity-before.json)/[depois](services/experience-continuity-after.json) e [fluxos completos](services/flow-refinement.json). O repro completo passa de nove trechos retidos a zero, com frames regulares nesta amostra de Edge headless. Esses valores não são um benchmark de todos os dispositivos. Desktop PT/EN, mobile PT, mobile EN 320×568 e reduced desktop verificam wheel após a primeira demonstração, retorno entre capítulos, ausência de replay sobre Services, posição abaixo da copy e tamanho igual dos títulos. A rolagem do modal permanece local, sem mover a Home. Frames da Hero após reposicionar o replay: `services/flow-*-hero.png`.
+
+Mobile compacto: [resultados](services/compact-mobile.json) e frames `services/compact-*.png`. Em 390×844 PT, o dashboard passa de 1476 para 1184 px; em 320×568 EN, de 1502 para 1195 px. A medição anterior restaura temporariamente os estilos mobile do gráfico removido, sem alterar o produto. Gráfico oculto não roda nem oferece seu slider; período/modal, overflow e reduced motion passam. A definição de “última parte” como gráfico de conversão foi comunicada como interpretação, ainda pendente da revisão do usuário.
 
 ## Blast radius e pendências
 

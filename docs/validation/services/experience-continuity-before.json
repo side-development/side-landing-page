@@ -1,0 +1,173 @@
+{
+  "samples": [
+    {
+      "y": 314,
+      "top": 450.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 343,
+      "top": 421.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 379,
+      "top": 385.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 414,
+      "top": 350.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 450,
+      "top": 314.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 486,
+      "top": 278.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 522,
+      "top": 242.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 558,
+      "top": 206.203125,
+      "color": "#3919bd",
+      "composed": "false"
+    },
+    {
+      "y": 594,
+      "top": 170.203125,
+      "color": "rgba(57,25,189,1)",
+      "composed": "false"
+    },
+    {
+      "y": 629,
+      "top": 135.203125,
+      "color": "rgba(68,27,179,1)",
+      "composed": "false"
+    },
+    {
+      "y": 666,
+      "top": 98.203125,
+      "color": "rgba(108,32,142,1)",
+      "composed": "false"
+    },
+    {
+      "y": 701,
+      "top": 72,
+      "color": "rgba(161,40,94,1)",
+      "composed": "true"
+    },
+    {
+      "y": 738,
+      "top": 72,
+      "color": "rgba(194,44,64,1)",
+      "composed": "true"
+    },
+    {
+      "y": 773,
+      "top": 72,
+      "color": "rgba(198,45,60,1)",
+      "composed": "true"
+    },
+    {
+      "y": 810,
+      "top": 72,
+      "color": "rgba(198,45,60,1)",
+      "composed": "true"
+    },
+    {
+      "y": 846,
+      "top": 72,
+      "color": "rgba(198,45,60,1)",
+      "composed": "true"
+    },
+    {
+      "y": 882,
+      "top": 72,
+      "color": "rgba(198,45,60,1)",
+      "composed": "true"
+    },
+    {
+      "y": 917,
+      "top": 72,
+      "color": "#c62d3c",
+      "composed": "true"
+    },
+    {
+      "y": 954,
+      "top": 72,
+      "color": "#c62d3c",
+      "composed": "true"
+    },
+    {
+      "y": 990,
+      "top": 72,
+      "color": "#c62d3c",
+      "composed": "true"
+    },
+    {
+      "y": 1034,
+      "top": 72,
+      "color": "#c62d3c",
+      "composed": "true"
+    }
+  ],
+  "held": [
+    {
+      "scroll": 37,
+      "visual": 0
+    },
+    {
+      "scroll": 35,
+      "visual": 0
+    },
+    {
+      "scroll": 37,
+      "visual": 0
+    },
+    {
+      "scroll": 36,
+      "visual": 0
+    },
+    {
+      "scroll": 36,
+      "visual": 0
+    },
+    {
+      "scroll": 35,
+      "visual": 0
+    },
+    {
+      "scroll": 37,
+      "visual": 0
+    },
+    {
+      "scroll": 36,
+      "visual": 0
+    },
+    {
+      "scroll": 44,
+      "visual": 0
+    }
+  ],
+  "frames": {
+    "median": 16.699999999999818,
+    "p95": 17.199999999999818,
+    "max": 17.5
+  }
+}

@@ -18,7 +18,7 @@ Não copiar:
 
 Adaptação Side:
 - um fundo contínuo, scroll natural e dissoluções locais;
-- breve permanência sticky da peça editorial apenas no desktop confortável;
+- passagem natural da peça editorial, com transformação acompanhando o scroll e sem retenção sticky;
 - a fita abre em linhas paralelas, a composição perde texto/detalhes e a arte se dissolve antes da entrada do produto;
 - o dashboard mantém a altura de uma viewport aprovada na revisão, com título/copy fora do frame;
 - os valores perdem presença, os gráficos desaparecem, a interface se dissolve e o fundo passa de branco a charcoal;
@@ -42,13 +42,21 @@ Referências técnicas consultadas: [ScrollTrigger](https://gsap.com/docs/v3/Plu
 
 Os títulos e subtítulos passam a ocupar o mesmo grupo, separados por 20 px no desktop e 16 px no mobile. A entrada é calculada pelo centro desse título na viewport, compartilhada com o reveal de cada demonstração. A subida acompanha o scroll natural: não há uma segunda animação deslocando o título, pin da introdução ou espera para mostrar o subtítulo.
 
-O fade/blur principal usa 1,8 s nas três partes. Counters, desenho dos charts e typing mantêm seus ritmos internos aprovados; sua construção não exige clique. Reduced motion conserva fades curtos, sem blur intenso. A peça editorial mantém apenas o sticky local já aprovado.
+O fade/blur principal usa 1,8 s nas três partes. Counters, desenho dos charts e typing mantêm seus ritmos internos aprovados; sua construção não exige clique. Reduced motion conserva fades curtos, sem blur intenso.
 
 A scrollbar acompanha a mesma interpolação do fundo branco→charcoal, incluindo track, thumb e hover. Ao voltar, recupera a aparência clara; o cleanup restaura as propriedades da página. A seleção global usa `#3919BD` com letras brancas, conforme a nova referência fornecida pelo usuário (`Captura de tela 2026-10-06 085925.png`), adaptando a cor verde do exemplo à marca Side.
 
-Na revisão seguinte, o run fixo de 145svh mantinha a peça sticky mesmo depois de concluir a perspectiva. O repro avançou 270 px na página, mas a composição saiu apenas 29,7 px, reproduzindo a sensação de travada. O espaço agora acompanha a altura real da peça + 38svh (offset sticky de 8svh + percurso de 30svh); ao concluir a abertura, começa a dissolução/saída. O mesmo repro passou com saída visual contínua de 271,2 px. Não foi alterado o smooth scroll global para mascarar essa permanência.
+Na revisão anterior, o run fixo de 145svh mantinha a peça sticky mesmo depois de concluir a perspectiva. O repro avançou 270 px na página, mas a composição saiu apenas 29,7 px. A primeira correção alinhou o espaço da saída à altura real da peça + 38svh e passou nesse trecho final; ainda existia retenção durante a transformação. Esse ajuste foi substituído pela revisão abaixo.
 
 `O que construímos.` recebe os mesmos valores tipográficos responsivos de `Trabalhos selecionados`. Por pedido explícito do usuário, a única alteração na Hero é mover o controle de review/replay para abaixo da copy de apoio, dentro de `FinalHero`. O botão deixa de ser fixo na viewport e sai junto com a Hero; as regras existentes de sessão/review, intro, marca e navegação continuam preservadas.
+
+## Continuidade da primeira demonstração e mobile
+
+O usuário confirmou que a barreira ainda era perceptível em `Sites & experiências digitais`. Um novo repro percorre toda a primeira transformação, em vez de testar somente sua saída: nove trechos avançavam 35–44 px na página com deslocamento visual zero da peça. A amostra mantinha frames regulares (mediana 16,7 ms), distinguindo retenção de perda de frames.
+
+A integração deixa de usar sticky e espaço artificial nesse capítulo. Copy, roxo→vermelho e abertura das linhas acompanham a peça no fluxo natural. A perspectiva integra-se ao intervalo `top 35%`→`top -5%`, com scrub de 0,55 s; a dissolução começa conforme a peça sai. A integração é reconhecida pelo ancestral presente no DOM, sem depender de um ref do container pai durante o layout effect do componente filho. A mesma medição passa com zero trechos retidos. Não há alterações no smooth scroll global.
+
+Para compactar mobile (até 800 px), o gráfico final `Da presença à conversão` fica oculto; o observer existente o mantém pausado e seus controles deixam de estar disponíveis por teclado/leitor de tela. Desktop conserva os três gráficos. KPIs, receita, origem, período e modal continuam funcionando. A pergunta sobre qual “última parte” o usuário pretendia remover foi enviada; esta interpretação foi informada durante o trabalho e permanece sujeita à revisão visual. Nenhum dos três serviços foi removido.
 
 ## Revisão
 
