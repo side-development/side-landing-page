@@ -1,0 +1,250 @@
+[
+  {
+    "name": "desktop",
+    "chapters": [
+      {
+        "chapter": 1,
+        "center": {
+          "top": 387.171875,
+          "center": 441.765625,
+          "opacity": 0.3057,
+          "blur": "blur(9.7203px)"
+        },
+        "risen": {
+          "top": 147.171875,
+          "center": 201.765625,
+          "opacity": 1,
+          "gap": 20,
+          "blur": "none"
+        }
+      },
+      {
+        "chapter": 2,
+        "center": {
+          "top": 387.671875,
+          "center": 442.265625,
+          "opacity": 0.2915,
+          "blur": "blur(9.9185px)"
+        },
+        "risen": {
+          "top": 147.671875,
+          "center": 202.265625,
+          "opacity": 1,
+          "gap": 20,
+          "blur": "none"
+        }
+      },
+      {
+        "chapter": 3,
+        "center": {
+          "top": 387.671875,
+          "center": 442.265625,
+          "opacity": 0.3057,
+          "blur": "blur(9.7203px)"
+        },
+        "risen": {
+          "top": 147.671875,
+          "center": 202.265625,
+          "opacity": 1,
+          "gap": 20,
+          "blur": "none"
+        }
+      }
+    ],
+    "dark": {
+      "track": "#101011",
+      "thumb": "#232324",
+      "selectionBackground": "rgb(57, 25, 189)",
+      "selectionText": "rgb(255, 255, 255)"
+    },
+    "light": "#ffffff",
+    "console": [],
+    "devImageAdvisories": []
+  },
+  {
+    "name": "mobile",
+    "chapters": [
+      {
+        "chapter": 1,
+        "center": {
+          "top": 382.75,
+          "center": 414.4765625,
+          "opacity": 0.4281,
+          "blur": "blur(8.0059px)"
+        },
+        "risen": {
+          "top": 142.75,
+          "center": 174.4765625,
+          "opacity": 1,
+          "gap": 16,
+          "blur": "none"
+        }
+      },
+      {
+        "chapter": 2,
+        "center": {
+          "top": 382.953125,
+          "center": 414.6796875,
+          "opacity": 0.4274,
+          "blur": "blur(8.017px)"
+        },
+        "risen": {
+          "top": 142.953125,
+          "center": 174.6796875,
+          "opacity": 1,
+          "gap": 16,
+          "blur": "none"
+        }
+      },
+      {
+        "chapter": 3,
+        "center": {
+          "top": 365.625,
+          "center": 414.078125,
+          "opacity": 0.4281,
+          "blur": "blur(8.0059px)"
+        },
+        "risen": {
+          "top": 125.625,
+          "center": 174.078125,
+          "opacity": 1,
+          "gap": 16,
+          "blur": "none"
+        }
+      }
+    ],
+    "dark": {
+      "track": "#101011",
+      "thumb": "#232324",
+      "selectionBackground": "rgb(57, 25, 189)",
+      "selectionText": "rgb(255, 255, 255)"
+    },
+    "light": "#ffffff",
+    "console": [],
+    "devImageAdvisories": []
+  },
+  {
+    "name": "en",
+    "chapters": [
+      {
+        "chapter": 1,
+        "center": {
+          "top": 470.8125,
+          "center": 532.0078125,
+          "opacity": 0.3198,
+          "blur": "blur(9.523px)"
+        },
+        "risen": {
+          "top": 230.8125,
+          "center": 292.0078125,
+          "opacity": 1,
+          "gap": 20,
+          "blur": "none"
+        }
+      },
+      {
+        "chapter": 2,
+        "center": {
+          "top": 471.484375,
+          "center": 532.6796875,
+          "opacity": 0.3065,
+          "blur": "blur(9.7086px)"
+        },
+        "risen": {
+          "top": 231.484375,
+          "center": 292.6796875,
+          "opacity": 1,
+          "gap": 20,
+          "blur": "none"
+        }
+      },
+      {
+        "chapter": 3,
+        "center": {
+          "top": 470.859375,
+          "center": 532.0546875,
+          "opacity": 0.3057,
+          "blur": "blur(9.7203px)"
+        },
+        "risen": {
+          "top": 230.859375,
+          "center": 292.0546875,
+          "opacity": 1,
+          "gap": 20,
+          "blur": "none"
+        }
+      }
+    ],
+    "dark": {
+      "track": "#101011",
+      "thumb": "#232324",
+      "selectionBackground": "rgb(57, 25, 189)",
+      "selectionText": "rgb(255, 255, 255)"
+    },
+    "light": "#ffffff",
+    "console": [],
+    "devImageAdvisories": []
+  },
+  {
+    "name": "reduced",
+    "chapters": [
+      {
+        "chapter": 1,
+        "center": {
+          "top": 387.078125,
+          "center": 441.671875,
+          "opacity": 1,
+          "blur": "none"
+        },
+        "risen": {
+          "top": 147.078125,
+          "center": 201.671875,
+          "opacity": 1,
+          "gap": 20,
+          "blur": "none"
+        }
+      },
+      {
+        "chapter": 2,
+        "center": {
+          "top": 387.578125,
+          "center": 442.171875,
+          "opacity": 1,
+          "blur": "none"
+        },
+        "risen": {
+          "top": 147.578125,
+          "center": 202.171875,
+          "opacity": 1,
+          "gap": 20,
+          "blur": "none"
+        }
+      },
+      {
+        "chapter": 3,
+        "center": {
+          "top": 387.578125,
+          "center": 442.171875,
+          "opacity": 1,
+          "blur": "none"
+        },
+        "risen": {
+          "top": 147.578125,
+          "center": 202.171875,
+          "opacity": 1,
+          "gap": 20,
+          "blur": "none"
+        }
+      }
+    ],
+    "dark": {
+      "track": "#101011",
+      "thumb": "#232324",
+      "selectionBackground": "rgb(57, 25, 189)",
+      "selectionText": "rgb(255, 255, 255)"
+    },
+    "light": "#ffffff",
+    "console": [],
+    "devImageAdvisories": []
+  }
+]

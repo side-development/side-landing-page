@@ -10,7 +10,10 @@
       },
       "status": "pass",
       "checks": "approved Hero/Work structure, handoff, 7-day data via keyboard, modal/focus/Escape, period-change dissolution, transparent fixed navbar contrast, reverse, intro replay unmounts demo DOM",
-      "console": []
+      "console": [],
+      "devImageAdvisories": [
+        "Image with src \"/work/owl/owl-still.webp\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading"
+      ]
     },
     {
       "case": {
@@ -21,7 +24,10 @@
       },
       "status": "pass",
       "checks": "approved Hero/Work structure, handoff, 7-day data via keyboard, modal/focus/Escape, period-change dissolution, transparent fixed navbar contrast, reverse, intro replay unmounts demo DOM",
-      "console": []
+      "console": [],
+      "devImageAdvisories": [
+        "Image with src \"/work/owl/owl-still.webp\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading"
+      ]
     },
     {
       "case": {
@@ -33,7 +39,8 @@
       },
       "status": "pass",
       "checks": "approved Hero/Work structure, handoff, 7-day data via keyboard, modal/focus/Escape, period-change dissolution, transparent fixed navbar contrast, reverse, intro replay unmounts demo DOM",
-      "console": []
+      "console": [],
+      "devImageAdvisories": []
     },
     {
       "case": {
@@ -45,12 +52,14 @@
       },
       "status": "pass",
       "checks": "approved Hero/Work structure, handoff, 7-day data via keyboard, modal/focus/Escape, period-change dissolution, transparent fixed navbar contrast, reverse, intro replay unmounts demo DOM",
-      "console": []
+      "console": [],
+      "devImageAdvisories": []
     },
     {
       "name": "first-visit-and-repeat-session",
       "status": "pass",
-      "console": []
+      "console": [],
+      "devImageAdvisories": []
     }
   ]
 }
