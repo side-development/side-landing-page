@@ -1,0 +1,32 @@
+[
+  {
+    "name": "desktop-pt",
+    "samples": [
+      2040,
+      2078,
+      2108,
+      2135
+    ],
+    "errors": []
+  },
+  {
+    "name": "mobile-en",
+    "samples": [
+      1095,
+      1110,
+      1124,
+      1138
+    ],
+    "errors": []
+  },
+  {
+    "name": "reduced-pt",
+    "samples": [
+      1987,
+      1987,
+      1987,
+      1987
+    ],
+    "errors": []
+  }
+]

@@ -1,0 +1,12 @@
+.chapter { background: #101011; }
+.chapter[hidden] { display: none; }
+.entrance { height: 40svh; }
+.chapter :global([data-social-proof]) { background: transparent; }
+
+/* Services animates inline scrollbar variables; the next white chapter needs
+   a scoped override that disappears when scrolling back or during replay. */
+:global(html):has(.chapter[data-light="true"]) {
+  --page-scroll-track: #fff !important;
+  --page-scroll-thumb: #e9e9e9 !important;
+  --page-scroll-hover: #dcdcdc !important;
+}

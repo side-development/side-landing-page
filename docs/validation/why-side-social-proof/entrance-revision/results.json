@@ -1,0 +1,374 @@
+[
+  {
+    "name": "desktop-pt",
+    "heading": {
+      "proof": {
+        "x": 40,
+        "fontSize": "50.4px",
+        "weight": "400",
+        "lineHeight": "55.44px",
+        "letterSpacing": "-2.268px",
+        "textAlign": "left"
+      },
+      "work": {
+        "x": 40,
+        "fontSize": "50.4px",
+        "weight": "400",
+        "lineHeight": "55.44px",
+        "letterSpacing": "-2.268px",
+        "textAlign": "left"
+      },
+      "overflow": false
+    },
+    "samples": [
+      {
+        "progress": 0,
+        "background": "rgb(16, 16, 17)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.34,
+        "background": "rgb(136, 136, 136)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.68,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.82,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0.1464,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 1,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "reversed": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "name": "desktop-en",
+    "heading": {
+      "proof": {
+        "x": 40,
+        "fontSize": "50.4px",
+        "weight": "400",
+        "lineHeight": "55.44px",
+        "letterSpacing": "-2.268px",
+        "textAlign": "left"
+      },
+      "work": {
+        "x": 40,
+        "fontSize": "50.4px",
+        "weight": "400",
+        "lineHeight": "55.44px",
+        "letterSpacing": "-2.268px",
+        "textAlign": "left"
+      },
+      "overflow": false
+    },
+    "samples": [
+      {
+        "progress": 0,
+        "background": "rgb(16, 16, 17)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.34,
+        "background": "rgb(136, 136, 136)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.68,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.82,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0.1464,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 1,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "reversed": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "name": "mobile-pt",
+    "heading": {
+      "proof": {
+        "x": 24,
+        "fontSize": "32.76px",
+        "weight": "400",
+        "lineHeight": "36.036px",
+        "letterSpacing": "-1.4742px",
+        "textAlign": "left"
+      },
+      "work": {
+        "x": 24,
+        "fontSize": "32.76px",
+        "weight": "400",
+        "lineHeight": "36.036px",
+        "letterSpacing": "-1.4742px",
+        "textAlign": "left"
+      },
+      "overflow": false
+    },
+    "samples": [
+      {
+        "progress": 0,
+        "background": "rgb(16, 16, 17)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.34,
+        "background": "rgb(136, 136, 136)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.68,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.82,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0.146,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 1,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "reversed": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "name": "tablet-en",
+    "heading": {
+      "proof": {
+        "x": 24,
+        "fontSize": "54px",
+        "weight": "400",
+        "lineHeight": "59.4px",
+        "letterSpacing": "-2.43px",
+        "textAlign": "left"
+      },
+      "work": {
+        "x": 24,
+        "fontSize": "54px",
+        "weight": "400",
+        "lineHeight": "59.4px",
+        "letterSpacing": "-2.43px",
+        "textAlign": "left"
+      },
+      "overflow": false
+    },
+    "samples": [
+      {
+        "progress": 0,
+        "background": "rgb(16, 16, 17)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.34,
+        "background": "rgb(135, 135, 136)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.68,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.82,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0.1479,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 1,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "reversed": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "name": "small-en",
+    "heading": {
+      "proof": {
+        "x": 16,
+        "fontSize": "32px",
+        "weight": "400",
+        "lineHeight": "35.2px",
+        "letterSpacing": "-1.44px",
+        "textAlign": "left"
+      },
+      "work": {
+        "x": 16,
+        "fontSize": "32px",
+        "weight": "400",
+        "lineHeight": "35.2px",
+        "letterSpacing": "-1.44px",
+        "textAlign": "left"
+      },
+      "overflow": false
+    },
+    "samples": [
+      {
+        "progress": 0,
+        "background": "rgb(16, 16, 17)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.34,
+        "background": "rgb(136, 136, 136)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.68,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.82,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0.1469,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 1,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "reversed": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "name": "reduced-pt",
+    "heading": {
+      "proof": {
+        "x": 40,
+        "fontSize": "50.4px",
+        "weight": "400",
+        "lineHeight": "55.44px",
+        "letterSpacing": "-2.268px",
+        "textAlign": "left"
+      },
+      "work": {
+        "x": 40,
+        "fontSize": "50.4px",
+        "weight": "400",
+        "lineHeight": "55.44px",
+        "letterSpacing": "-2.268px",
+        "textAlign": "left"
+      },
+      "overflow": false
+    },
+    "samples": [
+      {
+        "progress": 0,
+        "background": "rgb(16, 16, 17)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.34,
+        "background": "rgb(136, 136, 136)",
+        "opacity": 0,
+        "light": "false",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.68,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 0.82,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 0.1464,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "progress": 1,
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "light": "true",
+        "proofBackground": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "reversed": true,
+    "keyboard": true,
+    "errors": []
+  }
+]

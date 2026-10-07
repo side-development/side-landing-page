@@ -1,0 +1,602 @@
+[
+  {
+    "name": "desktop-pt",
+    "initial": {
+      "index": 1,
+      "physical": 3,
+      "left": 1987,
+      "autoplay": "playing",
+      "centerError": 0.359375,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "wrapped": {
+      "index": 0,
+      "physical": 2,
+      "left": 1325,
+      "autoplay": "stopped",
+      "centerError": -0.03125,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 1,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "final": {
+      "index": 1,
+      "physical": 3,
+      "left": 1392,
+      "autoplay": "stopped",
+      "centerError": 0,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "name": "desktop-en",
+    "initial": {
+      "index": 1,
+      "physical": 3,
+      "left": 1987,
+      "autoplay": "playing",
+      "centerError": 0.359375,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "wrapped": {
+      "index": 0,
+      "physical": 2,
+      "left": 1325,
+      "autoplay": "stopped",
+      "centerError": -0.03125,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 1,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "final": {
+      "index": 1,
+      "physical": 3,
+      "left": 1392,
+      "autoplay": "stopped",
+      "centerError": 0,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "name": "mobile-pt",
+    "initial": {
+      "index": 1,
+      "physical": 3,
+      "left": 1078,
+      "autoplay": "playing",
+      "centerError": -0.03125,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "wrapped": {
+      "index": 0,
+      "physical": 2,
+      "left": 719,
+      "autoplay": "stopped",
+      "centerError": -0.421875,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 1,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "final": {
+      "index": 2,
+      "physical": 4,
+      "left": 1438,
+      "autoplay": "stopped",
+      "centerError": -0.640625,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 5,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "name": "tablet-en",
+    "initial": {
+      "index": 1,
+      "physical": 3,
+      "left": 2053,
+      "autoplay": "playing",
+      "centerError": 0.15625,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "wrapped": {
+      "index": 0,
+      "physical": 2,
+      "left": 1369,
+      "autoplay": "stopped",
+      "centerError": -0.3125,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 1,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "final": {
+      "index": 2,
+      "physical": 4,
+      "left": 2738,
+      "autoplay": "stopped",
+      "centerError": -0.375,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 5,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "name": "small-en",
+    "initial": {
+      "index": 1,
+      "physical": 3,
+      "left": 898,
+      "autoplay": "playing",
+      "centerError": -0.546875,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "wrapped": {
+      "index": 0,
+      "physical": 2,
+      "left": 598,
+      "autoplay": "stopped",
+      "centerError": 0.265625,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 1,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "final": {
+      "index": 2,
+      "physical": 4,
+      "left": 1197,
+      "autoplay": "stopped",
+      "centerError": -0.359375,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "blur(0px)",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "i": 5,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "blur(24px)",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 16)"
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "name": "reduced-pt",
+    "initial": {
+      "index": 1,
+      "physical": 3,
+      "left": 1987,
+      "autoplay": "reduced",
+      "centerError": 0.359375,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "none",
+          "transform": "none"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "none",
+          "transform": "none"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "wrapped": {
+      "index": 0,
+      "physical": 2,
+      "left": 1325,
+      "autoplay": "reduced",
+      "centerError": -0.03125,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 1,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "none",
+          "transform": "none"
+        },
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "none",
+          "transform": "none"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "final": {
+      "index": 1,
+      "physical": 3,
+      "left": 1987,
+      "autoplay": "reduced",
+      "centerError": 0.359375,
+      "overflow": false,
+      "live": 0,
+      "painted": [
+        {
+          "i": 2,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "none",
+          "transform": "none"
+        },
+        {
+          "i": 3,
+          "visibility": "visible",
+          "opacity": "1",
+          "blur": "none",
+          "transform": "none"
+        },
+        {
+          "i": 4,
+          "visibility": "visible",
+          "opacity": "0.44",
+          "blur": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "errors": []
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "initial": 1987,
+  "moving": 2240,
+  "hoverImmediatePause": true,
+  "leaveResumes": true,
+  "focusPauses": true,
+  "interactionStops": true,
+  "automaticWrap": true,
+  "offscreenPauses": true,
+  "reducedDisables": true,
+  "errors": []
+}

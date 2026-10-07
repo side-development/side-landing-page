@@ -1,0 +1,34 @@
+{
+  "intermediate": [
+    {
+      "opacity": "0.3",
+      "filter": "blur(20px)",
+      "visibility": "hidden"
+    },
+    {
+      "opacity": "0.321983",
+      "filter": "blur(19.3719px)",
+      "visibility": "visible"
+    },
+    {
+      "opacity": "0.978017",
+      "filter": "blur(0.628099px)",
+      "visibility": "visible"
+    },
+    {
+      "opacity": "0.3",
+      "filter": "blur(20px)",
+      "visibility": "visible"
+    },
+    {
+      "opacity": "0.3",
+      "filter": "blur(20px)",
+      "visibility": "hidden"
+    }
+  ],
+  "reducedPreferenceChange": true,
+  "localeNavigationAndCleanup": true,
+  "nativeHorizontalWheel": true,
+  "noJavaScriptFallback": true,
+  "errors": []
+}

@@ -20,8 +20,9 @@ export function createHeroTimeline(root: HTMLElement, stage: HTMLElement, reduce
   const purpleField = stage.querySelector<SVGSVGElement>("[data-purple-field]")!;
   const circle = purpleField.querySelector<SVGCircleElement>("[data-purple-surface]")!;
   const phrases = Array.from(stage.querySelectorAll<HTMLElement>("[data-phrase]"));
-  const width = window.innerWidth;
-  const height = window.innerHeight;
+  // innerWidth includes the reserved scrollbar gutter; the fixed stage doesn't.
+  // Use its rendered viewport so the circle and brand share the same coordinates.
+  const { width, height } = stage.getBoundingClientRect();
   const mobile = width < 700;
   const travel = mobile ? 7 : 18;
   const brandRect = brand.getBoundingClientRect();

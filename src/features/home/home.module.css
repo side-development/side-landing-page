@@ -1,11 +1,11 @@
 .home { background: #fff; }
 .home :global([data-final-hero] > header) { transition: color 400ms ease; }
-.home:has(:global([data-services][data-dark="true"])) :global([data-final-hero] > header) {
+.home:has(:global([data-services][data-dark="true"])):not(:has(:global([data-trust-chapter][data-light="true"]))) :global([data-final-hero] > header) {
   color: #eae8ed;
   --mobile-menu-background: #101011;
   --mobile-menu-color: #eae8ed;
 }
-.home:has(:global([data-services][data-dark="true"])) :global([data-final-hero] > header img) { content: url("/brand/side-logo-white.svg") / "Side"; }
+.home:has(:global([data-services][data-dark="true"])):not(:has(:global([data-trust-chapter][data-light="true"]))) :global([data-final-hero] > header img) { content: url("/brand/side-logo-white.svg") / "Side"; }
 @media (prefers-reduced-motion: reduce) {
   .home :global([data-final-hero] > header) { transition: none; }
 }

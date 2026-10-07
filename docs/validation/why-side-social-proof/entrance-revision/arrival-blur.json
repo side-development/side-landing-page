@@ -1,0 +1,116 @@
+[
+  {
+    "width": 1440,
+    "locale": "pt-BR",
+    "reduced": false,
+    "samples": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0",
+        "blur": "22px",
+        "headingFilter": "blur(22px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0.056",
+        "blur": "20.7687px",
+        "headingFilter": "blur(20.7687px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0.4587",
+        "blur": "11.9084px",
+        "headingFilter": "blur(11.9084px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0.8932",
+        "blur": "2.3506px",
+        "headingFilter": "blur(2.3506px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "1",
+        "blur": "0px",
+        "headingFilter": "blur(0px)"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "locale": "pt-BR",
+    "reduced": false,
+    "samples": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0",
+        "blur": "22px",
+        "headingFilter": "blur(22px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0.0612",
+        "blur": "20.6537px",
+        "headingFilter": "blur(20.6537px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0.466",
+        "blur": "11.7474px",
+        "headingFilter": "blur(11.7474px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0.8949",
+        "blur": "2.3129px",
+        "headingFilter": "blur(2.3129px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "1",
+        "blur": "0px",
+        "headingFilter": "blur(0px)"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "locale": "en",
+    "reduced": true,
+    "samples": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0",
+        "blur": "0px",
+        "headingFilter": "blur(0px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0.0614",
+        "blur": "0px",
+        "headingFilter": "blur(0px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0.4587",
+        "blur": "0px",
+        "headingFilter": "blur(0px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "0.9001",
+        "blur": "0px",
+        "headingFilter": "blur(0px)"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "opacity": "1",
+        "blur": "0px",
+        "headingFilter": "blur(0px)"
+      }
+    ],
+    "errors": []
+  }
+]
