@@ -1,0 +1,528 @@
+[
+  {
+    "name": "desktop-pt",
+    "samples": [
+      {
+        "i": 0,
+        "label": "Agilidade",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 715,
+        "center": 715,
+        "error": 0,
+        "overflow": false
+      },
+      {
+        "i": 1,
+        "label": "Precisão",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 714.984375,
+        "center": 715,
+        "error": -0.015625,
+        "overflow": false
+      },
+      {
+        "i": 2,
+        "label": "Suporte",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 714.9921875,
+        "center": 715,
+        "error": -0.0078125,
+        "overflow": false
+      },
+      {
+        "i": 3,
+        "label": "Excelência",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 714.8046875,
+        "center": 715,
+        "error": -0.1953125,
+        "overflow": false
+      },
+      {
+        "i": 4,
+        "label": "",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 714.96875,
+        "center": 715,
+        "error": -0.03125,
+        "overflow": false
+      },
+      {
+        "i": 3,
+        "label": "Excelência",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 714.8046875,
+        "center": 715,
+        "error": -0.1953125,
+        "overflow": false
+      },
+      {
+        "i": 4,
+        "label": "",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 714.96875,
+        "center": 715,
+        "error": -0.03125,
+        "overflow": false
+      }
+    ],
+    "fills": [
+      {
+        "part": "d",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "s",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "e",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "circulo-roxo",
+        "fill": "rgb(57, 25, 189)"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "desktop-en",
+    "samples": [
+      {
+        "i": 0,
+        "label": "Agility",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 714.9921875,
+        "center": 715,
+        "error": -0.0078125,
+        "overflow": false
+      },
+      {
+        "i": 1,
+        "label": "Precision",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 715.21875,
+        "center": 715,
+        "error": 0.21875,
+        "overflow": false
+      },
+      {
+        "i": 2,
+        "label": "Support",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 715.0078125,
+        "center": 715,
+        "error": 0.0078125,
+        "overflow": false
+      },
+      {
+        "i": 3,
+        "label": "Excellence",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 714.984375,
+        "center": 715,
+        "error": -0.015625,
+        "overflow": false
+      },
+      {
+        "i": 4,
+        "label": "",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 715.1484375,
+        "center": 715,
+        "error": 0.1484375,
+        "overflow": false
+      },
+      {
+        "i": 3,
+        "label": "Excellence",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 714.984375,
+        "center": 715,
+        "error": -0.015625,
+        "overflow": false
+      },
+      {
+        "i": 4,
+        "label": "",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 715.1484375,
+        "center": 715,
+        "error": 0.1484375,
+        "overflow": false
+      }
+    ],
+    "fills": [
+      {
+        "part": "d",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "s",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "e",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "circulo-roxo",
+        "fill": "rgb(57, 25, 189)"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "mobile-pt",
+    "samples": [
+      {
+        "i": 0,
+        "label": "Agilidade",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 190,
+        "center": 190,
+        "error": 0,
+        "overflow": false
+      },
+      {
+        "i": 1,
+        "label": "Precisão",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 190,
+        "center": 190,
+        "error": 0,
+        "overflow": false
+      },
+      {
+        "i": 2,
+        "label": "Suporte",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 190,
+        "center": 190,
+        "error": 0,
+        "overflow": false
+      },
+      {
+        "i": 3,
+        "label": "Excelência",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 190,
+        "center": 190,
+        "error": 0,
+        "overflow": false
+      },
+      {
+        "i": 4,
+        "label": "",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 189.9921875,
+        "center": 190,
+        "error": -0.0078125,
+        "overflow": false
+      }
+    ],
+    "fills": [
+      {
+        "part": "d",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "s",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "e",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "circulo-roxo",
+        "fill": "rgb(57, 25, 189)"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "tablet-en",
+    "samples": [
+      {
+        "i": 0,
+        "label": "Agility",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 379,
+        "center": 379,
+        "error": 0,
+        "overflow": false
+      },
+      {
+        "i": 1,
+        "label": "Precision",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 378.9921875,
+        "center": 379,
+        "error": -0.0078125,
+        "overflow": false
+      },
+      {
+        "i": 2,
+        "label": "Support",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 378.9921875,
+        "center": 379,
+        "error": -0.0078125,
+        "overflow": false
+      },
+      {
+        "i": 3,
+        "label": "Excellence",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 379,
+        "center": 379,
+        "error": 0,
+        "overflow": false
+      },
+      {
+        "i": 4,
+        "label": "",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 378.9921875,
+        "center": 379,
+        "error": -0.0078125,
+        "overflow": false
+      }
+    ],
+    "fills": [
+      {
+        "part": "d",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "s",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "e",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "circulo-roxo",
+        "fill": "rgb(57, 25, 189)"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "reduced-pt",
+    "samples": [
+      {
+        "i": 0,
+        "label": "Agilidade",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "none",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 715,
+        "center": 715,
+        "error": 0,
+        "overflow": false
+      },
+      {
+        "i": 1,
+        "label": "Precisão",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "none",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 714.9921875,
+        "center": 715,
+        "error": -0.0078125,
+        "overflow": false
+      },
+      {
+        "i": 2,
+        "label": "Suporte",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "none",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 715,
+        "center": 715,
+        "error": 0,
+        "overflow": false
+      },
+      {
+        "i": 3,
+        "label": "Excelência",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "none",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 714.9921875,
+        "center": 715,
+        "error": -0.0078125,
+        "overflow": false
+      },
+      {
+        "i": 4,
+        "label": "",
+        "weight": "700",
+        "color": "rgb(57, 25, 189)",
+        "opacity": 1,
+        "blur": "none",
+        "prefixOpacity": "1",
+        "prefixBlur": "none",
+        "midpoint": 715,
+        "center": 715,
+        "error": 0,
+        "overflow": false
+      }
+    ],
+    "fills": [
+      {
+        "part": "d",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "s",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "e",
+        "fill": "rgb(8, 8, 8)"
+      },
+      {
+        "part": "circulo-roxo",
+        "fill": "rgb(57, 25, 189)"
+      }
+    ],
+    "errors": []
+  }
+]

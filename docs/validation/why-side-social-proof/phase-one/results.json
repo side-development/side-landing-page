@@ -1,0 +1,514 @@
+[
+  {
+    "name": "desktop-pt",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "locale": "pt-BR",
+    "reduced": false,
+    "layout": "central",
+    "semanticStates": 5,
+    "samples": [
+      {
+        "id": "agility",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 584.234375,
+        "y": 349.703125,
+        "width": 556.734375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "precision",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 584.234375,
+        "y": 349.703125,
+        "width": 556.734375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "support",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 584.234375,
+        "y": 349.703125,
+        "width": 556.734375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "excellence",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 584.234375,
+        "y": 349.703125,
+        "width": 556.734375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "side",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 584.234375,
+        "y": 349.703125,
+        "width": 556.734375,
+        "height": 102.8125,
+        "overflow": false
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "desktop-en",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "locale": "en",
+    "reduced": false,
+    "layout": "central",
+    "semanticStates": 5,
+    "samples": [
+      {
+        "id": "agility",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 549.234375,
+        "y": 349.703125,
+        "width": 583.984375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "precision",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 549.234375,
+        "y": 349.703125,
+        "width": 583.984375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "support",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 549.234375,
+        "y": 349.703125,
+        "width": 583.984375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "excellence",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 549.234375,
+        "y": 349.703125,
+        "width": 583.984375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "side",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 549.234375,
+        "y": 349.703125,
+        "width": 583.984375,
+        "height": 102.8125,
+        "overflow": false
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "mobile-pt",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "locale": "pt-BR",
+    "reduced": false,
+    "layout": "flow",
+    "semanticStates": 5,
+    "samples": [
+      {
+        "id": "agility",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 86.171875,
+        "y": 350.96875,
+        "width": 207.640625,
+        "height": 45.046875,
+        "overflow": false
+      },
+      {
+        "id": "precision",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 88.5625,
+        "y": 409.796875,
+        "width": 202.84375,
+        "height": 45.046875,
+        "overflow": false
+      },
+      {
+        "id": "support",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 94.9375,
+        "y": 409.625,
+        "width": 190.09375,
+        "height": 45.046875,
+        "overflow": false
+      },
+      {
+        "id": "excellence",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 65.890625,
+        "y": 410.453125,
+        "width": 248.203125,
+        "height": 45.046875,
+        "overflow": false
+      },
+      {
+        "id": "side",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 147.65625,
+        "y": 469.28125,
+        "width": 84.671875,
+        "height": 45.046875,
+        "overflow": false
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "small-en",
+    "viewport": {
+      "width": 320,
+      "height": 667
+    },
+    "locale": "en",
+    "reduced": false,
+    "layout": "flow",
+    "semanticStates": 5,
+    "samples": [
+      {
+        "id": "agility",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 94.28125,
+        "y": 270.171875,
+        "width": 121.421875,
+        "height": 36.953125,
+        "overflow": false
+      },
+      {
+        "id": "precision",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 66.875,
+        "y": 316.78125,
+        "width": 176.21875,
+        "height": 36.953125,
+        "overflow": false
+      },
+      {
+        "id": "support",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 77,
+        "y": 316.390625,
+        "width": 155.96875,
+        "height": 36.953125,
+        "overflow": false
+      },
+      {
+        "id": "excellence",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 48.265625,
+        "y": 317,
+        "width": 213.453125,
+        "height": 36.953125,
+        "overflow": false
+      },
+      {
+        "id": "side",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 120.25,
+        "y": 363.609375,
+        "width": 69.46875,
+        "height": 36.953125,
+        "overflow": false
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "tablet-pt",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "locale": "pt-BR",
+    "reduced": false,
+    "layout": "flow",
+    "semanticStates": 5,
+    "samples": [
+      {
+        "id": "agility",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 180.546875,
+        "y": 452.234375,
+        "width": 396.890625,
+        "height": 86.09375,
+        "overflow": false
+      },
+      {
+        "id": "precision",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 185.140625,
+        "y": 523.859375,
+        "width": 387.703125,
+        "height": 86.09375,
+        "overflow": false
+      },
+      {
+        "id": "support",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 197.3125,
+        "y": 523.484375,
+        "width": 363.34375,
+        "height": 86.09375,
+        "overflow": false
+      },
+      {
+        "id": "excellence",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 141.78125,
+        "y": 524.109375,
+        "width": 474.421875,
+        "height": 86.09375,
+        "overflow": false
+      },
+      {
+        "id": "side",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 298.0625,
+        "y": 595.734375,
+        "width": 161.859375,
+        "height": 86.09375,
+        "overflow": false
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "landscape-en",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "locale": "en",
+    "reduced": false,
+    "layout": "flow",
+    "semanticStates": 5,
+    "samples": [
+      {
+        "id": "agility",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 331.28125,
+        "y": 131.65625,
+        "width": 302.015625,
+        "height": 53.171875,
+        "overflow": false
+      },
+      {
+        "id": "precision",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 331.28125,
+        "y": 131.65625,
+        "width": 302.015625,
+        "height": 53.171875,
+        "overflow": false
+      },
+      {
+        "id": "support",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 331.28125,
+        "y": 131.65625,
+        "width": 302.015625,
+        "height": 53.171875,
+        "overflow": false
+      },
+      {
+        "id": "excellence",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 331.28125,
+        "y": 131.65625,
+        "width": 302.015625,
+        "height": 53.171875,
+        "overflow": false
+      },
+      {
+        "id": "side",
+        "opacity": 1,
+        "blur": "blur(0px)",
+        "x": 331.28125,
+        "y": 131.65625,
+        "width": 302.015625,
+        "height": 53.171875,
+        "overflow": false
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "reduced-pt",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "locale": "pt-BR",
+    "reduced": true,
+    "layout": "flow",
+    "semanticStates": 5,
+    "samples": [
+      {
+        "id": "agility",
+        "opacity": 1,
+        "blur": "none",
+        "x": 584.234375,
+        "y": 259.703125,
+        "width": 556.734375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "precision",
+        "opacity": 1,
+        "blur": "none",
+        "x": 584.234375,
+        "y": 349.703125,
+        "width": 556.734375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "support",
+        "opacity": 1,
+        "blur": "none",
+        "x": 584.234375,
+        "y": 349.703125,
+        "width": 556.734375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "excellence",
+        "opacity": 1,
+        "blur": "none",
+        "x": 584.234375,
+        "y": 349.703125,
+        "width": 556.734375,
+        "height": 102.8125,
+        "overflow": false
+      },
+      {
+        "id": "side",
+        "opacity": 1,
+        "blur": "none",
+        "x": 584.234375,
+        "y": 439.703125,
+        "width": 556.734375,
+        "height": 102.8125,
+        "overflow": false
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "reduced-mobile-en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "locale": "en",
+    "reduced": true,
+    "layout": "flow",
+    "semanticStates": 5,
+    "samples": [
+      {
+        "id": "agility",
+        "opacity": 1,
+        "blur": "none",
+        "x": 116,
+        "y": 325.65625,
+        "width": 147.984375,
+        "height": 45.046875,
+        "overflow": false
+      },
+      {
+        "id": "precision",
+        "opacity": 1,
+        "blur": "none",
+        "x": 82.609375,
+        "y": 409.84375,
+        "width": 214.765625,
+        "height": 45.046875,
+        "overflow": false
+      },
+      {
+        "id": "support",
+        "opacity": 1,
+        "blur": "none",
+        "x": 94.9375,
+        "y": 410.03125,
+        "width": 190.09375,
+        "height": 45.046875,
+        "overflow": false
+      },
+      {
+        "id": "excellence",
+        "opacity": 1,
+        "blur": "none",
+        "x": 59.921875,
+        "y": 410.21875,
+        "width": 260.140625,
+        "height": 45.046875,
+        "overflow": false
+      },
+      {
+        "id": "side",
+        "opacity": 1,
+        "blur": "none",
+        "x": 147.65625,
+        "y": 494.40625,
+        "width": 84.671875,
+        "height": 45.046875,
+        "overflow": false
+      }
+    ],
+    "errors": []
+  }
+]

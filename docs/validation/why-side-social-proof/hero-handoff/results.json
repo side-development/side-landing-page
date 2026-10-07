@@ -1,0 +1,71 @@
+[
+  {
+    "name": "desktop",
+    "width": 1920,
+    "height": 1080,
+    "locale": "pt-BR",
+    "reduced": false,
+    "drift": 0,
+    "delta": -0.10407280468757563,
+    "last": {
+      "circleX": 1048.403023,
+      "circleY": 622.250423,
+      "pointX": 1048.2989501953125,
+      "pointY": 622.4891052246094,
+      "svgWidth": 1910,
+      "viewBoxWidth": 1910,
+      "bodyWidth": 1910
+    },
+    "final": {
+      "overflow": "",
+      "gutter": "stable",
+      "chapterVisible": true,
+      "overflowX": false
+    },
+    "replayDelta": -0.10407280468757563,
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "locale": "pt-BR",
+    "reduced": false,
+    "drift": 0,
+    "delta": -0.053391746093751635,
+    "last": {
+      "circleX": 244.873277,
+      "circleY": 465.918259,
+      "pointX": 244.81988525390625,
+      "pointY": 466.04200744628906,
+      "svgWidth": 390,
+      "viewBoxWidth": 390,
+      "bodyWidth": 390
+    },
+    "final": {
+      "overflow": "",
+      "gutter": "stable",
+      "chapterVisible": true,
+      "overflowX": false
+    },
+    "replayDelta": null,
+    "errors": []
+  },
+  {
+    "name": "reduced-en",
+    "width": 1440,
+    "height": 900,
+    "locale": "en",
+    "reduced": true,
+    "drift": null,
+    "delta": null,
+    "final": {
+      "overflow": "",
+      "gutter": "stable",
+      "chapterVisible": true,
+      "overflowX": false
+    },
+    "replayDelta": null,
+    "errors": []
+  }
+]

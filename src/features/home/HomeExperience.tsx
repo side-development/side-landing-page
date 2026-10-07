@@ -9,6 +9,7 @@ import { SelectedWork } from "@/features/work/SelectedWork";
 import type { WorkCopy } from "@/features/work/copy";
 import { useSmoothScroll } from "@/features/scroll/useSmoothScroll";
 import { Services } from "@/features/services/Services";
+import { TrustChapter } from "@/features/why-side/TrustChapter";
 import styles from "./home.module.css";
 
 export function HomeExperience({ errorCopy, heroCopy, workCopy, locale }: {
@@ -25,6 +26,7 @@ export function HomeExperience({ errorCopy, heroCopy, workCopy, locale }: {
     <Hero copy={errorCopy} finalCopy={heroCopy} onPhase={onPhase} />
     <SelectedWork copy={workCopy} active={phase === "final"} />
     <Services locale={locale} active={phase === "final"} />
+    <TrustChapter locale={locale} active={phase === "final"} />
     <SideCursor active={phase !== "idle"} />
   </main>;
 }

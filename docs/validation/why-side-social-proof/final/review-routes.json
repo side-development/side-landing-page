@@ -1,0 +1,18 @@
+﻿[
+    {
+        "path":  "/review/why-side",
+        "status":  404
+    },
+    {
+        "path":  "/review/social-proof",
+        "status":  404
+    },
+    {
+        "path":  "/en/review/why-side",
+        "status":  404
+    },
+    {
+        "path":  "/en/review/social-proof",
+        "status":  404
+    }
+]

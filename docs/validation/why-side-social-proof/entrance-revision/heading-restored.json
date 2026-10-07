@@ -1,0 +1,26 @@
+[
+  {
+    "width": 1440,
+    "locale": "pt-BR",
+    "font": "60.48px",
+    "align": "center",
+    "centerError": 5,
+    "overflow": false
+  },
+  {
+    "width": 1920,
+    "locale": "en",
+    "font": "64px",
+    "align": "center",
+    "centerError": 5,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "locale": "pt-BR",
+    "font": "30.03px",
+    "align": "center",
+    "centerError": 5,
+    "overflow": false
+  }
+]

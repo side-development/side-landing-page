@@ -1,0 +1,42 @@
+[
+  {
+    "width": 1440,
+    "locale": "pt-BR",
+    "font": "44.64px",
+    "lines": 1,
+    "x": 40,
+    "overflow": false
+  },
+  {
+    "width": 1920,
+    "locale": "pt-BR",
+    "font": "48px",
+    "lines": 1,
+    "x": 40,
+    "overflow": false
+  },
+  {
+    "width": 2560,
+    "locale": "en",
+    "font": "48px",
+    "lines": 1,
+    "x": 40,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "locale": "pt-BR",
+    "font": "29.64px",
+    "lines": 2,
+    "x": 24,
+    "overflow": false
+  },
+  {
+    "width": 768,
+    "locale": "en",
+    "font": "48px",
+    "lines": 2,
+    "x": 24,
+    "overflow": false
+  }
+]

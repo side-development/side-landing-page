@@ -1,0 +1,36 @@
+{
+  "keyboard": "pass",
+  "cursor": "pass",
+  "lastHold": "pass",
+  "liveReducedMotion": "pass",
+  "resize": "pass",
+  "navigation": [
+    "/en/review/why-side",
+    "/review/why-side",
+    "/en/review/why-side",
+    "/review/why-side"
+  ],
+  "noJavaScript": [
+    {
+      "opacity": "1",
+      "visibility": "visible"
+    },
+    {
+      "opacity": "1",
+      "visibility": "visible"
+    },
+    {
+      "opacity": "1",
+      "visibility": "visible"
+    },
+    {
+      "opacity": "1",
+      "visibility": "visible"
+    },
+    {
+      "opacity": "1",
+      "visibility": "visible"
+    }
+  ],
+  "errors": []
+}

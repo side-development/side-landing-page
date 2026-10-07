@@ -1,0 +1,118 @@
+{
+  "prefix": [
+    {
+      "text": "Você",
+      "weight": "700",
+      "x": 289.015625,
+      "y": 349.703125,
+      "width": 273.6875,
+      "height": 102.8125,
+      "opacity": "1",
+      "filter": "none",
+      "visibility": "visible"
+    },
+    {
+      "text": "Você",
+      "weight": "700",
+      "x": 289.015625,
+      "y": 349.703125,
+      "width": 273.6875,
+      "height": 102.8125,
+      "opacity": "1",
+      "filter": "none",
+      "visibility": "visible"
+    },
+    {
+      "text": "Você",
+      "weight": "700",
+      "x": 289.015625,
+      "y": 349.703125,
+      "width": 273.6875,
+      "height": 102.8125,
+      "opacity": "1",
+      "filter": "none",
+      "visibility": "visible"
+    },
+    {
+      "text": "Você",
+      "weight": "700",
+      "x": 289.015625,
+      "y": 349.703125,
+      "width": 273.6875,
+      "height": 102.8125,
+      "opacity": "1",
+      "filter": "none",
+      "visibility": "visible"
+    },
+    {
+      "text": "Você",
+      "weight": "700",
+      "x": 289.015625,
+      "y": 349.703125,
+      "width": 273.6875,
+      "height": 102.8125,
+      "opacity": "1",
+      "filter": "none",
+      "visibility": "visible"
+    },
+    {
+      "text": "Você",
+      "weight": "700",
+      "x": 289.015625,
+      "y": 349.703125,
+      "width": 273.6875,
+      "height": 102.8125,
+      "opacity": "1",
+      "filter": "none",
+      "visibility": "visible"
+    },
+    {
+      "text": "Você",
+      "weight": "700",
+      "x": 289.015625,
+      "y": 349.703125,
+      "width": 273.6875,
+      "height": 102.8125,
+      "opacity": "1",
+      "filter": "none",
+      "visibility": "visible"
+    }
+  ],
+  "colors": [
+    "rgb(57, 25, 189)",
+    "rgb(57, 25, 189)",
+    "rgb(57, 25, 189)",
+    "rgb(57, 25, 189)",
+    "rgb(57, 25, 189)"
+  ],
+  "logoFills": [
+    "rgb(57, 25, 189)",
+    "rgb(57, 25, 189)",
+    "rgb(57, 25, 189)",
+    "rgb(57, 25, 189)"
+  ],
+  "metrics": {
+    "prefix": {
+      "x": 289.015625,
+      "y": 349.703125,
+      "width": 273.6875,
+      "height": 102.8125,
+      "bottom": 452.515625
+    },
+    "word": {
+      "x": 584.234375,
+      "y": 349.703125,
+      "width": 556.734375,
+      "height": 102.8125,
+      "bottom": 452.515625
+    },
+    "logo": {
+      "x": 584.234375,
+      "y": 355.390625,
+      "width": 193.28125,
+      "height": 80.28125,
+      "bottom": 435.671875
+    }
+  },
+  "errors": []
+}
