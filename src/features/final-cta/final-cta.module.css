@@ -130,7 +130,7 @@
 }
 .invitation p { color: #594f66; font-size: clamp(15px, 1.2vw, 18px); line-height: 1.5; letter-spacing: -.025em; text-wrap: pretty; }
 .invitation p > span { color: #17121e; }
-.action { --glass-shadow-spread: 12px; margin-top: 22px; }
+.action { --glass-shadow-spread: 12px; --glass-press-transform: none; margin-top: 22px; }
 .link {
   display: inline-flex;
   align-items: center;
