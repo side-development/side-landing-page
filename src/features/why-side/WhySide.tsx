@@ -12,7 +12,7 @@ export function WhySide({ locale, active = true }: { locale: WhySideLocale; acti
   const copy = whySideCopy[locale];
   useWhySideMotion(root, active);
 
-  return <section ref={root} className={styles.why} hidden={!active} aria-labelledby={headingId} data-why-side>
+  return <section id="why-side" tabIndex={-1} ref={root} className={styles.why} hidden={!active} aria-labelledby={headingId} data-why-side>
     <h2 id={headingId} className={styles.srOnly}>{copy.heading}</h2>
     <div className={styles.sequence} data-why-sequence>
       <div className={styles.stage} data-why-stage>

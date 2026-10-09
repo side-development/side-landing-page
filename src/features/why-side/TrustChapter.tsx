@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import type { WhySideLocale } from "./copy";
 import { SocialProof } from "./SocialProof";
 import { WhySide } from "./WhySide";
+import { FinalClosing } from "@/features/final-cta/FinalClosing";
 import styles from "./trust-chapter.module.css";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -56,5 +57,6 @@ export function TrustChapter({ locale, active }: { locale: WhySideLocale; active
     <div className={styles.entrance} data-trust-entrance aria-hidden="true" />
     <SocialProof locale={locale} active={active} initialIndex={1} />
     <WhySide locale={locale} active={active} />
+    <FinalClosing locale={locale} active={active} />
   </div>;
 }
