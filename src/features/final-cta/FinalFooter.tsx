@@ -46,6 +46,32 @@ export function FinalFooter({ locale }: { locale: "pt-BR" | "en" }) {
   const linkedin = officialProfile(process.env.NEXT_PUBLIC_SIDE_LINKEDIN_URL, "linkedin.com");
   useEffect(() => {
     const node = root.current;
+    const header = document.querySelector<HTMLElement>("[data-final-hero] > header");
+    if (!node || !header) return;
+    const previousInert = header.inert;
+    const update = () => {
+      const bounds = node.getBoundingClientRect();
+      const viewport = document.documentElement.clientHeight;
+      const covered = bounds.height > 0 && bounds.top <= 1 && bounds.bottom >= viewport - 1;
+      if (covered) header.dataset.footerCovered = "true";
+      else delete header.dataset.footerCovered;
+      header.inert = covered || previousInert;
+    };
+    const observer = new IntersectionObserver(update, { threshold: [0, .99, 1] });
+    observer.observe(node);
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+      delete header.dataset.footerCovered;
+      header.inert = previousInert;
+    };
+  }, [pathname]);
+  useEffect(() => {
+    const node = root.current;
     if (!node) return;
     // Text inputs can match :focus-visible even after a mouse click.
     // Track Tab separately so only keyboard navigation outlines the field.
