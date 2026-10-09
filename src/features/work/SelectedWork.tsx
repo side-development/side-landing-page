@@ -11,7 +11,7 @@ export function SelectedWork({ copy, active }: { copy: WorkCopy; active: boolean
   const section = useRef<HTMLElement>(null);
   useWorkMotion(section, active);
 
-  return <section ref={section} className={styles.work} hidden={!active} aria-labelledby="selected-work-title" data-selected-work>
+  return <section id="work" tabIndex={-1} ref={section} className={styles.work} hidden={!active} aria-labelledby="selected-work-title" data-selected-work>
     <header className={styles.chapter}>
       <h2 id="selected-work-title">{copy.heading}</h2>
       <p>{copy.count}</p>

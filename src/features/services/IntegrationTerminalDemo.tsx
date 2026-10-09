@@ -10,7 +10,7 @@ export function IntegrationTerminalDemo({ locale, replay = 0 }: { locale: Termin
   const root = useRef<HTMLElement>(null);
   const id = useId();
   const copy = terminalScreenCopy;
-  useTerminalMotion(root, locale, replay);
+  useTerminalMotion(root, replay);
 
   return <figure ref={root} className={styles.terminal} data-terminal aria-labelledby={`${id}-label`}>
     <figcaption id={`${id}-label`} className={styles.srOnly}>{terminalCopy[locale].accessible}</figcaption>

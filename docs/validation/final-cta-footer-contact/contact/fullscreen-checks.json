@@ -1,0 +1,1202 @@
+[
+  {
+    "name": "desktop",
+    "states": [
+      {
+        "label": "01",
+        "height": 900,
+        "scroll": 900,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "button": {
+          "x": 300,
+          "y": 543.734375,
+          "width": 109.359375,
+          "height": 52,
+          "top": 543.734375,
+          "right": 409.359375,
+          "bottom": 595.734375,
+          "left": 300
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "02",
+        "height": 900,
+        "scroll": 900,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "button": {
+          "x": 300,
+          "y": 671.1875,
+          "width": 109.359375,
+          "height": 52,
+          "top": 671.1875,
+          "right": 409.359375,
+          "bottom": 723.1875,
+          "left": 300
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "03",
+        "height": 900,
+        "scroll": 900,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "button": {
+          "x": 301.36700439453125,
+          "y": 671.8375244140625,
+          "width": 106.62539672851562,
+          "height": 50.70001220703125,
+          "top": 671.8375244140625,
+          "right": 407.9924011230469,
+          "bottom": 722.5375366210938,
+          "left": 301.36700439453125
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "04-expanded",
+        "height": 900,
+        "scroll": 900,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "button": {
+          "x": 300,
+          "y": 664.734375,
+          "width": 109.359375,
+          "height": 52,
+          "top": 664.734375,
+          "right": 409.359375,
+          "bottom": 716.734375,
+          "left": 300
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "05",
+        "height": 900,
+        "scroll": 900,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "button": {
+          "x": 300,
+          "y": 699.171875,
+          "width": 109.359375,
+          "height": 52,
+          "top": 699.171875,
+          "right": 409.359375,
+          "bottom": 751.171875,
+          "left": 300
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-error",
+        "height": 900,
+        "scroll": 900,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "button": {
+          "x": 300.3490295410156,
+          "y": 578.429443359375,
+          "width": 178.42694091796875,
+          "height": 51.79736328125,
+          "top": 578.429443359375,
+          "right": 478.7759704589844,
+          "bottom": 630.226806640625,
+          "left": 300.3490295410156
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-unavailable",
+        "height": 900,
+        "scroll": 900,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "button": {
+          "x": 302.23907470703125,
+          "y": 578.9781494140625,
+          "width": 174.64688110351562,
+          "height": 50.70001220703125,
+          "top": 578.9781494140625,
+          "right": 476.8859558105469,
+          "bottom": 629.6781616210938,
+          "left": 302.23907470703125
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      }
+    ],
+    "singleClick": true,
+    "pointerOutline": "none",
+    "keyboardOutline": "solid",
+    "closeReturnsToCard": true,
+    "introReplayed": false,
+    "errors": []
+  },
+  {
+    "name": "laptop",
+    "states": [
+      {
+        "label": "01",
+        "height": 768,
+        "scroll": 768,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 768,
+          "top": 0,
+          "right": 1366,
+          "bottom": 768,
+          "left": 0
+        },
+        "button": {
+          "x": 263,
+          "y": 460.140625,
+          "width": 109.359375,
+          "height": 52,
+          "top": 460.140625,
+          "right": 372.359375,
+          "bottom": 512.140625,
+          "left": 263
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "02",
+        "height": 768,
+        "scroll": 768,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 768,
+          "top": 0,
+          "right": 1366,
+          "bottom": 768,
+          "left": 0
+        },
+        "button": {
+          "x": 263,
+          "y": 570.734375,
+          "width": 109.359375,
+          "height": 52,
+          "top": 570.734375,
+          "right": 372.359375,
+          "bottom": 622.734375,
+          "left": 263
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "03",
+        "height": 768,
+        "scroll": 768,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 768,
+          "top": 0,
+          "right": 1366,
+          "bottom": 768,
+          "left": 0
+        },
+        "button": {
+          "x": 264.36700439453125,
+          "y": 571.3843994140625,
+          "width": 106.62539672851562,
+          "height": 50.70001220703125,
+          "top": 571.3843994140625,
+          "right": 370.9924011230469,
+          "bottom": 622.0844116210938,
+          "left": 264.36700439453125
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "04-expanded",
+        "height": 768,
+        "scroll": 768,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 768,
+          "top": 0,
+          "right": 1366,
+          "bottom": 768,
+          "left": 0
+        },
+        "button": {
+          "x": 263,
+          "y": 580.84375,
+          "width": 109.359375,
+          "height": 52,
+          "top": 580.84375,
+          "right": 372.359375,
+          "bottom": 632.84375,
+          "left": 263
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "05",
+        "height": 768,
+        "scroll": 768,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 768,
+          "top": 0,
+          "right": 1366,
+          "bottom": 768,
+          "left": 0
+        },
+        "button": {
+          "x": 263,
+          "y": 597.28125,
+          "width": 109.359375,
+          "height": 52,
+          "top": 597.28125,
+          "right": 372.359375,
+          "bottom": 649.28125,
+          "left": 263
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-error",
+        "height": 768,
+        "scroll": 768,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 768,
+          "top": 0,
+          "right": 1366,
+          "bottom": 768,
+          "left": 0
+        },
+        "button": {
+          "x": 263.3572998046875,
+          "y": 494.8381042480469,
+          "width": 178.410400390625,
+          "height": 51.792572021484375,
+          "top": 494.8381042480469,
+          "right": 441.7677001953125,
+          "bottom": 546.6306762695312,
+          "left": 263.3572998046875
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-unavailable",
+        "height": 768,
+        "scroll": 768,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 768,
+          "top": 0,
+          "right": 1366,
+          "bottom": 768,
+          "left": 0
+        },
+        "button": {
+          "x": 264.57403564453125,
+          "y": 495.1913146972656,
+          "width": 175.97689819335938,
+          "height": 51.086090087890625,
+          "top": 495.1913146972656,
+          "right": 440.5509338378906,
+          "bottom": 546.2774047851562,
+          "left": 264.57403564453125
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      }
+    ],
+    "singleClick": true,
+    "pointerOutline": "none",
+    "keyboardOutline": "solid",
+    "closeReturnsToCard": true,
+    "introReplayed": false,
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "states": [
+      {
+        "label": "01",
+        "height": 844,
+        "scroll": 844,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 515.25,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 515.25,
+          "right": 125.359375,
+          "bottom": 564.84375,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "02",
+        "height": 844,
+        "scroll": 844,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 642.125,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 642.125,
+          "right": 125.359375,
+          "bottom": 691.71875,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "03",
+        "height": 844,
+        "scroll": 844,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "button": {
+          "x": 25.266990661621094,
+          "y": 654.9324340820312,
+          "width": 98.82539367675781,
+          "height": 48.3538818359375,
+          "top": 654.9324340820312,
+          "right": 124.0923843383789,
+          "bottom": 703.2863159179688,
+          "left": 25.266990661621094
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "04-expanded",
+        "height": 844,
+        "scroll": 844,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 615.125,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 615.125,
+          "right": 125.359375,
+          "bottom": 664.71875,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "05",
+        "height": 844,
+        "scroll": 844,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 642.125,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 642.125,
+          "right": 125.359375,
+          "bottom": 691.71875,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-error",
+        "height": 844,
+        "scroll": 844,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 549.84375,
+          "width": 171.125,
+          "height": 49.59375,
+          "top": 549.84375,
+          "right": 195.125,
+          "bottom": 599.4375,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-unavailable",
+        "height": 844,
+        "scroll": 844,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "button": {
+          "x": 26.139060974121094,
+          "y": 569.7136840820312,
+          "width": 166.84686279296875,
+          "height": 48.3538818359375,
+          "top": 569.7136840820312,
+          "right": 192.98592376708984,
+          "bottom": 618.0675659179688,
+          "left": 26.139060974121094
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      }
+    ],
+    "singleClick": true,
+    "pointerOutline": "none",
+    "keyboardOutline": "solid",
+    "closeReturnsToCard": true,
+    "introReplayed": false,
+    "errors": []
+  },
+  {
+    "name": "small",
+    "states": [
+      {
+        "label": "01",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 347.40625,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 347.40625,
+          "right": 125.359375,
+          "bottom": 397,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "02",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 445.28125,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 445.28125,
+          "right": 125.359375,
+          "bottom": 494.875,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "03",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 25.266990661621094,
+          "y": 457.49493408203125,
+          "width": 98.82539367675781,
+          "height": 48.353912353515625,
+          "top": 457.49493408203125,
+          "right": 124.0923843383789,
+          "bottom": 505.8488464355469,
+          "left": 25.266990661621094
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "04-expanded",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 407.078125,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 407.078125,
+          "right": 125.359375,
+          "bottom": 456.671875,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "05",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 459.3125,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 459.3125,
+          "right": 125.359375,
+          "bottom": 508.90625,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-error",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 401.09375,
+          "width": 171.125,
+          "height": 49.59375,
+          "top": 401.09375,
+          "right": 195.125,
+          "bottom": 450.6875,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-unavailable",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 25.803741455078125,
+          "y": 421.1164855957031,
+          "width": 167.51751708984375,
+          "height": 48.54827880859375,
+          "top": 421.1164855957031,
+          "right": 193.32125854492188,
+          "bottom": 469.6647644042969,
+          "left": 25.803741455078125
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      }
+    ],
+    "singleClick": true,
+    "pointerOutline": "none",
+    "keyboardOutline": "solid",
+    "closeReturnsToCard": true,
+    "introReplayed": false,
+    "errors": []
+  },
+  {
+    "name": "landscape",
+    "states": [
+      {
+        "label": "01",
+        "height": 390,
+        "scroll": 390,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390,
+          "top": 0,
+          "right": 844,
+          "bottom": 390,
+          "left": 0
+        },
+        "button": {
+          "x": 37.96875,
+          "y": 240.8125,
+          "width": 109.359375,
+          "height": 49.59375,
+          "top": 240.8125,
+          "right": 147.328125,
+          "bottom": 290.40625,
+          "left": 37.96875
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "02",
+        "height": 390,
+        "scroll": 390,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390,
+          "top": 0,
+          "right": 844,
+          "bottom": 390,
+          "left": 0
+        },
+        "button": {
+          "x": 37.96875,
+          "y": 295.3125,
+          "width": 109.359375,
+          "height": 49.59375,
+          "top": 295.3125,
+          "right": 147.328125,
+          "bottom": 344.90625,
+          "left": 37.96875
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "03",
+        "height": 390,
+        "scroll": 390,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390,
+          "top": 0,
+          "right": 844,
+          "bottom": 390,
+          "left": 0
+        },
+        "button": {
+          "x": 39.33573913574219,
+          "y": 295.93243408203125,
+          "width": 106.62539672851562,
+          "height": 48.353912353515625,
+          "top": 295.93243408203125,
+          "right": 145.9611358642578,
+          "bottom": 344.2863464355469,
+          "left": 39.33573913574219
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "04-expanded",
+        "height": 390,
+        "scroll": 390,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390,
+          "top": 0,
+          "right": 844,
+          "bottom": 390,
+          "left": 0
+        },
+        "button": {
+          "x": 37.96875,
+          "y": 275.953125,
+          "width": 109.359375,
+          "height": 49.59375,
+          "top": 275.953125,
+          "right": 147.328125,
+          "bottom": 325.546875,
+          "left": 37.96875
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "05",
+        "height": 390,
+        "scroll": 390,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390,
+          "top": 0,
+          "right": 844,
+          "bottom": 390,
+          "left": 0
+        },
+        "button": {
+          "x": 37.96875,
+          "y": 295.3125,
+          "width": 109.359375,
+          "height": 49.59375,
+          "top": 295.3125,
+          "right": 147.328125,
+          "bottom": 344.90625,
+          "left": 37.96875
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-error",
+        "height": 390,
+        "scroll": 390,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390,
+          "top": 0,
+          "right": 844,
+          "bottom": 390,
+          "left": 0
+        },
+        "button": {
+          "x": 38.305137634277344,
+          "y": 275.5041809082031,
+          "width": 169.67095947265625,
+          "height": 49.39788818359375,
+          "top": 275.5041809082031,
+          "right": 207.9760971069336,
+          "bottom": 324.9020690917969,
+          "left": 38.305137634277344
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-unavailable",
+        "height": 390,
+        "scroll": 390,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390,
+          "top": 0,
+          "right": 844,
+          "bottom": 390,
+          "left": 0
+        },
+        "button": {
+          "x": 40.098045349121094,
+          "y": 276.02618408203125,
+          "width": 166.08514404296875,
+          "height": 48.353912353515625,
+          "top": 276.02618408203125,
+          "right": 206.18318939208984,
+          "bottom": 324.3800964355469,
+          "left": 40.098045349121094
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      }
+    ],
+    "singleClick": true,
+    "pointerOutline": "none",
+    "keyboardOutline": "solid",
+    "closeReturnsToCard": true,
+    "introReplayed": false,
+    "errors": []
+  },
+  {
+    "name": "english-reduced",
+    "states": [
+      {
+        "label": "01",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 347.40625,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 347.40625,
+          "right": 125.359375,
+          "bottom": 397,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "02",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 445.28125,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 445.28125,
+          "right": 125.359375,
+          "bottom": 494.875,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "03",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 456.875,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 456.875,
+          "right": 125.359375,
+          "bottom": 506.46875,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "04-expanded",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 407.078125,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 407.078125,
+          "right": 125.359375,
+          "bottom": 456.671875,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "05",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 445.28125,
+          "width": 101.359375,
+          "height": 49.59375,
+          "top": 445.28125,
+          "right": 125.359375,
+          "bottom": 494.875,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-error",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 391.5,
+          "width": 162.34375,
+          "height": 49.59375,
+          "top": 391.5,
+          "right": 186.34375,
+          "bottom": 441.09375,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      },
+      {
+        "label": "06-unavailable",
+        "height": 568,
+        "scroll": 568,
+        "main": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "button": {
+          "x": 24,
+          "y": 401.25,
+          "width": 162.34375,
+          "height": 49.59375,
+          "top": 401.25,
+          "right": 186.34375,
+          "bottom": 450.84375,
+          "left": 24
+        },
+        "innerOverflow": 0,
+        "progressDots": 0
+      }
+    ],
+    "singleClick": true,
+    "pointerOutline": "none",
+    "keyboardOutline": "solid",
+    "closeReturnsToCard": true,
+    "introReplayed": false,
+    "errors": []
+  }
+]

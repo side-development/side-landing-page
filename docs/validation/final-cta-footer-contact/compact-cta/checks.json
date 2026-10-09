@@ -1,0 +1,93 @@
+[
+  {
+    "name": "desktop",
+    "height": 900,
+    "viewport": 900,
+    "headingTop": 178.921875,
+    "imageBottom": 761.078125,
+    "buttonBottom": 734.078125,
+    "overflow": false,
+    "filter": "blur(0px)",
+    "arriving": "blur(12.9655px)",
+    "gradientMoving": true,
+    "errors": []
+  },
+  {
+    "name": "laptop",
+    "height": 768,
+    "viewport": 768,
+    "headingTop": 155.625,
+    "imageBottom": 652.359375,
+    "buttonBottom": 629.328125,
+    "overflow": false,
+    "filter": "blur(0px)",
+    "arriving": "blur(14px)",
+    "gradientMoving": true,
+    "errors": []
+  },
+  {
+    "name": "wide-short",
+    "height": 900,
+    "viewport": 900,
+    "headingTop": 178.921875,
+    "imageBottom": 761.078125,
+    "buttonBottom": 734.078125,
+    "overflow": false,
+    "filter": "blur(0px)",
+    "arriving": "blur(13.0497px)",
+    "gradientMoving": true,
+    "errors": []
+  },
+  {
+    "name": "english",
+    "height": 720,
+    "viewport": 720,
+    "headingTop": 147.15625,
+    "imageBottom": 612.84375,
+    "buttonBottom": 591.25,
+    "overflow": false,
+    "filter": "blur(0px)",
+    "arriving": "blur(14px)",
+    "gradientMoving": true,
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "height": 564,
+    "viewport": 844,
+    "headingTop": 53,
+    "imageBottom": 366.9375,
+    "buttonBottom": 510.9375,
+    "overflow": false,
+    "filter": "blur(0px)",
+    "arriving": "blur(12.5089px)",
+    "gradientMoving": true,
+    "errors": []
+  },
+  {
+    "name": "small-mobile",
+    "height": 381,
+    "viewport": 568,
+    "headingTop": 37,
+    "imageBottom": 231.546875,
+    "buttonBottom": 343.546875,
+    "overflow": false,
+    "filter": "blur(0px)",
+    "arriving": "blur(13.2192px)",
+    "gradientMoving": true,
+    "errors": []
+  },
+  {
+    "name": "reduced",
+    "height": 900,
+    "viewport": 900,
+    "headingTop": 178.921875,
+    "imageBottom": 761.078125,
+    "buttonBottom": 734.078125,
+    "overflow": false,
+    "filter": "none",
+    "arriving": "none",
+    "gradientMoving": false,
+    "errors": []
+  }
+]

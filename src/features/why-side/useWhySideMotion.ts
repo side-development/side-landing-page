@@ -17,13 +17,39 @@ export function useWhySideMotion(root: RefObject<HTMLElement | null>, active: bo
     const descriptions = values.map(value => value.querySelector<HTMLElement>("[data-why-description]")!);
     const media = gsap.matchMedia();
 
-    media.add("(min-width: 801px) and (min-height: 601px) and (prefers-reduced-motion: no-preference)", () => {
+    // Share the same stationary composition across desktop and mobile.
+    media.add({
+      motion: "(prefers-reduced-motion: no-preference)",
+      mobile: "(max-width: 800px)",
+      desktop: "(min-width: 801px)",
+      touch: "(pointer: coarse)",
+      portrait: "(orientation: portrait)",
+    }, context => {
+      if (!context.conditions?.motion) return;
       node.dataset.layout = "central";
+      const sequence = node.querySelector<HTMLElement>("[data-why-sequence]")!;
+      const stage = node.querySelector<HTMLElement>("[data-why-stage]")!;
+      const compact = context.conditions.mobile || context.conditions.touch;
+      let viewportWidth = window.innerWidth;
+      const measureStage = () => {
+        node.style.removeProperty("--why-stage-height");
+        node.style.setProperty("--why-stage-height", `${stage.offsetHeight}px`);
+      };
+      // Browser chrome may resize the viewport during a swipe. Keep the stage
+      // and its scroll distance stable until the width/orientation changes.
+      if (compact) measureStage();
+      const resize = () => {
+        if (window.innerWidth === viewportWidth) return;
+        viewportWidth = window.innerWidth;
+        measureStage();
+        ScrollTrigger.refresh();
+      };
+      if (compact) window.addEventListener("resize", resize);
       const timeline = gsap.timeline({
         defaults: { ease: "sine.inOut" },
         scrollTrigger: {
-          trigger: node.querySelector("[data-why-sequence]"),
-          start: "top top", end: "bottom bottom", scrub: .9,
+          trigger: sequence,
+          start: "top top", end: () => `+=${sequence.offsetHeight - stage.offsetHeight}`, scrub: .9,
           invalidateOnRefresh: true,
         },
       });
@@ -53,31 +79,31 @@ export function useWhySideMotion(root: RefObject<HTMLElement | null>, active: bo
       // remain exposed through the separate text within each list item.
       node.dataset.motion = "ready";
       ScrollTrigger.refresh();
-      return () => { delete node.dataset.layout; delete node.dataset.motion; };
+      return () => {
+        window.removeEventListener("resize", resize);
+        node.style.removeProperty("--why-stage-height");
+        delete node.dataset.layout;
+        delete node.dataset.motion;
+      };
     });
 
-    media.add({
-      flow: "(max-width: 800px), (max-height: 600px)",
-      reduced: "(prefers-reduced-motion: reduce)",
-    }, context => {
-      if (!context.conditions?.flow && !context.conditions?.reduced) return;
-      const reduced = context.conditions?.reduced;
+    media.add("(prefers-reduced-motion: reduce)", () => {
       node.dataset.layout = "flow";
       words.forEach((word, index) => {
         gsap.timeline({
           defaults: { ease: "sine.inOut" },
           scrollTrigger: {
             trigger: values[index], start: "top 85%", end: "bottom 15%",
-            scrub: reduced ? true : .55, invalidateOnRefresh: true,
+            scrub: true, invalidateOnRefresh: true,
           },
         })
-          .fromTo(word, { opacity: .12, filter: reduced ? "none" : "blur(12px)" }, {
-            opacity: 1, filter: reduced ? "none" : "blur(0px)", duration: reduced ? .15 : .30,
+          .fromTo(word, { opacity: .12, filter: "none" }, {
+            opacity: 1, filter: "none", duration: .15,
           }, 0)
-          .to(word, { opacity: 1, duration: reduced ? .70 : .40 })
-          .to(word, { opacity: .12, filter: reduced ? "none" : "blur(12px)", duration: reduced ? .15 : .30 })
-          .fromTo(descriptions[index], { opacity: .12 }, { opacity: 1, duration: reduced ? .15 : .30 }, 0)
-          .to(descriptions[index], { opacity: .12, duration: reduced ? .15 : .30 }, reduced ? .85 : .70);
+          .to(word, { opacity: 1, duration: .70 })
+          .to(word, { opacity: .12, filter: "none", duration: .15 })
+          .fromTo(descriptions[index], { opacity: .12 }, { opacity: 1, duration: .15 }, 0)
+          .to(descriptions[index], { opacity: .12, duration: .15 }, .85);
       });
       return () => { delete node.dataset.layout; };
     });

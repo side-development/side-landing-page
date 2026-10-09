@@ -25,6 +25,10 @@ function forceReplay() {
   return new URLSearchParams(location.search).get("intro") === "replay";
 }
 
+function returningToProject() {
+  return location.hash === "#start-project";
+}
+
 type Props = {
   copy: FakeErrorCopy;
   finalCopy: HeroCopy;
@@ -39,7 +43,8 @@ export function Hero({ copy, finalCopy, onPhase }: Props) {
   const visited = useSyncExternalStore(subscribe, sessionComplete, serverSession);
   const review = useSyncExternalStore(subscribe, reviewEnabled, serverSession);
   const forced = useSyncExternalStore(subscribe, forceReplay, serverSession);
-  const final = state === "final" || (visited && !forced && !replaying);
+  const projectReturn = useSyncExternalStore(subscribe, returningToProject, serverSession);
+  const final = state === "final" || (projectReturn && !forced && !replaying) || (visited && !forced && !replaying);
   const start = useCallback(() => setState(current => current === "idle" ? "triggered" : current), []);
   const complete = useCallback(() => {
     try { sessionStorage.setItem(SESSION_KEY, "true"); } catch { /* Storage can be unavailable in private browsing. */ }
@@ -50,7 +55,7 @@ export function Hero({ copy, finalCopy, onPhase }: Props) {
 
   useEffect(() => {
     if (!ready || final || state !== "idle") return;
-    const timer = window.setTimeout(start, 2000);
+    const timer = window.setTimeout(start, 1500);
     return () => window.clearTimeout(timer);
   }, [ready, final, state, start]);
 

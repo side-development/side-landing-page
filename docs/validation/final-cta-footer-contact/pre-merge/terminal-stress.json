@@ -1,0 +1,186 @@
+[
+  {
+    "name": "desktop",
+    "action": "resize",
+    "animation": "settled",
+    "visible": "true",
+    "opacity": "1",
+    "parts": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "typed": [
+      {
+        "text": "claude",
+        "expected": "claude"
+      },
+      {
+        "text": "/mcp",
+        "expected": "/mcp"
+      }
+    ]
+  },
+  {
+    "name": "desktop",
+    "action": "reduced",
+    "animation": "settled",
+    "visible": "true",
+    "opacity": "1",
+    "parts": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "typed": [
+      {
+        "text": "claude",
+        "expected": "claude"
+      },
+      {
+        "text": "/mcp",
+        "expected": "/mcp"
+      }
+    ]
+  },
+  {
+    "name": "desktop",
+    "action": "locale-mid-animation",
+    "animation": "settled",
+    "visible": "true",
+    "opacity": "1",
+    "parts": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "typed": [
+      {
+        "text": "claude",
+        "expected": "claude"
+      },
+      {
+        "text": "/mcp",
+        "expected": "/mcp"
+      }
+    ]
+  },
+  {
+    "name": "desktop",
+    "action": "locale-settled",
+    "animation": "settled",
+    "visible": "true",
+    "opacity": "1",
+    "parts": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "typed": [
+      {
+        "text": "claude",
+        "expected": "claude"
+      },
+      {
+        "text": "/mcp",
+        "expected": "/mcp"
+      }
+    ]
+  },
+  {
+    "name": "mobile",
+    "action": "resize",
+    "animation": "settled",
+    "visible": "true",
+    "opacity": "1",
+    "parts": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "typed": [
+      {
+        "text": "claude",
+        "expected": "claude"
+      },
+      {
+        "text": "/mcp",
+        "expected": "/mcp"
+      }
+    ]
+  },
+  {
+    "name": "mobile",
+    "action": "reduced",
+    "animation": "settled",
+    "visible": "true",
+    "opacity": "1",
+    "parts": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "typed": [
+      {
+        "text": "claude",
+        "expected": "claude"
+      },
+      {
+        "text": "/mcp",
+        "expected": "/mcp"
+      }
+    ]
+  },
+  {
+    "name": "mobile",
+    "action": "locale-mid-animation",
+    "animation": "settled",
+    "visible": "true",
+    "opacity": "1",
+    "parts": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "typed": [
+      {
+        "text": "claude",
+        "expected": "claude"
+      },
+      {
+        "text": "/mcp",
+        "expected": "/mcp"
+      }
+    ]
+  },
+  {
+    "name": "mobile",
+    "action": "locale-settled",
+    "animation": "settled",
+    "visible": "true",
+    "opacity": "1",
+    "parts": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "typed": [
+      {
+        "text": "claude",
+        "expected": "claude"
+      },
+      {
+        "text": "/mcp",
+        "expected": "/mcp"
+      }
+    ]
+  }
+]

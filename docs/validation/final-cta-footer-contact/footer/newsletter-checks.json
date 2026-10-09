@@ -1,0 +1,20 @@
+{
+  "server": {
+    "missingKey503": true,
+    "invalid400": true,
+    "honeypot400": true,
+    "origin403": true,
+    "upstreamErrors502": true,
+    "missingId502": true,
+    "timeout502": true,
+    "successOnlyWithProviderId": true,
+    "providerCallsMocked": 1
+  },
+  "browser": {
+    "nativeValidation": true,
+    "unconfiguredShowsError": true,
+    "mockedSuccessUi": true,
+    "transparentStrokeWatermark": true
+  },
+  "externalRequestsMade": false
+}

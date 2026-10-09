@@ -1,0 +1,50 @@
+[
+  {
+    "name": "desktop-pt",
+    "overflow": false,
+    "visible": "visible",
+    "opacity": "1",
+    "inert": false,
+    "href": "/contato",
+    "linkInViewport": true,
+    "theme": "true",
+    "heading": "Vamos construiro próximo.",
+    "errors": []
+  },
+  {
+    "name": "desktop-en",
+    "overflow": false,
+    "visible": "visible",
+    "opacity": "1",
+    "inert": false,
+    "href": "/en/contact",
+    "linkInViewport": true,
+    "theme": "true",
+    "heading": "Let’s buildwhat’s next.",
+    "errors": []
+  },
+  {
+    "name": "mobile-smoke",
+    "overflow": false,
+    "visible": "visible",
+    "opacity": "1",
+    "inert": false,
+    "href": "/contato",
+    "linkInViewport": true,
+    "theme": "true",
+    "heading": "Vamos construiro próximo.",
+    "errors": []
+  },
+  {
+    "name": "reduced-smoke",
+    "overflow": false,
+    "visible": "visible",
+    "opacity": "1",
+    "inert": false,
+    "href": "/contato",
+    "linkInViewport": true,
+    "theme": "true",
+    "heading": "Vamos construiro próximo.",
+    "errors": []
+  }
+]

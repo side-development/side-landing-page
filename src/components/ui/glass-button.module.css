@@ -1,0 +1,169 @@
+@property --side-glass-edge {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: -75deg;
+}
+
+@property --side-glass-shine {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: -45deg;
+}
+
+.wrap {
+  --glass-time: .4s;
+  --glass-ease: cubic-bezier(.25, 1, .5, 1);
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  border-radius: 999px;
+  font-size: 16px;
+  transform-style: preserve-3d;
+  transition: transform var(--glass-time) var(--glass-ease);
+}
+
+.surface {
+  --glass-time: .4s;
+  --glass-ease: cubic-bezier(.25, 1, .5, 1);
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  margin: 0;
+  color: #302639;
+  background: linear-gradient(-75deg, #30263908, #ffffff33, #3026390a);
+  box-shadow:
+    inset 0 2px 2px #3026390d,
+    inset 0 -2px 2px #ffffff80,
+    0 4px 2px -2px #30263933,
+    inset 0 0 1.6px 4px #ffffff33;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  -webkit-tap-highlight-color: transparent;
+  transition: transform var(--glass-time) var(--glass-ease),
+    box-shadow var(--glass-time) var(--glass-ease),
+    backdrop-filter var(--glass-time) var(--glass-ease);
+}
+
+/* A reflection across the lens, separate from the refractive edge below. */
+.surface::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: .5px;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(var(--side-glass-shine), transparent 0%, #ffffff80 40% 50%, transparent 55%);
+  background-size: 200% 200%;
+  background-position: 0%;
+  mix-blend-mode: screen;
+  transition: background-position .5s var(--glass-ease), --side-glass-shine .5s var(--glass-ease);
+}
+
+.surface::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  inset: -.5px;
+  padding: 1px;
+  box-sizing: border-box;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    conic-gradient(from var(--side-glass-edge) at 50% 50%, #30263980 0%, transparent 5% 40%, #30263980 50%, transparent 60% 95%, #30263980 100%),
+    linear-gradient(180deg, #ffffff80, #ffffff80);
+  box-shadow: inset 0 0 0 .5px #ffffff80;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: --side-glass-edge .5s ease;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+  text-shadow: 0 4px .8px #3026391a;
+  transition: text-shadow var(--glass-time) var(--glass-ease);
+}
+
+.interactive { cursor: pointer; }
+.interactive:disabled { cursor: default; opacity: .6; }
+.interactive:focus-visible { outline: 2px solid #3919bd; outline-offset: 5px; }
+.default { min-height: 48px; padding: 14px 24px; font-size: 16px; }
+.sm { min-width: 90px; min-height: 38px; padding: 8px 16px; font-size: 11px; }
+.lg { min-height: 56px; padding: 16px 32px; font-size: 18px; }
+.icon { width: 42px; height: 42px; padding: 0; }
+
+/* The broad shadow is a blurred hollow ring, never a grey filled disc. */
+.shadow {
+  position: absolute;
+  z-index: -1;
+  inset: calc(-1 * var(--glass-shadow-spread, 2em));
+  border-radius: inherit;
+  pointer-events: none;
+  filter: blur(2px);
+  transition: filter var(--glass-time) var(--glass-ease);
+}
+.shadow::after {
+  content: "";
+  position: absolute;
+  inset: calc(var(--glass-shadow-spread, 2em) + 3px) calc(var(--glass-shadow-spread, 2em) + 2px) calc(var(--glass-shadow-spread, 2em) - 5px);
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(180deg, #30263933, #3026391a);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: inset var(--glass-time) var(--glass-ease), opacity var(--glass-time) var(--glass-ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .surface:hover::before, .surface:focus-within::before { background-position: 25%; }
+  .surface:hover::after, .surface:focus-within::after { --side-glass-edge: -125deg; }
+  .interactive:hover:not(:disabled) {
+    transform: scale(.975);
+    -webkit-backdrop-filter: blur(.16px);
+    backdrop-filter: blur(.16px);
+    box-shadow: inset 0 2px 2px #3026390d, inset 0 -2px 2px #ffffff80, 0 2.4px .8px -1.6px #30263940, inset 0 0 .8px 1.6px #ffffff80;
+  }
+  .interactive:hover .content { text-shadow: .4px .4px .4px #3026391f; }
+  .wrap:has(.interactive:hover:not(:disabled)) .shadow { filter: blur(1px); }
+  .wrap:has(.interactive:hover:not(:disabled)) .shadow::after { inset-block-start: calc(var(--glass-shadow-spread, 2em) + 1px); }
+}
+
+.wrap:has(.interactive:active:not(:disabled)) { transform: var(--glass-press-transform, perspective(500px) rotateX(18deg)); }
+.interactive:active:not(:disabled)::before { --side-glass-shine: -15deg; background-position: 50% 15%; }
+.interactive:active:not(:disabled)::after { --side-glass-edge: -75deg; }
+.interactive:active:not(:disabled) {
+  box-shadow: inset 0 2px 2px #3026390d, inset 0 -2px 2px #ffffff80, 0 2px 2px -2px #30263933, inset 0 0 1.6px 4px #ffffff33, 0 3.6px .8px #3026390d, 0 4px #ffffffbf, inset 0 4px .8px #30263926;
+}
+.wrap:has(.interactive:active:not(:disabled)) .shadow { filter: blur(2px); }
+.wrap:has(.interactive:active:not(:disabled)) .shadow::after { opacity: .75; }
+
+@media (max-width: 800px) { .sm { min-height: 44px; } .icon { width: 44px; height: 44px; } }
+@media (hover: none) and (pointer: coarse) {
+  .interactive:active:not(:disabled)::before { --side-glass-shine: -45deg; }
+  .wrap:has(.interactive:active:not(:disabled)) { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wrap, .surface, .surface::before, .surface::after, .content, .shadow, .shadow::after { transition: none; }
+  .interactive:hover:not(:disabled), .wrap:has(.interactive:active:not(:disabled)) { transform: none; }
+}
+@media (forced-colors: active) {
+  .surface { background: Canvas; color: ButtonText; border: 1px solid ButtonText; box-shadow: none; }
+  .surface::before, .surface::after, .shadow { display: none; }
+  .content { text-shadow: none; }
+}

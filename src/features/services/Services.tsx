@@ -15,7 +15,7 @@ export function Services({ locale, active = true }: { locale: DigitalExperienceL
   useServicesMotion(root, active);
   const copies = [digitalExperienceCopy[locale], dashboardCopy[locale], terminalCopy[locale]];
 
-  return <section ref={root} className={styles.services} hidden={!active} aria-labelledby="services-heading" data-services>
+  return <section id="services" tabIndex={-1} ref={root} className={styles.services} hidden={!active} aria-labelledby="services-heading" data-services>
     <header className={styles.heading}><h2 id="services-heading">{locale === "en" ? "What we build." : "O que construímos."}</h2></header>
     <div className={styles.stage}>
       {copies.map((copy, index) => <section key={index} className={styles.chapter} data-service-chapter={index + 1} aria-labelledby={`service-${index + 1}`}>

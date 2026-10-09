@@ -1,0 +1,56 @@
+[
+  {
+    "name": "desktop",
+    "keyboard": "Enter/numbers/ShiftEnter",
+    "history": "back+forward retain answers",
+    "unconfigured": 503,
+    "success": "isolated API mock only",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "keyboard": "Enter/numbers/ShiftEnter",
+    "history": "back+forward retain answers",
+    "unconfigured": 503,
+    "success": "isolated API mock only",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "name": "small-mobile",
+    "keyboard": "Enter/numbers/ShiftEnter",
+    "history": "back+forward retain answers",
+    "unconfigured": 503,
+    "success": "isolated API mock only",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "name": "english",
+    "keyboard": "Enter/numbers/ShiftEnter",
+    "history": "back+forward retain answers",
+    "unconfigured": 503,
+    "success": "isolated API mock only",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "name": "mobile-english",
+    "keyboard": "Enter/numbers/ShiftEnter",
+    "history": "back+forward retain answers",
+    "unconfigured": 503,
+    "success": "isolated API mock only",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "name": "reduced",
+    "keyboard": "Enter/numbers/ShiftEnter",
+    "history": "back+forward retain answers",
+    "unconfigured": 503,
+    "success": "isolated API mock only",
+    "overflow": false,
+    "errors": []
+  }
+]

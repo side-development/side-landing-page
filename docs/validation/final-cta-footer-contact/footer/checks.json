@@ -1,0 +1,205 @@
+[
+  {
+    "name": "desktop",
+    "width": 1382,
+    "overflow": false,
+    "links": [
+      {
+        "label": "Trabalhos",
+        "href": "/#work"
+      },
+      {
+        "label": "Serviços",
+        "href": "/#services"
+      },
+      {
+        "label": "Por que Side",
+        "href": "/#why-side"
+      },
+      {
+        "label": "Contato",
+        "href": "/contato"
+      },
+      {
+        "label": "contato@sidecode.com.br",
+        "href": "mailto:contato@sidecode.com.br"
+      },
+      {
+        "label": "PT",
+        "href": "/review/final-cta#side-footer"
+      },
+      {
+        "label": "EN",
+        "href": "/en/review/final-cta#side-footer"
+      }
+    ],
+    "smallLogo": false,
+    "current": "PT",
+    "wordmarkContained": true,
+    "glass": "blur(2px)",
+    "errors": []
+  },
+  {
+    "name": "english",
+    "width": 1382,
+    "overflow": false,
+    "links": [
+      {
+        "label": "Work",
+        "href": "/en#work"
+      },
+      {
+        "label": "Services",
+        "href": "/en#services"
+      },
+      {
+        "label": "Why Side",
+        "href": "/en#why-side"
+      },
+      {
+        "label": "Contact",
+        "href": "/en/contact"
+      },
+      {
+        "label": "contato@sidecode.com.br",
+        "href": "mailto:contato@sidecode.com.br"
+      },
+      {
+        "label": "PT",
+        "href": "/review/final-cta#side-footer"
+      },
+      {
+        "label": "EN",
+        "href": "/en/review/final-cta#side-footer"
+      }
+    ],
+    "smallLogo": false,
+    "current": "EN",
+    "wordmarkContained": true,
+    "glass": "blur(2px)",
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "width": 356,
+    "overflow": false,
+    "links": [
+      {
+        "label": "Trabalhos",
+        "href": "/#work"
+      },
+      {
+        "label": "Serviços",
+        "href": "/#services"
+      },
+      {
+        "label": "Por que Side",
+        "href": "/#why-side"
+      },
+      {
+        "label": "Contato",
+        "href": "/contato"
+      },
+      {
+        "label": "contato@sidecode.com.br",
+        "href": "mailto:contato@sidecode.com.br"
+      },
+      {
+        "label": "PT",
+        "href": "/review/final-cta#side-footer"
+      },
+      {
+        "label": "EN",
+        "href": "/en/review/final-cta#side-footer"
+      }
+    ],
+    "smallLogo": false,
+    "current": "PT",
+    "wordmarkContained": true,
+    "glass": "blur(2px)",
+    "errors": []
+  },
+  {
+    "name": "small-mobile",
+    "width": 286,
+    "overflow": false,
+    "links": [
+      {
+        "label": "Trabalhos",
+        "href": "/#work"
+      },
+      {
+        "label": "Serviços",
+        "href": "/#services"
+      },
+      {
+        "label": "Por que Side",
+        "href": "/#why-side"
+      },
+      {
+        "label": "Contato",
+        "href": "/contato"
+      },
+      {
+        "label": "contato@sidecode.com.br",
+        "href": "mailto:contato@sidecode.com.br"
+      },
+      {
+        "label": "PT",
+        "href": "/review/final-cta#side-footer"
+      },
+      {
+        "label": "EN",
+        "href": "/en/review/final-cta#side-footer"
+      }
+    ],
+    "smallLogo": false,
+    "current": "PT",
+    "wordmarkContained": true,
+    "glass": "blur(2px)",
+    "errors": []
+  },
+  {
+    "name": "reduced",
+    "width": 1382,
+    "overflow": false,
+    "links": [
+      {
+        "label": "Trabalhos",
+        "href": "/#work"
+      },
+      {
+        "label": "Serviços",
+        "href": "/#services"
+      },
+      {
+        "label": "Por que Side",
+        "href": "/#why-side"
+      },
+      {
+        "label": "Contato",
+        "href": "/contato"
+      },
+      {
+        "label": "contato@sidecode.com.br",
+        "href": "mailto:contato@sidecode.com.br"
+      },
+      {
+        "label": "PT",
+        "href": "/review/final-cta#side-footer"
+      },
+      {
+        "label": "EN",
+        "href": "/en/review/final-cta#side-footer"
+      }
+    ],
+    "smallLogo": false,
+    "current": "PT",
+    "wordmarkContained": true,
+    "glass": "blur(2px)",
+    "errors": []
+  },
+  {
+    "homeNavigation": "first intro entry, work/services/why anchors passed"
+  }
+]

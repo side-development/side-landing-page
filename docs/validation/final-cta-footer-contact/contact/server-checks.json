@@ -1,0 +1,18 @@
+{
+  "validation": true,
+  "origin": true,
+  "missingKey": 503,
+  "providerFailure": 502,
+  "missingProviderId": 502,
+  "timeout": 502,
+  "throttled": 429,
+  "idempotentRetry": true,
+  "editsChangeKey": true,
+  "fixedRecipient": true,
+  "replyToVisitor": true,
+  "customAnswersRendered": true,
+  "emptyOrOversizeCustomRejected": true,
+  "successOnlyWithProviderId": true,
+  "mockedProviderCalls": 4,
+  "externalRequestsMade": false
+}

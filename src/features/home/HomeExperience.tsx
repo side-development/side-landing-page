@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Hero } from "@/features/hero/Hero";
 import type { FakeErrorCopy } from "@/features/hero/FakeErrorIntro";
 import type { HeroCopy } from "@/features/hero/copy";
@@ -22,7 +22,21 @@ export function HomeExperience({ errorCopy, heroCopy, workCopy, locale }: {
   const onPhase = useCallback((next: typeof phase) => setPhase(next), []);
   useSmoothScroll(phase === "final");
 
-  return <main className={styles.home}>
+  // A footer link may enter the Home before its intro has revealed the sections.
+  useEffect(() => {
+    if (phase !== "final" || !location.hash) return;
+    const target = document.getElementById(location.hash.slice(1));
+    if (!target) return;
+    let frame = requestAnimationFrame(() => {
+      frame = requestAnimationFrame(() => {
+        target.scrollIntoView({ behavior: "instant", block: "start" });
+        target.focus({ preventScroll: true });
+      });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [phase]);
+
+  return <main id="home-top" tabIndex={-1} className={styles.home}>
     <Hero copy={errorCopy} finalCopy={heroCopy} onPhase={onPhase} />
     <SelectedWork copy={workCopy} active={phase === "final"} />
     <Services locale={locale} active={phase === "final"} />

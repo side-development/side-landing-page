@@ -1,0 +1,62 @@
+[
+  {
+    "name": "desktop",
+    "logo": "official symbol",
+    "close": "X only",
+    "enterOutsideField": true,
+    "customChoices": 3,
+    "numbersRemainText": true,
+    "backBesideCounter": true,
+    "backRetainsCustom": true,
+    "choiceKeyInset": 13,
+    "initialGoal": {
+      "height": 54,
+      "line": 45,
+      "padding": 8,
+      "rows": 1
+    },
+    "autoGrowAndShrink": true,
+    "submit": "browser mock only",
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "logo": "official symbol",
+    "close": "X only",
+    "enterOutsideField": true,
+    "customChoices": 3,
+    "numbersRemainText": true,
+    "backBesideCounter": true,
+    "backRetainsCustom": true,
+    "choiceKeyInset": 13,
+    "initialGoal": {
+      "height": 39,
+      "line": 30,
+      "padding": 8,
+      "rows": 1
+    },
+    "autoGrowAndShrink": true,
+    "submit": "browser mock only",
+    "errors": []
+  },
+  {
+    "name": "small-english",
+    "logo": "official symbol",
+    "close": "X only",
+    "enterOutsideField": true,
+    "customChoices": 3,
+    "numbersRemainText": true,
+    "backBesideCounter": true,
+    "backRetainsCustom": true,
+    "choiceKeyInset": 13,
+    "initialGoal": {
+      "height": 39,
+      "line": 30,
+      "padding": 8,
+      "rows": 1
+    },
+    "autoGrowAndShrink": true,
+    "submit": "browser mock only",
+    "errors": []
+  }
+]

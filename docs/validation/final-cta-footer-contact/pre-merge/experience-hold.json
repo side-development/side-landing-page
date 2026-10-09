@@ -1,0 +1,232 @@
+[
+  {
+    "name": "desktop",
+    "layout": {
+      "sticky": "true",
+      "top": 97.5,
+      "start": 3860.171875,
+      "height": 2145
+    },
+    "states": [
+      {
+        "progress": 0.1,
+        "top": 97.5,
+        "headingY": 240.484375,
+        "headingBottom": 534.421875,
+        "first": 1,
+        "second": 0
+      },
+      {
+        "progress": 0.4,
+        "top": 97.5,
+        "headingY": 240.484375,
+        "headingBottom": 534.421875,
+        "first": 0.1545,
+        "second": 0.0029
+      },
+      {
+        "progress": 0.85,
+        "top": 97.5,
+        "headingY": 240.484375,
+        "headingBottom": 534.421875,
+        "first": 0,
+        "second": 1
+      },
+      {
+        "progress": 1,
+        "top": 97.5,
+        "headingY": 240.484375,
+        "headingBottom": 534.421875,
+        "first": 0,
+        "second": 1
+      },
+      {
+        "progress": 0.1,
+        "top": 97.5,
+        "headingY": 240.484375,
+        "headingBottom": 534.421875,
+        "first": 1,
+        "second": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "layout": {
+      "sticky": "true",
+      "top": 141,
+      "start": 2898.59375,
+      "height": 1912
+    },
+    "states": [
+      {
+        "progress": 0.1,
+        "top": 141,
+        "headingY": 181,
+        "headingBottom": 288.96875,
+        "first": 1,
+        "second": 0
+      },
+      {
+        "progress": 0.4,
+        "top": 141,
+        "headingY": 181,
+        "headingBottom": 288.96875,
+        "first": 0.1545,
+        "second": 0.0029
+      },
+      {
+        "progress": 0.85,
+        "top": 141,
+        "headingY": 181,
+        "headingBottom": 288.96875,
+        "first": 0,
+        "second": 1
+      },
+      {
+        "progress": 1,
+        "top": 141,
+        "headingY": 181,
+        "headingBottom": 288.96875,
+        "first": 0,
+        "second": 1
+      },
+      {
+        "progress": 0.1,
+        "top": 141,
+        "headingY": 181,
+        "headingBottom": 288.96875,
+        "first": 1,
+        "second": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "small",
+    "layout": {
+      "sticky": "true",
+      "top": 72,
+      "start": 2380.546875,
+      "height": 1391
+    },
+    "states": [
+      {
+        "progress": 0.1,
+        "top": 72,
+        "headingY": 112,
+        "headingBottom": 184.90625,
+        "first": 1,
+        "second": 0
+      },
+      {
+        "progress": 0.4,
+        "top": 72,
+        "headingY": 112,
+        "headingBottom": 184.90625,
+        "first": 0.1579,
+        "second": 0.0026
+      },
+      {
+        "progress": 0.85,
+        "top": 72,
+        "headingY": 112,
+        "headingBottom": 184.90625,
+        "first": 0,
+        "second": 1
+      },
+      {
+        "progress": 1,
+        "top": 71.875,
+        "headingY": 111.875,
+        "headingBottom": 184.78125,
+        "first": 0,
+        "second": 1
+      },
+      {
+        "progress": 0.1,
+        "top": 72,
+        "headingY": 112,
+        "headingBottom": 184.90625,
+        "first": 1,
+        "second": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "english",
+    "layout": {
+      "sticky": "true",
+      "top": 154.5,
+      "start": 2812.1875,
+      "height": 1885
+    },
+    "states": [
+      {
+        "progress": 0.1,
+        "top": 154.5,
+        "headingY": 194.5,
+        "headingBottom": 276.09375,
+        "first": 1,
+        "second": 0
+      },
+      {
+        "progress": 0.4,
+        "top": 154.5,
+        "headingY": 194.5,
+        "headingBottom": 276.09375,
+        "first": 0.1545,
+        "second": 0.0029
+      },
+      {
+        "progress": 0.85,
+        "top": 154.5,
+        "headingY": 194.5,
+        "headingBottom": 276.09375,
+        "first": 0,
+        "second": 1
+      },
+      {
+        "progress": 1,
+        "top": 154.109375,
+        "headingY": 194.109375,
+        "headingBottom": 275.703125,
+        "first": 0,
+        "second": 1
+      },
+      {
+        "progress": 0.1,
+        "top": 154.5,
+        "headingY": 194.5,
+        "headingBottom": 276.09375,
+        "first": 1,
+        "second": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "reduced",
+    "layout": {
+      "sticky": "false",
+      "top": 154.5,
+      "start": 2761.546875,
+      "height": 535
+    },
+    "states": [],
+    "errors": []
+  },
+  {
+    "name": "landscape",
+    "layout": {
+      "sticky": "false",
+      "top": 72,
+      "start": 1746.921875,
+      "height": 577
+    },
+    "states": [],
+    "errors": []
+  }
+]
