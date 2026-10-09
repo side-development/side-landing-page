@@ -37,7 +37,7 @@ export function SocialProof({ locale, entries = socialProofEntries[locale], init
     <ol className={styles.srOnly} aria-label={copy.region}>
       {entries.map(entry => <li key={entry.id}><p>{entry.text}</p><p>{entry.theme} · {entry.context}</p></li>)}
     </ol>
-    <div id={beltId} className={styles.belt} tabIndex={0} role="group" aria-roledescription={copy.carousel} aria-label={copy.region} aria-describedby={instructionsId} data-proof-belt data-native-scroll data-cursor-label="↔">
+    <div id={beltId} className={styles.belt} tabIndex={0} role="group" aria-roledescription={copy.carousel} aria-label={copy.region} aria-describedby={instructionsId} data-proof-belt data-cursor-label="↔">
       <div className={styles.track} aria-hidden="true">
         {loopEntries.map((entry, index) => <div key={`${entry.id}-${index}`} className={styles.item} data-proof-item={entry.id}>
           <div className={styles.feedback} data-proof-feedback>
