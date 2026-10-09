@@ -12,6 +12,8 @@
 .copy small { display: block; margin-top: 10px; color: #88838e; font-size: 11px; line-height: 1.7; }
 .experienceRun { position: relative; }
 .experienceShell { position: relative; }
+.experienceRun[data-experience-sticky="true"] { min-height: calc(var(--experience-stage-height) + var(--experience-scroll-distance)); }
+.experienceRun[data-experience-sticky="true"] .experienceShell { position: sticky; top: var(--experience-sticky-top); }
 .atmosphere { height: 44svh; }
 .chapter[data-service-chapter="3"] { color: #eae8ed; background: #101011; }
 .services[data-motion-ready="true"] .chapter[data-service-chapter="3"] { background: transparent; }

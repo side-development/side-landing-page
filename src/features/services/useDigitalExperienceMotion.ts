@@ -24,6 +24,20 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
       const reduced = context.conditions?.reduced;
       const desktop = context.conditions?.desktop;
       const integrated = Boolean(node.closest("[data-experience-run]"));
+      const run = node.closest<HTMLElement>("[data-experience-run]");
+      const shell = run?.querySelector<HTMLElement>("[data-experience-shell]");
+      const stickyTop = () => Math.max(72, (window.innerHeight - (shell?.offsetHeight ?? 0)) / 2);
+      const measureStage = () => {
+        if (!run || !shell) return;
+        const fits = !reduced && shell.offsetHeight <= window.innerHeight - 80;
+        run.dataset.experienceSticky = String(fits);
+        run.style.setProperty("--experience-sticky-top", `${stickyTop()}px`);
+        run.style.setProperty("--experience-stage-height", `${shell.offsetHeight}px`);
+        run.style.setProperty("--experience-scroll-distance", `${window.innerHeight * 1.6}px`);
+      };
+      measureStage();
+      // Re-measure before ScrollTrigger calculates the scroll interval.
+      ScrollTrigger.addEventListener("refreshInit", measureStage);
       let composed = false;
       onPerspectiveChange(false);
       gsap.set(node, palettes[0]);
@@ -48,24 +62,33 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
         const active = progress >= .55;
         if (active !== composed) { composed = active; onPerspectiveChange(active); }
       };
+      const held = () => run?.dataset.experienceSticky === "true";
       const perspective = gsap.timeline({
         defaults: { duration: 1, ease: "sine.inOut" },
-        scrollTrigger: { trigger: node, start: integrated ? "top 35%" : "top 20%", end: integrated ? "top -5%" : "top 4%", scrub: reduced ? true : .55, invalidateOnRefresh: true, onRefresh: self => updateCopy(self.progress) },
+        scrollTrigger: {
+          trigger: run ?? node,
+          start: () => held() ? `top ${stickyTop()}px` : integrated ? "top 55%" : "top 20%",
+          end: () => held() ? `+=${run!.offsetHeight - shell!.offsetHeight}` : integrated ? "top 18%" : "top 4%",
+          scrub: reduced ? true : .55, invalidateOnRefresh: true,
+          onRefresh: self => updateCopy(self.progress),
+        },
         onUpdate: function () { updateCopy(this.progress()); },
       });
-      perspective.to(node, palettes[1], 0)
-        .to(first, { autoAlpha: 0, xPercent: reduced ? 0 : 6, duration: reduced ? .15 : .35 }, reduced ? .35 : .08)
-        .to(second, { autoAlpha: 1, xPercent: 0, duration: reduced ? .15 : .58 }, reduced ? .55 : .32);
+      const lead = integrated && !reduced ? .3 : 0;
+      perspective.to(node, palettes[1], lead)
+        .to(first, { autoAlpha: 0, xPercent: reduced ? 0 : 6, duration: reduced ? .15 : .35 }, lead + (reduced ? .35 : .08))
+        .to(second, { autoAlpha: 1, xPercent: 0, duration: reduced ? .15 : .58 }, lead + (reduced ? .55 : .32));
       if (reduced) {
         strands.forEach(strand => perspective.set(strand, { attr: { d: strand.dataset.digitalOpen ?? "" } }, .5));
         perspective.set(highlight, { opacity: 0 }, .5)
           .set(layout, { scale: .84, xPercent: layoutEnd }, .5)
           .set(note, { x: noteEnd }, .5);
       } else {
-        strands.forEach(strand => perspective.to(strand, { attr: { d: strand.dataset.digitalOpen ?? "" } }, 0));
-        perspective.to(highlight, { opacity: 0, duration: .3 }, 0)
-          .to(layout, { scale: .84, xPercent: layoutEnd }, 0)
-          .to(note, { x: noteEnd }, 0);
+        strands.forEach(strand => perspective.to(strand, { attr: { d: strand.dataset.digitalOpen ?? "" } }, lead));
+        perspective.to(highlight, { opacity: 0, duration: .3 }, lead)
+          .to(layout, { scale: .84, xPercent: layoutEnd }, lead)
+          .to(note, { x: noteEnd }, lead);
+        if (integrated) perspective.to({}, { duration: .3 }, lead + 1);
       }
       perspective.progress(perspective.scrollTrigger?.progress ?? 0);
       const art = node.querySelector("[data-digital-art-scroll]");
@@ -80,6 +103,14 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
         .fromTo(node.querySelectorAll("[data-digital-detail]"), { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 1, stagger: .08, ease: "sine.out" }, .6);
       reveal = entrance;
       if (revealTrigger.progress > 0) entrance.play();
+
+      const clearStage = () => {
+        ScrollTrigger.removeEventListener("refreshInit", measureStage);
+        if (run) {
+          delete run.dataset.experienceSticky;
+          ["--experience-sticky-top", "--experience-stage-height", "--experience-scroll-distance"].forEach(property => run.style.removeProperty(property));
+        }
+      };
 
       if (desktop && !reduced) {
         const pointer = node.querySelector("[data-digital-pointer]");
@@ -102,13 +133,14 @@ export function useDigitalExperienceMotion(root: RefObject<HTMLElement | null>, 
         window.addEventListener("resize", measure);
         window.addEventListener("blur", reset);
         return () => {
+          clearStage();
           node.removeEventListener("pointerenter", measure); node.removeEventListener("pointermove", move); node.removeEventListener("pointerleave", reset);
           window.removeEventListener("scroll", measure); window.removeEventListener("resize", measure); window.removeEventListener("blur", reset);
           [x, y, angle].forEach(value => value.tween.kill());
           delete node.dataset.animation;
         };
       }
-      return () => { delete node.dataset.animation; };
+      return () => { clearStage(); delete node.dataset.animation; };
     });
     return () => media.revert();
   }, { scope: root, dependencies: [replay, onPerspectiveChange], revertOnUpdate: true });
