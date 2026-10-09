@@ -7,6 +7,7 @@ import { useEffect, useLayoutEffect, useRef, useState, type FormEvent } from "re
 import { GlassButton } from "@/components/ui/glass-button";
 import { choiceValues, contactContent, contactFields, customChoice, customChoiceText, emptyAnswers, validContactField, type ContactAnswers, type ContactLocale } from "./contact-content";
 import styles from "./contact.module.css";
+import { contactId } from "./contactId";
 
 export function ContactFlow({ locale }: { locale: ContactLocale }) {
   const copy = contactContent[locale];
@@ -30,7 +31,7 @@ export function ContactFlow({ locale }: { locale: ContactLocale }) {
   const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   useEffect(() => {
-    historyId.current = crypto.randomUUID();
+    historyId.current = contactId();
     history.replaceState({ ...history.state, sideContact: { id: historyId.current, step: 0 } }, "");
     const restore = (event: PopStateEvent) => {
       const entry = event.state?.sideContact;
@@ -154,7 +155,7 @@ export function ContactFlow({ locale }: { locale: ContactLocale }) {
       return;
     }
     const json = JSON.stringify({ ...answers, locale, company: company.current?.value || "" });
-    if (submission.current?.json !== json) submission.current = { json, id: crypto.randomUUID() };
+    if (submission.current?.json !== json) submission.current = { json, id: contactId() };
     const controller = new AbortController();
     request.current = controller;
     const timeout = setTimeout(() => controller.abort(), 12000);
