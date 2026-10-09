@@ -1,0 +1,37 @@
+[
+  {
+    "name": "desktop",
+    "englishAsset": false,
+    "loaded": true,
+    "headingHeaderGap": 119.09375,
+    "overflow": false
+  },
+  {
+    "name": "laptop-en",
+    "englishAsset": true,
+    "loaded": true,
+    "headingHeaderGap": 96.34375,
+    "overflow": false
+  },
+  {
+    "name": "small-en",
+    "englishAsset": true,
+    "loaded": true,
+    "headingHeaderGap": 45.421875,
+    "overflow": false
+  },
+  {
+    "name": "tablet-en",
+    "englishAsset": true,
+    "loaded": true,
+    "headingHeaderGap": 60.953125,
+    "overflow": false
+  },
+  {
+    "name": "landscape",
+    "englishAsset": true,
+    "loaded": true,
+    "headingHeaderGap": 41.453125,
+    "overflow": false
+  }
+]

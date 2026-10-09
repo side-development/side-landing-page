@@ -1,0 +1,67 @@
+[
+  {
+    "name": "desktop-pt",
+    "overflow": false,
+    "heading": "Vamos construir o próximo. Da sua ideia para o mundo.",
+    "opacity": "1",
+    "background": "rgb(255, 255, 255)",
+    "image": true,
+    "href": "/contato",
+    "whyTransform": "none",
+    "whyHeight": 5400,
+    "ctaHeight": 941,
+    "errors": []
+  },
+  {
+    "name": "desktop-en",
+    "overflow": false,
+    "heading": "Let’s build what’s next. Your idea. Out in the world.",
+    "opacity": "1",
+    "background": "rgb(255, 255, 255)",
+    "image": true,
+    "href": "/en/contact",
+    "whyTransform": "none",
+    "whyHeight": 5400,
+    "ctaHeight": 941,
+    "errors": []
+  },
+  {
+    "name": "mobile-pt",
+    "overflow": false,
+    "heading": "Vamos construir o próximo. Da sua ideia para o mundo.",
+    "opacity": "1",
+    "background": "rgb(255, 255, 255)",
+    "image": true,
+    "href": "/contato",
+    "whyTransform": "none",
+    "whyHeight": 4051,
+    "ctaHeight": 686,
+    "errors": []
+  },
+  {
+    "name": "small-mobile",
+    "overflow": false,
+    "heading": "Vamos construir o próximo. Da sua ideia para o mundo.",
+    "opacity": "1",
+    "background": "rgb(255, 255, 255)",
+    "image": true,
+    "href": "/contato",
+    "whyTransform": "none",
+    "whyHeight": 3202,
+    "ctaHeight": 651,
+    "errors": []
+  },
+  {
+    "name": "reduced",
+    "overflow": false,
+    "heading": "Vamos construir o próximo. Da sua ideia para o mundo.",
+    "opacity": "1",
+    "background": "rgb(255, 255, 255)",
+    "image": true,
+    "href": "/contato",
+    "whyTransform": "none",
+    "whyHeight": 3600,
+    "ctaHeight": 941,
+    "errors": []
+  }
+]

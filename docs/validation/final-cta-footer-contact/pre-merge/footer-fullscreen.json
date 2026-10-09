@@ -1,0 +1,128 @@
+[
+  {
+    "name": "desktop",
+    "full": {
+      "height": 900,
+      "top": 0.265625,
+      "bottom": 900.265625,
+      "viewport": 900,
+      "headerVisibility": "hidden",
+      "inert": true,
+      "gridBottom": 222.453125,
+      "overflow": false
+    },
+    "partial": {
+      "visibility": "visible",
+      "inert": false
+    },
+    "errors": []
+  },
+  {
+    "name": "laptop",
+    "full": {
+      "height": 768,
+      "top": -0.34375,
+      "bottom": 767.65625,
+      "viewport": 768,
+      "headerVisibility": "hidden",
+      "inert": true,
+      "gridBottom": 218.875,
+      "overflow": false
+    },
+    "partial": {
+      "visibility": "visible",
+      "inert": false
+    },
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "full": {
+      "height": 844,
+      "top": 0.40625,
+      "bottom": 844.40625,
+      "viewport": 844,
+      "headerVisibility": "hidden",
+      "inert": true,
+      "gridBottom": 523.65625,
+      "overflow": false
+    },
+    "partial": {
+      "visibility": "visible",
+      "inert": false
+    },
+    "errors": []
+  },
+  {
+    "name": "small",
+    "full": {
+      "height": 568,
+      "top": 0.3125,
+      "bottom": 568.3125,
+      "viewport": 568,
+      "headerVisibility": "hidden",
+      "inert": true,
+      "gridBottom": 520.375,
+      "overflow": false
+    },
+    "partial": {
+      "visibility": "visible",
+      "inert": false
+    },
+    "errors": []
+  },
+  {
+    "name": "tablet",
+    "full": {
+      "height": 1024,
+      "top": 0.21875,
+      "bottom": 1024.21875,
+      "viewport": 1024,
+      "headerVisibility": "hidden",
+      "inert": true,
+      "gridBottom": 504.28125,
+      "overflow": false
+    },
+    "partial": {
+      "visibility": "visible",
+      "inert": false
+    },
+    "errors": []
+  },
+  {
+    "name": "landscape",
+    "full": {
+      "height": 390,
+      "top": 0.3125,
+      "bottom": 390.3125,
+      "viewport": 390,
+      "headerVisibility": "hidden",
+      "inert": true,
+      "gridBottom": 358.5,
+      "overflow": false
+    },
+    "partial": {
+      "visibility": "visible",
+      "inert": false
+    },
+    "errors": []
+  },
+  {
+    "name": "reduced",
+    "full": {
+      "height": 844,
+      "top": -0.375,
+      "bottom": 843.625,
+      "viewport": 844,
+      "headerVisibility": "hidden",
+      "inert": true,
+      "gridBottom": 503.6875,
+      "overflow": false
+    },
+    "partial": {
+      "visibility": "visible",
+      "inert": false
+    },
+    "errors": []
+  }
+]

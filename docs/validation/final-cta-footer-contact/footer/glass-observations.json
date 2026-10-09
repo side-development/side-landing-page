@@ -1,0 +1,35 @@
+{
+  "rest": {
+    "transform": "none",
+    "blur": "blur(2px)",
+    "edge": "-75deg",
+    "shine": "0% 50%",
+    "wrapTransform": "none"
+  },
+  "hover": {
+    "transform": "matrix(0.975, 0, 0, 0.975, 0, 0)",
+    "blur": "blur(0.16px)",
+    "edge": "-125deg",
+    "shine": "25% 50%",
+    "wrapTransform": "none"
+  },
+  "press": {
+    "transform": "matrix(0.975, 0, 0, 0.975, 0, 0)",
+    "blur": "blur(0.16px)",
+    "edge": "-75deg",
+    "shine": "50% 15%",
+    "wrapTransform": "matrix3d(1, 0, 0, 0, 0, 0.951057, 0.309017, -0.000618034, 0, -0.309017, 0.951057, -0.00190211, 0, 0, 0, 1)"
+  },
+  "reduced": {
+    "transform": "none",
+    "blur": "blur(0.16px)",
+    "edge": "-125deg",
+    "shine": "25% 50%",
+    "wrapTransform": "none"
+  },
+  "focus": {
+    "outline": "rgb(57, 25, 189) solid 2px",
+    "active": true
+  },
+  "signatureWeight": "700"
+}

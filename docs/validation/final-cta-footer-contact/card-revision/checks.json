@@ -1,0 +1,54 @@
+[
+  {
+    "name": "desktop-pt",
+    "overflow": false,
+    "visible": "visible",
+    "opacity": "1",
+    "inert": false,
+    "href": "/contato",
+    "linkInViewport": true,
+    "theme": "true",
+    "heading": "Vamos construir o próximo.",
+    "gradientMoving": true,
+    "errors": []
+  },
+  {
+    "name": "desktop-en",
+    "overflow": false,
+    "visible": "visible",
+    "opacity": "1",
+    "inert": false,
+    "href": "/en/contact",
+    "linkInViewport": true,
+    "theme": "true",
+    "heading": "Let’s build what’s next.",
+    "gradientMoving": true,
+    "errors": []
+  },
+  {
+    "name": "mobile-smoke",
+    "overflow": false,
+    "visible": "visible",
+    "opacity": "1",
+    "inert": false,
+    "href": "/contato",
+    "linkInViewport": true,
+    "theme": "false",
+    "heading": "Vamos construir o próximo.",
+    "gradientMoving": true,
+    "errors": []
+  },
+  {
+    "name": "reduced-smoke",
+    "overflow": false,
+    "visible": "visible",
+    "opacity": "1",
+    "inert": false,
+    "href": "/contato",
+    "linkInViewport": true,
+    "theme": "true",
+    "heading": "Vamos construir o próximo.",
+    "gradientMoving": false,
+    "errors": []
+  }
+]

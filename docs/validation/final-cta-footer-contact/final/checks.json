@@ -1,0 +1,140 @@
+{
+  "mode": "next start",
+  "scenarios": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "locale": "pt-BR",
+      "touch": false,
+      "reduce": false,
+      "introWaitMs": 1544.9000000953674,
+      "wordSequence": true,
+      "footer": true,
+      "keyboardAndBack": true,
+      "newsletter503": true,
+      "contact503": true,
+      "closeToCard": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "laptop-en",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "locale": "en",
+      "touch": false,
+      "reduce": false,
+      "introWaitMs": null,
+      "wordSequence": true,
+      "footer": true,
+      "keyboardAndBack": true,
+      "newsletter503": true,
+      "contact503": true,
+      "closeToCard": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "locale": "pt-BR",
+      "touch": true,
+      "reduce": false,
+      "introWaitMs": 1530.0999999046326,
+      "wordSequence": true,
+      "footer": true,
+      "keyboardAndBack": true,
+      "newsletter503": true,
+      "contact503": true,
+      "closeToCard": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "small-en",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "locale": "en",
+      "touch": true,
+      "reduce": false,
+      "introWaitMs": null,
+      "wordSequence": true,
+      "footer": true,
+      "keyboardAndBack": true,
+      "newsletter503": true,
+      "contact503": true,
+      "closeToCard": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "tablet-en",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "locale": "en",
+      "touch": true,
+      "reduce": false,
+      "introWaitMs": null,
+      "wordSequence": true,
+      "footer": true,
+      "keyboardAndBack": true,
+      "newsletter503": true,
+      "contact503": true,
+      "closeToCard": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "landscape",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "locale": "en",
+      "touch": true,
+      "reduce": false,
+      "introWaitMs": null,
+      "wordSequence": true,
+      "footer": true,
+      "keyboardAndBack": true,
+      "newsletter503": true,
+      "contact503": true,
+      "closeToCard": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "reduced-mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "locale": "pt-BR",
+      "touch": true,
+      "reduce": true,
+      "introWaitMs": null,
+      "wordSequence": true,
+      "footer": true,
+      "keyboardAndBack": true,
+      "newsletter503": true,
+      "contact503": true,
+      "closeToCard": true,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "reviewRouteProduction404": true,
+  "noExternalEmailSent": true
+}
