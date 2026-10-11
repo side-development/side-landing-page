@@ -1,0 +1,59 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="440" viewBox="0 0 360 440" fill="none" stroke="#383c3c" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity=".66">
+  <defs>
+    <g id="planet"><ellipse rx="29" ry="9" transform="rotate(-28)"/><circle r="18"/><path d="M-10-12q5-4 10-3M8 8l3 3M-6 5l-2 2"/></g>
+    <g id="camera"><path d="M-20-11h10l4-6H5l5 6h10v29h-40Z"/><circle cy="3" r="10"/><circle cy="3" r="6"/><path d="M13-6h3M-16-6h5"/></g>
+    <g id="heart"><path d="M0 19C-35-4-15-29 0-13 15-29 35-4 0 19Z"/><path d="M-13-10q-5 1-5 6"/></g>
+    <g id="flower"><path d="M-5-13C-22-33-37-8-19-2-43 6-21 29-10 12-13 38 15 36 9 14 25 35 44 10 23 4 48-7 26-29 12-13 16-37-12-38-5-13Z"/><circle r="7"/></g>
+    <g id="rocket"><path d="M-9 13C-17-4-4-26 4-30 16-20 19 0 9 13Z"/><circle cy="-8" r="6"/><path d="M-10 1l-10 13 11-2M11 1l10 13-11-2M-5 16l1 14 4-6 4 6 2-14M-7-21l13 1"/></g>
+    <g id="smile"><circle r="23"/><path d="M-14 6q14 19 28 0M-8-8v3M8-8v3"/></g>
+    <g id="pizza"><path d="M-20-15q20-12 40 0L0 24ZM-17-10q17-9 34 0"/><circle cx="-6" cy="-3" r="3"/><circle cx="6" cy="4" r="3"/><path d="M-2 12l2 2M5-7l2 1"/></g>
+    <g id="umbrella"><path d="M-27 0q4-28 27-28T27 0q-9-7-18 0-9-7-18 0-9-7-18 0ZM0-28q-12 11-9 28M0-28q12 11 9 28M0 0v24q0 10 9 9t7-9"/></g>
+    <g id="gift"><path d="M-19-6h38v28h-38ZM-23-13h46v7h-46ZM-4-13v35M4-13v35M0-14C-29-16-16-39 0-14 16-39 29-16 0-14Z"/></g>
+    <g id="icecream"><path d="M-17-2q-8-15 5-19-2-16 12-17 14 1 12 17 13 4 5 19ZM-16-1L0 33 16-1M-10 11l16 12M-6-1l17 12M10 11L-6 23M6-1l-17 12"/></g>
+    <g id="headphones"><path d="M-22 9v-10a22 22 0 0 1 44 0v10M-17-1a17 17 0 0 1 34 0M-22 1h8v20h-8q-6-10 0-20ZM22 1h-8v20h8q6-10 0-20Z"/></g>
+    <g id="cactus"><path d="M-5 17v-34q0-10 10-7v41M-5 3h-9q-7 0-7-7v-9q0-5 6-5v12h10M5-6h9v-13q0-5 6-4v19q0 6-6 6H5M-12 17h24l-3 15H-9ZM0-15v3M0-3v4M-16-1l2 2M14-6v3"/></g>
+    <g id="lightning"><path d="M4-25-17 4h13l-2 23L18-5H4Z"/></g>
+    <g id="coffee"><path d="M-18-9h32v26q-16 14-32 0ZM14-5h6q14 10 0 18h-6M-24 25h46M-9-16q-6-5 0-10M0-16q-6-5 0-10M9-16q-6-5 0-10"/></g>
+    <g id="ball"><circle r="24"/><path d="M-24 0h48M0-24v48M-15-18q26 18 0 36M15-18q-26 18 0 36"/></g>
+    <g id="music"><path d="M-8 14v-30l27-6v30M-8-9l27-6"/><ellipse cx="-15" cy="15" rx="8" ry="6" transform="rotate(-15 -15 15)"/><ellipse cx="12" cy="9" rx="8" ry="6" transform="rotate(-15 12 9)"/></g>
+    <g id="cloud"><path d="M-18 10q-18-3-10-16 4-7 13-4-2-18 15-19 15-1 17 15 14-4 18 10 5 15-15 14ZM-14 18l-4 9M0 18l-4 9M14 18l-4 9"/></g>
+    <g id="chat"><path d="M-25-17h50v31H2l-16 11V14h-11Z"/><circle cx="-13" cy="-1" r="2"/><circle cy="-1" r="2"/><circle cx="13" cy="-1" r="2"/></g>
+    <g id="leaf"><path d="M-18 20C-30-8-3-27 25-23 25 4 4 32-18 20ZM-23 28 16-15M-11 14l-4-14M-2 5l13 1M6-4 3-13"/></g>
+    <g id="game"><path d="M-13-14h26q13 4 16 27 2 11-7 9l-14-9H-8l-14 9q-9 2-7-9 3-23 16-27ZM-17-3v12M-23 3h12"/><circle cx="14" cy="-1" r="2"/><circle cx="21" cy="6" r="2"/></g>
+    <g id="kite"><path d="M0-27 22 0 0 27-22 0ZM0-27v54M-22 0h44M0 27q18 13 7 22M8 32l-5 6 10 3M12 45l-5 6 10 3"/></g>
+    <g id="guitar"><path d="m5-5 18-27 7 5L12 1q12 10 0 20-3 3-9 1-4 17-18 13-23-7-13-25 4-7 13-7 4-19 20-8Z"/><circle cx="-3" cy="10" r="6"/><path d="m-6 13 31-43M-15 23l10 5M21-27l7 5"/></g>
+    <g id="envelope"><path d="M-24-14h48v30h-48ZM-24-14 0 5 24-14M-24 16l16-15M24 16 8 1"/></g>
+    <g id="butterfly"><path d="M0-6C-39-41-39 3-12 5-34 23-3 33 0 10 3 33 34 23 12 5 39 3 39-41 0-6ZM0-6v16M0-6l-6-11M0-6l6-11"/></g>
+    <g id="star"><path d="m0-22 7 14 17 3-12 12 3 17L0 16l-15 8 3-17-12-12 17-3ZM-2-11l3 7 8 1"/></g>
+    <g id="microphone"><rect x="-8" y="-23" width="16" height="33" rx="8"/><path d="M-14-1v5q0 14 14 14T14 4v-5M0 18v10M-9 28H9M-4-15h8M-4-8h8M-4-1h8"/></g>
+  </defs>
+  <use xlink:href="#planet" transform="translate(29 29) rotate(-12) scale(.85)"/>
+  <use xlink:href="#gift" transform="translate(104 30) rotate(14) scale(.75)"/>
+  <use xlink:href="#cloud" transform="translate(175 24) rotate(-15) scale(.7)"/>
+  <use xlink:href="#pizza" transform="translate(243 31) rotate(22) scale(.88)"/>
+  <use xlink:href="#chat" transform="translate(316 25) rotate(9) scale(.65)"/>
+  <use xlink:href="#camera" transform="translate(59 98) rotate(-14) scale(.82)"/>
+  <use xlink:href="#flower" transform="translate(133 96) rotate(18) scale(.8)"/>
+  <use xlink:href="#rocket" transform="translate(210 94) rotate(-32) scale(.78)"/>
+  <use xlink:href="#smile" transform="translate(294 99) rotate(15) scale(.9)"/>
+  <use xlink:href="#music" transform="translate(21 160) rotate(13) scale(.8)"/>
+  <use xlink:href="#umbrella" transform="translate(96 169) rotate(-20) scale(.77)"/>
+  <use xlink:href="#icecream" transform="translate(178 165) rotate(20) scale(.75)"/>
+  <use xlink:href="#heart" transform="translate(252 160) rotate(-16) scale(.85)"/>
+  <use xlink:href="#lightning" transform="translate(328 166) rotate(11) scale(.88)"/>
+  <use xlink:href="#game" transform="translate(49 235) rotate(20) scale(.78)"/>
+  <use xlink:href="#leaf" transform="translate(126 235) rotate(-26) scale(.83)"/>
+  <use xlink:href="#headphones" transform="translate(210 236) rotate(13) scale(.8)"/>
+  <use xlink:href="#ball" transform="translate(291 237) rotate(-20) scale(.9)"/>
+  <use xlink:href="#star" transform="translate(20 310) rotate(-11) scale(.85)"/>
+  <use xlink:href="#coffee" transform="translate(89 306) rotate(17) scale(.85)"/>
+  <use xlink:href="#butterfly" transform="translate(169 307) rotate(-18) scale(.8)"/>
+  <use xlink:href="#kite" transform="translate(248 303) rotate(24) scale(.75)"/>
+  <use xlink:href="#microphone" transform="translate(330 307) rotate(-22) scale(.82)"/>
+  <use xlink:href="#guitar" transform="translate(50 386) rotate(16) scale(.85)"/>
+  <use xlink:href="#cactus" transform="translate(129 383) rotate(-12) scale(.83)"/>
+  <use xlink:href="#envelope" transform="translate(207 386) rotate(21) scale(.85)"/>
+  <use xlink:href="#smile" transform="translate(290 387) rotate(-22) scale(.75)"/>
+  <path d="m62 39 6 4-6 4M138 39l-2 6M222 9l4 4m-4 0 4-4M348 78l-4 4 4 4 4-4ZM14 110l4 6-7 1M178 119l4 4m-4 0 4-4M250 109l-4 7M10 219l4 4m-4 0 4-4M157 189l3 6-7 1M259 206l5 4-6 4M353 221l-4 7M59 280l5 5m-5 0 5-5M141 275l4-3 3 4-4 3ZM216 342l4 5-7 2M354 369l-6 5M21 418l3 4M171 420l4 4m-4 0 4-4M249 419l6-3"/>
+  <g><circle cx="74" cy="11" r="2"/><circle cx="153" cy="63" r="3"/><circle cx="275" cy="55" r="2"/><circle cx="18" cy="66" r="2"/><circle cx="183" cy="72" r="2"/><circle cx="247" cy="137" r="3"/><circle cx="65" cy="140" r="2"/><circle cx="146" cy="137" r="2"/><circle cx="290" cy="192" r="2"/><circle cx="57" cy="198" r="3"/><circle cx="171" cy="218" r="2"/><circle cx="245" cy="269" r="2"/><circle cx="348" cy="264" r="3"/><circle cx="54" cy="333" r="2"/><circle cx="136" cy="341" r="3"/><circle cx="290" cy="339" r="2"/><circle cx="97" cy="360" r="2"/><circle cx="250" cy="370" r="2"/><circle cx="333" cy="414" r="3"/></g>
+</svg>
