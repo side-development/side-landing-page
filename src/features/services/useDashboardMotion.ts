@@ -43,18 +43,18 @@ export function useDashboardMotion(root: RefObject<HTMLElement | null>, locale: 
       node.inert = true;
       const timeline = gsap.timeline({ paused: true, defaults: { ease: "power2.out" }, onStart: () => { started = true; node.dataset.animation = "playing"; }, onComplete: () => { node.dataset.animation = "settled"; node.inert = false; revealed.current = true; } });
       timeline.fromTo(node, { opacity: 0, y: 12, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: serviceRevealDuration, ease: "sine.out", clearProps: "filter" })
-        .from(shell, { opacity: 0, y: 8, duration: 0.75, stagger: 0.08 }, 0.55)
-        .from(metrics, { opacity: 0, y: 10, duration: 0.85, stagger: 0.1 }, 0.8);
+        .from(shell, { opacity: 0, y: 8, duration: .65, stagger: { amount: .15 } }, .3)
+        .from(metrics, { opacity: 0, y: 10, duration: .8, stagger: { amount: .15 } }, .45);
       counters.forEach((counter, index) => {
         const value = { amount: 0 };
         counter.textContent = number(0, locale, Number(counter.dataset.decimals));
-        timeline.to(value, { amount: Number(counter.dataset.value), duration: 1.45, onUpdate: () => { counter.textContent = number(value.amount, locale, Number(counter.dataset.decimals)); } }, 1 + index * 0.1);
+        timeline.to(value, { amount: Number(counter.dataset.value), duration: .8, onUpdate: () => { counter.textContent = number(value.amount, locale, Number(counter.dataset.decimals)); } }, .65 + .2 * index / Math.max(1, counters.length - 1));
       });
-      timeline.from(chart, { opacity: 0, duration: 0.65 }, 1.35)
-        .fromTo(lines, { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, autoRound: false, duration: 1.6, stagger: 0.15, ease: "power2.inOut", clearProps: "strokeDasharray,strokeDashoffset" }, 1.5)
-        .from(areas, { attr: { width: 0 }, duration: 1.6, ease: "power2.inOut" }, 1.5)
-        .from(sources, { scaleX: 0, transformOrigin: "left center", duration: 0.8, stagger: 0.1 }, 2.1)
-        .from(rows, { opacity: 0, y: 6, duration: 0.55, stagger: 0.09 }, 2.5);
+      timeline.from(chart, { opacity: 0, duration: .5 }, .55)
+        .fromTo(lines, { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, autoRound: false, duration: 1, stagger: { amount: .15 }, ease: "power2.inOut", clearProps: "strokeDasharray,strokeDashoffset" }, .6)
+        .from(areas, { attr: { width: 0 }, duration: 1, ease: "power2.inOut" }, .6)
+        .from(sources, { scaleX: 0, transformOrigin: "left center", duration: .65, stagger: { amount: .15 } }, .9)
+        .from(rows, { opacity: 0, y: 6, duration: .55, stagger: { amount: .25 } }, serviceRevealDuration - .8);
       let visible = false;
       let started = false;
       let triggered = false;
