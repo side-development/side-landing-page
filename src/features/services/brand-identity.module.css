@@ -1,0 +1,41 @@
+.identity { max-width: 1320px; margin: 0 auto; padding: 20px 40px 12svh; }
+.intro { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding: 12px 0 42px; }
+.intro h4 { margin: 0; font-size: clamp(34px, 4.4vw, 66px); font-weight: 400; letter-spacing: -.055em; line-height: 1.07; }
+.intro h4 span { color: #89838f; }
+.intro p { max-width: 150px; margin: 0 0 5px; color: #716979; font-size: 12px; line-height: 1.5; }
+.construction { position: relative; height: clamp(310px, 39vw, 480px); }
+.annotation { position: absolute; z-index: 2; top: 22px; left: 24px; right: 24px; display: flex; justify-content: space-between; font: 10px/1.4 monospace; color: #87818f; }
+.grid { position: absolute; width: calc(100% + 80px); height: 100%; top: 0; left: -40px; fill: none; pointer-events: none; mask-image: linear-gradient(to bottom, transparent, #000 9%, #000 91%, transparent); }
+.gridLines { stroke: #e6e2ed; stroke-width: .7; }
+.logo { position: absolute; left: 50%; top: 50%; width: clamp(180px, 23vw, 270px); transform: translate(-50%, -50%); }
+.logo img { width: 100%; height: auto; display: block; }
+.logoPointer { transform-origin: 50% 55%; }
+.elements { display: grid; grid-template-columns: 1.6fr 1fr; gap: 64px; padding-top: 32px; }
+.elements p { margin: 0 0 20px; color: #716979; font: 10px/1.5 monospace; }
+.swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.colorTile { position: relative; height: clamp(54px, 6vw, 88px); border: 1px solid #eeecf1; transition: transform .65s cubic-bezier(.2,.8,.2,1), box-shadow .65s; overflow: hidden; }
+.colorTile::after { content: ""; position: absolute; inset: -60%; background: linear-gradient(115deg, transparent 35%, #fff5 50%, transparent 65%); transform: translateX(-80%); transition: transform .85s cubic-bezier(.2,.8,.2,1); }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .swatch:hover .colorTile { transform: translateY(-9px) rotate(-2deg) scale(1.035); box-shadow: 0 18px 26px -14px #30146145; }
+  .swatch:hover .colorTile::after { transform: translateX(80%); }
+  .expression strong { transition: color 1.6s cubic-bezier(.4, 0, .2, 1); }
+  .expression strong > span { transition: opacity 1.6s cubic-bezier(.4, 0, .2, 1), transform 1.6s cubic-bezier(.4, 0, .2, 1); }
+  .expression:hover strong { color: #3919bd; }
+  .expression:hover strong > span:first-child { opacity: 0; transform: skewX(-6deg); }
+  .expression:hover .italicLetters { opacity: 1; transform: skewX(0); }
+}
+.swatch span { display: flex; justify-content: space-between; gap: 6px; margin-top: 12px; font: 9px/1 monospace; color: #96909e; }
+.swatch small { font-size: 9px; color: #5f576b; }
+.expression > div { display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+.expression strong { display: inline-grid; font-size: clamp(60px, 7.4vw, 105px); font-weight: 400; letter-spacing: -.065em; line-height: .85; }
+.expression strong > span { grid-area: 1 / 1; transform-origin: center bottom; }
+.expression .italicLetters { opacity: 0; font-style: italic; transform: skewX(4deg); }
+.caption { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 36px; font-size: 10px; color: #716979; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 800px) {
+  .identity { padding: 16px 20px 10svh; }
+  .intro { padding-bottom: 28px; }.intro h4 { font-size: clamp(30px, 7.6vw, 48px); }.intro p { display: none; }
+  .construction { height: 350px; }.grid { width: calc(100% + 40px); left: -20px; }.annotation { left: 16px; right: 16px; font-size: 8px; }.logo { width: 185px; }
+  .elements { grid-template-columns: 1fr; gap: 30px; padding-top: 26px; }.colorTile { height: 65px; }.swatch small { font-size: 8px; }.expression > div { justify-content: flex-start; }.expression strong { font-size: 76px; }
+  .caption { align-items: flex-start; padding-top: 30px; line-height: 1.6; }.caption > span { max-width: 190px; }
+}
