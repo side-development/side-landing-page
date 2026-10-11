@@ -56,12 +56,13 @@ export function useTerminalMotion(root: RefObject<HTMLElement | null>, replay: n
           const position = { count: 0 };
           timeline.to(position, { count: text.length, duration: text.length * speed, ease: "none", onUpdate: () => { element.textContent = text.slice(0, Math.floor(position.count)); } }, at);
         }
-        timeline.to(shell, { opacity: 1, duration: 0.18 }, 0.8);
-        type(0, 1.05, 0.065);
-        timeline.to(welcome, { opacity: 1, duration: 0.3 }, 1.65)
-          .to(command, { opacity: 1, duration: 0.15 }, 2.95);
-        type(1, 3.15, 0.16);
-        timeline.set(response, { opacity: 1 }, 4);
+        timeline.to(shell, { opacity: 1, duration: .6 }, .4);
+        // The window arrives in the common 1.8s; typing is the following story.
+        type(0, serviceRevealDuration, .065);
+        timeline.to(welcome, { opacity: 1, duration: .3 }, serviceRevealDuration + .6)
+          .to(command, { opacity: 1, duration: .15 }, serviceRevealDuration + 1.9);
+        type(1, serviceRevealDuration + 2.1, .16);
+        timeline.set(response, { opacity: 1 }, serviceRevealDuration + 2.9);
       }
       let visible = false;
       sync = () => {

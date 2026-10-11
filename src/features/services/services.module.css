@@ -15,9 +15,9 @@
 .experienceRun[data-experience-sticky="true"] { min-height: calc(var(--experience-stage-height) + var(--experience-scroll-distance)); }
 .experienceRun[data-experience-sticky="true"] .experienceShell { position: sticky; top: var(--experience-sticky-top); }
 .atmosphere { height: 44svh; }
-.chapter[data-service-chapter="3"] { color: #eae8ed; background: #101011; }
-.services[data-motion-ready="true"] .chapter[data-service-chapter="3"] { background: transparent; }
-.chapter[data-service-chapter="3"] .index, .chapter[data-service-chapter="3"] .copy small { color: #949099; }
+.chapter[data-service-theme="dark"] { color: #eae8ed; background: #101011; }
+.services[data-motion-ready="true"] .chapter[data-service-theme="dark"] { background: transparent; }
+.chapter[data-service-theme="dark"] .index, .chapter[data-service-theme="dark"] .copy small { color: #949099; }
 .terminalStage { display: flex; align-items: center; justify-content: center; padding: 24px 0 12svh; }
 .services :focus-visible { outline: 2px solid #3919bd; outline-offset: 5px; }
 .services :global([data-dashboard-counter]) { opacity: var(--services-values-opacity, 1); }
