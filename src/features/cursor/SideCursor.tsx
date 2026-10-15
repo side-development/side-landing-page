@@ -55,7 +55,7 @@ export function SideCursor({ active }: { active: boolean }) {
       }
       function key(event: KeyboardEvent) { if (event.key === "Tab") hide(); }
       window.addEventListener("pointermove", move, { passive: true });
-      window.addEventListener("scroll", scroll, { passive: true });
+      window.addEventListener("scroll", scroll, { passive: true, capture: true });
       window.addEventListener("blur", hide);
       window.addEventListener("keydown", key);
       document.documentElement.addEventListener("pointerleave", hide);
@@ -68,7 +68,7 @@ export function SideCursor({ active }: { active: boolean }) {
         hide();
         x.tween.kill(); y.tween.kill();
         window.removeEventListener("pointermove", move);
-        window.removeEventListener("scroll", scroll);
+        window.removeEventListener("scroll", scroll, { capture: true });
         window.removeEventListener("blur", hide);
         window.removeEventListener("keydown", key);
         document.documentElement.removeEventListener("pointerleave", hide);

@@ -1,0 +1,218 @@
+.header {
+  position: fixed;
+  top: 24px;
+  left: 40px;
+  right: 40px;
+  z-index: 30;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  background: transparent;
+  pointer-events: none;
+}
+
+.header > * { pointer-events: auto; }
+.brand { display: block; line-height: 0; }
+.symbol { width: 40px; height: auto; }
+
+.navigation, .sectionLinks {
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 3.4vw, 64px);
+}
+
+.navigation { font-family: "Segoe UI", system-ui, sans-serif; }
+.sectionLinkList, .sectionLinkItems { display: contents; }
+.navigation .menuContact { display: none; }
+.navigation .menuToggle { display: none; }
+
+.link, .contact {
+  position: relative;
+  padding: 8px 0;
+  border: 0;
+  background: none;
+  color: #080808;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.contact { color: #3919bd; font-weight: 700; }
+.label { position: relative; display: inline-block; }
+
+/* Underline stroke mirrors Home's NavUnderline; current page keeps it drawn. */
+.link svg, .contact svg {
+  bottom: -4px;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.link svg path, .contact svg path { transition: stroke-dashoffset 220ms ease; }
+.link:focus-visible svg, .link[data-current] svg, .contact:focus-visible svg { opacity: 1; }
+.link:focus-visible svg path, .link[data-current] svg path, .contact:focus-visible svg path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 480ms cubic-bezier(.25, .46, .45, .94);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover svg, .contact:hover svg { opacity: 1; }
+  .link:hover svg path, .contact:hover svg path {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 480ms cubic-bezier(.25, .46, .45, .94);
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    top: 24px;
+    left: 24px;
+    right: 24px;
+    --menu-reveal-duration: 540ms;
+  }
+
+  .header::before {
+    content: "";
+    position: absolute;
+    inset: -12px;
+    z-index: -1;
+    border: 1px solid rgb(128 128 128 / 24%);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 12px 32px rgb(0 0 0 / 10%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease 320ms;
+  }
+
+  .header[data-menu-open="true"] { z-index: 50; }
+  .header[data-menu-open="true"]::before { opacity: 1; transition-delay: 0s; pointer-events: auto; }
+  .symbol { width: 32px; }
+  .header .symbol { position: absolute; top: 0; left: 0; }
+
+  .navigation {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 32px minmax(0, 1fr) 28px;
+    column-gap: 24px;
+    row-gap: 0;
+  }
+
+  .navigation .contact {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+  }
+
+  .header[data-menu-open="true"] .navigation > .contact { visibility: hidden; }
+  .link, .contact { font-size: 13px; }
+
+  .sectionLinks {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 0fr;
+    align-items: stretch;
+    gap: 0;
+    margin-top: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: grid-template-rows var(--menu-reveal-duration) cubic-bezier(.22, 1, .36, 1), margin-top var(--menu-reveal-duration) cubic-bezier(.22, 1, .36, 1), visibility 0s var(--menu-reveal-duration);
+  }
+
+  .sectionLinks[data-open="true"] {
+    visibility: visible;
+    grid-template-rows: 1fr;
+    margin-top: 24px;
+    pointer-events: auto;
+    transition-delay: 0s;
+  }
+
+  .sectionLinkList {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .sectionLinkItems { display: flex; flex-direction: column; flex-shrink: 0; }
+
+  .sectionLinks .link {
+    align-self: stretch;
+    padding: 12px 0;
+    border-bottom: 1px solid rgb(128 128 128 / 20%);
+    text-align: left;
+    font-size: 22px;
+    opacity: 0;
+    transform: translateY(9px);
+    transition: opacity 160ms ease, transform 220ms ease;
+  }
+
+  .sectionLinks[data-open="true"] .link {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 360ms ease, transform 460ms cubic-bezier(.22, 1, .36, 1);
+    transition-delay: 90ms;
+  }
+
+  .sectionLinks[data-open="true"] .link:nth-child(2) { transition-delay: 150ms; }
+  .sectionLinks[data-open="true"] .link:nth-child(3) { transition-delay: 210ms; }
+
+  .sectionLinks .menuContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 12px;
+    margin-top: 24px;
+    min-height: 46px;
+    border: 1px solid rgb(255 255 255 / 20%);
+    border-radius: 10px;
+    background: #3919bd;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .sectionLinks[data-open="true"] .menuContact { transition-delay: 240ms; }
+
+  .navigation .menuToggle {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    min-height: 40px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .menuToggle path {
+    transform-origin: 12px 12px;
+    transition: transform 300ms cubic-bezier(.5,.85,.25,1.1);
+  }
+  .menuToggle path:first-child { transform: translateY(-7px); }
+  .menuToggle path:nth-child(2) { transition-timing-function: cubic-bezier(.5,.85,.25,1.8); }
+  .menuToggle path:last-child { transform: translateY(7px); }
+  .menuToggle[aria-expanded="true"] path:first-child { transform: translateY(0) rotate(315deg); }
+  .menuToggle[aria-expanded="true"] path:nth-child(2) { transform: rotate(45deg); }
+  .menuToggle[aria-expanded="true"] path:last-child { transform: translateY(0) rotate(135deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menuToggle path { transition: none; }
+  .link svg, .link svg path, .link:hover svg path { transition: none; }
+  .header { --menu-reveal-duration: 140ms; transition: none; }
+  .header::before { transition: opacity 140ms ease; }
+  .sectionLinks { opacity: 0; transition: opacity 140ms ease, visibility 0s 140ms; }
+  .sectionLinks[data-open="true"] { opacity: 1; transition-delay: 0s; }
+  .sectionLinks .link, .sectionLinks[data-open="true"] .link { transform: none; transition: opacity 140ms ease; transition-delay: 0s; }
+}

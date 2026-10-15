@@ -1,0 +1,261 @@
+/* Surface, border, radius and shadow are deliberately the Home's Selected Work sheet. */
+.project {
+  position: relative;
+  padding-bottom: clamp(96px, 15vh, 168px);
+}
+
+.header {
+  max-width: 2200px;
+  margin-inline: auto;
+  padding-inline: 40px;
+}
+
+.rule {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 0.9fr);
+  gap: clamp(40px, 6vw, 110px);
+  padding-top: 14px;
+  border-top: 1px solid #0808081f;
+  font-size: 14px;
+  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+}
+
+.rule > div { display: flex; justify-content: space-between; gap: 24px; }
+
+.identity {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 0.9fr);
+  align-items: end;
+  gap: clamp(40px, 6vw, 110px);
+  padding-top: clamp(20px, 3vh, 36px);
+}
+
+.name {
+  margin: 0;
+  font-size: clamp(36px, 4.2vw, 76px);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.wordmark {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: calc(1em * var(--wordmark-scale, 1));
+  object-fit: contain;
+  object-position: left;
+}
+
+.summary {
+  max-width: 520px;
+  font-size: clamp(17px, 1.45vw, 26px);
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+.gallery {
+  /* Header + stage + controls fit inside desktop viewports with nav and breathing clearance */
+  --sheet-w: min(58vw, clamp(460px, calc((100svh - 430px) * 1.6), 1100px));
+  --sheet-gap: 3.4%;
+  --sheet-ratio: 1.6;
+  --stage-pad: 32px;
+  margin-top: clamp(16px, 2.8vh, 28px);
+}
+
+.stage {
+  --belt-blur: 9;
+  --belt-depth: 0.12;
+  --belt-dim: 0.38;
+  position: relative;
+  height: calc(var(--sheet-w) / var(--sheet-ratio) + var(--stage-pad));
+  overflow-x: clip;
+  overflow-y: visible;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+.stage[data-dragging="true"] { cursor: grabbing; }
+
+.sheet {
+  position: absolute;
+  top: var(--stage-pad);
+  left: 50%;
+  width: var(--sheet-w);
+  margin-left: calc(var(--sheet-w) / -2);
+  aspect-ratio: var(--sheet-ratio);
+  will-change: transform, opacity, filter;
+}
+
+.surface {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border: 1px solid #08080814;
+  border-radius: 14px;
+  background: #f3f3f3;
+  box-shadow: 0 26px 60px #00000024, 0 8px 24px #00000017, 0 1px 3px #00000014;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #f5f5f5;
+  color: #08080866;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.placeholder::before {
+  content: "";
+  position: absolute;
+  inset: clamp(14px, 2vw, 28px);
+  border: 1px dashed #08080826;
+  border-radius: 8px;
+}
+
+.openSheet {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 0;
+  border: 0;
+  border-radius: 14px;
+  background: transparent;
+}
+
+.stage:focus-visible .sheet[data-active="true"] .surface,
+.openSheet:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 4px; }
+.openSheet:focus-visible { outline-offset: 5px; }
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: var(--sheet-w);
+  margin: 28px auto 0;
+}
+
+.pager { display: flex; align-items: center; gap: 20px; min-width: 0; }
+.arrows { display: flex; gap: 10px; }
+
+.arrow {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid #08080824;
+  border-radius: 50%;
+  background: #fff;
+  color: #080808;
+  transition: border-color 180ms ease;
+}
+
+.arrow svg { width: 18px; height: 18px; }
+
+.counter {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+}
+
+.position { font-weight: 700; white-space: nowrap; }
+.caption { overflow: hidden; color: #08080899; text-overflow: ellipsis; white-space: nowrap; }
+
+.open {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  gap: 12px;
+  padding: 8px 0;
+  border: 0;
+  background: none;
+  color: #080808;
+  font-size: 16px;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.open::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 280ms ease;
+}
+
+.open:hover::after, .open:focus-visible::after { transform: scaleX(1); }
+.open:disabled { opacity: 0.4; cursor: default; }
+.open:disabled::after { display: none; }
+
+@media (hover: hover) and (pointer: fine) {
+  .arrow:hover { border-color: #080808; }
+}
+
+@media (max-width: 1100px) {
+  .gallery { --sheet-w: 74vw; --sheet-gap: 3%; }
+  .stage { --belt-blur: 6; --belt-depth: 0.1; }
+}
+
+@media (max-width: 800px) {
+  .header { padding-inline: 24px; }
+  .rule { grid-template-columns: auto minmax(0, 1fr); gap: 24px; }
+  .identity { grid-template-columns: minmax(0, 1fr); align-items: start; gap: 18px; padding-top: 24px; }
+  .summary { max-width: 480px; font-size: 18px; }
+  .gallery { --sheet-w: 82vw; --sheet-gap: 3%; --sheet-ratio: 1.38; --stage-pad: 24px; margin-top: 28px; }
+  .stage { --belt-blur: 3.5; --belt-depth: 0.07; --belt-dim: 0.4; }
+  .controls { margin-top: 20px; }
+  .project { padding-bottom: 88px; }
+  .arrow { width: 40px; height: 40px; }
+  .pager { gap: 14px; }
+  .caption { display: none; }
+}
+
+@media (max-width: 359px) {
+  .header { padding-inline: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .open::after, .arrow { transition: none; }
+}
+
+/* Mirror Home's feedback reel cursor: bidirectional arrows icon inside the pill. */
+:global(body):has([data-gallery-stage][data-cursor-active="true"]) :global([data-side-cursor-visual][data-mode="project"] span),
+:global(body):has([data-gallery-stage]:hover) :global([data-side-cursor-visual][data-mode="project"] span) {
+  width: 34px;
+  height: 24px;
+  padding: 5px;
+  font-size: 0;
+}
+
+:global(body):has([data-gallery-stage][data-cursor-active="true"]) :global([data-side-cursor-visual][data-mode="project"] span)::after,
+:global(body):has([data-gallery-stage]:hover) :global([data-side-cursor-visual][data-mode="project"] span)::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 14px;
+  background: #fff;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 14'%3E%3Cpath d='M2 7h20M6 3 2 7l4 4M18 3l4 4-4 4' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}

@@ -1,0 +1,66 @@
+.page {
+  min-height: 100svh;
+  overflow-x: clip;
+  background: #fff;
+  color: #080808;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  align-items: end;
+  gap: clamp(32px, 6vw, 110px);
+  max-width: 2200px;
+  margin-inline: auto;
+  padding: clamp(150px, 26vh, 280px) 40px clamp(72px, 12vh, 140px);
+}
+
+.intro h1 {
+  font-size: clamp(64px, 11.5vw, 200px);
+  font-weight: 700;
+  letter-spacing: -0.065em;
+  line-height: 0.88;
+}
+
+/* The brand's purple dot: a crisp round circle, not Arial's square glyph. */
+.dot {
+  display: inline-block;
+  width: 0.14em;
+  height: 0.14em;
+  margin-left: 0.04em;
+  border-radius: 50%;
+  background-color: #3919bd;
+  vertical-align: 0.02em;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.introSide { display: flex; flex-direction: column; gap: 28px; padding-bottom: 0.6vw; }
+
+.lede {
+  font-size: clamp(18px, 1.5vw, 25px);
+  line-height: 1.28;
+  letter-spacing: -0.025em;
+}
+
+.list { display: block; }
+
+@media (max-width: 800px) {
+  .intro { grid-template-columns: minmax(0, 1fr); align-items: start; gap: 32px; padding: 132px 24px 64px; }
+  .intro h1 { font-size: clamp(56px, 18vw, 120px); }
+  .introSide { gap: 20px; }
+  .lede { font-size: 18px; max-width: 480px; }
+}
+
+@media (max-width: 359px) {
+  .intro { padding-inline: 16px; }
+}
