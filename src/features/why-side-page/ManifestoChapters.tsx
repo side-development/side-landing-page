@@ -1,10 +1,11 @@
 import Link from "next/link";
 import glass from "@/components/ui/glass-button.module.css";
+import homeCta from "@/features/final-cta/final-cta.module.css";
 import { manifestoContent } from "./manifesto-content";
 import type { ManifestoLocale } from "./opening-copy";
 import styles from "./manifesto-chapters.module.css";
 
-const Arrow = () => <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>;
+const Arrow = () => <svg className={homeCta.arrow} viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 
 export function ManifestoChapters({ locale }: { locale: ManifestoLocale }) {
   const copy = manifestoContent[locale];
@@ -39,8 +40,8 @@ export function ManifestoChapters({ locale }: { locale: ManifestoLocale }) {
       <div className={styles.closingAction}>
         <p data-editorial-reveal>{copy.closingText}</p>
         <span className={`${glass.wrap} ${styles.contactWrap}`} data-editorial-reveal>
-          <Link href={locale === "en" ? "/en/contact" : "/contato"} prefetch={false} className={`${glass.surface} ${glass.interactive} ${styles.contact}`}>
-            <span className={glass.content}><span>{copy.contact}</span><span className={styles.contactArrow}><Arrow /></span></span>
+          <Link href={locale === "en" ? "/en/contact" : "/contato"} prefetch={false} className={`${glass.surface} ${glass.interactive} ${homeCta.link}`}>
+            <span className={`${glass.content} ${homeCta.linkContent}`}><span>{copy.contact}</span><Arrow /></span>
           </Link>
           <span className={glass.shadow} aria-hidden="true" />
         </span>

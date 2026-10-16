@@ -31,18 +31,7 @@
 .closing h2 > span { display: block; }
 .closingAction { display: flex; flex-direction: column; align-items: center; gap: 32px; margin-top: 40px; }
 .closingAction > p { max-width: 430px; font-size: 19px; line-height: 1.45; letter-spacing: -.025em; text-wrap: pretty; }
-.contactWrap { flex-shrink: 0; --glass-shadow-spread: 1.2em; }
-.closing .contact { display: flex; align-items: center; justify-content: center; min-width: 296px; min-height: 80px; padding: 12px 14px 12px 30px; color: var(--paper); background: linear-gradient(125deg, #4b2bce, var(--purple)); box-shadow: inset 0 1px 1px #ffffff66, inset 0 -2px 2px #18045540, 0 7px 20px #3919bd20; text-decoration: none; font-size: 18px; font-weight: 600; }
-.closing .contact::before { opacity: .35; }
-.contact > span { display: inline-flex; align-items: center; justify-content: space-between; gap: 36px; width: 100%; text-shadow: none; }
-.contactArrow { display: grid; place-items: center; width: 52px; height: 52px; flex-shrink: 0; border-radius: 50%; background: var(--paper); color: var(--purple); box-shadow: inset 0 1px 2px #fff, 0 1px 2px #16044c26; }
-.contact svg { width: 24px; height: 24px; }
-.contactArrow svg { transform: rotate(-35deg); transition: transform .35s cubic-bezier(.22, 1, .36, 1); }
-
-@media (hover: hover) and (pointer: fine) {
-  .closing .contact:is(:hover, :focus-visible) { box-shadow: inset 0 1px 2px #ffffff66, inset 0 -1px 2px #18045540, 0 10px 26px #3919bd2b; }
-  .contact:is(:hover, :focus-visible) .contactArrow svg { transform: translate(2px, -2px) rotate(-35deg); }
-}
+.contactWrap { flex-shrink: 0; --glass-shadow-spread: 12px; --glass-press-transform: none; }
 
 @media (max-width: 1100px) and (min-width: 801px) {
   .nameLayout { grid-template-columns: 1.2fr 1fr; gap: 48px; }
@@ -66,9 +55,6 @@
   .closing h2 { font-size: clamp(44px, 12.5vw, 90px); margin-top: 32px; }
   .closingAction { gap: 28px; margin-top: 28px; }
   .closingAction > p { font-size: 18px; }
-  .contactWrap { width: 100%; max-width: 360px; }
-  .closing .contact { min-height: 76px; min-width: 0; width: 100%; padding: 12px 12px 12px 26px; font-size: 17px; }
-  .contactArrow { width: 48px; height: 48px; }
 }
 @media (max-width: 360px) {
   .principle { column-gap: 12px; }
@@ -76,5 +62,3 @@
   .closing h2 { font-size: 40px; }
 }
 @media (max-height: 520px) and (min-width: 801px) { .navBackdrop { height: 68px; } }
-@media (prefers-reduced-motion: reduce) { .contactArrow svg { transition: none; } }
-@media (forced-colors: active) { .closing .contact, .contactArrow { background: ButtonFace; color: ButtonText; box-shadow: none; border: 1px solid ButtonText; } }
