@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import { useId, useLayoutEffect, useRef, useState, useSyncExternalStore } from "react";
@@ -69,7 +70,12 @@ export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: He
   return (
     <section ref={section} className={styles.finalHero} data-final-hero data-visible={visible} aria-label="Side" aria-hidden={!visible} inert={!visible}>
       <header className={styles.finalHeader} data-final-chrome data-menu-open={menuOpen}>
-        <Image src="/brand/side-logo-black.svg" alt="Side" width={1265} height={1126} className={styles.smallSymbol} />
+        <Link href={locale === "en" ? "/en#home-top" : "/#home-top"} aria-label={locale === "en" ? "Side — Home" : "Side — Página inicial"} prefetch={false} className={styles.brandLink} onNavigate={() => {
+          setOpen(false);
+          window.scrollTo({ top: 0, behavior: "instant" });
+        }}>
+          <Image src="/brand/side-logo-black.svg" alt="Side" width={1265} height={1126} className={styles.smallSymbol} />
+        </Link>
         <nav className={styles.navigation} aria-label={copy.navigation} onKeyDown={event => {
           if (!menuOpen) return;
           if (event.key === "Escape") { event.preventDefault(); close(); }

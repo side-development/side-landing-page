@@ -50,7 +50,7 @@ export function WorkNav({ locale, nav, copy, currentPage = "work" }: { locale: W
 
   return (
     <header className={styles.header} data-work-nav data-menu-open={menuOpen}>
-      <Link href={locale === "en" ? "/en" : "/"} aria-label={copy.home} prefetch={false} className={styles.brand}>
+      <Link href={locale === "en" ? "/en#home-top" : "/#home-top"} aria-label={copy.home} prefetch={false} className={styles.brand}>
         <Image src="/brand/side-logo-black.svg" alt="Side" width={1265} height={1126} className={styles.symbol} />
       </Link>
       <nav
