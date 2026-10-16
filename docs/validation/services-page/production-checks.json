@@ -1,0 +1,80 @@
+[
+  {
+    "path": "/servicos",
+    "width": 1440,
+    "height": 1000,
+    "reduced": false,
+    "scroll": 0,
+    "top": 525.71875,
+    "opacity": "1",
+    "filter": "none",
+    "transform": "none",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "path": "/en/services",
+    "width": 390,
+    "height": 844,
+    "reduced": false,
+    "scroll": 0,
+    "top": 361.1875,
+    "opacity": "1",
+    "filter": "none",
+    "transform": "none",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "path": "/trabalhos",
+    "width": 1440,
+    "height": 1000,
+    "reduced": false,
+    "scroll": 0,
+    "top": 525.71875,
+    "opacity": "1",
+    "filter": "none",
+    "transform": "none",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "path": "/en/work",
+    "width": 390,
+    "height": 844,
+    "reduced": false,
+    "scroll": 0,
+    "top": 361.1875,
+    "opacity": "1",
+    "filter": "none",
+    "transform": "none",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "path": "/servicos",
+    "width": 320,
+    "height": 568,
+    "reduced": true,
+    "scroll": 0,
+    "top": 372.703125,
+    "opacity": "1",
+    "filter": "none",
+    "transform": "none",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "path": "/trabalhos",
+    "width": 320,
+    "height": 568,
+    "reduced": true,
+    "scroll": 0,
+    "top": 372.703125,
+    "opacity": "1",
+    "filter": "none",
+    "transform": "none",
+    "overflow": false,
+    "errors": []
+  }
+]
