@@ -43,14 +43,13 @@ try {
       assert.equal(await page.locator("[data-manifesto-opening]").getAttribute("data-motion"), null);
       await page.emulateMedia({ reducedMotion: "no-preference" });
     }
-    for (const selector of ["#manifesto-name", "[aria-labelledby=principles-heading]", "[aria-labelledby=manifesto-work-heading]", "[aria-labelledby=manifesto-closing-heading]"]) {
+    for (const selector of ["#manifesto-name", "[aria-labelledby=principles-heading]", "[aria-labelledby=manifesto-closing-heading]"]) {
       await page.locator(selector).evaluate(element => scrollTo({ top: element.getBoundingClientRect().top + scrollY - 100, behavior: "instant" }));
       await page.waitForTimeout(250);
       const state = await page.evaluate(() => ({ overflow: document.documentElement.scrollWidth > innerWidth, headings: [...document.querySelectorAll("h2,h3")].filter(node => node.getBoundingClientRect().width > 0).map(node => ({ text: node.textContent, right: node.getBoundingClientRect().right })) }));
       assert.equal(state.overflow, false, `${name}: horizontal overflow at ${selector}`);
       assert.ok(state.headings.every(heading => heading.right <= width + 1), `${name}: heading outside viewport`);
     }
-    await page.waitForFunction(() => [...document.querySelectorAll("main img")].every(image => image.complete && image.naturalWidth > 0));
     await page.locator("[data-final-footer]").evaluate(element => element.scrollIntoView({ block: "start", behavior: "instant" }));
     await page.waitForTimeout(200);
     assert.equal(await page.locator("[data-work-nav]").evaluate(element => element.inert), true, `${name}: footer must disable covered nav`);
@@ -89,16 +88,13 @@ try {
   await page.locator('[aria-labelledby="manifesto-closing-heading"] a').click();
   await page.waitForURL("**/contato"); await page.waitForSelector("[data-contact-step]");
   await page.goBack(); await page.waitForURL("**/por-que-side**");
-  await page.locator('main a[href="/trabalhos?case=owl"]').click();
-  await page.waitForURL("**/trabalhos?case=owl"); await page.getByRole("dialog").waitFor();
-  await page.goBack(); await page.waitForURL("**/por-que-side**");
   await page.goto(`${base}/`); await page.waitForSelector("[data-hero-state=final]");
   await page.locator("[data-final-hero] button[aria-expanded]").click();
   await page.locator("[data-final-hero]").getByRole("button", { name: "Por que Side", exact: true }).click();
   await page.waitForURL("**/por-que-side");
   assert.deepEqual(errors, []);
-  results.push({ name: "mobile-menu-locale-contact-case-home-history", errors });
-  console.log("PASS mobile menu, locale, Contact, real case, Home and back");
+  results.push({ name: "mobile-menu-locale-contact-home-history", errors });
+  console.log("PASS mobile menu, locale, Contact, Home and back");
   await page.close();
 
   for (const [source, target] of [["/why-side", "/por-que-side"], ["/en/por-que-side", "/en/why-side"]]) {

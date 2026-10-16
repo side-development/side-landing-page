@@ -26,9 +26,12 @@ try {
     assert.equal(await page.locator("[data-final-footer]").count(), 1);
     assert.equal(await page.locator("[data-prototype-controls]").count(), 0);
     assert.equal(await page.locator("[data-pin-one], [data-pin-two]").count(), 0);
-    assert.ok((await page.locator('a[href*="?case="]').evaluateAll(elements => elements.map(element => element.getAttribute("href")))).every(href => href.startsWith(locale === "en" ? "/en/work?case=" : "/trabalhos?case=")));
+    assert.equal(await page.locator('main a[href*="?case="]').count(), 0);
+    assert.equal(await page.locator('[aria-labelledby="manifesto-work-heading"]').count(), 0);
+    assert.equal(await page.locator("#manifesto-name img, #manifesto-name svg").count(), 0);
+    assert.equal(await page.locator("#manifesto-name").getByText(locale === "en" ? "A name. A point of view." : "O nome é uma posição", { exact: true }).count(), 0);
     assert.deepEqual(errors, []);
-    console.log(`PASS ${path}: content, metadata, shell and authorized case destinations`);
+    console.log(`PASS ${path}: content, metadata, shell and requested removals`);
     await page.close();
   }
 } finally { await browser.close(); }
