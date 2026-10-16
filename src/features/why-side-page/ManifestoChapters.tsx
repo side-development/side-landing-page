@@ -32,15 +32,15 @@ export function ManifestoChapters({ locale }: { locale: ManifestoLocale }) {
       </ol>
     </section>
 
-    <section className={styles.closing} aria-labelledby="manifesto-closing-heading">
+    <section id="manifesto-closing" className={styles.closing} aria-labelledby="manifesto-closing-heading">
       <div className={styles.rule} data-editorial-rule aria-hidden="true" />
       <p className={styles.label} data-editorial-reveal>{copy.closingLabel}</p>
-      <h2 id="manifesto-closing-heading" data-editorial-reveal>{copy.closingTitle}</h2>
+      <h2 id="manifesto-closing-heading" data-editorial-reveal><span>{copy.closingTitle[0]}</span>{" "}<span className={styles.accent}>{copy.closingTitle[1]}</span></h2>
       <div className={styles.closingAction}>
         <p data-editorial-reveal>{copy.closingText}</p>
         <span className={`${glass.wrap} ${styles.contactWrap}`} data-editorial-reveal>
           <Link href={locale === "en" ? "/en/contact" : "/contato"} prefetch={false} className={`${glass.surface} ${glass.interactive} ${styles.contact}`}>
-            <span className={glass.content}>{copy.contact}<Arrow /></span>
+            <span className={glass.content}><span>{copy.contact}</span><span className={styles.contactArrow}><Arrow /></span></span>
           </Link>
           <span className={glass.shadow} aria-hidden="true" />
         </span>
