@@ -50,17 +50,23 @@ try {
     await page.screenshot({ path: join(out, `${name}-peak.png`) });
     for (const [label, selector, seconds] of [
       ["name", "#manifesto-name", 5],
-      ["principles", "[aria-labelledby=principles-heading]", 6],
-      ["work", "[aria-labelledby=manifesto-work-heading]", 8],
-      ["closing", "[aria-labelledby=manifesto-closing-heading]", 10],
+      ["principles", "#principles-heading", 4],
+      ["phase-1", "[data-editorial-phase]:nth-child(1)", 3],
+      ["phase-2", "[data-editorial-phase]:nth-child(2)", 3],
+      ["phase-3", "[data-editorial-phase]:nth-child(3)", 3],
+      ["closing", "[aria-labelledby=manifesto-closing-heading]", 7],
       ["footer", "[data-final-footer]", 7],
     ]) {
-      const target = await page.locator(selector).evaluate(element => element.getBoundingClientRect().top + scrollY - (element.hasAttribute("data-final-footer") ? 0 : 110));
+      const target = await page.locator(selector).evaluate(element => element.getBoundingClientRect().top + scrollY - (element.hasAttribute("data-final-footer") ? 0 : element.matches("[data-editorial-phase], #principles-heading") ? innerHeight * .8 : 110));
       await scrollTo(page, target, seconds);
       await page.waitForTimeout(1100);
       await page.screenshot({ path: join(out, `${name}-${label}.png`) });
     }
     const duration = (Date.now() - start) / 1000 - offset;
+    // Capture an overview after all phases have entered; the video ends before this return.
+    await page.locator("[aria-labelledby=principles-heading]").evaluate(element => scrollTo({ top: element.getBoundingClientRect().top + scrollY - 110, behavior: "instant" }));
+    await page.waitForTimeout(500);
+    await page.screenshot({ path: join(out, `${name}-principles.png`) });
     const raw = await page.video().path();
     await context.close();
     assert.deepEqual(errors, []);

@@ -2,7 +2,7 @@
   {
     "name": "desktop-pt",
     "width": 1440,
-    "height": 7948,
+    "height": 6357,
     "en": false,
     "reduced": false,
     "scrollWidth": 1430,
@@ -12,7 +12,7 @@
   {
     "name": "laptop-en",
     "width": 1280,
-    "height": 6450,
+    "height": 5012,
     "en": true,
     "reduced": false,
     "scrollWidth": 1270,
@@ -22,7 +22,7 @@
   {
     "name": "mobile-pt",
     "width": 390,
-    "height": 6307,
+    "height": 4795,
     "en": false,
     "reduced": false,
     "scrollWidth": 390,
@@ -32,7 +32,7 @@
   {
     "name": "mobile-en",
     "width": 390,
-    "height": 6310,
+    "height": 4706,
     "en": true,
     "reduced": false,
     "scrollWidth": 390,
@@ -42,7 +42,7 @@
   {
     "name": "small-mobile",
     "width": 320,
-    "height": 5595,
+    "height": 4055,
     "en": false,
     "reduced": false,
     "scrollWidth": 320,
@@ -52,7 +52,7 @@
   {
     "name": "tablet-en",
     "width": 768,
-    "height": 7451,
+    "height": 5394,
     "en": true,
     "reduced": false,
     "scrollWidth": 768,
@@ -62,7 +62,7 @@
   {
     "name": "landscape",
     "width": 844,
-    "height": 4654,
+    "height": 3353,
     "en": false,
     "reduced": false,
     "scrollWidth": 834,
@@ -72,7 +72,7 @@
   {
     "name": "reduced-desktop",
     "width": 1440,
-    "height": 5718,
+    "height": 4191,
     "en": true,
     "reduced": true,
     "scrollWidth": 1430,
@@ -82,7 +82,7 @@
   {
     "name": "reduced-mobile",
     "width": 390,
-    "height": 5210,
+    "height": 3698,
     "en": false,
     "reduced": true,
     "scrollWidth": 390,
@@ -90,7 +90,7 @@
     "errors": []
   },
   {
-    "name": "mobile-menu-locale-contact-case-home-history",
+    "name": "mobile-menu-locale-contact-home-history",
     "errors": []
   },
   {

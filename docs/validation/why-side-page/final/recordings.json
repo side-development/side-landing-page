@@ -4,7 +4,7 @@
     "width": 1440,
     "height": 1000,
     "file": "desktop.mp4",
-    "bytes": 9060901,
+    "bytes": 7872242,
     "probe": {
       "programs": [],
       "stream_groups": [],
@@ -17,7 +17,7 @@
         }
       ],
       "format": {
-        "duration": "59.900000"
+        "duration": "57.266667"
       }
     },
     "errors": []
@@ -27,7 +27,7 @@
     "width": 390,
     "height": 844,
     "file": "mobile.mp4",
-    "bytes": 5038916,
+    "bytes": 4332707,
     "probe": {
       "programs": [],
       "stream_groups": [],
@@ -40,7 +40,7 @@
         }
       ],
       "format": {
-        "duration": "60.133333"
+        "duration": "57.000000"
       }
     },
     "errors": []
