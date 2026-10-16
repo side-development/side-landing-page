@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -29,5 +29,15 @@ export function ManifestoChapterMotion({ children }: { children: ReactNode }) {
     });
     return () => media.revert();
   }, { scope: root });
+  useEffect(() => {
+    if (location.hash !== "#manifesto-closing") return;
+    // Align after the opening's scroll height has been measured, as the footer does.
+    let frame = requestAnimationFrame(() => {
+      frame = requestAnimationFrame(() => {
+        root.current?.querySelector("#manifesto-closing")?.scrollIntoView({ block: "start", behavior: "instant" });
+      });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, []);
   return <div ref={root} className={styles.body}>{children}</div>;
 }

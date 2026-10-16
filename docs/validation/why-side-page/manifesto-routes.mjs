@@ -30,8 +30,16 @@ try {
     assert.equal(await page.locator('[aria-labelledby="manifesto-work-heading"]').count(), 0);
     assert.equal(await page.locator("#manifesto-name img, #manifesto-name svg").count(), 0);
     assert.equal(await page.locator("#manifesto-name").getByText(locale === "en" ? "A name. A point of view." : "O nome é uma posição", { exact: true }).count(), 0);
+    await page.goto(`${base}${path}#manifesto-closing`);
+    await page.waitForFunction(() => {
+      const top = document.querySelector("#manifesto-closing")?.getBoundingClientRect().top;
+      return top >= 90 && top <= 115;
+    });
+    assert.equal(await page.locator("#manifesto-closing a").getAttribute("href"), locale === "en" ? "/en/contact" : "/contato");
+    await page.locator("#manifesto-closing a").click();
+    await page.waitForURL(`**${locale === "en" ? "/en/contact" : "/contato"}`);
     assert.deepEqual(errors, []);
-    console.log(`PASS ${path}: content, metadata, shell and requested removals`);
+    console.log(`PASS ${path}: content, metadata, shell, removals and direct CTA → Contact`);
     await page.close();
   }
 } finally { await browser.close(); }
