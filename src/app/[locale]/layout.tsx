@@ -3,6 +3,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { SITE_URL, socialMetadata } from "@/lib/seo";
 import "@/styles/globals.css";
 
 type Props = {
@@ -22,9 +23,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
-    metadataBase: new URL("https://sidecode.com.br"),
+    metadataBase: new URL(SITE_URL),
     title: t("title"),
     description: t("description"),
+    ...socialMetadata({ title: t("title"), description: t("description"), locale, path: locale === "en" ? "/en" : "/" }),
     alternates: {
       canonical: locale === "en" ? "/en" : "/",
       languages: { "pt-BR": "/", en: "/en", "x-default": "/" },

@@ -69,7 +69,7 @@
 .sectionLinkList, .sectionLinkItems { display: contents; }
 .navigation .menuContact { display: none; }
 
-.navigation button, .navigation a {
+.navigation :is(button, a), .navigation a {
   padding: 8px 0;
   border: 0;
   background: none;
@@ -81,7 +81,7 @@
   white-space: nowrap;
 }
 
-.navigation button:not(.menuToggle) {
+.navigation :is(button, a):not(.menuToggle) {
   position: relative;
 }
 
@@ -110,17 +110,17 @@
   transition: stroke-dashoffset 220ms ease;
 }
 
-.navigation button:focus-visible .navUnderline path,
-.navigation button:active .navUnderline path {
+.navigation :is(button, a):focus-visible .navUnderline path,
+.navigation :is(button, a):active .navUnderline path {
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 480ms cubic-bezier(.25, .46, .45, .94);
 }
 
-.navigation button:is(:focus-visible, :active) .navUnderline { opacity: 1; }
+.navigation :is(button, a):is(:focus-visible, :active) .navUnderline { opacity: 1; }
 
 @media (hover: hover) and (pointer: fine) {
-  .navigation button:hover .navUnderline { opacity: 1; }
-  .navigation button:hover .navUnderline path {
+  .navigation :is(button, a):hover .navUnderline { opacity: 1; }
+  .navigation :is(button, a):hover .navUnderline path {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 480ms cubic-bezier(.25, .46, .45, .94);
   }
@@ -128,8 +128,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .navUnderline { transition: none; }
-  .navigation button .navUnderline path,
-  .navigation button:is(:hover, :focus-visible, :active) .navUnderline path { transition: none; }
+  .navigation :is(button, a) .navUnderline path,
+  .navigation :is(button, a):is(:hover, :focus-visible, :active) .navUnderline path { transition: none; }
 }
 
 .navigation .menuToggle {
@@ -309,9 +309,9 @@
     align-self: center;
   }
   .finalHeader[data-menu-open="true"] .navigation > .contact { visibility: hidden; }
-  .navigation button, .navigation a { font-size: 13px; }
-  .navigation button:focus .navUnderline { opacity: 1; }
-  .navigation button:focus .navUnderline path {
+  .navigation :is(button, a), .navigation a { font-size: 13px; }
+  .navigation :is(button, a):focus .navUnderline { opacity: 1; }
+  .navigation :is(button, a):focus .navUnderline path {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 480ms cubic-bezier(.25, .46, .45, .94);
   }
@@ -344,7 +344,7 @@
   }
   .sectionLinkItems { display: flex; flex-direction: column; flex-shrink: 0; }
   .navLabel { position: relative; display: inline-block; }
-  .sectionLinks button {
+  .sectionLinks :is(button, a) {
     align-self: stretch;
     padding: 12px 0;
     border-bottom: 1px solid rgb(128 128 128 / 20%);
@@ -354,14 +354,14 @@
     transform: translateY(9px);
     transition: opacity 160ms ease, transform 220ms ease;
   }
-  .sectionLinks[data-open="true"] button {
+  .sectionLinks[data-open="true"] :is(button, a) {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 360ms ease, transform 460ms cubic-bezier(.22, 1, .36, 1);
     transition-delay: 90ms;
   }
-  .sectionLinks[data-open="true"] button:nth-child(2) { transition-delay: 150ms; }
-  .sectionLinks[data-open="true"] button:nth-child(3) { transition-delay: 210ms; }
+  .sectionLinks[data-open="true"] :is(button, a):nth-child(2) { transition-delay: 150ms; }
+  .sectionLinks[data-open="true"] :is(button, a):nth-child(3) { transition-delay: 210ms; }
   .sectionLinks .navUnderline { bottom: -6px; height: 10px; }
   .sectionLinks .navUnderline path { stroke-width: 2.2px; }
   .sectionLinks .menuContact {
@@ -404,12 +404,12 @@
 
   @media (prefers-reduced-motion: reduce) {
     .menuToggle path { transition: none; }
-    .navigation button:focus .navUnderline path { transition: none; }
+    .navigation :is(button, a):focus .navUnderline path { transition: none; }
     .finalHeader { --menu-reveal-duration: 140ms; }
     .finalHeader::before { transition: opacity 140ms ease; }
     .sectionLinks { opacity: 0; transition: opacity 140ms ease, visibility 0s 140ms; }
     .sectionLinks[data-open="true"] { opacity: 1; transition-delay: 0s; }
-    .sectionLinks button, .sectionLinks[data-open="true"] button { transform: none; transition: opacity 140ms ease; transition-delay: 0s; }
+    .sectionLinks :is(button, a), .sectionLinks[data-open="true"] :is(button, a) { transform: none; transition: opacity 140ms ease; transition-delay: 0s; }
   }
 
   .finalSupport { flex-direction: column; align-items: flex-start; gap: 32px; }

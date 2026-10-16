@@ -88,11 +88,20 @@ export function CaseOverlay({
 
     overlayRef.current?.focus();
 
+    const overlay = overlayRef.current;
+    const siblings = Array.from(overlay?.parentElement?.children ?? [])
+      .filter((node): node is HTMLElement => node instanceof HTMLElement && node !== overlay);
+    const previousInert = siblings.map(node => node.inert);
+    siblings.forEach(node => { node.inert = true; });
+
     return () => {
       document.body.style.overflow = originalOverflow;
       document.body.style.paddingRight = originalPaddingRight;
-      if (triggerElement && typeof triggerElement.focus === "function") {
+      siblings.forEach((node, i) => { node.inert = previousInert[i]; });
+      if (triggerElement?.isConnected) {
         triggerElement.focus();
+      } else {
+        document.querySelector<HTMLElement>("#work-main h1")?.focus({ preventScroll: true });
       }
     };
   }, [triggerElement]);
@@ -103,6 +112,19 @@ export function CaseOverlay({
       if (event.key === "Escape") {
         event.preventDefault();
         onClose();
+      }
+      if (event.key === "Tab") {
+        const overlay = overlayRef.current;
+        if (!overlay) return;
+        const controls = Array.from(overlay.querySelectorAll<HTMLElement>('a[href], button:not(:disabled), input:not(:disabled), [tabindex="0"]'))
+          .filter(node => node.getClientRects().length > 0 && !node.closest("[inert]"));
+        const first = controls[0], last = controls.at(-1);
+        if (!first) { event.preventDefault(); overlay.focus(); }
+        else if (event.shiftKey && (document.activeElement === first || document.activeElement === overlay)) {
+          event.preventDefault(); last?.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault(); first.focus();
+        }
       }
     }
     window.addEventListener("keydown", handleKeyDown);
@@ -229,7 +251,7 @@ export function CaseOverlay({
 
     const el = overlayRef.current?.querySelector<HTMLElement>(`#${id}`);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      el.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "start" });
     }
   };
 
@@ -380,11 +402,12 @@ export function CaseOverlay({
                 const isFirst = i === 0;
                 return (
                   <figure
-                    key={i}
+                    key={`${displayedProject.slug}-${item.src}`}
                     className={`${styles.mediaItem} ${isFirst ? styles.mediaItemFull : ""}`}
                   >
                     <div className={styles.mediaFrame}>
                       <Image
+                        key={`${displayedProject.slug}-${item.src}`}
                         src={item.src}
                         alt={item.alt[locale]}
                         fill

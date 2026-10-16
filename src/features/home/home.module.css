@@ -1,4 +1,9 @@
 .home { background: #fff; }
+.staticHome { min-height: 100svh; padding: clamp(24px, 6vw, 80px); display: grid; align-content: center; gap: 32px; background: #fff; }
+.staticHome h1 { max-width: 720px; }
+.staticHome p { max-width: 640px; font-size: clamp(20px, 4vw, 32px); }
+.staticHome nav { display: flex; flex-wrap: wrap; gap: 24px; }
+.staticHome a { color: #3919bd; }
 .home :global([data-final-hero] > header) { transition: color 400ms ease; }
 .home:has(:global([data-services][data-dark="true"])):not(:has(:global([data-trust-chapter][data-light="true"]))) :global([data-final-hero] > header) {
   color: #eae8ed;

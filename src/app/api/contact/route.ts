@@ -1,10 +1,15 @@
 import { createHash } from "node:crypto";
 import { contactContent, contactFields, choiceValues, customChoiceText, validContactField, type ContactAnswers, type ContactField } from "@/features/contact/contact-content";
+import { readJsonBody } from "@/lib/read-json-body";
 
-// Bounded per-instance throttling. No visitor content is logged or stored here.
+// Bounded per-instance throttling; distributed hosts still need a shared edge limit.
+// No visitor content is logged or stored here.
 const attempts = new Map<string, { count: number; until: number }>();
+let aggregate = { count: 0, until: 0 };
 function allow(email: string) {
   const now = Date.now();
+  if (aggregate.until <= now) aggregate = { count: 0, until: now + 60000 };
+  if (aggregate.count >= 30) return false;
   for (const [key, entry] of attempts) if (entry.until <= now) attempts.delete(key);
   const key = createHash("sha256").update(email).digest("hex");
   const entry = attempts.get(key);
@@ -14,6 +19,7 @@ function allow(email: string) {
     if (attempts.size >= 1000) return false;
     attempts.set(key, { count: 1, until: now + 60000 });
   }
+  aggregate.count++;
   return true;
 }
 
@@ -22,12 +28,9 @@ export async function POST(request: Request) {
   const origin = request.headers.get("origin");
   if (origin && origin !== new URL(request.url).origin) return reply(403);
   if (!request.headers.get("content-type")?.startsWith("application/json")) return reply(415);
-  let body: unknown;
-  try {
-    const raw = await request.text();
-    if (raw.length > 8192) return reply(413);
-    body = JSON.parse(raw);
-  } catch { return reply(400); }
+  const parsed = await readJsonBody(request, 8192);
+  if (!parsed.ok) return reply(parsed.status);
+  const body = parsed.body;
   if (!body || typeof body !== "object" || Array.isArray(body)) return reply(400);
   const fields = body as Record<string, unknown>;
   if (fields.company || (fields.locale !== "en" && fields.locale !== "pt-BR")) return reply(400);

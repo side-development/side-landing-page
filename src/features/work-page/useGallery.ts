@@ -11,8 +11,8 @@ gsap.registerPlugin(useGSAP);
 export const AUTOPLAY_MS = 6800;
 const DRAG_THRESHOLD = 6;
 
-type Controls = { next(): void; prev(): void; goTo(index: number): void };
-const idle: Controls = { next() {}, prev() {}, goTo() {} };
+type Controls = { next(): void; prev(): void; goTo(index: number): void; togglePause(): void };
+const idle: Controls = { next() {}, prev() {}, goTo() {}, togglePause() {} };
 
 function readTuning(stage: HTMLElement): BeltTuning {
   const style = getComputedStyle(stage);
@@ -34,6 +34,8 @@ function readTuning(stage: HTMLElement): BeltTuning {
  */
 export function useGallery(region: RefObject<HTMLElement | null>, count: number) {
   const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const manualPause = useRef(false);
   const controls = useRef<Controls>(idle);
 
   useGSAP(() => {
@@ -62,7 +64,7 @@ export function useGallery(region: RefObject<HTMLElement | null>, count: number)
     }
 
     function sync() {
-      const playing = fine.matches && !reduced.matches && flags.visible && !document.hidden
+      const playing = !manualPause.current && fine.matches && !reduced.matches && flags.visible && !document.hidden
         && !flags.hover && !flags.focus && !flags.drag && !tween?.isActive();
       if (!playing) { timer?.kill(); timer = null; return; }
       if (!timer) timer = gsap.delayedCall(AUTOPLAY_MS / 1000, () => { timer = null; goTo(mod(reported + 1, count), true); });
@@ -92,7 +94,11 @@ export function useGallery(region: RefObject<HTMLElement | null>, count: number)
       moveTo(base + direction);
     }
 
-    controls.current = { next: () => step(1), prev: () => step(-1), goTo: destination => goTo(destination) };
+    controls.current = { next: () => step(1), prev: () => step(-1), goTo: destination => goTo(destination), togglePause: () => {
+      manualPause.current = !manualPause.current;
+      setPaused(manualPause.current);
+      sync();
+    } };
 
     // Drag / swipe -------------------------------------------------------------------
     let pointer = -1;
@@ -178,7 +184,7 @@ export function useGallery(region: RefObject<HTMLElement | null>, count: number)
     observer.observe(root);
     const resize = new ResizeObserver(() => { tuning = readTuning(stage); render(); });
     resize.observe(stage);
-    const environment = () => sync();
+    const environment = () => { if (reduced.matches) tween?.progress(1); sync(); };
 
     stage.addEventListener("pointerdown", down);
     stage.addEventListener("pointermove", move);
@@ -222,6 +228,8 @@ export function useGallery(region: RefObject<HTMLElement | null>, count: number)
 
   return {
     index,
+    paused,
+    togglePause: () => controls.current.togglePause(),
     next: () => controls.current.next(),
     prev: () => controls.current.prev(),
     goTo: (destination: number) => controls.current.goTo(destination),

@@ -4,7 +4,7 @@
 .intro h4 span { color: #89838f; }
 .intro p { max-width: 150px; margin: 0 0 5px; color: #716979; font-size: 12px; line-height: 1.5; }
 .construction { position: relative; height: clamp(310px, 39vw, 480px); }
-.annotation { position: absolute; z-index: 2; top: 22px; left: 24px; right: 24px; display: flex; justify-content: space-between; font: 10px/1.4 monospace; color: #87818f; }
+.annotation { position: absolute; z-index: 2; top: 22px; left: 24px; right: 24px; display: flex; justify-content: space-between; font: 10px/1.4 monospace; color: #706a7a; }
 .grid { position: absolute; width: calc(100% + 80px); height: 100%; top: 0; left: -40px; fill: none; pointer-events: none; mask-image: linear-gradient(to bottom, transparent, #000 9%, #000 91%, transparent); }
 .gridLines { stroke: #e6e2ed; stroke-width: .7; }
 .logo { position: absolute; left: 50%; top: 50%; width: clamp(180px, 23vw, 270px); transform: translate(-50%, -50%); }
@@ -24,7 +24,7 @@
   .expression:hover strong > span:first-child { opacity: 0; transform: skewX(-6deg); }
   .expression:hover .italicLetters { opacity: 1; transform: skewX(0); }
 }
-.swatch span { display: flex; justify-content: space-between; gap: 6px; margin-top: 12px; font: 9px/1 monospace; color: #96909e; }
+.swatch span { display: flex; justify-content: space-between; gap: 6px; margin-top: 12px; font: 9px/1 monospace; color: #706a7a; }
 .swatch small { font-size: 9px; color: #5f576b; }
 .expression > div { display: flex; align-items: center; justify-content: space-between; gap: 22px; }
 .expression strong { display: inline-grid; font-size: clamp(60px, 7.4vw, 105px); font-weight: 400; letter-spacing: -.065em; line-height: .85; }

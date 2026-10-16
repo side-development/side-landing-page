@@ -89,7 +89,7 @@ export function WorkExperience({ locale, nav, initialCase }: Props) {
       <WorkNav locale={locale} nav={nav} copy={copy} />
       <main id="work-main">
         <header ref={intro} className={styles.intro}>
-          <h1>
+          <h1 tabIndex={-1}>
             {heading}
             <span className={styles.dot} aria-hidden="true" />
           </h1>
@@ -118,6 +118,7 @@ export function WorkExperience({ locale, nav, initialCase }: Props) {
       {/* Fullscreen Case Overlay with URL sync */}
       {activeProject && (
         <CaseOverlay
+          key={activeProject.slug}
           project={activeProject}
           locale={locale}
           copy={copy}

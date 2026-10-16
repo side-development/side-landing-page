@@ -20,7 +20,7 @@ export function DigitalExperienceDemo({ locale, replay = 0 }: { locale: DigitalE
         {[copy.headline, copy.alternateHeadline].map((headline, state) => <span className={styles.headlineState} data-digital-headline={state} aria-hidden="true" key={state}>{headline.map(line => <span className={styles.lineMask} key={line}><span data-digital-line>{line}</span></span>)}</span>)}
       </h2>
       <div className={styles.lower}>
-        <div data-digital-detail><p className={styles.note} data-digital-note-layout aria-label={composed ? copy.alternateNote : copy.note}>{[copy.note, copy.alternateNote].map((note, state) => <span data-digital-note={state} aria-hidden="true" key={state}>{note}</span>)}</p></div>
+        <div data-digital-detail><p className={styles.note} data-digital-note-layout><span className={styles.srOnly}>{composed ? copy.alternateNote : copy.note}</span>{[copy.note, copy.alternateNote].map((note, state) => <span data-digital-note={state} aria-hidden="true" key={state}>{note}</span>)}</p></div>
       </div>
     </div>
     <footer className={styles.canvasFooter} data-digital-detail><span>{copy.caption}</span></footer>

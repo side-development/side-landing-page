@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import { useId, useLayoutEffect, useRef, useState, useSyncExternalStore } from "react";
 import { BrandWordmark } from "./BrandWordmark";
@@ -21,7 +20,6 @@ function subscribeMobile(callback: () => void) {
 }
 
 export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: HeroCopy; visible: boolean; focusOnReveal: boolean; onReplay?: () => void }) {
-  const router = useRouter();
   const locale = useLocale();
   const [open, setOpen] = useState(false);
   const menuId = useId();
@@ -41,7 +39,7 @@ export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: He
     if (!menuOpen) return;
     const header = section.current?.querySelector("header");
     if (!header) return;
-    const frame = requestAnimationFrame(() => header.querySelector<HTMLButtonElement>("nav button")?.focus({ preventScroll: true }));
+    const frame = requestAnimationFrame(() => header.querySelector<HTMLAnchorElement>("nav a")?.focus({ preventScroll: true }));
     return () => cancelAnimationFrame(frame);
   }, [menuOpen]);
 
@@ -83,14 +81,14 @@ export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: He
           <div id={menuId} className={styles.sectionLinks} data-open={menuOpen} inert={mobile && !menuOpen} aria-hidden={mobile && !menuOpen}>
             <div className={styles.sectionLinkList}>
               <div className={styles.sectionLinkItems}>
-                <button type="button" onClick={() => router.push(locale === "en" ? "/en/work" : "/trabalhos")}><span className={styles.navLabel}>{copy.work}<NavUnderline variant="work" /></span></button>
-                <button type="button" onClick={() => router.push(locale === "en" ? "/en/services" : "/servicos")}><span className={styles.navLabel}>{copy.services}<NavUnderline variant="services" /></span></button>
-                <button type="button" onClick={() => router.push(locale === "en" ? "/en/why-side" : "/por-que-side")}><span className={styles.navLabel}>{copy.why}<NavUnderline variant="why" /></span></button>
+                <Link href={locale === "en" ? "/en/work" : "/trabalhos"} prefetch={false}><span className={styles.navLabel}>{copy.work}<NavUnderline variant="work" /></span></Link>
+                <Link href={locale === "en" ? "/en/services" : "/servicos"} prefetch={false}><span className={styles.navLabel}>{copy.services}<NavUnderline variant="services" /></span></Link>
+                <Link href={locale === "en" ? "/en/why-side" : "/por-que-side"} prefetch={false}><span className={styles.navLabel}>{copy.why}<NavUnderline variant="why" /></span></Link>
               </div>
-              <button className={styles.menuContact} type="button" onClick={() => router.push(locale === "en" ? "/en/contact" : "/contato")}>{copy.contact}<span aria-hidden="true">→</span></button>
+              <Link className={styles.menuContact} href={locale === "en" ? "/en/contact" : "/contato"} prefetch={false}>{copy.contact}<span aria-hidden="true">→</span></Link>
             </div>
           </div>
-          <button className={styles.contact} type="button" inert={menuOpen} aria-hidden={menuOpen || undefined} onClick={() => router.push(locale === "en" ? "/en/contact" : "/contato")}>{copy.contact}<NavUnderline variant="contact" /></button>
+          <Link className={styles.contact} inert={menuOpen} aria-hidden={menuOpen || undefined} href={locale === "en" ? "/en/contact" : "/contato"} prefetch={false}>{copy.contact}<NavUnderline variant="contact" /></Link>
           <button ref={toggle} className={styles.menuToggle} type="button" aria-label={menuOpen ? copy.closeMenu : copy.menu} aria-expanded={menuOpen} aria-controls={menuId} onClick={toggleMenu}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
               <path d="M4 12H20" /><path d="M4 12H20" /><path d="M4 12H20" />

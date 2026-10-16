@@ -124,8 +124,8 @@ export function FinalFooter({ locale, localeLinks }: { locale: "pt-BR" | "en"; l
       <div className={styles.locale}>
         <span className={styles.label}>{english ? "Language" : "Idioma"}</span>
         <nav className={styles.languages} aria-label={english ? "Language" : "Idioma"}>
-          <Link href={`${localeLinks?.["pt-BR"] ?? localPath}#side-footer`} hrefLang="pt-BR" lang="pt-BR" aria-label="Português" aria-current={!english ? "page" : undefined} prefetch={false}>PT</Link>
-          <Link href={`${localeLinks?.en ?? `/en${localPath === "/" ? "" : localPath}`}#side-footer`} hrefLang="en" lang="en" aria-label="English" aria-current={english ? "page" : undefined} prefetch={false}>EN</Link>
+          <Link href={`${localeLinks?.["pt-BR"] ?? localPath}#side-footer`} hrefLang="pt-BR" lang="pt-BR" aria-label="PT — Português" aria-current={!english ? "page" : undefined} prefetch={false}>PT</Link>
+          <Link href={`${localeLinks?.en ?? `/en${localPath === "/" ? "" : localPath}`}#side-footer`} hrefLang="en" lang="en" aria-label="EN — English" aria-current={english ? "page" : undefined} prefetch={false}>EN</Link>
         </nav>
       </div>
       <div className={styles.updates}>

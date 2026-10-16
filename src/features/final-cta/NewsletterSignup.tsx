@@ -22,7 +22,8 @@ export function NewsletterSignup({ english }: { english: boolean }) {
     setMessage("");
     try {
       const response = await fetch("/api/newsletter", {
-        method: "POST", headers: { "Content-Type": "application/json" },
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: fields.get("email"), company: fields.get("company") }),
         signal: AbortSignal.timeout(12000),
       });
@@ -39,20 +40,37 @@ export function NewsletterSignup({ english }: { english: boolean }) {
     }
   }
 
-  return <form className={styles.signup} onSubmit={subscribe} aria-busy={status === "pending"}>
-    <label htmlFor={`${id}-email`} className={styles.label}>{english ? "Get updates" : "Receba novidades"}</label>
-    <div className={`${glass.surface} ${styles.emailField}`}>
-      <input id={`${id}-email`} name="email" type="email" autoComplete="email" inputMode="email" required maxLength={254}
-        placeholder={english ? "Your email" : "Seu email"} aria-describedby={`${id}-message`} disabled={status === "success"} />
-      <GlassButton className={styles.subscribeButton} size="sm" type="submit" disabled={status === "pending" || status === "success"}>
-        {status === "pending" ? (english ? "Joining…" : "Inscrevendo…")
-          : status === "success" ? (english ? "Subscribed" : "Inscrito") : (english ? "Subscribe" : "Inscrever")}
-      </GlassButton>
-    </div>
-    <div className={styles.honeypot} aria-hidden="true">
-      <label htmlFor={`${id}-company`}>Company website</label>
-      <input id={`${id}-company`} name="company" type="text" tabIndex={-1} autoComplete="off" />
-    </div>
-    <p id={`${id}-message`} className={styles.signupMessage} data-error={status === "error"} role="status">{message}</p>
-  </form>;
+  return (
+    <form className={styles.signup} onSubmit={subscribe} aria-busy={status === "pending"}>
+      <label htmlFor={`${id}-email`} className={styles.label}>{english ? "Get updates" : "Receba novidades"}</label>
+      <div className={`${glass.surface} ${styles.emailField}`}>
+        <input
+          id={`${id}-email`}
+          name="email"
+          type="email"
+          autoComplete="email"
+          inputMode="email"
+          required
+          maxLength={254}
+          placeholder={english ? "Your email" : "Seu email"}
+          aria-describedby={`${id}-message`}
+          disabled={status === "success"}
+        />
+        <GlassButton className={styles.subscribeButton} size="sm" type="submit" disabled={status === "pending" || status === "success"}>
+          {status === "pending"
+            ? (english ? "Joining…" : "Inscrevendo…")
+            : status === "success"
+            ? (english ? "Subscribed" : "Inscrito")
+            : (english ? "Subscribe" : "Inscrever")}
+        </GlassButton>
+      </div>
+      <div className={styles.honeypot} aria-hidden="true">
+        <label htmlFor={`${id}-company`}>Company website</label>
+        <input id={`${id}-company`} name="company" type="text" tabIndex={-1} autoComplete="off" />
+      </div>
+      <p id={`${id}-message`} className={styles.signupMessage} data-error={status === "error"} role="status">
+        {message}
+      </p>
+    </form>
+  );
 }

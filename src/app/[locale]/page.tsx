@@ -1,5 +1,6 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { HomeExperience } from "@/features/home/HomeExperience";
+import { StaticHome } from "@/features/home/StaticHome";
 
 export default async function Home() {
   const t = await getTranslations("FakeError");
@@ -8,6 +9,7 @@ export default async function Home() {
   const locale = await getLocale();
 
   return (
+    <><StaticHome english={locale === "en"} description={h("support")} />
     <HomeExperience locale={locale === "en" ? "en" : "pt-BR"} errorCopy={{
       heading: t("heading"),
       description: t("description"),
@@ -29,6 +31,6 @@ export default async function Home() {
       allHref: locale === "en" ? "/en/work" : "/trabalhos",
       route: { name: "Route Security", category: w("route.category"), teaser: w("route.teaser") },
       owl: { name: "OWL", category: w("owl.category"), teaser: w("owl.teaser") },
-    }} />
+    }} /></>
   );
 }

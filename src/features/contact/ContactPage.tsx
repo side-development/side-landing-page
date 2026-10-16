@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
+import { socialMetadata } from "@/lib/seo";
 import { ContactFlow } from "./ContactFlow";
 import { contactContent } from "./contact-content";
 
@@ -11,6 +12,7 @@ export async function contactMetadata({ params }: ContactPageProps): Promise<Met
   const copy = contactContent[locale];
   return {
     title: copy.title, description: copy.description,
+    ...socialMetadata({ title: copy.title, description: copy.description, locale, path: locale === "en" ? "/en/contact" : "/contato" }),
     alternates: {
       canonical: locale === "en" ? "/en/contact" : "/contato",
       languages: { "pt-BR": "/contato", en: "/en/contact", "x-default": "/contato" },
