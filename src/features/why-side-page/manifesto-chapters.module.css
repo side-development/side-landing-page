@@ -1,0 +1,119 @@
+.page { --manifesto-inset: clamp(24px, 6vw, 112px); }
+.navBackdrop { position: fixed; inset: 0 0 auto; height: 88px; z-index: 29; background: var(--paper); }
+.page:has(:global([data-footer-covered="true"])) .navBackdrop { visibility: hidden; }
+.page :global([data-final-footer]) { background: var(--paper); }
+.body { max-width: 1920px; margin-inline: auto; }
+.body section { scroll-margin-top: 110px; }
+.name:focus { outline: none; }
+.label { margin: 0; font-size: 13px; font-weight: 500; letter-spacing: -.01em; line-height: 1.4; }
+.accent { color: var(--purple); }
+.name { padding: clamp(80px, 12vw, 180px) var(--manifesto-inset) clamp(100px, 14vw, 220px); }
+.nameLayout { display: grid; grid-template-columns: 1.6fr 1fr; gap: clamp(40px, 7vw, 120px); margin-top: 64px; align-items: start; }
+.name h2, .work h2, .closing h2 { margin: 0; font-size: clamp(54px, 6.9vw, 120px); line-height: .99; font-weight: 700; letter-spacing: -.065em; }
+.name h2 span, .work h2 span { display: block; }
+.nameAside { padding-top: 10px; }
+.origin { font-size: 14px; margin-bottom: 24px; }
+.nameText { font-size: clamp(19px, 1.7vw, 25px); line-height: 1.4; letter-spacing: -.025em; }
+.brandSignature { display: flex; align-items: end; gap: 24px; margin-top: 72px; }
+.wordmark { width: clamp(130px, 15vw, 230px); height: auto; flex-shrink: 0; }
+.brandSignature p { font-size: 12px; line-height: 1.35; padding-bottom: 3px; }
+.brandSignature p span { display: block; }
+
+.principles { padding-inline: var(--manifesto-inset); }
+.principles > .label { margin-bottom: 40px; }
+.principleList { padding: 0; margin: 0; list-style: none; }
+.principle { position: relative; display: grid; grid-template-columns: 52px minmax(0, 1.65fr) minmax(0, .85fr); gap: clamp(24px, 4vw, 64px); align-items: start; padding-block: 56px 72px; }
+.rule { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: #11111038; }
+.number { color: var(--purple); font-size: 13px; line-height: 1.4; padding-top: 11px; font-variant-numeric: tabular-nums; }
+.principle h3 { margin: 0; max-width: 950px; font-size: clamp(42px, 5.2vw, 90px); line-height: 1.02; font-weight: 500; letter-spacing: -.06em; }
+.principle p { padding-top: 9px; font-size: clamp(16px, 1.35vw, 20px); line-height: 1.5; letter-spacing: -.02em; }
+
+.work { padding: clamp(100px, 13vw, 200px) var(--manifesto-inset) 0; }
+.workIntro { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr); gap: clamp(40px, 7vw, 120px); align-items: end; margin-top: 40px; }
+.work h2 { font-size: clamp(48px, 5.8vw, 102px); }
+.workIntro > p { font-size: clamp(18px, 1.5vw, 22px); line-height: 1.45; letter-spacing: -.025em; padding-bottom: 4px; }
+.workFragments { display: grid; grid-template-columns: 1.35fr 1fr; align-items: start; gap: clamp(24px, 5vw, 88px); margin-top: 88px; }
+.fragment { min-width: 0; }
+.fragment:nth-child(2) { margin-top: 120px; }
+.projectLink { display: block; color: inherit; text-decoration: none; }
+.imageFrame { overflow: hidden; background: #e6e4de; }
+.imageFrame img { width: 100%; height: auto; display: block; aspect-ratio: 1.6; object-fit: cover; transition: transform 650ms cubic-bezier(.22,1,.36,1); }
+.projectCaption { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-top: 20px; }
+.projectCaption h3 { margin: 0; font-size: clamp(25px, 2.7vw, 42px); font-weight: 500; letter-spacing: -.055em; line-height: 1.1; }
+.projectCaption p { margin-top: 8px; font-size: 12px; line-height: 1.4; color: #66635f; }
+.projectCaption > svg, .textLink svg, .vision svg { width: 24px; height: 24px; flex-shrink: 0; transition: transform 250ms ease; }
+.projectCaption > svg { transform: rotate(-35deg); }
+.vision { display: grid; grid-template-columns: 1.35fr 1fr; gap: clamp(24px, 5vw, 88px); margin-top: 88px; padding-block: 32px; border-top: 1px solid #11111038; border-bottom: 1px solid #11111038; }
+.vision h3 { margin: 0; font-size: clamp(30px, 3.3vw, 54px); font-weight: 500; letter-spacing: -.06em; }
+.vision h3 a { display: inline-flex; align-items: center; gap: 20px; text-decoration: none; color: inherit; }
+.vision svg { transform: rotate(-35deg); }
+.vision p { font-size: 16px; line-height: 1.5; letter-spacing: -.015em; }
+.vision small { display: block; margin-top: 14px; font-size: 12px; color: #66635f; line-height: 1.4; }
+.textLink { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 52px; margin-top: 32px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); font-size: 16px; }
+
+.closing { position: relative; margin: clamp(120px, 14vw, 220px) var(--manifesto-inset) 0; padding-block: 48px clamp(96px, 12vw, 180px); }
+.closing h2 { max-width: 1300px; margin-top: 48px; font-size: clamp(58px, 7.6vw, 132px); }
+.closingAction { display: flex; justify-content: space-between; align-items: end; gap: 48px; margin-top: 64px; }
+.closingAction > p { max-width: 440px; font-size: 19px; line-height: 1.4; letter-spacing: -.025em; }
+.contactWrap { flex-shrink: 0; }
+.contact { display: flex; align-items: center; justify-content: center; min-width: 220px; min-height: 66px; padding: 18px 28px; color: var(--ink); text-decoration: none; font-size: 16px; font-weight: 600; }
+.contact > span { display: inline-flex; align-items: center; justify-content: space-between; gap: 36px; width: 100%; }
+.contact svg { width: 24px; height: 24px; }
+
+@media (hover: hover) and (pointer: fine) {
+  .projectLink:hover img { transform: scale(1.025); }
+  .projectLink:hover .projectCaption > svg, .vision a:hover svg { transform: rotate(-35deg) translateX(4px); }
+  .textLink:hover svg { transform: translateX(4px); }
+}
+@media (max-width: 1100px) and (min-width: 801px) {
+  .nameLayout { grid-template-columns: 1.2fr 1fr; gap: 48px; }
+  .brandSignature { flex-wrap: wrap; gap: 16px; margin-top: 44px; }
+  .principle { grid-template-columns: 28px minmax(0, 1.5fr) minmax(0, 1fr); gap: 24px; }
+}
+@media (max-width: 800px) {
+  .navBackdrop { height: 80px; }
+  .body section { scroll-margin-top: 96px; }
+  .name { padding-top: 80px; padding-bottom: 112px; }
+  .nameLayout { grid-template-columns: 1fr; gap: 40px; margin-top: 36px; }
+  .name h2 { font-size: clamp(46px, 10.6vw, 80px); }
+  .nameAside { max-width: 540px; padding-top: 0; }
+  .nameText { font-size: 19px; }
+  .origin { margin-bottom: 18px; }
+  .brandSignature { margin-top: 42px; justify-content: space-between; gap: 20px; }
+  .wordmark { width: clamp(140px, 36vw, 220px); }
+  .brandSignature p { font-size: 11px; }
+  .principles > .label { max-width: 240px; margin-bottom: 24px; }
+  .principle { grid-template-columns: 24px minmax(0, 1fr); gap: 0 20px; padding-block: 34px 44px; }
+  .number { grid-column: 1; padding-top: 6px; font-size: 11px; }
+  .principle h3 { grid-column: 2; font-size: clamp(36px, 8.8vw, 60px); }
+  .principle p { grid-column: 2; max-width: 440px; padding-top: 24px; font-size: 16px; }
+  .work { padding-top: 92px; }
+  .workIntro { grid-template-columns: minmax(0, 1fr); gap: 28px; margin-top: 32px; }
+  .work h2 { font-size: clamp(42px, 9.7vw, 74px); }
+  .workIntro > p { max-width: 480px; font-size: 18px; }
+  .workFragments { grid-template-columns: 1fr; gap: 44px; margin-top: 44px; }
+  .fragment:nth-child(2) { margin-top: 0; margin-left: 32px; }
+  .projectCaption { padding-top: 16px; }
+  .projectCaption h3 { font-size: 28px; }
+  .projectCaption p { max-width: 260px; font-size: 11px; }
+  .vision { grid-template-columns: 1fr; gap: 18px; margin-top: 48px; padding-block: 28px; }
+  .vision h3 { font-size: 36px; }
+  .vision p { max-width: 460px; }
+  .textLink { font-size: 15px; margin-top: 24px; }
+  .closing { margin-top: 96px; padding-top: 32px; padding-bottom: 96px; }
+  .closing h2 { font-size: clamp(48px, 10.8vw, 82px); margin-top: 32px; }
+  .closingAction { flex-direction: column; align-items: start; gap: 32px; margin-top: 32px; }
+  .closingAction > p { font-size: 18px; }
+  .contact { min-height: 62px; min-width: 230px; }
+}
+@media (max-width: 360px) {
+  .brandSignature { align-items: start; flex-direction: column; }
+  .principle { column-gap: 12px; }
+  .name h2 { font-size: 42px; }
+  .work h2 { font-size: clamp(30px, 10vw, 36px); }
+}
+@media (max-height: 520px) and (min-width: 801px) { .navBackdrop { height: 68px; } }
+@media (prefers-reduced-motion: reduce) {
+  .imageFrame img, .projectCaption > svg, .vision svg, .textLink svg { transition: none; }
+  .projectLink:hover img { transform: none; }
+}
