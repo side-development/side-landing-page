@@ -32,7 +32,7 @@ const arrow = (direction: "left" | "right") => (
 
 function Face({ media, locale, priority }: { media: WorkMedia; locale: WorkLocale; priority: boolean }) {
   if (media.kind === "image") {
-    return <Image src={media.src} alt={media.alt[locale]} fill sizes="(max-width: 800px) 90vw, (max-width: 1500px) 62vw, 1180px" priority={priority} draggable={false} className={styles.image} />;
+    return <Image src={media.src} alt={media.alt[locale]} fill sizes="(max-width: 800px) 90vw, (max-width: 1500px) 62vw, 1180px" priority={priority} draggable={false} className={styles.image} style={{ objectFit: media.fit ?? "cover" }} />;
   }
   return <div className={styles.placeholder}><span>{media.caption[locale]}</span></div>;
 }
@@ -52,7 +52,7 @@ export function ProjectGallery({ project, position, locale, copy, onOpen, priori
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduced) return;
 
-    // Start with subtle blur and translation, awaiting scroll
+    // The first project arrives on entry; later projects reveal as they approach.
     gsap.set(node, { opacity: 0, filter: "blur(14px)", y: 24 });
 
     const isFirst = position === 1;
@@ -68,31 +68,25 @@ export function ProjectGallery({ project, position, locale, copy, onOpen, priori
       });
     }
 
+    if (isFirst) {
+      reveal();
+      return;
+    }
+
     const trigger = ScrollTrigger.create({
       trigger: node,
-      start: isFirst ? "top 45%" : "top 72%",
+      start: "top 72%",
       once: true,
       onEnter: () => reveal(false),
       onRefresh: (self) => {
-        if (self.progress > 0 || (isFirst && window.scrollY > 40)) {
+        if (self.progress > 0) {
           reveal(true);
         }
       },
     });
 
-    const onScroll = () => {
-      if (isFirst && window.scrollY > 30) {
-        reveal(false);
-        window.removeEventListener("scroll", onScroll);
-      }
-    };
-    if (isFirst) {
-      window.addEventListener("scroll", onScroll, { passive: true });
-    }
-
     return () => {
       trigger.kill();
-      if (isFirst) window.removeEventListener("scroll", onScroll);
     };
   }, { scope: region, dependencies: [position] });
 

@@ -390,6 +390,7 @@ export function CaseOverlay({
                         fill
                         sizes={isFirst ? "100vw, 920px" : "(max-width: 900px) 100vw, 440px"}
                         className={styles.mediaImage}
+                        style={{ objectFit: item.fit ?? "cover", ...(item.fit === "contain" ? { transform: "none" } : {}) }}
                       />
                     </div>
                     <figcaption className={styles.mediaCaption}>

@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 import { useId, useLayoutEffect, useRef, useState, useSyncExternalStore } from "react";
 import { BrandWordmark } from "./BrandWordmark";
 import { NavUnderline } from "./NavUnderline";
@@ -18,6 +20,8 @@ function subscribeMobile(callback: () => void) {
 }
 
 export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: HeroCopy; visible: boolean; focusOnReveal: boolean; onReplay?: () => void }) {
+  const router = useRouter();
+  const locale = useLocale();
   const [open, setOpen] = useState(false);
   const menuId = useId();
   const toggle = useRef<HTMLButtonElement>(null);
@@ -73,14 +77,14 @@ export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: He
           <div id={menuId} className={styles.sectionLinks} data-open={menuOpen} inert={mobile && !menuOpen} aria-hidden={mobile && !menuOpen}>
             <div className={styles.sectionLinkList}>
               <div className={styles.sectionLinkItems}>
-                <button type="button"><span className={styles.navLabel}>{copy.work}<NavUnderline variant="work" /></span></button>
-                <button type="button"><span className={styles.navLabel}>{copy.services}<NavUnderline variant="services" /></span></button>
+                <button type="button" onClick={() => router.push(locale === "en" ? "/en/work" : "/trabalhos")}><span className={styles.navLabel}>{copy.work}<NavUnderline variant="work" /></span></button>
+                <button type="button" onClick={() => router.push(locale === "en" ? "/en/services" : "/servicos")}><span className={styles.navLabel}>{copy.services}<NavUnderline variant="services" /></span></button>
                 <button type="button"><span className={styles.navLabel}>{copy.why}<NavUnderline variant="why" /></span></button>
               </div>
-              <button className={styles.menuContact} type="button">{copy.contact}<span aria-hidden="true">→</span></button>
+              <button className={styles.menuContact} type="button" onClick={() => router.push(locale === "en" ? "/en/contact" : "/contato")}>{copy.contact}<span aria-hidden="true">→</span></button>
             </div>
           </div>
-          <button className={styles.contact} type="button" inert={menuOpen} aria-hidden={menuOpen || undefined}>{copy.contact}<NavUnderline variant="contact" /></button>
+          <button className={styles.contact} type="button" inert={menuOpen} aria-hidden={menuOpen || undefined} onClick={() => router.push(locale === "en" ? "/en/contact" : "/contato")}>{copy.contact}<NavUnderline variant="contact" /></button>
           <button ref={toggle} className={styles.menuToggle} type="button" aria-label={menuOpen ? copy.closeMenu : copy.menu} aria-expanded={menuOpen} aria-controls={menuId} onClick={toggleMenu}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
               <path d="M4 12H20" /><path d="M4 12H20" /><path d="M4 12H20" />

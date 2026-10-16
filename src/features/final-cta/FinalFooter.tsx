@@ -36,7 +36,7 @@ function SocialIcon({ network, href }: { network: "Instagram" | "LinkedIn"; href
   </span>;
 }
 
-export function FinalFooter({ locale }: { locale: "pt-BR" | "en" }) {
+export function FinalFooter({ locale, localeLinks }: { locale: "pt-BR" | "en"; localeLinks?: Record<"pt-BR" | "en", string> }) {
   const english = locale === "en";
   const home = english ? "/en" : "/";
   const pathname = usePathname();
@@ -46,7 +46,7 @@ export function FinalFooter({ locale }: { locale: "pt-BR" | "en" }) {
   const linkedin = officialProfile(process.env.NEXT_PUBLIC_SIDE_LINKEDIN_URL, "linkedin.com");
   useEffect(() => {
     const node = root.current;
-    const header = document.querySelector<HTMLElement>("[data-final-hero] > header");
+    const header = document.querySelector<HTMLElement>("[data-final-hero] > header, [data-work-nav]");
     if (!node || !header) return;
     const previousInert = header.inert;
     const update = () => {
@@ -114,7 +114,7 @@ export function FinalFooter({ locale }: { locale: "pt-BR" | "en" }) {
       <nav className={styles.navigation} aria-label={english ? "Footer navigation" : "Navegação do rodapé"}>
         <span className={styles.label}>Explore</span>
         <ul>
-          {navigation.map(([label, anchor]) => <li key={anchor}><Link href={`${home}#${anchor}`} prefetch={false}>{label}</Link></li>)}
+          {navigation.map(([label, anchor]) => <li key={anchor}><Link href={anchor === "work" ? (english ? "/en/work" : "/trabalhos") : anchor === "services" ? (english ? "/en/services" : "/servicos") : `${home}#${anchor}`} prefetch={false}>{label}</Link></li>)}
           <li><Link href={english ? "/en/contact" : "/contato"} prefetch={false}>{english ? "Contact" : "Contato"}</Link></li>
         </ul>
       </nav>
@@ -125,8 +125,8 @@ export function FinalFooter({ locale }: { locale: "pt-BR" | "en" }) {
       <div className={styles.locale}>
         <span className={styles.label}>{english ? "Language" : "Idioma"}</span>
         <nav className={styles.languages} aria-label={english ? "Language" : "Idioma"}>
-          <Link href={`${localPath}#side-footer`} hrefLang="pt-BR" lang="pt-BR" aria-label="Português" aria-current={!english ? "page" : undefined} prefetch={false}>PT</Link>
-          <Link href={`/en${localPath === "/" ? "" : localPath}#side-footer`} hrefLang="en" lang="en" aria-label="English" aria-current={english ? "page" : undefined} prefetch={false}>EN</Link>
+          <Link href={`${localeLinks?.["pt-BR"] ?? localPath}#side-footer`} hrefLang="pt-BR" lang="pt-BR" aria-label="Português" aria-current={!english ? "page" : undefined} prefetch={false}>PT</Link>
+          <Link href={`${localeLinks?.en ?? `/en${localPath === "/" ? "" : localPath}`}#side-footer`} hrefLang="en" lang="en" aria-label="English" aria-current={english ? "page" : undefined} prefetch={false}>EN</Link>
         </nav>
       </div>
       <div className={styles.updates}>

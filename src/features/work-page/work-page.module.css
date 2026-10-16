@@ -44,7 +44,7 @@
   white-space: nowrap;
 }
 
-.introSide { display: flex; flex-direction: column; gap: 28px; padding-bottom: 0.6vw; }
+.introSide { display: flex; flex-direction: column; align-items: flex-end; gap: 28px; padding-bottom: 0.6vw; text-align: right; }
 
 .lede {
   font-size: clamp(18px, 1.5vw, 25px);

@@ -4,13 +4,14 @@ export type LocalizedList = Record<WorkLocale, string[]>;
 
 type MediaBase = { caption: Localized };
 
-/** A still captured from the real project. Always 16:10 so a sheet reads as a real page. */
+/** A still presented within the gallery sheet, with its original dimensions and framing. */
 export type ImageMedia = MediaBase & {
   kind: "image";
   src: string;
   alt: Localized;
   width: number;
   height: number;
+  fit?: "cover" | "contain";
 };
 
 /** Reserved slot: neutral editorial surface until approved real media is dropped in. */
@@ -56,11 +57,16 @@ export type WorkProject = {
   caseStudy: CaseStudy;
 };
 
-const image = (slug: string, file: string, alt: Localized, caption: Localized): ImageMedia => ({
+const image = (
+  slug: string,
+  file: string,
+  alt: Localized,
+  caption: Localized,
+  presentation: Pick<ImageMedia, "width" | "height" | "fit"> = { width: 1440, height: 900 }
+): ImageMedia => ({
   kind: "image",
   src: `/work/${slug}/gallery/${file}.webp`,
-  width: 1440,
-  height: 900,
+  ...presentation,
   alt,
   caption,
 });
@@ -519,141 +525,135 @@ export const projects: WorkProject[] = [
     slug: "computer-vision",
     visibility: "confidential",
     year: "2026",
-    name: "Computer Vision & Segurança",
+    name: "Computer Vision",
     category: {
-      "pt-BR": "Inteligência Artificial · Visão Computacional",
-      en: "Artificial Intelligence · Computer Vision",
+      "pt-BR": "Inteligência artificial · Detecção de objetos",
+      en: "Artificial intelligence · Object detection",
     },
     summary: {
-      "pt-BR": "Modelos de visão computacional de borda para detecção perimetral, classificação de eventos e contagem com preservação de privacidade.",
-      en: "Edge computer vision models for perimeter detection, event classification, and presence counting with built-in privacy preservation.",
+      "pt-BR": "Visão computacional para detectar e classificar objetos: de veículos e placas a produtos em linha de produção e pessoas em espaços urbanos.",
+      en: "Computer vision for object detection and classification, from vehicles and license plates to products on production lines and people in urban spaces.",
     },
     media: [
       image(
         "computer-vision",
-        "01-deteccao-perimetral",
+        "01-veiculo-placa",
         {
-          "pt-BR": "Slot editorial reservado: detecção perimetral de pessoas e veículos com bounding boxes.",
-          en: "Editorial reserved slot: perimeter detection of people and vehicles with bounding boxes.",
+          "pt-BR": "Carro branco em uma via com caixas amarelas delimitando o veículo e a placa, acompanhado de um rótulo de identificação.",
+          en: "White car on a road with yellow bounding boxes around the vehicle and license plate, accompanied by an identification label.",
         },
-        { "pt-BR": "Detecção de pessoas & veículos", en: "People & vehicle detection" }
+        { "pt-BR": "Veículo e placa · Exemplo ilustrativo", en: "Vehicle and license plate · Illustrative example" },
+        { width: 800, height: 541, fit: "contain" }
       ),
       image(
         "computer-vision",
-        "02-intrusao-eventos",
+        "02-objetos-producao",
         {
-          "pt-BR": "Slot editorial reservado: reconhecimento de eventos perimetrais e disparo de alertas em zonas monitoradas.",
-          en: "Editorial reserved slot: perimeter event recognition and alert triggering in monitored zones.",
+          "pt-BR": "Maçãs em uma esteira de produção, com caixas roxas delimitando os objetos individualmente.",
+          en: "Apples on a production conveyor with purple bounding boxes marking individual objects.",
         },
-        { "pt-BR": "Eventos perimetrais & Intrusão", en: "Perimeter events & Intrusion" }
+        { "pt-BR": "Objetos em produção · Exemplo ilustrativo", en: "Objects in production · Illustrative example" },
+        { width: 800, height: 640, fit: "contain" }
       ),
       image(
         "computer-vision",
-        "03-ocupacao-zonas",
+        "03-deteccao-urbana",
         {
-          "pt-BR": "Slot editorial reservado: análise de ocupação e verificação de ambiente vazio sem captura biométrica.",
-          en: "Editorial reserved slot: occupancy analysis and empty environment verification without biometrics.",
+          "pt-BR": "Rua com pedestres e veículos, com caixas ciano para pessoas e caixas verdes para carros, acompanhadas de rótulos de classe.",
+          en: "Street scene with pedestrians and vehicles, showing cyan boxes for people and green boxes for cars with class labels.",
         },
-        { "pt-BR": "Ocupação & Ambiente vazio", en: "Occupancy & Empty environment" }
-      ),
-      image(
-        "computer-vision",
-        "04-contagem-fluxo",
-        {
-          "pt-BR": "Slot editorial reservado: contagem de circulação e vetores direcionais de passagem.",
-          en: "Editorial reserved slot: circulation counting and directional passage vectors.",
-        },
-        { "pt-BR": "Contagem & Fluxo de circulação", en: "Flow counting & Circulation" }
+        { "pt-BR": "Detecção multiclasse urbana · Exemplo ilustrativo", en: "Urban multiclass detection · Illustrative example" },
+        { width: 1600, height: 900, fit: "contain" }
       ),
     ],
     caseStudy: {
       confidentialityNotice: {
-        "pt-BR": "Alguns detalhes deste projeto foram preservados por confidencialidade.",
-        en: "Some details of this project have been preserved for confidentiality.",
+        "pt-BR": "Alguns detalhes deste projeto foram preservados por confidencialidade. As imagens são exemplos ilustrativos de aplicações de visão computacional.",
+        en: "Some details of this project have been preserved for confidentiality. The images are illustrative examples of computer vision applications.",
       },
       challenge: {
         title: {
-          "pt-BR": "Processamento de vídeo em tempo real na borda com restrição estrita de privacidade",
-          en: "Real-time edge video processing under strict privacy constraints",
+          "pt-BR": "Reconhecer objetos em diferentes contextos de operação",
+          en: "Recognizing objects across operational contexts",
         },
         paragraphs: {
           "pt-BR": [
-            "Sistemas tradicionais de videomonitoramento dependem de operadores humanos analisando dezenas de telas simultâneas — um modelo sujeito a fadiga visual e perda crítica de eventos. O envio de streams brutos de vídeo para a nuvem introduz latência inaceitável e riscos graves de privacidade.",
-            "O desafio consistia em projetar pipelines de inferência de visão computacional executados localmente em hardware de borda (edge AI), capazes de classificar eventos de intrusão e perimetrais em milissegundos, sem expor dados pessoais ou armazenar biometria desnecessária.",
+            "Veículos em circulação, produtos em uma esteira e pessoas em uma rua exigem leituras diferentes de uma mesma fonte de informação: a imagem. Cada contexto define quais objetos importam e como suas posições e classes devem ser apresentadas.",
+            "O desafio foi estruturar a detecção de objetos para esses cenários, organizando caixas delimitadoras e rótulos de classe em uma leitura visual útil à operação, sem limitar a solução à detecção de pessoas.",
           ],
           en: [
-            "Traditional video surveillance relies on human operators monitoring dozens of screens simultaneously — a model prone to fatigue and missed critical events. Streaming raw video to the cloud introduces unacceptable latency and severe privacy liabilities.",
-            "The challenge was to design computer vision inference pipelines running locally on edge hardware, classifying perimeter and intrusion events within milliseconds, without exposing personal identity or storing unnecessary biometrics.",
+            "Vehicles on the road, products on a conveyor, and people on a street call for different readings of the same source of information: the image. Each context determines which objects matter and how their positions and classes should be presented.",
+            "The challenge was to structure object detection across these scenarios, organizing bounding boxes and class labels into a useful operational view, extending beyond person detection.",
           ],
         },
       },
       solution: {
         title: {
-          "pt-BR": "Pipelines de inferência perimetral e eventos analíticos",
-          en: "Perimeter inference pipelines and event analytics",
+          "pt-BR": "Detecção, classificação e leitura visual por contexto",
+          en: "Detection, classification, and contextual visualization",
         },
         paragraphs: {
           "pt-BR": [
-            "Desenvolvemos a arquitetura de processamento e classificação de eventos em tempo real. Os modelos identificam delimitações de pessoas e veículos com alta precisão sob condições adversas de iluminação e intempéries.",
-            "A lógica analítica calcula zonas de permanência, sentido de circulação e violações de limites virtuais pré-definidos, disparando apenas metadados e alertas sintetizados para a central operacional.",
+            "O trabalho reúne processamento de imagens, localização de objetos e classificação conforme o contexto de uso. A visualização associa cada detecção à sua região na imagem, tornando a leitura das classes e dos elementos detectados mais direta.",
+            "Os exemplos ilustram três aplicações: identificação de veículos e da região da placa; localização de produtos, como frutas, em linhas de produção; e detecção multiclasse de pessoas e veículos em espaços urbanos.",
           ],
           en: [
-            "We engineered the real-time event processing and classification architecture. Models detect person and vehicle bounding boxes with high precision under adverse lighting and weather conditions.",
-            "The analytical logic computes dwell times, passage direction, and virtual boundary violations, dispatching only lightweight metadata and synthesized alerts to the control room.",
+            "The work brings together image processing, object localization, and classification for each use case. The visualization links each detection to its region in the image, making classes and detected elements easier to interpret.",
+            "The examples illustrate three applications: identifying vehicles and license plate regions; locating products, such as fruit, on production lines; and multiclass detection of people and vehicles in urban spaces.",
           ],
         },
         highlights: [
           {
-            title: { "pt-BR": "Inferência de Borda", en: "Edge Inference" },
+            title: { "pt-BR": "Veículos e placas", en: "Vehicles and license plates" },
             description: {
-              "pt-BR": "Execução local de baixa latência em hardware embarcado, garantindo autonomia mesmo sem conexão externa.",
-              en: "Low-latency local execution on embedded hardware, ensuring uptime even during connectivity loss.",
+              "pt-BR": "Localização do veículo e da região da placa para apoiar sua identificação na imagem.",
+              en: "Locating vehicles and license plate regions to support identification within the image.",
             },
           },
           {
-            title: { "pt-BR": "Preservação de Dados", en: "Privacy by Design" },
+            title: { "pt-BR": "Objetos em produção", en: "Objects in production" },
             description: {
-              "pt-BR": "Operação focada em contorno geométrico e vetores de movimento, sem reconhecimento facial.",
-              en: "Operation focused on geometric contours and motion vectors without facial recognition.",
+              "pt-BR": "Detecção individual de produtos em esteiras, com delimitação dos objetos presentes na cena.",
+              en: "Detecting individual products on conveyors, with bounding boxes around objects in the scene.",
             },
           },
           {
-            title: { "pt-BR": "Eventos Perimetrais", en: "Perimeter Events" },
+            title: { "pt-BR": "Detecção multiclasse", en: "Multiclass detection" },
             description: {
-              "pt-BR": "Classificação automática de invasão de perímetro, direção de fluxo e ambiente vazio.",
-              en: "Automated classification of perimeter breaches, flow direction, and empty environment status.",
+              "pt-BR": "Pessoas e veículos diferenciados por classes e rótulos em um mesmo espaço urbano.",
+              en: "People and vehicles distinguished by classes and labels within the same urban space.",
             },
           },
         ],
       },
       impact: {
         title: {
-          "pt-BR": "Automação silenciosa e confiabilidade operacional",
-          en: "Silent automation and operational reliability",
+          "pt-BR": "Da imagem à informação operacional",
+          en: "From images to operational information",
         },
         paragraphs: {
           "pt-BR": [
-            "A inteligência opera silenciosamente nos bastidores, reduzindo falsos positivos e permitindo que as equipes de segurança intervenham de forma preventiva antes que incidentes se consolidem.",
+            "A leitura por objetos e classes organiza o conteúdo visual para apoiar análise de circulação, acompanhamento de produtos e observação de espaços. Os exemplos mostram como a visão computacional pode servir a diferentes operações com uma linguagem visual comum: localização, classe e contexto.",
           ],
           en: [
-            "The intelligence operates silently behind the scenes, cutting false positives and empowering security teams to intervene preventively before incidents escalate.",
+            "Reading images through objects and classes organizes visual information to support circulation analysis, product monitoring, and observation of spaces. The examples show how computer vision can serve different operations through a shared visual language: location, class, and context.",
           ],
         },
       },
       scope: {
         "pt-BR": [
-          "Processamento visual em tempo real no local de operação",
-          "Detecção e acompanhamento de pessoas e veículos",
-          "Monitoramento de permanência e violação de perímetros",
-          "Contagem de fluxo e circulação com preservação de identidade",
-          "Garantia de privacidade e conformidade regulatória",
+          "Processamento de imagens e detecção de objetos",
+          "Localização de veículos e regiões de placas",
+          "Detecção de produtos em linhas de produção",
+          "Classificação de pessoas e veículos em espaços urbanos",
+          "Visualização de caixas delimitadoras e rótulos de classe",
         ],
         en: [
-          "Real-time visual processing at operational sites",
-          "Person and vehicle detection and tracking",
-          "Dwell-time monitoring and perimeter breach alerts",
-          "Circulation flow counting with identity preservation",
-          "Privacy assurance and regulatory compliance",
+          "Image processing and object detection",
+          "Vehicle and license plate region localization",
+          "Product detection on production lines",
+          "People and vehicle classification in urban spaces",
+          "Bounding box and class label visualization",
         ],
       },
     },

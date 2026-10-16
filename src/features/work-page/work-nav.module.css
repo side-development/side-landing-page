@@ -43,7 +43,7 @@
 .contact { color: #3919bd; font-weight: 700; }
 .label { position: relative; display: inline-block; }
 
-/* Underline stroke mirrors Home's NavUnderline; current page keeps it drawn. */
+/* The current route is announced semantically; the stroke only marks interaction. */
 .link svg, .contact svg {
   bottom: -4px;
   opacity: 0;
@@ -51,15 +51,15 @@
 }
 
 .link svg path, .contact svg path { transition: stroke-dashoffset 220ms ease; }
-.link:focus-visible svg, .link[data-current] svg, .contact:focus-visible svg { opacity: 1; }
-.link:focus-visible svg path, .link[data-current] svg path, .contact:focus-visible svg path {
+.link:not([aria-current="page"]):focus-visible svg, .contact:focus-visible svg { opacity: 1; }
+.link:not([aria-current="page"]):focus-visible svg path, .contact:focus-visible svg path {
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 480ms cubic-bezier(.25, .46, .45, .94);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .link:hover svg, .contact:hover svg { opacity: 1; }
-  .link:hover svg path, .contact:hover svg path {
+  .link:not([aria-current="page"]):hover svg, .contact:hover svg { opacity: 1; }
+  .link:not([aria-current="page"]):hover svg path, .contact:hover svg path {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 480ms cubic-bezier(.25, .46, .45, .94);
   }

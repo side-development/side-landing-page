@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SideCursor } from "@/features/cursor/SideCursor";
+import { FinalFooter } from "@/features/final-cta/FinalFooter";
 import { ProjectGallery } from "./ProjectGallery";
 import { WorkNav } from "./WorkNav";
 import { CaseOverlay } from "./CaseOverlay";
@@ -111,6 +112,8 @@ export function WorkExperience({ locale, nav, initialCase }: Props) {
           ))}
         </div>
       </main>
+
+      <FinalFooter locale={locale} localeLinks={{ "pt-BR": "/trabalhos", en: "/en/work" }} />
 
       {/* Fullscreen Case Overlay with URL sync */}
       {activeProject && (
