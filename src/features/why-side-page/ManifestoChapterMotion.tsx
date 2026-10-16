@@ -15,9 +15,9 @@ export function ManifestoChapterMotion({ children }: { children: ReactNode }) {
     const media = gsap.matchMedia();
     media.add("(prefers-reduced-motion: no-preference)", () => {
       root.current!.querySelectorAll<HTMLElement>("[data-editorial-reveal]").forEach(element => {
-        gsap.fromTo(element, { y: 20 }, {
-          y: 0, duration: 1.1, ease: "power3.out", clearProps: "transform",
-          scrollTrigger: { trigger: element, start: "top 92%", once: true },
+        gsap.fromTo(element, { opacity: 0, filter: "blur(6px)", y: 20 }, {
+          opacity: 1, filter: "blur(0px)", y: 0, duration: .8, ease: "power2.out", clearProps: "opacity,filter,transform",
+          scrollTrigger: { trigger: element, start: "top 86%", once: true },
         });
       });
       root.current!.querySelectorAll<HTMLElement>("[data-editorial-rule]").forEach(element => {
