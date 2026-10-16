@@ -32,7 +32,7 @@ const arrow = (direction: "left" | "right") => (
 
 function Face({ media, locale, priority }: { media: WorkMedia; locale: WorkLocale; priority: boolean }) {
   if (media.kind === "image") {
-    return <Image src={media.src} alt={media.alt[locale]} fill sizes="(max-width: 800px) 90vw, (max-width: 1500px) 62vw, 1180px" priority={priority} draggable={false} className={styles.image} />;
+    return <Image src={media.src} alt={media.alt[locale]} fill sizes="(max-width: 800px) 90vw, (max-width: 1500px) 62vw, 1180px" priority={priority} draggable={false} className={styles.image} style={{ objectFit: media.fit ?? "cover" }} />;
   }
   return <div className={styles.placeholder}><span>{media.caption[locale]}</span></div>;
 }
