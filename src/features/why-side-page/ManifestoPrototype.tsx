@@ -52,8 +52,6 @@ export function ManifestoPrototype({ locale }: { locale: ManifestoLocale }) {
               </div>
             </div>
             <div className={styles.secondType} data-second-type>{copy.side}<span className={styles.period} /></div>
-            <span className={styles.pinOne} data-pin-one />
-            <span className={styles.pinTwo} data-pin-two />
             <p className={styles.eyebrow} data-eyebrow>{copy.eyebrow}</p>
             <p className={styles.initialNote} data-initial-note>{copy.initialNote}</p>
             <p className={styles.finalNote} data-final-note>{copy.finalNote}</p>

@@ -31,8 +31,6 @@ export function useManifestoPrototypeMotion(
       const old = art.querySelector<HTMLElement>("[data-old-word]")!;
       const next = art.querySelector<HTMLElement>("[data-new-word]")!;
       const axis = art.querySelector<HTMLElement>("[data-axis]")!;
-      const pinOne = art.querySelector<HTMLElement>("[data-pin-one]")!;
-      const pinTwo = art.querySelector<HTMLElement>("[data-pin-two]")!;
       const initial = art.querySelector<HTMLElement>("[data-initial-note]")!;
       const prefix = art.querySelector<HTMLElement>("[data-prefix]")!;
       const joiner = art.querySelector<HTMLElement>("[data-joiner]");
@@ -73,9 +71,6 @@ export function useManifestoPrototypeMotion(
       if (joiner) gsap.set(joiner, { autoAlpha: 1 });
       gsap.set([final, eyebrow], { autoAlpha: 0 });
       gsap.set(axis, { x: () => mobile ? 0 : width() / 2, y: () => mobile ? height() / 2 : 0, rotation: mobile ? 0 : 90, scaleX: () => mobile ? 1 : height() / width() });
-      gsap.set([pinOne, pinTwo], { autoAlpha: 1 });
-      gsap.set(pinOne, { x: () => mobile ? width() * .22 : width() * .5 - 9, y: () => mobile ? height() * .5 - 9 : height() * .22 });
-      gsap.set(pinTwo, { x: () => mobile ? width() * .78 : width() * .5 - 9, y: () => mobile ? height() * .5 - 9 : height() * .78 });
 
       const timeline = gsap.timeline({
         defaults: { ease: "power3.inOut" },
@@ -109,16 +104,12 @@ export function useManifestoPrototypeMotion(
         .to(first, { x: firstEndX, y: firstEndY, scale: firstEndScale, rotation: angle, duration: 3.8 }, 2.25)
         .to(second, { x: () => width() * .08, y: secondEndY, scale: secondEndScale, rotation: angle, duration: 3.8 }, 2.25)
         .to(old, { yPercent: -125, duration: 2.0, ease: "power4.inOut" }, 3.05)
-        .to(next, { yPercent: 0, duration: 2.0, ease: "power4.inOut" }, 3.05)
-        .to(pinOne, { x: () => width() * .72, y: () => height() * (mobile ? .565 - .072 : .515 - .072) - 9, duration: 3.8 }, 2.25)
-        .to(pinTwo, { x: () => width() * .77, y: () => height() * (mobile ? .565 - .077 : .515 - .077) - 9, duration: 3.8 }, 2.25);
+        .to(next, { yPercent: 0, duration: 2.0, ease: "power4.inOut" }, 3.05);
 
-      // 3. Side by side, the two points now travel in exactly the same direction.
-      timeline.to([pinOne, pinTwo], { x: `+=${width() * .32}`, y: `-=${height() * .032}`, duration: 1.5, ease: "power2.in" }, 6.05)
-        .to([pinOne, pinTwo], { autoAlpha: 0, duration: .25 }, 7.05)
-        .to(final, { autoAlpha: 1, duration: .8 }, 5.8)
+      // Keep the original pacing, letting the aligned composition hold in silence.
+      timeline.to(final, { autoAlpha: 1, duration: .8 }, 5.8)
         .to(eyebrow, { autoAlpha: 1, duration: .8 }, 5.6)
-        .to({}, { duration: 1.7 });
+        .to({}, { duration: 2.65 });
 
       const trigger = timeline.scrollTrigger!;
       const stop = () => { demo.current?.kill(); demo.current = null; setPlaying(false); };
