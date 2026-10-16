@@ -1,6 +1,6 @@
 export type ManifestoLocale = "pt-BR" | "en";
 
-export const prototypeCopy = {
+export const openingCopy = {
   "pt-BR": {
     heading: "Não do outro lado. Do mesmo lado.",
     staticLead: "Não do outro lado.",

@@ -9,10 +9,10 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export type PrototypePlayback = { play: () => void; seek: (progress: number) => void };
 
-export function useManifestoPrototypeMotion(
+export function useManifestoMotion(
   root: RefObject<HTMLElement | null>,
-  playback: RefObject<PrototypePlayback | null>,
-  setPlaying: Dispatch<SetStateAction<boolean>>,
+  playback?: RefObject<PrototypePlayback | null>,
+  setPlaying?: Dispatch<SetStateAction<boolean>>,
 ) {
   const demo = useRef<gsap.core.Tween | null>(null);
 
@@ -38,7 +38,26 @@ export function useManifestoPrototypeMotion(
       const eyebrow = art.querySelector<HTMLElement>("[data-eyebrow]")!;
       const hint = node.querySelector<HTMLElement>("[data-scroll-hint]")!;
       const en = node.closest("[data-locale]")?.getAttribute("data-locale") === "en";
-      if (mobile) node.style.setProperty("--prototype-stage-height", `${node.querySelector<HTMLElement>("[data-prototype-stage]")!.offsetHeight}px`);
+      const stage = node.querySelector<HTMLElement>("[data-prototype-stage]")!;
+      const measureStage = () => {
+        node.style.removeProperty("--prototype-stage-height");
+        node.style.setProperty("--prototype-stage-height", `${stage.offsetHeight}px`);
+      };
+      if (mobile) measureStage();
+      let viewportWidth = window.innerWidth;
+      let viewportHeight = window.innerHeight;
+      const resize = () => {
+        const widthChanged = window.innerWidth !== viewportWidth;
+        const touch = window.matchMedia("(pointer: coarse)").matches;
+        const editing = document.activeElement?.matches("input, textarea, [contenteditable='true']");
+        // Keep the scene still as touch browser chrome slides, but follow real window resizes.
+        if (!widthChanged && touch && (editing || Math.abs(window.innerHeight - viewportHeight) < viewportHeight * .25)) return;
+        viewportWidth = window.innerWidth;
+        viewportHeight = window.innerHeight;
+        measureStage();
+        ScrollTrigger.refresh();
+      };
+      if (mobile) window.addEventListener("resize", resize);
       node.dataset.motion = "ready";
 
       const width = () => art.clientWidth;
@@ -75,7 +94,7 @@ export function useManifestoPrototypeMotion(
       const timeline = gsap.timeline({
         defaults: { ease: "power3.inOut" },
         scrollTrigger: {
-          id: "why-side-prototype",
+          id: "why-side-opening",
           trigger: node,
           start: "top top",
           end: () => `+=${node.offsetHeight - node.querySelector<HTMLElement>("[data-prototype-stage]")!.offsetHeight}`,
@@ -112,19 +131,19 @@ export function useManifestoPrototypeMotion(
         .to({}, { duration: 2.65 });
 
       const trigger = timeline.scrollTrigger!;
-      const stop = () => { demo.current?.kill(); demo.current = null; setPlaying(false); };
+      const stop = () => { demo.current?.kill(); demo.current = null; setPlaying?.(false); };
       const seek = (progress: number) => {
         stop();
         window.scrollTo({ top: trigger.start + (trigger.end - trigger.start) * progress, behavior: "instant" });
         trigger.update();
         timeline.progress(progress);
       };
-      playback.current = {
+      if (playback) playback.current = {
         seek,
         play: () => {
           if (demo.current) { stop(); return; }
           seek(0);
-          setPlaying(true);
+          setPlaying?.(true);
           const cursor = { progress: 0 };
           demo.current = gsap.to(cursor, {
             progress: 1, duration: 15, ease: "none",
@@ -134,20 +153,21 @@ export function useManifestoPrototypeMotion(
         },
       };
       const key = (event: KeyboardEvent) => { if (["ArrowDown", "ArrowUp", "PageDown", "PageUp", "Home", "End", " "].includes(event.key)) stop(); };
-      window.addEventListener("wheel", stop, { passive: true });
+      if (playback) window.addEventListener("wheel", stop, { passive: true });
       const touch = (event: TouchEvent) => { if (!(event.target instanceof Element && event.target.closest("[data-prototype-controls]"))) stop(); };
-      window.addEventListener("touchstart", touch, { passive: true });
-      window.addEventListener("keydown", key);
+      if (playback) window.addEventListener("touchstart", touch, { passive: true });
+      if (playback) window.addEventListener("keydown", key);
       const visibility = () => { if (document.hidden) stop(); };
-      document.addEventListener("visibilitychange", visibility);
+      if (playback) document.addEventListener("visibilitychange", visibility);
       ScrollTrigger.refresh();
       return () => {
         stop();
-        playback.current = null;
+        if (playback) playback.current = null;
         window.removeEventListener("wheel", stop);
         window.removeEventListener("touchstart", touch);
         window.removeEventListener("keydown", key);
         document.removeEventListener("visibilitychange", visibility);
+        window.removeEventListener("resize", resize);
         delete node.dataset.motion;
         delete node.dataset.progress;
         node.style.removeProperty("--prototype-stage-height");
