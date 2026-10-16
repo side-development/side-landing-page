@@ -41,9 +41,13 @@ As quatro páginas foram abertas em Chromium/Edge. Nas três referências de Aww
 ## Duas direções
 
 1. **A dobra:** dois planos opostos viram como folhas e encontram uma direção comum. Boa presença espacial, mas a abertura de um livro seria uma leitura concorrente; perspectiva excessiva também prejudicaria a legibilidade em tela estreita.
-2. **O eixo comum — escolhida:** branco e preto ocupam lados opostos de uma divisão roxa. A separação ganha espaço e, em um movimento contínuo, os campos passam a ser faixas paralelas. “OUTRO” sai pela própria janela tipográfica e “DO MESMO” toma sua posição. Dois pontos que estavam separados passam a seguir juntos.
+2. **O eixo comum — escolhida:** dois campos ocupam lados opostos de uma divisão. A separação ganha espaço e, em um movimento contínuo, os campos passam a ser faixas paralelas. “OUTRO” sai pela própria janela tipográfica e “DO MESMO” toma sua posição.
 
-A escolha dá uma função nova ao mesmo elemento: a linha que separava passa a sustentar uma direção comum. O roxo é o espaço revelado pela transformação. O ápice é um cartaz monumental em dois planos paralelos, com o ponto da Side fechando a frase.
+A escolha dá uma função nova ao mesmo elemento: a linha que separava passa a sustentar uma direção comum. O ápice é um cartaz monumental em dois planos paralelos, com o ponto da Side fechando a frase.
+
+### Refinamento visual solicitado pelo usuário
+
+Após ver a primeira versão, o usuário pediu inverter branco e roxo para eliminar os cortes de cor na junção com a navbar e com o fim da cena (capturas `224756` e `224805`). O exterior agora continua o branco da página; a faixa principal passa a roxo com texto claro. Os dois pontos móveis foram removidos do DOM e da timeline, mantendo o ponto tipográfico da marca. A composição, o movimento e o checkpoint de aprovação foram preservados. O pedido também incluiu trilho de scrollbar transparente em todas as páginas; apenas as regras relacionadas ao scrollbar foram ajustadas fora do protótipo.
 
 ## Protótipo e limites
 

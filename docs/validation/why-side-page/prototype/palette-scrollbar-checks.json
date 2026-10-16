@@ -1,0 +1,249 @@
+[
+  {
+    "path": "/",
+    "states": [
+      {
+        "position": "top",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      },
+      {
+        "position": "[data-service-atmosphere]",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(35, 35, 36)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      },
+      {
+        "position": "[data-trust-entrance]",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      },
+      {
+        "position": "[data-final-footer]",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      }
+    ]
+  },
+  {
+    "path": "/en",
+    "states": [
+      {
+        "position": "top",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      },
+      {
+        "position": "[data-service-atmosphere]",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(35, 35, 36)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      },
+      {
+        "position": "[data-trust-entrance]",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      },
+      {
+        "position": "[data-final-footer]",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      }
+    ]
+  },
+  {
+    "path": "/trabalhos",
+    "states": [
+      {
+        "position": "top",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      }
+    ]
+  },
+  {
+    "path": "/en/work",
+    "states": [
+      {
+        "position": "top",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      }
+    ]
+  },
+  {
+    "path": "/servicos",
+    "states": [
+      {
+        "position": "top",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      }
+    ]
+  },
+  {
+    "path": "/en/services",
+    "states": [
+      {
+        "position": "top",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      }
+    ]
+  },
+  {
+    "path": "/contato",
+    "states": [
+      {
+        "position": "top",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    ]
+  },
+  {
+    "path": "/en/contact",
+    "states": [
+      {
+        "position": "top",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    ]
+  },
+  {
+    "path": "/review/why-side-manifesto",
+    "states": [
+      {
+        "position": "top",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      },
+      {
+        "surfaces": {
+          "art": "rgb(244, 243, 239)",
+          "band": "rgb(57, 25, 189)",
+          "header": "rgb(244, 243, 239)",
+          "notes": "rgb(244, 243, 239)",
+          "type": "rgb(244, 243, 239)"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/en/review/why-side-manifesto",
+    "states": [
+      {
+        "position": "top",
+        "track": "rgba(0, 0, 0, 0)",
+        "corner": "rgba(0, 0, 0, 0)",
+        "thumb": "rgb(233, 233, 233)",
+        "thumbClip": "padding-box",
+        "thumbBorder": "rgba(0, 0, 0, 0)",
+        "legacyTrack": "",
+        "width": 1440,
+        "scrollWidth": 1430
+      },
+      {
+        "surfaces": {
+          "art": "rgb(244, 243, 239)",
+          "band": "rgb(57, 25, 189)",
+          "header": "rgb(244, 243, 239)",
+          "notes": "rgb(244, 243, 239)",
+          "type": "rgb(244, 243, 239)"
+        }
+      }
+    ]
+  },
+  {
+    "errors": []
+  }
+]
