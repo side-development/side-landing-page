@@ -18,7 +18,7 @@ function subscribeMobile(callback: () => void) {
 }
 
 /** Mirror of Home's top header navigation: symbol left, four links right + mobile drawer. Completely floating and unconstrained. */
-export function WorkNav({ locale, nav, copy }: { locale: WorkLocale; nav: WorkNavCopy; copy: WorkPageContent }) {
+export function WorkNav({ locale, nav, copy, currentPage = "work" }: { locale: WorkLocale; nav: WorkNavCopy; copy: Pick<WorkPageContent, "home">; currentPage?: "work" | "services" }) {
   const [open, setOpen] = useState(false);
   const menuId = useId();
   const toggle = useRef<HTMLButtonElement>(null);
@@ -44,8 +44,8 @@ export function WorkNav({ locale, nav, copy }: { locale: WorkLocale; nav: WorkNa
 
   const prefix = locale === "en" ? "/en" : "";
   const links = [
-    { label: nav.work, href: locale === "en" ? "/en/work" : "/trabalhos", variant: "work" as const, current: true },
-    { label: nav.services, href: `${prefix}/#services`, variant: "services" as const },
+    { label: nav.work, href: locale === "en" ? "/en/work" : "/trabalhos", variant: "work" as const, current: currentPage === "work" },
+    { label: nav.services, href: locale === "en" ? "/en/services" : "/servicos", variant: "services" as const, current: currentPage === "services" },
     { label: nav.why, href: `${prefix}/#why-side`, variant: "why" as const },
   ];
 
@@ -72,7 +72,6 @@ export function WorkNav({ locale, nav, copy }: { locale: WorkLocale; nav: WorkNa
                   prefetch={false}
                   aria-current={link.current ? "page" : undefined}
                   className={styles.link}
-                  data-current={link.current || undefined}
                   onClick={() => { if (menuOpen) close(); }}
                 >
                   <span className={styles.label}>{link.label}<NavUnderline variant={link.variant} /></span>
