@@ -2,11 +2,11 @@
   "videos": [
     {
       "file": "desktop.mp4",
-      "duration": 58.9,
+      "duration": 59.066667,
       "width": 1440,
       "height": 1000,
       "readyState": 4,
-      "frames": 127,
+      "frames": 126,
       "error": null
     },
     {
