@@ -38,7 +38,6 @@ function SocialIcon({ network, href }: { network: "Instagram" | "LinkedIn"; href
 
 export function FinalFooter({ locale, localeLinks }: { locale: "pt-BR" | "en"; localeLinks?: Record<"pt-BR" | "en", string> }) {
   const english = locale === "en";
-  const home = english ? "/en" : "/";
   const pathname = usePathname();
   const root = useRef<HTMLElement>(null);
   const localPath = pathname.replace(/^\/en(?=\/|$)/, "") || "/";
@@ -114,7 +113,7 @@ export function FinalFooter({ locale, localeLinks }: { locale: "pt-BR" | "en"; l
       <nav className={styles.navigation} aria-label={english ? "Footer navigation" : "Navegação do rodapé"}>
         <span className={styles.label}>Explore</span>
         <ul>
-          {navigation.map(([label, anchor]) => <li key={anchor}><Link href={anchor === "work" ? (english ? "/en/work" : "/trabalhos") : anchor === "services" ? (english ? "/en/services" : "/servicos") : `${home}#${anchor}`} prefetch={false}>{label}</Link></li>)}
+          {navigation.map(([label, anchor]) => <li key={anchor}><Link href={anchor === "work" ? (english ? "/en/work" : "/trabalhos") : anchor === "services" ? (english ? "/en/services" : "/servicos") : (english ? "/en/why-side" : "/por-que-side")} prefetch={false}>{label}</Link></li>)}
           <li><Link href={english ? "/en/contact" : "/contato"} prefetch={false}>{english ? "Contact" : "Contato"}</Link></li>
         </ul>
       </nav>

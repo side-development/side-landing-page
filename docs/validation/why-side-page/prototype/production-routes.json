@@ -1,0 +1,52 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "title": "Side"
+  },
+  {
+    "path": "/en",
+    "status": 200,
+    "title": "Side"
+  },
+  {
+    "path": "/trabalhos",
+    "status": 200,
+    "title": "Trabalhos | Side"
+  },
+  {
+    "path": "/en/work",
+    "status": 200,
+    "title": "Work | Side"
+  },
+  {
+    "path": "/servicos",
+    "status": 200,
+    "title": "Serviços | Side"
+  },
+  {
+    "path": "/en/services",
+    "status": 200,
+    "title": "Services | Side"
+  },
+  {
+    "path": "/contato",
+    "status": 200,
+    "title": "Vamos construir o próximo. | Side"
+  },
+  {
+    "path": "/en/contact",
+    "status": 200,
+    "title": "Let’s build what’s next. | Side"
+  },
+  {
+    "path": "/review/why-side-manifesto",
+    "status": 404,
+    "title": "Side"
+  },
+  {
+    "path": "/en/review/why-side-manifesto",
+    "status": 404,
+    "title": "Side"
+  }
+]

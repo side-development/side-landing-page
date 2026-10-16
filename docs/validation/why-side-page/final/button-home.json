@@ -1,0 +1,74 @@
+[
+  {
+    "name": "desktop-pt",
+    "height": 52,
+    "width": 207.75,
+    "color": "rgb(36, 20, 56)",
+    "background": "linear-gradient(-75deg, rgba(48, 38, 57, 0.03), rgba(255, 255, 255, 0.2), rgba(48, 38, 57, 0.04))",
+    "overflow": false,
+    "heading": "Vamos construir lado a lado.",
+    "arrowSize": 20,
+    "contact": true,
+    "errors": []
+  },
+  {
+    "name": "desktop-en",
+    "height": 52,
+    "width": 149.4375,
+    "color": "rgb(36, 20, 56)",
+    "background": "linear-gradient(-75deg, rgba(48, 38, 57, 0.03), rgba(255, 255, 255, 0.2), rgba(48, 38, 57, 0.04))",
+    "overflow": false,
+    "heading": "Let's build side by side.",
+    "arrowSize": 20,
+    "contact": true,
+    "errors": []
+  },
+  {
+    "name": "mobile-pt",
+    "height": 52,
+    "width": 207.75,
+    "color": "rgb(36, 20, 56)",
+    "background": "linear-gradient(-75deg, rgba(48, 38, 57, 0.03), rgba(255, 255, 255, 0.2), rgba(48, 38, 57, 0.04))",
+    "overflow": false,
+    "heading": "Vamos construir lado a lado.",
+    "arrowSize": 20,
+    "contact": true,
+    "errors": []
+  },
+  {
+    "name": "mobile-en",
+    "height": 52,
+    "width": 149.4375,
+    "color": "rgb(36, 20, 56)",
+    "background": "linear-gradient(-75deg, rgba(48, 38, 57, 0.03), rgba(255, 255, 255, 0.2), rgba(48, 38, 57, 0.04))",
+    "overflow": false,
+    "heading": "Let's build side by side.",
+    "arrowSize": 20,
+    "contact": true,
+    "errors": []
+  },
+  {
+    "name": "small-pt",
+    "height": 44,
+    "width": 207.75,
+    "color": "rgb(36, 20, 56)",
+    "background": "linear-gradient(-75deg, rgba(48, 38, 57, 0.03), rgba(255, 255, 255, 0.2), rgba(48, 38, 57, 0.04))",
+    "overflow": false,
+    "heading": "Vamos construir lado a lado.",
+    "arrowSize": 20,
+    "contact": true,
+    "errors": []
+  },
+  {
+    "name": "reduced-mobile",
+    "height": 52,
+    "width": 207.75,
+    "color": "rgb(36, 20, 56)",
+    "background": "linear-gradient(-75deg, rgba(48, 38, 57, 0.03), rgba(255, 255, 255, 0.2), rgba(48, 38, 57, 0.04))",
+    "overflow": false,
+    "heading": "Vamos construir lado a lado.",
+    "arrowSize": 20,
+    "contact": true,
+    "errors": []
+  }
+]

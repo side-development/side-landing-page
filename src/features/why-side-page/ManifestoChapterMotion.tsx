@@ -1,0 +1,43 @@
+"use client";
+
+import { useEffect, useRef, type ReactNode } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import styles from "./manifesto-chapters.module.css";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+export function ManifestoChapterMotion({ children }: { children: ReactNode }) {
+  const root = useRef<HTMLDivElement>(null);
+  useGSAP(() => {
+    if (!root.current) return;
+    const media = gsap.matchMedia();
+    media.add("(prefers-reduced-motion: no-preference)", () => {
+      root.current!.querySelectorAll<HTMLElement>("[data-editorial-reveal]").forEach(element => {
+        gsap.fromTo(element, { opacity: 0, filter: "blur(6px)", y: 20 }, {
+          opacity: 1, filter: "blur(0px)", y: 0, duration: .8, ease: "power2.out", clearProps: "opacity,filter,transform",
+          scrollTrigger: { trigger: element, start: "top 86%", once: true },
+        });
+      });
+      root.current!.querySelectorAll<HTMLElement>("[data-editorial-rule]").forEach(element => {
+        gsap.fromTo(element, { scaleX: .18, transformOrigin: "0 50%" }, {
+          scaleX: 1, duration: 1.25, ease: "power3.inOut", clearProps: "transform,transformOrigin",
+          scrollTrigger: { trigger: element, start: "top 88%", once: true },
+        });
+      });
+    });
+    return () => media.revert();
+  }, { scope: root });
+  useEffect(() => {
+    if (location.hash !== "#manifesto-closing") return;
+    // Align after the opening's scroll height has been measured, as the footer does.
+    let frame = requestAnimationFrame(() => {
+      frame = requestAnimationFrame(() => {
+        root.current?.querySelector("#manifesto-closing")?.scrollIntoView({ block: "start", behavior: "instant" });
+      });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, []);
+  return <div ref={root} className={styles.body}>{children}</div>;
+}

@@ -18,7 +18,7 @@ function subscribeMobile(callback: () => void) {
 }
 
 /** Mirror of Home's top header navigation: symbol left, four links right + mobile drawer. Completely floating and unconstrained. */
-export function WorkNav({ locale, nav, copy, currentPage = "work" }: { locale: WorkLocale; nav: WorkNavCopy; copy: Pick<WorkPageContent, "home">; currentPage?: "work" | "services" }) {
+export function WorkNav({ locale, nav, copy, currentPage = "work" }: { locale: WorkLocale; nav: WorkNavCopy; copy: Pick<WorkPageContent, "home">; currentPage?: "work" | "services" | "why" }) {
   const [open, setOpen] = useState(false);
   const menuId = useId();
   const toggle = useRef<HTMLButtonElement>(null);
@@ -42,16 +42,15 @@ export function WorkNav({ locale, nav, copy, currentPage = "work" }: { locale: W
     setOpen(true);
   }
 
-  const prefix = locale === "en" ? "/en" : "";
   const links = [
     { label: nav.work, href: locale === "en" ? "/en/work" : "/trabalhos", variant: "work" as const, current: currentPage === "work" },
     { label: nav.services, href: locale === "en" ? "/en/services" : "/servicos", variant: "services" as const, current: currentPage === "services" },
-    { label: nav.why, href: `${prefix}/#why-side`, variant: "why" as const },
+    { label: nav.why, href: locale === "en" ? "/en/why-side" : "/por-que-side", variant: "why" as const, current: currentPage === "why" },
   ];
 
   return (
     <header className={styles.header} data-work-nav data-menu-open={menuOpen}>
-      <Link href={locale === "en" ? "/en" : "/"} aria-label={copy.home} prefetch={false} className={styles.brand}>
+      <Link href={locale === "en" ? "/en#home-top" : "/#home-top"} aria-label={copy.home} prefetch={false} className={styles.brand}>
         <Image src="/brand/side-logo-black.svg" alt="Side" width={1265} height={1126} className={styles.symbol} />
       </Link>
       <nav

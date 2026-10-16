@@ -14,7 +14,7 @@ export function useServicesMotion(root: RefObject<HTMLElement | null>, active: b
     if (!node || !active) return;
     node.setAttribute("data-motion-ready", "true");
     const page = document.documentElement;
-    const scrollbarProperties = ["--page-scroll-track", "--page-scroll-thumb", "--page-scroll-hover"];
+    const scrollbarProperties = ["--page-scroll-thumb", "--page-scroll-hover"];
     const previousScrollbar = scrollbarProperties.map(property => page.style.getPropertyValue(property));
     const dashboard = node.querySelector<HTMLElement>("[data-dashboard]")!;
     const panels = dashboard.querySelector<HTMLElement>("[data-dashboard-panels]")!;
@@ -76,8 +76,8 @@ export function useServicesMotion(root: RefObject<HTMLElement | null>, active: b
       }
       gsap.timeline({ scrollTrigger: { trigger: atmosphere, start: "top 85%", end: "bottom 30%", scrub: reduced ? true : 1 } })
         .fromTo(node, { backgroundColor: "#ffffff" }, { backgroundColor: "#101011", ease: "sine.inOut", onUpdate: function () { node.dataset.dark = String(this.progress() > .65); } }, 0)
-        .fromTo(page, { "--page-scroll-track": "#ffffff", "--page-scroll-thumb": "#e9e9e9", "--page-scroll-hover": "#dcdcdc" }, {
-          "--page-scroll-track": "#101011", "--page-scroll-thumb": "#232324", "--page-scroll-hover": "#303032", ease: "sine.inOut",
+        .fromTo(page, { "--page-scroll-thumb": "#e9e9e9", "--page-scroll-hover": "#dcdcdc" }, {
+          "--page-scroll-thumb": "#232324", "--page-scroll-hover": "#303032", ease: "sine.inOut",
         }, 0);
     });
     return () => {

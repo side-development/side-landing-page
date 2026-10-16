@@ -107,9 +107,9 @@
 .modalHeader p { margin-top: 8px; font-size: 11px; color: #77717f; }
 .modalHeader button { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid #ebe8f1; border-radius: 6px; background: #fff; color: #696171; }
 .modalHeader button:hover { background: #f7f5fb; color: #3919bd; }
-.modalScroll { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding-inline: 26px; scrollbar-width: thin; scrollbar-color: #ddd9e5 #fff; }
+.modalScroll { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding-inline: 26px; scrollbar-width: thin; scrollbar-color: #ddd9e5 transparent; }
 .modalScroll::-webkit-scrollbar { width: 8px; }
-.modalScroll::-webkit-scrollbar-thumb { background: #ddd9e5; border: 2px solid #fff; border-radius: 20px; }
+.modalScroll::-webkit-scrollbar-thumb { background: #ddd9e5; background-clip: padding-box; border: 2px solid transparent; border-radius: 20px; }
 .modalScroll::-webkit-scrollbar-button { display: none; }
 .modalScroll table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 12px; }
 .modalScroll th, .modalScroll td { text-align: right; padding: 13px 8px; border-bottom: 1px solid #efedf4; font-weight: 400; font-variant-numeric: tabular-nums; }

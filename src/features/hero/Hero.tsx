@@ -25,8 +25,8 @@ function forceReplay() {
   return new URLSearchParams(location.search).get("intro") === "replay";
 }
 
-function returningToProject() {
-  return location.hash === "#start-project";
+function returningToContent() {
+  return location.hash === "#start-project" || location.hash === "#home-top";
 }
 
 type Props = {
@@ -43,8 +43,8 @@ export function Hero({ copy, finalCopy, onPhase }: Props) {
   const visited = useSyncExternalStore(subscribe, sessionComplete, serverSession);
   const review = useSyncExternalStore(subscribe, reviewEnabled, serverSession);
   const forced = useSyncExternalStore(subscribe, forceReplay, serverSession);
-  const projectReturn = useSyncExternalStore(subscribe, returningToProject, serverSession);
-  const final = state === "final" || (projectReturn && !forced && !replaying) || (visited && !forced && !replaying);
+  const contentReturn = useSyncExternalStore(subscribe, returningToContent, serverSession);
+  const final = state === "final" || ((contentReturn || visited) && !forced && !replaying);
   const start = useCallback(() => setState(current => current === "idle" ? "triggered" : current), []);
   const complete = useCallback(() => {
     try { sessionStorage.setItem(SESSION_KEY, "true"); } catch { /* Storage can be unavailable in private browsing. */ }

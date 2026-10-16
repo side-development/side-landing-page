@@ -1,0 +1,23 @@
+{
+  "videos": [
+    {
+      "file": "desktop.mp4",
+      "duration": 59.066667,
+      "width": 1440,
+      "height": 1000,
+      "readyState": 4,
+      "frames": 126,
+      "error": null
+    },
+    {
+      "file": "mobile.mp4",
+      "duration": 57.166667,
+      "width": 390,
+      "height": 844,
+      "readyState": 4,
+      "frames": 126,
+      "error": null
+    }
+  ],
+  "brokenImages": []
+}

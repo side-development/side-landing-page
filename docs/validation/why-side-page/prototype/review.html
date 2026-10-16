@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Side — O eixo comum / revisão da cena</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f3ef;color:#111110;font-family:Arial,Helvetica,sans-serif;padding:36px clamp(20px,5vw,90px) 80px}a{color:#3919bd}header{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:56px}.brand{width:58px;height:auto}header>span{font-size:12px;color:#666}h1{max-width:1000px;margin:0 0 24px;font-size:clamp(48px,8vw,110px);letter-spacing:-.065em;line-height:.96}p{max-width:740px;font-size:18px;line-height:1.55}nav{display:flex;gap:24px;flex-wrap:wrap;margin:28px 0 56px;font-size:14px}h2{font-size:25px;letter-spacing:-.04em;margin:36px 0 16px}video,img.frame{display:block;width:100%;height:auto;background:#111110}video{max-height:85vh}section{margin-top:60px}.mobile{display:grid;grid-template-columns:minmax(240px,390px) minmax(240px,1fr);align-items:start;gap:36px}.mobile video{width:100%;max-height:844px}.mobile p{font-size:16px}small{display:block;color:#666;font-size:12px;line-height:1.5;margin-top:24px}button{border:1px solid #3919bd;background:transparent;padding:12px 18px;color:#3919bd;cursor:pointer}@media(max-width:700px){.mobile{grid-template-columns:1fr}.mobile video{max-width:390px}header{margin-bottom:40px}}
+</style>
+<header><img class="brand" src="../../../../public/brand/side-logo-black.svg" alt="Side"><span>Issue #19 · Protótipo da abertura · Revisão local</span></header>
+<h1>O que divide<br>pode mudar de lado.</h1>
+<p><strong>O eixo comum.</strong> A linha deixa de separar dois campos e passa a definir uma direção compartilhada. A transformação espacial conduz “Não do outro lado” a “Do mesmo lado”.</p>
+<nav><a href="http://localhost:3019/review/why-side-manifesto">Abrir protótipo interativo PT ↗</a><a href="http://localhost:3019/en/review/why-side-manifesto">Abrir protótipo interativo EN ↗</a><a href="#mobile">Ver mobile ↓</a><a href="#peak">Ver ápice ↓</a></nav>
+<h2>Desktop — movimento completo</h2>
+<video controls playsinline preload="metadata" poster="desktop-opening.png" src="desktop.mp4"></video>
+<small>Gravação real do browser: 1440 × 1000, 30 fps, 17,2 segundos. A coreografia dura 15 segundos; a gravação inclui a pausa antes e depois. Sem áudio.</small>
+<section id="peak"><h2>Ápice</h2><img class="frame" src="desktop-peak.png" alt="Do mesmo lado: duas faixas monumentais, uma roxa e outra preta, com texto claro e exterior branco contínuo."></section>
+<section id="mobile"><h2>Primeira adaptação mobile</h2><div class="mobile"><video controls playsinline preload="metadata" poster="mobile-opening.png" src="mobile.mp4"></video><div><p>A oposição parte de cima e de baixo. No encontro, a primeira faixa ganha duas linhas: <strong>DO / MESMO</strong>. A segunda sustenta <strong>LADO</strong>. A tipografia e a inclinação são recompostas para a tela estreita.</p><p>O movimento permanece reversível por scroll. O botão “Assistir 15s” executa a mesma progressão com duração controlada; wheel, toque e teclado interrompem a demonstração.</p><p>Com reduced motion, a cena apresenta sua composição final estática e mantém a frase completa em um heading semântico.</p><small>390 × 844, emulação Chromium/Edge. Ainda não validado em Safari ou telefone físico.</small></div></div></section>
+<section><h2>Decisão criativa</h2><p>Foram exploradas duas direções: <strong>A dobra</strong>, com planos que viram como folhas, e <strong>O eixo comum</strong>, que transforma uma fronteira em alinhamento. A segunda foi escolhida pela clareza da metáfora, pela força gráfica e pela continuidade possível em CSS e GSAP.</p><small>Esta é apenas a cena-assinatura. Manifesto, princípios, provas de trabalho e encerramento aguardam sua aprovação. Sem push, PR ou publicação.</small></section>
+</html>

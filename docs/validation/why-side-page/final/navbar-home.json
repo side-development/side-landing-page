@@ -1,0 +1,154 @@
+[
+  {
+    "path": "/por-que-side",
+    "width": 1440,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/trabalhos",
+    "width": 1440,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/servicos",
+    "width": 1440,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/contato",
+    "width": 1440,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/en/why-side",
+    "width": 1440,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/en/work",
+    "width": 1440,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/en/services",
+    "width": 1440,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/en/contact",
+    "width": 1440,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/por-que-side",
+    "width": 390,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/trabalhos",
+    "width": 390,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/servicos",
+    "width": 390,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/contato",
+    "width": 390,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/en/why-side",
+    "width": 390,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/en/work",
+    "width": 390,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/en/services",
+    "width": 390,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "path": "/en/contact",
+    "width": 390,
+    "finalImmediately": true,
+    "top": true,
+    "homeBrand": true,
+    "errors": []
+  },
+  {
+    "name": "storage-disabled",
+    "finalImmediately": true
+  },
+  {
+    "name": "keyboard-and-reduced",
+    "finalImmediately": true
+  },
+  {
+    "name": "new-tab",
+    "finalImmediately": true
+  },
+  {
+    "name": "first-visit-or-replay:/",
+    "introPreserved": true
+  },
+  {
+    "name": "first-visit-or-replay:/en",
+    "introPreserved": true
+  },
+  {
+    "name": "first-visit-or-replay:/?intro=replay#home-top",
+    "introPreserved": true
+  }
+]

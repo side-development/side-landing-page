@@ -1,0 +1,64 @@
+.page { --manifesto-inset: clamp(24px, 6vw, 112px); }
+.navBackdrop { position: fixed; inset: 0 0 auto; height: 88px; z-index: 29; background: var(--paper); }
+.page:has(:global([data-footer-covered="true"])) .navBackdrop { visibility: hidden; }
+.page :global([data-final-footer]) { background: var(--paper); }
+.body { max-width: 1920px; margin-inline: auto; }
+.body section { scroll-margin-top: 110px; }
+.body [data-editorial-reveal]:focus-within { opacity: 1 !important; filter: none !important; transform: none !important; }
+.name:focus { outline: none; }
+.label { margin: 0; font-size: 13px; font-weight: 500; letter-spacing: -.01em; line-height: 1.4; }
+.accent { color: var(--purple); }
+.name { padding: clamp(80px, 12vw, 180px) var(--manifesto-inset) clamp(100px, 14vw, 220px); }
+.nameLayout { display: grid; grid-template-columns: 1.6fr 1fr; gap: clamp(40px, 7vw, 120px); align-items: start; }
+.name h2, .closing h2 { margin: 0; font-size: clamp(54px, 6.9vw, 120px); line-height: .99; font-weight: 700; letter-spacing: -.065em; }
+.name h2 span { display: block; }
+.nameAside { padding-top: 10px; }
+.origin { font-size: 14px; margin-bottom: 24px; }
+.nameText { font-size: clamp(19px, 1.7vw, 25px); line-height: 1.4; letter-spacing: -.025em; }
+
+.principles { padding-inline: var(--manifesto-inset); }
+.principles > .label { margin-bottom: 40px; }
+.principleList { padding: 0; margin: 0; list-style: none; }
+.principle { position: relative; display: grid; grid-template-columns: 52px minmax(0, 1.65fr) minmax(0, .85fr); gap: clamp(24px, 4vw, 64px); align-items: start; padding-block: 56px 72px; }
+.rule { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: #11111038; }
+.number { color: var(--purple); font-size: 13px; line-height: 1.4; padding-top: 11px; font-variant-numeric: tabular-nums; }
+.principle h3 { margin: 0; max-width: 950px; font-size: clamp(42px, 5.2vw, 90px); line-height: 1.02; font-weight: 500; letter-spacing: -.06em; }
+.principle p { padding-top: 9px; font-size: clamp(16px, 1.35vw, 20px); line-height: 1.5; letter-spacing: -.02em; }
+
+
+.closing { position: relative; margin: clamp(120px, 14vw, 220px) var(--manifesto-inset) 0; padding-block: 64px clamp(96px, 10vw, 160px); text-align: center; }
+.closing h2 { max-width: 1400px; margin: 48px auto 0; font-size: clamp(72px, 9.4vw, 156px); line-height: .96; }
+.closing h2 > span { display: block; }
+.closingAction { display: flex; flex-direction: column; align-items: center; gap: 32px; margin-top: 40px; }
+.closingAction > p { max-width: 430px; font-size: 19px; line-height: 1.45; letter-spacing: -.025em; text-wrap: pretty; }
+.contactWrap { flex-shrink: 0; --glass-shadow-spread: 12px; --glass-press-transform: none; }
+
+@media (max-width: 1100px) and (min-width: 801px) {
+  .nameLayout { grid-template-columns: 1.2fr 1fr; gap: 48px; }
+  .principle { grid-template-columns: 28px minmax(0, 1.5fr) minmax(0, 1fr); gap: 24px; }
+}
+@media (max-width: 800px) {
+  .navBackdrop { height: 80px; }
+  .body section { scroll-margin-top: 96px; }
+  .name { padding-top: 80px; padding-bottom: 112px; }
+  .nameLayout { grid-template-columns: 1fr; gap: 40px; }
+  .name h2 { font-size: clamp(46px, 10.6vw, 80px); }
+  .nameAside { max-width: 540px; padding-top: 0; }
+  .nameText { font-size: 19px; }
+  .origin { margin-bottom: 18px; }
+  .principles > .label { max-width: 240px; margin-bottom: 24px; }
+  .principle { grid-template-columns: 24px minmax(0, 1fr); gap: 0 20px; padding-block: 34px 44px; }
+  .number { grid-column: 1; padding-top: 6px; font-size: 11px; }
+  .principle h3 { grid-column: 2; font-size: clamp(36px, 8.8vw, 60px); }
+  .principle p { grid-column: 2; max-width: 440px; padding-top: 24px; font-size: 16px; }
+  .closing { margin-top: 96px; padding-top: 40px; padding-bottom: 96px; }
+  .closing h2 { font-size: clamp(44px, 12.5vw, 90px); margin-top: 32px; }
+  .closingAction { gap: 28px; margin-top: 28px; }
+  .closingAction > p { font-size: 18px; }
+}
+@media (max-width: 360px) {
+  .principle { column-gap: 12px; }
+  .name h2 { font-size: 42px; }
+  .closing h2 { font-size: 40px; }
+}
+@media (max-height: 520px) and (min-width: 801px) { .navBackdrop { height: 68px; } }

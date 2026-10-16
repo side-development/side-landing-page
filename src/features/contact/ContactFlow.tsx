@@ -232,7 +232,7 @@ export function ContactFlow({ locale }: { locale: ContactLocale }) {
 
   return <main ref={root} className={styles.page} data-contact-flow data-contact-step={sent ? "sent" : step + 1}>
     <header className={styles.header}>
-      <Link className={styles.brand} href={home} aria-label="Side — Home" prefetch={false}><Image src="/brand/side-logo-black.svg" alt="" width={1265} height={1126} /></Link>
+      <Link className={styles.brand} href={`${home}#home-top`} aria-label="Side — Home" prefetch={false}><Image src="/brand/side-logo-black.svg" alt="" width={1265} height={1126} /></Link>
       <div className={styles.headerActions}>
         {!sent && <div className={styles.counterGroup}>
           <button type="button" data-contact-back className={styles.back} onClick={() => { if (!busy.current && !pending) history.back(); }} disabled={step === 0 || pending} data-first={step === 0} aria-label={copy.back}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" /></svg></button>

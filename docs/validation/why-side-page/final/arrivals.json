@@ -1,0 +1,38 @@
+[
+  {
+    "width": 1440,
+    "locale": "pt-BR",
+    "phases": 3,
+    "scrollArrival": true,
+    "focusVisible": true,
+    "reducedRestoresText": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "locale": "pt-BR",
+    "phases": 3,
+    "scrollArrival": true,
+    "focusVisible": true,
+    "reducedRestoresText": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "locale": "en",
+    "phases": 3,
+    "scrollArrival": true,
+    "focusVisible": true,
+    "reducedRestoresText": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "locale": "en",
+    "phases": 3,
+    "scrollArrival": true,
+    "focusVisible": true,
+    "reducedRestoresText": true,
+    "errors": []
+  }
+]

@@ -1,0 +1,53 @@
+# Why Side #19 — manifesto completo
+
+Página completa aprovada visualmente pelo usuário em 16/10/2026: **“finalizado e aprovado!”**. A aprovação inclui os refinamentos de conteúdo, movimento, CTA e retorno da logo à Home. A cena-assinatura havia sido aprovada antes da implementação dos demais capítulos. Entrega autorizada em branch e PR; sem merge ou deploy automático. A issue permanece aberta até a integração.
+
+**Revisão atual:** por pedido explícito do usuário, foram removidos o capítulo completo de projetos, o rótulo “O nome é uma posição” e a logo/assinatura abaixo do parágrafo do nome, em PT e EN. Os três compromissos agora aparecem somente quando alcançados pelo scroll. Todos os demais textos do corpo seguem a mesma chegada suave. Esta revisão substitui o escopo anterior de evidências de Work; os cases existentes permanecem na página Work.
+
+**CTA refinado:** “Vamos construir / lado a lado.”, com a segunda linha em roxo, composição centralizada e texto de apoio próximo da ação. Conforme a última revisão do usuário, o botão voltou ao glass claro da Home: mesmas classes de superfície, conteúdo e seta, dimensões, reflexos e interação; sem a superfície roxa ou a seta circular. Título, composição e texto de apoio preservados. PT/EN completos; destino Contact preservado. [Prévia direta](http://localhost:3019/por-que-side#manifesto-closing).
+
+Capturas do CTA: [desktop PT](final/desktop-closing.png), [mobile PT](final/mobile-closing.png), [desktop EN](final/desktop-closing-en.png), [mobile EN](final/mobile-closing-en.png) e [hover desktop](final/desktop-closing-hover.png).
+
+## Avaliar
+
+- [Página PT](http://localhost:3019/por-que-side) e [página EN](http://localhost:3019/en/why-side).
+- [Apresentação com os dois vídeos, ápice e capítulos](final/review.html).
+- [Vídeo desktop](final/desktop.mp4) e [vídeo mobile](final/mobile.mp4): scroll completo do navegador, incluindo a chegada separada dos três compromissos, sem composição adicionada na edição.
+- [Ápice desktop](final/desktop-peak.png) e [ápice mobile](final/mobile-peak.png).
+- Reiniciar a prévia: `npm run dev -- --hostname 0.0.0.0 --port 3019`.
+
+## Direção e implementação
+
+A abertura preserva **O eixo comum**: distância física se transforma em direção compartilhada. A faixa principal roxa, o exterior branco contínuo e a retirada dos dois pontos móveis seguem a revisão aprovada. Mobile conserva sua recomposição vertical própria. O scroll é nativo e reversível; o player aparece somente na rota de revisão do protótipo, disponível em desenvolvimento.
+
+Depois do ápice, a página desacelera. O nome abre uma leitura editorial com tipografia grande e três compromissos em linhas abertas. Cada fase chega como bloco: número, título e descrição juntos. Os textos do nome, rótulos e encerramento têm a mesma chegada por scroll, com opacity 0→1, blur 6→0px e deslocamento de 20px em 0,8s, começando quando o topo alcança 86% da viewport. Uma vez apresentados, permanecem visíveis. O encerramento usa um convite curto e o acabamento glass existente.
+
+- **Nome:** “Side não é só um nome. É uma posição.”, origem em *by your side* e texto do brief, sem o rótulo repetido, logo ou assinatura adicional.
+- **Princípios:** entender antes de construir; executar com intenção; cuidar também depois da entrega. Conteúdo correspondente em inglês.
+- **Encerramento:** “Vamos construir lado a lado.” / “Let's build side by side.”, botão “Vamos conversar” / “Let's talk” para Contact e footer existente.
+- **Integração:** apenas destinos necessários em Home, WorkNav e footer. Sem novas dependências, fontes ou assets comerciais.
+
+Os capítulos são renderizados no servidor, com pequena camada client para movimento. Rotas canônicas `/por-que-side` e `/en/why-side`, redirecionamento dos slugs trocados, title/description, OpenGraph e alternates PT/EN/x-default. Um único h1, hierarquia de headings, skip link, links nativos e foco visível. Reduced motion apresenta o cartaz final estático e todo o texto imediatamente; o HTML permanece legível sem JavaScript. As propriedades de entrada são aplicadas apenas pelo GSAP, sem CSS que esconda o HTML inicial. Foco por teclado torna o botão imediatamente visível mesmo antes de sua animação.
+
+## Verificação
+
+- `npm run lint`, `npm run typecheck`, `npm run build` e `git diff --check`: passaram. Build de produção com 38 rotas geradas.
+- Após a aprovação final, lint e build com TypeScript passaram novamente. A bateria de produção também passou: nove viewports e navegação/sem-JS, 22 cenários da logo, quatro cenários de chegada dos textos, resize/orientação e contrato de rotas PT/EN com clique real no CTA. Os resultados de viewport refletem a versão final da navegação.
+- [Contrato de rotas](manifesto-routes.mjs): RED com 404 antes da implementação; GREEN em PT/EN depois. Conteúdo, idioma, metadata/canonical/hreflang, navegação atual, footer, ausência do player e remoções solicitadas.
+- Acesso direto a `#manifesto-closing` alinha após a medição da abertura, usando o mesmo padrão de dois frames do footer. Regressão observada: o hash nativo parava antes do CTA após a expansão da cena; agora o contrato PT/EN confere alinhamento e clique real para Contact.
+- [Chegadas por scroll](manifesto-arrivals.mjs), [resultados](final/arrivals.json): RED com opacity 1 antes da alteração; GREEN em quatro cenários PT/EN desktop/mobile. A fase começa oculta, passa por opacidade intermediária ao entrar e termina visível, enquanto a próxima espera seu próprio ponto de scroll. Foco imediato no CTA, trocas repetidas de reduced motion restaurando todos os textos e ausência dos elementos removidos.
+- [Retorno ao botão da Home](final/button-home.json): seis cenários de produção PT/EN desktop/mobile, 320px e reduced. Dimensões de toque, ausência de overflow, foco por teclado e clique real para Contact passaram. Reutiliza diretamente as classes do CTA da Home, sem alterar o componente original.
+- [Logo da navbar → Home](navbar-home.mjs), [22 resultados de produção](final/navbar-home.json): RED (`idle` em vez de `final`) ao entrar primeiro por uma página interna e clicar na logo; GREEN com a âncora existente `#home-top` reconhecida pela hero. Why Side, Work, Services e Contact PT/EN, desktop/mobile, chegada imediata no estado final e scroll em zero. A logo da Home também é um link, volta ao topo quando a URL já tem a mesma âncora e fecha o menu mobile. Corrigida a área clicável mobile da marca de WorkNav, que tinha 0×0px apesar da imagem visível. Storage bloqueado, Ctrl+clique em nova aba e Enter com reduced passaram; primeira visita direta PT/EN e `intro=replay` preservam a intro. Lint, build com TypeScript e diff-check passaram. Somente navegação e área de clique foram ajustadas; direção de arte e CTA permanecem como revisados.
+- [Regressão de viewport](manifesto-viewport.mjs): RED ao girar 390×844 para 740×390 e ao reduzir apenas a altura para 500px. GREEN após remedição do palco. Pequenas mudanças verticais em touch mantêm a cena estável; mudanças grandes recalculam. O foco em campo editável evita remedição causada pelo teclado em touch.
+- [QA de produção](manifesto-browser.mjs), [resultados](final/checks.json): nove cenários de tela, PT/EN, desktop/laptop, mobile390, mobile320, tablet768, landscape844×390 e reduced desktop/mobile. Scroll rápido e reverso, troca dinâmica de reduced, bounds da composição, headings e ausência de overflow/erros de runtime. `height` no JSON registra a altura total do documento.
+- Menu mobile: Escape fecha e restaura foco. Ida/volta por Services, Work e Home. Idioma preserva o footer. Contact com retorno pelo histórico. Footer fullscreen desativa a navbar coberta. Slugs trocados redirecionam. Leitura sem JS em desktop e mobile.
+- Trilho da scrollbar transparente em todos os cenários. Evidências anteriores do ajuste global em dez rotas e no dashboard permanecem em [palette-scrollbar-checks.json](prototype/palette-scrollbar-checks.json) e [palette-layout-checks.json](prototype/palette-layout-checks.json).
+- A primeira entrega passou por revisão independente; o achado importante sobre resize apenas vertical foi corrigido e coberto pela regressão RED→GREEN. A revisão atual de conteúdo/movimento foi conferida no diff e nos testes de chegadas e produção descritos acima.
+- [Gravação reproduzível](manifesto-record.mjs) e [metadados dos arquivos](final/recordings.json): capturas reais do browser e codificação H.264/30fps. O movimento não é acrescentado na edição.
+- [Reprodução da apresentação local](final/playback.json): os dois vídeos carregaram, buscaram o segundo 12 e reproduziram frames decodificados em Edge, sem erro de mídia. Nenhuma imagem quebrada.
+
+Validação feita em Edge/Chromium com emulação de viewport/touch. Safari, aparelho móvel físico e leitor de tela não foram testados.
+
+## Estado de envio
+
+Entrega na branch `feat/19-why-side-manifesto`, com commits atômicos para protótipo, refinamentos aprovados, manifesto/rotas, integração de navegação, correções e evidências. A aprovação visual final atende ao brief e ao `AGENTS.md` e libera o envio da branch e a abertura da PR contra `main`. Merge e deploy seguem fora desta entrega; a issue #19 será encerrada pela integração da PR.
