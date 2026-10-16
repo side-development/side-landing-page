@@ -2,20 +2,20 @@
   "videos": [
     {
       "file": "desktop.mp4",
-      "duration": 57.266667,
+      "duration": 58.9,
       "width": 1440,
       "height": 1000,
       "readyState": 4,
-      "frames": 126,
+      "frames": 127,
       "error": null
     },
     {
       "file": "mobile.mp4",
-      "duration": 57,
+      "duration": 57.166667,
       "width": 390,
       "height": 844,
       "readyState": 4,
-      "frames": 127,
+      "frames": 126,
       "error": null
     }
   ],

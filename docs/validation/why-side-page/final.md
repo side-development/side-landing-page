@@ -4,6 +4,10 @@ Prévia final local, em 16/10/2026. A cena-assinatura e seus refinamentos foram 
 
 **Revisão atual:** por pedido explícito do usuário, foram removidos o capítulo completo de projetos, o rótulo “O nome é uma posição” e a logo/assinatura abaixo do parágrafo do nome, em PT e EN. Os três compromissos agora aparecem somente quando alcançados pelo scroll. Todos os demais textos do corpo seguem a mesma chegada suave. Esta revisão substitui o escopo anterior de evidências de Work; os cases existentes permanecem na página Work.
 
+**CTA refinado:** “Vamos construir / lado a lado.”, com a segunda linha em roxo, composição centralizada e texto de apoio próximo da ação. Botão roxo maior, acabamento glass com reflexo moderado para manter contraste, seta circular clara e resposta discreta ao hover. Mobile recebe botão largo e tipografia própria. PT/EN completos; destino Contact preservado. [Prévia direta](http://localhost:3019/por-que-side#manifesto-closing).
+
+Capturas do CTA: [desktop PT](final/desktop-closing.png), [mobile PT](final/mobile-closing.png), [desktop EN](final/desktop-closing-en.png), [mobile EN](final/mobile-closing-en.png) e [hover desktop](final/desktop-closing-hover.png).
+
 ## Avaliar
 
 - [Página PT](http://localhost:3019/por-que-side) e [página EN](http://localhost:3019/en/why-side).
@@ -20,7 +24,7 @@ Depois do ápice, a página desacelera. O nome abre uma leitura editorial com ti
 
 - **Nome:** “Side não é só um nome. É uma posição.”, origem em *by your side* e texto do brief, sem o rótulo repetido, logo ou assinatura adicional.
 - **Princípios:** entender antes de construir; executar com intenção; cuidar também depois da entrega. Conteúdo correspondente em inglês.
-- **Encerramento:** “Grandes ideias não precisam caminhar sozinhas.”, link para Contact e footer existente.
+- **Encerramento:** “Vamos construir lado a lado.” / “Let's build side by side.”, botão “Vamos conversar” / “Let's talk” para Contact e footer existente.
 - **Integração:** apenas destinos necessários em Home, WorkNav e footer. Sem novas dependências, fontes ou assets comerciais.
 
 Os capítulos são renderizados no servidor, com pequena camada client para movimento. Rotas canônicas `/por-que-side` e `/en/why-side`, redirecionamento dos slugs trocados, title/description, OpenGraph e alternates PT/EN/x-default. Um único h1, hierarquia de headings, skip link, links nativos e foco visível. Reduced motion apresenta o cartaz final estático e todo o texto imediatamente; o HTML permanece legível sem JavaScript. As propriedades de entrada são aplicadas apenas pelo GSAP, sem CSS que esconda o HTML inicial. Foco por teclado torna o botão imediatamente visível mesmo antes de sua animação.
@@ -29,6 +33,7 @@ Os capítulos são renderizados no servidor, com pequena camada client para movi
 
 - `npm run lint`, `npm run typecheck`, `npm run build` e `git diff --check`: passaram. Build de produção com 38 rotas geradas.
 - [Contrato de rotas](manifesto-routes.mjs): RED com 404 antes da implementação; GREEN em PT/EN depois. Conteúdo, idioma, metadata/canonical/hreflang, navegação atual, footer, ausência do player e remoções solicitadas.
+- Acesso direto a `#manifesto-closing` alinha após a medição da abertura, usando o mesmo padrão de dois frames do footer. Regressão observada: o hash nativo parava antes do CTA após a expansão da cena; agora o contrato PT/EN confere alinhamento e clique real para Contact.
 - [Chegadas por scroll](manifesto-arrivals.mjs), [resultados](final/arrivals.json): RED com opacity 1 antes da alteração; GREEN em quatro cenários PT/EN desktop/mobile. A fase começa oculta, passa por opacidade intermediária ao entrar e termina visível, enquanto a próxima espera seu próprio ponto de scroll. Foco imediato no CTA, trocas repetidas de reduced motion restaurando todos os textos e ausência dos elementos removidos.
 - [Regressão de viewport](manifesto-viewport.mjs): RED ao girar 390×844 para 740×390 e ao reduzir apenas a altura para 500px. GREEN após remedição do palco. Pequenas mudanças verticais em touch mantêm a cena estável; mudanças grandes recalculam. O foco em campo editável evita remedição causada pelo teclado em touch.
 - [QA de produção](manifesto-browser.mjs), [resultados](final/checks.json): nove cenários de tela, PT/EN, desktop/laptop, mobile390, mobile320, tablet768, landscape844×390 e reduced desktop/mobile. Scroll rápido e reverso, troca dinâmica de reduced, bounds da composição, headings e ausência de overflow/erros de runtime. `height` no JSON registra a altura total do documento.

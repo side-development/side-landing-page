@@ -60,6 +60,13 @@ try {
       const target = await page.locator(selector).evaluate(element => element.getBoundingClientRect().top + scrollY - (element.hasAttribute("data-final-footer") ? 0 : element.matches("[data-editorial-phase], #principles-heading") ? innerHeight * .8 : 110));
       await scrollTo(page, target, seconds);
       await page.waitForTimeout(1100);
+      if (label === "closing" && width > 800) {
+        await page.locator("#manifesto-closing a").hover();
+        await page.waitForTimeout(600);
+        await page.screenshot({ path: join(out, "desktop-closing-hover.png") });
+        await page.mouse.move(width - 16, 72);
+        await page.waitForTimeout(500);
+      }
       await page.screenshot({ path: join(out, `${name}-${label}.png`) });
     }
     const duration = (Date.now() - start) / 1000 - offset;
