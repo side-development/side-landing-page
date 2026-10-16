@@ -94,7 +94,7 @@
 .flowPoint { fill: #fff; stroke: #6b8c72; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
 .flowReadout { position: absolute; top: 5px; width: 50px; text-align: center; font-size: 10px; color: #31523d; pointer-events: none; font-variant-numeric: tabular-nums; }
 .flow > p { margin: 5px 0 0; color: #7b8c81; font-size: 8px; line-height: 1.5; }
-.footer { position: relative; display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; column-gap: 20px; border-top: 1px solid #e9e9ed; padding-block: 12px; font-size: 10px; color: #7a7a84; }
+.footer { position: relative; display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; column-gap: 20px; border-top: 1px solid #e9e9ed; padding-block: 12px; font-size: 10px; color: #707078; }
 .footer > span { display: inline-flex; align-items: center; gap: 9px; }
 .footer i { font-style: normal; }
 .explore { display: flex; align-items: center; justify-content: flex-end; gap: 12px; padding: 0; border: 0; background: transparent; color: #55505f; font-size: 10px; }

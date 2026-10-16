@@ -1,16 +1,25 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
+import dynamic from "next/dynamic";
 import { FakeErrorIntro, type FakeErrorCopy } from "./FakeErrorIntro";
-import { CinematicReveal } from "./CinematicReveal";
 import { FinalHero } from "./FinalHero";
 import type { HeroCopy } from "./copy";
 import styles from "./hero.module.css";
+
+// Returning visitors and reduced motion do not need the intro's fragments/plugin.
+const CinematicReveal = dynamic(() => import("./CinematicReveal").then(module => module.CinematicReveal));
 
 const SESSION_KEY = "side:hero-complete:v1";
 const subscribe = () => () => {};
 const serverSession = () => false;
 const clientReady = () => true;
+const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function subscribeMotion(callback: () => void) {
+  const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+  media.addEventListener("change", callback);
+  return () => media.removeEventListener("change", callback);
+}
 
 function sessionComplete() {
   try { return sessionStorage.getItem(SESSION_KEY) === "true"; }
@@ -44,7 +53,8 @@ export function Hero({ copy, finalCopy, onPhase }: Props) {
   const review = useSyncExternalStore(subscribe, reviewEnabled, serverSession);
   const forced = useSyncExternalStore(subscribe, forceReplay, serverSession);
   const contentReturn = useSyncExternalStore(subscribe, returningToContent, serverSession);
-  const final = state === "final" || ((contentReturn || visited) && !forced && !replaying);
+  const reduced = useSyncExternalStore(subscribeMotion, reducedMotion, serverSession);
+  const final = reduced || state === "final" || ((contentReturn || visited) && !forced && !replaying);
   const start = useCallback(() => setState(current => current === "idle" ? "triggered" : current), []);
   const complete = useCallback(() => {
     try { sessionStorage.setItem(SESSION_KEY, "true"); } catch { /* Storage can be unavailable in private browsing. */ }

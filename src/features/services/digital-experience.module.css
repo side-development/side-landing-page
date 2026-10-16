@@ -13,6 +13,7 @@
 .lower { position: relative; z-index: 2; display: flex; align-items: flex-end; justify-content: space-between; margin-top: 46px; padding-left: 6.2vw; }
 .note { display: grid; width: 180px; margin: 0; font-size: 13px; line-height: 1.7; }
 .note > span { grid-area: 1 / 1; }
+.srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .note > span[data-digital-note="1"] { visibility: hidden; opacity: 0; }
 .canvasFooter { padding-block: 20px; font-size: 11px; line-height: 1.5; }
 @media (min-width: 1800px) { .lineMask:last-child, .lower { padding-left: 110px; } }
