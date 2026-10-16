@@ -1,5 +1,7 @@
 # Why Side #19 — checkpoint da cena-assinatura
 
+> Registro histórico da primeira etapa. Cena e refinamentos aprovados pelo usuário em 16/10/2026 (“Aprovado continue”). A entrega completa e o próximo checkpoint estão em [final.md](final.md).
+
 Escopo: Fase 0 + Fase 1. Protótipo local **O eixo comum**. Nenhuma aprovação visual inferida dos checks técnicos. Parar antes dos capítulos do manifesto.
 
 ## Avaliar

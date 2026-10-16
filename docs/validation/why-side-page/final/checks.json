@@ -1,0 +1,104 @@
+[
+  {
+    "name": "desktop-pt",
+    "width": 1440,
+    "height": 7948,
+    "en": false,
+    "reduced": false,
+    "scrollWidth": 1430,
+    "track": "rgba(0, 0, 0, 0)",
+    "errors": []
+  },
+  {
+    "name": "laptop-en",
+    "width": 1280,
+    "height": 6450,
+    "en": true,
+    "reduced": false,
+    "scrollWidth": 1270,
+    "track": "rgba(0, 0, 0, 0)",
+    "errors": []
+  },
+  {
+    "name": "mobile-pt",
+    "width": 390,
+    "height": 6307,
+    "en": false,
+    "reduced": false,
+    "scrollWidth": 390,
+    "track": "rgba(0, 0, 0, 0)",
+    "errors": []
+  },
+  {
+    "name": "mobile-en",
+    "width": 390,
+    "height": 6310,
+    "en": true,
+    "reduced": false,
+    "scrollWidth": 390,
+    "track": "rgba(0, 0, 0, 0)",
+    "errors": []
+  },
+  {
+    "name": "small-mobile",
+    "width": 320,
+    "height": 5595,
+    "en": false,
+    "reduced": false,
+    "scrollWidth": 320,
+    "track": "rgba(0, 0, 0, 0)",
+    "errors": []
+  },
+  {
+    "name": "tablet-en",
+    "width": 768,
+    "height": 7451,
+    "en": true,
+    "reduced": false,
+    "scrollWidth": 768,
+    "track": "rgba(0, 0, 0, 0)",
+    "errors": []
+  },
+  {
+    "name": "landscape",
+    "width": 844,
+    "height": 4654,
+    "en": false,
+    "reduced": false,
+    "scrollWidth": 834,
+    "track": "rgba(0, 0, 0, 0)",
+    "errors": []
+  },
+  {
+    "name": "reduced-desktop",
+    "width": 1440,
+    "height": 5718,
+    "en": true,
+    "reduced": true,
+    "scrollWidth": 1430,
+    "track": "rgba(0, 0, 0, 0)",
+    "errors": []
+  },
+  {
+    "name": "reduced-mobile",
+    "width": 390,
+    "height": 5210,
+    "en": false,
+    "reduced": true,
+    "scrollWidth": 390,
+    "track": "rgba(0, 0, 0, 0)",
+    "errors": []
+  },
+  {
+    "name": "mobile-menu-locale-contact-case-home-history",
+    "errors": []
+  },
+  {
+    "name": "no-js-1440",
+    "overflow": false
+  },
+  {
+    "name": "no-js-390",
+    "overflow": false
+  }
+]

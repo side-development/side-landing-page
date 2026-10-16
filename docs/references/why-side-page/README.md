@@ -1,5 +1,7 @@
 # Why Side — pesquisa e cena-assinatura (#19)
 
+> Pesquisa e decisões da primeira etapa. A cena revisada foi aprovada em 16/10/2026. A página completa está registrada em [validação final](../../validation/why-side-page/final.md).
+
 Protótipo local em `prototype/19-why-side-manifesto`, baseado em `origin/main` (`73de4a8`, árvore idêntica à branch local aprovada de Services). Escopo desta entrega: abertura; manifesto e publicação aguardam aprovação visual. As rotas canônicas serão integradas na etapa seguinte.
 
 ## Referências estudadas
