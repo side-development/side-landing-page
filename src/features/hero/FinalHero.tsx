@@ -79,7 +79,7 @@ export function FinalHero({ copy, visible, focusOnReveal, onReplay }: { copy: He
               <div className={styles.sectionLinkItems}>
                 <button type="button" onClick={() => router.push(locale === "en" ? "/en/work" : "/trabalhos")}><span className={styles.navLabel}>{copy.work}<NavUnderline variant="work" /></span></button>
                 <button type="button" onClick={() => router.push(locale === "en" ? "/en/services" : "/servicos")}><span className={styles.navLabel}>{copy.services}<NavUnderline variant="services" /></span></button>
-                <button type="button"><span className={styles.navLabel}>{copy.why}<NavUnderline variant="why" /></span></button>
+                <button type="button" onClick={() => router.push(locale === "en" ? "/en/why-side" : "/por-que-side")}><span className={styles.navLabel}>{copy.why}<NavUnderline variant="why" /></span></button>
               </div>
               <button className={styles.menuContact} type="button" onClick={() => router.push(locale === "en" ? "/en/contact" : "/contato")}>{copy.contact}<span aria-hidden="true">→</span></button>
             </div>
