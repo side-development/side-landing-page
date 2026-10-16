@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import { socialMetadata } from "@/lib/seo";
 import { ServicesExperience } from "./ServicesExperience";
 import { servicesPageContent } from "./services-page-content";
 
@@ -14,6 +15,7 @@ export async function servicesMetadata({ params }: ServicesPageProps): Promise<M
   return {
     title: copy.title,
     description: copy.description,
+    ...socialMetadata({ title: copy.title, description: copy.description, locale, path: paths[locale] }),
     alternates: {
       canonical: paths[locale],
       languages: { "pt-BR": paths["pt-BR"], en: paths.en, "x-default": paths["pt-BR"] },

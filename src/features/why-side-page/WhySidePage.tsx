@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import { socialMetadata } from "@/lib/seo";
 import { WhySideExperience } from "./WhySideExperience";
 import { ManifestoChapters } from "./ManifestoChapters";
 import { manifestoContent, manifestoPaths } from "./manifesto-content";
@@ -14,14 +15,10 @@ export async function whySideMetadata({ params }: WhySidePageProps): Promise<Met
   return {
     title: copy.title,
     description: copy.description,
+    ...socialMetadata({ title: copy.title, description: copy.description, locale, path: manifestoPaths[locale] }),
     alternates: {
       canonical: manifestoPaths[locale],
       languages: { ...manifestoPaths, "x-default": manifestoPaths["pt-BR"] },
-    },
-    openGraph: {
-      title: copy.title, description: copy.description, url: manifestoPaths[locale],
-      siteName: "Side", type: "website", locale: locale === "en" ? "en_US" : "pt_BR",
-      alternateLocale: locale === "en" ? "pt_BR" : "en_US",
     },
   };
 }

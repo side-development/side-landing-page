@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import { socialMetadata } from "@/lib/seo";
 import { WorkExperience } from "./WorkExperience";
 import { workPageContent } from "./work-page-content";
 
@@ -18,6 +19,7 @@ export async function workMetadata({ params }: Pick<WorkPageProps, "params">): P
   return {
     title: copy.title,
     description: copy.description,
+    ...socialMetadata({ title: copy.title, description: copy.description, locale, path: paths[locale] }),
     alternates: {
       canonical: paths[locale],
       languages: { "pt-BR": paths["pt-BR"], en: paths.en, "x-default": paths["pt-BR"] },
