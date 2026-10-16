@@ -1,6 +1,6 @@
 # Why Side #19 — manifesto completo
 
-Prévia final local, em 16/10/2026. A cena-assinatura e seus refinamentos foram aprovados pelo usuário antes da implementação dos demais capítulos. A página completa aguarda aprovação visual final; não foi feito push, PR ou publicação e a issue permanece aberta.
+Página completa aprovada visualmente pelo usuário em 16/10/2026: **“finalizado e aprovado!”**. A aprovação inclui os refinamentos de conteúdo, movimento, CTA e retorno da logo à Home. A cena-assinatura havia sido aprovada antes da implementação dos demais capítulos. Entrega autorizada em branch e PR; sem merge ou deploy automático. A issue permanece aberta até a integração.
 
 **Revisão atual:** por pedido explícito do usuário, foram removidos o capítulo completo de projetos, o rótulo “O nome é uma posição” e a logo/assinatura abaixo do parágrafo do nome, em PT e EN. Os três compromissos agora aparecem somente quando alcançados pelo scroll. Todos os demais textos do corpo seguem a mesma chegada suave. Esta revisão substitui o escopo anterior de evidências de Work; os cases existentes permanecem na página Work.
 
@@ -32,6 +32,7 @@ Os capítulos são renderizados no servidor, com pequena camada client para movi
 ## Verificação
 
 - `npm run lint`, `npm run typecheck`, `npm run build` e `git diff --check`: passaram. Build de produção com 38 rotas geradas.
+- Após a aprovação final, lint e build com TypeScript passaram novamente. A bateria de produção também passou: nove viewports e navegação/sem-JS, 22 cenários da logo, quatro cenários de chegada dos textos, resize/orientação e contrato de rotas PT/EN com clique real no CTA. Os resultados de viewport refletem a versão final da navegação.
 - [Contrato de rotas](manifesto-routes.mjs): RED com 404 antes da implementação; GREEN em PT/EN depois. Conteúdo, idioma, metadata/canonical/hreflang, navegação atual, footer, ausência do player e remoções solicitadas.
 - Acesso direto a `#manifesto-closing` alinha após a medição da abertura, usando o mesmo padrão de dois frames do footer. Regressão observada: o hash nativo parava antes do CTA após a expansão da cena; agora o contrato PT/EN confere alinhamento e clique real para Contact.
 - [Chegadas por scroll](manifesto-arrivals.mjs), [resultados](final/arrivals.json): RED com opacity 1 antes da alteração; GREEN em quatro cenários PT/EN desktop/mobile. A fase começa oculta, passa por opacidade intermediária ao entrar e termina visível, enquanto a próxima espera seu próprio ponto de scroll. Foco imediato no CTA, trocas repetidas de reduced motion restaurando todos os textos e ausência dos elementos removidos.
@@ -49,4 +50,4 @@ Validação feita em Edge/Chromium com emulação de viewport/touch. Safari, apa
 
 ## Estado de envio
 
-Branch local `feat/19-why-side-manifesto`, partindo do protótipo aprovado em `5f414fa`. Commits separados para promoção da abertura, manifesto/rotas, integração de navegação e evidências. Nenhum push, PR, merge, fechamento de issue ou publicação. Próxima etapa: avaliação visual explícita da página completa pelo usuário, conforme o brief e `AGENTS.md`.
+Entrega na branch `feat/19-why-side-manifesto`, com commits atômicos para protótipo, refinamentos aprovados, manifesto/rotas, integração de navegação, correções e evidências. A aprovação visual final atende ao brief e ao `AGENTS.md` e libera o envio da branch e a abertura da PR contra `main`. Merge e deploy seguem fora desta entrega; a issue #19 será encerrada pela integração da PR.
